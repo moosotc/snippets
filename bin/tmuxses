@@ -1,0 +1,4 @@
+#!/bin/sh
+ip a s | grep 192 || ion
+set -e
+tmux new-session msrtor

@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+pgrep -f /net/bin/tor || tmux new-window -n tor sudo -u tor /net/bin/tor
+tmux rename-window tor

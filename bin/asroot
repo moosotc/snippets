@@ -1,0 +1,4 @@
+#!/bin/sh
+if test "$(id -u)" != "0"; then
+    exec sudo "$0" "$@"
+fi

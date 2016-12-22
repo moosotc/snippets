@@ -1,0 +1,19 @@
+#!/bin/bash -e
+
+#set -- http://www.youtube.com/watch?v=xMq-FyDBeBA
+#echo $1
+
+yt="python /home/malc/x/rcs/git/youtube-dl/youtube-dl"
+test -z "$1" && arg=$(xclip -o) || { arg="$1"; shift; }
+echo "1=$1 arg=$arg"
+test -z "$arg" && {
+    echo "nothing to show"
+    exit 1
+}
+
+flags="--no-playlist --prefer-insecure --ignore-config --no-check-certificate"
+flags=
+flags="$flags --youtube-skip-dash-manifest"
+flags="$flags -f [height<=?480]"
+flags="$flags -t $arg"
+exec $yt $flags "$@"

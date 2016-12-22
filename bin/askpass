@@ -1,0 +1,2 @@
+#!/bin/sh
+echo | exec rofi -password -p password -font 'monofur 18' -dmenu

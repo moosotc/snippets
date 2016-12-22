@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+exec 1>&2 2>/tmp/emacs.wyhlop
+emacsclient -q -n -c || exec emacs

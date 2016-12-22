@@ -1,0 +1,2 @@
+#!/bin/sh
+sudo mount /dev/sda2 /mnt/osx -t hfsplus -o ro,sizelimit=$((308615592*512)),user

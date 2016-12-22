@@ -1,0 +1,3 @@
+#!/bin/sh
+
+printf "$PWD/$1" | xclip -i

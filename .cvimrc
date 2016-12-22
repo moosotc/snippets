@@ -1,0 +1,28 @@
+map l Backspace
+map d F
+map g o
+map q x
+
+set scalehints
+set noautofocus
+set showtabindices
+"set defaultnewtabpage
+let mapleader = ","
+let highlight = '#d28ce3'
+let activehighlight = '#0ff3db'
+let qmark g = ["http://google.com"]
+map gm :tabnew mail.google.com&<CR>
+let barposition = "bottom"
+let nextmatchpattern = "((?!first)(next|more|>|\u203a|»|forward|\u540e\u9875|\u4e0b\u4e00\u9875)+)"
+map <Space> :buffer<Space>
+
+map K previousTab
+map J nextTab
+
+set nosmoothscroll
+let barposition = "bottom"
+let completionengines = ["google", "amazon", "imdb"]
+let searchalias g = "google"
+let searchalias b = "bing"
+let blacklists = ["https://mail.google.com/*", "*://*.reddit.com/*"]
+let mapleader = ","

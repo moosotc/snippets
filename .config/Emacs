@@ -1,0 +1,7 @@
+emacs.geometry: 80x40+777+177
+emacs*menubar*font: ui-8
+emacs.background: grey80
+emacs.toolBar: 0
+emacs.font: fira mono-9.3
+emacs.italic.attributeFont: source code pro-9.3
+emacs.scrollBarWidth: 7

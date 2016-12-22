@@ -1,0 +1,41 @@
+#!/bin/sh
+set -e
+ctl=/tmp/i3.fifo
+
+test "$1" = "-v" && {
+    shift
+    set -x
+} || {
+    exec 1>/dev/null
+    exec 2>/dev/null
+}
+
+test "$1" = "-b" && {
+    shift
+    exec mpv "$@"
+}
+yt="youtube-dl"
+
+test -z "$1" && arg=$(xclip -o -selection clipboard) || { arg="$1"; shift; }
+test -n "$arg" && expr "$arg" : ".*chessgames" && exec Anal
+test -z "$arg" && {
+    echo "nothing to show"
+    exit 1
+}
+
+expr "$arg" : ".*\.\(pdf\|html\?\)$" && {
+    expr "$arg" : ".*cnn\.com.*" || {
+        exec llppac "$arg"
+    } && true
+}
+
+trap "printf '\x01' >$ctl" 0
+
+printf "📺 $arg" >$ctl
+title=$($yt -e $arg)
+printf "📺 $title" >$ctl
+tmux new-window -n "$title"                                             \
+     mpv --quiet "$arg"                                                 \
+     --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]' ||   \
+    printf 'nevidos' >$ctl
+xdotool search --sync mpv

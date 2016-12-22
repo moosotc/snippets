@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec ./configure -C --without-rsvg --without-imagemagick --without-toolkit-scroll-bars --without-dbus --without-gconf --without-gsettings --without-selinux --with-x-toolkit=lucid --without-gpm --without-selinux --with-file-notification=no --with-tiff=no --without-gif --without-pop --without-xim --without-gnutls --without-gpm --disable-acl "$@"

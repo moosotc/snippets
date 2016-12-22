@@ -1,0 +1,4 @@
+#compdef mpv
+
+_arguments -s \
+  '*::document:_files -g "*.(mp[234]|avi|mpg|wmv|asf|og[gv]|web[mp]|m4a|m3[au]|flv|mov|gif|mkv)"'

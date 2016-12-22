@@ -1,0 +1,250 @@
+<!-- This is an amazing work of Max "CloudMax" Persson,
+     all your credits are belong to him (save for the .content text
+     which was collected from all around the place)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      Font Viewer by Max "CloudMax" Persson (http://cloudmodding.com/)
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="checkbox"] {
+            height: 1rem;
+            width: 1rem;
+            <!-- position: absolute; -->
+            <!-- top: 0; -->
+            <!-- right: 0; -->
+        }
+
+        .content {
+            clear: both;
+            font-size: 11pt;
+            line-height: 1.2; <!-- Tack til Tor Andersson -->
+        }
+
+        .side {
+            max-width: 88rem;
+            margin: auto;
+            display: flex;
+            padding: 2rem 0;
+        }
+        .side .container {
+            padding: 0 2rem;
+            flex: 0 0 50%;
+        }
+
+        .overlap {
+            max-width: 44rem;
+            margin: auto;
+            padding: 2rem;
+        }
+        .overlap .container {
+            height: 0;
+            color: red;
+        }
+        .overlap .container + .container {
+            height: auto;
+            color: blue;
+        }
+        .overlap .container + .container input {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+  <center><a href="http://xkcd.com/1015/">I really hate you</a><br/>
+    <span>Superimpose: <input id="mode" type="checkbox"></span>
+    <br/><a href="https://boblycat.org/~malc/fira-source.png"
+     alt="Fira Mono vs Source Code Pro">Sample rendering</a>
+  </center>
+  <br/>
+  <div id="wrap" class="side">
+    <div class="container" style="color:red">
+      <div class="controls">
+        <input list="fonts">
+      </div>
+      <div class="content"></div>
+    </div>
+    <div class="container" style="color:blue">
+      <div class="controls">
+        <input list="fonts">
+      </div>
+      <div class="content"></div>
+    </div>
+  </div>
+  <template id="containerText">
+Hope doesn't QqGgAaBbCcOoRrWwMmYyUuIiJjKkLlNnBbVvXxCcSs<br/>
+3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1|&#xE5; << >> rnrmnnmrrrnmmr<br/>
+WebM 0123456789 Русский текст automatically effective &@$!=+-/<br/><br/>
+
+        Obligatory smut: ønsker du å knulle meg and dia-madness Ре́ҙю̈мȩ̊́́́
+        <br/>
+Tuesday's security updates from <b>Microsoft</b> have crippled Windows XP<br/>
+PCs with the notorious Blue Screen of <i>Death</i>, users have reported on<br/>
+the company's support forum. Complaints <i>began</i> early yesterday, and<br/>
+gained momentum throughout the day. 'I updated 11 Windows XP updates<br/>
+today and restarted my PC like it asked me to,' said a user identified<br/>
+as 'tansenroy' who <b><i>kicked</b></i> off a growing support thread: 'From then on,<br/>
+Windows cannot restart again! It is stopping at the blue screen with<br/>
+the following message: 'A problem has been detected and Windows has<br/>
+been shutdown to prevent damage to your computer.' Others joined in<br/>
+with similar reports. Several users posted solutions, but the one laid<br/>
+out by 'maxyimus' was marked by a <b>Microsoft</b> support engineer as the<br/>
+way out of the perpetual blue screens.<br/>
+
+<br/>
+http://www.opennet.ru/opennews/art.shtml?num=39849<br/>
+> как отличить плохой шрифт от хорошего?<br/>
+На плохой - тебе пох..., на хороший тебе хорошо, и тоже пох...<br/>
+1. Не слипаемость соседних букв и символов. W/|\W НТЕ ZZZ ГL oawmшщ ygqyg<br/>
+   у многих шрифтов, у шрифта Ubuntu на этих символах /| косяк, - слипаются вверху.<br/>
+2. Ровные линии и кривые.   UCOJSPDG cjfla<br/>
+3. Вот эти хрени читаемые: ''"''""~-., $S2<br/>
+4. Ж долЖна быть похоЖа на Ж, а не на разорванную Жопу мамонта.  >|< - это не Ж<br/>
+5. 3Зэзэ3З  - угадай, где кто? :) У некоторых qg и 0О без поллитры не различишь.<br/>
+Для компа, с 19" и больше экранами Ubuntu хороший выбор. Для мелких экранов он немного широкий.<br/>
+Варианты - DejaVu или наши Para Type http://www.paratype.com/public<br/>
+На планшетах, смартах,... уже нужно методом тыка подбирать под экран.<br/>
+
+Mooo Русский текст<br/>
+🐫🐧﷽🙋<br/>
+22.39 <br/>
+わたしわ<br/>
+ىخسوخكشا هق قشاةشى هق قشاهة<br/>
+ମେ୍ମେତମ.,zୋ-ୌାୌୈଜାୌକଚ୍ୈାକ୍ସୋasscdsମେ୍ରମତେ୍ରମତେରମତ<br/>
+ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890<br/>
+abcdefghijklmnopqrstuvwxyz&<br/>
+абвгдеёжзийклмнопрстуфхцчшщъыьэю<br/>
+АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ<br/>
+3ДС<br/>© Данир "Да мы из нижнего" Фаладдин-оглы Барахтангерей
+</template>
+    <datalist id="fonts">
+<option value="sans">
+<option value="serif">
+<option value="mono">
+  <!-- fc-list -f '%{family}\n' "$@" | sort | uniq | awk '{print "<option value=\"" $0 "\">"}' -->
+<option value="Andika">
+<option value="Andika Compact">
+<option value="Arimo">
+<option value="Caladea">
+<option value="Carlito">
+<option value="Clean">
+<option value="Clear Sans">
+<option value="Code New Roman">
+<option value="Cousine">
+<option value="DejaVu Sans">
+<option value="DejaVu Sans Mono">
+<option value="DejaVu Serif">
+<option value="Exo 2">
+<option value="Fira Mono">
+<option value="Fira Sans">
+<option value="Fira Sans Condensed">
+<option value="Fixed">
+<option value="FreeMono">
+<option value="FreeSans">
+<option value="FreeSerif">
+<option value="Gentium">
+<option value="Gentium Basic">
+<option value="Gentium Book Basic">
+<option value="Gentium Plus">
+<option value="Gentium Plus Compact">
+<option value="GentiumAlt">
+<option value="Goha-Tibeb Zemen">
+<option value="Hack">
+<option value="Lato">
+<option value="Linux Biolinum">
+<option value="Linux Biolinum G">
+<option value="Linux Biolinum Keyboard">
+<option value="Linux Biolinum Keyboard O">
+<option value="Linux Biolinum O">
+<option value="Linux Libertine">
+<option value="Linux Libertine Display">
+<option value="Linux Libertine Display G">
+<option value="Linux Libertine Display O">
+<option value="Linux Libertine G">
+<option value="Linux Libertine Initials">
+<option value="Linux Libertine Initials O">
+<option value="Linux Libertine Mono">
+<option value="Linux Libertine Mono O">
+<option value="Linux Libertine O">
+<option value="Merriweather">
+<option value="Merriweather Light">
+<option value="Merriweather UltraBold">
+<option value="Newspaper">
+<option value="Noto Emoji">
+<option value="Noto Mono">
+<option value="Noto Sans">
+<option value="Noto Sans Mongolian">
+<option value="Noto Sans Symbols">
+<option value="Noto Serif">
+<option value="PT Mono">
+<option value="PT Sans">
+<option value="PT Sans Caption">
+<option value="PT Sans Narrow">
+<option value="PT Serif">
+<option value="PT Serif Caption">
+<option value="Roboto">
+<option value="Roboto Condensed">
+<option value="SILCharisL">
+<option value="SILDoulosL">
+<option value="SILManuscriptL">
+<option value="SILSophiaL">
+<option value="Source Code Pro">
+<option value="Source Sans Pro">
+<option value="Source Serif Pro">
+<option value="Symbola">
+<option value="Tinos">
+<option value="Ubuntu">
+<option value="Ubuntu Condensed">
+<option value="Ubuntu Mono">
+<option value="monofur">
+    </datalist>
+    <script>
+        (function() {
+            var containerText = document.getElementById('containerText').innerHTML;
+            var containerSelector = '.container';
+
+            function changeFont(event) {
+                var input = event.target;
+                var container = input.closest(containerSelector);
+                container.style.fontFamily = input.value;
+            }
+
+            var containers = document.querySelectorAll(containerSelector);
+            for (var i = 0, l = containers.length; i < l; i++) {
+                var fontInput = containers[i].querySelector('input');
+                containers[i].querySelector('.content').innerHTML = containerText;
+                fontInput.addEventListener('input', changeFont, true);
+            }
+
+            var checkbox = document.querySelector('#mode');
+            var wrap = document.querySelector('#wrap');
+            checkbox.addEventListener('change', function(event){
+                if (wrap.classList.contains('side')) {
+                    wrap.classList.remove('side');
+                    wrap.classList.add('overlap');
+                } else {
+                    wrap.classList.remove('overlap');
+                    wrap.classList.add('side');
+                }
+            }, true);
+        })();
+    </script>
+</body>
+</html>

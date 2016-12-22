@@ -1,0 +1,8 @@
+*font:          -misc-fixed-medium-r-normal--14-*-*-*-*-*-*-*
+Xft.dpi: 150
+Xcursor.theme: Vanilla-DMZ
+Xcursor.size: 24
+
+#include "/home/malc/.config/Emacs"
+#include "/home/malc/.config/Rofi"
+#include "/home/malc/.config/Xboard"

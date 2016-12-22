@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+# aka fc-list : family
+fc-list -f '%{family}\n' "$@" | sort | uniq

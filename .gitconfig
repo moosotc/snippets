@@ -1,0 +1,9 @@
+[user]
+	email = moosotc@gmail.com
+	name = malc
+[alias]
+	log1 = log --reverse --stat HEAD@{1}..HEAD
+	pull1 = !"git pull; git log1"
+        remup = remote update
+[push]
+	default = tracking

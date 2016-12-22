@@ -1,0 +1,3 @@
+#!/bin/sh
+set -e
+exec X -nolisten tcp -verbose 0 vt5

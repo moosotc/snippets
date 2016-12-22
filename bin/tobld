@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+if [ ! -z $2 ]; then
+   dst=$HOME/x//bld/$2
+   if [ ! -d $dst ]; then
+       mkdir $dst
+   else
+       dst=$HOME/x/bld
+   fi
+   tar xf $1 -C $dst
+   local sansext=${1%%.tar*}
+   local basedir=$dst/$(basename $sansext)
+   if [ -d $basedir ]; then
+       cd $basedir
+   else
+       cd $dst
+   fi
+fi

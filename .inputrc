@@ -1,0 +1,42 @@
+# My ~/.inputrc file is in -*- text -*- for easy editing with Emacs.
+#
+# Notice the various bindings which are conditionalized depending
+# on which program is running, or what terminal is active.
+#
+
+# In all programs, all terminals, make sure this is bound.
+
+set meta-flag on
+set convert-meta off
+set output-meta on
+set input-meta on
+set enable-keypad on
+#set horizontal-scroll-mode on
+#set keymap emacs-meta
+set print-completions-horizontally off
+set visible-stats on
+set blink-matching-paren on
+set horizontal-scroll-mode Off
+set show-all-if-ambiguous On
+set page-completions off
+set show-all-if-unmodified On
+set visible-stats On
+set skip-completed-text On
+
+$if Bash
+"\C-i": old-menu-complete
+$endif
+
+"\e'": dabbrev-expand
+
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+
+"\e[1~": beginning-of-line
+"\e[4~": end-of-line
+"\e[7~": beginning-of-line
+"\e[8~": end-of-line
+"\eOH": beginning-of-line
+"\eOF": end-of-line
+"\e[H": beginning-of-line
+"\e[F": end-of-line

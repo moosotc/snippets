@@ -1,0 +1,2 @@
+#!/bin/sh
+pkill -f -n -USR1 i3mon.py

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+pgrep -f -a ' tor$' \
+      && st -e tmux attach \
+      || st -e tmux new-session tor

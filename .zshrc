@@ -59,6 +59,17 @@ precmd ()
     xtitle "${PWD}"
 }
 
+tobld ()
+{
+    test -n "$1" && {
+        sansext=${1%%.tar*}
+        dst="$HOME/x/bld/$sansext"
+        mkdir -p "$dst"
+        tar xf "$1" -C "$dst"
+        cd "$dst"
+    }
+}
+
 alias ..='cd ..'
 alias clr="printf '\ec'"
 alias ll='ls -la'

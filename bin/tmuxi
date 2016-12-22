@@ -1,4 +1,0 @@
-#!/bin/sh
-
-xsetroot -cursor_name arrow
-exec st -g 80x24+229+97 -f mono:pixelsize=21 #-e tmux #\; new-window

@@ -4,7 +4,7 @@
 #-------------------------------------
 # Backgrounds
 # Background 1: Panel
-rounded = 1
+rounded = 3
 border_width = 1
 background_color = #cccccc 100
 border_color = #bbbbbb 100
@@ -91,7 +91,7 @@ border_color_pressed = #cccccc 100
 # Panel
 panel_items = TC
 wm_menu = 1
-disable_transparency = 0
+disable_transparency = 1
 mouse_effects = 1
 mouse_hover_icon_asb = 100 0 10
 mouse_pressed_icon_asb = 100 0 0

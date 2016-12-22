@@ -176,7 +176,7 @@ bindsym XF86AudioMute exec atoggle
 bindsym $mod+bracketright exec selwin
 bindsym $mod+grave exec yt
 bindsym mod1+Shift+d exec dicx
-bindsym $mod+bracketleft exec tora
+#bindsym $mod+bracketleft exec tora
 bindsym $mod+Shift+bracketright exec xdotool search emacs windowactivate %1
 bindsym $mod+Shift+bracketleft exec xdotool search mpv windowactivate %1
 bindsym mod1+Shift+F10 exec xdotool getactivewindow windowsize --usehints 80 48

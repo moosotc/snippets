@@ -129,19 +129,40 @@ class C:
         self.prevV = curv
         return ("#a9a9a9", self.name, dvdt)
 
+class I:
+    def getv (self):
+        f = open ("/proc/stat")
+        l = f.readline ().split ()
+        f.close ()
+        return (int (l[5]))
+
+    def __init__ (self):
+        self.prevV = self.getv ()
+        self.prevT = time.time ()
+
+    def step (self, curt):
+        curv = self.getv ()
+        dvdt = ((curv-self.prevV)*1e-3)/(curt-self.prevT)
+        self.prevT = curt
+        self.prevV = curv
+        if dvdt > 0.003:
+            return ("#b0b0b0", "⌛", dvdt)
+        else:
+            return ("#909090", "i", dvdt)
+
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
          "intel-rapl:0:1/energy_uj",
          "intel-rapl:0:2/energy_uj"]
 
 raplprefix = "/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/"
-cs = [C (raplprefix + path, getf) for path in paths]
+rs = [C (raplprefix + path, getf) for path in paths]
 
 netprefix = "/sys/class/net/enp3s0f0/statistics/"
 tys = ["rx", "tx"]
 ns = [N (ty, netprefix + ty + "_bytes", getf) for ty in tys]
 
-cs += ns
+cs = rs + ns + [I ()]
 
 def main ():
     sleepsecs = float (sys.argv[1])

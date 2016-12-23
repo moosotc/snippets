@@ -80,16 +80,13 @@ alias mpvin='read a; mpv "$a"'
 alias h='history'
 alias which-command &>/dev/null && unalias which-command
 test -n "$DISPLAY" && alias sudo='sudo -A'
-
-if [[ -n ${TMUX} && -n ${commands[tmux]} ]];then
-    TERM=tmux-256color
-    export TERM
-fi
+test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
 
 powerlevel9k () {
     export LANG="ru_RU.UTF-8"
     .  $HOME/x/rcs/git/powerlevel9k/powerlevel9k.zsh-theme
 }
+
 export SUDO_ASKPASS=$HOME/bin/askpass
 
 test $TERM[0,2] = st && {

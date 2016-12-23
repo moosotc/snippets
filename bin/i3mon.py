@@ -71,8 +71,14 @@ def checkmail (t):
 def gets (path):
     try:
         with open (path) as f:
-            s = f.read ()
-            return s
+            return f.read ()
+    except:
+        pass
+
+def getl (path):
+    try:
+        with open (path) as f:
+            return f.readline ()
     except:
         pass
 
@@ -131,9 +137,7 @@ class C:
 
 class I:
     def getv (self):
-        f = open ("/proc/stat")
-        l = f.readline ().split ()
-        f.close ()
+        l = gets ("/proc/stat").split ()
         return (int (l[5]))
 
     def __init__ (self):
@@ -146,7 +150,7 @@ class I:
         self.prevT = curT
         self.prevV = curV
         if dvdt > 0.003:
-            return ("#b0b0b0", "⌛", dvdt)
+            return ("#d0d0d0", "I", dvdt)
         else:
             return ("#909090", "i", dvdt)
 

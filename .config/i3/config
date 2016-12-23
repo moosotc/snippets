@@ -135,7 +135,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+F7 mode "resize"
+bindsym mod1+F7 mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -182,5 +182,6 @@ bindsym mod1+Shift+F10 exec xdotool getactivewindow windowsize --usehints 80 48
 bindsym mod1+Shift+F9 exec xdotool getactivewindow windowsize --usehints 80 24
 bindsym $mod+t exec stwrap
 bindsym $mod+Shift+t exec urxvtc
+bindsym Ctrl+grave exec sel2clip
 
 focus_follows_mouse no

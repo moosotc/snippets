@@ -7,6 +7,7 @@
 # 1F4E7 📧 E-MAIL SYMBOL
 #  2B06 ⬆
 #  2B07 ⬇
+# 1f5d8 🗘
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json
 

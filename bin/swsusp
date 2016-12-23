@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo 'mem' | sudo tee /sys/power/state
+echo 'mem' | sudo -A tee /sys/power/state

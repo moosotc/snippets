@@ -173,6 +173,7 @@ assign [class="llpp"] 9
 bindsym XF86AudioRaiseVolume exec chvol +
 bindsym XF86AudioLowerVolume exec chvol -
 bindsym XF86AudioMute exec atoggle
+bindsym Ctrl+XF86AudioMute exec printf '\x01' | tee /tmp/i3.fifo
 bindsym $mod+bracketright exec selwin
 bindsym $mod+grave exec yt
 bindsym mod1+Shift+d exec dicx

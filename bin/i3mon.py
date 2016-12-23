@@ -173,6 +173,7 @@ def main ():
     msg = ""
     pf = select.poll ()
     ff = None
+    nt = time.time ()
 
     while True:
         if ff == None:
@@ -184,6 +185,7 @@ def main ():
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
                 msg = msg1.decode ()
+                nt = time.time ()
             if mask & select.POLLHUP:
                 pf.unregister (fd)
                 os.close (fd)
@@ -198,6 +200,9 @@ def main ():
             s = ''
 
         t = time.time ()
+        if t - nt > 5:
+            msg = ""
+
         nmail = checkmail (t)
         if nmail > 0:
             s += '{"color":"#ffff00","full_text":"%d📧"},' % nmail

@@ -149,10 +149,10 @@ class I:
         dvdt = ((curV-self.prevV)*1e-3)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        if dvdt > 0.003:
-            return ("#d0d0d0", "I", dvdt)
+        if dvdt > 0.01:
+            return ("#d0d040", "🗘", dvdt)
         else:
-            return ("#909090", "i", dvdt)
+            return ("#909090", "", dvdt)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",

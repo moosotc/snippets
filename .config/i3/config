@@ -169,7 +169,7 @@ assign [class="Opera"] 1
 #assign [class="URxvt"] 2
 assign [class="Pidgin"] 3
 assign [class="Emacs"] 4
-assign [class="llpp"] 9
+#assign [class="llpp"] 9
 
 bindsym XF86AudioRaiseVolume exec chvol +
 bindsym XF86AudioLowerVolume exec chvol -

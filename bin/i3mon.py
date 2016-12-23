@@ -200,7 +200,7 @@ def main ():
             s = ''
 
         t = time.time ()
-        if t - nt > 5:
+        if False and t - nt > 5:
             msg = ""
 
         nmail = checkmail (t)

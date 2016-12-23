@@ -93,12 +93,12 @@ class N:
         self.prevT = time.time ()
         self.prevV = self.getv ()
 
-    def step (self, curt):
-        curv = self.getv ()
-        dt = curt - self.prevT
-        self.prevT = curt
-        dv = (curv - self.prevV) * 1e-6
-        self.prevV = curv
+    def step (self, curT):
+        curV = self.getv ()
+        dt = curT - self.prevT
+        self.prevT = curT
+        dv = (curV - self.prevV) * 1e-6
+        self.prevV = curV
         if dv > 0.5:
             if self.tx:
                 color = "#ffff00"
@@ -122,11 +122,11 @@ class C:
         self.prevT = time.time ()
         self.prevV = self.getv ()
 
-    def step (self, curt):
-        curv = self.getv ()
-        dvdt = ((curv-self.prevV)*1e-6)/(curt-self.prevT)
-        self.prevT = curt
-        self.prevV = curv
+    def step (self, curT):
+        curV = self.getv ()
+        dvdt = ((curV-self.prevV)*1e-6)/(curT-self.prevT)
+        self.prevT = curT
+        self.prevV = curV
         return ("#a9a9a9", self.name, dvdt)
 
 class I:
@@ -140,11 +140,11 @@ class I:
         self.prevV = self.getv ()
         self.prevT = time.time ()
 
-    def step (self, curt):
-        curv = self.getv ()
-        dvdt = ((curv-self.prevV)*1e-3)/(curt-self.prevT)
-        self.prevT = curt
-        self.prevV = curv
+    def step (self, curT):
+        curV = self.getv ()
+        dvdt = ((curV-self.prevV)*1e-3)/(curT-self.prevT)
+        self.prevT = curT
+        self.prevV = curV
         if dvdt > 0.003:
             return ("#b0b0b0", "⌛", dvdt)
         else:

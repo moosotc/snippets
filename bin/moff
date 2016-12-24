@@ -1,3 +1,4 @@
 #!/bin/sh
 set -e
-sudo systemctl poweroff
+. asroot
+systemctl poweroff

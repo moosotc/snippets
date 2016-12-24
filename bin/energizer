@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-test "$(id -u)" != "0" && exec sudo ${DISPLAY:+-A} "$0" "$@"
+. asroot
 
 echo '1' >/sys/module/snd_hda_intel/parameters/power_save
 echo 'min_power' >/sys/class/scsi_host/host0/link_power_management_policy
@@ -15,5 +15,5 @@ done
 
 ethtool -s enp3s0f0 wol d
 echo '0' >/sys/class/rtc/rtc0/wakealarm
-date -u --date '+1 sec' +%s >/sys/class/rtc/rtc0/wakealarm
+date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
 echo 'mem' >/sys/power/state

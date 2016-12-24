@@ -13,6 +13,7 @@ setcapskey
 xmodmap -e 'pointer = 3 2 1'
 xrdb -merge $HOME/.Xdefaults
 
+tmux new-window\; detach
 mkfifo /tmp/i3.fifo
 tint2 & disown
 exec i3

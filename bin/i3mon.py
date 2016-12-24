@@ -185,7 +185,7 @@ def main ():
         for (fd, mask) in l:
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
-                msg = msg1.decode ()
+                msg = msg1.decode ().replace('"', '\\"')
                 nt = time.time ()
             if mask & select.POLLHUP:
                 pf.unregister (fd)

@@ -697,7 +697,7 @@
 
 (defun notify-moo (s)
   (with-temp-buffer
-    (if (> (length s) 0)
+    (if (and (> (length s) 0) (not (string-equal s (string #x1))))
         (insert (concat "🙋 " s)))
     (when (file-writable-p "/tmp/i3.fifo")
       (write-region (point-min)

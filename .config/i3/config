@@ -180,7 +180,7 @@ bindsym $mod+Shift+bracketleft exec xdotool search mpv windowactivate %1
 bindsym mod1+Shift+F10 exec xdotool getactivewindow windowsize --usehints 80 48
 bindsym mod1+Shift+F9 exec xdotool getactivewindow windowsize --usehints 80 24
 bindsym $mod+t exec stwrap
-bindsym $mod+Shift+h exec i3-msg bar hidden_state toggle
+bindsym $mod+d exec i3-msg bar hidden_state toggle
 bindsym Ctrl+grave exec sel2clip
 
 focus_follows_mouse no

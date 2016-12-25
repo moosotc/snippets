@@ -140,13 +140,15 @@ bindsym mod1+F7 mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-#        status_command i3status
-         position top
-         status_command i3mon.py 3 /tmp/i3.fifo
-         colors {
-                background #494b4f
-                statusline #ffffff
-         }
+        mode hide
+        hidden_state show
+        modifier None
+        position top
+        status_command i3mon.py 3 /tmp/i3.fifo
+        colors {
+               background #494b4f
+               statusline #ffffff
+        }
 }
 
 for_window [class="Pidgin"] floating enable
@@ -183,7 +185,7 @@ bindsym $mod+Shift+bracketleft exec xdotool search mpv windowactivate %1
 bindsym mod1+Shift+F10 exec xdotool getactivewindow windowsize --usehints 80 48
 bindsym mod1+Shift+F9 exec xdotool getactivewindow windowsize --usehints 80 24
 bindsym $mod+t exec stwrap
-bindsym $mod+Shift+t exec urxvtc
+bindsym $mod+Shift+h exec i3-msg bar hidden_state toggle
 bindsym Ctrl+grave exec sel2clip
 
 focus_follows_mouse no

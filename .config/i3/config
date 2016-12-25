@@ -159,19 +159,14 @@ for_window [class="Opera"] floating enable
 for_window [class="llpp"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="XBoard"] floating enable
-
-for_window [class="URxvt"] floating enable
-#for_window [class="URxvt"] layout tabbed
 for_window [class="st"] floating enable
 for_window [class="Xmag"] floating enable
 
 assign [class="Conkeror"] 1
 assign [class="Firefox"] 1
 assign [class="Opera"] 1
-#assign [class="URxvt"] 2
 assign [class="Pidgin"] 3
 assign [class="Emacs"] 4
-#assign [class="llpp"] 9
 
 bindsym XF86AudioRaiseVolume exec chvol +
 bindsym XF86AudioLowerVolume exec chvol -

@@ -718,7 +718,7 @@
     (if filtered-list
         (let ((heads (mapcar 'car filtered-list)))
           (notify-moo (format "%s" heads)))
-      (notify-moo #x1))))
+      (notify-moo (string #x1)))))
 (add-hook 'erc-track-list-changed-hook 'list-changed-hook)
 
 (add-hook 'tuareg-mode-hook

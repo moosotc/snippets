@@ -160,7 +160,8 @@ assign [class="Emacs"] 4
 bindsym XF86AudioRaiseVolume exec chvol +
 bindsym XF86AudioLowerVolume exec chvol -
 bindsym XF86AudioMute exec atoggle
-bindsym Ctrl+XF86AudioMute exec printf '\x01' | tee /tmp/i3.fifo
+bindsym Ctrl+XF86AudioMute exec printf '\x01' >/tmp/i3.fifo
+bindsym Shift+XF86AudioMute exec pacycle
 bindsym $mod+bracketright exec selwin
 bindsym $mod+grave exec yt
 bindsym mod1+Shift+d exec dicx

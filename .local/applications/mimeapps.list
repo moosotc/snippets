@@ -1,0 +1,19 @@
+[Default Applications]
+image/jpeg=llpp.desktop
+x-scheme-handler/document/xpdf=llpp.desktop
+x-scheme-handler/document/x-pdf=llpp.desktop
+video=mpv.desktop
+video/mp4=mpv.desktop
+video/mpg=mpv.desktop
+video/mpeg=mpv.desktop
+video/mkv=mpv.desktop
+video/x-matroska=mpv.desktop
+video/wmv=mpv.desktop
+video/ogg=mpv.desktop
+video/x-flv=mpv.desktop
+video/avi=mpv.desktop
+video/asf=mpv.desktop
+video/webm=mpv.desktop
+video/quicktime=mpv.desktop
+video/x-ms-asf=mpv.desktop
+video/x-msvideo=mpv.desktop

@@ -151,17 +151,6 @@ bar {
         }
 }
 
-for_window [class="Pidgin"] floating enable
-for_window [class="Emacs"] floating enable
-for_window [class="Conkeror"] floating enable
-for_window [class="Firefox"] floating enable
-for_window [class="Opera"] floating enable
-for_window [class="llpp"] floating enable
-for_window [class="mpv"] floating enable
-for_window [class="XBoard"] floating enable
-for_window [class="st"] floating enable
-for_window [class="Xmag"] floating enable
-
 assign [class="Conkeror"] 1
 assign [class="Firefox"] 1
 assign [class="Opera"] 1
@@ -184,3 +173,4 @@ bindsym $mod+Shift+d exec i3-msg bar hidden_state toggle
 bindsym Ctrl+grave exec sel2clip
 
 focus_follows_mouse no
+for_window [class="[.]*"] floating enable

@@ -1,6 +1,5 @@
 alang=en
 #slang=en
-#vo=vaapi
-profile=opengl-hq
+vo=vaapi
 sub-font-size=50
 sub-font="noto sans"

@@ -1,5 +1,6 @@
 alang=en
-#slang=en
-vo=vaapi
+slang=en
+sub=no
+#vo=vaapi
 sub-font-size=50
 sub-font="noto sans"

@@ -157,21 +157,21 @@ assign [class="Opera"] 1
 assign [class="Pidgin"] 3
 assign [class="Emacs"] 4
 
-bindsym XF86AudioRaiseVolume exec chvol +
-bindsym XF86AudioLowerVolume exec chvol -
-bindsym XF86AudioMute exec atoggle
-bindsym Ctrl+XF86AudioMute exec printf '\x01' >/tmp/i3.fifo
-bindsym Shift+XF86AudioMute exec pacycle
-bindsym $mod+bracketright exec selwin
-bindsym $mod+grave exec yt
-bindsym mod1+Shift+d exec dicx
-bindsym $mod+Shift+bracketright exec xdotool search emacs windowactivate %1
-bindsym $mod+Shift+bracketleft exec xdotool search mpv windowactivate %1
-bindsym mod1+Shift+F10 exec xdotool getactivewindow windowsize --usehints 80 48
-bindsym mod1+Shift+F9 exec xdotool getactivewindow windowsize --usehints 80 24
-bindsym $mod+t exec stwrap
-bindsym $mod+Shift+d exec i3-msg bar hidden_state toggle
-bindsym Ctrl+grave exec sel2clip
-bindsym mod1+grave exec xsetroot -cursor_name arrow
+bindsym XF86AudioRaiseVolume exec --no-startup-id chvol +
+bindsym XF86AudioLowerVolume exec --no-startup-id chvol -
+bindsym XF86AudioMute exec --no-startup-id atoggle
+bindsym Ctrl+XF86AudioMute exec --no-startup-id printf '\x01' >/tmp/i3.fifo
+bindsym Shift+XF86AudioMute exec --no-startup-id pacycle
+bindsym $mod+bracketright exec --no-startup-id selwin
+bindsym $mod+grave exec --no-startup-id yt
+bindsym mod1+Shift+d exec --no-startup-id dicx
+bindsym $mod+Shift+bracketright exec --no-startup-id xdotool search emacs windowactivate %1
+bindsym $mod+Shift+bracketleft exec --no-startup-id xdotool search mpv windowactivate %1
+bindsym mod1+Shift+F10 exec --no-startup-id xdotool getactivewindow windowsize --usehints 80 48
+bindsym mod1+Shift+F9 exec --no-startup-id xdotool getactivewindow windowsize --usehints 80 24
+bindsym $mod+t exec --no-startup-id stwrap
+bindsym $mod+Shift+d exec --no-startup-id i3-msg bar hidden_state toggle
+bindsym Ctrl+grave exec --no-startup-id sel2clip
+bindsym mod1+grave exec --no-startup-id xsetroot -cursor_name arrow
 focus_follows_mouse no
 for_window [class="[.]*"] floating enable

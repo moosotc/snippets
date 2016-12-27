@@ -1,6 +1,6 @@
 #!/bin/sh
 
-xsetroot -cursor_name arrow
+#xsetroot -cursor_name arrow
 #exec st -g 80x24+229+97 -f menlo:pixelsize=21
 exec st -g 80x24+229+97 -f 'pt mono:pixelsize=21'
 #exec st -g 80x24+229+97 -f monofur:pixelsize=24

@@ -172,6 +172,6 @@ bindsym mod1+Shift+F9 exec xdotool getactivewindow windowsize --usehints 80 24
 bindsym $mod+t exec stwrap
 bindsym $mod+Shift+d exec i3-msg bar hidden_state toggle
 bindsym Ctrl+grave exec sel2clip
-
+bindsym mod1+grave exec xsetroot -cursor_name arrow
 focus_follows_mouse no
 for_window [class="[.]*"] floating enable

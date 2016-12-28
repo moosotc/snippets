@@ -185,7 +185,7 @@ def main ():
         for (fd, mask) in l:
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
-                msg = msg1.decode ().replace('"', '\\"')
+                msg = msg1.decode ()
                 nt = time.time ()
             if mask & select.POLLHUP:
                 pf.unregister (fd)
@@ -196,29 +196,22 @@ def main ():
             msg = ""
 
         if msg:
-            s = '{"color":"#00ff00","full_text":"' + msg + '"},'
+            j = [{"color": "#00ff00"}, {"full_text": msg}]
         else:
-            s = ''
+            j = []
 
         t = time.time ()
-        if False and t - nt > 5:
-            msg = ""
-
         nmail = checkmail (t)
         if nmail > 0:
-            s += '{"color":"#ffff00","full_text":"%d📧"},' % nmail
+            j += {"color": "#ffff00", "full_text": "%d📧" % nmail}
 
         for c in cs:
             (c, l, v) = c.step (t)
-            s += '{"color":"%s","full_text":"%s %7.3f"},' % (c, l, v)
+            j += [{"color": c, "full_text": "%s %7.3f" % (l, v)}]
 
         t = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
-        s += '{"color":"#a9a9a9","full_text":"%d°"}' % t
+        j += [{"color": "#a9a9a9", "full_text": "%d°" % t}]
+        print ("%s," % json.dumps (j), flush=True)
 
-        try:
-            print ('[%s],' % s, flush=True)
-        except:
-            print ("Exception", file=sys.stderr)
-
-print ('{ "version": 1 }[', flush=True)
+print ('{ "version": 1 } [', flush=True)
 main ()

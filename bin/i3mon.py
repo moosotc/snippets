@@ -202,15 +202,15 @@ def main ():
             deadline = None
             msg = None
 
-        if msg:
-            j = [{"color": "#00ff00", "full_text": msg}]
-        else:
-            j = []
-
         t = time.time ()
         if deadline and t > deadline:
             msg = None
             deadline = None
+
+        if msg:
+            j = [{"color": "#00ff00", "full_text": msg}]
+        else:
+            j = []
 
         nmail = checkmail (t)
         if nmail > 0:

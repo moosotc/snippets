@@ -171,10 +171,10 @@ cs = rs + ns + [I ()]
 
 def main ():
     sleepsecs = float (sys.argv[1])
-    msg = None
     pf = select.poll ()
+    msg = None
     ff = None
-    nt = time.time ()
+    deadline = None
 
     while True:
         if ff == None:
@@ -186,13 +186,20 @@ def main ():
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
                 msg = msg1.decode ()
-                nt = time.time ()
+                parts = msg.split ('\x00')
+                try:
+                    msg = parts[0]
+                    ds = parts[1]
+                    deadline = time.time () + float (ds)
+                except:
+                    deadline = None
             if mask & select.POLLHUP:
                 pf.unregister (fd)
                 os.close (fd)
                 ff = None
 
         if msg == '\x01':
+            deadline = None
             msg = None
 
         if msg:
@@ -201,6 +208,10 @@ def main ():
             j = []
 
         t = time.time ()
+        if deadline and t > deadline:
+            msg = None
+            deadline = None
+
         nmail = checkmail (t)
         if nmail > 0:
             j += {"color": "#ffff00", "full_text": "%d📧" % nmail}
@@ -209,8 +220,8 @@ def main ():
             (c, l, v) = c.step (t)
             j += [{"color": c, "full_text": "%s %7.3f" % (l, v)}]
 
-        t = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
-        j += [{"color": "#a9a9a9", "full_text": "%d°" % t}]
+        temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
+        j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]
         print ("%s," % json.dumps (j), flush=True)
 
 print ('{ "version": 1 } [', flush=True)

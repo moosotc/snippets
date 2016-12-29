@@ -214,7 +214,7 @@ def main ():
 
         nmail = checkmail (t)
         if nmail > 0:
-            j += {"color": "#ffff00", "full_text": "%d📧" % nmail}
+            j += [{"color": "#ffff00", "full_text": "%d📧" % nmail}]
 
         for c in cs:
             (c, l, v) = c.step (t)

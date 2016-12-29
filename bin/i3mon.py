@@ -196,7 +196,7 @@ def main ():
             msg = ""
 
         if msg:
-            j = [{"color": "#00ff00"}, {"full_text": msg}]
+            j = [{"color": "#00ff00", "full_text": msg}]
         else:
             j = []
 

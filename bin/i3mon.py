@@ -49,11 +49,11 @@ def checkmail (t):
             sock.connect((HOST, PORT))
 
             # wrap socket to add SSL support
-            sock = ssl.wrap_socket (sock)
+            sock1 = ssl.wrap_socket (sock)
             sock.read ()
-            sock.write (imapreq)
-            sock.read ()
-            s = sock.read ()
+            sock1.write (imapreq)
+            sock1.read ()
+            s = sock1.read ()
             try:
                 m = unspat.match (s.decode ())
             except:
@@ -61,6 +61,7 @@ def checkmail (t):
             n = 0
             if m:
                 n = int (m.group (1))
+            sock1.close ()
             sock.close ()
         except:
             n = 0

@@ -6,7 +6,7 @@ per=$((per"$1"5))
 pamixer --sink 0 --set-volume $per
 if ! (xdotool getactivewindow getwindowgeometry | grep "Geometry: 2560x1440") \
         && pgrep &>/dev/null -a -f i3mon.py; then
-    printf "♬ $per%%">/tmp/i3.fifo
+    printf "♬ $per%%\x003">/tmp/i3.fifo
 else
     echo "$per%" | dzen2 -p 2 -fn 20
 fi

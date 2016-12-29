@@ -177,7 +177,7 @@ def main ():
     deadline = None
 
     while True:
-        if ff == None:
+        if not ff:
             ff = os.open (sys.argv[2], os.O_RDONLY | os.O_NONBLOCK)
             pf.register (ff, select.POLLIN | select.POLLHUP)
 

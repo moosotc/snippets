@@ -86,13 +86,6 @@ def getl (path):
 def getf (path):
     return float (gets (path))
 
-translate = {
-    "package-0" : "pkg",
-    "core"      : "cpu",
-    "uncore"    : "gpu",
-    "dram"      : "ram"
-}
-
 class N:
     def __init__ (self, name, path, xgetv):
         self.tx = name == "tx"
@@ -159,6 +152,11 @@ paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
          "intel-rapl:0:1/energy_uj",
          "intel-rapl:0:2/energy_uj"]
+
+translate = {"package-0" : "pkg",
+             "core"      : "cpu",
+             "uncore"    : "gpu",
+             "dram"      : "ram"}
 
 raplprefix = "/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/"
 rs = [C (raplprefix + path, getf) for path in paths]

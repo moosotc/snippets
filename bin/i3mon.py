@@ -171,7 +171,7 @@ cs = rs + ns + [I ()]
 
 def main ():
     sleepsecs = float (sys.argv[1])
-    msg = ""
+    msg = None
     pf = select.poll ()
     ff = None
     nt = time.time ()
@@ -193,7 +193,7 @@ def main ():
                 ff = None
 
         if msg == '\x01':
-            msg = ""
+            msg = None
 
         if msg:
             j = [{"color": "#00ff00", "full_text": msg}]

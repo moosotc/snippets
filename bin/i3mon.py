@@ -182,6 +182,8 @@ def main ():
             pf.register (ff, select.POLLIN | select.POLLHUP)
 
         l = pf.poll (sleepsecs * 1000)
+        t = time.time ()
+
         for (fd, mask) in l:
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
@@ -189,10 +191,11 @@ def main ():
                 parts = msg.split ('\x00')
                 try:
                     msg = parts[0]
-                    ds = parts[1]
-                    deadline = time.time () + float (ds)
+                    tmout = parts[1]
+                    deadline = t + float (tmout)
                 except:
                     deadline = None
+
             if mask & select.POLLHUP:
                 pf.unregister (fd)
                 os.close (fd)
@@ -202,7 +205,6 @@ def main ():
             deadline = None
             msg = None
 
-        t = time.time ()
         if deadline and t > deadline:
             msg = None
             deadline = None

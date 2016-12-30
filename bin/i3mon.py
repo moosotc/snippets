@@ -8,6 +8,7 @@
 #  2B06 ⬆
 #  2B07 ⬇
 # 1f5d8 🗘
+#    b0 °
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json
 

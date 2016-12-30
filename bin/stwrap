@@ -1,7 +1,5 @@
 #!/bin/sh
 
-#xsetroot -cursor_name arrow
-#exec st -g 80x24+229+97 -f menlo:pixelsize=21
-exec st -g 80x24+229+97 -f 'pt mono:pixelsize=21'
-#exec st -g 80x24+229+97 -f monofur:pixelsize=24
-#exec st -g 80x24+229+97 -f monaco:pixelsize=21
+st="$HOME/x/rcs/git/storig/st"; d="-e dvtm"
+st=st; d=
+exec $st -g 80x24+229+97 -f 'pt mono:pixelsize=21' $d

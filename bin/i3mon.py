@@ -136,6 +136,7 @@ class I:
         return (int (l[5]))
 
     def __init__ (self):
+#        self.h = 0
         self.prevV = self.getv ()
         self.prevT = time.time ()
 
@@ -146,6 +147,8 @@ class I:
         self.prevV = curV
         if dvdt > 0.01:
             return ("#d0d040", "🗘", dvdt)
+#            self.h = (self.h+1) % 24
+#            return ("#d0d040", chr (0x1f550 + self.h), dvdt)
         else:
             return ("#909090", "", dvdt)
 

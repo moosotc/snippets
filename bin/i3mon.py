@@ -204,8 +204,8 @@ def main ():
                 ff = None
 
         if msg == '\x01':
-            deadline = None
             msg = None
+            deadline = None
 
         if deadline and t > deadline:
             msg = None

@@ -15,13 +15,10 @@ import socket, ssl, re, json
 HOST = "imap.gmail.com"
 PORT = 993
 HOST = socket.getaddrinfo (HOST, PORT)[0][4][0]
-unspat = re.compile (r".*\(UNSEEN ([1-9][0-9]*).*")
+email = b"moosotc@gmail.com"
 
 prevunseen = 0
 prevt = 0
-previt = 0
-
-email = b"moosotc@gmail.com"
 
 # http://stackoverflow.com/questions/20794414/how-to-check-
 # the-status-of-a-shell-script-using-subprocess-module-in-python
@@ -40,6 +37,7 @@ def usr1handler (a1, a2):
 signal.signal (signal.SIGUSR1, usr1handler)
 mailcheckinterval = 20*60
 
+unspat = re.compile (r".*\(UNSEEN ([1-9][0-9]*).*")
 def checkmail (t):
     global prevt, prevunseen, mailcheckinterval, imapreq
     n = prevunseen

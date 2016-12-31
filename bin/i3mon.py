@@ -44,14 +44,13 @@ def checkmail (t):
     global prevt, prevunseen, mailcheckinterval, imapreq
     n = prevunseen
     if t - prevt > mailcheckinterval:
-        # print ("checking mail")
         try:
             sock = socket.socket()
             sock.connect((HOST, PORT))
 
             # wrap socket to add SSL support
             sock1 = ssl.wrap_socket (sock)
-            sock.read ()
+            sock1.read ()
             sock1.write (imapreq)
             sock1.read ()
             s = sock1.read ()

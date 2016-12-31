@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# SSL code based taken almost verbatim from:
-# https://wiki.python.org/moin/SSL
-
 # 1F4E7 📧 E-MAIL SYMBOL
 #  2B06 ⬆
 #  2B07 ⬇
@@ -36,6 +33,9 @@ def usr1handler (a1, a2):
     prevt = 0
 signal.signal (signal.SIGUSR1, usr1handler)
 mailcheckinterval = 20*60
+
+# SSL code taken almost verbatim from:
+# https://wiki.python.org/moin/SSL
 
 unspat = re.compile (r".*\(UNSEEN ([1-9][0-9]*).*")
 def checkmail (t):

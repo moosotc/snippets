@@ -4,5 +4,6 @@ set -e
 pgrep emacs && {
     emacsclient -c -n -q
 } || {
-    emacs & xdotool search --sync emacs windowactivate
+    emacs &
 }
+xdotool search --sync emacs windowactivate

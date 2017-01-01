@@ -1,4 +1,8 @@
 #!/bin/sh
+set -e
 
-emacs &
-xdotool search --sync emacs windowactivate
+pgrep emacs && {
+    emacsclient -c -n -q
+} || {
+    emacs & xdotool search --sync emacs windowactivate
+}

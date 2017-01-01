@@ -2,4 +2,4 @@
 
 st="$HOME/x/rcs/git/storig/st"; d="-e dvtm"
 st=st; d=
-exec $st -g 80x24+229+97 -f 'pt mono:pixelsize=21' $d
+exec $st -g 80x24+229+97 -f 'pt mono:pixelsize=22' $d

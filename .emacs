@@ -60,7 +60,7 @@
   (add-hook 'c-mode-hook 'turn-off-filladapt-mode)
   (add-hook 'outline-mode-hook 'turn-off-filladapt-mode))
 
-(setq completion-auto-help nil ;; I want as much help as I can get
+(setq completion-auto-help t   ;; I want as much help as I can get
       completion-auto-exit nil ;; Don't want to always hit return
 
       ;; Tell cc-mode not to check for old-style (K&R) function declarations.
@@ -72,8 +72,6 @@
       inhibit-startup-message t
       default-major-mode 'text-mode
       garbage-collection-messages nil
-
-      completion-auto-help t
 
       ;; show position
       line-number-mode t

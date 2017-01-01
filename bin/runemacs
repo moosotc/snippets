@@ -1,9 +1,5 @@
 #!/bin/sh
 set -e
 
-pgrep emacs && {
-    emacsclient -c -n -q
-} || {
-    emacs &
-}
-xdotool search --sync emacs windowactivate
+pgrep -a -f '^emacs$' || (emacs &)
+xdotool search --sync --class emacs windowactivate

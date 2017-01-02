@@ -1,5 +1,3 @@
-#!/bin/zsh
+#!/bin/sh
 set -e
-xdotool search --sync --name "About Tor - Tor Browser" \
-        windowsize 1020 850 & disown
 exec /home/malc/x/app/tor-browser_en-US/Browser/start-tor-browser

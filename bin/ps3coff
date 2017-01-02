@@ -1,6 +1,5 @@
 #!/bin/sh
 #set -e
 . asroot
-btmgmt power off
-systemctl stop bluetooth.service
-modprobe -r btusb hidp bluetooth joydev hid_sony
+systemctl stop bluetooth
+modprobe -r btusb

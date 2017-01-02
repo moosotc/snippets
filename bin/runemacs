@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
 
-pgrep -a -f '^emacs$' || (emacs &)
-xdotool search --sync --class emacs windowactivate
+(xdotool search --sync --class emacs windowactivate &)
+pgrep -a -f '^emacs$' || exec emacs
+

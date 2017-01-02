@@ -1,9 +1,9 @@
 #!/bin/sh
 set -e
 
-per=$(pamixer --sink 0 --get-volume) || true
+per=$(pamixer --get-volume) || true
 per=$((per"$1"5))
-pamixer --sink 0 --set-volume $per
+pamixer --set-volume $per
 if xdotool search --onlyvisible i3bar && pgrep &>/dev/null -a -f i3mon.py; then
     printf "♬ $per%%\x002">/tmp/i3.fifo
 else

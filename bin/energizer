@@ -2,6 +2,8 @@
 set -e
 . asroot
 
+modprobe -r kvm-intel kvm
+
 echo '1' >/sys/module/snd_hda_intel/parameters/power_save
 echo 'min_power' >/sys/class/scsi_host/host0/link_power_management_policy
 echo '1' | tee >/dev/null /sys/bus/usb/devices/*/power/autosuspend

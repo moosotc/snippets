@@ -169,6 +169,26 @@ ns = [N (ty, netprefix + ty + "_bytes", getf) for ty in tys]
 
 cs = rs + ns + [I ()]
 
+d = {'SwapTotal': 0, 'SwapFree': 0}
+def swapused ():
+    global d
+    with open ("/proc/meminfo") as f:
+        for line in f.readlines ():
+            f = line.split (':')
+            v = d.get (f[0])
+            if v is not None:
+                f2 = f[1][:-1].lstrip ().split(' ')
+                if f2[1] == 'kB':
+                    v = int (f2[0]) * 1024
+                    d[f[0]] = v
+
+    total = float (d['SwapTotal'])
+    if total > 0:
+        free = float (d['SwapFree'])
+        return (100 * ((total - free) / total))
+    else:
+        return 0
+
 def main ():
     sleepsecs = float (sys.argv[1])
     pf = select.poll ()
@@ -224,6 +244,11 @@ def main ():
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
         j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]
+
+        swap = swapused ()
+        if swap > 0.2:
+            j += [{"color": "#a9a9a9", "full_text": "swap: %f%%" % swap}]
+
         print ("%s," % json.dumps (j), flush=True)
 
 print ('{ "version": 1 } [', flush=True)

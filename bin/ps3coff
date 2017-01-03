@@ -1,5 +1,0 @@
-#!/bin/sh
-#set -e
-. asroot
-systemctl stop bluetooth
-modprobe -r btusb joydev hid_sony hidp bluetooth uinput cmac

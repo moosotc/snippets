@@ -1,0 +1,21 @@
+#!/bin/sh
+
+. asroot
+
+action=off
+test -z "$1" && action=on
+
+test "$action" = "on" && {
+    modprobe btusb
+    systemctl start bluetooth
+    bluetoothctl <<eof
+power on
+scan on
+agent on
+pair E0:AE:5E:1B:EF:64
+eof
+    sixad --start
+} || {
+    systemctl stop bluetooth
+    modprobe -r btusb joydev hid_sony hidp bluetooth uinput cmac
+}

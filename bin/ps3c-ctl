@@ -15,6 +15,12 @@ pair E0:AE:5E:1B:EF:64
 eof
     sixad --start
 } || {
+    sixad --stop
+    bluetoothctl <<eof
+power off
+scan off
+agent off
+eof
     systemctl stop bluetooth
     modprobe -r btusb joydev hid_sony hidp bluetooth uinput cmac
 }

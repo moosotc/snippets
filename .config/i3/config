@@ -156,6 +156,7 @@ assign [class="Firefox"] 1
 assign [class="Opera"] 1
 assign [class="Pidgin"] 3
 assign [class="Emacs"] 4
+assign [class="Tor Browser"] torbrowser
 
 set $execnoid exec --no-startup-id
 bindsym XF86AudioRaiseVolume $execnoid chvol +
@@ -174,5 +175,7 @@ bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid i3-msg bar hidden_state toggle
 bindsym Ctrl+grave $execnoid sel2clip
 bindsym mod1+grave $execnoid xsetroot -cursor_name arrow
+bindsym $mod+Shift+bracketright \
+        $execnoid i3-msg -t command workspace torbrowser
 focus_follows_mouse no
 for_window [class="[.]*"] floating enable

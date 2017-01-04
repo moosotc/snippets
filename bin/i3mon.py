@@ -179,13 +179,13 @@ def swapused ():
             if v is not None:
                 f2 = f[1][:-1].lstrip ().split(' ')
                 if f2[1] == 'kB':
-                    v = int (f2[0]) * 1024
+                    v = float (f2[0])
                     d[f[0]] = v
 
-    total = float (d['SwapTotal'])
+    total = d['SwapTotal']
     if total > 0:
-        free = float (d['SwapFree'])
-        return (100 * ((total - free) / total))
+        free = d['SwapFree']
+        return 100 * (1 - (free / total))
     else:
         return 0
 
@@ -246,8 +246,8 @@ def main ():
         j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]
 
         swap = swapused ()
-        if swap > 0.2:
-            j += [{"color": "#a9a9a9", "full_text": "swap: %f%%" % swap}]
+        if swap != 0:
+            j += [{"color": "#a9a9a9", "full_text": "swap: %5.1f%%" % swap}]
 
         print ("%s," % json.dumps (j), flush=True)
 

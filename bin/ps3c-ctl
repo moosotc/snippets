@@ -1,8 +1,11 @@
 #!/bin/sh
 . asroot
 
-action=off
-test -z "$1" && action=on
+test -z "$1" && {
+    printf "wrong usage"
+    exit 1
+}
+action="$1"
 
 test "$action" = "on" && {
     modprobe btusb

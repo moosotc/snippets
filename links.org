@@ -1,0 +1,10 @@
+* xclip       http://sourceforge.net/projects/xclip
+* rofi        https://github.com/DaveDavenport/rofi
+* bitlbee     https://github.com/bitlbee/bitlbee
+* xdotool     http://www.semicomplete.com/projects/xdotool/
+* qtsixa      http://sourceforge.net/projects/qtsixa/
+* tor         http://www.torproject.org/
+* conkeror    http://conkeror.org/
+* st          http://st.suckless.org/
+* youtube-dl  https://github.com/rg3/youtube-dl.git
+* tmux        http://tmux.github.io/

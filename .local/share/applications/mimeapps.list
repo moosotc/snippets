@@ -1,5 +1,6 @@
 [Default Applications]
 image/jpeg=llpp.desktop
+image/png=llpp.desktop
 x-scheme-handler/document/xpdf=llpp.desktop
 x-scheme-handler/document/x-pdf=llpp.desktop
 video=mpv.desktop

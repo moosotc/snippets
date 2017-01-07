@@ -2,6 +2,6 @@ alang=en
 slang=en
 sub=no
 #vo=vaapi
-hwdec=auto
+hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"

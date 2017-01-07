@@ -9,7 +9,8 @@ pgrep &>/dev/null -a -f i3mon.py && {
     printf "♬ $per%%\x002">/tmp/i3.fifo
     xdotool search --onlyvisible i3bar || {
         i3-msg bar hidden_state show
-        (sleep 3; i3-msg bar hidden_state hide)
+        sleep 3
+        i3-msg bar hidden_state hide
     }
 } || echo "$per%" | dzen2 -p 2 -fn 20
 

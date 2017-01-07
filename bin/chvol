@@ -4,8 +4,12 @@ set -e
 per=$(pamixer --get-volume) || true
 per=$((per"$1"5))
 pamixer --set-volume $per
-if xdotool search --onlyvisible i3bar && pgrep &>/dev/null -a -f i3mon.py; then
+
+pgrep &>/dev/null -a -f i3mon.py && {
     printf "♬ $per%%\x002">/tmp/i3.fifo
-else
-    echo "$per%" | dzen2 -p 2 -fn 20
-fi
+    xdotool search --onlyvisible i3bar || {
+        i3-msg bar hidden_state show
+        (sleep 3; i3-msg bar hidden_state hide)
+    }
+} || echo "$per%" | dzen2 -p 2 -fn 20
+

@@ -1,4 +1,4 @@
 #!/bin/sh
 
 st="st"; d="-e $HOME/bin/dvtm"
-exec $st -g 80x24+229+97 -f 'dejavu sans mono:pixelsize=21' $d
+exec $st -g 80x24+229+97 -f 'monospace:pixelsize=21' $d

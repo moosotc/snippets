@@ -4,7 +4,7 @@ exec 2>/tmp/xinit.err
 exec 1>/tmp/xinit.out
 
 xrandr --dpi 152x152
-#dmesg -C >/tmp/dmesg
+SUDO_ASKPASS=$HOME/bin/askpass sudo dmesg -C >/tmp/dmesg
 
 xset dpms 600 1200 2400
 xset +dpms

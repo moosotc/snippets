@@ -1,10 +1,33 @@
-* xclip       http://sourceforge.net/projects/xclip
-* rofi        https://github.com/DaveDavenport/rofi
-* bitlbee     https://github.com/bitlbee/bitlbee
-* xdotool     http://www.semicomplete.com/projects/xdotool/
-* qtsixa      http://sourceforge.net/projects/qtsixa/
-* tor         http://www.torproject.org/
-* conkeror    http://conkeror.org/
-* st          http://st.suckless.org/
-* youtube-dl  https://github.com/rg3/youtube-dl.git
-* tmux        http://tmux.github.io/
+* Applications
+** xclip           http://sourceforge.net/projects/xclip
+** rofi            https://github.com/DaveDavenport/rofi
+** bitlbee         https://github.com/bitlbee/bitlbee
+** xdotool         http://www.semicomplete.com/projects/xdotool/
+** qtsixa          http://sourceforge.net/projects/qtsixa/
+** tor             http://www.torproject.org/
+** conkeror        http://conkeror.org/
+** st              http://st.suckless.org/
+** youtube-dl      https://github.com/rg3/youtube-dl.git
+** tmux            http://tmux.github.io/
+** dvwm            https://github.com/martanne/dvtm
+** i3              https://i3wm.org/
+* Fonts
+** Andika          http://scripts.sil.org/andika_download
+** Clear Sans      https://01.org/clear-sans
+** Estrangelo      https://fontlibrary.org/en/font/estrangelo-edessa
+** Exo 2           http://ndiscovered.com/exo-2/
+** Fira            https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/
+** Free Font       https://www.gnu.org/software/freefont/
+** Gentium         http://scripts.sil.org/Gentium_download
+** Go              https://blog.golang.org/go-fonts
+** Lato            http://www.latofonts.com/lato-free-fonts/
+** Linux Libertine http://linuxlibertine.org/
+** Merriweather    https://ebensorkin.wordpress.com/
+** Noto            https://www.google.com/get/noto/
+** PT Sans         http://paratype.com/public/
+** Sil (many)      https://www.sil.org/
+** Source Code Pro http://www.adobe.com/products/type/font-information/source-code-pro-readme-file.html
+** Symbola         http://users.teilar.gr/~g1951d/
+** Ubuntu          http://font.ubuntu.com/
+** XO Fonts        https://fonts.myoffice.ru/
+** monofur         http://eurofurence.net/monofur.html

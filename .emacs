@@ -501,8 +501,8 @@
             (quote inline-open)
             (quote 0))))))
  '(send-mail-function (quote smtpmail-send-it))
- '(smtpmail-smtp-server "smtp.akado.ru")
- '(smtpmail-smtp-service 25))
+ '(smtpmail-smtp-server "smtp.akado.ru" t)
+ '(smtpmail-smtp-service 25 t))
 
 (setq user-mail-address "moosotc@gmail.com")
 

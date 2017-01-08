@@ -31,3 +31,4 @@
 ** Ubuntu          http://font.ubuntu.com/
 ** XO Fonts        https://fonts.myoffice.ru/
 ** monofur         http://eurofurence.net/monofur.html
+** Code New Roman  https://sourceforge.net/projects/codenewroman/

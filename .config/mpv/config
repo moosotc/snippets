@@ -1,7 +1,7 @@
 alang=en
 slang=en
 sub=no
-#vo=vaapi
+#vo=vaapi # tearing
 hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"

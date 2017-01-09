@@ -1,7 +1,10 @@
 alang=en
 slang=en
 sub=no
-#vo=vaapi # tearing
+vo=vaapi                        # possible tearing
+                                # under investigation
 hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"
+#profile=opengl-hq
+

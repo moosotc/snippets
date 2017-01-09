@@ -148,7 +148,7 @@ class I:
 #            self.h = (self.h+1) % 24
 #            return ("#d0d040", chr (0x1f550 + self.h), dvdt)
         else:
-            return ("#909090", "", dvdt)
+            return ("#909090", "🗘", dvdt)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",

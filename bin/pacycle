@@ -3,7 +3,7 @@
 # based on http://askubuntu.com/questions/71863\
 # /how-to-change-pulseaudio-sink-with-pacmd-set-default-sink-during-playback
 set -e
-exec 1>&2 2>/dev/null
+exec 1>/dev/null 2>&1
 xdotool search --onlyvisible i3bar || {
     i3-msg bar hidden_state show
     (sleep 3; i3-msg bar hidden_state hide) &
@@ -14,9 +14,10 @@ xdotool search --onlyvisible i3bar || {
 
 sink=$(pacmd list-sinks | awk '/[^\*] index: / {print $2}')
 pacmd set-default-sink $sink
-desc=$(pacmd list-sinks | awk '/\* index/{x=1}/descr/{if(x){x=0;print$0;}}' \
-              | cut -d= -f 2)
-printf "$(eval printf "$desc")\x003" >/tmp/i3.fifo
+sedf() {
+    sed -n '/\* index/,/description/{/descr/s/.*= "\(.*\)"/\1/p}'
+}
+printf "$(pacmd list-sinks | sedf)\x003" >/tmp/i3.fifo
 pacmd list-sink-inputs | grep index | while read line
 do
     set -- $line

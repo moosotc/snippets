@@ -9,6 +9,9 @@ xdotool search --onlyvisible i3bar || {
     (sleep 3; i3-msg bar hidden_state hide) &
 }
 
+# this logic is binary, so the name is misleasing it doesn't cycle it
+# toggles between two "upmost" sinks
+
 sink=$(pacmd list-sinks | awk '/[^\*] index: / {print $2}')
 pacmd set-default-sink $sink
 desc=$(pacmd list-sinks | awk '/\* index/{x=1}/descr/{if(x){x=0;print$0;}}' \

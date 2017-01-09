@@ -32,3 +32,4 @@
 ** XO Fonts        https://fonts.myoffice.ru/
 ** monofur         http://eurofurence.net/monofur.html
 ** Code New Roman  https://sourceforge.net/projects/codenewroman/
+** Inconsolata     http://levien.com/type/myfonts/inconsolata.html

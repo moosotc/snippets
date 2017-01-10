@@ -5,5 +5,3 @@ vo=vaapi
 hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"
-#profile=opengl-hq
-

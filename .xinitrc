@@ -11,7 +11,7 @@ setcapskey
 xmodmap -e 'pointer = 3 2 1'
 xrdb -merge $HOME/.Xdefaults
 
-compton --backend glx -D 1 -b
+compton -b
 hsetroot -solid '#63718c'
 tmux new-session -d
 mkfifo /tmp/i3.fifo

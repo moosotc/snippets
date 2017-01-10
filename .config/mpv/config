@@ -1,7 +1,7 @@
 alang=en
 slang=en
 sub=no
-#vo=vaapi                        # tears when i3bar is _hidden_
+# vo=vaapi                        # tears when i3bar is _hidden_
 hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"

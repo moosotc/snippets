@@ -1,16 +1,16 @@
 #!/bin/sh
 set -e
 
-per=$(pamixer --get-volume) || true
-per=$((per"$1"5))
-pamixer --set-volume $per
+vol=$(pamixer --get-volume) || true
+vol=$((vol"$1"5))
+pamixer --set-volume $vol
 
 pgrep &>/dev/null -a -f i3mon.py && {
-    printf "♬ $per%%\x002">/tmp/i3.fifo
+    printf "♬ $vol%%\x002">/tmp/i3.fifo
     xdotool search --onlyvisible i3bar || {
         i3-msg bar hidden_state show
         sleep 3
         i3-msg bar hidden_state hide
     }
-} || echo "$per%" | dzen2 -p 2 -fn 20
+} || echo "$vol%" | dzen2 -p 2 -fn 20
 

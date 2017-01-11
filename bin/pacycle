@@ -14,10 +14,11 @@ xdotool search --onlyvisible i3bar || {
 
 sink=$(pacmd list-sinks | awk '/[^\*] index: / {print $2}')
 pacmd set-default-sink $sink
+vol=$(pamixer --get-volume) || true
 sedf() {
     sed -n '/\* index/,/description/{/descr/s/.*= "\(.*\)"/\1/p}'
 }
-printf "$(pacmd list-sinks | sedf)\x003" >/tmp/i3.fifo
+printf "$(pacmd list-sinks | sedf) $vol%%\x003" >/tmp/i3.fifo
 pacmd list-sink-inputs | grep index | while read line
 do
     set -- $line

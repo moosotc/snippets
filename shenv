@@ -1,5 +1,4 @@
 XPATH=${MALC_ZPATH-$PATH}
-#echo zshenv malc_zpath=$MALC_ZPATH xpath=$XPATH path=$PATH 
 
 PATH=/net/bin
 PATH=$PATH:$HOME/bin
@@ -13,6 +12,8 @@ PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/net/lib/pkgconfig
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig
 PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/share/pkgconfig
 
+TERMINFO=/net/share/terminfo
+
 CPATH=/net/include
 
 LIBRARY_PATH=/net/lib
@@ -25,7 +26,6 @@ LC_CTYPE=ru_RU.utf8
 LC_TIME=en_GB
 
 export PATH MANPATH LIBRARY_PATH PKG_CONFIG_PATH EDITOR
-export INFOPATH CPATH ACLOCAL_PATH LC_CTYPE LC_TIME
+export INFOPATH CPATH ACLOCAL_PATH LC_CTYPE LC_TIME TERMINFO
 export MALC_ZPATH="$XPATH"
 export CDPATH=.:$HOME/x
-#export GPG_TTY=$(tty)

@@ -145,12 +145,9 @@ abcdefghijklmnopqrstuvwxyz&<br/>
     <script>
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
-alert ("ready " + xmlhttp.readyState + " status=" +xmlhttp.status);
     if (xmlhttp.readyState==4 && xmlhttp.status==200) {
         var resp = JSON.parse(xmlhttp.response);
-alert ("resp " + resp);
         var datalist = document.getElementById('fonts');
-alert ("length " + resp.length);
         for (var i = 0, l = resp.length; i < l; ++i) {
             var ele = document.createElement('option');
             ele.value = resp[i];
@@ -158,10 +155,8 @@ alert ("length " + resp.length);
         }
     }
 };
-      alert ("xmlhttp");
-xmlhttp.open('GET','https://raw.githubusercontent.com/moosotc/snippets/master/misc/facelist',true);
+xmlhttp.open('GET','facelist',true);
              xmlhttp.send(null);
-      alert ("xmlhttm done");
 (function() {
     var containerText = document.getElementById('containerText').innerHTML;
     var containerSelector = '.container';

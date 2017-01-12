@@ -179,3 +179,6 @@ bindsym $mod+Shift+bracketright \
         $execnoid i3-msg -t command workspace torbrowser
 focus_follows_mouse no
 for_window [class="[.]*"] floating enable
+
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show

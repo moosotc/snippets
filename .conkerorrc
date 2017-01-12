@@ -8,7 +8,7 @@ register_user_stylesheet(
                 "span.__conkeror_hint {\n"+
                 "color: black !important;\n"+
                 "background-color: wheat !important;\n"+
-                "font-family: linux biolinum o !important;\n"+
+                "font-family: pt sans !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
                 "font-size: 15px !important;\n"+

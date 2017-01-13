@@ -242,7 +242,7 @@ def main ():
             if type (v) == float:
                 sv = "%7.3f" % v
             else:
-                sv ="%5d%%" % v
+                sv = "% 3d%%" % v
             j += [{"color": c, "full_text": "%s %s" % (l, sv)}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")

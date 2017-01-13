@@ -144,7 +144,7 @@ class I:
         self.prevT = curT
         self.prevV = curV
         per = int (100*dvdt)
-        if per > 3:
+        if per > 7:
             return ("#d0d040", "🗘", per)
         else:
             return ("#909090", "🗘", per)

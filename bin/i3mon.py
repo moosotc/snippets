@@ -4,7 +4,6 @@
 # 1F4E7 📧 E-MAIL SYMBOL
 #  2B06 ⬆
 #  2B07 ⬇
-# 1f5d8 🗘
 #    b0 °
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json
@@ -145,9 +144,9 @@ class I:
         self.prevV = curV
         per = int (100*dvdt)
         if per > 7:
-            return ("#d0d040", "🗘", per)
+            return ("#d0d040", "", per)
         else:
-            return ("#909090", "🗘", per)
+            return ("#909090", "", per)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
@@ -242,7 +241,7 @@ def main ():
             if type (v) == float:
                 sv = "%7.3f" % v
             else:
-                sv = "% 3d%%" % v
+                sv = "[% 3d%%]" % v
             j += [{"color": c, "full_text": "%s %s" % (l, sv)}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")

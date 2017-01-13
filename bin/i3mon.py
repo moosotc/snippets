@@ -140,15 +140,14 @@ class I:
 
     def step (self, curT):
         curV = self.getv ()
-        dvdt = ((curV-self.prevV)*1e-3)/(curT-self.prevT)
+        dvdt = ((curV-self.prevV)/100)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        if dvdt > 0.01:
-            return ("#d0d040", "🗘", dvdt)
-#            self.h = (self.h+1) % 24
-#            return ("#d0d040", chr (0x1f550 + self.h), dvdt)
+        per = int (100*dvdt)
+        if per > 3:
+            return ("#d0d040", "🗘", per)
         else:
-            return ("#909090", "🗘", dvdt)
+            return ("#909090", "🗘", per)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
@@ -240,7 +239,11 @@ def main ():
 
         for c in cs:
             (c, l, v) = c.step (t)
-            j += [{"color": c, "full_text": "%s %7.3f" % (l, v)}]
+            if type (v) == float:
+                sv = "%7.3f" % v
+            else:
+                sv ="%5d%%" % v
+            j += [{"color": c, "full_text": "%s %s" % (l, sv)}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
         j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]

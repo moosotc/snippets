@@ -14,13 +14,10 @@
 ** hsetroot        https://github.com/elmiko/hsetroot
 * Fonts
 ** Andika          http://scripts.sil.org/andika_download
-** Clear Sans      https://01.org/clear-sans
-** Estrangelo      https://fontlibrary.org/en/font/estrangelo-edessa
 ** Exo 2           http://ndiscovered.com/exo-2/
 ** Fira            https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/
 ** Free Font       https://www.gnu.org/software/freefont/
 ** Gentium         http://scripts.sil.org/Gentium_download
-** Go              https://blog.golang.org/go-fonts
 ** Lato            http://www.latofonts.com/lato-free-fonts/
 ** Linux Libertine http://linuxlibertine.org/
 ** Merriweather    https://ebensorkin.wordpress.com/
@@ -29,7 +26,6 @@
 ** Sil (many)      https://www.sil.org/
 ** Source Code Pro http://www.adobe.com/products/type/font-information/source-code-pro-readme-file.html
 ** Symbola         http://users.teilar.gr/~g1951d/
-** Ubuntu          http://font.ubuntu.com/
 ** XO Fonts        https://fonts.myoffice.ru/
 ** monofur         http://eurofurence.net/monofur.html
 ** Code New Roman
@@ -38,4 +34,3 @@
    Combination of "beta version" at sourceforge + bold/italic from 1001fonts
    make a nice console font that doesn't have a nasty "l" and "i" issue when
    going from regular to bold (problem that zipped version exhibits)
-** Inconsolata     http://levien.com/type/myfonts/inconsolata.html

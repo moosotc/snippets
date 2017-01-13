@@ -32,5 +32,10 @@
 ** Ubuntu          http://font.ubuntu.com/
 ** XO Fonts        https://fonts.myoffice.ru/
 ** monofur         http://eurofurence.net/monofur.html
-** Code New Roman  https://sourceforge.net/projects/codenewroman/
+** Code New Roman
+   https://sourceforge.net/projects/codenewroman/
+   http://dl.1001fonts.com/code-new-roman.zip
+   Combination of "beta version" at sourceforge + bold/italic from 1001fonts
+   make a nice console font that doesn't have a nasty "l" and "i" issue when
+   going from regular to bold (problem that zipped version exhibits)
 ** Inconsolata     http://levien.com/type/myfonts/inconsolata.html

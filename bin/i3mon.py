@@ -144,7 +144,6 @@ class I:
         self.prevV = curV
         per = int (100*dvdt)
         # http://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator
-        # was used
         return (("#cdba96" if per > 7 else "#909090"), "[", per)
 
 paths = ["energy_uj",

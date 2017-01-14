@@ -144,7 +144,7 @@ class I:
         self.prevV = curV
         per = int (100*dvdt)
         if per > 7:
-            return ("#00d0d0", "", per)
+            return ("#cdba96", "", per)
         else:
             return ("#909090", "", per)
 

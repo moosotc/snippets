@@ -182,3 +182,15 @@ for_window [class="[.]*"] floating enable
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
+
+bindsym mod4+KP_Left $execnoid xwnpm 4
+bindsym mod4+KP_Begin $execnoid xwnpm 5
+bindsym mod4+KP_Right $execnoid xwnpm 6
+
+bindsym mod4+KP_End $execnoid xwnpm 1
+bindsym mod4+KP_Down $execnoid xwnpm 2
+bindsym mod4+KP_Next $execnoid xwnpm 3
+
+bindsym mod4+KP_Home $execnoid xwnpm 7
+bindsym mod4+KP_Up $execnoid xwnpm 8
+bindsym mod4+KP_Prior $execnoid xwnpm 9

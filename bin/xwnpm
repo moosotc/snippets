@@ -1,0 +1,31 @@
+#!/bin/sh
+
+# http://pastebin.com/kQKU8W0f
+
+eval $(xdotool getdisplaygeometry --shell)
+dispw="$WIDTH"
+disph="$HEIGHT"
+
+eval $(xdotool getactivewindow getwindowgeometry --shell)
+x=0
+y=53                            # FIXME must be calculated dynamically
+winw="$WIDTH"
+winh="$HEIGHT"
+
+dispw=$((dispw-x))
+disph=$((disph-y))
+
+case "$1" in
+    "7") ;;
+    "8") x=$((dispw/2-winw/2));;
+    "9") x=$((dispw-winw));;
+
+    "4")                        y=$((disph/2-winh/2));;
+    "5") x=$((dispw/2-winw/2)); y=$((disph/2-winh/2));;
+    "6") x=$((dispw-winw));     y=$((disph/2-winh/2));;
+
+    "1")                        y=$((disph-winh));;
+    "2") x=$((dispw/2-winw/2)); y=$((disph-winh));;
+    "3") x=$((dispw-winw));     y=$((disph-winh));;
+esac
+xdotool windowmove $WINDOW $x $y

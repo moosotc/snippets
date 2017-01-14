@@ -239,7 +239,7 @@ def main ():
         for c in cs:
             (c, l, v) = c.step (t)
             if type (v) == float:
-                sv = "%7.3f" % v
+                sv = "%6.2f" % v
             else:
                 sv = "[% 4d%%]" % v
             j += [{"color": c, "full_text": "%s %s" % (l, sv)}]

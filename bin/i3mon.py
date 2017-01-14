@@ -144,9 +144,9 @@ class I:
         self.prevV = curV
         per = int (100*dvdt)
         if per > 7:
-            return ("#cdba96", "", per)
+            return ("#cdba96", "[", per)
         else:
-            return ("#909090", "", per)
+            return ("#909090", "[", per)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
@@ -241,7 +241,7 @@ def main ():
             if type (v) == float:
                 sv = "%6.2f" % v
             else:
-                sv = "[% 4d%%]" % v
+                sv = "% 4d%%]" % v
             j += [{"color": c, "full_text": "%s %s" % (l, sv)}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")

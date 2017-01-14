@@ -143,10 +143,7 @@ class I:
         self.prevT = curT
         self.prevV = curV
         per = int (100*dvdt)
-        if per > 7:
-            return ("#cdba96", "[", per)
-        else:
-            return ("#909090", "[", per)
+        return (("#cdba96" if per > 7 else "#909090"), "[", per)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",

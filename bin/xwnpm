@@ -29,9 +29,9 @@ case "$1" in
     "8") x=$((dispw/2-winw/2));;
     "9") x=$((dispw-winw));;
 
-    "4")                        y=$((disph/2-winh/2));;
-    "5") x=$((dispw/2-winw/2)); y=$((disph/2-winh/2));;
-    "6") x=$((dispw-winw));     y=$((disph/2-winh/2));;
+    "4")                        y=$((disph/2-(winh+i3barh)/2-4));;
+    "5") x=$((dispw/2-winw/2)); y=$((disph/2-(winh+i3barh)/2-4));;
+    "6") x=$((dispw-winw));     y=$((disph/2-(winh+i3barh)/2-4));;
 
     "1")                        y=$((tint2y-winh-4));;
     "2") x=$((dispw/2-winw/2)); y=$((tint2y-winh-4));;

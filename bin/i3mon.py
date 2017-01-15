@@ -181,7 +181,8 @@ def swapused ():
     total = d['SwapTotal']
     if total > 0:
         free = d['SwapFree']
-        return 100 * (1 - (free / total))
+        per = 100 * (1 - (free / total))
+        return per if per > 0.01 else 0
     else:
         return 0
 

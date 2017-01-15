@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+id=$(xdotool getactivewindow)
+geom=$(xprop -notype -id $id MOO_GEOM)
+expr >/dev/null "$geom" : ".*: .*" && {
+    geom=$(xdotool getactivewindow getwindowgeometry --shell)
+    xprop -id $id -format MOO_GEOM 8s -set MOO_GEOM "$geom"
+    xdotool getactivewindow windowsize --usehints 80 48
+    echo "geomnew $geom"
+} || {
+    eval $(echo $geom | sed -e 's,.* = "\(.*\)",\1,' -e "s,\\\\n, ,g")
+    xprop -id $id -remove MOO_GEOM
+    xdotool windowsize $id $WIDTH $HEIGHT
+}

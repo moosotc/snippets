@@ -167,10 +167,7 @@ bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+grave $execnoid yt
 bindsym mod1+Shift+d $execnoid dicx
 bindsym $mod+Shift+bracketleft $execnoid xdotool search mpv windowactivate %1
-bindsym mod1+Shift+F10 \
-        $execnoid xdotool getactivewindow windowsize --usehints 80 48
-bindsym mod1+Shift+F9 \
-        $execnoid xdotool getactivewindow windowsize --usehints 80 24
+bindsym mod1+Shift+F10 $execnoid xtogglewinsize
 bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid i3-msg bar hidden_state toggle
 bindsym Ctrl+grave $execnoid sel2clip

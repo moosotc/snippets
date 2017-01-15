@@ -31,11 +31,11 @@ case "$1" in
     "8") x=$cx;             y=$ty;;
     "9") x=$((dispw-winw)); y=$ty;;
 
-    "4")                    y=$cy;;
+    "4") x=0;               y=$cy;;
     "5") x=$cx;             y=$cy;;
     "6") x=$((dispw-winw)); y=$cy;;
 
-    "1")                    y=$by;;
+    "1") x=0;               y=$by;;
     "2") x=$cx;             y=$by;;
     "3") x=$((dispw-winw)); y=$by;;
       *) x=-10;             y=-10;;

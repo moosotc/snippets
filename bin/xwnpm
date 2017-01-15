@@ -16,7 +16,7 @@ disph=$((disph-y))
 
 eval $(xdotool search --class i3bar getwindowgeometry --shell)
 i3barh=$HEIGHT                  # i3bar height
-i3dech=26                       # i3wm title height
+i3dech=26                       # i3wm title height (FIXME dynamic)
 
 eval $(xdotool search --class tint2 getwindowgeometry --shell)
 tint2y=$Y

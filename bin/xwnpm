@@ -21,20 +21,24 @@ i3dech=26                       # i3wm title height
 eval $(xdotool search --class tint2 getwindowgeometry --shell)
 tint2y=$Y
 
-x=0
-y=$((i3barh+i3dech))
+ty=$((i3barh+i3dech))
+by=$((tint2y-winh-4))
+cx=$((dispw/2-winw/2))
+cy=$(((disph-i3barh-i3dech)/2-winh/2-4))
 
 case "$1" in
-    "7") ;;
-    "8") x=$((dispw/2-winw/2));;
-    "9") x=$((dispw-winw));;
+    "7") x=0;               y=$ty;;
+    "8") x=$cx;             y=$ty;;
+    "9") x=$((dispw-winw)); y=$ty;;
 
-    "4")                        y=$((disph/2-(winh+i3barh)/2-4));;
-    "5") x=$((dispw/2-winw/2)); y=$((disph/2-(winh+i3barh)/2-4));;
-    "6") x=$((dispw-winw));     y=$((disph/2-(winh+i3barh)/2-4));;
+    "4")                    y=$cy;;
+    "5") x=$cx;             y=$cy;;
+    "6") x=$((dispw-winw)); y=$cy;;
 
-    "1")                        y=$((tint2y-winh-4));;
-    "2") x=$((dispw/2-winw/2)); y=$((tint2y-winh-4));;
-    "3") x=$((dispw-winw));     y=$((tint2y-winh-4));;
+    "1")                    y=$by;;
+    "2") x=$cx;             y=$by;;
+    "3") x=$((dispw-winw)); y=$by;;
+      *) x=-10;             y=-10;;
 esac
+
 xdotool windowmove $win $x $y

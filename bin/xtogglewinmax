@@ -3,12 +3,11 @@ set -e
 
 vonly="$1"
 id=$(xdotool getactivewindow)
-geom=$(xprop -notype -id $id MOO_GEOM)
+geom=$(xprop -notype -id $id GEOMOO)
 expr >/dev/null "$geom" : ".*: .*" && {
     geom=$(xdotool getwindowgeometry --shell $id)
     eval $geom
-    xprop -id $id -format MOO_GEOM 8s \
-          -set MOO_GEOM "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
+    xprop -id $id -format GEOMOO 8s -set GEOMOO "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
     test -z "$vonly" && {
         xdotool getactivewindow windowsize 100% 93% windowmove 0 54
     } || {
@@ -18,6 +17,6 @@ expr >/dev/null "$geom" : ".*: .*" && {
 } || {
     set -- $geom
     eval eval ${*:3}
-    xprop -id $id -remove MOO_GEOM
+    xprop -id $id -remove GEOMOO
     xdotool windowsize $id $W $H windowmove $id $((X-4)) $Y
 }

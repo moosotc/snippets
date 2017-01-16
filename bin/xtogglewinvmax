@@ -10,5 +10,5 @@ expr >/dev/null "$geom" : ".*: .*" && {
 } || {
     eval $(echo $geom | sed -e 's,.* = "\(.*\)",\1,' -e "s,\\\\n, ,g")
     xprop -id $id -remove MOO_GEOM
-    xdotool windowsize $id $WIDTH $HEIGHT windowmove $id $X $Y
+    xdotool windowsize $id $WIDTH $HEIGHT windowmove $id $((X-4)) $Y
 }

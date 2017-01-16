@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-# FIXME: 94 54 26 4
+# FIXME: 54 4
 vonly="$1"
 id=$(xdotool getactivewindow)
 geom=$(xprop -notype -id $id GEOMOO)
@@ -10,10 +10,10 @@ expr >/dev/null "$geom" : ".*: .*" && {
     eval $geom
     xprop -id $id -format GEOMOO 8s -set GEOMOO "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
     test -z "$vonly" && {
-        xdotool getactivewindow windowsize 100% 94% windowmove 0 54
+        xdotool getactivewindow windowsize 100% 88% windowmove 0 54
     } || {
         eval $(xdotool search --class i3bar getwindowgeometry --shell) X=$X
-        xdotool getactivewindow windowsize 0 94% windowmove $X $((HEIGHT+26))
+        xdotool getactivewindow windowsize 0 88% windowmove $X $((HEIGHT+60))
     }
 } || {
     eval eval ${geom:8}

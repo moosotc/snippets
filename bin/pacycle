@@ -5,8 +5,9 @@
 set -e
 exec 1>/dev/null 2>&1
 xdotool search --onlyvisible i3bar || {
+    i3-msg bar mode hide
     i3-msg bar hidden_state show
-    (sleep 3; i3-msg bar hidden_state hide) &
+    (sleep 3; i3-msg bar mode dock) &
 }
 
 # this logic is binary, so the name is misleasing it doesn't cycle it

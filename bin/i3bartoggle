@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+i3-msg -t get_bar_config bar-0 | grep -q '"mode":"dock"' && {
+    i3-msg bar mode hide
+    i3-msg bar hidden_state show
+} || {
+    i3-msg bar mode dock
+}

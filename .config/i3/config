@@ -140,11 +140,11 @@ bindsym mod1+F7 mode "resize"
 # Start i3bar to display a workspace bar (plus the system information
 # provided by i3mon.py)
 bar {
-        mode hide
+        mode dock
         hidden_state show
-        modifier None
+        modifier mod1
         position top
-        status_command i3mon.py 3 /tmp/i3.fifo
+        status_command exec i3mon.py 3 /tmp/i3.fifo
         colors {
                background #494b4f
                statusline #ffffff
@@ -166,14 +166,11 @@ bindsym Ctrl+XF86AudioMute $execnoid printf '\x01' >/tmp/i3.fifo
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+grave $execnoid yt
 bindsym mod1+Shift+d $execnoid dicx
-bindsym $mod+Shift+bracketleft $execnoid xdotool search mpv windowactivate %1
 bindsym mod1+Shift+F10 $execnoid xtogglewinsize
 bindsym $mod+t $execnoid stwrap
-bindsym $mod+Shift+d $execnoid i3-msg bar hidden_state toggle
+bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid sel2clip
 bindsym mod1+grave $execnoid xsetroot -cursor_name arrow
-bindsym $mod+Shift+bracketright \
-        $execnoid i3-msg -t command workspace torbrowser
 focus_follows_mouse no
 for_window [class="[.]*"] floating enable
 

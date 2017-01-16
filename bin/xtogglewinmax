@@ -16,8 +16,7 @@ expr >/dev/null "$geom" : ".*: .*" && {
         xdotool getactivewindow windowsize 0 94% windowmove $X $((HEIGHT+26))
     }
 } || {
-    set -- $geom
-    eval eval ${*:3}
+    eval eval ${geom:8}
     xprop -id $id -remove GEOMOO
     xdotool windowsize $id $W $H windowmove $id $((X-4)) $Y
 }

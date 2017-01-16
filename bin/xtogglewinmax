@@ -4,11 +4,14 @@ set -e
 id=$(xdotool getactivewindow)
 geom=$(xprop -notype -id $id MOO_GEOM)
 expr >/dev/null "$geom" : ".*: .*" && {
-    geom=$(xdotool getactivewindow getwindowgeometry --shell)
-    xprop -id $id -format MOO_GEOM 8s -set MOO_GEOM "$geom"
+    geom=$(xdotool getwindowgeometry --shell $id)
+    eval $geom
+    xprop -id $id -format MOO_GEOM 8s \
+          -set MOO_GEOM "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
     xdotool getactivewindow windowsize 100% 94% windowmove 0 54
 } || {
-    eval $(echo $geom | sed -e 's,.* = "\(.*\)",\1,' -e "s,\\\\n, ,g")
+    set -- $geom
+    eval eval ${*:3}
     xprop -id $id -remove MOO_GEOM
-    xdotool windowsize $id $WIDTH $HEIGHT windowmove $id $((X-4)) $Y
+    xdotool windowsize $id $W $H windowmove $id $((X-4)) $Y
 }

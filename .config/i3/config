@@ -158,7 +158,11 @@ assign [class="Pidgin"] 3
 assign [class="Emacs"] 4
 assign [class="Tor Browser"] torbrowser
 
+focus_follows_mouse no
+for_window [class="[.]*"] floating enable
+
 set $execnoid exec --no-startup-id
+
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioMute $execnoid pacycle
@@ -170,9 +174,6 @@ bindsym mod1+Shift+F10 $execnoid xtogglewinsize
 bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid sel2clip
-bindsym mod1+grave $execnoid xsetroot -cursor_name arrow
-focus_follows_mouse no
-for_window [class="[.]*"] floating enable
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -188,3 +189,4 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
+

@@ -10,8 +10,11 @@ expr >/dev/null "$geom" : ".*: .*" && {
     xprop -id $id -format MOO_GEOM 8s \
           -set MOO_GEOM "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
     test -z "$vonly" && {
-        xdotool getactivewindow windowsize 100% 94% windowmove 0 54
-    } || xdotool getactivewindow windowsize 0 94% windowmove $X $((i3barh+26))
+        xdotool getactivewindow windowsize 100% 93% windowmove 0 54
+    } || {
+        eval $(xdotool search --class i3bar getwindowgeometry --shell) X=$X
+        xdotool getactivewindow windowsize 0 93% windowmove $X $((HEIGHT+26))
+    }
 } || {
     set -- $geom
     eval eval ${*:3}

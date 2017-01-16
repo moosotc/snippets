@@ -14,17 +14,18 @@ winh="$HEIGHT"
 dispw=$((dispw-x))
 disph=$((disph-y))
 
+unset HEIGHT
 eval $(xdotool search --class i3bar getwindowgeometry --shell)
 i3barh=$HEIGHT                  # i3bar height
-i3dech=26                       # i3wm title height (FIXME dynamic)
+i3titleheight=26
 
 eval $(xdotool search --class tint2 getwindowgeometry --shell)
 tint2y=$Y
 
-ty=$((i3barh+i3dech))
+ty=$((i3barh+i3titleheight))
 by=$((tint2y-winh-4))
 cx=$((dispw/2-winw/2))
-cy=$((disph/2-winh/2-i3dech+8))
+cy=$((disph/2-winh/2-i3titleheight-4))
 
 case "$1" in
     "7") x=0;               y=$ty;;

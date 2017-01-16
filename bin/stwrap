@@ -1,2 +1,2 @@
 #!/bin/sh
-exec st -g 80x24+329+97 -f 'terminal:pixelsize=24' dvtm
+exec st -g 80x24+329+87 -f 'terminal:pixelsize=24' dvtm

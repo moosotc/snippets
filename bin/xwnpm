@@ -24,7 +24,7 @@ tint2y=$Y
 ty=$((i3barh+i3dech))
 by=$((tint2y-winh-4))
 cx=$((dispw/2-winw/2))
-cy=$((disph/2-winh/2-i3dech-4))
+cy=$((disph/2-winh/2-i3dech+8))
 
 case "$1" in
     "7") x=0;               y=$ty;;

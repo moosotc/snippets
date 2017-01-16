@@ -12,8 +12,9 @@ expr >/dev/null "$geom" : ".*: .*" && {
     test -z "$vonly" && {
         xdotool getactivewindow windowsize 100% 93% windowmove 0 54
     } || {
-        eval $(xdotool search --class i3bar getwindowgeometry --shell) X=$X
-        xdotool getactivewindow windowsize 0 88% windowmove $X $((HEIGHT+60))
+        eval $(xdotool search --class i3bar getwindowgeometry --shell) \
+             X=$((X-4))
+        xdotool getactivewindow windowsize 0 89% windowmove $X $((HEIGHT+60))
     }
 } || {
     eval eval ${geom:8}

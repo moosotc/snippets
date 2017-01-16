@@ -6,8 +6,8 @@ eval $(xdotool getdisplaygeometry --shell)
 dispw="$WIDTH"
 disph="$HEIGHT"
 
-eval $(xdotool getactivewindow getwindowgeometry --shell)
-win="$WINDOW"
+wid=$(xdotool getactivewindow)
+eval $(xdotool getwindowgeometry --shell $wid)
 winw="$WIDTH"
 winh="$HEIGHT"
 
@@ -22,10 +22,11 @@ i3titleheight=26
 eval $(xdotool search --class tint2 getwindowgeometry --shell)
 tint2y=$Y
 
+bw=$(xwininfo -id $wid | grep "Relative upper-left X:" | cut -d: -f2)
 ty=$((i3barh+i3titleheight))
-by=$((tint2y-winh-4))
+by=$((tint2y-winh-bw))
 cx=$((dispw/2-winw/2))
-cy=$((disph/2-winh/2-i3titleheight-4))
+cy=$((disph/2-winh/2-i3titleheight-bw))
 
 case "$1" in
     "7") x=0;               y=$ty;;
@@ -42,4 +43,4 @@ case "$1" in
       *) x=-10;             y=-10;;
 esac
 
-xdotool windowmove $win $x $y
+xdotool windowmove $wid $x $y

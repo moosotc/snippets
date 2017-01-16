@@ -1,18 +1,21 @@
 #!/bin/sh
 set -e
+exec 1>&2 2>/dev/null
 
 id=$(xdotool getactivewindow)
 eval $(xdotool search --class i3bar getwindowgeometry --shell)
 i3barh=$HEIGHT                  # i3bar height
 
 geom=$(xprop -notype -id $id MOO_GEOM)
-expr >/dev/null "$geom" : ".*: .*" && {
+expr "$geom" : "[^:]*:  no" && {
     geom=$(xdotool getwindowgeometry --shell $id)
     eval $geom
-    xprop -id $id -format MOO_GEOM 8s -set MOO_GEOM "$geom"
+    xprop -id $id -format MOO_GEOM 8s \
+          -set MOO_GEOM "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
     xdotool windowsize $id 0 93% windowmove $id $X $((i3barh+26))
 } || {
-    eval $(echo $geom | sed -e 's,.* = "\(.*\)",\1,' -e "s,\\\\n, ,g")
+    set -- $geom
+    eval eval ${*:3}
     xprop -id $id -remove MOO_GEOM
-    xdotool windowsize $id $WIDTH $HEIGHT windowmove $id $((X-4)) $Y
+    xdotool windowsize $id $W $H windowmove $id $((X-4)) $Y
 }

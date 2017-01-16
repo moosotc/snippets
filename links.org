@@ -12,6 +12,7 @@
 ** dvwm            https://github.com/martanne/dvtm
 ** i3              https://i3wm.org/
 ** hsetroot        https://github.com/elmiko/hsetroot
+** stardict        http://stardict.sourceforge.net/
 * Fonts
 ** Andika          http://scripts.sil.org/andika_download
 ** Exo 2           http://ndiscovered.com/exo-2/
@@ -34,3 +35,4 @@
    Combination of "beta version" at sourceforge + bold/italic from 1001fonts
    make a nice console font that doesn't have a nasty "l" and "i" issue when
    going from regular to bold (problem that zipped version exhibits)
+** Cormorant       https://github.com/CatharsisFonts/Cormorant

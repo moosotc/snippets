@@ -1,10 +1,8 @@
 #!/bin/sh
 set -e
 
-i3-msg -t get_bar_config bar-0 | grep -q '"mode":"dock"' && {
-    i3-msg bar mode hide
-    xdotool search --class i3bar windowunmap windowmap
-    printf "\x00" >/tmp/i3.fifo
+xdotool search --onlyvisible --class i3bar && {
+    i3-msg bar mode invisible
 } || {
-    i3-msg bar mode dock
+    i3-msg bar mode hide
 }

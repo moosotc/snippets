@@ -140,7 +140,7 @@ bindsym mod1+F7 mode "resize"
 # Start i3bar to display a workspace bar (plus the system information
 # provided by i3mon.py)
 bar {
-        mode dock
+        mode hide
         hidden_state show
         modifier mod1
         position top

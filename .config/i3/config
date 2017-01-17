@@ -166,7 +166,6 @@ set $execnoid exec --no-startup-id
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioMute $execnoid pacycle
-bindsym Ctrl+XF86AudioMute $execnoid printf '\x01' >/tmp/i3.fifo
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+grave $execnoid yt
 bindsym mod1+Shift+d $execnoid dicx

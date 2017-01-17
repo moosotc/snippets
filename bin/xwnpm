@@ -23,23 +23,23 @@ eval $(xdotool search --class tint2 getwindowgeometry --shell)
 tint2y=$Y
 
 bw=$(xwininfo -id $wid | grep "Relative upper-left X:" | cut -d: -f2)
-ty=$((i3barh+i3titleheight))
+ty=$((i3barh+i3titleheight))    # this assumes i3's border normal setting
 by=$((tint2y-winh-bw))
-cx=$((dispw/2-winw/2))
+cx=$((dispw/2-winw/2-bw))
 cy=$((disph/2-winh/2-bw))
 
 case "$1" in
-    "7") x=0;               y=$ty;;
-    "8") x=$cx;             y=$ty;;
-    "9") x=$((dispw-winw)); y=$ty;;
+    "7") x=$bw;                y=$ty;;
+    "8") x=$cx;                y=$ty;;
+    "9") x=$((dispw-winw-bw)); y=$ty;;
 
-    "4") x=0;               y=$cy;;
-    "5") x=$cx;             y=$cy;;
-    "6") x=$((dispw-winw)); y=$cy;;
+    "4") x=$bw;                y=$cy;;
+    "5") x=$cx;                y=$cy;;
+    "6") x=$((dispw-winw-bw)); y=$cy;;
 
-    "1") x=0;               y=$by;;
-    "2") x=$cx;             y=$by;;
-    "3") x=$((dispw-winw)); y=$by;;
+    "1") x=$bw;                y=$by;;
+    "2") x=$cx;                y=$by;;
+    "3") x=$((dispw-winw-bw)); y=$by;;
       *) x=-10;             y=-10;;
 esac
 

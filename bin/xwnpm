@@ -11,10 +11,6 @@ eval $(xdotool getwindowgeometry --shell $wid)
 winw="$WIDTH"
 winh="$HEIGHT"
 
-dispw=$((dispw-x))
-disph=$((disph-y))
-
-unset HEIGHT
 eval $(xdotool search --class i3bar getwindowgeometry --shell)
 i3barh=$HEIGHT                  # i3bar height
 i3titleheight=26

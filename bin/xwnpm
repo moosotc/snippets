@@ -26,7 +26,7 @@ bw=$(xwininfo -id $wid | grep "Relative upper-left X:" | cut -d: -f2)
 ty=$((i3barh+i3titleheight))
 by=$((tint2y-winh-bw))
 cx=$((dispw/2-winw/2))
-cy=$((disph/2-winh/2-i3titleheight-bw))
+cy=$((disph/2-winh/2))
 
 case "$1" in
     "7") x=0;               y=$ty;;

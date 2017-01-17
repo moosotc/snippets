@@ -1,8 +1,8 @@
-really-quiet
+quiet
 alang=en
 slang=en
 sub=no
-vo=vaapi
+vo=opengl
 hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"

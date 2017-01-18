@@ -7,5 +7,8 @@ pamixer --set-volume $vol
 
 pgrep &>/dev/null -a -f i3mon.py && {
     printf "♬ $vol%%\x002">/tmp/i3.fifo
-} || echo "$vol%" | dzen2 -p 2 -fn 20
+} || {
+    # following must die
+    echo "$vol%" | dzen2 -p 2 -fn 20
+}
 

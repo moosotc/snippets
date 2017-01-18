@@ -14,6 +14,10 @@ vol=$(pamixer --get-volume) || true
 sedf() {
     sed -n '/\* index/,/description/{/descr/s/.*= "\(.*\)"/\1/p}'
 }
+xdotool search --onlyvisible --class i3bar || {
+    i3-msg bar mode hide
+    (sleep 3; i3-msg bar mode invisible) &
+}
 printf "$(pacmd list-sinks | sedf) $vol%%\x003" >/tmp/i3.fifo
 pacmd list-sink-inputs | grep index | while read line
 do

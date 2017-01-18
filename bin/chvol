@@ -6,6 +6,10 @@ vol=$((vol"$1"5))
 pamixer --set-volume $vol
 
 pgrep &>/dev/null -a -f i3mon.py && {
+    xdotool search --onlyvisible --class i3bar || {
+        i3-msg bar mode hide
+        (sleep 3; i3-msg bar mode invisible) &
+    }
     printf "♬ $vol%%\x002">/tmp/i3.fifo
 } || {
     # following must die

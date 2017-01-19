@@ -2,7 +2,7 @@
 . asroot
 
 test -z "$1" && {
-    printf "wrong usage"
+    echo "wrong usage" 1>&2
     exit 1
 }
 action="$1"

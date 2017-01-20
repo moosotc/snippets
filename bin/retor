@@ -1,2 +1,4 @@
 #!/bin/sh
-sudo pkill -HUP tor
+. asroot
+systemctl restart tor
+#pkill -HUP tor

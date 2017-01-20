@@ -3,6 +3,6 @@ alang=en
 slang=en
 sub=no
 vo=opengl
-hwdec=vaapi
+hwdec=no
 sub-font-size=50
 sub-font="noto sans"

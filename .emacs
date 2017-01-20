@@ -489,7 +489,7 @@
  '(org-support-shift-select t)
  '(package-selected-packages
    (quote
-    (lacarte merlin caml tuareg bbdb-csv-import org-beautify-theme xresources-theme wiki-summary helm-wordnet xkcd haskell-mode helm helm-ag helm-ag-r helm-cmd-t helm-dictionary helm-ghc helm-git helm-git-files helm-git-grep helm-google helm-hoogle helm-package helm-themes helm-unicode hl-anything hl-indent unicode-whitespace emacs-cl conkeror-minor-mode bbdb2erc bbdb-ext bbdb- ag)))
+    (lua-mode lacarte merlin caml tuareg bbdb-csv-import org-beautify-theme xresources-theme wiki-summary helm-wordnet xkcd haskell-mode helm helm-ag helm-ag-r helm-cmd-t helm-dictionary helm-ghc helm-git helm-git-files helm-git-grep helm-google helm-hoogle helm-package helm-themes helm-unicode hl-anything hl-indent unicode-whitespace emacs-cl conkeror-minor-mode bbdb2erc bbdb-ext bbdb- ag)))
  '(safe-local-variable-values
    (quote
     ((eval overwrite-mode t)

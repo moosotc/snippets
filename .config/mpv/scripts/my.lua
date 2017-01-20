@@ -1,5 +1,5 @@
 local on = false
-function osc_toggle(mode)
+function osc_toggle (mode)
    if on then
       mp.command ("script-message osc-visibility auto")
    else
@@ -7,11 +7,11 @@ function osc_toggle(mode)
    end
    on = not on
 end
-mp.register_script_message("osc-toggle", osc_toggle)
+mp.register_script_message ("osc-toggle", osc_toggle)
 
-function clear(name, value)
+function clear (name, value)
    if value > 0 then
       mp.osd_message (" ", 0.001)
     end
 end
-mp.observe_property("osd-width", "number", clear)
+mp.observe_property ("osd-width", "number", clear)

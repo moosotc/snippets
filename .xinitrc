@@ -13,7 +13,7 @@ xrdb -merge $HOME/.Xdefaults
 
 compton -b
 hsetroot -solid '#63718c'
-tmux new-session -d
+tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
 tint2 & disown
 exec i3

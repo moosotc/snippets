@@ -18,13 +18,13 @@ eval $(xdotool search --onlyvisible --class tint2 getwindowgeometry --shell)
 tint2y=$Y
 tint2h=$HEIGHT
 
-bw=2
+bw=$(xwininfo -id $wid | grep "Relative upper-left X:" | cut -d: -f2)
 i3titleheight=26
 
-ty=$((i3barh+bw+i3titleheight))
+ty=$((i3barh+bw+i3titleheight-bw))
 
 cx=$(((dispw-winw)/2))
-cy=$(((disph-tint2h-winh-i3titleheight)/2))
+cy=$(((disph-tint2h-winh-i3titleheight-bw)/2))
 
 by=$((tint2y-winh-bw))
 

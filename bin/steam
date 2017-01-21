@@ -1,0 +1,6 @@
+#!/bin/sh
+exec 1>/tmp/steam.out
+exec 2>/tmp/steam.err
+#pkill compton
+$HOME/x/app/steam/usr/bin/steam
+#compton --backend glx -D 1 -b

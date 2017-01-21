@@ -1,0 +1,3 @@
+#!/bin/sh
+. asroot
+btmgmt pair 00:1E:3D:64:56:A6

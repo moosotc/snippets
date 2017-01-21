@@ -1,7 +1,7 @@
 #!/bin/sh
 . asroot
-set -x
 modprobe btusb
+modprobe joydev
 systemctl start bluetooth
 bluetoothctl <<EOF
 power on

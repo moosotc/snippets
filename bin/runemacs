@@ -3,4 +3,3 @@ set -e
 
 (xdotool search --sync --class emacs windowactivate &)
 pgrep -a -f '^emacs$' || exec emacs
-

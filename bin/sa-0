@@ -2,5 +2,5 @@
 . asroot
 systemctl stop bluetooth
 btmgmt disconnect 00:1E:3D:64:56:A6
-modprobe -r hid_sony hidp btusb joydev btusb btrtl btbcm btintel
-modprobe -r bluetooth
+modprobe -r hid_sony hidp btusb joydev btusb btrtl btbcm btintel bluetooth
+

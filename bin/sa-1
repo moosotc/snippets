@@ -1,7 +1,8 @@
 #!/bin/sh
 . asroot
-systemctl start bluetooth
+set -x
 modprobe btusb
+systemctl start bluetooth
 bluetoothctl <<EOF
 power on
 agent on

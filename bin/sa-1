@@ -1,3 +1,9 @@
 #!/bin/sh
 . asroot
-btmgmt pair 00:1E:3D:64:56:A6
+systemctl start bluetooth
+modprobe btusb
+bluetoothctl <<EOF
+power on
+agent on
+pair 00:1E:3D:64:56:A6
+EOF

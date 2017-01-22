@@ -248,7 +248,7 @@ def main ():
 
         swap = swapused ()
         if swap != 0:
-            j += [{"color": "#a9a9a9", "full_text": "swap: %5.1f%%" % swap}]
+            j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
         print ("%s," % json.dumps (j), flush=True)
 

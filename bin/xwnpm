@@ -16,7 +16,6 @@ i3barh=$HEIGHT                  # i3bar height
 
 eval $(xdotool search --onlyvisible --class tint2 getwindowgeometry --shell)
 tint2y=$Y
-tint2h=$HEIGHT
 
 bw=$(xwininfo -id $wid | awk '/Relative upper-left X/{print $4}')
 i3titleheight=26

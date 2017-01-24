@@ -27,6 +27,8 @@ bindsym $mod+r exec rofi_run
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+set $execnoid exec --no-startup-id
+
 # change focus
 #bindsym $mod+j focus left
 #bindsym $mod+k focus down
@@ -66,7 +68,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 bindsym $mod+Shift+w exec runconk
-bindsym $mod+Shift+z exec --no-startup-id runemacs
+bindsym $mod+Shift+z $execnoid runemacs
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -161,8 +163,6 @@ assign [class="Tor Browser"] torbrowser
 focus_follows_mouse no
 for_window [class="[.]*"] floating enable
 
-set $execnoid exec --no-startup-id
-
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioMute $execnoid pacycle
@@ -191,3 +191,4 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
+#new_window pixel 100

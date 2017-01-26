@@ -37,3 +37,4 @@
 ** Cormorant       https://github.com/CatharsisFonts/Cormorant
 ** Roboto          https://material.io/guidelines/resources/roboto-noto-fonts.html
    Used by youtube
+** Anonymous Pro   http://www.marksimonson.com/fonts/view/anonymous-pro

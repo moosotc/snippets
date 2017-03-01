@@ -6,12 +6,12 @@ set -e
 exec 1>/dev/null 2>&1
 
 true && {
-    vol=$(pamixer --get-volume) || true
     port=analog-output-speaker
     pacmd list-sinks | grep port | grep active | grep headph || {
         port=analog-output-headphones
     }
     pacmd set-sink-port alsa_output.pci-0000_00_1b.0.analog-stereo $port
+    vol=$(pamixer --get-volume) || true
     printf "$port $vol%%\x003" >/tmp/i3.fifo
     exit 0
 }

@@ -504,6 +504,14 @@
  '(smtpmail-smtp-server "smtp.akado.ru" t)
  '(smtpmail-smtp-service 25 t))
 
+(setq message-send-mail-function 'smtpmail-send-it
+      smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
+      smtpmail-auth-credentials '(("smtp.gmail.com" 587
+                                   "moosotc@gmail.com" nil))
+      smtpmail-default-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-server "smtp.gmail.com"
+      smtpmail-smtp-service 587)
+
 (setq user-mail-address "moosotc@gmail.com")
 
 (defun transpose-assignment ()

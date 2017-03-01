@@ -1,37 +1,10 @@
 #!/bin/sh
-
-# based on http://askubuntu.com/questions/71863\
-# /how-to-change-pulseaudio-sink-with-pacmd-set-default-sink-during-playback
 set -e
 exec 1>/dev/null 2>&1
 
-true && {
-    port=analog-output-speaker
-    pacmd list-sinks | grep port | grep active | grep headph || {
-        port=analog-output-headphones
-    }
-    pacmd set-sink-port alsa_output.pci-0000_00_1b.0.analog-stereo $port
-    vol=$(pamixer --get-volume) || true
-    printf "$port $vol%%\x003" >/tmp/i3.fifo
-    exit 0
-}
-
-# this logic is binary, so the name is misleasing it doesn't cycle it
-# toggles between two "upmost" sinks
-
-sink=$(pacmd list-sinks | awk '/[^\*] index: / {print $2}')
-pacmd set-default-sink $sink
+port=analog-output-speaker
+pacmd list-sinks | grep "active.*port.*headph" || port=analog-output-headphones
+name=${port##analog-output-}
+pacmd set-sink-port alsa_output.pci-0000_00_1b.0.analog-stereo $port
 vol=$(pamixer --get-volume) || true
-sedf() {
-    sed -n '/\* index/,/description/{/descr/s/.*= "\(.*\)"/\1/p}'
-}
-xdotool search --onlyvisible --class i3bar || {
-    i3-msg bar mode hide
-    (sleep 3; i3-msg bar mode invisible) &
-}
-printf "$(pacmd list-sinks | sedf) $vol%%\x003" >/tmp/i3.fifo
-pacmd list-sink-inputs | grep index | while read line
-do
-    set -- $line
-    pacmd move-sink-input $2 $sink
-done
+printf "$name $vol%%\x003" >/tmp/i3.fifo

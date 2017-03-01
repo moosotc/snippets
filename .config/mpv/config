@@ -6,3 +6,4 @@ vo=opengl
 hwdec=no
 sub-font-size=50
 sub-font="noto sans"
+hidpi-window-scale=no

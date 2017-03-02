@@ -160,6 +160,7 @@ for_window [class="[.]*"] floating enable
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioMute $execnoid pacycle
+bindsym Shift+XF86AudioMute $execnoid paswitch
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+bracketleft \
         $execnoid st -f 'mooterm:pixelsize=24' tmux attach-session -t yt

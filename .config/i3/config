@@ -187,3 +187,5 @@ bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
 #new_window pixel 100
+bindsym mod4+b border none
+bindsym mod4+Shift+b border normal

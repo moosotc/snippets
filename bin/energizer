@@ -2,7 +2,7 @@
 set -e
 . asroot
 
-modprobe -r kvm-intel kvm
+modprobe -r kvm-intel kvm pcspkr applesmc
 
 echo '1' >/sys/module/snd_hda_intel/parameters/power_save
 echo 'min_power' >/sys/class/scsi_host/host0/link_power_management_policy
@@ -13,6 +13,20 @@ for f in $(find /sys/devices -name product -type f \
                 -exec grep -l '\(Keyboard\|Mouse\)' {} \;); do
     echo '0' >$(dirname $f)/power/autosuspend || echo "Hum $f"
 done
+
+# Following
+# a. Taints kernel
+# b. Reduces power consumption
+#    (without it power hoovers at ~5W and with it goes as low as 4,
+#     as measured by external wattmetter and rapl pkg reading also goes
+#     sub 1.0 (which rarely if ever happens otherwise))
+# c. For whatever reason this also eliminates tearing in x11+opengl
+#    if i3-bar is switched from invisible to shown while fullscreen
+#    OpenGL application is doing something in the foreground tearing
+#    is back, but video mode change brings thangs back to tearfree
+#    (switching to another vt or doing something with xrandr
+#     such as for instance - "xrandr -x; xrandr -x")
+echo 1 | tee >/dev/null /sys/module/i915/parameters/enable_fbc
 
 ethtool -s enp3s0f0 wol d
 echo '0' >/sys/class/rtc/rtc0/wakealarm

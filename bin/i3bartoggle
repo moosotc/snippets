@@ -1,18 +1,5 @@
 #!/bin/sh
 set -e
 
-false && {
-    xdotool search --onlyvisible --class i3bar && {
-        i3-msg bar mode invisible
-    } || {
-        i3-msg bar mode hide
-    }
-} || {
-    xdotool search --onlyvisible --class i3bar && {
-        pkill -STOP 'i3bar$'
-        xdotool search --class i3bar windowunmap
-    } || {
-        xdotool search --class i3bar windowmap
-        pkill -CONT 'i3bar$'
-    }
-}
+xdotool search --onlyvisible --class i3bar && hs=hide || hs=show
+i3-msg bar hidden_state $hs

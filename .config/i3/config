@@ -23,12 +23,6 @@ bindsym $mod+Shift+q kill
 bindsym $mod+r exec rofi_run
 set $execnoid exec --no-startup-id
 
-# change focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+semicolon focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Up focus left
 bindsym $mod+Down focus right
@@ -69,12 +63,6 @@ bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-#bindsym $mod+a focus parent
-
-# focus the child container
-#bindsym $mod+d focus child
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -138,7 +126,7 @@ bindsym mod1+F7 mode "resize"
 bar {
         mode hide
         hidden_state show
-        modifier mod1
+        modifier none
         position top
         status_command exec i3mon.py 3 /tmp/i3.fifo
         colors {
@@ -186,6 +174,3 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
-#new_window pixel 100
-bindsym mod4+b border none
-bindsym mod4+Shift+b border normal

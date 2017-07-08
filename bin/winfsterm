@@ -1,0 +1,6 @@
+#!/bin/sh
+wid=${wid-$(xdotool getactivewindow)}
+xdotool set_window --overrideredirect 1 $wid
+xdotool windowunmap $wid
+xdotool windowmap $wid
+xdotool windowfocus $wid

@@ -7,8 +7,8 @@ pamixer --set-volume $vol
 
 pgrep &>/dev/null -a -f i3mon.py && {
     xdotool search --onlyvisible --class i3bar || {
-        i3-msg bar mode hide
-        (sleep 3; i3-msg bar mode invisible) &
+        i3-msg bar hidden_state show
+        (sleep 3; i3-msg bar hidden_state hide) &
     }
     printf "♬ $vol%%\x002">/tmp/i3.fifo
 } || {

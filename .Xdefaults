@@ -59,3 +59,4 @@ XBoard*usePolyglotBook: 0
 XBoard*PolyglotBook: /home/malc/x/chs/Book.bin
 XBoard*autoDisplayComment: 0
 XBoard*autoDisplayTags: 0
+XTerm*termName:         xterm-256color

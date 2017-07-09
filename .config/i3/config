@@ -174,3 +174,8 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
+
+bindsym mod4+Ctrl+x $execnoid "xrandr -x; xrandr -x"
+bindsym mod4+Ctrl+f floating enable, border none, resize set 2560 1440, move position 0 0
+#popup_during_fullscreen leave_fullscreen
+#focus_on_window_activation urgent

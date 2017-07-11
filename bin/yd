@@ -15,5 +15,5 @@ flags="--no-playlist --prefer-insecure --ignore-config --no-check-certificate"
 flags=
 flags="$flags --youtube-skip-dash-manifest"
 flags="$flags -f [height<=?1024]"
-flags="$flags -t $arg"
+flags="$flags -o %(title)s-%(id)s.%(ext)s $arg"
 exec $yt $flags "$@"

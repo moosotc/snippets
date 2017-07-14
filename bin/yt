@@ -23,7 +23,7 @@ test -z "$arg" && {
     exit 1
 }
 
-expr "$arg" : ".*\.\(pdf\|html\?\)$" && {
+expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
     expr "$arg" : ".*cnn\.com.*" || {
         exec llppac "$arg"
     } && true

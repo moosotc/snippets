@@ -16,6 +16,7 @@ tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
 ! test -e /tmp/noi3 && {
     tint2 & disown
+    export LIBGL_DRI3_DISABLE=1
     exec i3
 } || {
     exec st -f mooterm-14

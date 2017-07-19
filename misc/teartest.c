@@ -56,7 +56,7 @@ static void setup_opengl (void)
     glViewport (0, 0, WIDTH, HEIGHT);
 }
 
-static void main_loop (int double_swap)
+static void main_loop (long nswaps)
 {
     SDL_Event event;
     static int f;
@@ -93,7 +93,7 @@ static void main_loop (int double_swap)
             }
         }
 
-        repaint (double_swap);
+        repaint (nswaps);
     }
 }
 

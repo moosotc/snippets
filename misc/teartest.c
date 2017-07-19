@@ -28,10 +28,11 @@ static void repaint (long nswaps)
     GLclampf c;
     f ^= 1;
     c = f ? 0.4 : 0.0;
-    glClearColor (c, c, c, 0);
-    glClear (GL_COLOR_BUFFER_BIT);
-    for (int i = 0; i < nswaps; ++i)
+    for (int i = 0; i < nswaps; ++i) {
+        glClearColor (c, c, c, 0);
+        glClear (GL_COLOR_BUFFER_BIT);
         SDL_GL_SwapWindow (state.win);
+    }
 }
 
 static void setup_sdl (void)

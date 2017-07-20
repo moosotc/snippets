@@ -1,5 +1,6 @@
 /* based on the SDL tutorial code from the web, sadly I don't remember
    where from exactly */
+#define _GNU_SOURCE
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 
@@ -20,6 +21,7 @@
 static struct {
     SDL_Window *win;
     SDL_GLContext ctx;
+    char *title;
 } state;
 
 static void repaint (long nswaps)
@@ -28,8 +30,8 @@ static void repaint (long nswaps)
     GLclampf c;
     f ^= 1;
     c = f ? 0.4 : 0.0;
+    glClearColor (c, c, c, 0);
     for (int i = 0; i < nswaps; ++i) {
-        glClearColor (c, c, c, 0);
         glClear (GL_COLOR_BUFFER_BIT);
         SDL_GL_SwapWindow (state.win);
     }
@@ -42,7 +44,7 @@ static void setup_sdl (void)
         exit (1);
     }
 
-    state.win = SDL_CreateWindow ("SDL Tutorial",
+    state.win = SDL_CreateWindow (state.title,
                                   SDL_WINDOWPOS_UNDEFINED,
                                   SDL_WINDOWPOS_UNDEFINED,
                                   WIDTH, HEIGHT,
@@ -72,9 +74,17 @@ static void main_loop (long nswaps)
                     exit (EXIT_SUCCESS);
                     break;
 
-                case SDLK_f:
+                case SDLK_p:
                     SDL_SetWindowFullscreen (
                         state.win, (f=!f) * SDL_WINDOW_FULLSCREEN_DESKTOP);
+                    break;
+
+                case SDLK_1...SDLK_9:
+                    nswaps = event.key.keysym.sym - SDLK_1 + 1;
+                    free (state.title);
+                    state.title = NULL;
+                    asprintf (&state.title, "swaps=%lu", nswaps);
+                    SDL_SetWindowTitle (state.win, state.title);
                     break;
 
                 default:
@@ -121,6 +131,7 @@ int main (int argc, char* argv[])
         }
     }
 
+    asprintf (&state.title, "nswaps=%ld", nswaps);
     setup_sdl ();
     setup_opengl ();
     main_loop (nswaps > 0 ? nswaps : 1);

@@ -5,6 +5,7 @@ exec 1>/tmp/xinit.out
 
 xrandr --dpi 152x152
 
+setxkbmap -option "terminate:ctrl_alt_bksp"
 xset dpms 600 1200 2400
 xset +dpms
 setcapskey
@@ -16,8 +17,8 @@ tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
 ! test -e /tmp/noi3 && {
     tint2 & disown
-    export LIBGL_DRI3_DISABLE=1
     exec i3
 } || {
-    exec st -f mooterm-14
+    st -f mooterm-14
+#    twm
 }

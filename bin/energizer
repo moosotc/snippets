@@ -26,7 +26,7 @@ done
 #    is back, but video mode change brings thangs back to tearfree
 #    (switching to another vt or doing something with xrandr
 #     such as for instance - "xrandr -x; xrandr -x")
-echo 1 | tee >/dev/null /sys/module/i915/parameters/enable_fbc
+echo 1 >/sys/module/i915/parameters/enable_fbc
 
 ethtool -s enp3s0f0 wol d
 echo '0' >/sys/class/rtc/rtc0/wakealarm

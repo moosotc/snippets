@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
-vt=vt$(tty)
-exec X -nolisten tcp -verbose 0 ${vt##/dev/tty}
+vt=$(tty)
+exec X -nolisten tcp -verbose 0 "vt${vt##/dev/tty}"

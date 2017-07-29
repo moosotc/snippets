@@ -5,7 +5,7 @@ exec 1>/tmp/xinit.out
 
 xrandr --dpi 152x152
 
-setxkbmap -option "terminate:ctrl_alt_bksp"
+#setxkbmap -option "terminate:ctrl_alt_bksp"
 xset dpms 600 1200 2400
 xset +dpms
 setcapskey

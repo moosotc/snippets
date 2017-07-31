@@ -2,7 +2,7 @@
 set -e
 
 vol=$(pamixer --get-volume) || true
-vol=$((vol"$1"5))
+test $vol -eq 100 -a "$1" = + -o $vol -eq 0 -a "$1" = - || vol=$((vol"$1"5))
 pamixer --set-volume $vol
 
 pgrep &>/dev/null -a -f i3mon.py && {

@@ -156,6 +156,7 @@ bindsym $mod+grave $execnoid yt
 bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
 bindsym mod1+F10 $execnoid xtogglewinmax
+bindsym mod1+F11 $execnoid xtogglefs
 bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid sel2clip
@@ -174,8 +175,5 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
-
-bindsym mod4+Ctrl+x $execnoid "xrandr -x; xrandr -x"
-bindsym mod4+Ctrl+f floating enable, border none, resize set 2560 1440, move position 0 0
-#popup_during_fullscreen leave_fullscreen
-#focus_on_window_activation urgent
+#bindsym mod4+Ctrl+f floating enable, border none, \
+#        resize set 2560 1440, move position 0 0

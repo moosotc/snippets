@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+id=$(xdotool getactivewindow)
+geom=$(xprop -notype -id $id GEOMOO)
+expr >/dev/null "$geom" : ".*: .*" && {
+    geom=$(xdotool getwindowgeometry --shell $id)
+    eval $geom
+    xprop -id $id -format GEOMOO 8s -set GEOMOO "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
+    xdotool getactivewindow windowsize 100% 100% windowmove 0 0
+} || {
+    eval eval ${geom:8}
+    xprop -id $id -remove GEOMOO
+    xdotool windowsize $id $W $H windowmove $id $((X-bw)) $Y
+}

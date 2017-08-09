@@ -76,7 +76,7 @@ alias ll='ls -la'
 alias xpwd='printf $PWD | xclip -i'
 alias te=emacsclient
 alias locaml='rlwrap ocaml'
-alias mpvin='read a; mpv "$a"'
+alias mpvin='(read a; mpv "$a")'
 alias h='history'
 alias which-command &>/dev/null && unalias which-command
 alias sudo='sudo ${DISPLAY+-A}'

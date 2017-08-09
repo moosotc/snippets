@@ -1,3 +1,3 @@
 #!/bin/sh
 export SUDO_ASKPASS=$HOME/bin/askpass
-test "$(id -u)" != "0" && exec sudo -A "$0" "$@" || true
+test "$(id -u)" != "0" && exec sudo ${DISPLAY+-A} "$0" "$@" || true

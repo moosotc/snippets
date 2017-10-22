@@ -17,7 +17,7 @@ done
 # Following
 # a. Taints kernel
 # b. Reduces power consumption
-#    (without it power hoovers at ~5W and with it goes as low as 4,
+#    (without it power hoovers at ~5W and with it goes as low as 3,
 #     as measured by external wattmetter and rapl pkg reading also goes
 #     sub 1.0 (which rarely if ever happens otherwise))
 echo 1 >/sys/module/i915/parameters/enable_fbc

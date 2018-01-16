@@ -31,7 +31,7 @@ def usr1handler (a1, a2):
     global prevt
     prevt = 0
 signal.signal (signal.SIGUSR1, usr1handler)
-mailcheckinterval = 2*60*60
+mailcheckinterval = 20*60 #4*60*60
 
 # SSL code taken almost verbatim from:
 # https://wiki.python.org/moin/SSL

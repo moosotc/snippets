@@ -6,6 +6,6 @@ export DISPLAY=${DISPLAY:-:0}
 exec 2>/dev/null
 exec 1>/dev/null
 #exec xulrunner $HOME/x/rcs/git/conkeror2/application.ini "$@" &
-exec firefox \
+exec firefox-esr \
      --app $HOME/x/rcs/git/conkeror2/application.ini \
      "$@" &

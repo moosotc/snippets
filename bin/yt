@@ -33,7 +33,7 @@ trap "printf '\x01' >$ctl" 0
 
 printf "📺 $arg" >$ctl
 title=$($yt -e $arg)
-printf "📺 $title" >$ctl
+printf "%s" "📺 $title" >$ctl
 tmux new-window -n "$title"                                             \
      mpv --quiet "$arg"                                                 \
      --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]' ||   \

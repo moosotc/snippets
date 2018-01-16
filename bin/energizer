@@ -25,4 +25,4 @@ echo 1 >/sys/module/i915/parameters/enable_fbc
 ethtool -s enp3s0f0 wol d
 echo '0' >/sys/class/rtc/rtc0/wakealarm
 date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
-echo 'mem' >/sys/power/state
+#echo 'mem' >/sys/power/state

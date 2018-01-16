@@ -160,6 +160,7 @@ bindsym mod1+F11 $execnoid xtogglefs
 bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid sel2clip
+bindsym Ctrl+Shift+grave $execnoid xclip -selection clipboard -o | xclip -i
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show

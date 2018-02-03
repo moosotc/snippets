@@ -2,4 +2,6 @@
 
 test -z "$1" && arg="$(xclip -o)" || arg="$1"
 #exec wget -c "$arg"
-exec curl -O "$arg"
+
+# find a way to unescape output file name
+exec curl -O "$arg" -L -w "%{filename_effective} %{size_download}\n"

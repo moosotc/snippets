@@ -79,7 +79,7 @@ alias locaml='rlwrap ocaml'
 alias mpvin='(read a; mpv "$a")'
 alias h='history'
 alias which-command &>/dev/null && unalias which-command
-alias sudo='sudo ${DISPLAY+-A}'
+sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
 
 powerlevel9k () {

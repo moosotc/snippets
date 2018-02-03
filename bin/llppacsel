@@ -1,2 +1,2 @@
 #!/bin/sh
-exec llppac "$(xclip -o)" "$*"
+exec llppac $* "$(xclip -o)"

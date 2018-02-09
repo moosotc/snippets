@@ -12,4 +12,4 @@ xdotool search --onlyvisible --class i3bar || {
     i3-msg bar hidden_state show
     (sleep 3; i3-msg bar hidden_state hide) &
 }
-printf "$name $vol%%\x003" >/tmp/i3.fifo
+printf "$name $vol%%\0003" >/tmp/i3.fifo

@@ -14,7 +14,6 @@ bindkey "^[[4~" end-of-line
 bindkey "^[[3~" delete-char
 
 fpath=(~/.config/zsh $fpath)
-path=($path ~/.local/bin)
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -99,3 +98,4 @@ test $TERM[0,2] = st && {
     zle -N zle-line-init
     zle -N zle-line-finish
 }
+ulimit -s 256

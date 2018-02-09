@@ -29,7 +29,7 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
     } && true
 }
 
-trap "printf '\x01' >$ctl" 0
+trap "printf '\001' >$ctl" 0
 
 printf "📺 $arg" >$ctl
 title=$($yt -e $arg)

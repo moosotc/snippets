@@ -98,4 +98,4 @@ test $TERM[0,2] = st && {
     zle -N zle-line-init
     zle -N zle-line-finish
 }
-ulimit -s 256
+ulimit -s 512

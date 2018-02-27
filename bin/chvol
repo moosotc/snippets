@@ -1,16 +1,20 @@
 #!/bin/sh
 set -e
 
-vol=$(pamixer --get-volume) || true
-test $vol -eq 100 -a "$1" = + -o $vol -eq 0 -a "$1" = - || vol=$((vol $1 5))
-pamixer --set-volume $vol
+pgrep pulseaudio && {
+    vol=$(pamixer --get-volume) || true
+    test $vol -eq 100 -a "$1" = + -o $vol -eq 0 -a "$1" = - || vol=$((vol $1 5))
+    pamixer --set-volume $vol
+} || {
+    vol=$(amixer -- sset Master 5%$1 | awk '/[.*%]/{print $4}')
+}
 
 pgrep -a -f i3mon.py &>/dev/null && {
     xdotool search --onlyvisible --class i3bar || {
         i3-msg bar hidden_state show
         (sleep 3; i3-msg bar hidden_state hide) &
     }
-    printf "♬ $vol%%\0002">/tmp/i3.fifo
+    printf "%s\0002" "♬ $vol">/tmp/i3.fifo
 } || {
     # following must die
     echo "$vol%" | dzen2 -p 2 -fn 20

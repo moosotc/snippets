@@ -2,6 +2,11 @@
 set -e
 exec 1>/dev/null 2>&1
 
+pgrep pulseaudio || {
+    amixer set Speaker toggle | grep -q '\[on\]' && name="🔉" || name="🎧"
+    printf "$name %s\0003" >/tmp/i3.fifo
+    exit 0
+}
 port=analog-output-speaker
 pacmd list-sinks | grep "active.*port.*headph" || port=analog-output-headphones
 name=${port##analog-output-}

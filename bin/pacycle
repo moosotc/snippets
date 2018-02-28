@@ -4,7 +4,8 @@ exec 1>/dev/null 2>&1
 
 pgrep pulseaudio || {
     amixer set Speaker toggle | grep -q '\[on\]' && name="🔉" || name="🎧"
-    printf "$name %s\0003" >/tmp/i3.fifo
+    printf "$name %s\0003" \
+           $(amixer -- get Master | awk '/[.*%]/{print $4}')>/tmp/i3.fifo
     exit 0
 }
 port=analog-output-speaker

@@ -2,20 +2,21 @@
 set -e
 exec 1>/dev/null 2>&1
 
-pgrep pulseaudio || {
-    amixer set Speaker toggle | grep -q '\[on\]' && name="🔉" || name="🎧"
-    printf "$name %s\0003" \
-           $(amixer -- get Master | awk '/[.*%]/{print $4}')>/tmp/i3.fifo
-    exit 0
-}
-port=analog-output-speaker
-pacmd list-sinks | grep "active.*port.*headph" || port=analog-output-headphones
-name=${port##analog-output-}
-test $name = "headphones" && name="🎧 $name" || name="🔉 $name"
-pacmd set-sink-port alsa_output.pci-0000_00_1b.0.analog-stereo $port
-vol=$(pamixer --get-volume) || true
+if ! pgrep -q pulseaudio; then
+    amixer set Speaker toggle | grep -q '\[on\]' && name="🔉" || name=""
+    vol=$(amixer -- get Master | awk '/[.*%]/{print $4}')
+else
+    port=analog-output-speaker
+    pacmd list-sinks | grep "active.*port.*headph" \
+        || port=analog-output-headphones
+    name=${port##analog-output-}
+    test $name = "headphones" && name="🎧 $name" || name="🔉 $name"
+    pacmd set-sink-port alsa_output.pci-0000_00_1b.0.analog-stereo $port
+    vol="$(pamixer --get-volume) %" || true
+fi
+
 xdotool search --onlyvisible --class i3bar || {
     i3-msg bar hidden_state show
     (sleep 3; i3-msg bar hidden_state hide) &
 }
-printf "$name $vol%%\0003" >/tmp/i3.fifo
+printf "%s %s\0003" "$name" "$vol" >/tmp/i3.fifo

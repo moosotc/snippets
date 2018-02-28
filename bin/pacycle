@@ -3,7 +3,7 @@ set -e
 exec 1>/dev/null 2>&1
 
 if ! pgrep -q pulseaudio; then
-    amixer set Speaker toggle | grep -q '\[on\]' && name="🔉" || name=""
+    amixer set Speaker toggle | grep -q '\[on\]' && name="🎧+🔉" || name="🎧"
     vol=$(amixer -- get Master | awk '/[.*%]/{print $4}')
 else
     port=analog-output-speaker

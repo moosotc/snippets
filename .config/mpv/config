@@ -7,4 +7,4 @@ hwdec=vaapi
 sub-font-size=50
 sub-font="noto sans"
 hidpi-window-scale=no
-#ao=alsa
+ao=alsa

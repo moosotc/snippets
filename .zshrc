@@ -77,6 +77,7 @@ alias te=emacsclient
 alias locaml='rlwrap ocaml'
 alias mpvin='(read a; mpv "$a")'
 alias h='history'
+alias psax="ps ax | grep -v ]$"
 alias which-command &>/dev/null && unalias which-command
 sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color

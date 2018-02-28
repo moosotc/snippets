@@ -1,0 +1,14 @@
+-*- mode: text -*-
+
+# sample
+# S in S9 59 is too much like 5
+# 3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1
+# 01234567890
+
+Why not _ in emacs
+
+PT Mono         : gnus
+Fira Mono       : above sample (S9/59 in particular)
+Source Code Pro : S9/59
+                  effect less pronounced than fira mono, but still there
+monofur         : annoying itallics, gnus, funky э - Э

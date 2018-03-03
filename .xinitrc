@@ -15,10 +15,9 @@ xrdb -merge $HOME/.Xdefaults
 xsetroot -solid '#63718c'
 tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
-! test -e /tmp/noi3 && {
+test ! -e /tmp/noi3 && {
     tint2 & disown
     exec i3
 } || {
-    st -f mooterm-14
-#    twm
+    st -f mono-14
 }

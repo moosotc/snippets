@@ -7,8 +7,10 @@ emacs.geometry: 80x40+777+177
 emacs*menubar*font: ui-8
 emacs.background: grey80
 emacs.toolBar: 0
-emacs.font: fira mono-9.3
-emacs.italic.attributeFont: source code pro-9.3
+emacs.font: pt mono-9.3
+!emacs.font: anonymous pro-10.3
+!emacs.font: fira mono-9.3
+!emacs.italic.attributeFont: source code pro-9.3
 emacs.scrollBarWidth: 7
 
 rofi.font: monofur 18
@@ -59,4 +61,15 @@ XBoard*usePolyglotBook: 0
 XBoard*PolyglotBook: /home/malc/x/chs/Book.bin
 XBoard*autoDisplayComment: 0
 XBoard*autoDisplayTags: 0
+
 XTerm*termName:         xterm-256color
+XTerm*metaSendsEscape: true
+XTerm.termName: xterm-256color
+
+XTerm.vt100*locale: true
+XTerm.vt100*utf8: 2
+
+XTerm*reverseVideo: true
+XTerm*renderFont: true
+XTerm*faceName: Anonymous Pro
+XTerm*faceSize: 10

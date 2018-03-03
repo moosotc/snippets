@@ -72,4 +72,4 @@ XTerm.vt100*utf8: 2
 XTerm*reverseVideo: true
 XTerm*renderFont: true
 XTerm*faceName: Anonymous Pro
-XTerm*faceSize: 10
+XTerm*faceSize: 12

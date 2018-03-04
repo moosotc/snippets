@@ -19,4 +19,4 @@ Anonymous pro   : kerning cf. life
                   but easily observable with
                   (set-frame-font "pt mono-9.8" nil nil)
                   (set-frame-font "anonymous pro-11" nil nil)
-                  in emacs
+                  in emacs, 5S situation better than with PT Mono however

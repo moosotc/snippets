@@ -12,3 +12,11 @@ Fira Mono       : above sample (S9/59 in particular)
 Source Code Pro : S9/59
                   effect less pronounced than with fira mono, but still there
 monofur         : annoying itallics, gnus, funky э - Э
+Anonymous pro   : kerning cf. life
+                  otherwise it seems identical to PT Mono,
+                  hard to demonstrate with default face2.html
+                  need to have the fonts have different sizes
+                  but easily observable with
+                  (set-frame-font "pt mono-9.8" nil nil)
+                  (set-frame-font "anonymous pro-11" nil nil)
+                  in emacs

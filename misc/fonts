@@ -7,7 +7,7 @@
 
 Why not _ in emacs
 
-PT Mono         : gnus
+PT Mono         : gnus, ~ - tilde is to similar to dash - - (~-)
 Fira Mono       : above sample (S9/59 in particular)
 Source Code Pro : S9/59
                   effect less pronounced than with fira mono, but still there

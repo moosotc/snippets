@@ -705,7 +705,7 @@
   (with-temp-buffer
     (if (string-equal s (string #x1))
         (insert s)
-      (insert (concat "🙋 " s)))
+      (insert "🙋 " s))
     (when (file-writable-p "/tmp/i3.fifo")
       (write-region (point-min)
                     (point-max)

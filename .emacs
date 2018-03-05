@@ -701,8 +701,11 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
+;; pictographs/emoticons
 ;; thanks to wasamasa from irc.freenode.org emacs
 ;; (otherwise emacs uses default substitution of Symbola)
+(set-fontset-font "fontset-default"
+                  '(#x1F300 . #x1F5FF) "noto emoji" nil 'prepend)
 (set-fontset-font "fontset-default"
                   '(#x1F600 . #x1F64F) "noto emoji" nil 'prepend)
 

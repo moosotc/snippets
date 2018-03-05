@@ -701,6 +701,11 @@
 
 (put 'dired-find-alternate-file 'disabled nil)
 
+;; thanks to wasamasa from irc.freenode.org emacs
+;; (otherwise emacs uses default substitution of Symbola)
+(set-fontset-font "fontset-default"
+                  '(#x1F600 . #x1F64F) "noto emoji" nil 'prepend)
+
 (defun notify-moo (s)
   (with-temp-buffer
     (if (string-equal s (string #x1))

@@ -7,7 +7,11 @@ pgrep pulseaudio && {
     test $vol -eq 100 -a "$1" = + -o $vol -eq 0 -a "$1" = - || vol=$((vol $1 5))
     pamixer --set-volume $vol
 } || {
-    vol=$(amixer -- sset Master 5%$1 | awk '/[.*%]/{print $4}')
+    amixer sget Speaker | grep -q "\[on" && {
+        vol=$(amixer sset Speaker 5%$1 | awk 'END{print $5}')
+    } || {
+        vol=$(amixer sset Headphone 5%$1 | awk 'END{print $5}')
+    }
 }
 
 pgrep -a -f i3mon.py &>/dev/null && {

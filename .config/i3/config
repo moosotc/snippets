@@ -147,7 +147,7 @@ for_window [class="[.]*"] floating enable
 
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
-bindsym XF86AudioMute $execnoid pacycle
+bindsym XF86AudioMute $execnoid acycle
 bindsym Shift+XF86AudioMute $execnoid paswitch
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+bracketleft \

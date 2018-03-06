@@ -698,6 +698,8 @@
 
 (setq erc-log-channels-directory "~/irclogs/erc")
 (setq erc-save-buffer-on-part t)
+;; thanks to fledermaus#erc
+(setq erc-auto-query 'bury)
 
 (put 'dired-find-alternate-file 'disabled nil)
 

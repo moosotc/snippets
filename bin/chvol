@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
+exec 1>/dev/null 2>&1
 
 pgrep pulseaudio && {
     vol=$(pamixer --get-volume) || true
@@ -15,7 +16,4 @@ pgrep -a -f i3mon.py &>/dev/null && {
         (sleep 3; i3-msg bar hidden_state hide) &
     }
     printf "%s\0002" "♬ $vol">/tmp/i3.fifo
-} || {
-    # following must die
-    echo "$vol%" | dzen2 -p 2 -fn 20
 }

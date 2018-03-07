@@ -17,7 +17,7 @@ tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {
     tint2 & disown
-    rxvtd & disown
+    rxvtd -q -o -f
     exec i3
 } || {
     st -f mono-14

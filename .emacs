@@ -696,7 +696,7 @@
 (global-set-key [(alt up)] 'erc-track-switch-buffer)
 (global-set-key [(alt down)] 'my-track-switch-buffer)
 
-(setq erc-log-channels-directory "~/irclogs/erc")
+(setq erc-log-channels-directory "~/x/log/erc")
 (setq erc-save-buffer-on-part t)
 ;; thanks to fledermaus#erc
 (setq erc-auto-query 'bury)

@@ -1,9 +1,10 @@
 #!/bin/sh
-#exec xterm
-st() { $HOME/x/rcs/git/storig/st; }
-exec st -g 80x24+329+87 -f 'pt mono:pixelsize=21.5' dvtm
 
-# Problems
-# mooterm aka code new roman
-#             S in S9 59 is too much like 5
-# this depends on the beholder and his distance from the screen
+g="-g 80x24+329+87"
+
+exec rxvtc $g -fn xft:mono:pixelsize=21.5 -rv +sb
+
+st() { $HOME/x/rcs/git/storig/st; }
+exec st $g -f 'pt mono:pixelsize=21.5' dvtm
+
+exec xterm $g

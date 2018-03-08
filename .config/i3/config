@@ -134,6 +134,18 @@ bar {
                statusline #ffffff
         }
 }
+bar {
+        id wins
+        font pango:ui 10
+        modifier none
+        position bottom
+        workspace_buttons no
+        status_command exec winsi3
+        colors {
+               background #aaaaaa
+               statusline #000000
+        }
+}
 
 assign [class="Conkeror"] 1
 assign [class="Firefox"] 1
@@ -143,7 +155,7 @@ assign [class="Emacs"] 4
 assign [class="Tor Browser"] torbrowser
 
 focus_follows_mouse no
-for_window [class="[.]*"] floating enable
+for_window [class="."] floating enable
 
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -

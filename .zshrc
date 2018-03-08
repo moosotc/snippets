@@ -100,3 +100,4 @@ test $TERM[0,2] = st && {
     zle -N zle-line-finish
 }
 ulimit -s 512
+mc() { MC_XDG_OPEN=$HOME/xsrc/snippets/bin/mopen command mc $@ }

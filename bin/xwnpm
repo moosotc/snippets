@@ -14,19 +14,15 @@ winh="$HEIGHT"
 eval $(xdotool search --class i3bar getwindowgeometry --shell)
 i3barh=$HEIGHT                  # i3bar height
 
-eval $(xdotool search --onlyvisible --class tint2 getwindowgeometry --shell)
-tint2y=$Y
-tint2h=$HEIGHT
-
 bw=$(xwininfo -id $wid | awk '/Relative upper-left X/{print $4}')
 i3titleheight=26
 
 ty=$((i3barh+bw+i3titleheight-bw))
 
 cx=$(((dispw-winw)/2))
-cy=$(((disph-winh-tint2h-i3barh)/2))
+cy=$(((disph-winh-i3barh*2)/2))
 
-by=$((tint2y-winh-bw))
+by=$((disph-winh-bw-i3barh))
 
 case "$1" in
     "7") x=$bw;                y=$ty;;

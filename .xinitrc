@@ -16,7 +16,6 @@ xsetroot -solid '#63718c'
 tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {
-    tint2 & disown
     rxvtd -q -o -f
     exec i3
 } || {

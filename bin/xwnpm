@@ -22,7 +22,7 @@ ty=$((i3barh+bw+i3titleheight-bw))
 cx=$(((dispw-winw)/2))
 cy=$(((disph-winh-i3barh*2)/2))
 
-by=$((disph-winh-bw-i3barh))
+by=$((disph-winh-bw))
 
 case "$1" in
     "7") x=$bw;                y=$ty;;

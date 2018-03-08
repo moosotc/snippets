@@ -20,5 +20,5 @@ test ! -e /tmp/noi3 && {
     rxvtd -q -o -f
     exec i3
 } || {
-    st -f mono-14
+    exec xterm -fn 10x20
 }

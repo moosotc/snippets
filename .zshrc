@@ -81,23 +81,6 @@ alias psax="ps ax | grep -v ]$"
 alias which-command &>/dev/null && unalias which-command
 sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
-
-powerlevel9k () {
-    export LANG="ru_RU.UTF-8"
-    .  $HOME/x/rcs/git/powerlevel9k/powerlevel9k.zsh-theme
-}
-
 export SUDO_ASKPASS=$HOME/bin/askpass
-
-test $TERM[0,2] = st && {
-    # http://git.suckless.org/st/plain/FAQnbn
-    tput smkx                       # delete key
-
-    # home/end keys
-    function zle-line-init () { echoti smkx }
-    function zle-line-finish () { echoti rmkx }
-    zle -N zle-line-init
-    zle -N zle-line-finish
-}
 ulimit -s 512
 mc() { MC_XDG_OPEN=$HOME/xsrc/snippets/bin/mopen command mc $@ }

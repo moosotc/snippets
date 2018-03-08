@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+case $(file -b --mime-type "$1") in
+    video/* | audio/*) o=mpv;;
+    application/pdf) o=llpp;;
+    application/msword) o=llppac;;
+    *) o=echo "$*";;
+esac
+exec $o "$@"

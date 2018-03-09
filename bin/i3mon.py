@@ -250,6 +250,8 @@ def main ():
         if swap != 0:
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
+        j += [{"color": "#b9b9b9",
+               "full_text": " %s" % time.strftime ('%H:%M')}]
         print ("%s," % json.dumps (j), flush=True)
 
 print ('{ "version": 1 } [', flush=True)

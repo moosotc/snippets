@@ -134,18 +134,6 @@ bar {
                statusline #ffffff
         }
 }
-bar {
-        id wins
-        font pango:ui 10
-        modifier none
-        position bottom
-        workspace_buttons no
-        status_command exec winsi3
-        colors {
-               background #aaaaaa
-               statusline #000000
-        }
-}
 
 assign [class="Conkeror"] 1
 assign [class="Firefox"] 1

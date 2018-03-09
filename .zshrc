@@ -83,4 +83,5 @@ sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
 export SUDO_ASKPASS=$HOME/bin/askpass
 ulimit -s 512
-mc() { MC_XDG_OPEN=$HOME/xsrc/snippets/bin/mopen command mc $@ }
+mc () { MC_XDG_OPEN=$HOME/xsrc/snippets/bin/mopen command mc $@ }
+mpvrand () { { find -type f | sort -R ; } | mpv -playlist - "$@" }

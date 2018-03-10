@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 export SUDO_ASKPASS=$HOME/bin/askpass
-sudo -A systemctl reboot
+sudo -A reboot

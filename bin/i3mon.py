@@ -125,7 +125,7 @@ class C:
         dvdt = ((curV-self.prevV)*1e-6)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        return ("#a9a9a9", self.name, dvdt)
+        return ("#a9a9a9" if dvdt < 2 else "#ffff00", self.name, dvdt)
 
 class I:
     def getv (self):
@@ -151,10 +151,10 @@ paths = ["energy_uj",
          "intel-rapl:0:1/energy_uj",
          "intel-rapl:0:2/energy_uj"]
 
-translate = {"package-0" : "pkg",
-             "core"      : "cpu",
-             "uncore"    : "gpu",
-             "dram"      : "ram"}
+translate = {"package-0" : "p",
+             "core"      : "c",
+             "uncore"    : "g",
+             "dram"      : "m"}
 
 raplprefix = "/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/"
 rs = [C (raplprefix + path, getf) for path in paths]
@@ -235,6 +235,9 @@ def main ():
         if nmail > 0:
             j += [{"color": "#ffff00", "full_text": "%d📧" % nmail}]
 
+        j += [{"color": "#b9b9b9",
+               "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
+
         for c in cs:
             (c, l, v) = c.step (t)
             if type (v) == float:
@@ -250,8 +253,6 @@ def main ():
         if swap != 0:
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
-        j += [{"color": "#b9b9b9",
-               "full_text": " %s" % time.strftime ('%H:%M')}]
         print ("%s," % json.dumps (j), flush=True)
 
 print ('{ "version": 1 } [', flush=True)

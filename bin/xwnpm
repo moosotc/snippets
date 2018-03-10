@@ -20,7 +20,7 @@ i3titleheight=26
 ty=$((i3barh+bw+i3titleheight-bw))
 
 cx=$(((dispw-winw)/2))
-cy=$(((disph-winh-i3barh*2)/2))
+cy=$(((disph-winh-i3barh)/2))
 
 by=$((disph-winh-bw))
 

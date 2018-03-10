@@ -235,9 +235,6 @@ def main ():
         if nmail > 0:
             j += [{"color": "#ffff00", "full_text": "%d📧" % nmail}]
 
-        j += [{"color": "#b9b9b9",
-               "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
-
         for c in cs:
             (c, l, v) = c.step (t)
             if type (v) == float:
@@ -252,6 +249,9 @@ def main ():
         swap = swapused ()
         if swap != 0:
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
+
+        j += [{"color": "#c9c9c9",
+               "full_text": time.strftime ('%H:%M', time.localtime (t))}]
 
         print ("%s," % json.dumps (j), flush=True)
 

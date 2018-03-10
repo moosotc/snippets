@@ -148,7 +148,6 @@ for_window [class="."] floating enable
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioMute $execnoid acycle
-# bindsym Shift+XF86AudioMute $execnoid paswitch
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+bracketleft \
         $execnoid rxvtc -sbt 8 -rv \
@@ -178,5 +177,3 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
-#bindsym mod4+Ctrl+f floating enable, border none, \
-#        resize set 2560 1440, move position 0 0

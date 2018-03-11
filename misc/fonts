@@ -4,18 +4,28 @@
 # S in S9 59 S9/59 59/S9 is too much like 5
 # 3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1
 # 01234567890
-
+# tilde/dash  - - (~-) ~ ~ (-~)
 Why not _ in emacs
 
-PT Mono         : gnus, ~ - tilde is too similar to dash - - (~-)
-                                                         ~ ~ (-~)
-                  kerning cf. weird
-Fira Mono       : above sample (S9/59 in particular)
-Source Code Pro : S9/59
-                  effect less pronounced than with fira mono, but still there
-monofur         : annoying itallics, gnus, funky э - Э
-Anonymous pro   : kerning cf. life
-Inconsolata     : no cyrillic
+PT Mono         : gnus, ~ - tilde is too similar to dash
+                  kerning weird, heigher (we,he) [depends on pixelsize]
+Fira Mono       : above sample (s9 in particular)
+monofur         : annoying itallics, gnus
+Anonymous pro   : kerning (life)
+XO Courser      : too thin, s9
+tex gyre cursor : too thin (uneven cyrillic vs latin thickness)
+camingo code    : too thin, s9, no cyrillic
+inconsolata     : s9, no cyrillic
+monoid          : kerning (weird, multi)
+freemono        : too thin, tilde
 
 kerning:
-        life weird
+        life           [l i fe]
+        weird          [we i rd]
+        Before         [Bef ore(monofur), Be for e (anonymous pro),
+                        Bef ore(pt mono)]
+        higher         [gh, h i gher(monofur)]
+        multi          [mu lti]
+        languge        [an]
+        when           [wh]
+        kerning        [rn(pt mono)]

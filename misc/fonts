@@ -18,6 +18,7 @@ camingo code    : too thin, s9, no cyrillic
 inconsolata     : s9, no cyrillic
 monoid          : kerning (weird, multi)
 freemono        : too thin, tilde
+consolas        : s9
 
 kerning:
         life           [l i fe]
@@ -29,3 +30,4 @@ kerning:
         languge        [an]
         when           [wh]
         kerning        [rn(pt mono)]
+        мне            [мн е]

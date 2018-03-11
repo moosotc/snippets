@@ -1,8 +1,7 @@
 XPATH=${MALC_ZPATH-$PATH}
 
 PATH=/net/bin
-PATH=$PATH:$HOME/bin
-PATH=$PATH:$HOME/.cabal/bin:$XPATH
+PATH=$PATH:$HOME/bin:$XPATH
 
 EDITOR=emacsclient
 INFOPATH=$HOME/share/info:/net/share/info

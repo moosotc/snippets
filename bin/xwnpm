@@ -10,17 +10,11 @@ wid=$(xdotool getactivewindow)
 eval $(xdotool getwindowgeometry --shell $wid)
 winw="$WIDTH"
 winh="$HEIGHT"
-
-eval $(xdotool search --class i3bar getwindowgeometry --shell)
-i3barh=$HEIGHT                  # i3bar height
-
+yo=54
 bw=$(xwininfo -id $wid | awk '/Relative upper-left X/{print $4}')
-i3titleheight=26
-
-ty=$((i3barh+bw+i3titleheight-bw))
-
+ty=$((barh+bw+yo))
 cx=$(((dispw-winw)/2))
-cy=$(((disph-winh-i3barh)/2))
+cy=$(((disph-winh)/2))
 
 by=$((disph-winh-bw))
 

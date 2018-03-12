@@ -14,9 +14,9 @@
                   '(#x1F300 . #x1F5FF) "noto emoji" nil)
 (set-fontset-font "fontset-default"
                   '(#x1F600 . #x1F64F) "noto emoji" nil)
-(set-fontset-font "fontset-default"
-                  '(#x2500 . #x257f) "dejavu sans mono" nil)
 (if (string-match-p "inconsolata" (face-font 'default))
+    (set-fontset-font "fontset-default"
+                      '(#x2500 . #x257f) "dejavu sans mono" nil)
     (set-fontset-font "fontset-default" 'cyrillic "anonymous pro"))
 
 (eval '(setq inhibit-startup-echo-area-message "malc"))

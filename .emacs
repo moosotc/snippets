@@ -506,7 +506,6 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (global-set-key [(alt ?l)] 'switch-to-other-buffer)
-(global-set-key [(alt ?k)] 'kill-buffer)
 
 (defun c-insert-curly-braces ()
   "Insert a pair of curly braces in a C buffer."

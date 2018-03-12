@@ -24,13 +24,13 @@ consolas        : s9
 inconsolata lgc : 3З, чфчыфяйцхъжцюяжж (фж are too heavy)
 anonymous pro   : 3З, чфчыфяйцхъжцюяжж (ъжц ж is too heavy)
       monofur   : ж
-inconsolata     : ъжц ж stands out, box drawing
+source code pro : no cyrillic, 59
 
 jumping:
         echo ${@:5} # monofur (expected - old style figures)
                     # pt mono (quite unexpected)
 kerning:
-        life           [l i fe] (anonymous pro)
+        life           [l i fe] (anonymous pro, source code pro)
         weird          [we i rd]
         Before         [Bef ore(monofur), Be for e (anonymous pro)]
         higher         [gh, h i gher(monofur), hi gher (inconsolata lgc)]

@@ -1,5 +1,5 @@
 ;; -*- Mode: Emacs-Lisp -*-
-;; malcy emacs customization 1997-2016
+;; malcy emacs customization 1997-2018
 ;; $Id: dot.emacs,v 1.6 2002/04/30 02:44:40 malc Exp $
 ;; $Log: dot.emacs,v $
 ;; Revision 1.6  2002/04/30 02:44:40  malc

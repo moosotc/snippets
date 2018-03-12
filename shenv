@@ -29,4 +29,5 @@ export MALC_ZPATH="$XPATH"
 export CDPATH=.:$HOME/x
 # https://github.com/NixOS/nixpkgs/issues/16327
 export NO_AT_BRIDGE=1
+export FONTCONFIG_FILE=$HOME/xsrc/snippets/.config/fontconfig/top
 export MC_XDG_OPEN=$HOME/xsrc/snippets/bin/mopen

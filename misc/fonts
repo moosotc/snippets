@@ -23,7 +23,8 @@ freemono        : too thin, tilde
 consolas        : s9
 inconsolata lgc : 3З, чфчыфяйцхъжцюяжж (фж are too heavy)
 anonymous pro   : 3З, чфчыфяйцхъжцюяжж (ъжц ж is too heavy)
-inconsolata     : ъжц ж stands out
+      monofur   : ж
+inconsolata     : ъжц ж stands out, box drawing
 
 jumping:
         echo ${@:5} # monofur (expected - old style figures)

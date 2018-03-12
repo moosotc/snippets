@@ -1,5 +1,5 @@
 #!/bin/sh
-
+exec 1>&2 2>/dev/null
 url=$(xclip -o)
 expr $url : ".*/chessgame" &>/dev/null &&
     url=$(echo $url | sed 's|chessgame?|nph-chesspgn?text=1\&|')

@@ -7,6 +7,18 @@
 ;; You may delete these explanatory comments.
 ; (package-initialize)
 
+;; pictographs/emoticons
+;; thanks to wasamasa from irc.freenode.org #emacs
+;; (otherwise emacs uses default substitution of Symbola)
+(set-fontset-font "fontset-default"
+                  '(#x1F300 . #x1F5FF) "noto emoji" nil)
+(set-fontset-font "fontset-default"
+                  '(#x1F600 . #x1F64F) "noto emoji" nil)
+(set-fontset-font "fontset-default"
+                  '(#x2500 . #x257f) "dejavu sans mono" nil)
+(if (string-match-p "inconsolata" (face-font 'default))
+    (set-fontset-font "fontset-default" 'cyrillic "anonymous pro"))
+
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
 (server-start)
@@ -669,17 +681,6 @@
 (setq erc-auto-query 'bury)
 
 (put 'dired-find-alternate-file 'disabled nil)
-
-;; pictographs/emoticons
-;; thanks to wasamasa from irc.freenode.org emacs
-;; (otherwise emacs uses default substitution of Symbola)
-(set-fontset-font "fontset-default"
-                  '(#x1F300 . #x1F5FF) "noto emoji" nil 'prepend)
-(set-fontset-font "fontset-default"
-                  '(#x1F600 . #x1F64F) "noto emoji" nil 'prepend)
-;; fallback to pt mono for cyrillic
-;; https://stackoverflow.com/questions/6083496/how-do-you-specify-a-fallback-font-in-emacs
-(set-fontset-font "fontset-default" 'cyrillic "anonymous pro")
 
 (defun notify-moo (s)
   (with-temp-buffer

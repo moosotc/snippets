@@ -1,6 +1,5 @@
 ;; -*- Mode: Emacs-Lisp -*-
 (setq use-dialog-box nil)
-;; (menu-bar-mode -1)
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -452,36 +451,29 @@
    [default default default italic underline success warning error])
  '(canlock-password "320a46eeec84e8e4e041534d821600d69eb36d15")
  '(dired-listing-switches "-aBhl --dired --group-directories-first --sort=extension")
- '(erc-keyword-highlight-type (quote all))
- '(erc-keywords (quote ("malc" "clam" "moosotc" "llpp")))
+ '(erc-keyword-highlight-type 'all)
+ '(erc-keywords '("malc" "clam" "moosotc" "llpp"))
  '(erc-kill-buffer-on-part t)
  '(erc-kill-queries-on-quit t)
  '(erc-kill-server-buffer-on-quit t)
- '(erc-log-file-coding-system (quote utf-8))
+ '(erc-log-file-coding-system 'utf-8)
  '(erc-modules
-   (quote
-    (autojoin button completion fill irccontrols list log match menu move-to-prompt netsplit networks noncommands readonly ring stamp spelling track)))
+   '(autojoin button completion fill irccontrols list log match menu move-to-prompt netsplit networks noncommands readonly ring stamp spelling track))
  '(erc-nick "malc_")
- '(erc-notice-highlight-type (quote all))
+ '(erc-notice-highlight-type 'all)
  '(erc-track-position-in-mode-line t)
- '(ibuffer-default-sorting-mode (quote mode-name))
+ '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
- '(org-agenda-files (quote ("~/x/org/org.org")))
+ '(org-agenda-files '("~/x/org/org.org"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   (quote
-    (lua-mode lacarte merlin caml tuareg bbdb-csv-import org-beautify-theme xresources-theme wiki-summary helm-wordnet xkcd haskell-mode helm helm-ag helm-ag-r helm-cmd-t helm-dictionary helm-ghc helm-git helm-git-files helm-git-grep helm-google helm-hoogle helm-package helm-themes helm-unicode hl-anything hl-indent unicode-whitespace emacs-cl conkeror-minor-mode bbdb2erc bbdb-ext bbdb- ag)))
+   '(helm-bbdb helm-git-grep helm-ls-git xkcd tuareg yaxception ucs-utils s pcsv log4e helm dash caml bbdb))
  '(safe-local-variable-values
-   (quote
-    ((eval overwrite-mode t)
+   '((eval overwrite-mode t)
      (eval progn
-           (c-set-offset
-            (quote innamespace)
-            (quote 0))
-           (c-set-offset
-            (quote inline-open)
-            (quote 0))))))
- '(send-mail-function (quote smtpmail-send-it))
+           (c-set-offset 'innamespace '0)
+           (c-set-offset 'inline-open '0))))
+ '(send-mail-function 'smtpmail-send-it)
  '(smtpmail-smtp-server "smtp.akado.ru" t)
  '(smtpmail-smtp-service 25 t))
 

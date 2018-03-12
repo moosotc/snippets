@@ -2,7 +2,8 @@
 
 g="-g 80x24+329+87"
 
-exec rxvtc $g -fn xft:mono:pixelsize=21.5 -rv +sb
+#exec rxvtc $g -fn xft:inconsolata:pixelsize=24,,xft:unifont -rv +sb
+exec rxvtc $g -fn xft:mono:pixelsize=21.5,xft:unifont -rv +sb
 
 st() { $HOME/x/rcs/git/storig/st; }
 exec st $g -f 'pt mono:pixelsize=21.5' dvtm

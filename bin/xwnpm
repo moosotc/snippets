@@ -13,7 +13,7 @@ winh="$HEIGHT"
 yo=54
 bw=$(xwininfo -id $wid | awk '/Relative upper-left X/{print $4}')
 ty=$((barh+bw+yo))
-cx=$(((dispw-winw)/2))
+cx=$(((dispw-winw+2*bw)/2))
 cy=$(((disph-winh)/2))
 
 by=$((disph-winh-bw))

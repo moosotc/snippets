@@ -472,8 +472,7 @@
    '((eval overwrite-mode t)
      (eval progn
            (c-set-offset 'innamespace '0)
-           (c-set-offset 'inline-open '0))))
- )
+           (c-set-offset 'inline-open '0)))))
 
 (setq message-send-mail-function 'smtpmail-send-it
       smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))

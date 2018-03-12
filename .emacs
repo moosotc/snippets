@@ -1,5 +1,6 @@
 ;; -*- Mode: Emacs-Lisp -*-
 (setq use-dialog-box nil)
+;; (menu-bar-mode -1)
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -403,7 +404,7 @@
  '(link-visited ((t (:underline (:color foreground-color :style line) :foreground "#c80084"))))
  '(match ((t (:foreground "#FFFFFF" :background "#00578E"))))
  '(minibuffer-prompt ((t (:weight bold :foreground "#0066CC"))))
- '(mode-line ((t (:height 0.9 :box (:line-width -1 :color nil :style released-button)))))
+ '(mode-line ((t (:height 0.9 :box (:line-width 1 :color nil :style nil)))))
  '(mode-line-buffer-id ((t (:height 0.9 :foreground "#2E3436"))))
  '(mode-line-emphasis ((t (:weight bold))))
  '(mode-line-highlight ((t (:height 0.9 :foreground "#2E3436" :background "#FEFFBF"))))
@@ -737,5 +738,6 @@
                                 (smie-rule-parent)))))))
 
 (global-set-key [(f10)] 'helm-browse-menubar)
+
 ;;; Local Variables:
 ;;; End:

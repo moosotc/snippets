@@ -473,9 +473,7 @@
      (eval progn
            (c-set-offset 'innamespace '0)
            (c-set-offset 'inline-open '0))))
- '(send-mail-function 'smtpmail-send-it)
- '(smtpmail-smtp-server "smtp.akado.ru" t)
- '(smtpmail-smtp-service 25 t))
+ )
 
 (setq message-send-mail-function 'smtpmail-send-it
       smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))

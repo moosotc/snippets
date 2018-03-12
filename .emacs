@@ -1,10 +1,6 @@
 ;; -*- Mode: Emacs-Lisp -*-
 (setq use-dialog-box nil)
 
-;; fallback to pt mono for cyrillic
-;; https://stackoverflow.com/questions/6083496/how-do-you-specify-a-fallback-font-in-emacs
-(set-fontset-font "fontset-default" 'cyrillic "anonymous pro")
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
@@ -694,6 +690,9 @@
                   '(#x1F300 . #x1F5FF) "noto emoji" nil 'prepend)
 (set-fontset-font "fontset-default"
                   '(#x1F600 . #x1F64F) "noto emoji" nil 'prepend)
+;; fallback to pt mono for cyrillic
+;; https://stackoverflow.com/questions/6083496/how-do-you-specify-a-fallback-font-in-emacs
+(set-fontset-font "fontset-default" 'cyrillic "anonymous pro")
 
 (defun notify-moo (s)
   (with-temp-buffer

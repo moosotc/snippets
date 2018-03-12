@@ -5,7 +5,7 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
+; (package-initialize)
 
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
@@ -466,8 +466,6 @@
  '(load-home-init-file t t)
  '(org-agenda-files '("~/x/org/org.org"))
  '(org-support-shift-select t)
- '(package-selected-packages
-   '(helm-bbdb helm-git-grep helm-ls-git xkcd tuareg yaxception ucs-utils s pcsv log4e helm dash caml bbdb))
  '(safe-local-variable-values
    '((eval overwrite-mode t)
      (eval progn
@@ -725,7 +723,7 @@
                                 (smie-rule-parent-p "|")
                                 (smie-rule-parent)))))))
 
-(global-set-key [(f10)] 'helm-browse-menubar)
+(global-set-key [(f10)] 'tmm-menubar)
 
 ;;; Local Variables:
 ;;; End:

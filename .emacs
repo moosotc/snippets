@@ -736,5 +736,6 @@
                                 (smie-rule-parent-p "|")
                                 (smie-rule-parent)))))))
 
+(global-set-key [(f10)] 'helm-browse-menubar)
 ;;; Local Variables:
 ;;; End:

@@ -1,24 +1,4 @@
 ;; -*- Mode: Emacs-Lisp -*-
-;; malcy emacs customization 1997-2018
-;; $Id: dot.emacs,v 1.6 2002/04/30 02:44:40 malc Exp $
-;; $Log: dot.emacs,v $
-;; Revision 1.6  2002/04/30 02:44:40  malc
-;; Cleanups, fume extension, Haskell, Clean
-;;
-;; Revision 1.5  2001/08/01 22:52:40  malc
-;; Various Bergen extensions
-;;
-;; Revision 1.4  2000/11/15 02:47:11  malc
-;; Added Emacs bkdir, tuareg, some Emacs be like XEmacs advices,
-;; right-align-* functions etc
-;;
-;; Revision 1.3  2000/06/30 23:01:12  malc
-;; Cleaned up a bit
-;;
-;; Revision 1.2  2000/06/30 22:19:55  malc
-;; Lots
-;;
-
 (setq use-dialog-box nil)
 
 ;; fallback to pt mono for cyrillic

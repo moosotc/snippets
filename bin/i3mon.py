@@ -121,7 +121,7 @@ class C:
         self.prevT = curT
         self.prevV = curV
         return ("#a9a9a9" if dvdt < 2 else "#d0d000",
-                "%s %6.2f" % (self.name, dvdt))
+                "%s %5.2f" % (self.name, dvdt))
 
 class I:
     def getv (self):

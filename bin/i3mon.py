@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # 1F4E7 📧 E-MAIL SYMBOL
-#  2B06 ⬆
-#  2B07 ⬇
 #    b0 °
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json
@@ -85,32 +83,29 @@ def getf (path):
     return float (gets (path))
 
 class N:
-    def __init__ (self, name, path, xgetv):
-        self.tx = name == "tx"
-        self.getv = lambda: xgetv (path)
+    def __init__ (self, intf):
+        tx = "/sys/class/net/" + intf + "/statistics/tx_bytes"
+        rx = "/sys/class/net/" + intf + "/statistics/rx_bytes"
+        self.getv = lambda: (getf (tx), getf (rx))
         self.prevT = time.time ()
         self.prevV = self.getv ()
+        self.intf = intf
 
     def step (self, curT):
         curV = self.getv ()
         dt = curT - self.prevT
         self.prevT = curT
-        dv = (curV - self.prevV) * 1e-6
-        self.prevV = curV
-        if dv > 0.5:
-            if self.tx:
+        color = "#a9a9a9"
+        s = "↕"
+        for i in range (len (curV)):
+            c = curV[i]
+            p = self.prevV[i]
+            dv = (c - p) * 1e-6
+            if dv > 0.5:
                 color = "#ffff00"
-                s = "↑ "
-            else:
-                color = "#00ff00"
-                s = "↓ "
-        else:
-            color = "#a9a9a9"
-            if self.tx:
-                s = "tx"
-            else:
-                s = "rx"
-        return (color, s, dv/dt)
+            s += " %4.2f" % (dv/dt)
+        self.prevV = curV
+        return (color, s)
 
 class C:
     def __init__ (self, path, xgetv):
@@ -125,7 +120,7 @@ class C:
         dvdt = ((curV-self.prevV)*1e-6)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        return ("#a9a9a9", self.name, dvdt)
+        return ("#a9a9a9", "%s %6.2f" % (self.name, dvdt))
 
 class I:
     def getv (self):
@@ -144,7 +139,7 @@ class I:
         self.prevV = curV
         per = int (100*dvdt)
         # http://stackoverflow.com/questions/394809/does-python-have-a-ternary-conditional-operator
-        return (("#cdba96" if per > 7 else "#909090"), "[", per)
+        return (("#cdba96" if per > 7 else "#909090"), "%3d%%" % per)
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
@@ -159,11 +154,7 @@ translate = {"package-0" : "p",
 raplprefix = "/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/"
 rs = [C (raplprefix + path, getf) for path in paths]
 
-netprefix = "/sys/class/net/enp3s0f0/statistics/"
-tys = ["rx", "tx"]
-ns = [N (ty, netprefix + ty + "_bytes", getf) for ty in tys]
-
-cs = rs + ns + [I ()]
+cs = rs + [N ("enp3s0f0"), I ()]
 
 d = {'SwapTotal': 0, 'SwapFree': 0}
 def swapused ():
@@ -236,12 +227,8 @@ def main ():
             j += [{"color": "#ffff00", "full_text": "%d📧" % nmail}]
 
         for c in cs:
-            (c, l, v) = c.step (t)
-            if type (v) == float:
-                sv = "%6.2f" % v
-            else:
-                sv = "%3d%%]" % v
-            j += [{"color": c, "full_text": "%s%s" % (l, sv)}]
+            (color, s) = c.step (t)
+            j += [{"color": color, "full_text": "%s" % s}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
         j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]

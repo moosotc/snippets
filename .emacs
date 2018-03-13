@@ -380,7 +380,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(gnus-group-news-3-empty ((t nil)))
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
  '(cursor ((t (:background "orchid"))))
@@ -406,6 +405,7 @@
  '(font-lock-warning-face ((t (:weight bold :foreground "#CC0000"))))
  '(fringe ((t (:background "#DBDBDB"))))
  '(gnus-cite-5 ((t (:foreground "dim gray"))))
+ '(gnus-group-news-3-empty ((t nil)))
  '(header-line ((t (:foreground "#555753" :background "#C3C7CF"))))
  '(highlight ((t (:foreground "#2E3436" :background "#FEFFBF"))))
  '(hl-line ((t (:background "black" :foreground "white"))))
@@ -479,6 +479,7 @@
  '(load-home-init-file t t)
  '(org-agenda-files '("~/x/org/org.org"))
  '(org-support-shift-select t)
+ '(package-selected-packages '(xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
  '(safe-local-variable-values
    '((eval overwrite-mode t)
      (eval progn

@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+
+w() {
+    winlist=$(xdotool search --desktop $1 --name . | sort)
+    test -z "$winlist" && {
+        printf "{}\0001"
+        return
+    }
+    wins=0
+    aid=$(($2))
+    for wid in $winlist; do
+        wins=$((wins+1))
+        test "$wid" = "$aid" && anum=$wins
+    done
+    printf "{$anum/$wins}\0001"
+}
+
+xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW | {
+    while read _ _ n; do
+        expr "$n" : "id" >/dev/null && {
+            set -- $n
+            w $desktop $3
+        } || {
+            desktop="$n"
+        }
+    done
+}

@@ -30,16 +30,12 @@
 
 (if nil
     (setq message-send-mail-function 'smtpmail-send-it
-          smtpmail-default-smtp-server "mail.comtv.ru"
-          smtpmail-smtp-server "mail.comtv.ru"
-          smtpmail-smtp-service 25)
-  (setq message-send-mail-function 'smtpmail-send-it
-        smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
-        smtpmail-auth-credentials '(("smtp.gmail.com" 587
-                                     "moosotc@gmail.com" nil))
-        smtpmail-default-smtp-server "smtp.gmail.com"
-        smtpmail-smtp-server "smtp.gmail.com"
-        smtpmail-smtp-service 587)
+          smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
+          smtpmail-auth-credentials '(("smtp.gmail.com" 587
+                                       "moosotc@gmail.com" nil))
+          smtpmail-default-smtp-server "smtp.gmail.com"
+          smtpmail-smtp-server "smtp.gmail.com"
+          smtpmail-smtp-service 587)
   )
 
 (setq gnus-ignored-newsgroups "^to\\.\\|^[0-9. ]+\\( \\|$\\)\\|^[\"]\"[#'()]")

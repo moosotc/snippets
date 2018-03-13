@@ -143,7 +143,7 @@ assign [class="Emacs"] 4
 assign [class="Tor Browser"] torbrowser
 
 focus_follows_mouse no
-for_window [class="."] floating enable
+for_window [tiling] floating enable
 
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -

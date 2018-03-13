@@ -8,11 +8,11 @@ register_user_stylesheet(
                 "span.__conkeror_hint {\n"+
                 "color: black !important;\n"+
                 "background-color: wheat !important;\n"+
-                "font-family: linux biolinum !important;\n"+
-                "border-style: dotted !important;"+
+                "font-family: dejavu sans mono !important;\n"+
+                "border-style: dashed !important;"+
                 "border-width: 1px !important;"+
-                "font-size: 15px !important;\n"+
-                "line-height: 16px !important;\n"+
+                "font-size: 13px !important;\n"+
+                "line-height: 18px !important;\n"+
                 "}\n"
         ));
 

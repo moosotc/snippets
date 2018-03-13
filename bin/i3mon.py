@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # 1F4E7 📧 E-MAIL SYMBOL
-#    b0 °
+#    b0  ° DEGREE SIGN
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json
 

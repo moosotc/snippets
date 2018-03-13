@@ -103,7 +103,7 @@ class N:
             dv = (c - p) * 1e-6
             if dv > 0.5:
                 color = "#ffff00"
-            s += " %4.2f" % (dv/dt)
+            s += " %5.2f" % (dv/dt)
         self.prevV = curV
         return (color, s)
 

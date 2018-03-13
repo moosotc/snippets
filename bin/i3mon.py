@@ -120,7 +120,8 @@ class C:
         dvdt = ((curV-self.prevV)*1e-6)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        return ("#a9a9a9", "%s %6.2f" % (self.name, dvdt))
+        return ("#a9a9a9" if dvdt < 2 else "#d0d000",
+                "%s %6.2f" % (self.name, dvdt))
 
 class I:
     def getv (self):

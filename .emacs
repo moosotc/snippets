@@ -380,6 +380,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(gnus-group-news-3-empty ((t nil)))
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
  '(cursor ((t (:background "orchid"))))
@@ -694,7 +695,7 @@
 
 ;; Takk till Stig Erik Sandø
 (defun remove-boring-erc-buffers (l)
-  (remove-if
+  (cl-remove-if
    (lambda (e)
      (and (string-prefix-p "#" (buffer-name (car e)))
           (not (member (cddr e) '(erc-keyword-face erc-current-nick-face)))))

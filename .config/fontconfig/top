@@ -2,5 +2,5 @@
 <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
 <fontconfig>
 <dir>~/.fonts</dir>
-<include>fonts.conf</include>
+<include>~/.config/fontconfig/fonts.conf</include>
 </fontconfig>

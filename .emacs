@@ -405,8 +405,6 @@
  '(font-lock-variable-name-face ((t (:weight bold :foreground "#0076c1"))))
  '(font-lock-warning-face ((t (:weight bold :foreground "#CC0000"))))
  '(fringe ((t (:background "#DBDBDB"))))
- '(gnus-cite-5 ((t (:foreground "dim gray"))))
- '(gnus-group-news-3-empty ((t nil)))
  '(header-line ((t (:foreground "#555753" :background "#C3C7CF"))))
  '(highlight ((t (:foreground "#2E3436" :background "#FEFFBF"))))
  '(hl-line ((t (:background "black" :foreground "white"))))
@@ -480,7 +478,8 @@
  '(load-home-init-file t t)
  '(org-agenda-files '("~/x/org/org.org"))
  '(org-support-shift-select t)
- '(package-selected-packages '(xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
+ '(package-selected-packages
+   '(lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
  '(safe-local-variable-values
    '((eval overwrite-mode t)
      (eval progn
@@ -727,7 +726,11 @@
                                 (smie-rule-parent-p "|")
                                 (smie-rule-parent)))))))
 
-(global-set-key [(f10)] 'tmm-menubar)
+(if (not (string-equal (user-login-name) "malc"))
+    (global-set-key [(f10)] 'tmm-menubar)
+  (load "/home/malc/.emacs.d/lacarte.el")
+  (load "/home/malc/x/rcs/git/helm-lacarte/helm-lacarte.el")
+  (global-set-key [(f10)] 'helm-browse-menubar))
 
 ;;; Local Variables:
 ;;; End:

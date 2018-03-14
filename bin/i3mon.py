@@ -225,7 +225,7 @@ def main ():
             msg = None
             deadline = None
 
-        j = [{"color": "#b9c9b9", "full_text": winfo}] if winfo else []
+        j = [{"color": "#a9a9a9", "full_text": winfo}] if winfo else []
         if msg:
             j += [{"color": "#00ff00", "full_text": msg}]
 

@@ -120,7 +120,8 @@ class C:
         dvdt = ((curV-self.prevV)*1e-6)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        return ("#a9a9a9" if dvdt < 2 else "#d0d000",
+        cond = dvdt < 5 if self.name == 'p' else dvdt < 2
+        return ("#a9a9a9" if cond else "#d0d000",
                 "%s %5.2f" % (self.name, dvdt))
 
 class I:
@@ -184,6 +185,7 @@ def main ():
     msg = None
     ff = None
     deadline = None
+    winfo = []
 
     while True:
         if not ff:
@@ -193,6 +195,7 @@ def main ():
         l = pf.poll (sleepsecs * 1000)
         t = time.time ()
 
+        pmsg = msg
         for (fd, mask) in l:
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
@@ -210,6 +213,10 @@ def main ():
                 os.close (fd)
                 ff = None
 
+        if msg and msg[0] == '\x02':
+            winfo = msg[1:]
+            msg = pmsg
+
         if msg == '\x01':
             msg = None
             deadline = None
@@ -221,7 +228,7 @@ def main ():
         if msg:
             j = [{"color": "#00ff00", "full_text": msg}]
         else:
-            j = []
+            j = [{"color": "#b9c9b9", "full_text": winfo}]
 
         nmail = checkmail (t)
         if nmail > 0:

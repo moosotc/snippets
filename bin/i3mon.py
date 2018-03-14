@@ -225,13 +225,14 @@ def main ():
             msg = None
             deadline = None
 
-        j = [{"color": "#a9a9a9", "full_text": winfo}] if winfo else []
-        if msg:
-            j += [{"color": "#00ff00", "full_text": msg}]
+        j = [{"color": "#00ff00", "full_text": msg}] if msg else []
 
         nmail = checkmail (t)
         if nmail > 0:
             j += [{"color": "#ffff00", "full_text": "%d📧" % nmail}]
+
+        if winfo:
+            j += [{"color": "#a9a9a9", "full_text": winfo}]
 
         for c in cs:
             (color, s) = c.step (t)

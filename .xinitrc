@@ -17,6 +17,7 @@ tmux new-session -s yt -d
 mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {
     rxvtd -q -o -f
+    i3monwins >/tmp/i3.fifo  & disown
     exec i3
 } || {
     exec xterm -fn 10x20

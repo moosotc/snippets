@@ -185,7 +185,7 @@ def main ():
     msg = None
     ff = None
     deadline = None
-    winfo = []
+    winfo = None
 
     while True:
         if not ff:
@@ -225,10 +225,9 @@ def main ():
             msg = None
             deadline = None
 
+        j = [{"color": "#b9c9b9", "full_text": winfo}] if winfo else []
         if msg:
-            j = [{"color": "#00ff00", "full_text": msg}]
-        else:
-            j = [{"color": "#b9c9b9", "full_text": winfo}]
+            j += [{"color": "#00ff00", "full_text": msg}]
 
         nmail = checkmail (t)
         if nmail > 0:

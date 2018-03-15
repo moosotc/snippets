@@ -20,7 +20,7 @@ w() {
     printf "\002$dname$wincap"
 }
 
-xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW | {
+exec xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW |
     while read _ _ n; do
         expr "$n" : "id" >/dev/null && {
             set -- $n
@@ -29,4 +29,3 @@ xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW | {
             desktop=$n
         }
     done
-}

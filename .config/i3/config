@@ -151,7 +151,7 @@ bindsym XF86AudioMute $execnoid acycle
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+bracketleft \
         $execnoid rxvtc -sbt 8 -rv \
-                  -fn 'xft:mono-11' -e tmux attach-session -t yt
+                  -fn 'xft:dejavu sans mono-11' -e tmux attach-session -t yt
 bindsym $mod+grave $execnoid yt
 bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1

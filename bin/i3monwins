@@ -3,10 +3,6 @@ set -e
 
 w() {
     winlist=$(xdotool search --desktop $desktop --name . | sort)
-    test -z "$winlist" && {
-        printf "\002"
-        return
-    }
     wins=0
     aid=$(($1))
     for wid in $winlist; do
@@ -16,7 +12,11 @@ w() {
     set -- $(xprop -notype -root _NET_DESKTOP_NAMES)
     shift $((desktop+2))
     eval dname="${@%%,*}"
-    test $wins -gt 1 && wincap="{$anum/$wins}" || wincap="{1}"
+    case $wins in
+        0) wincap="{}";;
+        1) wincap="{1}";;
+        *) wincap="{$anum/$wins}";;
+    esac
     printf "\002$dname$wincap"
 }
 

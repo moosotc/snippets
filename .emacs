@@ -11,12 +11,18 @@
 ;; thanks to wasamasa from irc.freenode.org #emacs
 ;; (otherwise emacs uses default substitution of Symbola)
 (set-fontset-font "fontset-default"
+                  ;; Miscellaneous Symbols and Pictographs
                   '(#x1F300 . #x1F5FF) "noto emoji" nil)
 (set-fontset-font "fontset-default"
+                  ;; Emoticons
                   '(#x1F600 . #x1F64F) "noto emoji" nil)
+(set-fontset-font "fontset-default"
+                  ;; Supplemental Symbols and Pictographs
+                  '(#x1F900 . #x1F9FF) "symbola" nil)
 (if (string-match-p "inconsolata" (face-font 'default))
     (progn
       (set-fontset-font "fontset-default"
+                        # BOX DRAWING
                         '(#x2500 . #x257f) "dejavu sans mono" nil)
       (set-fontset-font "fontset-default" 'cyrillic "anonymous pro")))
 

@@ -126,5 +126,5 @@
 (add-hook
  'gnus-group-mode-hook
  (lambda ()
-   (local-set-key (kbd "<tab>") 'gnus-group-next-unread-group)))
-;; (add-hook 'gnus-group-mode-hook 'gnus-topic-mode)
+   (define-key gnus-topic-mode-map [tab] 'gnus-group-next-unread-group)))
+

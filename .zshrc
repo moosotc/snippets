@@ -47,10 +47,9 @@ xtitle ()
 {
     printf "\033]0;$1\007"
 }
-local nl=$'\n'
 precmd ()
 {
-    PS1="%F{green}%B%~%f%b$nl- "
+    eval PS1="%F{green}%B%~%f%b$'\n'-$' '"
     test -n "$DISPLAY" && xtitle "$PWD"
 }
 

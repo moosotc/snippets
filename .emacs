@@ -13,7 +13,7 @@
 ;; (otherwise emacs uses default substitution of Symbola)
 (set-fontset-font "fontset-default"
                   ;; Miscellaneous Symbols and Pictographs
-                  '(#x1F300 . #x1F5FF) "noto emoji" nil)
+                  '(#x1F300 . #x1F5FF) "symbola" nil)
 (set-fontset-font "fontset-default"
                   ;; Emoticons
                   '(#x1F600 . #x1F64F) "noto emoji" nil)

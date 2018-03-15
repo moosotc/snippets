@@ -27,8 +27,6 @@ select-word-style bash
 autoload -Uz compinit
 compinit
 
-PS1=$'%1~%# '
-
 zstyle ':completion:history-words:*' list yes
 zstyle ':completion:history-words:*' remove_all_dups yes
 zstyle ':completion:history-words:*' stop yes
@@ -45,17 +43,15 @@ unt () { tar xf $1 && cd ${1%%.(t?z|tar)*}; }
 unz () { unzip -L $1 -d ${1%%.zip}; }
 unr () { unrar x -cl $1 ${1%%.rar}/; }
 
-autoload -U promptinit
-promptinit
-prompt adam2
-
 xtitle ()
 {
     printf "\033]0;$1\007"
 }
+local nl=$'\n'
 precmd ()
 {
-    xtitle "${PWD}"
+    PS1="%F{green}%B%~%f%b$nl- "
+    test -n "$DISPLAY" && xtitle "$PWD"
 }
 
 tobld ()

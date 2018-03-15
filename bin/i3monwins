@@ -7,7 +7,7 @@ w() {
     set -- $(xdotool search --desktop $desktop --name . | sort)
     for wid; do
         wincount=$((wincount+1))
-        test "$wid" = "$aid" && anum=$wincount
+        test "$wid" = "$aid" && winindex=$wincount
     done
     set -- $desktop_names
     shift $((desktop+2))
@@ -15,7 +15,7 @@ w() {
     case $wincount in
         0) wincap="{}";;
         1) wincap="{1}";;
-        *) wincap="{$anum/$wincount}";;
+        *) wincap="{$winindex/$wincount}";;
     esac
     printf "\002$dname$wincap"
 }

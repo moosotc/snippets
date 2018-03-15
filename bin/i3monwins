@@ -16,7 +16,7 @@ w() {
     set -- $(xprop -notype -root _NET_DESKTOP_NAMES)
     shift $((desktop+2))
     eval dname="${@%%,*}"
-    test $wins -gt 1 && wincap={$anum/$wins} || wincap="{}"
+    test $wins -gt 1 && wincap={$anum/$wins} || wincap="{1}"
     printf "\002$dname$wincap"
 }
 

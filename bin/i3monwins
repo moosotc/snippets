@@ -15,8 +15,9 @@ w() {
     done
     set -- $(xprop -notype -root _NET_DESKTOP_NAMES)
     shift $((desktop+2))
-    eval name=${@%%,*}
-    printf "\002$name{$anum/$wins}"
+    eval dname="${@%%,*}"
+    test $wins -gt 1 && wincap={$anum/$wins} || wincap="{}"
+    printf "\002$dname$wincap"
 }
 
 xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW | {

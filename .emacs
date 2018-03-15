@@ -1,4 +1,5 @@
 ;; -*- Mode: Emacs-Lisp -*-
+(setq initial-scratch-message "")
 (setq use-dialog-box nil)
 
 ;; Added by Package.el.  This must come before configurations of
@@ -734,9 +735,20 @@
 
 (if (not (string-equal (user-login-name) "malc"))
     (global-set-key [(f10)] 'tmm-menubar)
-  (load "/home/malc/.emacs.d/lacarte.el")
-  (load "/home/malc/x/rcs/git/helm-lacarte/helm-lacarte.el")
+  (load "~/.emacs.d/lacarte.el")
+  (load "~/x/rcs/git/helm-lacarte/helm-lacarte.el")
   (global-set-key [(f10)] 'helm-browse-menubar))
+
+;; https://www.emacswiki.org/emacs/RecreateScratchBuffer
+(defun switch-to-scratch-and-back ()
+  "Toggle between *scratch* buffer and the current buffer.
+   If the *scratch* buffer does not exist, create it."
+  (interactive)
+  (let ((scratch-buffer-name (get-buffer-create "*scratch*")))
+    (if (equal (current-buffer) scratch-buffer-name)
+        (switch-to-buffer (other-buffer))
+      (switch-to-buffer scratch-buffer-name (lisp-interaction-mode)))))
+(global-set-key (kbd "C-M-;") 'switch-to-scratch-and-back)
 
 ;;; Local Variables:
 ;;; End:

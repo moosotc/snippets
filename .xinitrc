@@ -20,5 +20,5 @@ test ! -e /tmp/noi3 && {
     i3monwins >/tmp/i3.fifo  & disown
     exec i3
 } || {
-    exec xterm -fn 10x20
+    exec xterm -fa mono-13
 }

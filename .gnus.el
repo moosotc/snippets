@@ -125,7 +125,7 @@
 
 (add-hook
  'gnus-group-mode-hook
- ;;  https://github.com/schnecki/dot-emacs.d/blob/master/gnus.el
  (lambda ()
+   (gnus-topic-mode)
+   ;;  https://github.com/schnecki/dot-emacs.d/blob/master/gnus.el
    (define-key gnus-topic-mode-map [tab] 'gnus-group-next-unread-group)))
-

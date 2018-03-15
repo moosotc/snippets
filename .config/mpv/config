@@ -1,4 +1,5 @@
 quiet
+vo=vaapi
 alang=en
 slang=en
 sub=no

@@ -22,7 +22,7 @@
 (if (string-match-p "inconsolata" (face-font 'default))
     (progn
       (set-fontset-font "fontset-default"
-                        ; BOX DRAWING
+                        ;; BOX DRAWING
                         '(#x2500 . #x257f) "dejavu sans mono" nil)
       (set-fontset-font "fontset-default" 'cyrillic "anonymous pro")))
 

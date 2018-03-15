@@ -3,7 +3,7 @@ set -e
 
 w() {
     wincount=0
-    aid=$(($1))
+    aid=$(($1))                 # unquote
     set -- $(xdotool search --desktop $desktop --name . | sort)
     for wid; do
         wincount=$((wincount+1))
@@ -11,7 +11,7 @@ w() {
     done
     set -- $(xprop -notype -root _NET_DESKTOP_NAMES)
     shift $((desktop+2))
-    eval dname="${@%%,*}"
+    eval dname="${@%%,*}"       # unquote
     case $wincount in
         0) wincap="{}";;
         1) wincap="{1}";;

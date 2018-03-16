@@ -219,8 +219,7 @@
   (setq truncate-lines t)
   (setq c-basic-offset 4)
   (c-set-offset 'statement-case-open 4)
-  (c-set-offset 'case-label 0)
-  (setq indent-tabs-mode nil))
+  (c-set-offset 'case-label 0))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)

@@ -735,8 +735,8 @@
 
 (if (not (string-equal (user-login-name) "malc"))
     (global-set-key [(f10)] 'tmm-menubar)
-  (load "~/.emacs.d/lacarte.el")
-  (load "~/x/rcs/git/helm-lacarte/helm-lacarte.el")
+  (load "~/.emacs.d/lacarte.elc")
+  (load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")
   (global-set-key [(f10)] 'helm-browse-menubar))
 
 (defun lispy ()

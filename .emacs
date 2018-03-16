@@ -377,7 +377,6 @@
  '(font-lock-comment-delimiter-face ((default
                                        (:inherit (font-lock-string-face)))))
  '(font-lock-comment-face ((t (:foreground "#204A87"))))
- '(font-lock-constant-face ((t (:inherit (font-lock-string-face)))))
  '(font-lock-doc-face ((t (:foreground "#527c00"))))
  '(font-lock-function-name-face ((t (:weight bold :foreground "#00578E"))))
  '(font-lock-keyword-face ((t (:foreground "#A52A2A"))))
@@ -536,15 +535,12 @@
 (setq whitespace-style
       '(face
         tabs
+        empty
         trailing
         lines-tail
         newline
         empty
-        tab
-        tab-mark
-        space-after-tab
-        space-before-tab
-        newline-mark))
+        indentation::space))
 
 (defun selector-moo ()
   (hl-line-mode 1)
@@ -552,10 +548,7 @@
 (defun selector-moo0 ()
   (hl-line-mode 1))
 
-(add-hook 'c-mode-hook (lambda () (highlight-numbers-mode)))
-(add-hook 'caml-mode-hook (lambda () (highlight-numbers-mode)))
-(dolist (mode '(c-mode-hook caml-mode-hookl
-                            lisp-mode lisp-interaction-mode))
+(dolist (mode '(c-mode caml-mode lisp-mode))
   (add-hook mode 'highlight-numbers-mode))
 (add-hook 'dired-mode-hook 'selector-moo0)
 (add-hook 'bs-mode-hook 'selector-moo0)

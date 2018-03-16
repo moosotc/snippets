@@ -209,6 +209,8 @@
 (defun my-bookmark-mode-hook ()
   (local-set-key [(return)] 'bookmark-bmenu-select))
 
+(add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
+
 (defun my-c-mode-hook ()
   (define-key c-mode-map [(alt \[)] 'c-insert-curly-braces)
   (define-key c-mode-map [(alt \])] 'c-insert-curly-braces2)
@@ -223,7 +225,6 @@
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
-(add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
 
 (setq backup-directory-alist `(("." . "~/.backups")))
 ;;; **********************************************************************

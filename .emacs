@@ -558,6 +558,9 @@
 
 (add-hook 'c-mode-hook (lambda () (highlight-numbers-mode)))
 (add-hook 'caml-mode-hook (lambda () (highlight-numbers-mode)))
+(dolist (mode '(c-mode-hook caml-mode-hookl
+                            lisp-mode lisp-interaction-mode))
+  (add-hook mode 'highlight-numbers-mode))
 (add-hook 'dired-mode-hook 'selector-moo0)
 (add-hook 'bs-mode-hook 'selector-moo0)
 (add-hook 'package-menu-mode-hook 'selector-moo0)

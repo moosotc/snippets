@@ -1,6 +1,8 @@
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
 <fontconfig>
+  <dir>~/.fonts</dir>
+
   <match target="pattern">
     <test qual="all" name="family" compare="not_eq">
       <string>sans-serif</string>
@@ -25,28 +27,10 @@
     </edit>
   </match>
 
-  <include ignore_missing="yes">~/.config/fontconfig/coresubs.conf</include>
-  <include ignore_missing="yes">~/.config/fontconfig/pssubs.conf</include>
-
-  <alias binding="same">
-    <family>helvetica</family>
-    <accept>
-      <family>xo oriel</family>
-    </accept>
-  </alias>
-
-  <alias binding="same">
-    <family>helvetica neue</family>
-    <accept>
-      <family>helvetica</family>
-    </accept>
-  </alias>
-
   <alias binding="strong">
     <family>serif</family>
     <accept>
       <family>pt serif</family>
-      <family>dejavu serif</family>
     </accept>
   </alias>
 
@@ -60,7 +44,9 @@
 
   <alias>
     <family>mono</family>
-    <default><family>monospace</family></default>
+    <default>
+      <family>monospace</family>
+    </default>
   </alias>
 
   <alias binding="strong">
@@ -75,6 +61,33 @@
     <accept>
       <family>pt sans</family>
     </accept>
+  </alias>
+
+  <alias binding="same">
+    <family>arial</family>
+    <accept>
+      <family>xo oriel</family>
+    </accept>
+    <default>
+      <family>sans</family>
+    </default>
+  </alias>
+
+  <alias binding="same">
+    <family>times new roman</family>
+    <accept>
+      <family>xo thames</family>
+    </accept>
+    <default>
+      <family>serif</family>
+    </default>
+  </alias>
+
+  <alias binding="same">
+    <family>times</family>
+    <default>
+      <family>serif</family>
+    </default>
   </alias>
 
   <alias binding="same">
@@ -101,7 +114,6 @@
     <family>monospace</family>
     <accept>
       <family>pt mono</family>
-      <family>dejavu sans mono</family>
     </accept>
   </alias>
 

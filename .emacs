@@ -531,10 +531,6 @@
 (setq undo-limit 120000)
 
 (autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
-(global-set-key "\C-c_b" 'whitespace-mode)
-(global-set-key "\C-c_t" 'whitespace-toggle-options)
-(global-set-key "\C-c=b" 'global-whitespace-mode)
-(global-set-key "\C-c=t" 'global-whitespace-toggle-options)
 (global-whitespace-mode)
 (setq whitespace-line-column 76)
 (setq whitespace-style

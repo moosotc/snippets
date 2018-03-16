@@ -226,32 +226,7 @@
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
 (add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
 
-;;; ********************
-;;; Load the auto-save.el package, which lets you put all of your autosave
-;;; files in one place, instead of scattering them around the file system.
-;;;
-;; We load this afterwards because it checks to make sure the
-;; auto-save-directory exists (creating it if not) when it's loaded.
-
-;;; ********************
-;;; resize-minibuffer-mode makes the minibuffer automatically
-;;; resize as necessary when it's too big to hold its contents.
-
 (setq backup-directory-alist `(("." . "~/.backups")))
-
-(defun my-add-message (arg)
-  ;;;;- Tue Sep  5 09:36:23 2000 by Malcy - added to .emacs
-  (interactive "sMessage: ")
-  (forward-line 0)
-  (insert-string
-   (concat " - " (current-time-string) " by " (user-full-name) " - " arg " "))
-  (newline)
-  (backward-to-indentation 1)
-  (indent-according-to-mode)
-  (comment-region (point) (point-at-eol))
-  (forward-line 1)
-  (indent-according-to-mode))
-
 ;;; **********************************************************************
 ;;; OCaml
 ;;; **********************************************************************
@@ -360,8 +335,6 @@
 (defvar caml-mode-map (make-sparse-keymap))
 (define-key caml-mode-map [(return)] 'newline-and-indent)
 (define-key caml-mode-map [(delete)] 'delete-char)
-(define-key caml-mode-map "\C-c\C-c" 'comment-region)
-(define-key caml-mode-map "\M-\C-h" 'backward-kill-word)
 (define-key caml-mode-map "\C-c\C-q" 'caml-indent-phrase)
 
 ;;;======================================================================
@@ -383,6 +356,10 @@
 (add-to-list 'desktop-modes-not-to-save 'info-lookup-mode)
 (add-to-list 'desktop-modes-not-to-save 'fundamental-mode)
 
+(defun bsd-parens ()
+  (interactive)
+  (local-set-key [(alt ?9)] 'my-insert-parentheses-c))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -397,9 +374,10 @@
  '(escape-glyph ((t (:foreground "#0076c1"))))
  '(fixed-pitch ((t (:inherit (default)))))
  '(font-lock-builtin-face ((t (:weight bold))))
- '(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
+ '(font-lock-comment-delimiter-face ((default
+                                       (:inherit (font-lock-string-face)))))
  '(font-lock-comment-face ((t (:foreground "#204A87"))))
- '(font-lock-constant-face ((t (:foreground "#EF2929"))))
+ '(font-lock-constant-face ((t (:inherit (font-lock-string-face)))))
  '(font-lock-doc-face ((t (:foreground "#527c00"))))
  '(font-lock-function-name-face ((t (:weight bold :foreground "#00578E"))))
  '(font-lock-keyword-face ((t (:foreground "#A52A2A"))))
@@ -411,6 +389,7 @@
  '(font-lock-type-face ((t (:foreground "#004d41"))))
  '(font-lock-variable-name-face ((t (:weight bold :foreground "#0076c1"))))
  '(font-lock-warning-face ((t (:weight bold :foreground "#CC0000"))))
+ ;; '(font-lock-constant-face ((t :inherit 'font-lock-string-face)))
  '(fringe ((t (:background "#DBDBDB"))))
  '(header-line ((t (:foreground "#555753" :background "#C3C7CF"))))
  '(highlight ((t (:foreground "#2E3436" :background "#FEFFBF"))))
@@ -426,40 +405,13 @@
  '(mode-line-buffer-id ((t (:height 0.9 :foreground "#2E3436"))))
  '(mode-line-emphasis ((t (:weight bold))))
  '(mode-line-highlight ((t (:height 0.9 :foreground "#2E3436" :background "#FEFFBF"))))
- '(my-long-line-face ((((class color)) (:background "wheat"))) t)
- '(my-tab-face ((((class color)) (:foreground "black" :weight bold :underline t))) t)
- '(my-trailing-space-face ((((class color)) (:background "wheat"))) t)
  '(next-error ((t (:inherit (region)))))
  '(query-replace ((t (:inherit (isearch)))))
  '(region ((t (:background "#FEFFBF"))))
  '(secondary-selection ((t (:background "#EDD400"))))
  '(sh-heredoc ((t (:foreground "dim gray"))))
  '(shadow ((t (:foreground "#555753"))))
- '(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
- '(trailing-whitespace ((t (:foreground "#FEFFBF" :background "#DBDBDB"))))
- '(variable-pitch ((t (:inherit (default)))))
- '(whitespace-tab ((t nil))))
-
-(add-hook
- 'font-lock-mode-hook
- (function
-  (lambda ()
-    (setq font-lock-keywords
-          (append font-lock-keywords
-                  '(("\t+" (0 'my-tab-face t))
-                    ("^.\\{81,\\}$" (0 'my-long-line-face t))
-                    ("[ \t]+$"      (0 'my-trailing-space-face t))))))))
-
-(defun bsd-parens ()
-  (interactive)
-  (local-set-key [(alt ?9)] 'my-insert-parentheses-c))
-
-(defun do-white ()
-  (interactive)
-  (require 'whitespace)
-  (setq whitespace-style
-        '(face empty lines-tail tabs tab-mark trailing))
-  (whitespace-mode))
+ '(variable-pitch ((t (:inherit (default))))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -486,7 +438,7 @@
  '(org-agenda-files '("~/x/org/org.org"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   '(lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
+   '(highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
  '(safe-local-variable-values
    '((eval overwrite-mode t)
      (eval progn
@@ -578,56 +530,25 @@
 (autoload 'gnus "gnus" "gnus" t)
 (setq undo-limit 120000)
 
-(autoload 'global-whitespace-mode "whitespace-mode" "whitespace mode" t)
-(autoload 'whitespace-mode "whitespace" "whitespace-moden mode" t)
+(autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
 (global-set-key "\C-c_b" 'whitespace-mode)
 (global-set-key "\C-c_t" 'whitespace-toggle-options)
 (global-set-key "\C-c=b" 'global-whitespace-mode)
 (global-set-key "\C-c=t" 'global-whitespace-toggle-options)
-
-(defface font-lock-number-face
-  '((((class color) (background dar)) (:foreground "white"))
-    (((class color) (background light)) (:foreground "DodgerBlue4"))
-    (((class grayscale) (background light)) (:foreground "DimGray" :italic t))
-    (((class grayscale) (background dark)) (:foreground "LightGray" :italic t))
-    (t (:bold t)))
-  "Font Lock mode face used to highlight numbers."
-  :group 'font-lock-faces)
-(setq font-lock-number-face 'font-lock-number-face)
-(defvar font-lock-number "[0-9]+\\([eE][+-]?[0-9]*\\)?")
-(defvar font-lock-hexnumber "0[xX][0-9a-fA-F]+")
-(add-hook 'font-lock-mode-hook
-          (function
-           (lambda ()
-             (setq font-lock-keywords
-                   (append font-lock-keywords
-                           (list
-                            (list (concat "\\<\\(" font-lock-number "\\)\\>" )
-                                  (list 0 font-lock-number-face))
-                            (list
-                             (concat "\\<\\(" font-lock-hexnumber "\\)\\>" )
-                             (list 0 font-lock-number-face))))))))
-
-(defface font-lock-ws-face
-  '((((class color) (background dark)) (:background "white"))
-    (((class color) (background light)) (:background "black"))
-    (t (:bold t)))
-  "Font Lock mode face used to highlight unwated whitespace."
-  :group 'font-lock-faces)
-(setq font-lock-ws-face 'font-lock-ws-face)
-
-(defun font-lock-mode-hook-fn ()
-  (setq old-font-lock-keywords font-lock-keywords)
-  (make-variable-buffer-local 'font-lock-keywords)
-  (let ((elem
-         (list
-          (list "\\([ \t]+$\\)\\|\\(\t\\)"
-                (list 0 font-lock-ws-face)))))
-    (setq font-lock-keywords (append font-lock-keywords elem))))
-(add-hook 'font-lock-mode-hook 'font-lock-mode-hook-fn)
-
-(defun reset-font-lock ()
-  (setq font-lock-keywords old-font-lock-keywords))
+(global-whitespace-mode)
+(setq whitespace-line-column 76)
+(setq whitespace-style
+      '(face
+        tabs
+        trailing
+        lines-tail
+        newline
+        empty
+        tab
+        tab-mark
+        space-after-tab
+        space-before-tab
+        newline-mark))
 
 (defun selector-moo ()
   (hl-line-mode 1)
@@ -635,16 +556,11 @@
 (defun selector-moo0 ()
   (hl-line-mode 1))
 
+(add-hook 'c-mode-hook (lambda () (highlight-numbers-mode)))
+(add-hook 'caml-mode-hook (lambda () (highlight-numbers-mode)))
 (add-hook 'dired-mode-hook 'selector-moo0)
 (add-hook 'bs-mode-hook 'selector-moo0)
 (add-hook 'package-menu-mode-hook 'selector-moo0)
-
-(defun trans (a b c)
-  (google-translate-translate a b c)
-  (delete-window)
-  (raise-frame))
-
-(autoload 'google-translate-translate "google-translate" "tr")
 
 (global-set-key "\C-xf" 'helm-find-files)
 (global-set-key [(meta insert)] 'x-clipboard-yank)
@@ -657,8 +573,7 @@
 (defun fromatoz ()
   (interactive)
   (insert-string
-   (format "%s" (loop for a from ?A to ?Z collect (format "%c\n" a))))
-  )
+   (format "%s" (loop for a from ?A to ?Z collect (format "%c\n" a)))))
 
 ;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
 (define-key global-map "\C-cl" 'org-store-link)

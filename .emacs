@@ -532,7 +532,7 @@
 
 (autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
 (global-whitespace-mode)
-(setq whitespace-line-column 76)
+(setq whitespace-line-column 78)
 (setq whitespace-style
       '(face
         tabs

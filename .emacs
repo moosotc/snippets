@@ -739,5 +739,14 @@
   (load "~/x/rcs/git/helm-lacarte/helm-lacarte.el")
   (global-set-key [(f10)] 'helm-browse-menubar))
 
-;;; Local Variables:
+(defun lispy ()
+  (interactive)
+  (if (equal major-mode 'lisp-interaction-mode)
+      (switch-to-other-buffer)
+    (switch-to-buffer "*scratch*")
+    (lisp-interaction-mode)))
+
+(global-set-key [(meta alt ?l)] 'lispy)
+
+;;; local Variables:
 ;;; End:

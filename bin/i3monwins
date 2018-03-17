@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+# XXX monitor clients on current desktop somehow
+
 w() {
     wincount=0
     aid=$(($1))                 # unquote

@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# 1F4E7 📧 E-MAIL SYMBOL
-#    b0  ° DEGREE SIGN
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json
 
@@ -223,13 +221,14 @@ def main ():
 
         if deadline and t > deadline:
             msg = None
+            pmsg = None
             deadline = None
 
         j = [{"color": "#00ff00", "full_text": msg}] if msg else []
 
         nmail = checkmail (t)
         if nmail > 0:
-            j += [{"color": "#ffff00", "full_text": "%d📧" % nmail}]
+            j += [{"color": "#ffff00", "full_text": "%d🅼" % nmail}] # ◛
 
         if winfo:
             j += [{"color": "#a9a9a9", "full_text": winfo}]

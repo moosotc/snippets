@@ -9,9 +9,12 @@
 (package-initialize)
 
 (set-fontset-font "fontset-default" 'unicode
-		  (font-spec :name "symbola" :size 10.0))
+                  (font-spec :name "symbola" :size 10.0))
 (set-fontset-font "fontset-default" 'cyrillic
-		  (font-spec :name "ibm plex mono" :size 10.0))
+                  (font-spec :name "ibm plex mono" :size 10.0))
+(set-fontset-font "fontset-default"
+                  ;; BOX DRAWING
+                  '(#x2500 . #x257f) "ibm plex mono" nil)
 
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
@@ -516,7 +519,7 @@
 (setq undo-limit 120000)
 
 (autoload 'whitespace-mode "whitespace" "whitespace mode" t)
-(add-hook 'c-mode-hook 'whitespace-mode)
+(global-whitespace-mode)
 (setq whitespace-line-column 80)
 (setq whitespace-style
       '(face

@@ -24,28 +24,30 @@ cat <<EOF
   </match>
 EOF
 
-S "serif"           "pt serif"
-S "sans"            "lato"
+S "serif"           "pt serif"  # https://en.wikipedia.org/wiki/PT_Fonts
+S "sans"            "lato"      # http://www.latofonts.com/lato-free-fonts/
 S "sans-serif"      "lato"
 S "mono"            "pt mono"
 S "monospace"       "pt mono"
-S "arial"           "xo oriel"
-S "verdana"         "open sans"
+S "arial"           "xo oriel"  # https://fonts.myoffice.ru/
+S "verdana"         "open sans" # https://fonts.google.com/specimen/Open+Sans
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
-S "comic sans ms"   "andika"
+S "comic sans ms"   "andika"    # https://software.sil.org/andika/
 S "cantarell"       "pt sans"
 S "ui"              "pt sans"
-S "georgia"         "gentium plus"
-S "dejavu sans"     "ibm plex sans"
+S "georgia"         "gentium plus" # https://software.sil.org/gentium/
+S "dejavu sans"     "ibm plex sans" # https://en.wikipedia.org/wiki/IBM_Plex
 S "dejavu serif"    "ibm plex serif"
 S "consolas"        "ibm plex mono"
 S "segoe ui"        "ibm plex sans" # github
-S "monaco"          "monofur"       # forums
-S "helvetica"       "roboto"        # bbc.co.uk
+S "monaco"          "monofur"       # http://eurofurence.net/monofur.html
+                                    # (some forums)
+S "helvetica"       "roboto"        # https://fonts.google.com/specimen/Roboto
+                                    # (bbc.co.uk)
 S "helvetica neue"  "roboto slab"
 
 for f in "segoe"                                \

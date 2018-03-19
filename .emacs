@@ -638,6 +638,7 @@
       (switch-to-other-buffer)
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
+(global-set-key [(meta alt ?l)] 'lispy)
 
 ;;; local Variables:
 ;;; End:

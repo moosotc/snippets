@@ -9,9 +9,9 @@
 (package-initialize)
 
 (set-fontset-font "fontset-default" 'unicode
-                  (font-spec :name "symbola" :size 10.0))
+                  (font-spec :name "symbola"))
 (set-fontset-font "fontset-default" 'cyrillic
-                  (font-spec :name "ibm plex mono" :size 10.0))
+                  (font-spec :name "ibm plex mono"))
 (set-fontset-font "fontset-default"
                   ;; BOX DRAWING
                   '(#x2500 . #x257f) "ibm plex mono" nil)
@@ -524,7 +524,7 @@
 (setq whitespace-style
       '(face
         trailing
-        tabs
+        indentation::tabs
         lines-tail
         empty
         tab-mark))

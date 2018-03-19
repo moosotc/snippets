@@ -3,11 +3,11 @@ Xft.dpi: 152
 Xcursor.theme: Vanilla-DMZ
 Xcursor.size: 24
 
-emacs.geometry: 80x40+777+177
+emacs.geometry: 80x40
 emacs*menubar*font: ui-8
 emacs.background: grey80
 emacs.toolBar: 0
-emacs.font: ibm plex mono:pixelsize=18
+emacs.font: ibm plex mono:pixelsize=19
 emacs.scrollBarWidth: 7
 emacs.menuBar: 0
 

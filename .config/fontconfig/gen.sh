@@ -59,7 +59,8 @@ for f in "segoe"                                \
          "cambria"                              \
          "constantia"                           \
          "linux libertine"
-         do
+do
+    # learn yourself some greek
     S "$f" "xo symbol"
 done
 echo "</fontconfig>"

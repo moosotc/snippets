@@ -525,7 +525,6 @@
       '(face
         trailing
         tabs
-        lines
         lines-tail
         empty
         tab-mark))

@@ -1,4 +1,4 @@
-#!/bin/sh
+:#!/bin/sh
 set -e
 ctl=/tmp/i3.fifo
 
@@ -31,9 +31,9 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
 
 trap "printf '\001' >$ctl" 0
 
-printf "📺 $arg" >$ctl
+printf "🅥 $arg" >$ctl
 title=$($yt -e $arg)
-printf "%s" "📺 $title" >$ctl
+printf "%s" "🆅 $title" >$ctl
 tmux new-window -n "$title"                                             \
      mpv --quiet "$arg"                                                 \
      --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]' ||   \

@@ -1,7 +1,5 @@
 #!/bin/sh
-
 g="-g 80x24+329+87"
-f="xft:pt mono:pixelsize=21.5,xft:unifont"
-#f="xft:inconsolata:pixelsize=24,xft:anonymous pro,xft:unifont"
+f="xft:pt mono-10"
 
 exec rxvtc $g -fn "$f" -rv +sb

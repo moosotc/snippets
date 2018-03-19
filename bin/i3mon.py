@@ -228,7 +228,7 @@ def main ():
 
         nmail = checkmail (t)
         if nmail > 0:
-            j += [{"color": "#ffff00", "full_text": "%d🅼" % nmail}] # ◛
+            j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
 
         if winfo:
             j += [{"color": "#a9a9a9", "full_text": winfo}]

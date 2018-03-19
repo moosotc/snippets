@@ -8,24 +8,10 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-;; pictographs/emoticons
-;; thanks to wasamasa from irc.freenode.org #emacs
-;; (otherwise emacs uses default substitution of Symbola)
-(set-fontset-font "fontset-default"
-                  ;; Miscellaneous Symbols and Pictographs
-                  '(#x1F300 . #x1F5FF) "symbola" nil)
-(set-fontset-font "fontset-default"
-                  ;; Emoticons
-                  '(#x1F600 . #x1F64F) "noto emoji" nil)
-(set-fontset-font "fontset-default"
-                  ;; Supplemental Symbols and Pictographs
-                  '(#x1F900 . #x1F9FF) "symbola" nil)
-(if (string-match-p "inconsolata" (face-font 'default))
-    (progn
-      (set-fontset-font "fontset-default"
-                        ;; BOX DRAWING
-                        '(#x2500 . #x257f) "dejavu sans mono" nil)
-      (set-fontset-font "fontset-default" 'cyrillic "anonymous pro minus")))
+(set-fontset-font "fontset-default" 'unicode
+		  (font-spec :name "symbola" :size 10.0))
+(set-fontset-font "fontset-default" 'cyrillic
+		  (font-spec :name "ibm plex mono" :size 10.0))
 
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
@@ -529,18 +515,17 @@
 (autoload 'gnus "gnus" "gnus" t)
 (setq undo-limit 120000)
 
-(autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
-(global-whitespace-mode)
+(autoload 'whitespace-mode "whitespace" "whitespace mode" t)
+(add-hook 'c-mode-hook 'whitespace-mode)
 (setq whitespace-line-column 80)
 (setq whitespace-style
       '(face
-        tabs
-        empty
         trailing
+        tabs
+        lines
         lines-tail
-        newline
         empty
-        indentation::space))
+        tab-mark))
 
 (defun selector-moo ()
   (hl-line-mode 1)
@@ -593,8 +578,7 @@
 
 (setq erc-log-channels-directory "~/x/log/erc")
 (setq erc-save-buffer-on-part t)
-;; thanks to fledermaus#erc
-(setq erc-auto-query 'bury)
+(setq erc-auto-query 'bury) ;; thanks to fledermaus#erc
 
 (put 'dired-find-alternate-file 'disabled nil)
 
@@ -602,7 +586,7 @@
   (with-temp-buffer
     (if (string-equal s (string #x1))
         (insert s)
-      (insert "🙋 " s))
+      (insert "☎  " s))
     (when (file-writable-p "/tmp/i3.fifo")
       (write-region (point-min)
                     (point-max)
@@ -652,8 +636,6 @@
       (switch-to-other-buffer)
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
-
-(global-set-key [(meta alt ?l)] 'lispy)
 
 ;;; local Variables:
 ;;; End:

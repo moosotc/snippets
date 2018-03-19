@@ -1,46 +1,35 @@
 -*- mode: text -*-
-
-# sample
 # S in S9 59 S9/59 59/S9 is too much like 5
 # 3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1
+# rnrmnnmrrrnmmr
 # 01234567890 3ДС ЗДС
 # tilde/dash  - - (~-) ~ ~ (-~)
 # curly vs plain braces {} () {}
+
 Why not _ in emacs
-
-PT Mono         : gnus, ~ - tilde is too similar to dash
-                  no itallics (a blessing and a curse)
-                  kerning weird, heigher (we,he) [depends on pixelsize]
-Fira Mono       : above sample (s9 in particular)
-monofur         : itallics in gnus
-Anonymous pro   : kerning (life)
-inconsolata     : no cyrillic, tilde, curly braces
-monoid          : kerning (weird, multi)
-freemono        : too thin, tilde
-consolas        : s9
-inconsolata lgc : 3З, чфчыфяйцхъжцюяжж (фж are too heavy)
-anonymous pro   : 3З, чфчыфяйцхъжцюяжж (ъжц ж is too heavy)
-      monofur   : ж
-ibm plex mono   : 3З, box drawing
-input mono      : 3З, S9
-source code pro : 59
-m+              :
-/home/malc/x/rcs/git/fonts/codeface/fonts/fantasque-sans-mono/
-/home/malc/x/rcs/git/fonts/codeface/fonts/iosevka/
-
-jumping:
-        echo ${@:5} # monofur (expected - old style figures)
-                    # pt mono (quite unexpected)
-kerning:
-        life           [l i fe] (anonymous pro, source code pro)
+        echo ${@:5}
+        life           [l i fe]
         weird          [we i rd]
-        Before         [Bef ore(monofur), Be for e (anonymous pro)]
-        higher         [gh, h i gher(monofur), hi gher (inconsolata lgc)]
+        Before         [Bef ore, Be for e]
+        higher         [gh, h i gher, hi gher]
         multi          [mu lti]
         languge        [an]
         when           [wh]
-        kerning        [rn(pt mono)]
+        kerning        [rn]
         мне            [мн е]
-        oiled          [oi led(inconsolata, anonymous pro)]
-        mkfifo         [mk f i fo(inconsolata), mk f i fo(anonymous pro)]
-        didn't         [di dn't(inconsolata)]
+        oiled          [oi led]
+        mkfifo         [mk f i fo, mk f i fo]
+        didn't         [di dn't]
+        CmmCall        [CmmC a l l]
+
+(from UTF8-demo.txt)
+                                                                      ▉
+  ╔══╦══╗  ┌──┬──┐  ╭──┬──╮  ╭──┬──╮  ┏━━┳━━┓  ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐    ▊ ╱╲╱╲╳╳╳
+  ║┌─╨─┐║  │╔═╧═╗│  │╒═╪═╕│  │╓─╁─╖│  ┃┌─╂─┐┃  ┗╃╄┙  ╶┼╴╺╋╸┠┼┨ ┝╋┥    ▋ ╲╱╲╱╳╳╳
+  ║│╲ ╱│║  │║   ║│  ││ │ ││  │║ ┃ ║│  ┃│ ╿ │┃  ┍╅╆┓   ╵  ╹ ┗┷┛ └┸┘    ▌ ╱╲╱╲╳╳╳
+  ╠╡ ╳ ╞╣  ├╢   ╟┤  ├┼─┼─┼┤  ├╫─╂─╫┤  ┣┿╾┼╼┿┫  ┕┛┖┚     ┌┄┄┐ ╎ ┏┅┅┓ ┋ ▍ ╲╱╲╱╳╳╳
+  ║│╱ ╲│║  │║   ║│  ││ │ ││  │║ ┃ ║│  ┃│ ╽ │┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇ ┋ ▎
+  ║└─╥─┘║  │╚═╤═╝│  │╘═╪═╛│  │╙─╀─╜│  ┃└─╂─┘┃  ░░▒▒▓▓██ ┊  ┆ ╎ ╏  ┇ ┋ ▏
+  ╚══╩══╝  └──┴──┘  ╰──┴──╯  ╰──┴──╯  ┗━━┻━━┛  ▗▄▖▛▀▜   └╌╌┘ ╎ ┗╍╍┛ ┋  ▁▂▃▄▅▆▇█
+                                               ▝▀▘▙▄▟
+                                               :

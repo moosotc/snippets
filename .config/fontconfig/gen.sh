@@ -58,8 +58,7 @@ for f in "segoe"                                \
          "candara"                              \
          "cambria"                              \
          "constantia"                           \
-         "linux libertine"                      \
-         "helvetica neue"
+         "linux libertine"
          do
     S "$f" "xo symbol"
 done

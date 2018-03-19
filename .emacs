@@ -14,7 +14,7 @@
                   (font-spec :name "ibm plex mono"))
 (set-fontset-font "fontset-default"
                   ;; BOX DRAWING
-                  '(#x2500 . #x257f) "ibm plex mono" nil)
+                  '(#x2500 . #x257f) "fira mono")
 
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")

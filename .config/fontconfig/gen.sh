@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
+# prior to starting X to get reproducible distribution independent behavior
+
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
     cat <<EOF

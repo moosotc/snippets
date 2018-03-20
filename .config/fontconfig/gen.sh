@@ -46,7 +46,7 @@ S "georgia"         "gentium plus" # https://software.sil.org/gentium/
 S "dejavu sans"     "ibm plex sans" # https://en.wikipedia.org/wiki/IBM_Plex
 S "dejavu serif"    "ibm plex serif"
 S "consolas"        "ibm plex mono"
-S "segoe ui"        "ibm plex sans" # github
+S "segoe ui"        "lato"          # github
 S "monaco"          "monofur"       # http://eurofurence.net/monofur.html
                                     # (some forums)
 S "helvetica"       "roboto"        # https://fonts.google.com/specimen/Roboto

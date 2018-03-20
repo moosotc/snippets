@@ -1,4 +1,4 @@
--*- mode: text -*-
+# -*- mode: text -*-
 # S in S9 59 S9/59 59/S9 is too much like 5
 # 3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1
 # rnrmnnmrrrnmmr
@@ -20,8 +20,10 @@ Why not _ in emacs
         oiled          [oi led]
         mkfifo         [mk f i fo, mk f i fo]
         didn't         [di dn't]
+        more           [mo re]
         CmmCall        [CmmC a l l]
-
+        -Wvla          [-Wv la]
+uy
 (from UTF8-demo.txt)
                                                                       ▉
   ╔══╦══╗  ┌──┬──┐  ╭──┬──╮  ╭──┬──╮  ┏━━┳━━┓  ┎┒┏┑   ╷  ╻ ┏┯┓ ┌┰┐    ▊ ╱╲╱╲╳╳╳

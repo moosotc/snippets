@@ -51,7 +51,6 @@ def checkmail (t):
                 m = unspat.match (s.decode ())
             except:
                 m = "error: " + s
-            n = 0
             if m:
                 n = int (m.group (1))
             sock1.close ()
@@ -94,7 +93,7 @@ class N:
         dt = curT - self.prevT
         self.prevT = curT
         color = "#a9a9a9"
-        s = "↕"
+        s = "N"
         for i in range (len (curV)):
             c = curV[i]
             p = self.prevV[i]
@@ -230,6 +229,9 @@ def main ():
         if nmail > 0:
             j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
 
+        j += [{"color": "#a9a9a9",
+               "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
+
         if winfo:
             j += [{"color": "#a9a9a9", "full_text": winfo}]
 
@@ -243,9 +245,6 @@ def main ():
         swap = swapused ()
         if swap != 0:
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
-
-        j += [{"color": "#c9c9c9",
-               "full_text": time.strftime ('%H:%M', time.localtime (t))}]
 
         print ("%s," % json.dumps (j), flush=True)
 

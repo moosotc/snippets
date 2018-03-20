@@ -7,14 +7,8 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
-
-(set-fontset-font "fontset-default" 'unicode
-                  (font-spec :name "symbola"))
-(set-fontset-font "fontset-default" 'cyrillic
-                  (font-spec :name "ibm plex mono"))
-(set-fontset-font "fontset-default"
-                  ;; BOX DRAWING
-                  '(#x2500 . #x257f) "fira mono")
+;; (set-fontset-font "fontset-default" 'unicode
+;;                   (font-spec :name "unifont"))
 
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
@@ -639,6 +633,30 @@
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
 (global-set-key [(meta alt ?l)] 'lispy)
+
+
+
+(make-face 'font-lock-number-face)
+(set-face-foreground 'font-lock-number-face "DodgerBlue4")
+(setq font-lock-number-face 'font-lock-number-face)
+
+;; https://lists.gnu.org/archive/html/help-gnu-emacs/2010-12/msg02818.html
+;; (setq number-mode-list '(c-mode-hook
+;;                          c++-mode-hook
+;;                          lisp-mode-hook
+;;                          caml-mode-hook
+;;                          shell-mode-hook
+;;                          emacs-lisp-mode-hook
+;;                          python-mode-hook
+;;                          cperl-mode-hook))
+;; (dolist (mode number-mode-list)
+;;   (add-hook
+;;    mode
+;;    '(lambda ()
+;;       (font-lock-add-keywords
+;;        nil
+;;        '(("\\<\\([0-9]+\\([eE][+-]?[0-9]*\\)?\\|0[xX][0-9a-fA-F]+\\)\\>"
+;;           font-lock-number-face))))))
 
 ;;; local Variables:
 ;;; End:

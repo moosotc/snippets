@@ -1,4 +1,4 @@
-:#!/bin/sh
+#!/bin/sh
 set -e
 ctl=/tmp/i3.fifo
 

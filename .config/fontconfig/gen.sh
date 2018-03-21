@@ -43,8 +43,8 @@ S "comic sans ms"   "andika"    # https://software.sil.org/andika/
 S "cantarell"       "pt sans"
 S "ui"              "pt sans"
 S "georgia"         "gentium plus" # https://software.sil.org/gentium/
-S "dejavu sans"     "ibm plex sans" # https://en.wikipedia.org/wiki/IBM_Plex
-S "dejavu serif"    "ibm plex serif"
+S "dejavu sans"     "open sans"
+S "dejavu serif"    "ibm plex serif" #  # https://en.wikipedia.org/wiki/IBM_Plex
 S "consolas"        "ibm plex mono"
 S "segoe ui"        "lato"          # github
 S "monaco"          "monofur"       # http://eurofurence.net/monofur.html
@@ -52,6 +52,7 @@ S "monaco"          "monofur"       # http://eurofurence.net/monofur.html
 S "helvetica"       "roboto"        # https://fonts.google.com/specimen/Roboto
                                     # (bbc.co.uk)
 S "helvetica neue"  "roboto slab"
+S "bitstream vera sans" "open sans" # http://www.lagom.nl/lcd-test/
 
 for f in "segoe"                                \
          "corbel"                               \

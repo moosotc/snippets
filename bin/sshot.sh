@@ -2,8 +2,8 @@
 set -e
 
 test "$1" = "-" && {
-    id=$(xdotool getactivewindow)
-    out=${1-/tmp/shot.png}
+    id=$(xdotool getactivewindow) || echo fsck
+    out=${2-/tmp/shot.png}
 } || {
     out=${1-/tmp/shot.png}
     set -- $(xwininfo -root | grep "Window id:")

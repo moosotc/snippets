@@ -28,30 +28,30 @@ cat <<EOF
   </match>
 EOF
 
-S "serif"           "pt serif"  # https://en.wikipedia.org/wiki/PT_Fonts
-S "sans"            "lato"      # http://www.latofonts.com/lato-free-fonts/
+S "serif"           "pt serif"          # https://en.wikipedia.org/wiki/PT_Fonts
+S "sans"            "lato"              # http://www.latofonts.com/lato-free-fonts/
 S "sans-serif"      "lato"
 S "mono"            "pt mono"
 S "monospace"       "pt mono"
-S "arial"           "xo oriel"  # https://fonts.myoffice.ru/
+S "arial"           "xo oriel"          # https://fonts.myoffice.ru/
 S "verdana"         "ibm plex sans"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
-S "comic sans ms"   "andika"    # https://software.sil.org/andika/
+S "comic sans ms"   "andika"            # https://software.sil.org/andika/
 S "cantarell"       "pt sans"
 S "ui"              "pt sans"
-S "georgia"         "gentium plus" # https://software.sil.org/gentium/
+S "georgia"         "gentium plus"      # https://software.sil.org/gentium/
 S "dejavu sans"     "ibm plex sans"
-S "dejavu serif"    "ibm plex serif" #  # https://en.wikipedia.org/wiki/IBM_Plex
+S "dejavu serif"    "ibm plex serif"    # https://en.wikipedia.org/wiki/IBM_Plex
 S "consolas"        "ibm plex mono"
-S "segoe ui"        "lato"          # github
-S "monaco"          "monofur"       # http://eurofurence.net/monofur.html
-                                    # (some forums)
-S "helvetica"       "roboto"        # https://fonts.google.com/specimen/Roboto
-                                    # (bbc.co.uk)
+S "segoe ui"        "lato"              # github
+S "monaco"          "monofur"           # http://eurofurence.net/monofur.html
+                                        # (some forums)
+S "helvetica"       "roboto"            # https://fonts.google.com/specimen/Roboto
+                                        # (bbc.co.uk)
 S "helvetica neue"  "roboto slab"
 S "bitstream vera sans" "ibm plex sans" # http://www.lagom.nl/lcd-test/
 
@@ -69,4 +69,6 @@ echo "</fontconfig>"
 
 # Local Variables:
 # compile-command: "./gen.sh"
+# whitespace-line-column: 100
+# truncate-lines: t
 # End:

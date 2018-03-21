@@ -1,0 +1,28 @@
+#!/bin/sh
+set -ex
+
+if true; then
+    set -- $(xrandr | grep DP2)
+    pw=${3%x*}
+    h=${3#*x}
+    ph=${h%%+*}
+    mw=${12%mm}
+    mh=${14%mm}
+else
+    pw=2560
+    ph=1440
+    mw=553
+    mh=311
+fi
+
+doset() {
+    read x
+    read y
+    xrandr --dpi ${x}x${y}
+    echo "Xft.dpi: 152" | xrdb -merge
+}
+
+bc -- <<EOF | doset
+    $pw / ($mw / 25.4)
+    $ph / ($mh / 25.4)
+EOF

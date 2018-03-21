@@ -51,6 +51,7 @@ def checkmail (t):
                 m = unspat.match (s.decode ())
             except:
                 m = "error: " + s
+            n = 0
             if m:
                 n = int (m.group (1))
             sock1.close ()
@@ -216,6 +217,7 @@ def main ():
 
         if msg == '\x01':
             msg = None
+            pmsg = None
             deadline = None
 
         if deadline and t > deadline:

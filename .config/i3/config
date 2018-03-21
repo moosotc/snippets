@@ -162,6 +162,8 @@ bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid sel2clip
 bindsym Ctrl+Shift+grave $execnoid xclip -selection clipboard -o | xclip -i
 bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -o)"
+bindsym Print $execnoid sshot.sh
+bindsym $mod+Print $execnoid sshot.sh -
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show

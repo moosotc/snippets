@@ -34,7 +34,7 @@ S "sans-serif"      "lato"
 S "mono"            "pt mono"
 S "monospace"       "pt mono"
 S "arial"           "xo oriel"          # https://fonts.myoffice.ru/
-S "verdana"         "ibm plex sans"
+S "verdana"         "source sans pro"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "times new roman" "xo thames"
@@ -44,7 +44,7 @@ S "comic sans ms"   "andika"            # https://software.sil.org/andika/
 S "cantarell"       "pt sans"
 S "ui"              "pt sans"
 S "georgia"         "gentium plus"      # https://software.sil.org/gentium/
-S "dejavu sans"     "ibm plex sans"
+S "dejavu sans"     "source sans pro"
 S "dejavu serif"    "ibm plex serif"    # https://en.wikipedia.org/wiki/IBM_Plex
 S "consolas"        "ibm plex mono"
 S "segoe ui"        "lato"              # github

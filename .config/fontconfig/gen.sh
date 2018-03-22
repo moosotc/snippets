@@ -50,9 +50,7 @@ S "consolas"        "ibm plex mono"
 S "segoe ui"        "lato"              # github
 S "monaco"          "monofur"           # http://eurofurence.net/monofur.html
                                         # (some forums)
-S "helvetica"       "roboto"            # https://fonts.google.com/specimen/Roboto
-                                        # (bbc.co.uk)
-S "helvetica neue"  "roboto slab"
+S "helvetica"       "xo oriel"
 S "bitstream vera sans" "ibm plex sans" # http://www.lagom.nl/lcd-test/
 
 for f in "segoe"                                \

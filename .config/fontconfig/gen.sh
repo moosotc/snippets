@@ -34,14 +34,13 @@ S "sans-serif"      "lato"
 S "mono"            "pt mono"
 S "monospace"       "pt mono"
 S "arial"           "xo oriel"          # https://fonts.myoffice.ru/
-S "verdana"         "source sans pro"
+S "verdana"         "xo verbena"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
 S "comic sans ms"   "andika"            # https://software.sil.org/andika/
-S "cantarell"       "pt sans"
 S "ui"              "pt sans"
 S "georgia"         "gentium plus"      # https://software.sil.org/gentium/
 S "dejavu sans"     "source sans pro"
@@ -64,6 +63,11 @@ for f in "segoe"                                \
 do
     # learn yourself some greek
     S "$f" "xo symbol"
+done
+for f in "cantarell" "open sans"
+do
+    # respect your elders + z ftw
+    S "$f" "UnifrakturMaguntia21"
 done
 echo "</fontconfig>"
 

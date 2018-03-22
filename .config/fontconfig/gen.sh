@@ -29,8 +29,8 @@ cat <<EOF
 EOF
 
 S "serif"           "pt serif"          # https://en.wikipedia.org/wiki/PT_Fonts
-S "sans"            "lato"              # http://www.latofonts.com/lato-free-fonts/
-S "sans-serif"      "lato"
+S "sans"            "exo 2"             # https://fonts.google.com/specimen/Exo+2
+S "sans-serif"      "exo 2"
 S "mono"            "pt mono"
 S "monospace"       "pt mono"
 S "arial"           "xo oriel"          # https://fonts.myoffice.ru/
@@ -47,7 +47,8 @@ S "georgia"         "gentium plus"      # https://software.sil.org/gentium/
 S "dejavu sans"     "source sans pro"
 S "dejavu serif"    "ibm plex serif"    # https://en.wikipedia.org/wiki/IBM_Plex
 S "consolas"        "ibm plex mono"
-S "segoe ui"        "lato"              # github
+S "segoe ui"        "exo 2"             # github
+
 S "monaco"          "monofur"           # http://eurofurence.net/monofur.html
                                         # (some forums)
 S "helvetica"       "xo oriel"

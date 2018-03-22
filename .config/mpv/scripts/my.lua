@@ -8,10 +8,3 @@ function osc_toggle (mode)
    on = not on
 end
 mp.register_script_message ("osc-toggle", osc_toggle)
-
--- function clear (name, value)
---    if value > 0 then
---       mp.osd_message (" ", 0.001)
---     end
--- end
--- mp.observe_property ("osd-width", "number", clear)

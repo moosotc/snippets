@@ -42,6 +42,7 @@ S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
 S "comic sans ms"   "andika"            # https://software.sil.org/andika/
 S "ui"              "pt sans"
+S "georgia"         "merriweather"      # https://ebensorkin.wordpress.com/
 S "georgia"         "gentium plus"      # https://software.sil.org/gentium/
 S "dejavu sans"     "source sans pro"
 S "dejavu serif"    "ibm plex serif"    # https://en.wikipedia.org/wiki/IBM_Plex

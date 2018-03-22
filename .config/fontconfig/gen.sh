@@ -67,7 +67,7 @@ done
 for f in "cantarell" "open sans"
 do
     # respect your elders + z ftw
-    S "$f" "UnifrakturMaguntia21"
+    S "$f" "UnifrakturMaguntia21" # http://unifraktur.sourceforge.net/maguntia.html
 done
 echo "</fontconfig>"
 

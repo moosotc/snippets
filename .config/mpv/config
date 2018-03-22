@@ -4,8 +4,9 @@ alang=en
 slang=en
 sub=no
 hwdec=vaapi
-osd-font=opensans
-osd-font-size=65
-#script-opts=osc-scalewindows=1.5
+osd-font=xo verbena
+osd-font-size=50
+sub-font=source sans pro
+sub-font-size=60
 hidpi-window-scale=no
 ao=alsa

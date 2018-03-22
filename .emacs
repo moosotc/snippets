@@ -10,6 +10,10 @@
 ;; (set-fontset-font "fontset-default" 'unicode
 ;;                   (font-spec :name "unifont"))
 
+(set-fontset-font "fontset-default"
+                  ;; Supplemental Symbols and Pictographs
+                  '(#x1f900 . #x1f9ff) "symbola" nil)
+
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
 (server-start)

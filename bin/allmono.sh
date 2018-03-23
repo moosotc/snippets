@@ -6,6 +6,6 @@ find $path -type f | while read f; do
     test -f "$f" || continue
     o=$(fc-scan "$f" -f 'f=\"%{family}\" s=\"%{spacing}\" p=\"%{file}\"') && {
         eval "$o"
-        echo "$f=$p"
+        test -z $s || echo "$f=$p"
     }
 done

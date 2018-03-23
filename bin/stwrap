@@ -1,6 +1,6 @@
 #!/bin/sh
 t=${1-$(date +%s)}
-case $((t%4)) in
+case $((t%2)) in
     1) f="xft:monofur-12";;
     *) f="xft:pt mono-10";;
 esac

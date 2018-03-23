@@ -23,6 +23,7 @@
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 (global-set-key "\C-ha" 'apropos)
 (global-set-key (kbd "C-'") 'pop-to-mark-command)
+(global-set-key [(meta alt ? )] 'mark-end-of-sentence)
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
 (setq x-super-keysym 'meta)
@@ -637,8 +638,6 @@
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
 (global-set-key [(meta alt ?l)] 'lispy)
-
-
 
 (make-face 'font-lock-number-face)
 (set-face-foreground 'font-lock-number-face "DodgerBlue4")

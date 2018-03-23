@@ -64,7 +64,15 @@ do
     # learn yourself some greek
     S "$f" "xo symbol"
 done
-for f in "cantarell" "open sans"
+for f in "open sans" "droid sans" "noto sans" "dejavu sans";
+do
+    S "$f" "xo verbena"
+done
+for f in "droid serif" "noto serif" "dejavu serif";
+do
+    S "$f" "ibm plex serif"
+done
+for f in "cantarell"
 do
     # respect your elders + z ftw
     S "$f" "UnifrakturMaguntia21" # http://unifraktur.sourceforge.net/maguntia.html

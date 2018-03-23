@@ -2,8 +2,6 @@
 t=${1-$(date +%s)}
 case $((t%4)) in
     1) f="xft:monofur-12";;
-    2) f="xft:hack-10";;
-    3) f="xft:fantasque sans mono-11";;
     *) f="xft:pt mono-10";;
 esac
 exec rxvtc -fn "$f" -rv +sb -g 80x24+329+87

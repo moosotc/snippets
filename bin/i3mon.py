@@ -218,7 +218,6 @@ def main ():
         if msg == '\x01':
             msg = None
             pmsg = None
-            deadline = None
 
         if deadline and t > deadline:
             msg = None

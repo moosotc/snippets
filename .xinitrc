@@ -6,7 +6,7 @@ exec 1>/tmp/xinit.out
 #setxkbmap -option "terminate:ctrl_alt_bksp"
 xset dpms 600 1200 2400
 xset +dpms
-xrdb -load $HOME/.Xdefaults
+xrdb -load $HOME/.config/Xresources
 setcapskey
 setdpi
 xmodmap -e 'pointer = 3 2 1'

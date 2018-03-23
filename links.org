@@ -5,12 +5,9 @@
 ** xdotool         http://www.semicomplete.com/projects/xdotool/
 ** tor             http://www.torproject.org/
 ** conkeror        http://conkeror.org/
-** st              http://st.suckless.org/
 ** youtube-dl      https://github.com/rg3/youtube-dl.git
 ** tmux            http://tmux.github.io/
-** dvwm            https://github.com/martanne/dvtm
 ** i3              https://i3wm.org/
-** hsetroot        https://github.com/elmiko/hsetroot
 ** stardict        http://stardict.sourceforge.net/
 * Fonts
 ** Andika          http://scripts.sil.org/andika_download
@@ -38,3 +35,5 @@
 ** Roboto          https://material.io/guidelines/resources/roboto-noto-fonts.html
    Used by youtube
 ** Anonymous Pro   http://www.marksimonson.com/fonts/view/anonymous-pro
+* Shell
+** https://unix.stackexchange.com/questions/118433/quoting-within-command-substitution-in-bash

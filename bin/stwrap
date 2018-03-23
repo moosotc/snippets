@@ -1,7 +1,10 @@
 #!/bin/sh
+pgrep rxvtd || rxvtd -q -o -f
+
 t=${1-$(date +%s)}
 case $((t%2)) in
-    1) f="xft:monofur-12";;
+    0) f="xft:monofur-12";;
+    1) f="xft:iosevka malc-10";;
     *) f="xft:pt mono-10";;
 esac
 exec rxvtc -fn "$f" -rv +sb -g 80x24+329+87

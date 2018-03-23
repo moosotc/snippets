@@ -1,5 +1,10 @@
 #!/bin/sh
-g="-g 80x24+329+87"
-f="xft:pt mono-10"
-
-exec rxvtc $g -fn "$f" -rv +sb
+t=$(date +%s)
+case $((t%5)) in
+    1) f="xft:space mono-10,xft:pt mono";;
+    2) f="xft:monofur-12";;
+    3) f="xft:hack-10";;
+    4) f="xft:fantastique sans mono-10";;
+    *) f="xft:pt mono-10";;
+esac
+exec rxvtc -fn "$f" -rv +sb -g 80x24+329+87

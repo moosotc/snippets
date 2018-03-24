@@ -13,7 +13,8 @@
 (set-fontset-font "fontset-default"
                   ;; Supplemental Symbols and Pictographs
                   '(#x1f900 . #x1f9ff) "symbola" nil)
-
+(set-face-font 'gnus-cite-1 "ibm plex mono:italic")
+(set-face-font 'italic "ibm plex mono:italic")
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
 (server-start)

@@ -521,7 +521,7 @@
 
 (autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
 ;; https://stackoverflow.com/questions/8036576/how-to-get-whitespace-mode-enabled-only-for-certain-modes
-(global-whitespace-mode t)
+(global-whitespace-mode)
 (setq whitespace-global-modes
       '(c-mode c++-mode caml-mode python-mode shell-mode lisp-mode elisp-mode))
 (setq whitespace-style
@@ -530,6 +530,7 @@
         indentation::tabs
         lines-tail
         empty
+        tabs
         tab-mark))
 
 (defun selector-moo ()

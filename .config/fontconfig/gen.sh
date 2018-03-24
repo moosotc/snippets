@@ -51,7 +51,6 @@ S "segoe ui"        "exo 2"             # github
 S "monaco"          "monofur"           # http://eurofurence.net/monofur.html
                                         # (some forums)
 S "helvetica"       "xo oriel"
-S "bitstream vera sans" "xo verbena"    # http://www.lagom.nl/lcd-test/
 
 for f in "segoe"                                \
          "corbel"                               \
@@ -63,7 +62,8 @@ do
     # learn yourself some greek
     S "$f" "xo symbol"
 done
-for f in "open sans" "droid sans" "noto sans" "dejavu sans";
+for f in "bitstream vera sans" \ # http://www.lagom.nl/lcd-test/
+         "open sans" "droid sans" "noto sans" "dejavu sans";
 do
     S "$f" "xo verbena"
 done

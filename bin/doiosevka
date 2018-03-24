@@ -9,7 +9,7 @@ a() { styles="$styles $1"; }
 #   * `v-l-italic` : Italic `l` (default for italic).
 #   * `v-l-tailed` : `l` with a curved tail.
 #   * `v-l-hookybottom` : `l` with a straight tail.
-a v-l-tailed
+a v-l-zshaped
 #   * Styles for letter `i`:
 #   * `v-i-hooky` : Hooky `i`.
 #   * `v-i-zshaped` : Z-shaped `i`.
@@ -58,17 +58,19 @@ a v-three-flattop
 #   * `v-underscore-high` : Higher underscore `_` (default).
 #   * `v-underscore-low` : Lower underscore `_`.
 a v-tilde-high
+a v-underscore-high
 #   * Styles for At (`@`):
 #   * `v-at-long` : The long, three-fold At symbol in Iosevka 1.7.x.
 #   * `v-at-fourfold` : The traditional, four-fold At symbol.
 #   * `v-at-short` : The shorter, Fira-like At symbol introduced in Iosevka 1.8.
-a v-at-short
+a v-at-fourfold
 #   * Styles for Eszet (`ß`):
 #   * `v-eszet-traditional` : Tratidional, Fraktur-like Eszet.
 #   * `v-eszet-sulzbacher` : A more modern, beta-like Eszet (default).
 #   * Styles for curly brackets (`{}`):
 #   * `v-brace-straight` : More straight braces.
 #   * `v-brace-curly` : More curly braces (default).
+a v-brace-curly
 #   * Styles for dollar symbol (`$`):
 #   * `v-dollar-open` : Dollar symbol with open contour.
 #   * `v-dollar-through` : Dollar symbol with strike-through vertical bar (default).

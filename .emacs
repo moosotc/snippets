@@ -29,6 +29,8 @@
 (setq x-super-keysym 'meta)
 (setq x-alt-keysym 'alt)
 (setq x-meta-keysym 'alt)
+(if (string-match "iosevka" (face-font 'default))
+    (setq-default line-spacing 1))
 
 (unless (and (eq system-type 'windows-nt)
              (not (emacs-version>= 21 4)))

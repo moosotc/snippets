@@ -62,8 +62,8 @@ do
     # learn yourself some greek
     S "$f" "xo symbol"
 done
-for f in "bitstream vera sans" \ # http://www.lagom.nl/lcd-test/
-         "open sans" "droid sans" "noto sans" "dejavu sans";
+for f in "bitstream vera sans" "open sans" "droid sans" \
+         "noto sans" "dejavu sans";
 do
     S "$f" "xo verbena"
 done

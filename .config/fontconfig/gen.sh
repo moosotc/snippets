@@ -76,6 +76,8 @@ for f in "bitstream vera sans"                  \
          "open sans"                            \
          "droid sans"                           \
          "noto sans"                            \
+         "lucida grande"                        \
+         "lucida sans unicode"                  \
          "dejavu sans";
 do
     S "$f" "xo verbena"

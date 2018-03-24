@@ -36,7 +36,7 @@ a v-t-standard
 #   * Styles for letter `Q`:
 #   * `v-q-taily` : `Q` with a curly tail (default).
 #   * `v-q-straight` : `Q` with a straight tail in the old versions.
-a v-q-straight
+a v-q-taily
 #   * Styles for zero (`0`):
 #   * `v-zero-slashed` : Slashed Zero `0` (default).
 #   * `v-zero-dotted` : Dotted Zero `0`.
@@ -70,7 +70,7 @@ a v-at-fourfold
 #   * Styles for curly brackets (`{}`):
 #   * `v-brace-straight` : More straight braces.
 #   * `v-brace-curly` : More curly braces (default).
-a v-brace-curly
+a v-brace-straight
 #   * Styles for dollar symbol (`$`):
 #   * `v-dollar-open` : Dollar symbol with open contour.
 #   * `v-dollar-through` : Dollar symbol with strike-through vertical bar (default).

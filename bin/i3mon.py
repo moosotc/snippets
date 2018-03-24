@@ -184,6 +184,7 @@ def main ():
     ff = None
     deadline = None
     winfo = None
+    pmsg = None
 
     while True:
         if not ff:
@@ -193,7 +194,6 @@ def main ():
         l = pf.poll (sleepsecs * 1000)
         t = time.time ()
 
-        pmsg = msg
         for (fd, mask) in l:
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
@@ -214,15 +214,12 @@ def main ():
         if msg and msg[0] == '\x02':
             winfo = msg[1:]
             msg = pmsg
-            pmsg = None
 
         if msg == '\x01':
             msg = None
-            pmsg = None
 
         if deadline and t > deadline:
             msg = None
-            pmsg = None
             deadline = None
 
         j = [{"color": "#00ff00", "full_text": msg}] if msg else []
@@ -249,6 +246,7 @@ def main ():
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
         print ("%s," % json.dumps (j), flush=True)
+        pmsg = msg
 
 print ('{ "version": 1 } [', flush=True)
 main ()

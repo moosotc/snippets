@@ -214,6 +214,7 @@ def main ():
         if msg and msg[0] == '\x02':
             winfo = msg[1:]
             msg = pmsg
+            pmsg = None
 
         if msg == '\x01':
             msg = None

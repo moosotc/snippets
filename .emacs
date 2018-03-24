@@ -522,7 +522,8 @@
 ;; https://stackoverflow.com/questions/8036576/how-to-get-whitespace-mode-enabled-only-for-certain-modes
 (global-whitespace-mode)
 (setq whitespace-global-modes
-      '(c-mode c++-mode caml-mode python-mode shell-mode lisp-mode elisp-mode))
+      '(c-mode c++-mode caml-mode python-mode
+               shell-mode lisp-mode emacs-lisp-mode))
 (setq whitespace-style
       '(face
         trailing

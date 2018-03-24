@@ -118,9 +118,9 @@
       ;; message-send-mail-partially-limit nil  ;; size of sent messages
       gnus-large-newsgroup              1000)
 
-(defun my-gnus-mode-hook ()
+(defun my-gnus-article-mode-hook ()
   (fset 'gnus-article-next-page 'gnus-article-next-page-1))
-(add-hook 'gnus-article-mode-hook 'my-gnus-mode-hook)
+(add-hook 'gnus-article-mode-hook 'my-gnus-article-mode-hook)
 (setq gnus-use-correct-string-widths nil)
 
 (add-hook

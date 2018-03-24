@@ -519,9 +519,11 @@
 (autoload 'gnus "gnus" "gnus" t)
 (setq undo-limit 120000)
 
-(autoload 'whitespace-mode "whitespace" "whitespace mode" t)
-(global-whitespace-mode)
-(setq whitespace-line-column 80)
+(autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
+;; https://stackoverflow.com/questions/8036576/how-to-get-whitespace-mode-enabled-only-for-certain-modes
+(global-whitespace-mode t)
+(setq whitespace-global-modes
+      '(c-mode c++-mode caml-mode python-mode shell-mode lisp-mode elisp-mode))
 (setq whitespace-style
       '(face
         trailing

@@ -43,7 +43,6 @@ S "courier new"     "xo courser"
 S "comic sans ms"   "andika"            # https://software.sil.org/andika/
 S "ui"              "pt sans"
 S "georgia"         "merriweather"      # https://ebensorkin.wordpress.com/
-S "dejavu serif"    "ibm plex serif"    # https://en.wikipedia.org/wiki/IBM_Plex
 S "consolas"        "iosevka malc"      # https://github.com/be5invis/Iosevka
                                         # https://github.com/moosotc/snippets/blob/master/bin/doiosevka
 S "segoe ui"        "exo 2"             # github
@@ -69,7 +68,7 @@ do
 done
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "ibm plex serif"
+    S "$f" "ibm plex serif"   # https://en.wikipedia.org/wiki/IBM_Plex
 done
 for f in "cantarell"
 do

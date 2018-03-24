@@ -633,6 +633,10 @@
     (global-set-key [(f10)] 'tmm-menubar)
   (load "~/.emacs.d/lacarte.elc")
   (load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")
+  ;; https://github.com/Fanael/highlight-numbers
+  (load "~/.emacs.d/highlight-numbers.elc")
+  (add-hook 'prog-mode-hook 'highlight-numbers-mode)
+  (set-face-foreground 'highlight-numbers-number "DodgerBlue4")
   (global-set-key [(f10)] 'helm-browse-menubar))
 
 (defun lispy ()
@@ -642,28 +646,6 @@
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
 (global-set-key [(meta alt ?l)] 'lispy)
-
-(make-face 'font-lock-number-face)
-(set-face-foreground 'font-lock-number-face "DodgerBlue4")
-(setq font-lock-number-face 'font-lock-number-face)
-
-;; https://lists.gnu.org/archive/html/help-gnu-emacs/2010-12/msg02818.html
-;; (setq number-mode-list '(c-mode-hook
-;;                          c++-mode-hook
-;;                          lisp-mode-hook
-;;                          caml-mode-hook
-;;                          shell-mode-hook
-;;                          emacs-lisp-mode-hook
-;;                          python-mode-hook
-;;                          cperl-mode-hook))
-;; (dolist (mode number-mode-list)
-;;   (add-hook
-;;    mode
-;;    '(lambda ()
-;;       (font-lock-add-keywords
-;;        nil
-;;        '(("\\<\\([0-9]+\\([eE][+-]?[0-9]*\\)?\\|0[xX][0-9a-fA-F]+\\)\\>"
-;;           font-lock-number-face))))))
 
 ;;; local Variables:
 ;;; End:

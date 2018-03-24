@@ -28,27 +28,35 @@ cat <<EOF
   </match>
 EOF
 
-S "serif"           "pt serif"          # https://en.wikipedia.org/wiki/PT_Fonts
-S "sans"            "exo 2"             # https://fonts.google.com/specimen/Exo+2
+# PT           https://en.wikipedia.org/wiki/PT_Fonts
+# Exo 2        https://fonts.google.com/specimen/Exo+2
+# XO           https://fonts.myoffice.ru
+# SIL          https://software.sil.org/
+# Merriweather https://ebensorkin.wordpress.com/
+# Iosevka      https://github.com/be5invis/Iosevka
+#              https://github.com/moosotc/snippets/blob/master/bin/doiosevka
+# Monofur      http://eurofurence.net/monofur.html
+# IBM Plex     https://en.wikipedia.org/wiki/IBM_Plex
+# Unifraktur   http://unifraktur.sourceforge.net/maguntia.html
+
+S "serif"           "pt serif"
+S "sans"            "exo 2"
 S "sans-serif"      "exo 2"
-S "mono"            "pt mono"
-S "monospace"       "pt mono"
-S "arial"           "xo oriel"          # https://fonts.myoffice.ru/
+S "mono"            "xo courser"
+S "monospace"       "xo courser"
+S "arial"           "xo oriel"
 S "verdana"         "xo verbena"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
-S "comic sans ms"   "andika"            # https://software.sil.org/andika/
+S "comic sans ms"   "andika"
 S "ui"              "pt sans"
-S "georgia"         "merriweather"      # https://ebensorkin.wordpress.com/
-S "consolas"        "iosevka malc"      # https://github.com/be5invis/Iosevka
-                                        # https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-S "segoe ui"        "exo 2"             # github
-
-S "monaco"          "monofur"           # http://eurofurence.net/monofur.html
-                                        # (some forums)
+S "georgia"         "merriweather"
+S "consolas"        "iosevka malc"
+S "segoe ui"        "exo 2"     # github
+S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 
 for f in "segoe"                                \
@@ -61,20 +69,30 @@ do
     # learn yourself some greek
     S "$f" "xo symbol"
 done
-for f in "bitstream vera sans" "open sans" "droid sans" \
-         "noto sans" "dejavu sans";
+
+# large x-height sans
+for f in "bitstream vera sans"                  \
+         "open sans"                            \
+         "droid sans"                           \
+         "noto sans"                            \
+         "dejavu sans";
 do
     S "$f" "xo verbena"
 done
+
+# large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "ibm plex serif"   # https://en.wikipedia.org/wiki/IBM_Plex
+    S "$f" "ibm plex serif"
 done
+
+# gnome/gtk
 for f in "cantarell"
 do
     # respect your elders + z ftw
-    S "$f" "UnifrakturMaguntia21" # http://unifraktur.sourceforge.net/maguntia.html
+    S "$f" "UnifrakturMaguntia21"
 done
+
 echo "</fontconfig>"
 
 # Local Variables:

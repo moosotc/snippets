@@ -43,16 +43,15 @@ S "courier new"     "xo courser"
 S "comic sans ms"   "andika"            # https://software.sil.org/andika/
 S "ui"              "pt sans"
 S "georgia"         "merriweather"      # https://ebensorkin.wordpress.com/
-S "georgia"         "gentium plus"      # https://software.sil.org/gentium/
-S "dejavu sans"     "source sans pro"
 S "dejavu serif"    "ibm plex serif"    # https://en.wikipedia.org/wiki/IBM_Plex
-S "consolas"        "ibm plex mono"
+S "consolas"        "iosevka malc"      # https://github.com/be5invis/Iosevka
+                                        # https://github.com/moosotc/snippets/blob/master/bin/doiosevka
 S "segoe ui"        "exo 2"             # github
 
 S "monaco"          "monofur"           # http://eurofurence.net/monofur.html
                                         # (some forums)
 S "helvetica"       "xo oriel"
-S "bitstream vera sans" "ibm plex sans" # http://www.lagom.nl/lcd-test/
+S "bitstream vera sans" "xo verbena"    # http://www.lagom.nl/lcd-test/
 
 for f in "segoe"                                \
          "corbel"                               \

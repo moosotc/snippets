@@ -208,7 +208,6 @@
   (define-key c++-mode-map [(alt \])] 'c-insert-curly-braces2)
   (local-set-key [(return)] 'newline-and-indent)
   (c-set-style "bsd")
-  (setq truncate-lines t)
   (setq c-basic-offset 4)
   (c-set-offset 'statement-case-open 4)
   (c-set-offset 'case-label 0))

@@ -55,7 +55,7 @@ S "comic sans ms"   "andika"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "exo 2"     # github
+S "segoe ui"        "exo 2"                                   # github
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 

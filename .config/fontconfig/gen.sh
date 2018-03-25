@@ -28,11 +28,15 @@ cat <<EOF
   </match>
 EOF
 
-test -n "$(find $HOME/.fonts -name LucidaSansRegular\*)" && {
+test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
     lucida="Lucida Sans"
-    largexhserif="Lucida Bright"
 } || {
     lucida="xo verbena"
+}
+
+test -n "$(find $HOME/.fonts -name LucidaBrightRegular.ttf)" && {
+    largexhserif="Lucida Bright"
+} || {
     largexhserif="ibm plex serif"
 }
 

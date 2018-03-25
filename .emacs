@@ -360,8 +360,7 @@
  '(escape-glyph ((t (:foreground "#0076c1"))))
  '(fixed-pitch ((t (:inherit (default)))))
  '(font-lock-builtin-face ((t (:weight bold))))
- '(font-lock-comment-delimiter-face ((default
-                                       (:inherit (font-lock-string-face)))))
+ '(font-lock-comment-delimiter-face ((default (:inherit (font-lock-string-face)))))
  '(font-lock-comment-face ((t (:foreground "#204A87"))))
  '(font-lock-doc-face ((t (:foreground "#527c00"))))
  '(font-lock-function-name-face ((t (:weight bold :foreground "#00578E"))))
@@ -374,7 +373,6 @@
  '(font-lock-type-face ((t (:foreground "#004d41"))))
  '(font-lock-variable-name-face ((t (:weight bold :foreground "#0076c1"))))
  '(font-lock-warning-face ((t (:weight bold :foreground "#CC0000"))))
- ;; '(font-lock-constant-face ((t :inherit 'font-lock-string-face)))
  '(fringe ((t (:background "#DBDBDB"))))
  '(header-line ((t (:foreground "#555753" :background "#C3C7CF"))))
  '(highlight ((t (:foreground "#2E3436" :background "#FEFFBF"))))

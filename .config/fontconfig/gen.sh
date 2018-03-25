@@ -41,10 +41,10 @@ EOF
 # Source Sans Pro https://github.com/adobe-fonts/source-sans-pro
 
 S "serif"           "pt serif"
-S "sans"            "exo 2"
 S "sans-serif"      "exo 2"
-S "mono"            "iosevka malc"
+S "sans"            "exo 2"
 S "monospace"       "iosevka malc"
+S "mono"            "iosevka malc"
 S "arial"           "xo oriel"
 S "verdana"         "xo verbena"
 S "trebuchet ms"    "xo trebizond"

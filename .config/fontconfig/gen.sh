@@ -70,7 +70,7 @@ S "courier"         "xo courser"
 S "courier new"     "xo courser"
 S "comic sans ms"   "andika"
 S "ui"              "pt sans"
-S "subs"            "source sans pro"
+S "subs"            "source sans pro" # Tack Tor
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
 S "segoe ui"        "exo 2"     # github

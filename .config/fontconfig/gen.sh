@@ -28,6 +28,15 @@ cat <<EOF
   </match>
 EOF
 
+# XXX: figure out if lucida is present
+test true && {
+    lucida="Lucida Sans"
+    largexhserif="Lucida Bright"
+} || {
+    lucida="xo verbena"
+    largexhserif="ibm plex serif"
+}
+
 # PT              https://en.wikipedia.org/wiki/PT_Fonts
 # Exo 2           https://fonts.google.com/specimen/Exo+2
 # XO              https://fonts.myoffice.ru
@@ -40,6 +49,8 @@ EOF
 # Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
 # Source Sans Pro https://github.com/adobe-fonts/source-sans-pro
 # Roboto          https://fonts.google.com/specimen/Roboto
+# Lucida          https://en.wikipedia.org/wiki/Lucida
+#                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
 
 S "serif"           "pt serif"
 S "sans-serif"      "exo 2"
@@ -63,6 +74,9 @@ S "segoe ui"        "exo 2"     # github
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx
+S "lucida sans"     "$lucida"
+S "lucida grande"   "$lucida"
+S "lucida sans unicode" "$lucida"
 
 for f in "segoe"                                \
          "corbel"                               \
@@ -80,8 +94,6 @@ for f in "bitstream vera sans"                  \
          "open sans"                            \
          "droid sans"                           \
          "noto sans"                            \
-         "lucida grande"                        \
-         "lucida sans unicode"                  \
          "dejavu sans";
 do
     S "$f" "xo verbena"
@@ -90,7 +102,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "ibm plex serif"
+    S "$f" "$largexhserif"
 done
 
 # gnome/gtk

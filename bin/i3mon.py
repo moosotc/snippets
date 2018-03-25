@@ -203,7 +203,7 @@ def main ():
                 msg = msg1.decode ()
                 parts = msg.split ('\x00')
                 try:
-                    msg = parts[0]
+                    pmsg = msg = parts[0]
                     tmout = parts[1]
                     deadline = t + float (tmout)
                 except:
@@ -251,7 +251,6 @@ def main ():
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
         print ("%s," % json.dumps (j), flush=True)
-        pmsg = msg
 
 print ('{ "version": 1 } [', flush=True)
 main ()

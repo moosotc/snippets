@@ -28,8 +28,7 @@ cat <<EOF
   </match>
 EOF
 
-# XXX: figure out if lucida is present
-test true && {
+test -n "$(find $HOME/.fonts -name LucidaSansRegular\*)" && {
     lucida="Lucida Sans"
     largexhserif="Lucida Bright"
 } || {

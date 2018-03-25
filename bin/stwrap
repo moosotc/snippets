@@ -1,5 +1,5 @@
 #!/bin/sh
-pgrep rxvtd || rxvtd -q -o -f
+pgrep rxvtd &>/dev/null || rxvtd -q -o -f
 
 n=${1-random}
 case "$n" in

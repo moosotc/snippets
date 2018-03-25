@@ -39,6 +39,7 @@ EOF
 # IBM Plex        https://en.wikipedia.org/wiki/IBM_Plex
 # Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
 # Source Sans Pro https://github.com/adobe-fonts/source-sans-pro
+# Roboto          https://fonts.google.com/specimen/Roboto
 
 S "serif"           "pt serif"
 S "sans-serif"      "exo 2"
@@ -58,9 +59,10 @@ S "ui"              "pt sans"
 S "subs"            "source sans pro"
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "exo 2"                                   # github
+S "segoe ui"        "exo 2"     # github
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
+S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx
 
 for f in "segoe"                                \
          "corbel"                               \

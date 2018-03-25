@@ -77,7 +77,7 @@ S "segoe ui"        "exo 2"     # github
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx
-test "Lucida Sans" != "$lucida" && S "lucida sans"     "$lucida"
+test "Lucida Sans" = "$lucida" && true || S "lucida sans"     "$lucida"
 S "lucida grande"   "$lucida"
 S "lucida sans unicode" "$lucida"
 

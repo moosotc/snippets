@@ -93,7 +93,7 @@ class N:
         curV = self.getv ()
         dt = curT - self.prevT
         self.prevT = curT
-        color = "#a9a9a9"
+        color = None
         s = "N"
         for i in range (len (curV)):
             c = curV[i]
@@ -103,7 +103,7 @@ class N:
                 color = "#cdba96"
             s += " %5.2f" % (dv/dt)
         self.prevV = curV
-        return (color, s)
+        return (color, s) if color is not None else None
 
 class C:
     def __init__ (self, path, xgetv):

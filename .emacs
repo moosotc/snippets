@@ -215,7 +215,7 @@
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
 
-(setq backup-directory-alist `(("." . "~/.backups")))
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 ;;; **********************************************************************
 ;;; OCaml
 ;;; **********************************************************************

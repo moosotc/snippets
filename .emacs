@@ -32,15 +32,12 @@
 (if (string-match "iosevka" (face-font 'default))
     (setq-default line-spacing 2))
 
-(unless (and (eq system-type 'windows-nt)
-             (not (emacs-version>= 21 4)))
-  (setq auto-save-directory (expand-file-name "~/.autosave/")
-        auto-save-directory-fallback auto-save-directory
-        auto-save-hash-p nil
-        efs-auto-save t
-        efs-auto-save-remotely nil
-        )
-  )
+(setq auto-save-directory (expand-file-name "~/.emacs.d/autosave")
+      auto-save-directory-fallback auto-save-directory
+      auto-save-hash-p nil
+      efs-auto-save t
+      efs-auto-save-remotely nil
+      )
 
 (setq pending-delete-modeline-string "")
 (setq filladapt-mode-line-string "")

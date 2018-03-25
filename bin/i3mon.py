@@ -187,7 +187,6 @@ def main ():
     ff = None
     deadline = None
     winfo = None
-    pmsg = None
 
     while True:
         if not ff:
@@ -203,7 +202,7 @@ def main ():
                 msg = msg1.decode ()
                 parts = msg.split ('\x00')
                 try:
-                    pmsg = msg = parts[0]
+                    msg = parts[0]
                     tmout = parts[1]
                     deadline = t + float (tmout)
                 except:
@@ -216,7 +215,7 @@ def main ():
 
         if msg and msg[0] == '\x02':
             winfo = msg[1:]
-            msg = pmsg
+            msg = None
 
         if msg == '\x01':
             msg = None

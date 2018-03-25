@@ -80,5 +80,9 @@ a v-dollar-open
 #   * `v-numbersign-slanted` : Number sign with slanted bars.
 a v-numbersign-slanted
 
-make custom-config upright="$styles" family='Iosevka malc' weights='book bold'
-make -j2 custom
+make custom-config                              \
+     upright="$styles"                          \
+     family="Iosevka malc"                      \
+     weights="book bold"
+
+make -j4 custom

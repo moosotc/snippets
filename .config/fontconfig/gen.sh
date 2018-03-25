@@ -28,16 +28,17 @@ cat <<EOF
   </match>
 EOF
 
-# PT           https://en.wikipedia.org/wiki/PT_Fonts
-# Exo 2        https://fonts.google.com/specimen/Exo+2
-# XO           https://fonts.myoffice.ru
-# SIL          https://software.sil.org/
-# Merriweather https://ebensorkin.wordpress.com/
-# Iosevka      https://github.com/be5invis/Iosevka
-#              https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-# Monofur      http://eurofurence.net/monofur.html
-# IBM Plex     https://en.wikipedia.org/wiki/IBM_Plex
-# Unifraktur   http://unifraktur.sourceforge.net/maguntia.html
+# PT              https://en.wikipedia.org/wiki/PT_Fonts
+# Exo 2           https://fonts.google.com/specimen/Exo+2
+# XO              https://fonts.myoffice.ru
+# SIL             https://software.sil.org/
+# Merriweather    https://ebensorkin.wordpress.com/
+# Iosevka         https://github.com/be5invis/Iosevka
+#                 https://github.com/moosotc/snippets/blob/master/bin/doiosevka
+# Monofur         http://eurofurence.net/monofur.html
+# IBM Plex        https://en.wikipedia.org/wiki/IBM_Plex
+# Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
+# Source Sans Pro https://github.com/adobe-fonts/source-sans-pro
 
 S "serif"           "pt serif"
 S "sans"            "exo 2"
@@ -54,6 +55,7 @@ S "courier"         "xo courser"
 S "courier new"     "xo courser"
 S "comic sans ms"   "andika"
 S "ui"              "pt sans"
+S "subs"            "source sans pro"
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
 S "segoe ui"        "exo 2"                                   # github

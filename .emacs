@@ -523,7 +523,7 @@
 (global-whitespace-mode)
 (setq whitespace-global-modes
       '(c-mode c++-mode caml-mode python-mode
-               shell-mode lisp-mode emacs-lisp-mode))
+               shell-script-mode lisp-mode emacs-lisp-mode))
 (setq whitespace-style
       '(face
         trailing

@@ -119,8 +119,11 @@ class C:
         self.prevT = curT
         self.prevV = curV
         cond = dvdt < 5 if self.name == 'p' else dvdt < 2
-        return ("#a9a9a9" if cond else "#d0d000",
-                "%s %5.2f" % (self.name, dvdt))
+        if (self.name == 'm' and dvdt < 0.3) or (self.name == 'g' and dvdt < 1):
+            return None
+        else:
+            return ("#a9a9a9" if cond else "#d0d000",
+                    "%s %5.2f" % (self.name, dvdt))
 
 class I:
     def getv (self):
@@ -235,8 +238,10 @@ def main ():
             j += [{"color": "#a9a9a9", "full_text": winfo}]
 
         for c in cs:
-            (color, s) = c.step (t)
-            j += [{"color": color, "full_text": "%s" % s}]
+            s = c.step (t)
+            if s is not None:
+                (color, s) = s
+                j += [{"color": color, "full_text": "%s" % s}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
         j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]

@@ -231,9 +231,6 @@ def main ():
         if nmail > 0:
             j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
 
-        j += [{"color": "#a9a9a9",
-               "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
-
         if winfo:
             j += [{"color": "#a9a9a9", "full_text": winfo}]
 
@@ -242,6 +239,9 @@ def main ():
             if s is not None:
                 (color, s) = s
                 j += [{"color": color, "full_text": "%s" % s}]
+
+        j += [{"color": "#a9a9a9",
+               "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
         j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]

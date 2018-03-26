@@ -118,8 +118,19 @@ class C:
         dvdt = ((curV-self.prevV)*1e-6)/(curT-self.prevT)
         self.prevT = curT
         self.prevV = curV
-        cond = dvdt < 5 if self.name == 'p' else dvdt < 2
-        if (self.name == 'm' and dvdt < 0.3) or (self.name == 'g' and dvdt < 1):
+        skip = False
+        c = self.name
+        if c == 'p':
+            cond = dvdt < 5
+        elif c == 'm':
+            cond = skip = dvdt < 0.3
+        elif c == 'g':
+            cond = skip = dvdt < 1
+        elif c == 'c':
+            cond = skip = dvdt < 0.3
+        else:
+            cond = False
+        if skip:
             return None
         else:
             return ("#a9a9a9" if cond else "#d0d000",

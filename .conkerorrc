@@ -11,12 +11,12 @@ register_user_stylesheet(
                 "font-family: monofur !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
-                "font-size: 14px !important;\n"+
+                "font-size: 15px !important;\n"+
                 "line-height: 18px !important;\n"+
                 "}\n"
         ));
 
-hint_digits="abcdefghijklmnopqrstuvwxyz";
+hint_digits="abcdefghijklmnopqrstvxyz";
 session_pref("xpinstall.whitelist.required", false);
 homepage = "about:blank";
 

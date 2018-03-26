@@ -48,7 +48,8 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 # Roboto          https://fonts.google.com/specimen/Roboto
 # Lucida          https://en.wikipedia.org/wiki/Lucida
 #                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
-# URW             https://github.com/ArtifexSoftware/urw-base35-fonts
+# URW++           https://en.wikipedia.org/wiki/URW%2B%2B
+#                 https://github.com/ArtifexSoftware/urw-base35-fonts
 
 S "serif"           "pt serif"
 S "sans-serif"      "exo 2"

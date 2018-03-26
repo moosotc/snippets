@@ -34,12 +34,6 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
     lucida="xo verbena"
 }
 
-test -n "$(find $HOME/.fonts -name LucidaBrightRegular.ttf)" && {
-    largexhserif="Lucida Bright"
-} || {
-    largexhserif="ibm plex serif"
-}
-
 # PT              https://en.wikipedia.org/wiki/PT_Fonts
 # Exo 2           https://fonts.google.com/specimen/Exo+2
 # XO              https://fonts.myoffice.ru
@@ -54,6 +48,7 @@ test -n "$(find $HOME/.fonts -name LucidaBrightRegular.ttf)" && {
 # Roboto          https://fonts.google.com/specimen/Roboto
 # Lucida          https://en.wikipedia.org/wiki/Lucida
 #                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
+# P052            https://github.com/ArtifexSoftware/urw-base35-fonts
 
 S "serif"           "pt serif"
 S "sans-serif"      "exo 2"
@@ -105,7 +100,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "$largexhserif"
+    S "$f" "p052"
 done
 
 # gnome/gtk

@@ -6,10 +6,9 @@ n=${1-random}
 case "$n" in
     random)
         t=$(date +%s)
-        case $((t%3)) in
+        case $((t%2)) in
             0) f="xft:monofur-12";;
             1) f="xft:iosevka malc-10";;
-            2) f="xft:lucida sans typewriter-10";;
             *) f="xft:mono-10";;
         esac;;
     fur) f="xft:monofur-12";;

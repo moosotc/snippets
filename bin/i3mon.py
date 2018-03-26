@@ -254,7 +254,8 @@ def main ():
                "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
 
         temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
-        j += [{"color": "#a9a9a9", "full_text": "%d°" % temp}]
+        j += [{"color": "#a9a9a9" if temp < 50 else "#ffffff",
+               "full_text": "%d°" % temp}]
 
         swap = swapused ()
         if swap != 0:

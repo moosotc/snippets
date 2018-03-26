@@ -1,7 +1,13 @@
 #!/bin/sh
 set -e
 test -z "$1" && {
-    echo no arg
+    echo need
     exit 1
 }
-ffmpeg -f x11grab -video_size 2560x1440 -i :0 $@
+test -n "$screenkey" && {
+    pgrep screenkey || {
+        screenkey -p bottom -s small --multiline
+        trap 'pkill screenkey' 0
+    }
+}
+ffmpeg -v error -f x11grab -video_size 2560x1440 -i :0 $@

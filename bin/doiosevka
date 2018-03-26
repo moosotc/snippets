@@ -15,7 +15,7 @@ a v-l-zshaped
 #   * `v-i-zshaped` : Z-shaped `i`.
 #   * `v-i-serifed` : Serifed `i` (default for upright and oblique).
 #   * `v-i-italic` : Italic `i` (default for italic).
-a v-i-serifed
+a v-i-zshaped
 #   * Styles for letter `a`:
 #   * `v-a-doublestorey` : Double-storey `a` (default for upright and oblique).
 #   * `v-a-singlestorey` : Single-storey `a` (default for italic).

@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+
+./configure --prefix=/net                       \
+            --enable-256-color                  \
+            --enable-combining                  \
+            --enable-xft                        \
+            --enable-font-styles                \
+            --disable-pixbuf                    \
+            --disable-transparency              \
+            --disable-fading                    \
+            --disable-rxvt-scroll               \
+            --disable-next-scroll               \
+            --disable-xterm-scroll              \
+            --disable-perl                      \
+            --disable-xim                       \
+            --disable-resources                 \
+            --enable-mousewheel                 \
+            --disable-frills                    \
+            --with-codesets=eu                  \
+            --disable-text-blink                \
+            --disable-iso14755                  \
+            --disable-keepscrolling             \
+            --disable-selectionscrolling        \
+            --disable-slipwheeling              \
+            --disable-text-blink                \
+            --disable-startup-notification      \
+            --disable-unicode3

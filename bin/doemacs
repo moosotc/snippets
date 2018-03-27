@@ -1,12 +1,13 @@
 #!/bin/sh
 
 exec ./configure                                \
-     -C                                         \
      --without-rsvg                             \
      --without-imagemagick                      \
      --without-toolkit-scroll-bars              \
-     --without-dbus --without-gconf             \
-     --without-gsettings --without-selinux      \
+     --without-dbus                             \
+     --without-gconf                            \
+     --without-gsettings                        \
+     --without-selinux                          \
      --with-x-toolkit=lucid                     \
      --without-gpm                              \
      --without-selinux                          \

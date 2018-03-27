@@ -11,3 +11,4 @@ test -n "$screenkey" && {
     }
 }
 ffmpeg -v error -f x11grab -video_size 2560x1440 -i :0 $@
+# -vcodec x265 scast.mkv -vpre libvpx-1080p

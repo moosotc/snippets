@@ -157,8 +157,9 @@ class I:
 
 paths = ["energy_uj",
          "intel-rapl:0:0/energy_uj",
-         "intel-rapl:0:1/energy_uj",
-         "intel-rapl:0:2/energy_uj"]
+         "intel-rapl:0:1/energy_uj"]
+
+# paths += ["intel-rapl:0:2/energy_uj"]
 
 translate = {"package-0" : "p",
              "core"      : "c",

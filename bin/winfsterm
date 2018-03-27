@@ -1,9 +1,0 @@
-#!/bin/sh
-wid=${wid-$(xdotool getactivewindow)}
-
-eval $(xdotool getwindowgeometry --shell $wid)
-xdotool set_window --overrideredirect 1 $wid
-xdotool windowunmap $wid
-xdotool windowmove $wid $X $Y
-xdotool windowmap $wid
-xdotool windowfocus $wid

@@ -16,7 +16,8 @@ register_user_stylesheet(
                 "}\n"
         ));
 
-hint_digits="abcdefghijklmnopqrstvxyz";
+ // hint_digits="abcdefghkmnopqrsuwxz";
+hint_digits="abcdefghijklmnoqrstxz";
 session_pref("xpinstall.whitelist.required", false);
 homepage = "about:blank";
 

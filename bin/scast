@@ -11,8 +11,15 @@ test -n "$screenkey" && {
     }
 }
 args="$@"
-set -- $(xwininfo -root)
-w=$26
-h=$28
+command -v __xdotool__ &>/dev/null && {
+    # this doesn't quite work yet
+    eval $(xdotool selectwindow getwindowgeometry --shell)
+    w=$WIDTH
+    h=$HEIGHT
+} || {
+    set -- $(xwininfo -root)
+    w=$26
+    h=$28
+}
 test "x$scasthq" = "x1" && scasthq="-vcodec libx265"
-ffmpeg -v error -f x11grab -video_size ${w}x${h} -i :0 $scasthq $args
+ffmpeg -v error -f x11grab -video_size ${w}x${h} -i $DISPLAY $scasthq $args

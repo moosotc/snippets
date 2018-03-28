@@ -8,7 +8,7 @@ register_user_stylesheet(
                 "span.__conkeror_hint {\n"+
                 "color: black !important;\n"+
                 "background-color: wheat !important;\n"+
-                "font-family: monofur !important;\n"+
+                "font-family: po52 !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
                 "font-size: 15px !important;\n"+
@@ -16,8 +16,8 @@ register_user_stylesheet(
                 "}\n"
         ));
 
- // hint_digits="abcdefghkmnopqrsuwxz";
-hint_digits="abcdefghijklmnoqrstxz";
+hint_digits="abcdefghkmnopqrsuwxz";
+//hint_digits="abcdefghijklmnoqrstxz";
 session_pref("xpinstall.whitelist.required", false);
 homepage = "about:blank";
 
@@ -115,6 +115,8 @@ define_key(content_buffer_normal_keymap, "M-home", "home");
 define_key(content_buffer_normal_keymap, "M-s", "ns-toggle-temp");
 define_key(content_buffer_normal_keymap, "s-s", "toggle-stylesheets");
 define_key(content_buffer_normal_keymap, "C-a", "cmd_selectAll");
+define_key(content_buffer_normal_keymap, ",", "follow");
+define_key(content_buffer_normal_keymap, "f", "");
 
 define_key(content_buffer_normal_keymap, "C-l", "find-url");
 

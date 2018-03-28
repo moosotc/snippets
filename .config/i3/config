@@ -149,9 +149,7 @@ bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioMute $execnoid acycle
 bindsym $mod+bracketright $execnoid selwin
-bindsym $mod+bracketleft \
-        $execnoid rxvtc -sbt 8 -rv \
-                  -fn 'xft:iosevka malc-9' -e tmux attach-session -t yt
+bindsym $mod+bracketleft $execnoid ytwin
 bindsym $mod+grave $execnoid yt
 bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1

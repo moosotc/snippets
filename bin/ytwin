@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+xdotool search tmux windowactivate || \
+        rxvtc -sbt 8 -rv -fn 'xft:iosevka malc-9' -e tmux attach-session -t yt

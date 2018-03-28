@@ -91,6 +91,7 @@ done
 # large x-height sans
 for f in "bitstream vera sans"                  \
          "open sans"                            \
+         "opensans"                             \
          "droid sans"                           \
          "noto sans"                            \
          "dejavu sans";

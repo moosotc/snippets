@@ -68,7 +68,7 @@ S "ui"              "pt sans"
 S "subs"            "source sans pro" # Tack Tor
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "pt sans caption" # github
+S "segoe ui"        "pt sans"   # github
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx

@@ -52,8 +52,8 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 #                 https://github.com/ArtifexSoftware/urw-base35-fonts
 
 S "serif"           "pt serif"
-S "sans-serif"      "exo 2"
-S "sans"            "exo 2"
+S "sans-serif"      "pt sans"
+S "sans"            "pt sans"
 S "monospace"       "iosevka malc"
 S "mono"            "iosevka malc"
 S "arial"           "xo oriel"

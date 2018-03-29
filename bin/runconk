@@ -1,5 +1,5 @@
 #!/bin/sh
-set -ex
+set -e
 
 test -z "$@" && {
     xdotool search --classname "Navigator" windowactivate && exit 0 || true

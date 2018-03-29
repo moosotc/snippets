@@ -50,9 +50,10 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 # URW++           https://en.wikipedia.org/wiki/URW%2B%2B
 #                 https://github.com/ArtifexSoftware/urw-base35-fonts
 
+S "mono"            "monospace"
+S "sans"            "sans-serif"
 S "serif"           "pt serif"
-S "sans-serif"      "pt sans"
-S "sans"            "pt sans"
+S "sans-serif"      "xo oriel"
 S "monospace"       "iosevka malc"
 S "mono"            "iosevka malc"
 S "arial"           "xo oriel"
@@ -68,7 +69,7 @@ S "ui"              "pt sans"
 S "subs"            "source sans pro" # Tack Tor
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "pt sans"   # github
+S "segoe ui"        "source sans pro" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx

@@ -1,6 +1,5 @@
 #!/bin/sh
 
-export DISPLAY=${DISPLAY:-:0}
 xdotool search --name " Conkeror" windowactivate || exec firefox-esr    \
      --app $HOME/x/rcs/git/conkeror2/application.ini                    \
      "$@"

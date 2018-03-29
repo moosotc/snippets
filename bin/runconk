@@ -5,8 +5,9 @@ doexec() {
 }
 
 test -z "$@" && {
-    xdotool search --name " Conkeror" windowactivate || exec doexec
+    xdotool search --name " Conkeror" windowactivate ||                    \
+        exec firefox-esr --app $HOME/x/rcs/git/conkeror2/application.ini &
 } || {
-    doexec "$@"
+    firefox-esr --app $HOME/x/rcs/git/conkeror2/application.ini "$@" &
     exec xdotool search --sync --name " Conkeror" windowactivate
 }

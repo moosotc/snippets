@@ -1,11 +1,16 @@
 #!/bin/sh
 set -e
 
+false && {
+    exec 1>/tmp/conk.out
+    exec 2>/tmp/conk.err
+} || {
+    exec 1>&2 2>/dev/null
+}
+
 test -z "$@" && {
     xdotool search --classname "Navigator" windowactivate && exit 0 || true
 }
 
-exec 1>/tmp/conk.out
-exec 2>/tmp/conk.err
 xdotool search --sync --classname Navigator windowactivate &
 exec firefox-esr --app $HOME/x/rcs/git/conkeror2/application.ini "$@"

@@ -137,8 +137,7 @@ bar {
 
 assign [class="Conkeror"] 1
 assign [class="Firefox"] 1
-assign [class="Opera"] 1
-assign [class="Pidgin"] 3
+assign [class="Chromium"] 1
 assign [class="Emacs"] 4
 assign [class="Tor Browser"] torbrowser
 

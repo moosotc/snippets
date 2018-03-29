@@ -1,5 +1,12 @@
 #!/bin/sh
 
-xdotool search --name " Conkeror" windowactivate || exec firefox-esr    \
-     --app $HOME/x/rcs/git/conkeror2/application.ini                    \
-     "$@"
+doexec() {
+    firefox-esr --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+}
+
+test -z "$@" && {
+    xdotool search --name " Conkeror" windowactivate || exec doexec
+} || {
+    doexec "$@"
+    exec xdotool search --sync --name " Conkeror" windowactivate
+}

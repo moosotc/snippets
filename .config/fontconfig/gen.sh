@@ -35,7 +35,6 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 }
 
 # PT              https://en.wikipedia.org/wiki/PT_Fonts
-# Exo 2           https://fonts.google.com/specimen/Exo+2
 # XO              https://fonts.myoffice.ru
 # SIL             https://software.sil.org/
 # Merriweather    https://ebensorkin.wordpress.com/
@@ -69,7 +68,7 @@ S "ui"              "pt sans"
 S "subs"            "source sans pro" # Tack Tor
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "exo 2"     # github
+S "segoe ui"        "pt sans caption" # github
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx

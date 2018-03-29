@@ -11,7 +11,7 @@ register_user_stylesheet(
                 "font-family: po52 !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
-                "font-size: 15px !important;\n"+
+                "font-size: 14px !important;\n"+
                 "line-height: 18px !important;\n"+
                 "}\n"
         ));

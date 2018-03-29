@@ -13,4 +13,5 @@ test -z "$@" && {
         exit 0 || true
 }
 
+xdotool windowactivate $(xdotool search --sync --class 'chromium' | tail -1) &
 exec chromium "$@"

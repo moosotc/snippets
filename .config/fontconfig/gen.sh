@@ -41,14 +41,13 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 # Iosevka         https://github.com/be5invis/Iosevka
 #                 https://github.com/moosotc/snippets/blob/master/bin/doiosevka
 # Monofur         http://eurofurence.net/monofur.html
-# IBM Plex        https://en.wikipedia.org/wiki/IBM_Plex
 # Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
 # Source Sans Pro https://github.com/adobe-fonts/source-sans-pro
-# Roboto          https://fonts.google.com/specimen/Roboto
 # Lucida          https://en.wikipedia.org/wiki/Lucida
 #                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
 # URW++           https://en.wikipedia.org/wiki/URW%2B%2B
 #                 https://github.com/ArtifexSoftware/urw-base35-fonts
+# Montseratt      https://github.com/JulietaUla/Montserrat
 
 S "mono"            "monospace"
 S "sans"            "sans-serif"
@@ -69,10 +68,10 @@ S "ui"              "pt sans"
 S "subs"            "source sans pro" # Tack Tor
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "source sans pro" # github, channel9
+S "segoe ui"        "montseratt" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
-S "helvetica neue"  "roboto"    # https://adtmag.com/articles/2018/03/21/java-10.aspx
+S "helvetica neue"  "montserrat" # https://adtmag.com/articles/2018/03/21/java-10.aspx
 test "Lucida Sans" = "$lucida" && true || S "lucida sans" "$lucida"
 S "lucida grande"   "$lucida"
 S "lucida sans unicode" "$lucida"

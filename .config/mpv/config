@@ -1,12 +1,12 @@
 quiet
 vo=vaapi
-alang=en
-slang=en
+alang=eng
+slang=eng
 sub=no
 hwdec=vaapi
 osd-font=xo verbena
 osd-font-size=50
-sub-font=subs
-sub-font-size=60
+sub-font=xo verbena
+sub-font-size=55
 hidpi-window-scale=no
 ao=alsa

@@ -42,7 +42,6 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 #                 https://github.com/moosotc/snippets/blob/master/bin/doiosevka
 # Monofur         http://eurofurence.net/monofur.html
 # Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
-# Source Sans Pro https://github.com/adobe-fonts/source-sans-pro
 # Lucida          https://en.wikipedia.org/wiki/Lucida
 #                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
 # URW++           https://en.wikipedia.org/wiki/URW%2B%2B
@@ -65,7 +64,6 @@ S "courier"         "xo courser"
 S "courier new"     "xo courser"
 S "comic sans ms"   "andika"
 S "ui"              "pt sans"
-S "subs"            "source sans pro" # Tack Tor
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
 S "segoe ui"        "montseratt" # github, channel9

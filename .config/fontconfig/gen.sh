@@ -37,7 +37,6 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 # PT              https://en.wikipedia.org/wiki/PT_Fonts
 # PT Astra        http://astralinux.com/fonts.html
 # XO              https://fonts.myoffice.ru
-# SIL             https://software.sil.org/
 # Merriweather    https://ebensorkin.wordpress.com/
 # Iosevka         https://github.com/be5invis/Iosevka
 #                 https://github.com/moosotc/snippets/blob/master/bin/doiosevka
@@ -61,7 +60,7 @@ S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier"         "xo courser"
 S "courier new"     "xo courser"
-S "comic sans ms"   "andika"
+S "comic sans ms"   "UnifrakturMaguntia21"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
@@ -98,7 +97,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "merriweather"
+    S "$f" "pt serif"
 done
 
 # gnome/gtk

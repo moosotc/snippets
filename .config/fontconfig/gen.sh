@@ -45,8 +45,6 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 # Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
 # Lucida          https://en.wikipedia.org/wiki/Lucida
 #                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
-# URW++           https://en.wikipedia.org/wiki/URW%2B%2B
-#                 https://github.com/ArtifexSoftware/urw-base35-fonts
 # Montseratt      https://github.com/JulietaUla/Montserrat
 
 S "mono"            "monospace"

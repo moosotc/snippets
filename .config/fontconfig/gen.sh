@@ -35,6 +35,7 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 }
 
 # PT              https://en.wikipedia.org/wiki/PT_Fonts
+# PT Astra        http://astralinux.com/fonts.html
 # XO              https://fonts.myoffice.ru
 # SIL             https://software.sil.org/
 # Merriweather    https://ebensorkin.wordpress.com/
@@ -99,7 +100,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "p052"
+    S "$f" "merriweather"
 done
 
 # gnome/gtk

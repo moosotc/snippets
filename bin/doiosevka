@@ -9,7 +9,7 @@ a() { styles="$styles $1"; }
 #   * `v-l-italic` : Italic `l` (default for italic).
 #   * `v-l-tailed` : `l` with a curved tail.
 #   * `v-l-hookybottom` : `l` with a straight tail.
-a v-l-tailed
+a v-l-italic
 #   * Styles for letter `i`:
 #   * `v-i-hooky` : Hooky `i`.
 #   * `v-i-zshaped` : Z-shaped `i`.

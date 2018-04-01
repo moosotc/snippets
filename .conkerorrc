@@ -8,7 +8,7 @@ register_user_stylesheet(
                 "span.__conkeror_hint {\n"+
                 "color: black !important;\n"+
                 "background-color: wheat !important;\n"+
-                "font-family: montserrat !important;\n"+
+                "font-family: pt serif !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
                 "font-size: 14px !important;\n"+
@@ -16,8 +16,7 @@ register_user_stylesheet(
                 "}\n"
         ));
 
-hint_digits="abcdefghkmnopqrsuwxz";
-//hint_digits="abcdefghijklmnoqrstxz";
+hint_digits="abcdefghijklmnoqrstxz";
 session_pref("xpinstall.whitelist.required", false);
 homepage = "about:blank";
 

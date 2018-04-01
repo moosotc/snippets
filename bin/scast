@@ -6,8 +6,8 @@ test -z "$1" && {
 }
 test -n "$screenkey" && {
     pgrep screenkey || {
-        screenkey -p bottom -s small --multiline
-        trap 'pkill screenkey' 0
+        screenkey -p bottom -s small #--multiline
+        trap 'pkill screenkey' EXIT
     }
 }
 args="$@"

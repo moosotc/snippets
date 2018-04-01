@@ -16,7 +16,7 @@ register_user_stylesheet(
                 "}\n"
         ));
 
-hint_digits="abcdefghijklmnoqrstxz";
+hint_digits="abcdefghijklmnopqrstuvwxyz";
 session_pref("xpinstall.whitelist.required", false);
 homepage = "about:blank";
 

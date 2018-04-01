@@ -48,7 +48,7 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 
 S "mono"            "monospace"
 S "sans"            "sans-serif"
-S "serif"           "pt serif"
+S "serif"           "pt astra serif"
 S "sans-serif"      "xo oriel"
 S "monospace"       "iosevka malc"
 S "mono"            "iosevka malc"
@@ -64,7 +64,7 @@ S "comic sans ms"   "UnifrakturMaguntia21"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "montserrat" # github, channel9
+S "segoe ui"        "xo caliburn" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "montserrat" # https://adtmag.com/articles/2018/03/21/java-10.aspx

@@ -44,7 +44,7 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
 # Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
 # Lucida          https://en.wikipedia.org/wiki/Lucida
 #                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
-# Montseratt      https://github.com/JulietaUla/Montserrat
+# Montserrat      https://github.com/JulietaUla/Montserrat
 
 S "mono"            "monospace"
 S "sans"            "sans-serif"
@@ -64,7 +64,7 @@ S "comic sans ms"   "UnifrakturMaguntia21"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
 S "consolas"        "iosevka malc"
-S "segoe ui"        "montseratt" # github, channel9
+S "segoe ui"        "montserrat" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "montserrat" # https://adtmag.com/articles/2018/03/21/java-10.aspx

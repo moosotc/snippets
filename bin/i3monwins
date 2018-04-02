@@ -1,15 +1,8 @@
 #!/bin/sh
 set -e
 
-exec xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW |
+exec xprop -notype -root -spy _NET_CLIENT_LIST |
     while read s; do
-        set -- $s
-        case $1 in
-            _NET_CURRENT_DESKTOP) desktop=$3;;
-            _NET_ACTIVE_WINDOW:)
-                n=$(xdotool search --desktop $desktop --name . | wc -l)
-                printf "\002{$n}"
-                ;;
-            *) ;;
-        esac
+        set -- ${s##_NET_CLIENT_LIST: window id # }
+        printf "\002{$(($#-2))}"
     done

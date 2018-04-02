@@ -1,8 +1,16 @@
 #!/bin/sh
 set -e
+#exec 1>/dev/null
+exec 2>/dev/null
 
-exec xprop -notype -root -spy _NET_CLIENT_LIST |
-    while read s; do
-        set -- $s
-        printf "\002{$(($#-6))}"
+exec xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_CLIENT_LIST |
+    while read atom _ rest; do
+        case $atom in
+            _NET_CURRENT_DESKTOP) desktop=$rest;;
+            _NET_CLIENT_LIST) clients=$rest;;
+        esac
+        test -n "$desktop$clients" && {
+            wincount=$(xdotool search --desktop $desktop . | wc -l)
+            printf "\002{$wincount}"
+        }
     done

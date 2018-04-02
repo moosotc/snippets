@@ -3,6 +3,6 @@ set -e
 
 exec xprop -notype -root -spy _NET_CLIENT_LIST |
     while read s; do
-        set -- ${s##_NET_CLIENT_LIST: window id # }
-        printf "\002{$(($#-2))}"
+        set -- $s
+        printf "\002{$(($#-6))}"
     done

@@ -1,17 +1,15 @@
 #!/bin/sh
 set -e
 
-w() {
-    n=$(xdotool search --desktop $desktop --name . | wc -l)
-    printf "\002{$n}"
-}
-
 exec xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW |
     while read s; do
         set -- $s
         case $1 in
             _NET_CURRENT_DESKTOP) desktop=$3;;
-            _NET_ACTIVE_WINDOW:) w;;
+            _NET_ACTIVE_WINDOW:)
+                n=$(xdotool search --desktop $desktop --name . | wc -l)
+                printf "\002{$n}"
+                ;;
             *) ;;
         esac
     done

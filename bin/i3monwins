@@ -15,10 +15,5 @@ exec xprop -notype -root -spy \
         esac
         test -z "$*" || test -z "$dname" && continue
         count=$(xdotool search --desktop $dnum --class . 2>/dev/null | wc -l)
-        case $dname in
-            [1-9])
-                hexu=$(printf "%x" $((0x2775+$dname)))
-                /usr/bin/printf "\002\u$hexu $count" ;;
-            *) printf "\002$dname $count";;
-        esac
+        printf "\002$dname{$count}"
     done

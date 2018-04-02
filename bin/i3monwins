@@ -1,16 +1,21 @@
 #!/bin/sh
 set -e
-#exec 1>/dev/null
-exec 2>/dev/null
 
-exec xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_CLIENT_LIST |
+exec xprop -notype -root -spy \
+     _NET_CURRENT_DESKTOP _NET_CLIENT_LIST _NET_DESKTOP_NAMES |
     while read atom _ rest; do
         case $atom in
-            _NET_CURRENT_DESKTOP) desktop=$rest;;
-            _NET_CLIENT_LIST) clients=$rest;;
+            _NET_CURRENT_DESKTOP)
+                dnum=$rest
+                test -n "$dnames" && {
+                    set -- $dnames
+                    shift $dnum
+                }
+                eval dname=${1%,*}
+                ;;
+            _NET_CLIENT_LIST) ;;
+            _NET_DESKTOP_NAMES) dnames=$rest;;
         esac
-        test -n "$desktop$clients" && {
-            wincount=$(xdotool search --desktop $desktop . | wc -l)
-            printf "\002{$wincount}"
-        }
+        printf "\002%s:%d" $dname \
+               $(xdotool search --desktop $dnum --class . 2>/dev/null | wc -l)
     done

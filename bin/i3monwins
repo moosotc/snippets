@@ -15,5 +15,5 @@ exec xprop -notype -root -spy \
         esac
         test -z "$*" || test -z "$dname" && continue
         count=$(xdotool search --desktop $dnum --class . 2>/dev/null | wc -l)
-        printf "\002$count:$dname"
+        printf "\002$dname:$count"
     done

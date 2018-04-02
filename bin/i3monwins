@@ -7,15 +7,13 @@ exec xprop -notype -root -spy \
         case $atom in
             _NET_CURRENT_DESKTOP)
                 dnum=$rest
-                test -n "$dnames" && {
-                    set -- $dnames
-                    shift $dnum
-                }
-                eval dname=${1%,*}
+                eval dname=\$$((dnum+1))
+                dname=${dname%%,*}
                 ;;
             _NET_CLIENT_LIST) ;;
-            _NET_DESKTOP_NAMES) dnames=$rest;;
+            _NET_DESKTOP_NAMES) eval set -- $rest;;
         esac
-        printf "\002%s:%d" $dname \
-               $(xdotool search --desktop $dnum --class . 2>/dev/null | wc -l)
+        test -z "$*" || test -z "$dname" && continue
+        count=$(xdotool search --desktop $dnum --class . 2>/dev/null | wc -l)
+        printf "\002$dname:$count"
     done

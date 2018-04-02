@@ -1,35 +1,17 @@
 #!/bin/sh
 set -e
 
-# XXX monitor clients on current desktop somehow
-
 w() {
-    wincount=0
-    aid=$(($1))                 # unquote
-    set -- $(xdotool search --desktop $desktop --name . | sort)
-    for wid; do
-        wincount=$((wincount+1))
-        test "$wid" = "$aid" && winindex=$wincount
-    done
-    set -- $desktop_names
-    shift $((desktop+2))
-    eval dname="${@%%,*}"       # unquote
-    case $wincount in
-        0) wincap="{}";;
-        1) wincap="{1}";;
-        *) wincap="{$winindex/$wincount}";;
-    esac
-    printf "\002$dname$wincap"
+    n=$(xdotool search --desktop $desktop --name . | wc -l)
+    printf "\002{$n}"
 }
 
-exec xprop -notype -root -spy \
-     _NET_DESKTOP_NAMES _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW |
+exec xprop -notype -root -spy _NET_CURRENT_DESKTOP _NET_ACTIVE_WINDOW |
     while read s; do
         set -- $s
         case $1 in
             _NET_CURRENT_DESKTOP) desktop=$3;;
-            _NET_ACTIVE_WINDOW:) w $5;;
-            _NET_DESKTOP_NAMES) desktop_names=$@;;
+            _NET_ACTIVE_WINDOW:) w;;
             *) ;;
         esac
     done

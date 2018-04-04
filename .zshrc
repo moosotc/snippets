@@ -65,7 +65,7 @@ tobld ()
 }
 
 alias ..='cd ..'
-alias clr="printf '\e[1;1H'"
+alias clr="printf '\ec'"
 alias ll='ls -la'
 alias xpwd='printf $PWD | xclip -i'
 alias te=emacsclient

@@ -8,6 +8,8 @@ false && {
     exec 1>&2 2>/dev/null
 }
 
+#xdotool search selectwindow windowsize 1667 1113
+
 test -z "$@" && {
     xdotool windowactivate $(xdotool search --class 'chromium' | tail -1) &&
         exit 0 || true

@@ -115,6 +115,7 @@ define_key(content_buffer_normal_keymap, "M-s", "ns-toggle-temp");
 define_key(content_buffer_normal_keymap, "s-s", "toggle-stylesheets");
 define_key(content_buffer_normal_keymap, "C-a", "cmd_selectAll");
 define_key(content_buffer_normal_keymap, ",", "follow");
+define_key(content_buffer_normal_keymap, ".", "copy");
 define_key(content_buffer_normal_keymap, "f", "");
 
 define_key(content_buffer_normal_keymap, "C-l", "find-url");

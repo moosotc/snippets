@@ -87,6 +87,7 @@
    (local-set-key (kbd "<tab>") 'gnus-summary-next-unread-article)
    (local-set-key "="  'toggle-article-window)
    ;; (local-set-key "n"  'gnus-summary-next-article)
+   (local-set-key "m"  'self-insert-and-exit)
    (local-set-key "p"  'gnus-summary-prev-article)
    (local-set-key "!"  'gnus-summary-put-mark-as-ticked-next)
    (local-set-key "d"  'gnus-summary-put-mark-as-expirable-next)

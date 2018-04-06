@@ -9,31 +9,5 @@
 ** tmux            http://tmux.github.io/
 ** i3              https://i3wm.org/
 ** stardict        http://stardict.sourceforge.net/
-* Fonts
-** Andika          http://scripts.sil.org/andika_download
-** Exo 2           http://ndiscovered.com/exo-2/
-** Fira            https://www.mozilla.org/en-US/styleguide/products/firefox-os/typeface/
-** Free Font       https://www.gnu.org/software/freefont/
-** Gentium         http://scripts.sil.org/Gentium_download
-** Lato            http://www.latofonts.com/lato-free-fonts/
-** Linux Libertine http://linuxlibertine.org/
-** Merriweather    https://ebensorkin.wordpress.com/
-** Noto            https://www.google.com/get/noto/
-** PT Sans         http://paratype.com/public/
-** Sil (many)      https://www.sil.org/
-** Source Code Pro http://www.adobe.com/products/type/font-information/source-code-pro-readme-file.html
-** Symbola         http://users.teilar.gr/~g1951d/
-** XO Fonts        https://fonts.myoffice.ru/
-** monofur         http://eurofurence.net/monofur.html
-** Code New Roman
-   https://sourceforge.net/projects/codenewroman/
-   http://dl.1001fonts.com/code-new-roman.zip
-   Combination of "beta version" at sourceforge + bold/italic from 1001fonts
-   make a nice console font that doesn't have a nasty "l" and "i" issue when
-   going from regular to bold (problem that zipped version exhibits)
-** Cormorant       https://github.com/CatharsisFonts/Cormorant
-** Roboto          https://material.io/guidelines/resources/roboto-noto-fonts.html
-   Used by youtube
-** Anonymous Pro   http://www.marksimonson.com/fonts/view/anonymous-pro
 * Shell
 ** https://unix.stackexchange.com/questions/118433/quoting-within-command-substitution-in-bash

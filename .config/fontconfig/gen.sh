@@ -34,18 +34,6 @@ test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
     lucida="xo verbena"
 }
 
-# PT              https://en.wikipedia.org/wiki/PT_Fonts
-# PT Astra        http://astralinux.com/fonts.html
-# XO              https://fonts.myoffice.ru
-# Merriweather    https://ebensorkin.wordpress.com/
-# Iosevka         https://github.com/be5invis/Iosevka
-#                 https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-# Monofur         http://eurofurence.net/monofur.html
-# Unifraktur      http://unifraktur.sourceforge.net/maguntia.html
-# Lucida          https://en.wikipedia.org/wiki/Lucida
-#                 https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
-# Montserrat      https://github.com/JulietaUla/Montserrat
-
 S "mono"            "monospace"
 S "sans"            "sans-serif"
 S "serif"           "pt astra serif"

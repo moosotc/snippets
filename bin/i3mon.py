@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 
 import time, os, sys, select, signal, subprocess
-import socket, ssl, re, json
+import socket, ssl, re, json, traceback
 
 HOST = "imap.gmail.com"
 PORT = 993
-HOST = socket.getaddrinfo (HOST, PORT)[0][4][0]
+AI = socket.getaddrinfo (HOST, PORT)
+HOST = AI[0][4][0]
+FAMI = AI[0][0]
 email = b"moosotc@gmail.com"
 
 prevunseen = 0
@@ -38,8 +40,8 @@ def checkmail (t):
     n = prevunseen
     if t - prevt > mailcheckinterval:
         try:
-            sock = socket.socket()
-            sock.connect((HOST, PORT))
+            sock = socket.socket (FAMI)
+            sock.connect ((HOST, PORT))
 
             # wrap socket to add SSL support
             sock1 = ssl.wrap_socket (sock)
@@ -56,7 +58,8 @@ def checkmail (t):
                 n = int (m.group (1))
             sock1.close ()
             sock.close ()
-        except:
+        except Exception:
+            traceback.print_exc ()
             n = 0
 
         prevt = t

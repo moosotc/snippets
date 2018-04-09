@@ -9,5 +9,6 @@
 ** tmux            http://tmux.github.io/
 ** i3              https://i3wm.org/
 ** stardict        http://stardict.sourceforge.net/
+** ddcci-tool      http://jaffar.cs.msu.su/oleg/ddcci/
 * Shell
 ** https://unix.stackexchange.com/questions/118433/quoting-within-command-substitution-in-bash

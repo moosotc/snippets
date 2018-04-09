@@ -162,6 +162,7 @@ bindsym Ctrl+Shift+grave $execnoid xclip -selection clipboard -o | xclip -i
 bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $mod+Print $execnoid sshot.sh
+bindsym Pause $execnoid moncycle
 
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show

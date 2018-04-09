@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+ddcci-tool /dev/i2c-8 -r 0x60 | grep '+/15/18' || {
+    ddcci-tool /dev/i2c-8 -r 0x60 -w 15
+} && {
+    ddcci-tool /dev/i2c-8 -r 0x60 -w 18
+}       

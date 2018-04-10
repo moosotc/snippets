@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# https://be5invis.github.io/Iosevka/
+# 364c8ae221f56828d8417ca9fd853e1afd03eae8
+
 styles="expanded term"
 a() { styles="$styles $1"; }
 
@@ -9,7 +13,7 @@ a() { styles="$styles $1"; }
 #   * `v-l-italic` : Italic `l` (default for italic).
 #   * `v-l-tailed` : `l` with a curved tail.
 #   * `v-l-hookybottom` : `l` with a straight tail.
-a v-l-italic
+a v-l-hookybottom
 #   * Styles for letter `i`:
 #   * `v-i-hooky` : Hooky `i`.
 #   * `v-i-zshaped` : Z-shaped `i`.
@@ -79,6 +83,10 @@ a v-dollar-open
 #   * `v-numbersign-upright` : Number sign with vertical bars (default).
 #   * `v-numbersign-slanted` : Number sign with slanted bars.
 a v-numbersign-slanted
+
+# ...
+a v-one-serifed
+a v-y-curly
 
 make custom-config                              \
      upright="$styles"                          \

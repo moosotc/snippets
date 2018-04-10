@@ -1,12 +1,12 @@
-* PT           https://en.wikipedia.org/wiki/PT_Fonts
+* PT               https://en.wikipedia.org/wiki/PT_Fonts
 ** Sans
   S5 - decent
   3З - 3 with flat top
 *** usage: UI
-* PT Astra     http://astralinux.com/fonts.html
+* PT Astra         http://astralinux.com/fonts.html
 ** Serif
 *** usage: llpphtml, prince - body text
-* XO           https://fonts.myoffice.ru
+* XO               https://fonts.myoffice.ru
 ** Better versions of (3З if nothing else)
 *** Thames     - Times (New Roman)
 *** Oriel      - Arial
@@ -14,30 +14,32 @@
 *** Tahion     - Tahoma
 *** Verbena    - Verdana
 *** Caliburn   - Calibri
-* Merriweather https://ebensorkin.wordpress.com/
+* Merriweather     https://ebensorkin.wordpress.com/
   Alias for Georgia
 
   Georgia substitute
-* Iosevka
+* Iosevka          https://github.com/be5invis/Iosevka
   One monospaced font to rule them all
-  https://github.com/be5invis/Iosevka
   https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-* Monofur      http://eurofurence.net/monofur.html
+* Monofur          http://eurofurence.net/monofur.html
   i3bar, rofi
-* Unifraktur   http://unifraktur.sourceforge.net/maguntia.html
+* Unifraktur       http://unifraktur.sourceforge.net/maguntia.html
   Thing of beauty
-* Lucida
-  https://en.wikipedia.org/wiki/Lucida
+* Lucida           https://en.wikipedia.org/wiki/Lucida
   https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
   http://tug.org/TUGboat/tb34-2/tb107bigelow-wang.pdf
-* Montserrat   https://github.com/JulietaUla/Montserrat
-* Alegreya     https://github.com/huertatipografica
+* Montserrat       https://github.com/JulietaUla/Montserrat
+* Alegreya         https://github.com/huertatipografica
   Very warmn one
 ** Sans - Subtitles
 ** Serif - Greek body text
-* Symbola      http://users.teilar.gr/~g1951d/
+* Symbola          http://users.teilar.gr/~g1951d/
   Dingbats, symbols, emoji, language coverage
-* EB Garamond  http://www.georgduffner.at/ebgaramond/
-* GNU Unifont  http://unifoundry.com/unifont.html
+* EB Garamond      http://www.georgduffner.at/ebgaramond/
+* GNU Unifont      http://unifoundry.com/unifont.html
   misc-fixed FTW
 ** usage: universal unicode fallback
+* Philosopher      http://jovanny.ru/
+* Volkorn          http://vollkorn-typeface.com/
+* Lora             http://www.cyreal.org/2012/07/lora/
+* Playfair Display https://forthehearts.net/

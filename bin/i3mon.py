@@ -241,10 +241,6 @@ def main ():
 
         j = [{"color": "#00ff00", "full_text": msg}] if msg else []
 
-        nmail = checkmail (t)
-        if nmail > 0:
-            j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
-
         if winfo:
             j += [{"color": "#a9a9a9", "full_text": winfo}]
 
@@ -264,6 +260,10 @@ def main ():
         swap = swapused ()
         if swap != 0:
             j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
+
+        nmail = checkmail (t)
+        if nmail > 0:
+            j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
 
         print ("%s," % json.dumps (j), flush=True)
 

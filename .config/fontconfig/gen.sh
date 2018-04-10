@@ -55,6 +55,7 @@ S "consolas"        "iosevka malc"
 S "segoe ui"        "xo caliburn" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
+S "helvetica neue"  "volkorn"
 test "Lucida Sans" = "$lucida" && true || S "lucida sans" "$lucida"
 S "lucida grande"   "$lucida"
 S "lucida sans unicode" "$lucida"

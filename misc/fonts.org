@@ -38,4 +38,3 @@
 * Philosopher      http://jovanny.ru/
 * Volkorn          http://vollkorn-typeface.com/
 * Lora             http://www.cyreal.org/2012/07/lora/
-* Playfair Display https://forthehearts.net/

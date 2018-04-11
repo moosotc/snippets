@@ -25,10 +25,6 @@
   i3bar, rofi
 * Unifraktur       http://unifraktur.sourceforge.net/maguntia.html
   Thing of beauty
-* Lucida           https://en.wikipedia.org/wiki/Lucida
-  https://docs.oracle.com/javase/7/docs/technotes/guides/intl/font.html
-  http://tug.org/TUGboat/tb34-2/tb107bigelow-wang.pdf
-* Montserrat       https://github.com/JulietaUla/Montserrat
 * Alegreya         https://github.com/huertatipografica
   Very warmn one
 ** Sans - Subtitles

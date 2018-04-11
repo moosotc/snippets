@@ -28,12 +28,6 @@ cat <<EOF
   </match>
 EOF
 
-test -n "$(find $HOME/.fonts -name LucidaSansRegular.ttf)" && {
-    lucida="Lucida Sans"
-} || {
-    lucida="xo verbena"
-}
-
 S "mono"            "monospace"
 S "sans"            "sans-serif"
 S "serif"           "pt astra serif"
@@ -56,9 +50,8 @@ S "segoe ui"        "xo caliburn" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "volkorn"
-test "Lucida Sans" = "$lucida" && true || S "lucida sans" "$lucida"
-S "lucida grande"   "$lucida"
-S "lucida sans unicode" "$lucida"
+S "lucida grande"   "lora"
+S "lucida sans unicode" "lora"
 
 for f in "segoe"                                \
          "corbel"                               \

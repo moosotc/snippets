@@ -50,8 +50,6 @@ S "segoe ui"        "xo caliburn" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "volkorn"
-S "lucida grande"   "lora"
-S "lucida sans unicode" "lora"
 
 for f in "segoe"                                \
          "corbel"                               \
@@ -70,6 +68,8 @@ for f in "bitstream vera sans"                  \
          "opensans"                             \
          "droid sans"                           \
          "noto sans"                            \
+         "lucida"                               \
+         "lucida grande"                        \
          "dejavu sans";
 do
     S "$f" "xo verbena"

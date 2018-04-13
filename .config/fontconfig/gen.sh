@@ -35,18 +35,16 @@ S "sans-serif"      "xo oriel"
 S "monospace"       "iosevka malc"
 S "mono"            "iosevka malc"
 S "arial"           "xo oriel"
-S "verdana"         "xo verbena"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier"         "xo courser"
 S "courier new"     "xo courser"
-S "comic sans ms"   "UnifrakturMaguntia21"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
+S "segoe ui"        "philosopher" # github, channel9
 S "consolas"        "iosevka malc"
-S "segoe ui"        "xo caliburn" # github, channel9
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "volkorn"
@@ -70,6 +68,7 @@ for f in "bitstream vera sans"                  \
          "noto sans"                            \
          "lucida"                               \
          "lucida grande"                        \
+         "verdana"                              \
          "dejavu sans";
 do
     S "$f" "xo verbena"
@@ -82,7 +81,7 @@ do
 done
 
 # gnome/gtk
-for f in "cantarell"
+for f in "cantarell" "comic sans ms"
 do
     # respect your elders + z ftw
     S "$f" "UnifrakturMaguntia21"

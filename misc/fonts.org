@@ -15,8 +15,6 @@
 *** Verbena    - Verdana
 *** Caliburn   - Calibri
 * Merriweather     https://ebensorkin.wordpress.com/
-  Alias for Georgia
-
   Georgia substitute
 * Iosevka          https://github.com/be5invis/Iosevka
   One monospaced font to rule them all
@@ -26,7 +24,7 @@
 * Unifraktur       http://unifraktur.sourceforge.net/maguntia.html
   Thing of beauty
 * Alegreya         https://github.com/huertatipografica
-  Very warmn one
+  Very warm one
 ** Sans - Subtitles
 ** Serif - Greek body text
 * Symbola          http://users.teilar.gr/~g1951d/

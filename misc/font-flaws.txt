@@ -59,7 +59,7 @@ ubuntu mono         - S5 3З
 underdog            - styles/weights
 urwgothic           - S5 3З Il
 yanone kaffeesatz   - too condensed
-z003                - styles/weigths
+z003                - styles/weights
 go mono             - 3З
 go                  - 3З
 

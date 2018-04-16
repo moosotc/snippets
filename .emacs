@@ -549,7 +549,8 @@
 
 (defun fromatoz ()
   (interactive)
-  (insert-string
+  (require 'cl)
+  (insert
    (format "%s" (loop for a from ?A to ?Z collect (format "%c\n" a)))))
 
 ;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html

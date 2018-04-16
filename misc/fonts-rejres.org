@@ -1,0 +1,60 @@
+firasans            - S5 3З
+sgixgeneral         - S5 3З
+urwgothic           - S5 3З Il
+alegreyasans        - il
+alice               - no italic, no bold
+arsenal             - S5
+badley hand         - 3З
+cuprum              - S5 3З
+DINA*               - S5 3З
+dejavu sans (mono)  - S5 3З
+dejavu serif        - 3З
+droid sans          - S5 3З
+ebgaramond          - 3З
+exo2                - 3З
+fira mono           - S5 3З
+gothic a1           - S5 3З
+ibm plex mono       - S5 3З
+ibm plex sans       - S5 3З
+ibm plex serif      - 3З
+istok web           - S5 3З
+jura                - 3З
+lato                - S5 3З
+lucida sans         - S5 3З
+lucida typewriter   - S5 3З
+lucida bright       - 3З
+Montserrat          - S5
+mplus1p             - S5
+noto sans/serif     - 3З
+open sans           - 3З
+oswald              - 3З
+pt mono             - Illium
+pt sans             - S5
+phone keycaps       - 3З
+play                - S5 3З
+playfair display    - Il
+podkova             - S5 3З
+roboto              - 3З Il
+roboto mono         - 3З
+roboto slab         - 3З
+RoundedMplus1c      - 3З
+rubik               - Il
+sensation           - S5 3З
+scada               - S5 Il
+source sans pro     - S5 3З Il
+source serif pro    - 3З
+spectral            - 3З
+strong regular      - styles/weights
+tuffy               - 3З
+ubuntu              - S5 3З
+ubuntu mono         - S5 3З
+underdog            - styles/weights
+yanone kaffeesatz   - too condensed
+z003                - styles/weigths
+
+lora                -
+C059                -
+nobile              -
+philosopher         -
+prata               -
+raleway regular     -

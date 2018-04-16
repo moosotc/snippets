@@ -23,7 +23,7 @@ lato                - S5 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
 lucida bright       - 3З
-Montserrat          - S5
+montserrat          - S5
 mplus1p             - S5
 noto sans/serif     - 3З
 open sans           - 3З

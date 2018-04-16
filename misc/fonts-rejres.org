@@ -51,10 +51,19 @@ ubuntu mono         - S5 3З
 underdog            - styles/weights
 yanone kaffeesatz   - too condensed
 z003                - styles/weigths
+comfortaa           - 3З
+cormorant           - no greek
+cormorant garamond  - no greek
+pressstart2p        - not ugly enough to be beautiful
+bad script          - cursive only, no greek
+caveat              - cursive only, no greek
+pacifico            - cursive only, no greek
+pattaya             - cursive only, no greek
+nobile              - й - regular, Й - italic
 
 lora                -
 C059                -
-nobile              -
+Z003                -
 philosopher         -
 prata               -
 raleway regular     -

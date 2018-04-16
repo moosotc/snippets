@@ -2,7 +2,7 @@ firasans            - S5 3З
 sgixgeneral         - S5 3З
 urwgothic           - S5 3З Il
 alegreyasans        - il
-alice               - no italic, no bold
+alice               - styles/weights
 arsenal             - S5
 badley hand         - 3З
 cuprum              - S5 3З
@@ -28,7 +28,7 @@ mplus1p             - S5
 noto sans/serif     - 3З
 open sans           - 3З
 oswald              - 3З
-pt mono             - Illium
+pt mono             - Il
 pt sans             - S5
 phone keycaps       - 3З
 play                - S5 3З

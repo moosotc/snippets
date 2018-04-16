@@ -1,4 +1,0 @@
-#!/bin/sh
-. asroot
-systemctl restart tor
-#pkill -HUP tor

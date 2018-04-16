@@ -60,6 +60,7 @@ underdog            - styles/weights
 urwgothic           - S5 3З Il
 yanone kaffeesatz   - too condensed
 z003                - styles/weigths
+go mono             - 3З
 
 lora                -
 C059                -

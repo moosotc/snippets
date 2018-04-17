@@ -435,6 +435,7 @@
       smtpmail-smtp-server "smtp.gmail.com"
       smtpmail-smtp-service 587)
 
+(setq mail-user-agent 'gnus-user-agent)
 (setq user-mail-address "moosotc@gmail.com")
 
 (defun transpose-assignment ()

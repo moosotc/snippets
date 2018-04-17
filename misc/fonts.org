@@ -25,7 +25,6 @@
   Thing of beauty
 * Alegreya         https://github.com/huertatipografica
   Very warm one
-** Sans - Subtitles
 ** Serif - Greek body text
 * Symbola          http://users.teilar.gr/~g1951d/
   Dingbats, symbols, emoji, language coverage
@@ -35,4 +34,5 @@
 ** usage: universal unicode fallback
 * Philosopher      http://jovanny.ru/
 * Volkorn          http://vollkorn-typeface.com/
+  subtitles
 * Lora             http://www.cyreal.org/2012/07/lora/

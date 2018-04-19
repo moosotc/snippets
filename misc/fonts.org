@@ -36,3 +36,6 @@
 * Volkorn          http://vollkorn-typeface.com/
   subtitles
 * Lora             http://www.cyreal.org/2012/07/lora/
+* C059, Z003       https://github.com/ArtifexSoftware/urw-base35-fonts
+* El Messiri       https://github.com/Gue3bara/El-Messiri
+* Raleway          https://github.com/theleagueof/raleway

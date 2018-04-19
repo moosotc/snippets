@@ -52,7 +52,7 @@ sgixgeneral         - S5 3З
 source sans pro     - S5 3З Il
 source serif pro    - 3З
 spectral            - 3З
-strong regular      - styles/weights
+strong              - styles/weights
 tuffy               - 3З
 ubuntu              - S5 3З
 ubuntu mono         - S5 3З
@@ -62,7 +62,7 @@ yanone kaffeesatz   - too condensed
 z003                - styles/weights
 go mono             - 3З
 go                  - 3З
-raleway regular     - no italic
+raleway             - no italic
 lora                - 3З
 
 philosopher         -

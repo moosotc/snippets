@@ -63,8 +63,8 @@ z003                - styles/weights
 go mono             - 3З
 go                  - 3З
 raleway regular     - no italic
+lora                - 3З
 
-lora                -
 philosopher         -
 prata               -
 C059                -

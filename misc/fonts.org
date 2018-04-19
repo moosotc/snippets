@@ -35,5 +35,5 @@
 * Philosopher      http://jovanny.ru/
 * Volkorn          http://vollkorn-typeface.com/
   subtitles
-* Lora             http://www.cyreal.org/2012/07/lora/
 * Z003             https://github.com/ArtifexSoftware/urw-base35-fonts
+* Montserrat       https://github.com/JulietaUla/Montserrat/

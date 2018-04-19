@@ -62,10 +62,9 @@ yanone kaffeesatz   - too condensed
 z003                - styles/weights
 go mono             - 3З
 go                  - 3З
+raleway regular     - no italic
 
 lora                -
-C059                -
-Z003                -
 philosopher         -
 prata               -
-raleway regular     - no italic
+C059                -

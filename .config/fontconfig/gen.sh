@@ -43,7 +43,7 @@ S "courier"         "xo courser"
 S "courier new"     "xo courser"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
-S "segoe ui"        "raleway"   # github, channel9
+S "segoe ui"        "lora"      # github, channel9
 S "consolas"        "iosevka malc"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
@@ -78,6 +78,12 @@ done
 for f in "droid serif" "noto serif" "dejavu serif";
 do
     S "$f" "pt serif"
+done
+
+# comic
+for f in "comic sans ms"
+do
+    S "$f" "z003"
 done
 
 # gnome/gtk

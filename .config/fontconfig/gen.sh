@@ -80,13 +80,7 @@ do
     S "$f" "pt serif"
 done
 
-# comic
-for f in "comic sans ms"
-do
-    S "$f" "z003"
-done
-
-# gnome/gtk
+# gnome/gtk, comic
 for f in "cantarell" "comic sans ms"
 do
     # respect your elders + z ftw

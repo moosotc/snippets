@@ -65,6 +65,6 @@ go                  - 3З
 raleway             - no italic
 lora                - 3З
 
-philosopher         -
+philosopher         - Diacritics in ö
 prata               -
 C059                -

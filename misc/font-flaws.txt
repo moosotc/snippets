@@ -62,9 +62,9 @@ yanone kaffeesatz   - too condensed
 z003                - styles/weights
 go mono             - 3З
 go                  - 3З
-raleway             - no italic
+raleway             - no italic (in Cyrillic subset)
 lora                - 3З
-
 philosopher         - Diacritics in ö
+
 prata               -
 C059                -

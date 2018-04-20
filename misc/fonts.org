@@ -28,11 +28,9 @@
 ** Serif - Greek body text
 * Symbola          http://users.teilar.gr/~g1951d/
   Dingbats, symbols, emoji, language coverage
-* EB Garamond      http://www.georgduffner.at/ebgaramond/
 * GNU Unifont      http://unifoundry.com/unifont.html
   misc-fixed FTW
 ** usage: universal unicode fallback
 * Volkorn          http://vollkorn-typeface.com/
   subtitles
-* Z003             https://github.com/ArtifexSoftware/urw-base35-fonts
 * Montserrat       https://github.com/JulietaUla/Montserrat/

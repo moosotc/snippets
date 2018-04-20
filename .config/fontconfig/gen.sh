@@ -43,11 +43,11 @@ S "courier"         "xo courser"
 S "courier new"     "xo courser"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
-S "segoe ui"        "vollkorn"  # github, channel9
+S "segoe ui"        "pt sans"   # github, channel9
 S "consolas"        "iosevka malc"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
-S "helvetica neue"  "volkorn"
+S "helvetica neue"  "vollkorn"
 
 for f in "segoe"                                \
          "corbel"                               \

@@ -32,7 +32,6 @@
 * GNU Unifont      http://unifoundry.com/unifont.html
   misc-fixed FTW
 ** usage: universal unicode fallback
-* Philosopher      http://jovanny.ru/
 * Volkorn          http://vollkorn-typeface.com/
   subtitles
 * Z003             https://github.com/ArtifexSoftware/urw-base35-fonts

@@ -8,13 +8,13 @@ false && {
     exec 1>&2 2>/dev/null
 }
 
-#xdotool search selectwindow windowsize 1667 1113
+pgrep chromium || {
+    xdotool search --sync --onlyvisible --maxdepth 2 \
+            --name chromium windowsize 1667 1113 windowactivate &
 
-test -z "$@" && {
-    xdotool windowactivate $(xdotool search --class 'chromium' | tail -1) &&
-        exit 0 || true
+    ulimit -s 1024
+    exec chromium "$@"
+} && {
+    xdotool search --sync --onlyvisible --maxdepth 2 \
+            --name chromium windowsize 1667 1113 windowactivate
 }
-
-xdotool windowactivate $(xdotool search --sync --class 'chromium' | tail -1) &
-ulimit -s 1024
-exec chromium "$@"

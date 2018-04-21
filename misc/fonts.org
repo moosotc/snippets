@@ -19,8 +19,6 @@
 * Iosevka          https://github.com/be5invis/Iosevka
   One monospaced font to rule them all
   https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-* Monofur          http://eurofurence.net/monofur.html
-  i3bar, rofi
 * Unifraktur       http://unifraktur.sourceforge.net/maguntia.html
   Thing of beauty
 * Alegreya         https://github.com/huertatipografica
@@ -35,3 +33,5 @@
   subtitles
 * Montserrat       https://github.com/JulietaUla/Montserrat/
 * Eurofurence      http://eurofurence.net/eurofurence.html
+* Monofur          http://eurofurence.net/monofur.html
+  i3bar, rofi

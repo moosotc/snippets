@@ -34,3 +34,4 @@
 * Volkorn          http://vollkorn-typeface.com/
   subtitles
 * Montserrat       https://github.com/JulietaUla/Montserrat/
+* Eurofurence      http://eurofurence.net/eurofurence.html

@@ -35,8 +35,7 @@ S "sans-serif"      "xo oriel"
 S "monospace"       "iosevka malc"
 S "mono"            "iosevka malc"
 S "arial"           "xo oriel"
-S "trebuchet ms"    "xo trebizond"
-S "tahoma"          "xo tahion"
+S "trebuchet ms"    "pt sans"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier"         "xo courser"
@@ -69,6 +68,7 @@ for f in "bitstream vera sans"                  \
          "lucida"                               \
          "lucida grande"                        \
          "verdana"                              \
+         "tahoma"                               \
          "dejavu sans";
 do
     S "$f" "montserrat alternates"

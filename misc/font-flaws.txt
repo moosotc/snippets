@@ -27,7 +27,7 @@ lato                - S5 3З
 lucida bright       - 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
-montserrat          - S5
+montserrat          - S5 Il
 mplus1p             - S5
 nobile              - й - regular, Й - italic
 noto sans/serif     - 3З

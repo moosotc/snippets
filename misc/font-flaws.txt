@@ -17,6 +17,8 @@ ebgaramond          - 3З
 exo2                - 3З
 fira mono           - S5 3З
 firasans            - S5 3З
+go                  - 3З
+go mono             - 3З
 gothic a1           - S5 3З
 ibm plex mono       - S5 3З
 ibm plex sans       - S5 3З
@@ -24,6 +26,7 @@ ibm plex serif      - 3З
 istok web           - S5 3З
 jura                - 3З
 lato                - S5 3З
+lora                - 3З
 lucida bright       - 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
@@ -35,12 +38,17 @@ open sans           - 3З
 oswald              - 3З
 pacifico            - cursive only, no greek
 pattaya             - cursive only, no greek
+philosopher         - Diacritics in ö
 phone keycaps       - 3З
 play                - S5 3З
 playfair display    - Il
 podkova             - S5 3З
 pressstart2p        - not ugly enough to be beautiful
+pt astra sans       - S5
 pt mono             - Il
+pt sans             - S5
+pt sans caption     - S5
+raleway             - no italic (in Cyrillic subset)
 roboto              - 3З Il
 roboto mono         - 3З
 roboto slab         - 3З
@@ -59,14 +67,6 @@ underdog            - styles/weights
 urwgothic           - S5 3З Il
 yanone kaffeesatz   - too condensed
 z003                - styles/weights
-go mono             - 3З
-go                  - 3З
-raleway             - no italic (in Cyrillic subset)
-lora                - 3З
-philosopher         - Diacritics in ö
-pt sans             - S5
-pt sans caption     - S5
-pt astra sans       - S5
 
 prata               -
 C059                -

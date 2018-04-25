@@ -41,7 +41,6 @@ playfair display    - Il
 podkova             - S5 3З
 pressstart2p        - not ugly enough to be beautiful
 pt mono             - Il
-pt sans             - S5
 roboto              - 3З Il
 roboto mono         - 3З
 roboto slab         - 3З

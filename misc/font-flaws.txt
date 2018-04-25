@@ -65,6 +65,9 @@ go                  - 3З
 raleway             - no italic (in Cyrillic subset)
 lora                - 3З
 philosopher         - Diacritics in ö
+pt sans             - S5
+pt sans caption     - S5
+pt astra sans       - S5
 
 prata               -
 C059                -

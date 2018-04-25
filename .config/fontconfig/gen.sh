@@ -48,7 +48,6 @@ S "helvetica"       "xo oriel"
 S "helvetica neue"  "vollkorn"
 
 for f in "segoe"                                \
-         "corbel"                               \
          "candara"                              \
          "cambria"                              \
          "constantia"                           \

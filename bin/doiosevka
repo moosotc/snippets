@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # https://be5invis.github.io/Iosevka/
-# 364c8ae221f56828d8417ca9fd853e1afd03eae8
+# 93899b40b3b4d1b7faba6af15df0bbd4beaa3e32
 
 styles="expanded term"
 a() { styles="$styles $1"; }
@@ -87,6 +87,7 @@ a v-numbersign-slanted
 # ...
 a v-one-serifed
 a v-y-curly
+a v-f-taily
 
 make custom-config                              \
      upright="$styles"                          \

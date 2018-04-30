@@ -13,7 +13,7 @@ pgrep chromium || {
             --name chromium windowsize 1667 1113 windowactivate &
 
     ulimit -s 1024
-    exec chromium "$@"
+    exec chromium --proxy-server=socks5://localhost:9050 "$@"
 } && {
     xdotool search --sync --onlyvisible --maxdepth 2 \
             --name chromium windowsize 1667 1113 windowactivate

@@ -1,10 +1,11 @@
 #!/bin/sh
 set -e
 
-case $(file -b --mime-type "$1") in
+mt=$(file -b --mime-type "$1")
+case "$mt" in
     video/* | audio/*) o=mpv;;
     application/pdf) o=llpp;;
     application/msword) o=llppac;;
-    *) o=echo "$*";;
+    *) echo "eh? $mt"; exit 111;;
 esac
 exec $o "$@"

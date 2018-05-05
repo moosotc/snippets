@@ -44,4 +44,4 @@ expr "$arg" : ".*cnn.*" && {
          --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]' ||   \
         printf 'nevidos' >$ctl
 }
-xdotool search --sync mpv
+#xdotool search --sync mpv && : >$ctl

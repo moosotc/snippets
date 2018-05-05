@@ -31,17 +31,17 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
 
 trap "printf '\001' >$ctl" 0
 
-printf "🅥 $arg" >$ctl
-title=$($yt -e $arg)
-printf "%s" "🆅 $title" >$ctl
+title="$arg"
+printf "🅥 $title" >$ctl
+printf "%s" "🆅 $($yt -e $arg)" >$ctl &
 
 expr "$arg" : ".*cnn.*" && {
-    tmux new-window -n "$title" \
-         mpv --quiet $(youtube-dl -f mp4 -g "$arg") || printf "nevidos" >$ctl
+    url=$(strace -o /dev/null -f -c youtube-dl -f 1280x720_3500k -g "$arg")
+    tmux new-window -n "$url" mpv --quiet "$url" || printf 'nevidos' >$ctl
 } || {
     tmux new-window -n "$title"                                             \
          mpv --quiet "$arg"                                                 \
          --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]' ||   \
         printf 'nevidos' >$ctl
 }
-#xdotool search --sync mpv && : >$ctl
+xdotool search --sync mpv && :>$ctl || echo xdotool failed >$ctl

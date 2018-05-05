@@ -38,9 +38,6 @@ printf "%s" "🆅 $($yt -e $arg)" >$ctl &
 tmux new-window -n "$title"                                             \
      mpv --quiet "$arg"                                                 \
      --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]'
-if xdotool search --sync mpv; then
-    sleep 2
-    :>$ctl
-else
-    printf "xdotool search mpv failed" >$ctl
-fi
+#xdotool search --sync --name "$arg"
+sleep 8
+printf "\x01" >$ctl

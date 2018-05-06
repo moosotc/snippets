@@ -6,6 +6,11 @@ case "$mt" in
     video/* | audio/*) o=mpv;;
     application/pdf) o=llpp;;
     application/msword) o=llppac;;
-    *) echo "eh? $mt"; exit 111;;
+    *)
+        expr "$1" : '.*\.\(webm\|mkv\)' && o=mpv  || {
+                echo "eh? $mt"
+                exit 111
+            }
+        ;;
 esac
 exec $o "$@"

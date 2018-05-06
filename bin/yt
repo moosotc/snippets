@@ -29,7 +29,7 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
     } && true
 }
 
-trap "printf '\001' >$ctl" 0
+trap "printf '\001' >$ctl" EXIT
 
 title="$arg"
 printf "🅥 $title" >$ctl
@@ -40,4 +40,3 @@ tmux new-window -n "$title"                                             \
      --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]'
 #xdotool search --sync --name "$arg"
 sleep 8
-printf "\x01" >$ctl

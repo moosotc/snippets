@@ -9,8 +9,7 @@ false && {
 }
 
 a() {
-    xdotool set_desktop 0
-    xdotool search --sync --onlyvisible --maxdepth 2 \
+    xdotool set_desktop 0 search --sync --onlyvisible --maxdepth 2      \
             --name chromium windowsize 1667 1113 windowactivate
 }
 a &

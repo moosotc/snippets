@@ -16,6 +16,6 @@ a &
 pgrep chromium || {
     ulimit -s 1024
     exec chromium "$@" --proxy-server=socks5://localhost:9050   \
-         --proxy-bypass-list="bladeforums.com"
+         --proxy-bypass-list='*bladeforums.com;*amediateka.ru'
     
 }

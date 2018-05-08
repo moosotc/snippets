@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo "families: $(fc-list -f '%{family}\n' | sort | uniq | wc -l)"
+echo "   files: $(fc-list -f '%{file}\n' | sort | uniq | wc -l)"

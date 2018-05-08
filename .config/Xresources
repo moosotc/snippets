@@ -6,8 +6,6 @@ emacs.geometry: 80x40
 emacs*menubar*font: ui-8
 emacs.background: grey80
 emacs.toolBar: 0
-!emacs.font: mono:pixelsize=19
-!emacs.font: ibm plex mono:pixelsize=17
 emacs.font: iosevka malc:pixelsize=17
 emacs.scrollBarWidth: 7
 emacs.menuBar: 0
@@ -17,9 +15,9 @@ rofi.font: monofur 18
 XBoard*firstChessProgram: fairymax
 XBoard*secondChessProgram: stockfish
 
-XBoard*font: 10x20
-XBoard*clockFont: 10x20
-XBoard*coordFont: 10x20
+XBoard*font: fixed
+XBoard*clockFont: fixed
+XBoard*coordFont: fixed
 
 !XBoard*boardSize: medium
 XBoard*boardSize: large

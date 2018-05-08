@@ -19,5 +19,5 @@ test ! -e /tmp/noi3 && {
     i3monwins >/tmp/i3.fifo &
     exec i3
 } || {
-    exec rxvt -fn xft:mono-13
+    exec rxvt -fn xft:mono-10 -rv
 }

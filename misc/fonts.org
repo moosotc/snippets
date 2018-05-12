@@ -1,12 +1,12 @@
-* PT               https://en.wikipedia.org/wiki/PT_Fonts
+* PT                   https://en.wikipedia.org/wiki/PT_Fonts
 ** Sans
   S5 - decent
   3З - 3 with flat top
 *** usage: UI
-* PT Astra         http://astralinux.com/fonts.html
+* PT Astra             http://astralinux.com/fonts.html
 ** Serif
 *** usage: llpphtml, prince - body text
-* XO               https://fonts.myoffice.ru
+* XO                   https://fonts.myoffice.ru
 ** Better versions of (3З if nothing else)
 *** Thames     - Times (New Roman)
 *** Oriel      - Arial
@@ -14,24 +14,25 @@
 *** Tahion     - Tahoma
 *** Verbena    - Verdana
 *** Caliburn   - Calibri
-* Merriweather     https://ebensorkin.wordpress.com/
+* Merriweather         https://ebensorkin.wordpress.com/
   Georgia substitute
-* Iosevka          https://github.com/be5invis/Iosevka
+* Iosevka              https://github.com/be5invis/Iosevka
   One monospaced font to rule them all
-  https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-* Unifraktur       http://unifraktur.sourceforge.net/maguntia.html
+  https                     ://github.com/moosotc/snippets/blob/master/bin/doiosevka
+* Unifraktur           http://unifraktur.sourceforge.net/maguntia.html
   Thing of beauty
-* Alegreya         https://github.com/huertatipografica
+* Alegreya             https://github.com/huertatipografica
   Very warm one
 ** Serif - Greek body text
-* Symbola          http://users.teilar.gr/~g1951d/
+* Symbola              http://users.teilar.gr/~g1951d/
   Dingbats, symbols, emoji, language coverage
-* GNU Unifont      http://unifoundry.com/unifont.html
+* GNU Unifont          http://unifoundry.com/unifont.html
   misc-fixed FTW
 ** usage: universal unicode fallback
-* Volkorn          http://vollkorn-typeface.com/
+* Volkorn              http://vollkorn-typeface.com/
   subtitles
-* Montserrat       https://github.com/JulietaUla/Montserrat/
-* Eurofurence      http://eurofurence.net/eurofurence.html
-* Monofur          http://eurofurence.net/monofur.html
+* Montserrat           https://github.com/JulietaUla/Montserrat/
+* Eurofurence          http://eurofurence.net/eurofurence.html
+* Monofur              http://eurofurence.net/monofur.html
   i3bar, rofi
+* Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html

@@ -46,6 +46,7 @@ S "consolas"        "iosevka malc"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "vollkorn"
+S "cantarell"       "pt sans"
 
 for f in "segoe"                                \
          "candara"                              \
@@ -79,7 +80,7 @@ do
 done
 
 # gnome/gtk, comic
-for f in "cantarell" "comic sans ms"
+for f in "comic sans ms"
 do
     # respect your elders + z ftw
     S "$f" "UnifrakturMaguntia21"

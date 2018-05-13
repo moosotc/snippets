@@ -1,1 +1,6 @@
-gtk-font-name = "ui 10"
+gtk-font-name="ui 10"
+gtk-key-theme-name=Emacs
+gtk-button-images=0
+gtk-menu-images=0
+gtk-enable-event-sounds=0
+gtk-enable-input-feedback-sounds=0

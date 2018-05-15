@@ -260,3 +260,5 @@ add_hook("mode_line_hook", mode_line_adder(zoom_widget));
 //add_hook("mode_line_hook", mode_line_adder(downloads_status_widget));
 
 session_pref ("browser.history_expire_days", 30);
+session_pref ("browser.history_expire_days", 30);
+session_pref ("gfx.downloadable_fonts.enabled", false);

@@ -417,7 +417,7 @@
  '(erc-track-position-in-mode-line t)
  '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
- '(org-agenda-files '("~/x/org/org.org"))
+ '(org-agenda-files '("~/x/org"))
  '(org-support-shift-select t)
  '(package-selected-packages
    '(highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))

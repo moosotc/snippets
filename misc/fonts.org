@@ -37,5 +37,4 @@
 * Ruslan Display       https://fonts.google.com/specimen/Ruslan+Display
 * Philosopher          http://jovanny.ru/
 * El Messiri           https://github.com/Gue3bara/El-Messiri
-* Nobile               https://github.com/vernnobile/NobileFont
 * Playfair-Display     https://github.com/clauseggers/Playfair-Display

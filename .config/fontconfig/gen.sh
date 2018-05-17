@@ -41,7 +41,7 @@ S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
-S "segoe ui"        "pt sans"   # github, channel9
+S "segoe ui"        "philosopher" # github, channel9
 S "consolas"        "iosevka malc"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
@@ -63,14 +63,19 @@ for f in "bitstream vera sans"                  \
          "open sans"                            \
          "opensans"                             \
          "droid sans"                           \
-         "noto sans"                            \
+         "noto sans";
+do
+    S "$f" "montserrat alternates"
+done
+
+for f in "bitstream vera sans"                  \
          "lucida"                               \
          "lucida grande"                        \
          "verdana"                              \
          "tahoma"                               \
          "dejavu sans";
 do
-    S "$f" "montserrat alternates"
+    S "$f" "nobile"
 done
 
 # large x-height serif

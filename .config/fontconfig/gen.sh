@@ -83,7 +83,7 @@ done
 for f in "comic sans ms"
 do
     # respect your elders + z ftw
-    S "$f" "UnifrakturMaguntia21"
+    S "$f" "ruslan display"
 done
 
 echo "</fontconfig>"

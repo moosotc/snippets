@@ -63,19 +63,15 @@ for f in "bitstream vera sans"                  \
          "open sans"                            \
          "opensans"                             \
          "droid sans"                           \
-         "noto sans";
-do
-    S "$f" "montserrat alternates"
-done
-
-for f in "bitstream vera sans"                  \
+         "noto sans"                            \
+         "bitstream vera sans"                  \
          "lucida"                               \
          "lucida grande"                        \
          "verdana"                              \
          "tahoma"                               \
          "dejavu sans";
 do
-    S "$f" "nobile"
+    S "$f" "montserrat alternates"
 done
 
 # large x-height serif

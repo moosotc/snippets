@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+wl='*bladeforums.com;*amediateka.ru;www.fonts-online.ru;192.168.1.65:55555'
+
 false && {
     exec 1>/tmp/chro.out
     exec 2>/tmp/chro.err
@@ -16,5 +18,5 @@ a &
 pgrep chromium || {
     ulimit -s 1024
     exec chromium "$@" --proxy-server=socks5://localhost:9050   \
-         --proxy-bypass-list='*bladeforums.com;*amediateka.ru;www.fonts-online.ru'
+         --proxy-bypass-list=$wl
 }

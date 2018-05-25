@@ -30,7 +30,7 @@ EOF
 
 S "mono"            "monospace"
 S "sans"            "sans-serif"
-S "serif"           "pt astra serif"
+S "serif"           "alegreya"
 S "sans-serif"      "xo oriel"
 S "monospace"       "iosevka malc"
 S "arial"           "xo oriel"

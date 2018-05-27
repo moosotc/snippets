@@ -1,3 +1,4 @@
 #!/bin/sh
 . asroot
+test -z "${1-}" || sleep $1
 echo 'mem' >/sys/power/state

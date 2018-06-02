@@ -514,6 +514,7 @@
 (setq undo-limit 120000)
 
 (autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
+(setq whitespace-global-modes '(not erc-mode))
 (global-whitespace-mode)
 (setq whitespace-style
       '(face

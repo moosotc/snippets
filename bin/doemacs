@@ -1,5 +1,5 @@
-# 0965d94ca426765382f366bf48f88ba5f9500afd
 #!/bin/sh
+# git://git.savannah.gnu.org/emacs.git 0965d94ca426765382f366bf48f88ba5f9500afd
 
 exec ./configure                                \
      --without-rsvg                             \

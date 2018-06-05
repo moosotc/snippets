@@ -11,8 +11,20 @@ MiniDP=16
 HDMI1=17
 HDMI2=18
 
-ddcci-tool /dev/i2c-8 -r 0x60 | grep "+/$DP/" || {
-    ddcci-tool /dev/i2c-8 -r 0x60 -w $DP
-} && {
-    ddcci-tool /dev/i2c-8 -r 0x60 -w $HDMI2
+name2id() {
+    case "$1" in
+        dp) echo $DP;;
+        minidp) echo $MiniDP;;
+        hdmi1) echo $HDMI1;;
+        hdmi2) echo $HDMI2;;
+        *) echo $DP;;
+    esac
 }
+
+expr "$(ddcci-tool /dev/i2c-8 -r 0x60)" : ".*+/$DP/" || {
+    ddcci-tool /dev/i2c-8 -r 0x60 -w $DP
+}
+
+name=$(printf "dp\nminidp\nhdmi1\nhdmi2\n" | rofi -dmenu -p "Video Input: ")
+id=$(name2id $name)
+test $id = $DP || ddcci-tool /dev/i2c-8 -r 0x60 -w $id

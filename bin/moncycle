@@ -1,5 +1,6 @@
 #!/bin/sh
 set -eu
+exec 2>/dev/null 1>&2
 
 lsmod | grep -q i2c_dev || (
     . asroot

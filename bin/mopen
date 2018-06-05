@@ -7,7 +7,7 @@ case "$mt" in
     application/pdf) o=llpp;;
     application/msword) o=llppac;;
     *)
-        expr "$1" : '.*\.\(webm\|mkv\|flv\)' && o=mpv  || {
+        expr "$1" : '.*\.\(webm\|mkv\|flv\)' && o=mpv || {
                 echo "eh? $mt"
                 exit 111
             }

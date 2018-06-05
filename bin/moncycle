@@ -6,8 +6,8 @@ lsmod | grep -q i2c_dev || (
     modprobe i2c-dev
 )
 
-ddcci-tool /dev/i2c-8 -r 0x60 | grep '+/17/18' || {
+ddcci-tool /dev/i2c-8 -r 0x60 | grep '+/15/' || {
     ddcci-tool /dev/i2c-8 -r 0x60 -w 15
 } && {
-    ddcci-tool /dev/i2c-8 -r 0x60 -w 17
+    ddcci-tool /dev/i2c-8 -r 0x60 -w 18
 }

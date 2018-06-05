@@ -6,8 +6,13 @@ lsmod | grep -q i2c_dev || (
     modprobe i2c-dev
 )
 
-ddcci-tool /dev/i2c-8 -r 0x60 | grep '+/15/' || {
-    ddcci-tool /dev/i2c-8 -r 0x60 -w 15
+DP=15
+MiniDP=16
+HDMI1=17
+HDMI2=18
+
+ddcci-tool /dev/i2c-8 -r 0x60 | grep "+/$DP/" || {
+    ddcci-tool /dev/i2c-8 -r 0x60 -w $DP
 } && {
-    ddcci-tool /dev/i2c-8 -r 0x60 -w 18
+    ddcci-tool /dev/i2c-8 -r 0x60 -w $HDMI2
 }

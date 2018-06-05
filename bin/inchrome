@@ -1,5 +1,0 @@
-#!/bin/sh
-exec 1>/dev/null
-exec 2>/dev/null
-pgrep -f '[u] tor' && prox="--proxy-server=socks://localhost:9050"
-exec chromium --incognito "$@" $prox

@@ -14,8 +14,7 @@ email = b"moosotc@gmail.com"
 prevunseen = 0
 prevt = 0
 
-# http://stackoverflow.com/questions/20794414/how-to-check-
-# the-status-of-a-shell-script-using-subprocess-module-in-python
+# http://stackoverflow.com/questions/20794414/how-to-check-the-status-of-a-shell-script-using-subprocess-module-in-python
 # http://zx2c4.com/projects/password-store/
 # is used for password management
 password = subprocess.Popen (["pass", email], stdout=subprocess.PIPE) \

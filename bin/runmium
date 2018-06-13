@@ -1,8 +1,9 @@
 #!/bin/sh
 set -e
 
-wl='*bladeforums.com;*amediateka.ru;www.fonts-online.ru;192.168.1.64:55555'
-wl="$wl,*.avito.ru"
+wl1='*bladeforums.com;*amediateka.ru;www.fonts-online.ru;192.168.1.64:55555'
+wl2='*.avito.ru;*netflix*;*nflx*'
+wl="$wl1;$wl2"
 
 false && {
     exec 1>/tmp/chro.out
@@ -17,7 +18,7 @@ a() {
 }
 a &
 pgrep chromium || {
+    ps="--proxy-server=socks5://localhost:9050 --proxy-bypass-list=$wl"
     ulimit -s 1024
-    exec chromium "$@" --proxy-server=socks5://localhost:9050   \
-         --proxy-bypass-list=$wl
+    exec chromium "$@" $ps
 }

@@ -1,4 +1,4 @@
-*font: -misc-fixed-medium-r-normal--14-*-*-*-*-*-*-*
+*font: fixed
 Xcursor.theme: Vanilla-DMZ
 Xcursor.size: 24
 
@@ -11,50 +11,3 @@ emacs.scrollBarWidth: 7
 emacs.menuBar: 0
 
 rofi.font: monofur 18
-
-XBoard*firstChessProgram: fairymax
-XBoard*secondChessProgram: stockfish
-
-XBoard*font: fixed
-XBoard*clockFont: fixed
-XBoard*coordFont: fixed
-
-!XBoard*boardSize: medium
-XBoard*boardSize: large
-XBoard*ponderNextMove: 0
-XBoard*searchTime: 0:1
-XBoard*form.translations: \
-             Shift<Key>?: AboutGameProc() \n\
-             <Key>q: QuitProc() \n\
-             <Key>y: AcceptProc() \n\
-             <Key>n: DeclineProc() \n\
-             <Key>]: ForwardProc() \n\
-             <Key>[: BackwardProc() \n\
-             <Key>/: RetractMoveProc() \n\
-             <Key>p: PauseProc() \n\
-             <Key>e: EditGameProc() \n\
-             <Key>a: AnalysisModeProc() \n\
-             <Key>|: PasteGameProc() \n\
-             <Key>b: MachineBlackProc() \n\
-             <Key>w: MachineWhiteProc() \n\
-             <Key>d: DrawProc() \n\
-             <Key>t: TwoMachinesProc() \n\
-             <Key>~: CopyGameProc() \n\
-             <Key>L: LoadNextGameProc() \n\
-             Shift<Key>r: ResignProc() \n\
-             <Key>m: PastePositionProc() \n\
-     <Key>Up: ToStartProc() \n\
-     <Key>Down: ToEndProc() \n\
- Ctrl<Key>Delete: CopyPositionProc() \n\
- Meta<Key>Delete: CopyGameProc()
- Ctrl<Key>Insert: PastePositionProc() \n\
- Meta<Key>Insert: PasteGameProc()
-
-XBoard*firstDirectory: /tmp
-XBoard*secondDirectory: /tmp
-XBoard*showCoords: 1
-XBoard*polyglotDir: /home/malc/x/chs
-XBoard*usePolyglotBook: 0
-XBoard*PolyglotBook: /home/malc/x/chs/Book.bin
-XBoard*autoDisplayComment: 0
-XBoard*autoDisplayTags: 0

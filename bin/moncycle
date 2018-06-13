@@ -9,10 +9,10 @@ lsmod | grep -q i2c_dev || (
 
 name2id() {
     case "$1" in
-        dp) echo 15;;
-        minidp) echo 16;;
-        hdmi1) echo 17;;
-        hdmi2) echo 18;;
+        dp*) echo 15;;
+        minidp*) echo 16;;
+        hdmi1*) echo 17;;
+        hdmi2*) echo 18;;
         *) echo $default;;
     esac
 }
@@ -22,6 +22,7 @@ expr >/dev/null "$(ddcci-tool /dev/i2c-8 -r 0x60)" : ".*+/$default/" || {
     ddcci-tool /dev/i2c-8 -r 0x60 -w $default
 }
 
-name=$(printf "dp\nminidp\nhdmi1\nhdmi2\n" | rofi -dmenu -p "Video Input: ")
+name=$(printf "dp (linmac2)\nminidp\nhdmi1 (ps4)\nhdmi2 (switch/linmacM)\n" \
+           | rofi -dmenu -p "Video Input:")
 id=$(name2id $name)
 test $id = $default || ddcci-tool /dev/i2c-8 -r 0x60 -w $id

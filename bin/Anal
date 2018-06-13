@@ -4,4 +4,5 @@ url=$(xclip -o)
 expr $url : ".*/chessgame" &>/dev/null &&
     url=$(echo $url | sed 's|chessgame?|nph-chesspgn?text=1\&|')
 expr $url : "http://.*" && curl -s "$url" | xclip -i -selection clipboard
-exec xboard -fcp stockfish -fUCI -scp fairymax -firstPlaysBlack 1 -st 0:1
+exec ~/x/rcs/git/xboard/xboard -fcp stockfish -fUCI -scp fairymax \
+     -firstPlaysBlack true -st 0:1 -boardSize large

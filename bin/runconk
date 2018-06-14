@@ -14,4 +14,5 @@ test -z "$@" && {
 }
 
 xdotool search --sync --classname "Navigator" windowactivate &
+ulimit -s 1024
 exec palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"

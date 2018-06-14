@@ -56,7 +56,7 @@ bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 bindsym $mod+Shift+w $execnoid runconk
-bindsym mod1+Shift+w $execnoid runmium
+bindsym mod1+Shift+w $execnoid runffox
 bindsym $mod+Shift+z $execnoid runemacs
 
 # toggle tiling / floating

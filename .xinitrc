@@ -9,8 +9,7 @@ xset +dpms
 xrdb -load $HOME/.config/Xresources
 setcapskey
 setdpi
-xmodmap -e 'pointer = 3 2 1'
-xinput set-prop 13 'libinput Left Handed Enabled' 1
+setpointer
 xsetroot -solid '#63718c'
 tmux new-session -s yt -d || true
 test -p /tmp/i3.fifo || mkfifo /tmp/i3.fifo

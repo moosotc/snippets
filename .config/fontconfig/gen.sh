@@ -47,6 +47,7 @@ S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "helvetica neue"  "vollkorn"
 S "cantarell"       "pt sans"
+S "optima"          "alegreya sans sc"
 
 for f in "segoe"                                \
          "candara"                              \

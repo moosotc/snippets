@@ -1,18 +1,18 @@
 #!/bin/sh
 set -e
 
-false && {
+test -n "$debrk" && {
     exec 1>/tmp/conk.out
     exec 2>/tmp/conk.err
-} || {
-    exec 1>/dev/null
-    exec 2>/dev/null
-}
+} || exec 1>/dev/null 2>&1
 
-test -z "$@" && {
-    xdotool search --classname "Navigator" windowactivate && exit 0 || true
+a() {
+    xdotool search --maxdepth 2 --onlyvisible 'Conkeror'        \
+            windowsize 1667 1113 windowactivate
 }
+a &
 
-xdotool search --sync --classname "Navigator" windowactivate &
-ulimit -s 1024
-exec palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+pgrep palemoon || {
+    ulimit -s 1024
+    exec palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+}

@@ -5,4 +5,4 @@ expr $url : ".*/chessgame" &>/dev/null &&
     url=$(echo $url | sed 's|chessgame?|nph-chesspgn?text=1\&|')
 expr $url : "http://.*" && curl -s "$url" | xclip -i -selection clipboard
 exec ~/x/rcs/git/xboard/xboard -fcp stockfish -fUCI -scp fairymax \
-     -firstPlaysBlack true -st 0:1 -boardSize large
+     -firstPlaysBlack true -st 0:1 -boardSize huge

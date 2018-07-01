@@ -16,6 +16,7 @@ test -p /tmp/i3.fifo || mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {
     rxvtd -q -o -f
     i3monwins >/tmp/i3.fifo &
+    alttab.sh &
     exec i3
 } || {
     exec rxvt -fn xft:mono-10 -rv

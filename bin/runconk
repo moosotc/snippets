@@ -15,4 +15,6 @@ a &
 pgrep palemoon || {
     ulimit -s 1024
     exec palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+} && {
+    palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
 }

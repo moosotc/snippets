@@ -79,15 +79,11 @@ test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
 export SUDO_ASKPASS=$HOME/bin/askpass
 ulimit -s 512
 mpvrand () {
-    if test -z "$1"; then
-        d="$PWD"
-    else
-        ! test -e "$1" || {
-            d="$1"
-            shift
-        }
-    fi
-    cd $d
+    ! test -d "$1" || {
+        d="$1"
+        shift
+        cd $d
+    }
     find -type f | sort -R | mpv -playlist - "$@"
 }
 

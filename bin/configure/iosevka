@@ -91,6 +91,7 @@ a v-f-taily
 
 make custom-config                              \
      upright="$styles"                          \
+     italic="$styles"                           \
      family="Iosevka malc"                      \
      weights="book bold"
 

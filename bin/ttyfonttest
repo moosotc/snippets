@@ -1,5 +1,5 @@
 #!/bin/sh
-epr() /usr/bin/printf "$1"
+epr() { /usr/bin/printf "$1"; }
 epr "\e[1mbold\e[0m\n"
 epr "\e[3mitalic\e[0m\n"
 epr "\e[4munderline\e[0m\n"

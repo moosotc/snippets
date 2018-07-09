@@ -7,7 +7,7 @@ test -n "$debrk" && {
 } || exec 1>/dev/null 2>&1
 
 i3 workspace 1
-(
+pgrep palemoon || (
     ulimit -s 1024
     palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
 ) & disown

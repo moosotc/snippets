@@ -13,5 +13,5 @@ pgrep firefox || (
     ulimit -s 1024
     firefox "$@"
 ) & disown
-xdotool search --onlyvisible --classname 'Firefox' \
+xdotool search --onlyvisible --name 'Firefox'   \
         windowsize 1667 1113 windowactivate

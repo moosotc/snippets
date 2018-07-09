@@ -37,7 +37,7 @@ open sans           - 3З
 oswald              - 3З
 pacifico            - cursive only, no greek
 pattaya             - cursive only, no greek
-philosopher         - Diacritics in ö
+philosopher         - Diacritics (umlaut trema (e.g. ö/ü))
 phone keycaps       - 3З
 play                - S5 3З
 podkova             - S5 3З

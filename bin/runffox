@@ -9,7 +9,7 @@ false && {
 }
 
 i3 workspace 1
-(
+test -z "${1-}" || (
     ulimit -s 1024
     firefox "$@"
 ) & disown

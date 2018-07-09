@@ -6,15 +6,10 @@ test -n "$debrk" && {
     exec 2>/tmp/conk.err
 } || exec 1>/dev/null 2>&1
 
-a() {
-    xdotool set_desktop 0 search --maxdepth 2 --onlyvisible 'Conkeror'  \
-            windowsize 1667 1113 windowactivate
-}
-a &
-
-pgrep palemoon || {
+i3 workspace 1
+(
     ulimit -s 1024
-    exec palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
-} && {
     palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
-}
+) & disown
+xdotool search --onlyvisible --classname 'Conkeror' \
+        windowsize 1667 1113 windowactivate

@@ -8,12 +8,10 @@ false && {
     exec 1>&2 2>/dev/null
 }
 
-a() {
-    xdotool set_desktop 0 search --sync --onlyvisible --maxdepth 2      \
-            --name firefox windowsize 1667 1113 windowactivate
-}
-a &
-pgrep firefox || {
+i3 workspace 1
+(
     ulimit -s 1024
-    exec firefox "$@" $ps
-}
+    firefox "$@"
+) & disown
+xdotool search --onlyvisible --classname 'Firefox' \
+        windowsize 1667 1113 windowactivate

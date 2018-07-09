@@ -1,17 +1,14 @@
 #!/bin/sh
 set -e
 
-false && {
-    exec 1>/tmp/ffox.out
-    exec 2>/tmp/ffox.err
-} || {
-    exec 1>&2 2>/dev/null
-}
-
+exec 1>/dev/null 2>&1
 i3 workspace 1
-test -z "${1-}" || (
-    ulimit -s 1024
-    firefox "$@"
-) & disown
-xdotool search --onlyvisible --name 'Firefox'   \
+if ! pgrep firefox; then
+    (
+        ulimit -s 1024
+        firefox "$@"
+    ) &
+fi
+test -z "${1-}" || firefox "$@"
+xdotool search --sync --onlyvisible --name 'Firefox'   \
         windowsize 1667 1113 windowactivate

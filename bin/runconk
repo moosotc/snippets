@@ -1,15 +1,16 @@
 #!/bin/sh
 set -e
 
-test -n "$debrk" && {
-    exec 1>/tmp/conk.out
-    exec 2>/tmp/conk.err
-} || exec 1>/dev/null 2>&1
-
+exec 1>/dev/null 2>&1
 i3 workspace 1
-test -z "${1-}" || (
-    ulimit -s 1024
+if ! pgrep palemoon; then
+    (
+        ulimit -s 1024
+        palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+    ) &
+fi
+test -z "${1-}" || {
     palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
-) & disown
-xdotool search --onlyvisible --name 'Conkeror'  \
+}
+xdotool search --sync --onlyvisible --name 'Conkeror'  \
         windowsize 1667 1113 windowactivate

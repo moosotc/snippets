@@ -28,7 +28,7 @@ a v-a-doublestorey
 #   * `v-g-doublestorey` : Double-storey `g` (default for upright and oblique).
 #   * `v-g-singlestorey` : Single-storey `g` (default for italic).
 #   * `v-g-opendoublestorey` : Open Double-storey `g`.
-a v-g-singlestorey
+a v-g-opendoublestorey
 #   * Styles for letter `m`:
 #   * `v-m-longleg` : `m` with long middle leg (default).
 #   * `v-m-shortleg` : `m` with shorter middle leg.

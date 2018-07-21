@@ -35,8 +35,6 @@ title="$arg"
 printf "🅥 $title" >$ctl
 printf "%s" "🆅 $($yt -e $arg)" >$ctl &
 
-tmux new-window -n "$title"                                             \
-     mpv --quiet "$arg"                                                 \
-     --ytdl-raw-options no-playlist= --ytdl-format '[width<=1280]'
-#xdotool search --sync --name "$arg"
+tmux new-window -n "$title" mpv $($yt -g "$arg" -f '[width<=1280]')
 sleep 8
+printf "\x01" >$ctl

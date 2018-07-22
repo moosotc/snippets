@@ -32,3 +32,4 @@ export MC_XDG_OPEN=$HOME/xsrc/snippets/bin/mopen
 
 # https://github.com/NixOS/nixpkgs/issues/16327
 export NO_AT_BRIDGE=1
+export TZ=''

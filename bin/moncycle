@@ -22,7 +22,7 @@ expr >/dev/null "$(ddcci-tool /dev/i2c-8 -r 0x60)" : ".*+/$default/" || {
     ddcci-tool /dev/i2c-8 -r 0x60 -w $default
 }
 
-name=$(printf "dp (linmac2)\nminidp\nhdmi1 (ps4)\nhdmi2 (switch/linmacM)\n" \
+name=$(printf "dp (linmac2)\nminidp\nhdmi1 (ps4/pi)\nhdmi2 (switch/linmacM)\n" \
            | rofi -dmenu -p "Video Input:")
 id=$(name2id $name)
 test $id = $default || ddcci-tool /dev/i2c-8 -r 0x60 -w $id

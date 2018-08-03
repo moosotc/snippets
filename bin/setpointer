@@ -1,3 +1,4 @@
 #!/bin/sh
 xmodmap -e 'pointer = 3 2 1'
-xinput set-prop 13 'libinput Left Handed Enabled' 1
+eval $(xinput list --short 'pointer:Logitech K400 Plus' | awk '/id=/{print $4}')
+xinput set-prop $id 'libinput Left Handed Enabled' 1

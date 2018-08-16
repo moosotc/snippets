@@ -9,6 +9,8 @@ echo 'min_power' >/sys/class/scsi_host/host0/link_power_management_policy
 echo '1' | tee >/dev/null /sys/bus/usb/devices/*/power/autosuspend
 echo 'auto' | tee >/dev/null /sys/devices/**/power/control
 echo 'auto' | tee >/dev/null /sys/bus/pci/devices/**/power/control
+#echo 5000 > /proc/sys/vm/dirty_expire_centisecs
+
 for f in $(find /sys/devices -name product -type f \
                 -exec grep -l '\(Keyboard\|Mouse\)' {} \;); do
     echo '0' >$(dirname $f)/power/autosuspend || echo "Hum $f"

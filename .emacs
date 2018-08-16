@@ -373,6 +373,7 @@
  '(font-lock-variable-name-face ((t (:weight bold :foreground "#0076c1"))))
  '(font-lock-warning-face ((t (:weight bold :foreground "#CC0000"))))
  '(fringe ((t (:background "#DBDBDB"))))
+ '(gnus-cite-5 ((t (:foreground "maroon"))))
  '(header-line ((t (:foreground "#555753" :background "#C3C7CF"))))
  '(highlight ((t (:foreground "#2E3436" :background "#FEFFBF"))))
  '(hl-line ((t (:background "black" :foreground "white"))))

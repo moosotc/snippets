@@ -2,17 +2,15 @@
 set -e
 exec 1>/dev/null 2>&1
 
-if ! pgrep -q pulseaudio; then
+if ! pgrep pulseaudio; then
     amixer set Speaker toggle | grep -q '\[on' && \
         { name="🎧+🔉"; ctl=Speaker; } || { name="🎧"; ctl=Headphone; }
     vol=$(amixer -- get $ctl | awk 'END{print $5}')
 else
-    port=analog-output-speaker
-    pacmd list-sinks | grep "active.*port.*headph" \
-        || port=analog-output-headphones
-    name=${port##analog-output-}
-    test $name = "headphones" && name="🎧 $name" || name="🔉 $name"
-    pacmd set-sink-port alsa_output.pci-0000_00_1b.0.analog-stereo $port
+    name=speaker
+    pacmd list-sinks | grep "active.*port.*headph" || name=headphones
+    pacmd set-sink-port 1 analog-output-$name
+    test $name = "headphones" && name="🎧" || name="🔉"
     vol="$(pamixer --get-volume) %" || true
 fi
 

@@ -4,7 +4,6 @@
       --disable-android                         \
       --disable-oss-audio                       \
       --disable-rsound                          \
-      --disable-pulse                           \
       --disable-jack                            \
       --disable-opensles                        \
       --disable-coreaudio                       \
@@ -40,4 +39,5 @@
       --disable-cuda-hwaccel                    \
       --disable-apple-remote                    \
       --disable-macos-touchbar                  \
-      --disable-macos-cocoa-cb
+      --disable-macos-cocoa-cb                  \
+#      --disable-pulse

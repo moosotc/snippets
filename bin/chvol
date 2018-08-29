@@ -2,20 +2,13 @@
 set -e
 exec 1>/dev/null 2>&1
 
-pgrep pulseaudio && {
-    vol=$(pamixer --get-volume) || true
-    test $vol -eq 100 -a "$1" = + -o $vol -eq 0 -a "$1" = - || vol=$((vol $1 5))
-    pamixer --set-volume $vol
-    vol="$vol%"
+grep -q USB-Audio /proc/asound/cards && {
+    vol=$(amixer --card=2 sset PCM 5%$1 | awk 'END{print $4}')
 } || {
-    grep -q USB-Audio /proc/asound/cards && {
-        vol=$(amixer --card=2 sset PCM 5%$1 | awk 'END{print $4}')
+    amixer sget Speaker | grep -q "\[on" && {
+        vol=$(amixer sset Speaker 5%$1 | awk 'END{print $5}')
     } || {
-        amixer sget Speaker | grep -q "\[on" && {
-            vol=$(amixer sset Speaker 5%$1 | awk 'END{print $5}')
-        } || {
-            vol=$(amixer sset Headphone 5%$1 | awk 'END{print $5}')
-        }
+        vol=$(amixer sset Headphone 5%$1 | awk 'END{print $5}')
     }
 }
 

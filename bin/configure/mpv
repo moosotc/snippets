@@ -40,4 +40,4 @@
       --disable-apple-remote                    \
       --disable-macos-touchbar                  \
       --disable-macos-cocoa-cb                  \
-#      --disable-pulse
+      --disable-pulse

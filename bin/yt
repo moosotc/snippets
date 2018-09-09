@@ -29,13 +29,16 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
     } && true
 }
 
+expr "$arg" : ".*reddit.*" || {
+    fmt="--ytdl-format '[width<=1280]'"
+} && fmt=
+
 trap "printf '\001' >$ctl" EXIT
 
 title="$arg"
 printf "🅥 $title" >$ctl
 printf "%s" "🆅 $($yt -e $arg)" >$ctl &
 
-#tmux new-window -n "$title" mpv $($yt -g "$arg" -f '[width<=1280]')
-tmux new-window -n "$title" mpv "$arg" --ytdl-format '[width<=1280]'
+tmux new-window -n "$title" mpv "$arg" "$fmt"
 sleep 8
 printf "\x01" >$ctl

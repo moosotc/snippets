@@ -3,7 +3,7 @@ set -e
 
 exec 1>/dev/null 2>&1
 i3 workspace 1
-if ! xdotool search --all Firefox &>/dev/null ; then
+if ! xdotool search --name "Mozilla" &>/dev/null ; then
     (
         ulimit -s 1024
         firefox "$@"

@@ -10,3 +10,4 @@ sub-font=volkorn
 sub-font-size=50
 hidpi-window-scale=no
 #audio-device=alsa/hdmi:CARD=HDMI,DEV=1
+ao=alsa

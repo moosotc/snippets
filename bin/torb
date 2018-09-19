@@ -1,3 +1,5 @@
 #!/bin/sh
 set -e
-exec /home/malc/x/app/tor-browser_en-US/Browser/start-tor-browser
+#exec /home/malc/x/app/tor-browser_en-US/Browser/start-tor-browser
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/malc/x/bld/apulse
+exec /home/malc/x/app/tor-browser_en-US/Browser/firefox.real

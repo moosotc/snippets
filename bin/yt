@@ -29,7 +29,7 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
     } && true
 }
 
-expr "$arg" : ".*reddit.*" && {
+expr "$arg" : ".*\(reddit\|gfycat\).*" && {
     fmt=
 } || fmt="--ytdl-format [width<=1280]"
 

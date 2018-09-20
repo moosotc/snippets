@@ -642,5 +642,6 @@
     (lisp-interaction-mode)))
 (global-set-key [(meta alt ?l)] 'lispy)
 
+(setq epa-pinentry-mode 'loopback)
 ;;; local Variables:
 ;;; End:

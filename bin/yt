@@ -33,12 +33,8 @@ expr "$arg" : ".*reddit.*" && {
     fmt=
 } || fmt="--ytdl-format [width<=1280]"
 
-trap "printf '\001' >$ctl" EXIT
-
 title="$arg"
 printf "🅥 $title" >$ctl
 (printf "%s" "🆅 $($yt -e $arg)"; sleep 8; printf "\x01") >$ctl &
 
 tmux new-window -n "$title" mpv $fmt "$arg"
-sleep 8
-printf "\x01" >$ctl

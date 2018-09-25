@@ -421,7 +421,7 @@
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   '(highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
+   '(pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
  '(safe-local-variable-values
    '((eval overwrite-mode t)
      (eval progn
@@ -643,5 +643,10 @@
 (global-set-key [(meta alt ?l)] 'lispy)
 
 (setq epa-pinentry-mode 'loopback)
+(pinentry-start)
+(defun pinentry-emacs (desc prompt ok error)
+  (interactive)
+  (shell-command "runemacs")
+  (read-passwd (concat "GPG: " prompt)))
 ;;; local Variables:
 ;;; End:

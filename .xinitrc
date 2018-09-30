@@ -10,6 +10,7 @@ xrdb -load $HOME/.config/Xresources
 setcapskey
 setdpi
 setpointer
+setmenusuper
 xsetroot -solid '#63718c'
 tmux new-session -s yt -d || true
 test -p /tmp/i3.fifo || mkfifo /tmp/i3.fifo

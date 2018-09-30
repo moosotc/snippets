@@ -642,11 +642,5 @@
     (lisp-interaction-mode)))
 (global-set-key [(meta alt ?l)] 'lispy)
 
-(setq epa-pinentry-mode 'loopback)
-(pinentry-start)
-(defun pinentry-emacs (desc prompt ok error)
-  (interactive)
-  (shell-command "runemacs")
-  (read-passwd (concat "GPG: " prompt)))
 ;;; local Variables:
 ;;; End:

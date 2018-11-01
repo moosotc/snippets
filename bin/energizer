@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 . asroot
-
 modprobe -r kvm-intel kvm pcspkr applesmc || true
 
 echo '1' >/sys/module/snd_hda_intel/parameters/power_save
@@ -13,7 +12,7 @@ echo 'auto' | tee >/dev/null /sys/bus/pci/devices/**/power/control
 
 for f in $(find /sys/devices -name product -type f \
                 -exec grep -l '\(Keyboard\|Mouse\)' {} \;); do
-    echo '0' >$(dirname $f)/power/autosuspend || echo "Hum $f"
+    echo 0 >$(dirname $f)/power/autosuspend || echo "Hum $f"
 done
 
 # Following
@@ -25,6 +24,6 @@ done
 echo 1 >/sys/module/i915/parameters/enable_fbc
 
 ethtool -s enp3s0f0 wol d
-echo '0' >/sys/class/rtc/rtc0/wakealarm
-date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
+#echo 0 >/sys/class/rtc/rtc0/wakealarm
+#date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
 #echo 'mem' >/sys/power/state

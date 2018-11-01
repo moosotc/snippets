@@ -1,0 +1,5 @@
+#!/bin/sh
+
+k=led
+xset -q | grep -q "LED mask:  [0-9]\+4$" && k=-led
+xset $k named "Scroll Lock"

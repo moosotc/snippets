@@ -178,5 +178,4 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
-# https://superuser.com/questions/437486/how-to-turn-on-off-leds-by-terminal
-bindsym ISO_Next_Group $execnoid xdotool key Caps_Lock
+bindsym ISO_Next_Group $execnoid scrollledtoggle

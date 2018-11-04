@@ -1,5 +1,5 @@
 quiet
-vo=vaapi
+vo=gpu
 alang=eng
 slang=eng
 sub=no

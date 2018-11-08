@@ -85,8 +85,10 @@
  'gnus-summary-mode-hook
  (lambda ()
    (local-set-key (kbd "<tab>") 'gnus-summary-next-unread-article)
+   (local-set-key (kbd "<begin>") 'gnus-summary-next-unread-article)
    (local-set-key "="  'toggle-article-window)
    ;; (local-set-key "n"  'gnus-summary-next-article)
+   (local-set-key (kbd "<deletechar>") 'gnus-summary-prev-page)
    (local-set-key "m"  'self-insert-and-exit)
    (local-set-key "p"  'gnus-summary-prev-article)
    (local-set-key "!"  'gnus-summary-put-mark-as-ticked-next)

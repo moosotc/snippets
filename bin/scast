@@ -11,9 +11,8 @@ test -n "$screenkey" && {
     }
 }
 args="$@"
-set -- $(xwininfo -root)
-w=$26
-h=$28
+set -- $(xwininfo -root | grep geom)
+geom=$2
 
 test "x$scasthq" = "x1" && scasthq="-vcodec libx265"
-ffmpeg -v error -f x11grab -video_size ${w}x${h} -i $DISPLAY $scasthq $args
+ffmpeg -v error -f x11grab -video_size $2 -i $DISPLAY $scasthq $args

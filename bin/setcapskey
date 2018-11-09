@@ -1,11 +1,12 @@
 #!/bin/sh
-setxkbmap \
-    -option "" \
-    -layout us,ru \
-    -option grp:sclk_toggle \
-    -option grp_led:caps \
-    -option caps:backspace
+setxkbmap                                       \
+    -option ""                                  \
+    -layout us,ru                               \
+    -option grp:alt_space_toggle                \
+    -option caps:backspace                      \
+    -option grp_led
 xmodmap - <<EOF
 clear Lock
 EOF
 #keycode 22 = 10
+#    -option grp_led:scroll                      \

@@ -2,11 +2,12 @@
 setxkbmap                                       \
     -option ""                                  \
     -layout us,ru                               \
-    -option grp:alt_space_toggle                \
+    -option grp:win_space_toggle                     \
     -option caps:backspace                      \
     -option grp_led
 xmodmap - <<EOF
 clear Lock
 EOF
+setmenusuper
 #keycode 22 = 10
 #    -option grp_led:scroll                      \

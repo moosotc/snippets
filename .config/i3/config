@@ -178,6 +178,6 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
-bindsym mod1+ISO_Next_Group $execnoid scrollledtoggle
-bindsym $mod+F11 $execnoid setcapskey
+bindsym $mod+ISO_Next_Group $execnoid scrollledtoggle
+bindsym $mod+F1 $execnoid setcapskey
 bindsym $mod+F12 $execnoid setworkman

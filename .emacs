@@ -2,14 +2,6 @@
 (setq initial-scratch-message "")
 (setq use-dialog-box nil)
 
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-;; (set-fontset-font "fontset-default" 'unicode
-;;                   (font-spec :name "unifont"))
-
 (set-fontset-font "fontset-default"
                   ;; Supplemental Symbols and Pictographs
                   '(#x1f900 . #x1f9ff) "symbola" nil)

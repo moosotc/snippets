@@ -1,5 +1,5 @@
 #!/bin/sh
-# git://git.savannah.gnu.org/emacs.git 0965d94ca426765382f366bf48f88ba5f9500afd
+# git://git.savannah.gnu.org/emacs.git 7407f89fe71c87be45f35cf3d4f8bc0550cf8384
 
 exec ./configure                                \
      --without-rsvg                             \
@@ -17,8 +17,8 @@ exec ./configure                                \
      --without-gif                              \
      --without-pop                              \
      --without-xim                              \
-     --without-gnutls                           \
      --without-gpm                              \
      --disable-acl                              \
      --without-libsystemd                       \
+     --with-mailutils                           \
      "$@"

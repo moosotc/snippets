@@ -1,8 +1,11 @@
 #!/bin/sh
 set -ex
+#exit
 
+N=HDMI2
+#N=DP2
 if true; then
-    set -- $(xrandr | grep DP2)
+    set -- $(xrandr | grep $N)
     pw=${3%x*}
     h=${3#*x}
     ph=${h%%+*}

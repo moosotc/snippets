@@ -1,6 +1,8 @@
 #!/bin/sh
 set -eu
-exec 2>/dev/null 1>&2
+exec>/dev/null 1>&2
+dev=i2c-8
+dev=i2c-4
 
 lsmod | grep -q i2c_dev || (
     . asroot
@@ -16,13 +18,13 @@ name2id() {
         *) echo $default;;
     esac
 }
-default=$(name2id "dp")
+default=$(name2id "hdmi1")
 
-expr >/dev/null "$(ddcci-tool /dev/i2c-8 -r 0x60)" : ".*+/$default/" || {
-    ddcci-tool /dev/i2c-8 -r 0x60 -w $default
+expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*+/$default/" || {
+    ddcci-tool /dev/$dev -r 0x60 -w $default
 }
 
-name=$(printf "dp (linmac2)\nminidp\nhdmi1 (ps4)\nhdmi2 (switch/pi/linmacs)\n" \
+name=$(printf "dp\nminidp\nhdmi1 (linmac2)\nhdmi2 (switch/pi/linmacs)\n" \
            | rofi -dmenu -p "Video Input:")
 id=$(name2id $name)
-test $id = $default || ddcci-tool /dev/i2c-8 -r 0x60 -w $id
+test $id = $default || ddcci-tool /dev/$dev -r 0x60 -w $id

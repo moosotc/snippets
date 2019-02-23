@@ -3,7 +3,9 @@
   S5 - decent
   3З - 3 with flat top
 *** usage: UI
-* PT Astra             http://astralinux.com/fonts.html
+* PT Astra
+  https://www.paratype.ru/fonts/pt/pt-astra-serif
+  https://www.paratype.ru/fonts/pt/pt-astra-sans
 ** Serif
 *** usage: llpphtml, prince - body text
 * XO                   https://fonts.myoffice.ru

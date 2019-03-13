@@ -6,7 +6,7 @@ i3 workspace 1
 if ! xdotool search --name "Mozilla" &>/dev/null ; then
     (
         ulimit -s 1024
-        firefox "$@"
+        exec firefox "$@"
     ) &
 fi
 test -z "${1-}" || firefox "$@"

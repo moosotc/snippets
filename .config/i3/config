@@ -178,6 +178,21 @@ bindsym mod4+KP_Next $execnoid xwnpm 3
 bindsym mod4+KP_Home $execnoid xwnpm 7
 bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
+
+#
+bindsym mod4+Ctrl+4 $execnoid xwnpm 4
+bindsym mod4+Ctrl+5 $execnoid xwnpm 5
+bindsym mod4+Ctrl+6 $execnoid xwnpm 6
+
+bindsym mod4+Ctrl+1 $execnoid xwnpm 1
+bindsym mod4+Ctrl+2 $execnoid xwnpm 2
+bindsym mod4+Ctrl+3 $execnoid xwnpm 3
+
+bindsym mod4+Ctrl+7 $execnoid xwnpm 7
+bindsym mod4+Ctrl+8 $execnoid xwnpm 8
+bindsym mod4+Ctrl+9 $execnoid xwnpm 9
+
 bindsym $mod+ISO_Next_Group $execnoid scrollledtoggle
 bindsym $mod+F1 $execnoid setcapskey
-bindsym $mod+F12 $execnoid setworkman
+bindsym $mod+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
+bindsym $mod+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"

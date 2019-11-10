@@ -1,0 +1,17 @@
+#!/bin/sh
+
+build=${1-debug}
+shift
+mkdir -p build/$build
+
+meson \
+      -D platforms=x11                          \
+      -D dri3=true                              \
+      -D dri-drivers=i965,swrast                \
+      -D install-intel-gpu-tests=true           \
+      -D tools=intel-ui                         \
+      -D buildtype=$build                       \
+      -D gallium-drivers=                       \
+      -D prefix=/net/mesa/$build                \
+      -D vulkan-drivers=                        \
+      build/${build}

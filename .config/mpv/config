@@ -1,19 +1,19 @@
 quiet
+vo=vaapi
 vo=gpu
-#vo=vaapi
 alang=eng
 slang=eng
 sub=no
 
-#hwdec=vaapi
-#gpu-context=x11egl
-#hwdec-codecs=all
+hwdec=vaapi
+gpu-context=x11vk
 
 osd-font=volkorn
 osd-font-size=50
 sub-font=volkorn
 sub-font-size=50
 hidpi-window-scale=no
-#audio-device=alsa/hdmi:CARD=HDMI,DEV=1
+#audio-device=alsa/default:CARD=PCH
+#audio-device=alsa/CARD=PCH,DEV=10
 ao=alsa
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best

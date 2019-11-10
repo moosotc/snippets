@@ -11,27 +11,20 @@
       --disable-wasapi                          \
       --disable-cocoa                           \
       --disable-gbm                             \
-      --disable-wayland-scanner                 \
-      --disable-wayland-protocols               \
-      --disable-wayland                         \
       --disable-xv                              \
       --disable-gl-cocoa                        \
-      --disable-gl-wayland                      \
       --disable-gl-win32                        \
       --disable-gl-dxinterop                    \
       --disable-egl-angle                       \
       --disable-egl-angle-lib                   \
       --disable-egl-angle-win32                 \
       --disable-vdpau                           \
-      --disable-vaapi-wayland                   \
       --disable-direct3d                        \
       --disable-d3d11                           \
       --disable-rpi                             \
       --disable-ios-gl                          \
       --disable-rpi                             \
       --disable-ios-gl                          \
-      --disable-mali-fbdev                      \
-      --disable-vulkan                          \
       --disable-videotoolbox-gl                 \
       --disable-d3d-hwaccel                     \
       --disable-d3d9-hwaccel                    \
@@ -41,3 +34,10 @@
       --disable-macos-touchbar                  \
       --disable-macos-cocoa-cb                  \
       --disable-pulse
+
+#      --disable-vulkan                          \
+#      --disable-vaapi-wayland                   \
+#      --disable-gl-wayland                      \
+#      --disable-wayland-scanner                 \
+#      --disable-wayland-protocols               \
+#      --disable-wayland                         \

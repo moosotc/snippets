@@ -1,10 +1,14 @@
 #!/bin/sh
 set -e
-
+export CC='ccache gcc'
+export CXX='ccache g++'
 ./configure --prefix=/net                       \
             --enable-nonfree                    \
             --enable-gpl                        \
             --enable-openssl                    \
             --enable-libmodplug                 \
             --enable-libx264                    \
-            --enable-libx265
+            --enable-libx265                    \
+            --enable-vaapi                      \
+            --cc="$CC"                          \
+            --cxx="$CXX"

@@ -1,16 +1,16 @@
 #!/bin/sh
-set -ex
+set -e
 #exit
 
 N=HDMI2
-#N=DP2
-if true; then
+N=DP-1
+if false; then
     set -- $(xrandr | grep $N)
-    pw=${3%x*}
-    h=${3#*x}
+    pw=${4%x*}
+    h=${4#*x}
     ph=${h%%+*}
-    mw=${12%mm}
-    mh=${14%mm}
+    mw=${13%mm}
+    mh=${15%mm}
 else
     pw=2560
     ph=1440

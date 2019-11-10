@@ -132,3 +132,9 @@
    (gnus-topic-mode)
    ;;  https://github.com/schnecki/dot-emacs.d/blob/master/gnus.el
    (define-key gnus-topic-mode-map [tab] 'gnus-group-next-unread-group)))
+
+;; Let Gnus know Gmail search syntax
+(add-to-list 'nnir-imap-search-arguments '("gmail" . "X-GM-RAW"))
+;; `gnus-group-make-nnir-group' use Gmail search syntax *by default*.
+;; You can press `G G` instead `C-u G G` instead.
+(setq nnir-imap-default-search-key "gmail")

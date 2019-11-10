@@ -4,7 +4,7 @@ set -e
 modprobe -r kvm-intel kvm pcspkr applesmc || true
 
 echo '1' >/sys/module/snd_hda_intel/parameters/power_save
-echo 'min_power' >/sys/class/scsi_host/host0/link_power_management_policy
+echo 'min_power' | tee >/dev/null /sys/class/scsi_host/host*/link_power_management_policy
 echo '1' | tee >/dev/null /sys/bus/usb/devices/*/power/autosuspend
 echo 'auto' | tee >/dev/null /sys/devices/**/power/control
 echo 'auto' | tee >/dev/null /sys/bus/pci/devices/**/power/control
@@ -16,14 +16,8 @@ for f in $(find /sys/devices -name product -type f \
 done
 
 # Following
-# a. Taints kernel
-# b. Reduces power consumption
-#    (without it power hoovers at ~5W and with it goes as low as 3,
-#     as measured by external wattmetter and rapl pkg reading also goes
-#     sub 1.0 (which rarely if ever happens otherwise))
-echo 1 >/sys/module/i915/parameters/enable_fbc
 
-ethtool -s enp3s0f0 wol d
+ethtool -s eno1 wol d
 #echo 0 >/sys/class/rtc/rtc0/wakealarm
 #date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
 #echo 'mem' >/sys/power/state

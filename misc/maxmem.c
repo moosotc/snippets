@@ -76,7 +76,7 @@ int main (void)
     }
     memthr = maxmem ();
     maxmem ();
-    printf ("mem no thread %llu %lluMb\n", memnothr, memnothr>>20);
+    printf ("mem no thread %llu %gMb\n", memnothr, memnothr*1e-30);
     printf ("mem thread %llu %lluMb\n", memthr, memthr>>20);
     printf ("diff %llu %lluMb\n", memnothr - memthr,
             (memnothr - memthr) >> 20);

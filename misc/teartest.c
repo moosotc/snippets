@@ -29,7 +29,7 @@ static void repaint (long nswaps)
     static int f;
     GLclampf c;
     f ^= 1;
-    c = f ? 0.4 : 0.0;
+    c = f ? 0.8 : 0.0;
     glClearColor (c, c, c, 0);
     for (int i = 0; i < nswaps; ++i) {
         glClear (GL_COLOR_BUFFER_BIT);
@@ -79,8 +79,12 @@ static void main_loop (long nswaps)
                         state.win, (f=!f) * SDL_WINDOW_FULLSCREEN_DESKTOP);
                     break;
 
+                case SDLK_0:
+                    nswaps = 10;
+                    goto lbl;
                 case SDLK_1...SDLK_9:
                     nswaps = event.key.keysym.sym - SDLK_1 + 1;
+                lbl:
                     free (state.title);
                     state.title = NULL;
                     asprintf (&state.title, "swaps=%lu", nswaps);

@@ -6,13 +6,17 @@ import socket, ssl, re, json, traceback
 
 HOST = "imap.gmail.com"
 PORT = 993
-AI = socket.getaddrinfo (HOST, PORT)
-HOST = AI[0][4][0]
-FAMI = AI[0][0]
+try:
+    AI = socket.getaddrinfo (HOST, PORT)
+    HOST = AI[0][4][0]
+    FAMI = AI[0][0]
+except:
+    FAMI = None
 email = b"moosotc@gmail.com"
 
 prevunseen = 0
 prevt = 0
+wireless = False
 
 # http://stackoverflow.com/questions/20794414/how-to-check-the-status-of-a-shell-script-using-subprocess-module-in-python
 # http://zx2c4.com/projects/password-store/
@@ -168,10 +172,17 @@ translate = {"package-0" : "p",
              "uncore"    : "g",
              "dram"      : "m"}
 
+translatetemp = {"pch_cannonlake" : "p",
+                 "x86_pkg_temp"   : "x",
+                 "iwlwifi"        : "w"}
+
 raplprefix = "/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/"
 rs = [C (raplprefix + path, getf) for path in paths]
 
-cs = rs + [N ("enp3s0f0"), I ()]
+if wireless:
+    cs = rs + [N ("wlp0s20f3"), I ()]
+else:
+    cs = rs + [N ("eno1"), I ()]
 
 d = {'SwapTotal': 0, 'SwapFree': 0}
 def swapused ():
@@ -252,9 +263,27 @@ def main ():
         j += [{"color": "#a9a9a9",
                "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
 
-        temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone0/temp")
-        j += [{"color": "#a9a9a9" if temp < 50 else "#ffffff",
-               "full_text": "%d°" % temp}]
+        up = 5 if wireless else 3
+        for i in range (0,up):
+            temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone%d/temp" % i)
+            name = gets ("/sys/class/thermal/thermal_zone%d/type" % i)
+            try:
+                s = translatetemp[name[:-1]]
+                j += [{"color": "#a9a9a9" if temp < 50 else "#ffffff",
+                       "full_text": "%s %d°" % (s, temp)}]
+            except:
+                pass
+
+        if True:
+            for i in range (0,4):
+                freq = 1e-6 * getf (
+                    "/sys/bus/cpu/devices/cpu%d/cpufreq/scaling_cur_freq" % i)
+                if freq > 1.8: #
+                    try:
+                        j += [{"color": "#a9a9a9" if freq < 1000 else "#ffffff",
+                               "full_text": "%3.2f" % freq}]
+                    except:
+                        pass
 
         swap = swapused ()
         if swap != 0:
@@ -263,6 +292,7 @@ def main ():
         nmail = checkmail (t)
         if nmail > 0:
             j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
+        # j = [{"color": "#00a000", "full_text": "NUC"}] + j
 
         print ("%s," % json.dumps (j), flush=True)
 

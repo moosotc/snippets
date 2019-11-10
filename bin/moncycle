@@ -2,11 +2,15 @@
 set -eu
 exec>/dev/null 1>&2
 dev=i2c-8
-dev=i2c-4
+dev=i2c-5
 
 lsmod | grep -q i2c_dev || (
     . asroot
     modprobe i2c-dev
+    ls -l /dev/$dev
+    chgrp wheel /dev/$dev
+    chmod g+rw /dev/$dev
+    ls -l /dev/$dev
 )
 
 name2id() {
@@ -20,11 +24,10 @@ name2id() {
 }
 default=$(name2id "hdmi1")
 
-expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*+/$default/" || {
+expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default/" || {
     ddcci-tool /dev/$dev -r 0x60 -w $default
 }
 
-name=$(printf "dp\nminidp\nhdmi1 (linmac2)\nhdmi2 (switch/pi/linmacs)\n" \
-           | rofi -dmenu -p "Video Input:")
+name=$(printf "dp\nminidp\nhdmi1\nhdmi2\n" | rofi -dmenu -p "Video Input:")
 id=$(name2id $name)
 test $id = $default || ddcci-tool /dev/$dev -r 0x60 -w $id

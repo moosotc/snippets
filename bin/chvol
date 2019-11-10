@@ -8,7 +8,7 @@ grep -q USB-Audio /proc/asound/cards && {
     amixer sget Speaker | grep -q "\[on" && {
         vol=$(amixer sset Speaker 5%$1 | awk 'END{print $5}')
     } || {
-        vol=$(amixer sset Headphone 5%$1 | awk 'END{print $5}')
+        vol=$(amixer sset Master 5%$1 | awk 'END{print $5}')
     }
 }
 

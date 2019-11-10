@@ -405,7 +405,7 @@
  '(erc-log-file-coding-system 'utf-8)
  '(erc-modules
    '(autojoin button completion fill irccontrols list log match menu move-to-prompt netsplit networks noncommands readonly ring stamp spelling track))
- '(erc-nick "moolc")
+ '(erc-nick "malc_")
  '(erc-notice-highlight-type 'all)
  '(erc-track-position-in-mode-line t)
  '(ibuffer-default-sorting-mode 'mode-name)

@@ -2,12 +2,14 @@
 setxkbmap                                       \
     -option ""                                  \
     -layout us,ru                               \
-    -option grp:win_space_toggle                     \
-    -option caps:backspace                      \
+    -option grp:alt_space_toggle                \
     -option grp_led
+#    -option caps:ctrl_modifier                  \
+
 xmodmap - <<EOF
 clear Lock
 EOF
 setmenusuper
+no-left-ctrl.sh
 #keycode 22 = 10
 #    -option grp_led:scroll                      \

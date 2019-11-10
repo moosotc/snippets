@@ -1,5 +1,6 @@
 #!/bin/bash
 set -o pipefail
+test "$1" = "--display" && export DISPLAY=$2 || exec pinentry-curses
 echo OK
 while read cmd rest
 do
@@ -27,7 +28,7 @@ do
             echo OK
         ;;
         GETPIN)
-            RES=$(DISPLAY=:0 rofi -p 'PIN ' -password -dmenu </dev/null)
+            RES=$(rofi -p 'PIN ' -password -dmenu </dev/null)
             echo D $RES
             echo OK
         ;;

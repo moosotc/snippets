@@ -23,8 +23,6 @@
       --disable-d3d11                           \
       --disable-rpi                             \
       --disable-ios-gl                          \
-      --disable-rpi                             \
-      --disable-ios-gl                          \
       --disable-videotoolbox-gl                 \
       --disable-d3d-hwaccel                     \
       --disable-d3d9-hwaccel                    \

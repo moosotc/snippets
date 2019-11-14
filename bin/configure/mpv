@@ -1,5 +1,5 @@
 #!/bin/sh
-
+export CC='ccache gcc'
 ./waf configure                                 \
       --disable-android                         \
       --disable-oss-audio                       \

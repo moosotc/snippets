@@ -5,6 +5,8 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+#client.focused #4c7899 #105577 #ffffff #2e9ef4 #  #285577
+
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
@@ -24,8 +26,10 @@ bindsym $mod+r exec rofi_run
 set $execnoid exec --no-startup-id
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Up focus left
-bindsym $mod+Down focus right
+#bindsym $mod+Up focus left
+#bindsym $mod+Down focus right
+bindsym $mod+Up focus right
+bindsym $mod+Down focus left
 bindsym $mod+Left workspace prev
 bindsym $mod+Right workspace next
 
@@ -54,6 +58,7 @@ bindsym $mod+Shift+f fullscreen toggle
 bindsym $mod+Shift+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
+bindsym $mod+Shift+b border toggle
 
 bindsym $mod+Shift+w $execnoid runconk
 bindsym mod1+Shift+w $execnoid runffox
@@ -131,7 +136,7 @@ bar {
         position top
         status_command exec i3mon.py 3 /tmp/i3.fifo
         colors {
-               background #494b4f
+               background #393b3f
                statusline #ffffff
         }
 }
@@ -147,10 +152,13 @@ for_window [tiling] floating enable
 
 bindsym XF86AudioRaiseVolume $execnoid chvol +
 bindsym XF86AudioLowerVolume $execnoid chvol -
+bindsym XF86AudioNext $execnoid chvol +
+bindsym XF86AudioPrev $execnoid chvol -
 bindsym XF86AudioMute $execnoid acycle
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+bracketleft $execnoid ytwin
 bindsym $mod+grave $execnoid yt
+bindsym $mod+Ctrl+grave $execnoid mpvsel
 bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
 bindsym mod1+F10 $execnoid xtogglewinmax
@@ -180,19 +188,20 @@ bindsym mod4+KP_Up $execnoid xwnpm 8
 bindsym mod4+KP_Prior $execnoid xwnpm 9
 
 #
-bindsym mod4+Ctrl+4 $execnoid xwnpm 4
-bindsym mod4+Ctrl+5 $execnoid xwnpm 5
-bindsym mod4+Ctrl+6 $execnoid xwnpm 6
+bindcode mod4+Ctrl+24 $execnoid xwnpm 7
+bindcode mod4+Ctrl+25 $execnoid xwnpm 8
+bindcode mod4+Ctrl+26 $execnoid xwnpm 9
 
-bindsym mod4+Ctrl+1 $execnoid xwnpm 1
-bindsym mod4+Ctrl+2 $execnoid xwnpm 2
-bindsym mod4+Ctrl+3 $execnoid xwnpm 3
+bindcode mod4+Ctrl+38 $execnoid xwnpm 4
+bindcode mod4+Ctrl+39 $execnoid xwnpm 5
+bindcode mod4+Ctrl+40 $execnoid xwnpm 6
 
-bindsym mod4+Ctrl+7 $execnoid xwnpm 7
-bindsym mod4+Ctrl+8 $execnoid xwnpm 8
-bindsym mod4+Ctrl+9 $execnoid xwnpm 9
+bindcode mod4+Ctrl+52 $execnoid xwnpm 1
+bindcode mod4+Ctrl+53 $execnoid xwnpm 2
+bindcode mod4+Ctrl+54 $execnoid xwnpm 3
 
 bindsym $mod+ISO_Next_Group $execnoid scrollledtoggle
+bindsym ISO_Next_Group $execnoid scrollledtoggle
 bindsym $mod+F1 $execnoid setcapskey
 bindsym $mod+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
 bindsym $mod+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"

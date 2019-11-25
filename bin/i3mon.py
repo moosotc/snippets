@@ -254,25 +254,28 @@ def main ():
         if winfo:
             j += [{"color": "#a9a9a9", "full_text": winfo}]
 
-        for c in cs:
-            s = c.step (t)
-            if s is not None:
-                (color, s) = s
-                j += [{"color": color, "full_text": "%s" % s}]
+        if True:
+            for c in cs:
+                s = c.step (t)
+                if s is not None:
+                    (color, s) = s
+                    j += [{"color": color, "full_text": "%s" % s}]
 
-        j += [{"color": "#a9a9a9",
-               "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
+        if True:
+            j += [{"color": "#a9a9a9",
+                   "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
 
-        up = 5 if wireless else 3
-        for i in range (0,up):
-            temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone%d/temp" % i)
-            name = gets ("/sys/class/thermal/thermal_zone%d/type" % i)
-            try:
-                s = translatetemp[name[:-1]]
-                j += [{"color": "#a9a9a9" if temp < 50 else "#ffffff",
-                       "full_text": "%s %d°" % (s, temp)}]
-            except:
-                pass
+        if True:
+            up = 5 if wireless else 3
+            for i in range (0,up):
+                temp = 1e-3 * getf ("/sys/class/thermal/thermal_zone%d/temp" % i)
+                name = gets ("/sys/class/thermal/thermal_zone%d/type" % i)
+                try:
+                    s = translatetemp[name[:-1]]
+                    j += [{"color": "#a9a9a9" if temp < 50 else "#ffffff",
+                           "full_text": "%s %d°" % (s, temp)}]
+                except:
+                    pass
 
         if True:
             for i in range (0,4):
@@ -285,13 +288,15 @@ def main ():
                     except:
                         pass
 
-        swap = swapused ()
-        if swap != 0:
-            j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
+        if True:
+            swap = swapused ()
+            if swap != 0:
+                j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
-        nmail = checkmail (t)
-        if nmail > 0:
-            j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
+        if True:
+            nmail = checkmail (t)
+            if nmail > 0:
+                j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
         # j = [{"color": "#00a000", "full_text": "NUC"}] + j
 
         print ("%s," % json.dumps (j), flush=True)

@@ -49,8 +49,8 @@ xtitle ()
 }
 precmd ()
 {
-    eval PS1="%F{green}%B%~%f%b$'\n'-$' '"
-    test -n "$DISPLAY" && xtitle "$PWD"
+    eval PS1="%F{green}%Bnuc:%~%f%b$'\n'-$' '"
+    test -n "$DISPLAY" && xtitle "nuc $PWD"
 }
 
 tobld ()
@@ -77,7 +77,7 @@ alias which-command &>/dev/null && unalias which-command
 sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
 export SUDO_ASKPASS=$HOME/bin/askpass
-ulimit -s 512
+ulimit -s 2048
 mpvrand () {
     ! test -d "$1" || {
         d="$1"
@@ -95,3 +95,6 @@ test "$TERM" = "dumb" && {
     unfunction preexec
     PS1='$ '
 }
+tp () curl -F 'tpaste=<-' tpaste.us
+ix () curl -F 'f:1=<-' ix.io
+sp () curl -F 'sprunge=<-' sprunge.us

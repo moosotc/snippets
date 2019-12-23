@@ -16,9 +16,8 @@ export CC='ccache gcc'
       --disable-vdpau                           \
       --disable-rpi                             \
       --disable-videotoolbox-gl                 \
-      --disable-gl-dxinterop-d3d9               \
       --disable-cuda-hwaccel                    \
-      --disable-pulse
+#      --disable-pulse
 
 #      --disable-vulkan                          \
 #      --disable-vaapi-wayland                   \

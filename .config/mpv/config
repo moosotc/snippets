@@ -15,5 +15,5 @@ sub-font-size=50
 hidpi-window-scale=no
 #audio-device=alsa/default:CARD=PCH
 #audio-device=alsa/CARD=PCH,DEV=10
-ao=alsa
+#ao=alsa
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best

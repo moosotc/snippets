@@ -165,7 +165,7 @@ bindsym mod1+F10 $execnoid xtogglewinmax
 bindsym mod1+F11 $execnoid xtogglefs
 bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid i3bartoggle
-bindsym Ctrl+grave $execnoid sel2clip
+bindsym Ctrl+grave $execnoid xclip -o | xclip -i -selection clipboard
 bindsym Ctrl+Shift+grave $execnoid xclip -selection clipboard -o | xclip -i
 bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -o)"
 bindsym Print $execnoid sshot.sh -

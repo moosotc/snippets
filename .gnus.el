@@ -67,7 +67,7 @@
 (setq gnus-secondary-select-methods
       (list
        '(nnml "")
-       '(nntp "news.gmane.org" 119)
+       '(nntp "news.gmane.io" 119)
        )
       )
 

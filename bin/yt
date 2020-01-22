@@ -31,7 +31,7 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
 
 expr "$arg" : ".*\(reddit\|gfycat\).*" && {
     fmt=
-} || fmt="--ytdl-format [width<=1280]"
+} || fmt="--ytdl-format=[width<=1280]"
 
 title="$arg"
 printf "🅥 $title" >$ctl

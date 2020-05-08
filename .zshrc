@@ -84,7 +84,7 @@ mpvrand () {
         shift
         cd $d
     }
-    find -type f | sort -R | mpv -playlist - "$@"
+    find -type f | sort -R | mpv --playlist=- "$@"
 }
 
 test "$TERM" = "dumb" && {
@@ -96,5 +96,6 @@ test "$TERM" = "dumb" && {
     PS1='$ '
 }
 tp () curl -F 'tpaste=<-' tpaste.us
-ix () curl -F 'f:1=<-' ix.io
-sp () curl -F 'sprunge=<-' sprunge.us
+#ix () curl -F 'f:1=<-' ix.io
+#sp () curl -F 'sprunge=<-' sprunge.us
+#cb () curl -F 'clbin=<-' https://clbin.com

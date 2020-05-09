@@ -2,8 +2,6 @@
 export CC='ccache gcc'
 ./waf configure                                 \
       --disable-android                         \
-      --disable-oss-audio                       \
-      --disable-rsound                          \
       --disable-jack                            \
       --disable-opensles                        \
       --disable-audiounit                       \

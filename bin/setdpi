@@ -2,10 +2,10 @@
 set -e
 
 xrandr --dpi DP1
-echo "Xft.dpi: 180" | xrdb -merge
+xdpyinfo | awk '/dots/ {print $2;}' | IFS=x read x y
+d=$((x+0*8))
+echo "Xft.dpi: $d" | xrdb -merge
 exit
-
-#exit
 
 N=HDMI2
 N=DP-1

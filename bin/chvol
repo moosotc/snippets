@@ -6,9 +6,9 @@ grep -q USB-Audio /proc/asound/cards && {
     vol=$(amixer --card=2 sset PCM 5%$1 | awk 'END{print $4}')
 } || {
     amixer sget Speaker | grep -q "\[on" && {
-        vol=$(amixer sset Speaker 5%$1 | awk 'END{print $5}')
+        vol=$(amixer --card 0 sset Speaker 5%$1 | awk 'END{print $5}')
     } || {
-        vol=$(amixer sset Master 5%$1 | awk 'END{print $5}')
+        vol=$(amixer sset --card 0 Master 5%$1 | awk 'END{print $5}')
     }
 }
 

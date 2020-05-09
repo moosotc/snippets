@@ -11,7 +11,9 @@ expr "$geom" : ".*: .*" >/dev/null && {
     eval $geom
     xprop -id $id -format GEOMOO 8s -set GEOMOO "X=$X Y=$Y W=$WIDTH H=$HEIGHT"
     test -z "$vonly" && {
-        xdotool getactivewindow windowsize 100% 1382 windowmove 0 58
+        h=1382
+        h=2098
+        xdotool getactivewindow windowsize 100% $h windowmove 0 58
     } || {
         eval $(xdotool search --class i3bar getwindowgeometry --shell) \
              X=$((X-bw))

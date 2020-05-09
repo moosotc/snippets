@@ -16,4 +16,5 @@ flags=
 flags="$flags --youtube-skip-dash-manifest"
 flags="$flags -f [height<?1024]"
 flags="$flags -o %(title)s-%(id)s.%(ext)s $arg"
+#flags="$flags --proxy socks5://localhost:9050"
 exec $yt $flags "$@"

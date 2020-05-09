@@ -183,6 +183,7 @@ if wireless:
     cs = rs + [N ("wlp0s20f3"), I ()]
 else:
     cs = rs + [N ("eno1"), I ()]
+#    cs = rs + [N ("eno1np5"), I ()]
 
 d = {'SwapTotal': 0, 'SwapFree': 0}
 def swapused ():
@@ -192,7 +193,7 @@ def swapused ():
             f = line.split (':')
             v = d.get (f[0])
             if v is not None:
-                f2 = f[1][:-1].lstrip ().split(' ')
+                f2 = f[1][:-1].lstrip ().split (' ')
                 if f2[1] == 'kB':
                     v = float (f2[0])
                     d[f[0]] = v
@@ -224,7 +225,10 @@ def main ():
         for (fd, mask) in l:
             if mask & select.POLLIN:
                 msg1 = os.read (ff, 4096)
-                msg = msg1.decode ()
+                try:
+                    msg = msg1.decode ()
+                except e:
+                    msg = "exn"
                 parts = msg.split ('\x00')
                 try:
                     msg = parts[0]

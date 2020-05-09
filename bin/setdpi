@@ -1,5 +1,10 @@
 #!/bin/sh
 set -e
+
+xrandr --dpi DP1
+echo "Xft.dpi: 180" | xrdb -merge
+exit
+
 #exit
 
 N=HDMI2
@@ -16,13 +21,20 @@ else
     ph=1440
     mw=553
     mh=311
+
+    pw=3840
+    ph=2160
+    mw=686.8
+    mh=596.1
 fi
 
 doset() {
     read x
     read y
     xrandr --dpi ${x}x${y}
-    echo "Xft.dpi: 152" | xrdb -merge
+    dip=152                     # dell
+    dpi=170                     # acer
+    echo "Xft.dpi: $dpi" | xrdb -merge
 }
 
 bc -- <<EOF | doset

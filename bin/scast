@@ -11,7 +11,7 @@ test -n "$screenkey" && {
     }
 }
 args="$@"
-set -- $(xwininfo -root | grep geom)
+set -- $(xwininfo -root | grep geom | { IFS=+ read s _; echo $s; } )
 geom=$2
 
 test "x$scasthq" = "x1" && scasthq="-vcodec libx265"

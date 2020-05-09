@@ -10,5 +10,6 @@ if ! xdotool search --name "Mozilla" &>/dev/null ; then
     ) &
 fi
 test -z "${1-}" || firefox "$@"
-xdotool search --sync --onlyvisible --name 'Firefox'   \
-        windowsize 1667 1113 windowactivate
+s="windowsize 1667 1113"
+s="windowsize 2249 1474"
+xdotool search --sync --onlyvisible --name 'Firefox' $s windowactivate

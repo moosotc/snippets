@@ -12,5 +12,6 @@ fi
 test -z "${1-}" || {
     palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
 }
-xdotool search --sync --onlyvisible --name 'Conkeror'  \
-        windowsize 1667 1113 windowactivate
+s="windowsize 1667 1113"
+s="windowsize 2249 1474"
+xdotool search --sync --onlyvisible --name 'Conkeror' $s windowactivate

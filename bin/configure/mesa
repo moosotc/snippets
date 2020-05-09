@@ -11,7 +11,7 @@ meson \
       -D install-intel-gpu-tests=true           \
       -D tools=intel-ui                         \
       -D buildtype=$build                       \
-      -D gallium-drivers=                       \
+      -D gallium-drivers=iris                   \
       -D prefix=/net/mesa/$build                \
       -D vulkan-drivers=                        \
       build/${build}

@@ -205,4 +205,4 @@ bindsym mod1+ISO_Next_Group $execnoid scrollledtoggle
 bindsym $mod+F1 $execnoid setcapskey
 bindsym $mod+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
 bindsym $mod+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"
-bindsym $mod+F10 $execnoid "dotor"
+bindsym $mod+F10 $execnoid dotor

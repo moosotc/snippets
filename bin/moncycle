@@ -15,19 +15,18 @@ lsmod | grep -q i2c_dev || (
 
 name2id() {
     case "$1" in
-        dp*) echo 15;;
-        minidp*) echo 16;;
-        hdmi1*) echo 17;;
-        hdmi2*) echo 18;;
+        dp*) echo 2;;
+        dvi*) echo 3;;
+        hdmi*) echo 1;;
         *) echo $default;;
     esac
 }
-default=$(name2id "hdmi1")
+default=$(name2id "hdmi")
 
 expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default/" || {
     ddcci-tool /dev/$dev -r 0x60 -w $default
 }
 
-name=$(printf "dp\nminidp\nhdmi1\nhdmi2\n" | rofi -dmenu -p "Video Input:")
+name=$(printf "dp\ndvi\nhdmi\n" | rofi -dmenu -p "Video Input:")
 id=$(name2id $name)
 test $id = $default || ddcci-tool /dev/$dev -r 0x60 -w $id

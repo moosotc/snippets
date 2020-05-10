@@ -1,45 +1,5 @@
 #!/bin/sh
 set -e
-
 xrandr --dpi DP1
-xdpyinfo | awk '/dots/ {print $2;}' | {
-    IFS=x read x y
-    d=$x #$((x+0*8))
-    echo "Xft.dpi: $d" | xrdb -merge
-}
-exit
-
-N=HDMI2
-N=DP-1
-if false; then
-    set -- $(xrandr | grep $N)
-    pw=${4%x*}
-    h=${4#*x}
-    ph=${h%%+*}
-    mw=${13%mm}
-    mh=${15%mm}
-else
-    pw=2560
-    ph=1440
-    mw=553
-    mh=311
-
-    pw=3840
-    ph=2160
-    mw=686.8
-    mh=596.1
-fi
-
-doset() {
-    read x
-    read y
-    xrandr --dpi ${x}x${y}
-    dip=152                     # dell
-    dpi=170                     # acer
-    echo "Xft.dpi: $dpi" | xrdb -merge
-}
-
-bc -- <<EOF | doset
-    $pw / ($mw / 25.4)
-    $ph / ($mh / 25.4)
-EOF
+echo "Xft.dpi: 180" | xrdb -merge
+#xdpyinfo | awk '/dots/ {print "Xft.dpi: " $2}' | xrdb -merge

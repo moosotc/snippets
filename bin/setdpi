@@ -1,5 +1,6 @@
 #!/bin/sh
 set -e
-xrandr --dpi DP1
+o=$(xrandr | sed -n '2s;\([^ ]*\) .*;\1;p')
+xrandr --dpi $o
 echo "Xft.dpi: 180" | xrdb -merge
 #xdpyinfo | awk '/dots/ {print "Xft.dpi: " $2}' | xrdb -merge

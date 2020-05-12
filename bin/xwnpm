@@ -6,11 +6,14 @@ eval $(xdotool getdisplaygeometry --shell)
 dispw="$WIDTH"
 disph="$HEIGHT"
 
+eval $(xdotool search i3bar getwindowgeometry --shell)
+i3barh="$HEIGHT"
+
 wid=$(xdotool getactivewindow)
 eval $(xdotool getwindowgeometry --shell $wid)
 winw="$WIDTH"
 winh="$HEIGHT"
-yo=54
+yo=$((30+i3barh))
 bw=$(xwininfo -id $wid | awk '/Relative upper-left X/{print $4}')
 ty=$((barh+bw+yo))
 cx=$(((dispw-winw+2*bw)/2))

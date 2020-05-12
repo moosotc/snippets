@@ -29,7 +29,7 @@ static void repaint (long nswaps)
     static int f;
     GLclampf c;
     f ^= 1;
-    c = f ? 0.8 : 0.0;
+    c = f ? 0.8 : 0.4;
     glClearColor (c, c, c, 0);
     for (int i = 0; i < nswaps; ++i) {
         glClear (GL_COLOR_BUFFER_BIT);

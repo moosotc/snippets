@@ -27,6 +27,6 @@ expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default/" || {
     ddcci-tool /dev/$dev -r 0x60 -w $default
 }
 
-name=$(printf "dp\ndvi\nhdmi\n" | rofi -dmenu -p "Video Input:")
+name=$(printf "hdmi\ndp\ndvi\n" | rofi -dmenu -p "Video Input:")
 id=$(name2id $name)
 test $id = $default || ddcci-tool /dev/$dev -r 0x60 -w $id

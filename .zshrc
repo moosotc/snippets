@@ -95,7 +95,7 @@ test "$TERM" = "dumb" && {
     unfunction preexec
     PS1='$ '
 }
-tp () curl -F 'tpaste=<-' tpaste.us
+tp () curl -L -F 'tpaste=<-' tpaste.us
 #ix () curl -F 'f:1=<-' ix.io
 #sp () curl -F 'sprunge=<-' sprunge.us
 #cb () curl -F 'clbin=<-' https://clbin.com

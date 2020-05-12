@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
-o=$(xrandr | sed -n '2s;\([^ ]*\) .*;\1;p')
-xrandr --dpi $o
-echo "Xft.dpi: 180" | xrdb -merge
+output=$(xrandr | awk 'FNR==2{print $1}')
+xrandr --dpi $output
+echo "Xft.dpi: 190" | xrdb -merge
+#xrandr --output DP1 --scale 1.000001
 #xdpyinfo | awk '/dots/ {print "Xft.dpi: " $2}' | xrdb -merge

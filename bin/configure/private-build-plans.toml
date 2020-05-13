@@ -1,0 +1,46 @@
+[buildPlans.iosevka-malc]       # <iosevka-malc> is your plan name
+family = "Iosevka malc"         # Font menu family name
+design = ['expanded',
+          'term',
+          'v-l-italic',
+          'v-i-serifed',
+          'v-a-doublestorey',
+          'v-g-opendoublestorey',
+          'v-m-shortleg',
+          'v-t-standard',
+          'v-q-taily',
+          'v-zero-slashed',
+          'v-three-flattop',
+          'v-tilde-high',
+          'v-underscore-high',
+          'v-at-short',
+          'v-brace-straight',
+          'v-dollar-open',
+          'v-numbersign-slanted',
+          'v-one-serifed',
+          'v-y-curly',
+          'v-f-taily',
+          'v-asterisk-hexhigh',
+          'v-percent-dots'
+          ]
+
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent
+# All weights would built and mapped to default shape/CSS
+[buildPlans.iosevka-malc.weights.regular]
+shape = 400                            # Weight for glyph shapes
+menu  = 400                            # Weight for menu name
+css   = 400                            # Weight for webfont CSS
+
+[buildPlans.iosevka-malc.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+# end weight section
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
+[buildPlans.iosevka-malc.slants]
+upright = "normal"
+italic = "italic"

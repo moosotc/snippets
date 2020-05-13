@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/malc/x/rcs/git/apulse
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/malc/x/rcs/git/apulse
 
 exec 1>/dev/null 2>&1
 i3 workspace 1

@@ -24,7 +24,9 @@ name2id() {
 default=$(name2id "hdmi")
 
 expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default" || {
+    xrandr -s 1
     ddcci-tool /dev/$dev -r 0x60 -w $default
+    xrandr -s 0
 }
 
 name=$(printf "hdmi\ndp\ndvi\n" | rofi -dmenu -p "Video Input:")

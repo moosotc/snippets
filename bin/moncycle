@@ -23,7 +23,7 @@ name2id() {
 }
 default=$(name2id "hdmi")
 
-expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default/" || {
+expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default" || {
     ddcci-tool /dev/$dev -r 0x60 -w $default
 }
 

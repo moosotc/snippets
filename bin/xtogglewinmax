@@ -17,7 +17,7 @@ expr "$geom" : ".*: .*" >/dev/null && {
     } || {
         eval $(xdotool search --class i3bar getwindowgeometry --shell) \
              X=$((X-bw))
-        xdotool getactivewindow windowsize 0 89% windowmove $X $((HEIGHT+54))
+        xdotool getactivewindow windowsize 0 89% windowmove $X $((HEIGHT+48))
     }
 } || {
     len=$(expr length "$geom")

@@ -25,6 +25,7 @@ ibm plex sans       - S5 3З
 ibm plex serif      - 3З
 istok web           - S5 3З
 jura                - 3З
+jost                - 3З Il
 lato                - S5 3З
 lora                - 3З
 lucida bright       - 3З

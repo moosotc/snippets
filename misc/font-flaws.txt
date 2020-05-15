@@ -1,9 +1,10 @@
 йDINA*              - S5 3З
 RoundedMplus1c      - 3З
 alice               - styles/weights
-arsenal             - S5 il
+arsenal             - S5 Il
 bad script          - cursive only, no greek
 badley hand         - 3З
+Bellota-Regular     - 3З
 caveat              - cursive only, no greek
 comfortaa           - 3З
 cormorant           - no greek

@@ -47,7 +47,7 @@ S "segoe ui"        $segoeui # github, channel9
 S "consolas"        "iosevka malc"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
-S "helvetica neue"  "vollkorn"
+S "helvetica neue"  "xo oriel" # edition.cnn.com
 S "cantarell"       "pt sans"
 S "optima"          "alegreya sans sc"
 

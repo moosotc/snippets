@@ -36,25 +36,31 @@ EOF
 S "mono"            "monospace"
 S "sans"            "sans-serif"
 S "serif"           "alegreya"
-S "sans-serif"      "xo oriel"
+S "sans-serif"      "fontinsanscr"
+
 S "monospace"       "iosevka malc"
+S "sans-serif"      "xo oriel"
 S "arial"           "xo oriel"
-S "trebuchet ms"    "xo trebizond" "fontin sans cr"
-S "corbel"          "vollkorn"
+S "helvetica"       "xo oriel"
+S "cnn"             "xo oriel"  # edition.cnn.com
+
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
+S "trebuchet ms"    "xo trebizond" "fontin sans cr"
+S "tahoma"          "xo tahion"    "montserrat alternates"
+S "verdana"         "xo verbena"   "montserrat alternates"
+S "courier"         "xo courser"
 S "courier new"     "xo courser"
-S "ui"              "pt sans"
+
 S "georgia"         "merriweather"
+S "corbel"          "vollkorn"
 S "segoe ui"        "pt sans" # github, channel9
 S "consolas"        "jetbrains mono"
+
+S "ui"              "pt sans"
+
 S "monaco"          "monofur"
-S "helvetica"       "xo oriel"
-S "cnn"             "xo oriel" # edition.cnn.com
 S "cantarell"       "pt sans"
-S "tahoma"          "xo tahion" "montserrat alternates"
-S "verdana"         "xo verbena" "montserrat alternates"
-S "courier"         "xo courser"
 
 for f in "segoe"                                \
          "optima"                               \

@@ -13,7 +13,7 @@ expr "$geom" : ".*: .*" >/dev/null && {
     test -z "$vonly" && {
         h=1382
         h=2098
-        xdotool getactivewindow windowsize 100% $h windowmove 0 58
+        xdotool getactivewindow windowsize 100% $h windowmove 0 68
     } || {
         eval $(xdotool search --class i3bar getwindowgeometry --shell) \
              X=$((X-bw))

@@ -34,12 +34,10 @@ cat <<EOF
 EOF
 
 S "mono"            "monospace"
-S "sans"            "sans-serif"
 S "serif"           "alegreya"
-
 S "monospace"       "iosevka malc"
 
-for f in "sans" "arial" "helvetica" "cnn";
+for f in "sans" "sans-serif" "arial" "helvetica" "cnn";
 do
     S "$f" "xo oriel"
 done

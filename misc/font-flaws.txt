@@ -48,7 +48,7 @@ podkova             - S5 3З
 pressstart2p        - not ugly enough to be beautiful
 pt astra sans       - S5
 pt mono             - Il
-pt root ui          - З3
+pt root ui          - З3 no italic
 pt sans             - S5
 pt sans caption     - S5
 pt astra serif      - italic accent diacritics seem to be shifted to the right

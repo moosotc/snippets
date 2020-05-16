@@ -51,7 +51,7 @@ S "verdana"         "xo verbena"   "montserrat alternates"
 S "georgia"         "merriweather"
 S "corbel"          "vollkorn"
 S "segoe ui"        "pt sans" # github, channel9
-S "consolas"        "jetbrains mono"
+S "consolas"        "mono"
 
 S "ui"              "pt sans"
 

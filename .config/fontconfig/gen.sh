@@ -38,10 +38,11 @@ S "sans"            "sans-serif"
 S "serif"           "alegreya"
 
 S "monospace"       "iosevka malc"
-S "sans-serif"      "xo oriel"
-S "arial"           "xo oriel"
-S "helvetica"       "xo oriel"
-S "cnn"             "xo oriel"  # edition.cnn.com
+
+for f in "sans" "arial" "hesvetica" "cnn";
+do
+    S "$f" "xo oriel"
+done
 
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"

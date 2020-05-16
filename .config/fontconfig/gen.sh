@@ -36,7 +36,6 @@ EOF
 S "mono"            "monospace"
 S "sans"            "sans-serif"
 S "serif"           "alegreya"
-S "sans-serif"      "fontinsanscr"
 
 S "monospace"       "iosevka malc"
 S "sans-serif"      "xo oriel"
@@ -49,8 +48,6 @@ S "calibri"         "xo caliburn"
 S "trebuchet ms"    "xo trebizond" "fontin sans cr"
 S "tahoma"          "xo tahion"    "montserrat alternates"
 S "verdana"         "xo verbena"   "montserrat alternates"
-S "courier"         "xo courser"
-S "courier new"     "xo courser"
 
 S "georgia"         "merriweather"
 S "corbel"          "vollkorn"

@@ -47,13 +47,14 @@ S "courier new"     "xo courser"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
 S "segoe ui"        "pt sans" # github, channel9
-S "consolas"        "iosevka malc"
+S "consolas"        "jetbrains mono"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
 S "cnn"             "xo oriel" # edition.cnn.com
 S "cantarell"       "pt sans"
 S "tahoma"          "xo tahion" "montserrat alternates"
 S "verdana"         "xo verbena" "montserrat alternates"
+S "courier"         "xo courser"
 
 for f in "segoe"                                \
          "optima"                               \

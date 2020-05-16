@@ -39,7 +39,7 @@ S "serif"           "alegreya"
 
 S "monospace"       "iosevka malc"
 
-for f in "sans" "arial" "hesvetica" "cnn";
+for f in "sans" "arial" "helvetica" "cnn";
 do
     S "$f" "xo oriel"
 done

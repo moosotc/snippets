@@ -20,7 +20,11 @@
   Georgia substitute
 * Iosevka              https://github.com/be5invis/Iosevka
   One monospaced font to rule them all
-  https                     ://github.com/moosotc/snippets/blob/master/bin/doiosevka
+  https://github.com/moosotc/snippets/blob/master/bin/doiosevka
+  ** sometime in the near viscinity of Sat 16 May 2020
+  iosevka stopped building
+  (is it because i do not have otfcc authint ect on this machine?
+  hard to say not sure how to interrogate verda about real reason for failure)
 * Alegreya             https://github.com/huertatipografica
   Very warm one
 ** Serif - Greek body text
@@ -36,3 +40,8 @@
   i3bar, rofi
 * Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html
 * Bellota              https://github.com/kemie/Bellota-Font
+** Random links
+*** https://github.com/JetBrains/JetBrainsMono/
+*** https://www.paratype.ru/fonts/pt/pt-astra-sans?tab=packages
+    this one has pt root ui font that is pleasing to my eyes
+    (which unfortunatelly - 3З)

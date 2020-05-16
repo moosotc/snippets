@@ -9,7 +9,12 @@ S() {
   <match target="pattern">
     <test qual="any" name="family"><string>$1</string></test>
     <edit name="family" mode="assign" binding="strong">
-      <string>$2</string>
+EOF
+    shift
+    for f in "$@"; do
+        printf "      <string>$f</string>\n"
+    done
+    cat <<EOF
     </edit>
   </match>
 EOF
@@ -34,24 +39,24 @@ S "serif"           "alegreya"
 S "sans-serif"      "xo oriel"
 S "monospace"       "iosevka malc"
 S "arial"           "xo oriel"
-S "trebuchet ms"    "fontin sans cr"
+S "trebuchet ms"    "xo trebizond" "fontin sans cr"
 S "corbel"          "vollkorn"
 S "times new roman" "xo thames"
 S "calibri"         "xo caliburn"
 S "courier new"     "xo courser"
 S "ui"              "pt sans"
 S "georgia"         "merriweather"
-segoeui="montserrat alternates"
-#segoeui="pt sans"
-S "segoe ui"        $segoeui # github, channel9
+S "segoe ui"        "pt sans" # github, channel9
 S "consolas"        "iosevka malc"
 S "monaco"          "monofur"
 S "helvetica"       "xo oriel"
-S "helvetica neue"  "xo oriel" # edition.cnn.com
+S "cnn"             "xo oriel" # edition.cnn.com
 S "cantarell"       "pt sans"
-S "optima"          "alegreya sans sc"
+S "tahoma"          "xo tahion" "montserrat alternates"
+S "verdana"         "xo verbena" "montserrat alternates"
 
 for f in "segoe"                                \
+         "optima"                               \
          "candara"                              \
          "cambria"                              \
          "constantia"                           \
@@ -70,9 +75,7 @@ for f in "bitstream vera sans"                  \
          "bitstream vera sans"                  \
          "lucida"                               \
          "lucida grande"                        \
-         "verdana"                              \
-         "tahoma"                               \
-         "dejavu sans";
+         "dejavu sans"
 do
     S "$f" "montserrat alternates"
 done
@@ -86,8 +89,7 @@ done
 # gnome/gtk, comic
 for f in "comic sans ms"
 do
-    # respect your elders + z ftw
-    S "$f" "ruslan display"
+    S "$f" "bellota"
 done
 
 echo "</fontconfig>"

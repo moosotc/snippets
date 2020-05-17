@@ -53,13 +53,13 @@ S "tahoma"          "xo tahion"    "montserrat alternates"
 S "verdana"         "xo verbena"   "montserrat alternates"
 
 S "georgia"         "merriweather"
-S "segoe ui"        "pt sans" # github, channel9
+S "segoe ui"        "bellota"   # github, channel9
 S "consolas"        "mono"
 
 S "ui"              "pt sans"
-
 S "monaco"          "monofur"
-S "cantarell"       "pt sans"
+
+S "cursive"         "bellota"
 
 for f in "segoe"                                \
          "optima"                               \
@@ -67,6 +67,7 @@ for f in "segoe"                                \
          "cambria"                              \
          "constantia"                           \
          "corbel"                               \
+         "cantarell"                            \
          "linux libertine"
 do
     # learn yourself some greek
@@ -94,10 +95,7 @@ do
 done
 
 # gnome/gtk, comic
-for f in "comic sans ms" "cursive"
-do
-    S "$f" "bellota"
-done
+S "comic sans ms" "balsamiqsans"
 
 echo "</fontconfig>"
 

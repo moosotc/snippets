@@ -49,7 +49,6 @@ S "tahoma"          "xo tahion"    "montserrat alternates"
 S "verdana"         "xo verbena"   "montserrat alternates"
 
 S "georgia"         "merriweather"
-S "corbel"          "vollkorn"
 S "segoe ui"        "pt sans" # github, channel9
 S "consolas"        "mono"
 
@@ -63,6 +62,7 @@ for f in "segoe"                                \
          "candara"                              \
          "cambria"                              \
          "constantia"                           \
+         "corbel"                               \
          "linux libertine"
 do
     # learn yourself some greek

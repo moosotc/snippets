@@ -3,6 +3,8 @@
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
 # prior to starting X to get reproducible distribution independent behavior
 
+# https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
+
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
     cat <<EOF
@@ -30,7 +32,9 @@ cat <<EOF
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
-  </match>
+    <edit name="family" mode="append"><string>symbola</string></edit>
+    <edit name="family" mode="append"><string>unifont</string></edit>
+</match>
 EOF
 
 S "mono"            "monospace"
@@ -90,7 +94,7 @@ do
 done
 
 # gnome/gtk, comic
-for f in "comic sans ms"
+for f in "comic sans ms" "cursive"
 do
     S "$f" "bellota"
 done

@@ -17,8 +17,8 @@ EOF
         printf "      <string>$f</string>\n"
     done
     cat <<EOF
-    </edit>
-  </match>
+      </edit>
+    </match>
 EOF
 }
 
@@ -54,11 +54,10 @@ S "verdana"         "xo verbena"   "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "bellota"   # github, channel9
-S "consolas"        "mono"
+S "consolas"        "iosevka malc"
 
 S "ui"              "pt sans"
 S "monaco"          "monofur"
-
 S "cursive"         "bellota"
 
 for f in "segoe"                                \
@@ -67,7 +66,6 @@ for f in "segoe"                                \
          "cambria"                              \
          "constantia"                           \
          "corbel"                               \
-         "cantarell"                            \
          "linux libertine"
 do
     # learn yourself some greek
@@ -94,8 +92,10 @@ do
     S "$f" "pt serif"
 done
 
-# gnome/gtk, comic
+# used....
 S "comic sans ms" "balsamiqsans"
+# used by www.gnome.org
+S "cantarell" "balsamiqsans"
 
 echo "</fontconfig>"
 

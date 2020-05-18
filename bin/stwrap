@@ -12,7 +12,7 @@ case "$n" in
         esac;;
     fur) f="xft:monofur-12";;
     ios) f="xft:iosevka malc-10";;
-    lst) f="xft:lucida sans typewriter-10";;
+    uni) f="xft:unifont-10";;
     *)   f="xft:$1"
 esac
-exec rxvtc -fn "$f" -rv +sb -g 80x24+329+87
+exec rxvtc -fn "$f,xft:unifont" -rv +sb -g 80x24+329+87

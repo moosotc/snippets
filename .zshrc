@@ -99,3 +99,4 @@ tp () curl -L -F 'tpaste=<-' tpaste.us
 #ix () curl -F 'f:1=<-' ix.io
 #sp () curl -F 'sprunge=<-' sprunge.us
 #cb () curl -F 'clbin=<-' https://clbin.com
+alias gdb="gdb -q"

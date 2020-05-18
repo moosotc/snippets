@@ -29,7 +29,7 @@ istok web           - S5 3З
 jura                - 3З
 jost                - 3З Il
 lato                - S5 3З
-lora                - 3З
+lora                - 3З (ameliorated by serifs somewhat)
 lucida bright       - 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
@@ -37,8 +37,10 @@ montserrat          - S5 Il
 mplus1p             - S5
 nobile              - й - regular, Й - italic
 noto sans/serif     - 3З
+nunito              - 3З
 open sans           - 3З
-oswald              - 3З
+oswald              - 3З Il
+oldstanardtt        - no bold-italic, 3З
 pacifico            - cursive only, no greek
 pattaya             - cursive only, no greek
 philosopher         - Diacritics (umlaut trema (e.g. ö/ü))
@@ -62,9 +64,9 @@ sensation           - S5 3З
 sgixgeneral         - S5 3З
 source sans pro     - S5 3З Il
 source serif pro    - 3З
-spectral            - 3З
+spectral            - 3З (ameliorated by serifs somewhat)
 strong              - styles/weights
-tuffy               - 3З
+tuffy               - З3Ӡ
 ubuntu              - S5 3З
 ubuntu mono         - S5 3З
 underdog            - styles/weights

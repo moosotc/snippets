@@ -46,9 +46,3 @@
     this one has pt root ui font that is pleasing to my eyes
     (which unfortunatelly - 3З)
 * Balsamiq Sans        https://github.com/balsamiq/balsamiqsans
-* Consider
-** EB Garamond          https://github.com/georgd/EB-Garamond
-** Literata             https://github.com/googlefonts/literata
-** Lora                 https://github.com/cyrealtype/Lora-Cyrillic
-** Spectral             http://github.com/productiontype/spectral
-   small caps does not have З3 problem

@@ -32,8 +32,6 @@ cat <<EOF
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
-    <edit name="family" mode="append"><string>symbola</string></edit>
-    <edit name="family" mode="append"><string>unifont</string></edit>
 </match>
 EOF
 

@@ -36,7 +36,7 @@ cat <<EOF
 EOF
 
 S "mono"            "monospace"
-S "serif"           "alegreya"
+S "serif"           "pt astra serif"
 S "monospace"       "iosevka malc"
 
 for f in "sans" "sans-serif" "arial" "helvetica" "cnn";

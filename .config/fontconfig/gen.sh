@@ -17,8 +17,8 @@ EOF
         printf "      <string>$f</string>\n"
     done
     cat <<EOF
-      </edit>
-    </match>
+    </edit>
+  </match>
 EOF
 }
 
@@ -32,7 +32,7 @@ cat <<EOF
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
-</match>
+  </match>
 EOF
 
 S "mono"            "monospace"
@@ -91,9 +91,9 @@ do
 done
 
 # used....
-S "comic sans ms" "balsamiqsans"
+S "comic sans ms" "balsamiq sans"
 # used by www.gnome.org
-S "cantarell" "balsamiqsans"
+S "cantarell" "balsamiq sans"
 
 echo "</fontconfig>"
 

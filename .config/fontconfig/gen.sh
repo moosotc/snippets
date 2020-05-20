@@ -51,12 +51,11 @@ S "tahoma"          "xo tahion"    "montserrat alternates"
 S "verdana"         "xo verbena"   "montserrat alternates"
 
 S "georgia"         "merriweather"
-S "segoe ui"        "bellota"   # github, channel9
+S "segoe ui"        "alegreya sans"  # github, channel9
 S "consolas"        "iosevka malc"
 
 S "ui"              "pt sans"
 S "monaco"          "monofur"
-S "cursive"         "bellota"
 
 for f in "segoe"                                \
          "optima"                               \
@@ -91,9 +90,8 @@ do
 done
 
 # used....
-S "comic sans ms" "balsamiq sans"
-# used by www.gnome.org
-S "cantarell" "balsamiq sans"
+S "cantarell" "pt astra sans"
+S "comic sans ms" "alegreya sans"
 
 echo "</fontconfig>"
 

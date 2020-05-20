@@ -1,13 +1,14 @@
 йDINA*              - S5 3З
 RoundedMplus1c      - 3З
 alice               - styles/weights
-arsenal             - S5 Il (*)
+arsenal             - S5 Il O0 (*)
 bad script          - cursive only, no greek
 badley hand         - 3З
-bellota             - 3З (*)
-bellota text        - 3З Il (*)
+bellota             - 3З ~- (*)
+bellota text        - 3З Il ~- (*)
 balsamiqsans        - 3З (too bold, decent substitute for Comic Sans?)
-caveat              - cursive only, no greek
+caveat              - cursive only, no greek, x height too small
+comic neue          - O0 rn->m
 comfortaa           - 3З (no italic)
 cormorant           - no greek
 cormorant garamond  - no greek
@@ -43,7 +44,7 @@ oswald              - 3З Il
 oldstanardtt        - no bold-italic, 3З
 pacifico            - cursive only, no greek
 pattaya             - cursive only, no greek
-philosopher         - Diacritics (umlaut trema (e.g. ö/ü))
+philosopher         - Diacritics (umlaut trema (e.g. ö/ü)) 0O
 phone keycaps       - 3З
 play                - S5 3З
 podkova             - S5 3З
@@ -54,12 +55,12 @@ pt root ui          - З3 no italic
 pt sans             - S5
 pt sans caption     - S5
 pt astra serif      - italic accent diacritics seem to be shifted to the right
-raleway             - no italic (in Cyrillic subset)
+raleway             - no italic (in Cyrillic subset), ~-
 roboto              - 3З Il
 roboto mono         - 3З
 roboto slab         - 3З
-rubik               - Il
-scada               - S5 Il
+rubik               - Il 0O
+scada               - S5 Il 0O
 sensation           - S5 3З
 sgixgeneral         - S5 3З
 source sans pro     - S5 3З Il

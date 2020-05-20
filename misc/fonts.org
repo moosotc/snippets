@@ -40,10 +40,3 @@
 * Monofur              http://eurofurence.net/monofur.html
   i3bar, rofi
 * Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html
-* Bellota              https://github.com/kemie/Bellota-Font
-** Random links
-*** https://github.com/JetBrains/JetBrainsMono/
-*** https://www.paratype.ru/fonts/pt/pt-astra-sans?tab=packages
-    this one has pt root ui font that is pleasing to my eyes
-    (which unfortunatelly - 3З)
-* Balsamiq Sans        https://github.com/balsamiq/balsamiqsans

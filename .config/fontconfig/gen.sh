@@ -51,7 +51,7 @@ S "tahoma"          "xo tahion"    "montserrat alternates"
 S "verdana"         "xo verbena"   "montserrat alternates"
 
 S "georgia"         "merriweather"
-S "segoe ui"        "alegreya sans"  # github, channel9
+S "segoe ui"        "raleway"  # github, channel9
 S "consolas"        "iosevka malc"
 
 S "ui"              "pt sans"
@@ -91,7 +91,7 @@ done
 
 # used....
 S "cantarell" "pt astra sans"
-S "comic sans ms" "alegreya sans"
+S "comic sans ms" "lobster"
 
 echo "</fontconfig>"
 

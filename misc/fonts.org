@@ -26,17 +26,15 @@
   iosevka stopped building
   (is it because i do not have otfcc authint ect on this machine?
   hard to say not sure how to interrogate verda about real reason for failure)
-* Alegreya             https://github.com/huertatipografica
-  Very warm one
-** Serif - Greek body text
 * Symbola              http://users.teilar.gr/~g1951d/
   Dingbats, symbols, emoji, language coverage
 * GNU Unifont          http://unifoundry.com/unifont.html
   misc-fixed FTW
 ** usage: universal unicode fallback
-* Volkorn              http://vollkorn-typeface.com/
-  subtitles
 * Montserrat           https://github.com/JulietaUla/Montserrat/
 * Monofur              http://eurofurence.net/monofur.html
   i3bar, rofi
 * Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html
+* Lobster              https://github.com/impallari/The-Lobster-Font
+* Raleway              https://github.com/impallari/Raleway
+  tilde has moved down a bit in v4 thus making the -~ ~- pair harder to read

@@ -66,17 +66,18 @@ S "consolas"        "iosevka malc"
 
 S "ui"              "pt sans"
 S "monaco"          "monofur"
+# learn yourself some greek
+S "linux libertine" "xo symbol"
 
 for f in "segoe"                                \
          "optima"                               \
          "candara"                              \
          "cambria"                              \
          "constantia"                           \
-         "corbel"                               \
-         "linux libertine"
+         "corbel"
 do
-    # learn yourself some greek
-    S "$f" "xo symbol"
+    # learn yourself some cyrillic
+    S "$f" "beograd"
 done
 
 # large x-height sans
@@ -100,7 +101,7 @@ do
 done
 
 # used....
-S "cantarell" "beograd"
+S "cantarell"     "beograd"
 S "comic sans ms" "Dudu Cyryllic"
 
 echo "</fontconfig>"

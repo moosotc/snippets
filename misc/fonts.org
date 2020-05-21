@@ -9,8 +9,7 @@
 ** Serif
 *** usage: llpphtml, prince - body text
 * XO                   https://fonts.myoffice.ru
-** Better versions of (3З if nothing else)
-*** Thames     - Times (New Roman)
+** 3З versions of
 *** Oriel      - Arial
 *** Trebizond  - Trebuchet MS
 *** Tahion     - Tahoma
@@ -35,6 +34,9 @@
 * Monofur              http://eurofurence.net/monofur.html
   i3bar, rofi
 * Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html
-* Lobster              https://github.com/impallari/The-Lobster-Font
 * Raleway              https://github.com/impallari/Raleway
   tilde has moved down a bit in v4 thus making the -~ ~- pair harder to read
+* Beograd              https://www.fontspace.com/beograd-font-f28002
+* Dudu Cyryllic        https://www.fontspace.com/vladmas
+* ==============================================================================
+* impalari font testing page https://github.com/impallari/Font-Testing-Page

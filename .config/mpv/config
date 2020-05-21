@@ -5,6 +5,7 @@ slang=eng
 sub=no
 hwdec=vaapi
 osd-font="xo verbena"
+sub-font="xo oriel"
 gpu-context=x11vk
 hidpi-window-scale=no
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best

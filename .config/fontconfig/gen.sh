@@ -11,12 +11,18 @@ S() {
   <match target="pattern">
     <test qual="any" name="family"><string>$1</string></test>
     <edit name="family" mode="assign" binding="strong">
+      <string>$2</string>
+    </edit>
+  </match>
 EOF
-    shift
-    for f in "$@"; do
-        printf "      <string>$f</string>\n"
-    done
+}
+I() {
     cat <<EOF
+  <match target="pattern">
+    <test qual="any" name="family"><string>$1</string></test>
+    <test qual="any" name="slant"><const>italic</const></test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>$2</string>
     </edit>
   </match>
 EOF
@@ -44,14 +50,18 @@ do
     S "$f" "xo oriel"
 done
 
-S "times new roman" "xo thames"
+S "times new roman" "pt astra serif"
 S "calibri"         "xo caliburn"
-S "trebuchet ms"    "xo trebizond" "fontin sans cr"
-S "tahoma"          "xo tahion"    "montserrat alternates"
-S "verdana"         "xo verbena"   "montserrat alternates"
+S "trebuchet ms"    "xo trebizond"
+S "tahoma"          "xo tahion"
+S "verdana"         "xo verbena"
+
+I "xo trebizond"    "fontin sans cr"
+I "xo tahion"       "montserrat alternates"
+I "xo verbena"      "montserrat alternates"
 
 S "georgia"         "merriweather"
-S "segoe ui"        "raleway"  # github, channel9
+S "segoe ui"        "raleway-v4020" # github, channel9
 S "consolas"        "iosevka malc"
 
 S "ui"              "pt sans"
@@ -80,7 +90,7 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
-    S "$f" "montserrat alternates"
+    S "$f" "verdana"
 done
 
 # large x-height serif
@@ -90,8 +100,8 @@ do
 done
 
 # used....
-S "cantarell" "pt astra sans"
-S "comic sans ms" "lobster"
+S "cantarell" "beograd"
+S "comic sans ms" "Dudu Cyryllic"
 
 echo "</fontconfig>"
 

@@ -1,0 +1,123 @@
+* in use
+  ofl/ptsans                  - O0
+  ofl/merriweather            -
+  ofl/montserratalternates    - S9, O0
+  ofl/ptserif                 - O0
+  ofl/raleway                 - ~-
+* 3ze
+  apache/arimo                - 3ze il
+  apache/cousine              - 3ze
+  apache/opensans             - 3ze il S9
+  apache/robotomono           - 3ze
+  apache/robotoslab           - 3ze
+  apache/tinos                - 3ze
+  apache/opensanscondensed    - 3ze, il, S9 (no regular)
+  ofl/alice                   - 3ze (styles)
+  ofl/andika                  - 3ze, S9 O0
+  ofl/anonymouspro            - 3ze, life li fe
+  ofl/balsamiqsans            - 3ze, too bold, O0
+  ofl/bellota                 - 3ze, O0
+  ofl/bellotatext             - 3ze, O0, Il
+  ofl/comfortaa               - 3ze, O0, ~-
+  ofl/cormorantsc             - 3ze, (small' styles), ~-
+  ofl/cormorantinfant         - 3ze (old-style figures in other cormorants), -~
+  ofl/cuprum                  - 3ze, S9, il, O0
+  ofl/didactgothic            - 3ze, S9, O0
+  ofl/ebgaramond              - 3ze, (small)
+  ofl/exo2                    - 3ze, S9, O0
+  ofl/firacode                - 3ze, S9
+  ofl/firamono                - 3ze, S9
+  ofl/firasans                - 3ze, S9, O0
+  ofl/firasanscondensed       - 3ze, S9, O0
+  ofl/firasansextracondensed  - 3ze, S9, O0
+  ofl/forum                   - 3ze
+  ofl/gabriela                - 3ze, O0
+  ofl/gothica1                - 3ze, S9, O0, Il
+  ofl/ibmplexmono             - 3ze, S9, -~
+  ofl/ibmplexsans             - 3ze, S9, -~
+  ofl/ibmplexserif            - 3ze, O0, -~
+  ofl/inter                   - 3ze, O0
+  ofl/istokweb                - 3ze, S9, Il
+  ofl/jost                    - 3ze, S9, O0, Il
+  ofl/jura                    - 3ze, -~
+  ofl/kellyslab               - 3ze, O0, (styles)
+  ofl/kurale                  - 3ze, O0, (styles)
+  ofl/lato                    - 3ze, S9, Il
+  ofl/literata                - 3ze, O0
+  ofl/lora                    - 3ze, O0
+  ofl/marmelad                - 3ze
+  ofl/neucha                  - 3ze, S9, O0
+  ofl/notosans                - 3ze, S9, O0
+  ofl/notoserif               - 3ze, S9, O0
+  ofl/nunito                  - 3ze, S9, O0, Il
+  ofl/oldstandardtt           - 3ze, O0
+  ofl/prostoone               - 3ze, l1, O0, (variants)
+  ofl/oswald                  - 3ze, O0, Il
+  ofl/pangolin                - 3ze, S9, O0, Il
+  ofl/play                    - 3ze, O0, Il
+  ofl/podkova                 - 3ze, S9, O0, -~, {}(), (no italic)
+  ofl/poiretone               - 3ze, (cursive)
+  ofl/prata                   - 3ze, l1, O0
+  ofl/roboto                  - 3ze, l1, O0
+  ofl/rubikone                - 3ze, ~-., l1, O0, (styles)
+  ofl/ruda                    - 3ze, l1, O0
+  ofl/russoone                - 3ze, S9, O0, ~-, (styles)
+  ofl/sansation               - 3ze, S9, O0, il
+  ofl/seymourone              - 3ze, l1, O0, (styles)
+  ofl/sourcecodepro           - 3ze, S9, ~-
+  ofl/sourcesanspro           - 3ze, S9, O0
+  ofl/sourceserifpro          - 3ze
+  ofl/spectral                - 3ze
+  ofl/stalinistone            - 3ze, (styles)
+  ofl/stalinone               - 3ze, (styles)
+  ofl/tenorsans               - 3ze, il, (styles)
+  ofl/tuffy                   - 3ze, S9, O0
+  ofl/viaodalibre             - 3ze, il, O0, (styles)
+  ofl/yesevaone               - 3ze, O0, (styles)
+  ufl/ubuntu                  - 3ze, S9
+  ufl/ubuntucondensed         - 3ze, S9, (styles)
+  ufl/ubuntumono              - 3ze, S9
+* multiple issues
+  ofl/alegreya                - ~-, o0
+  ofl/alegreyasans            - ~-, Il
+  ofl/alegreyasanssc          - ~-, S9
+  ofl/alegreyasc              - ~-, (small caps)
+  ofl/arsenal                 - S9, il, O0
+  ofl/caveat                  - (cursive, small)
+  ofl/cormorant               - (small), ~-, l is like very tall 1 (charter like)
+  ofl/cormorantunicase        - (small, styles), ~-
+  ofl/elmessiri               - O0, l1, il, (styles) (philosopher with arabic)
+  ofl/ledger                  - O0, (styles)
+  ofl/manrope                 - O0, Il, ~-, (styles)
+  ofl/ptmono                  - ~-, l (ife, ambdabot)
+  ofl/ptsanscaption           - O0
+  ofl/ptsansnarrow            - S9, O0
+  ofl/ptserifcaption          - O0
+  ofl/pacifico                - cursive (hard to read)
+  ofl/montserrat              - S9, IL, O0
+  ofl/marckscript             - cursive (hard to read)
+  ofl/philosopher             - O0, l1, il
+  ofl/pressstart2p            - l1, O0, bitmap and typewriter like, (variants)
+  ofl/oranienbaum             - ~-, O0, (styles) - 3ze differs only in serifs
+  ofl/rubik                   - O0, il
+  ofl/rubikmonoone            - ~-, O0, (styles)
+  ofl/ruslandisplay           - O0 (indistinguishable), (unicase)
+  ofl/scada                   - S9, il, O0, ~-
+  ofl/spectralsc              - 1i (very similar)
+  ofl/strong                  - O0 (virtually identical), (styles), (small)
+  ofl/underdog                - S9, il, O0, (styles)
+  ofl/playfairdisplay         - l
+  ofl/playfairdisplaysc       -
+  ofl/vollkorn                - ~-, 1==scI, l=1
+  ofl/vollkornsc              - ~-
+** ofl/yanonekaffeesatz       - il (condensed)
+  too thin
+** ofl/cormorantgaramond       - (small), ~-
+   lambda-like cyrillic el
+   otherwise the font looks like regular cormorant and shares the same issues
+* cursive
+** ofl/lobster                 - bold
+   ofl/pattaya                 - variant with thai)
+** ofl/badscript
+* get and evaluate
+  https://github.com/larsenwork/monoid

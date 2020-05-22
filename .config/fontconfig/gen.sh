@@ -29,11 +29,13 @@ EOF
 }
 B() {
 cat <<EOF
-<match target="pattern">
-  <test name="family"><string>$1</string></test>
-  <test name="weight" compare="more_eq"><const>bold</const></test>
-  <edit name="family" mode="assign" binding="strong"><string>$2</string></edit>
-</match>
+  <match target="pattern">
+    <test name="family"><string>$1</string></test>
+    <test name="weight" compare="more_eq"><const>bold</const></test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>$2</string>
+    </edit>
+  </match>
 EOF
 }
 

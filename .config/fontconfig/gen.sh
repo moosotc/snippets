@@ -39,6 +39,8 @@ B() {
 EOF
 }
 
+IB() { I "$1" "$2"; B "$1" "$2"; }
+
 cat <<EOF
 <?xml version='1.0'?>
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
@@ -67,13 +69,9 @@ S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "verdana"         "xo verbena"
 
-I "xo trebizond"    "fontin sans cr"
-I "xo tahion"       "montserrat alternates"
-I "xo verbena"      "montserrat alternates"
-
-B "xo trebizond"    "fontin sans cr"
-B "xo tahion"       "montserrat alternates"
-B "xo verbena"      "montserrat alternates"
+IB "xo trebizond"    "fontin sans cr"
+IB "xo tahion"       "montserrat alternates"
+IB "xo verbena"      "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9

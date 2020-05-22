@@ -91,7 +91,7 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
-    S "$f" "verdana"
+    S "$f" "montserrat alternates"
 done
 
 # large x-height serif

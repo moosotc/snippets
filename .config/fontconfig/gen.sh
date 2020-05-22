@@ -28,7 +28,7 @@ I() {
 EOF
 }
 B() {
-cat <<EOF
+    cat <<EOF
   <match target="pattern">
     <test name="family"><string>$1</string></test>
     <test name="weight" compare="more_eq"><const>bold</const></test>

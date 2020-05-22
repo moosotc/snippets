@@ -27,6 +27,15 @@ I() {
   </match>
 EOF
 }
+B() {
+cat <<EOF
+<match target="pattern">
+  <test name="family"><string>$1</string></test>
+  <test name="weight" compare="more_eq"><const>bold</const></test>
+  <edit name="family" mode="assign" binding="strong"><string>$2</string></edit>
+</match>
+EOF
+}
 
 cat <<EOF
 <?xml version='1.0'?>
@@ -59,6 +68,10 @@ S "verdana"         "xo verbena"
 I "xo trebizond"    "fontin sans cr"
 I "xo tahion"       "montserrat alternates"
 I "xo verbena"      "montserrat alternates"
+
+B "xo trebizond"    "fontin sans cr"
+B "xo tahion"       "montserrat alternates"
+B "xo verbena"      "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9

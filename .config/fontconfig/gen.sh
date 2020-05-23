@@ -69,8 +69,8 @@ S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "verdana"         "xo verbena"
 
+I "xo tahion"       "montserrat alternates"
 IB "xo trebizond"    "fontin sans cr"
-IB "xo tahion"       "montserrat alternates"
 IB "xo verbena"      "montserrat alternates"
 
 S "georgia"         "merriweather"

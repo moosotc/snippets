@@ -54,9 +54,10 @@ cat <<EOF
   </match>
 EOF
 
+S "iosevka"         "iosevka clam extended"
 S "mono"            "monospace"
 S "serif"           "pt astra serif"
-S "monospace"       "iosevka malc"
+S "monospace"       "iosevka"
 
 for f in "sans" "sans-serif" "arial" "helvetica" "cnn";
 do
@@ -75,7 +76,7 @@ IB "xo verbena"      "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9
-S "consolas"        "iosevka malc"
+S "consolas"        "iosevka"
 
 S "ui"              "pt sans"
 S "monaco"          "monofur"

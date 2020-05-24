@@ -54,10 +54,10 @@ cat <<EOF
   </match>
 EOF
 
-S "iosevka"         "iosevka clam extended"
-S "mono"            "monospace"
-S "serif"           "pt astra serif"
 S "monospace"       "iosevka"
+S "mono"            "iosevka"
+S "iosevka"         "iosevka clam extended"
+S "serif"           "pt astra serif"
 
 for f in "sans" "sans-serif" "arial" "helvetica" "cnn";
 do

@@ -71,8 +71,8 @@ S "tahoma"          "xo tahion"
 S "verdana"         "xo verbena"
 
 I "xo tahion"       "montserrat alternates"
-IB "xo trebizond"    "fontin sans cr"
-IB "xo verbena"      "montserrat alternates"
+IB "xo trebizond"   "fontin sans cr"
+IB "xo verbena"     "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9

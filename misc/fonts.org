@@ -41,3 +41,9 @@
 * ==============================================================================
 * impalari font testing page https://github.com/impallari/Font-Testing-Page
 * https://github.com/ProgrammingFonts/ProgrammingFonts
+
+* locations
+** segoe ui - github.com, channel9.msdn.com
+** cantarell - gnome.org
+** opensans (sic) - arstechnica.com
+** monaco - stackoverflow.com

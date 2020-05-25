@@ -66,7 +66,7 @@ S "consolas"        "iosevka"
 S "iosevka"         "iosevka test extended"
 S "serif"           "pt astra serif"
 
-for f in "sans" "sans-serif" "arial" "helvetica" "cnn";
+for f in "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto";
 do
     S "$f" "xo oriel"
 done

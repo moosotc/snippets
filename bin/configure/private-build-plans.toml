@@ -47,7 +47,6 @@ upright = "normal"
 [buildPlans.iosevka-fur]       # <iosevka-fur> is your plan name
 family = "Iosevka fur"         # Font menu family name
 design = [
-       'extended',
        'sp-fixed',
        'v-three-flattop',
        'v-dollar-through',      # "opencap" line is too short (S like)

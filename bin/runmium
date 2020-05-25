@@ -14,7 +14,7 @@ false && {
 
 a() {
     xdotool set_desktop 0 search --sync --onlyvisible --maxdepth 2      \
-            --name chromium windowsize 1667 1113 windowactivate
+            --name chromium windowsize 2000 1500 windowactivate
 }
 a &
 pgrep chromium || {

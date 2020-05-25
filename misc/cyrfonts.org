@@ -79,7 +79,7 @@
   ufl/ubuntumono              - 3ze, S9
 * multiple issues
   ofl/alegreya                - ~-, o0
-  ofl/alegreyasans            - ~-, Il
+  ofl/alegreyasans            - ~-, Il, o0
   ofl/alegreyasanssc          - ~-, S9
   ofl/alegreyasc              - ~-, (small caps)
   ofl/arsenal                 - S9, il, O0

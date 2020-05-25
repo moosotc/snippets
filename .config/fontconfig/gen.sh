@@ -52,6 +52,12 @@ cat <<EOF
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
   </match>
+  <match>
+    <edit name="family" mode="append_last" binding="strong">
+      <string>mono</string>
+    </edit>
+  </match>
+
 EOF
 
 S "monospace"       "iosevka"

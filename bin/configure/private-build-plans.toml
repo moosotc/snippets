@@ -1,38 +1,36 @@
-[buildPlans.iosevka-malc]       # <iosevka-malc> is your plan name
-family = "Iosevka malc"         # Font menu family name
-design = ['expanded',
-          'term',
-          'v-i-serifed',
-          'v-a-doublestorey',
-          'v-g-opendoublestorey',
-          'v-m-shortleg',
-          'v-t-standard',
-          'v-q-taily',
-          'v-zero-slashed',
-          'v-three-flattop',
-          'v-tilde-high',
-          'v-underscore-high',
-          'v-at-short',
-          'v-brace-straight',
-          'v-dollar-open',
-          'v-numbersign-slanted',
-          'v-one-serifed',
-          'v-y-curly',
-          'v-f-taily',
-          'v-asterisk-hexhigh',
-          'v-percent-dots'
-          ]
+[buildPlans.iosevka-test]       # <iosevka-test> is your plan name
+family = "Iosevka test"         # Font menu family name
+design = [
+       'sp-fixed',
+       'v-three-flattop',
+       'v-i-italic',
+       'v-l-italic',
+       'v-m-shortleg',
+       'v-nine-closed-contour', # v-nine-turned-six negatively affects S9 59
+       'v-tilde-high',
+       'v-asterisk-hexhigh',
+       'v-percent-dots',
+       'v-numbersign-slanted',
+       'v-at-short',
+       'v-brace-straight',
+       'v-g-opendoublestorey',
+       'v-k-curly',
+       'v-dollar-open',         # "opencap" line is too short (S like)
+       'v-y-cursive',
+       'v-u-with-bar',
+       'v-v-curly',
+       'v-w-curly'              # w straight (-1)
+]
 
 # Override default building weights
 # When buildPlans.<plan name>.weights is absent
 # All weights would built and mapped to default shape/CSS
-[buildPlans.iosevka-malc.weights.regular]
+[buildPlans.iosevka-test.weights.regular]
 shape = 400                            # Weight for glyph shapes
 menu  = 400                            # Weight for menu name
 css   = 400                            # Weight for webfont CSS
-xheight = 430
 
-[buildPlans.iosevka-malc.weights.bold]
+[buildPlans.iosevka-test.weights.bold]
 shape = 700
 menu  = 700
 css   = 700
@@ -41,419 +39,68 @@ css   = 700
 # Override default building slant sets
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slants would be built.
-[buildPlans.iosevka-malc.slants]
+[buildPlans.iosevka-test.slants]
 upright = "normal"
-italic = "italic"
+#italic = "italic"
 
-# ==============================================================================
-[buildPlans.iosevka-cannam-codec]       # <iosevka-malc> is your plan name
-family = "Iosevka cannam codec"         # Font menu family name
-design = ['term',
-          'v-turn-v-straight',
-          'v-capital-g-toothless',
-          'v-capital-q-straight',
-          'v-capital-r-straight',
-          'v-capital-y-straight',
-          'v-a-doublestorey',
-          'v-f-straight',
-          'v-g-singlestorey',
-          'v-i-hooky',
-          'v-j-serifed',
-          'v-capital-j-serifed',
-          'v-l-hooky',
-          'v-k-straight',
-          'v-m-normal',
-          'v-r-top-serifed', # not sure
-          'v-t-standard',
-          'v-u-with-bar',
-          'v-v-straight',
-          'v-w-straight',
-          'v-x-straight',
-          'v-y-straight',
-          'v-eszet-traditional',
-          'v-lambda-straight',
-          'v-zero-slashed',
-          'v-one-nobase',
-          'v-three-flattop',
-          'v-seven-noserif',
-          'v-nine-turned-six',
-          'v-tilde-high',
-          'v-asterisk-low',
-          'v-underscore-high',
-          'v-paragraph-low',
-          'v-caret-high',
-          'v-brace-curly',
-          'v-numbersign-upright',
-          'v-at-threefold',
-          'v-dollar-through',
-          'v-percent-rings',
-          'v-capital-i-serifed',
-          'v-capital-j-straight',
-          'v-f-narrow',
-          'v-t-narrow'
-         ]
-
-# Override default building weights
-# When buildPlans.<plan name>.weights is absent
-# All weights would built and mapped to default shape/CSS
-[buildPlans.iosevka-cannam-codec.weights.regular]
-shape = 400                            # Weight for glyph shapes
-menu = 400
-css = 400
-
-# Override default building slant sets
-# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
-# When this section is absent, all slants would be built.
-[buildPlans.iosevka-cannam-codec.slants]
-upright = "normal"
-
-# ==============================================================================
-[buildPlans.iosevka-clam]        # <iosevka-malc> is your plan name
-family = "Iosevka clam"          # Font menu family name
-
-# v-turn-v-straight     # Standard, straight `A`, `Λ`, `Δ`
-# v-turn-v-curly        # Slightly curly `A`, `Λ`, `Δ`, like Iosevka 2.x
-# v-capital-g-tooth     # Toothed G
-# v-capital-g-toothless # Toothless G
-# v-capital-q-taily     # `Q` with a curly tail
-# v-capital-q-straight  # `Q` with a straight tail like in the old versions
-# v-capital-r-straight  # Standard, straight-leg `R`
-# v-capital-r-curly     #  Slightly curly-legged `R`, like Iosevka 2.x
-# v-capital-y-straight  # Standard, straight `Y`
-# v-capital-y-curly     # Slightly curly `Y`, like Iosevka 2.x
-# v-a-singlestorey      # Single-storey `a`
-# v-a-doublestorey      # Double-storey `a`
-# v-f-straight          # `f` without bottom hook
-# v-f-tailed            # `f` with a leftward bottom hook
-# v-f-serifed           # `f` with bottom serif
-# v-g-singlestorey      # Single-storey `g`
-# v-g-doublestorey      # Double-storey `g`
-# v-g-opendoublestorey  # Open Double-storey `g`, like Trebuchet MS or Fira Code
-# v-i-serifed           # Serifed `i`
-# v-i-italic            # Italic `i`
-# v-i-hooky             # Hooky `i`
-# v-i-line              # `i` like a straight line
-# v-i-zshaped           # Z-shaped `i`
-# v-i-tailed            # Tailed `i`
-# v-j-line              # `j` like a straight line
-# v-j-serifed           # `j` with top serif
-# v-l-hooky             # Hooky `l`
-# v-l-zshaped           # Z-shaped `i`
-# v-l-serifed           # Serifed `l`
-# v-l-italic            # Italic, cursive `l`
-# v-l-line              # `l` like a straight line
-# v-l-tailed            # `l` with a curved tail
-# v-l-hookybottom       # `l` with a straight tail
-# v-k-straight          # `k` with standard shape
-# v-k-curly             # Slightly curly `k`, like Iosevka 2.x
-# v-k-cursive           # `k` with a cursive loop
-# v-m-normal            # `m` with normal middle leg, touching the baseline
-# v-m-shortleg          # `m` with shorter middle leg, like Ubuntu Mono
-# v-r-straight          # Straight, serif-less `r`
-# v-r-serifed           # `r` with serif at both top and bottom
-# v-r-top-serifed       # `r` with serifs at top-left only
-# v-t-standard          # Standard `t` shape
-# v-t-cross             # Futura-like `t` shape
-# v-u-with-bar          # Normal `u` with right bar
-# v-u-without-bar       # Normal `u` without right bar, like a smaller uppercase `U`
-# v-v-straight          # Standard, straight `V` and `v`
-# v-v-curly             # Slightly curly `V` and `v`, like Iosevka 2.x
-# v-w-straight          # Standard, straight `W` and `w`
-# v-w-curly             # Slightly curly `W` and `w`, like Iosevka 2.x
-# v-x-straight          # Standard, straight `X` and `x`
-# v-x-curly             # Slightly curly `X` and `x`, like Iosevka 2.x
-# v-y-straight          # More-straight letter `y`
-# v-y-curly             # More curly letter `y`, like Iosevka 2.x
-# v-y-cursive           # Cursive-like `y`
-# v-eszet-traditional   # Fraktur-like Eszet
-# v-eszet-sulzbacher    # A more modern, beta-like Eszet
-# v-lambda-straight     # More-straight letter `λ`
-# v-lambda-curly        # More curly letter `λ`, like Iosevka 2.x
-# v-zero-slashed        # Slashed Zero `0`
-# v-zero-dotted         # Dotted Zero `0`
-# v-zero-unslashed      # O-like `0`
-# v-zero-reverse-slashed # Reverse-slashed `0`
-# v-one-nobase           # `1` with bottom serif
-# v-one-base             # `1` without bottom serif
-# v-three-flattop        # Flat top `3` (Like Museo Sans / Montserrat)
-# v-three-twoarcs        # Arched top `3`
-# v-seven-noserif        # `7` without serif
-# v-seven-serifed        # `7` with initial serif
-# v-nine-closed-contour  # `9` with a more closed
-# v-nine-turned-six      # `9` with a more open contour like a turned `6`
-# v-tilde-high           # Higher tilde `~`
-# v-tilde-low            # Lower tilde `~`
-# v-asterisk-high        # Higher five-pointed asterisk `*`
-# v-asterisk-low         # Lower five-pointed asterisk `*`
-# v-asterisk-hexhigh     # Higher six-pointed asterisk `*`
-# v-asterisk-hexlow      # Lower six-pointed asterisk `*`
-# v-underscore-high      # Higher underscore `_`, at baseline
-# v-underscore-low       # Lower underscore `_`, below baseline
-# v-paragraph-high       # Higher paragraph symbol `¶`
-# v-paragraph-low        # Lower paragraph symbol `¶`
-# v-caret-high           # Higher circumflex `^`
-# v-caret-low            # Lower circumflex `^`
-# v-brace-straight       # More straight braces
-# v-brace-curly          # More curly braces
-# v-numbersign-upright   # Number sign with vertical bars
-# v-numbersign-slanted   # Number sign with slanted bars
-# v-at-threefold         # The long, three-fold At symbol (`@`)
-# v-at-fourfold          # The traditional, four-fold At symbol (`@`)
-# v-at-short             # The shorter, Fira-like At symbol (`@`)
-# v-dollar-open          # Dollar symbol with open contour
-# v-dollar-through       # Dollar symbol with strike-through vertical bar
-# v-dollar-opencap       # Dollar symbol with open contour, not exceeding baseline and ascender
-# v-dollar-throughcap    # Dollar symbol with strike-through vertical bar, not exceeding baseline and ascender
-# v-percent-dots         # Percent `%`, Per-mille `‰` and basis point `‱` using rectangular dots
-# v-percent-rings        # Percent `%`, Per-mille `‰` and basis point `‱` using rings
-# v-lig-ltgteq-flat      # The lower bar of `<=` and `>=` ligation is flat
-# v-lig-ltgteq-slanted   # The lower bar of `<=` and `>=` ligation is slanted
-
-# v-capital-i-straight            # set on purpose to use II diversity
-# v-capital-i-serifed
-# v-capital-j-straight
-# v-capital-j-serifed
-# v-f-narrow
-# v-t-narrow
-# v-j-narrow
-# v-j-narrow-serifed
-# v-r-narrow
-
-design = ['sp-fixed',
-       'v-turn-v-curly',
-       'v-capital-g-toothless',
-       'v-capital-q-straight',
-       'v-capital-r-straight',
-       'v-capital-y-straight',
-       'v-a-doublestorey',
-       'v-f-straight',
-       'v-g-opendoublestorey',
-       'v-i-italic',
-       'v-j-line',
-       'v-l-italic',
-       'v-k-curly',
-       'v-m-shortleg',
-       'v-r-straight',
-       'v-t-standard',
-       'v-u-with-bar',
-       'v-v-curly',
-       'v-w-curly',
-       'v-x-straight',
-       'v-y-cursive',
-       'v-eszet-traditional',
-       'v-lambda-straight',
-       'v-zero-slashed',
-       'v-one-base',
+################################################################################
+[buildPlans.iosevka-fur]       # <iosevka-fur> is your plan name
+family = "Iosevka fur"         # Font menu family name
+design = [
+       'extended',
+       'sp-fixed',
        'v-three-flattop',
+       'v-dollar-through',      # "opencap" line is too short (S like)
+       'v-l-tailed',
+       'v-i-zshaped',
+       'v-asterisk-hexhigh',
+       'v-numbersign-upright',
+       'v-zero-dotted',
+       'v-one-base',
        'v-seven-noserif',
        'v-nine-turned-six',
-       'v-tilde-high',
-       'v-asterisk-hexhigh',
-       'v-underscore-high',
-       'v-paragraph-high',
-       'v-caret-high',
-       'v-brace-curly',
-       'v-numbersign-slanted',
-       'v-at-short',
-       'v-dollar-open',
-       'v-percent-dots',
-       'v-capital-i-serifed',
-#       'v-capital-j-serifed'
-#       'v-f-narrow',
-#       'v-t-narrow',
-       'v-j-narrow-serifed',
-#       'v-r-narrow'
-         ]
-
-# Override default building weights
-# When buildPlans.<plan name>.weights is absent
-# All weights would built and mapped to default shape/CSS
-[buildPlans.iosevka-clam.weights.regular]
-shape = 400                            # Weight for glyph shapes
-menu = 400
-css = 400
-
-[buildPlans.iosevka-clam.weights.bold]
-shape = 700                            # Weight for glyph shapes
-menu = 700
-css = 700
-
-# Override default building slant sets
-# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
-# When this section is absent, all slants would be built.
-[buildPlans.iosevka-clam.slants]
-upright = "normal"
-italic = "italic"
-
-# ==============================================================================
-[buildPlans.iosevka-monofur]        # <iosevka-malc> is your plan name
-family = "Iosevka monofur"          # Font menu family name
-
-# v-turn-v-straight     # Standard, straight `A`, `Λ`, `Δ`
-# v-turn-v-curly        # Slightly curly `A`, `Λ`, `Δ`, like Iosevka 2.x
-# v-capital-g-tooth     # Toothed G
-# v-capital-g-toothless # Toothless G
-# v-capital-q-taily     # `Q` with a curly tail
-# v-capital-q-straight  # `Q` with a straight tail like in the old versions
-# v-capital-r-straight  # Standard, straight-leg `R`
-# v-capital-r-curly     #  Slightly curly-legged `R`, like Iosevka 2.x
-# v-capital-y-straight  # Standard, straight `Y`
-# v-capital-y-curly     # Slightly curly `Y`, like Iosevka 2.x
-# v-a-singlestorey      # Single-storey `a`
-# v-a-doublestorey      # Double-storey `a`
-# v-f-straight          # `f` without bottom hook
-# v-f-tailed            # `f` with a leftward bottom hook
-# v-f-serifed           # `f` with bottom serif
-# v-g-singlestorey      # Single-storey `g`
-# v-g-doublestorey      # Double-storey `g`
-# v-g-opendoublestorey  # Open Double-storey `g`, like Trebuchet MS or Fira Code
-# v-i-serifed           # Serifed `i`
-# v-i-italic            # Italic `i`
-# v-i-hooky             # Hooky `i`
-# v-i-line              # `i` like a straight line
-# v-i-zshaped           # Z-shaped `i`
-# v-i-tailed            # Tailed `i`
-# v-j-line              # `j` like a straight line
-# v-j-serifed           # `j` with top serif
-# v-l-hooky             # Hooky `l`
-# v-l-zshaped           # Z-shaped `i`
-# v-l-serifed           # Serifed `l`
-# v-l-italic            # Italic, cursive `l`
-# v-l-line              # `l` like a straight line
-# v-l-tailed            # `l` with a curved tail
-# v-l-hookybottom       # `l` with a straight tail
-# v-k-straight          # `k` with standard shape
-# v-k-curly             # Slightly curly `k`, like Iosevka 2.x
-# v-k-cursive           # `k` with a cursive loop
-# v-m-normal            # `m` with normal middle leg, touching the baseline
-# v-m-shortleg          # `m` with shorter middle leg, like Ubuntu Mono
-# v-r-straight          # Straight, serif-less `r`
-# v-r-serifed           # `r` with serif at both top and bottom
-# v-r-top-serifed       # `r` with serifs at top-left only
-# v-t-standard          # Standard `t` shape
-# v-t-cross             # Futura-like `t` shape
-# v-u-with-bar          # Normal `u` with right bar
-# v-u-without-bar       # Normal `u` without right bar, like a smaller uppercase `U`
-# v-v-straight          # Standard, straight `V` and `v`
-# v-v-curly             # Slightly curly `V` and `v`, like Iosevka 2.x
-# v-w-straight          # Standard, straight `W` and `w`
-# v-w-curly             # Slightly curly `W` and `w`, like Iosevka 2.x
-# v-x-straight          # Standard, straight `X` and `x`
-# v-x-curly             # Slightly curly `X` and `x`, like Iosevka 2.x
-# v-y-straight          # More-straight letter `y`
-# v-y-curly             # More curly letter `y`, like Iosevka 2.x
-# v-y-cursive           # Cursive-like `y`
-# v-eszet-traditional   # Fraktur-like Eszet
-# v-eszet-sulzbacher    # A more modern, beta-like Eszet
-# v-lambda-straight     # More-straight letter `λ`
-# v-lambda-curly        # More curly letter `λ`, like Iosevka 2.x
-# v-zero-slashed        # Slashed Zero `0`
-# v-zero-dotted         # Dotted Zero `0`
-# v-zero-unslashed      # O-like `0`
-# v-zero-reverse-slashed # Reverse-slashed `0`
-# v-one-nobase           # `1` with bottom serif
-# v-one-base             # `1` without bottom serif
-# v-three-flattop        # Flat top `3` (Like Museo Sans / Montserrat)
-# v-three-twoarcs        # Arched top `3`
-# v-seven-noserif        # `7` without serif
-# v-seven-serifed        # `7` with initial serif
-# v-nine-closed-contour  # `9` with a more closed
-# v-nine-turned-six      # `9` with a more open contour like a turned `6`
-# v-tilde-high           # Higher tilde `~`
-# v-tilde-low            # Lower tilde `~`
-# v-asterisk-high        # Higher five-pointed asterisk `*`
-# v-asterisk-low         # Lower five-pointed asterisk `*`
-# v-asterisk-hexhigh     # Higher six-pointed asterisk `*`
-# v-asterisk-hexlow      # Lower six-pointed asterisk `*`
-# v-underscore-high      # Higher underscore `_`, at baseline
-# v-underscore-low       # Lower underscore `_`, below baseline
-# v-paragraph-high       # Higher paragraph symbol `¶`
-# v-paragraph-low        # Lower paragraph symbol `¶`
-# v-caret-high           # Higher circumflex `^`
-# v-caret-low            # Lower circumflex `^`
-# v-brace-straight       # More straight braces
-# v-brace-curly          # More curly braces
-# v-numbersign-upright   # Number sign with vertical bars
-# v-numbersign-slanted   # Number sign with slanted bars
-# v-at-threefold         # The long, three-fold At symbol (`@`)
-# v-at-fourfold          # The traditional, four-fold At symbol (`@`)
-# v-at-short             # The shorter, Fira-like At symbol (`@`)
-# v-dollar-open          # Dollar symbol with open contour
-# v-dollar-through       # Dollar symbol with strike-through vertical bar
-# v-dollar-opencap       # Dollar symbol with open contour, not exceeding baseline and ascender
-# v-dollar-throughcap    # Dollar symbol with strike-through vertical bar, not exceeding baseline and ascender
-# v-percent-dots         # Percent `%`, Per-mille `‰` and basis point `‱` using rectangular dots
-# v-percent-rings        # Percent `%`, Per-mille `‰` and basis point `‱` using rings
-# v-lig-ltgteq-flat      # The lower bar of `<=` and `>=` ligation is flat
-# v-lig-ltgteq-slanted   # The lower bar of `<=` and `>=` ligation is slanted
-
-# v-capital-i-straight            # set on purpose to use II diversity
-# v-capital-i-serifed
-# v-capital-j-straight
-# v-capital-j-serifed
-# v-f-narrow
-# v-t-narrow
-# v-j-narrow
-# v-j-narrow-serifed
-# v-r-narrow
-
-design = ['sp-fixed',
-       'v-turn-v-straight',
+       'v-at-fourfold',
+       'v-v-straight',
        'v-capital-g-toothless',
-       'v-capital-q-straight',
+       'v-k-straight',
+       'v-capital-q-taily',
        'v-capital-r-straight',
-       'v-capital-y-curly',
-       'v-a-doublestorey',
-       'v-l-tailed',
+       'v-v-straight',
+       'v-w-curly',
+       'v-x-straight',
+       'v-y-straight',
+       'v-caret-high',
+       'v-underscore-low',
+       'v-a-singlestorey',
        'v-f-straight',
        'v-g-opendoublestorey',
        'v-i-zshaped',
-       'v-j-narrow-serifed',
+       'v-j-serifed',
        'v-k-cursive',
+       'v-l-tailed',
        'v-m-normal',
        'v-r-straight',
        'v-t-standard',
        'v-u-without-bar',
-       'v-v-curly',
+       'v-v-straight',
        'v-w-straight',
        'v-x-straight',
        'v-y-cursive',
-       'v-eszet-traditional',
-       'v-lambda-straight',
-       'v-zero-dotted',
-       'v-one-base',
-       'v-three-flattop',
-       'v-seven-noserif',
-       'v-nine-closed-contour',
-       'v-tilde-low',
-       'v-asterisk-hexhigh',
-       'v-underscore-high',
-       'v-paragraph-high',
-       'v-caret-high',
        'v-brace-straight',
-       'v-numbersign-upright',
-       'v-at-threefold',
-       'v-dollar-throughcap',
-       'v-percent-rings',
-       'v-capital-i-serifed',
-#       'v-capital-j-serifed'
-#       'v-f-narrow',
-#       'v-t-narrow',
-       'v-j-narrow-serifed',
-#       'v-r-narrow'
-         ]
+       'v-tilde-low'
+]
 
 # Override default building weights
 # When buildPlans.<plan name>.weights is absent
 # All weights would built and mapped to default shape/CSS
-[buildPlans.iosevka-monofur.weights.regular]
-shape = 300                            # Weight for glyph shapes
-menu = 300
-css = 300
+[buildPlans.iosevka-fur.weights.regular]
+shape = 400                            # Weight for glyph shapes
+menu  = 400                            # Weight for menu name
+css   = 400                            # Weight for webfont CSS
 
 # Override default building slant sets
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slants would be built.
-[buildPlans.iosevka-monofur.slants]
+[buildPlans.iosevka-fur.slants]
 upright = "normal"
 #italic = "italic"

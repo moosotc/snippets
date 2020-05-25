@@ -56,7 +56,8 @@ EOF
 
 S "monospace"       "iosevka"
 S "mono"            "iosevka"
-S "iosevka"         "iosevka clam extended"
+S "consolas"        "iosevka"
+S "iosevka"         "iosevka test extended"
 S "serif"           "pt astra serif"
 
 for f in "sans" "sans-serif" "arial" "helvetica" "cnn";
@@ -76,10 +77,8 @@ IB "xo verbena"     "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9
-S "consolas"        "iosevka"
 
 S "ui"              "pt sans"
-S "monaco"          "monofur"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 

@@ -41,7 +41,7 @@ css   = 700
 # When this section is absent, all slants would be built.
 [buildPlans.iosevka-test.slants]
 upright = "normal"
-#italic = "italic"
+italic = "italic"
 
 ################################################################################
 [buildPlans.iosevka-fur]       # <iosevka-fur> is your plan name
@@ -102,4 +102,34 @@ css   = 400                            # Weight for webfont CSS
 # When this section is absent, all slants would be built.
 [buildPlans.iosevka-fur.slants]
 upright = "normal"
-#italic = "italic"
+
+[buildPlans.iosevka-fur.metric-override]
+ leading = 1250
+ winMetricAscenderPad = 0
+ winMetricDescenderPad = 0
+ powerlineScaleY = 1
+ powerlineScaleX = 1
+ powerlineShiftY = 0
+ powerlineShiftX = 0
+
+# ==============================================================================
+[buildPlans.iosevka-elia.weights.regular]
+shape = 400                            # Weight for glyph shapes
+menu  = 400                            # Weight for menu name
+css   = 400                            # Weight for webfont CSS
+
+[buildPlans.iosevka-elia.weights.bold]
+shape = 700                            # Weight for glyph shapes
+menu  = 700                            # Weight for menu name
+css   = 700                            # Weight for webfont CSS
+
+[buildPlans.iosevka-elia]
+family  = "Iosevka elia"
+design  = ["type", "v-at-fourfold", "v-j-narrow", 'v-capital-i-serifed',
+        'v-capital-j-serifed', 'v-g-singlestorey',
+        'v-r-narrow', "no-cv-ss", "no-ligation", 'v-k-cursive',
+        'v-i-italic', 'v-l-italic', 'v-y-cursive', 'v-three-flattop' ]
+
+[buildPlans.iosevka-elia.slants]
+upright = "normal"
+italic = "italic"

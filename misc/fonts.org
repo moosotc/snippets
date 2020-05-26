@@ -45,6 +45,6 @@
 ** cantarell - gnome.org
 ** opensans (sic) - arstechnica.com
 ** monaco - stackoverflow.com
-* googl fonts
+* google fonts
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date

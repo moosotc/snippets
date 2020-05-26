@@ -7,7 +7,7 @@ case "$n" in
     random)
         t=$(date +%s)
         case $((t%1)) in
-            *) f="xft:iosevka-10";;
+            *) f="xft:iosevka test extended-10";;
             # *) f="xft:mono-10";;
         esac;;
     fur) f="xft:monofur-12";;
@@ -15,4 +15,4 @@ case "$n" in
     uni) f="xft:unifont-10";;
     *)   f="xft:$1"
 esac
-exec rxvtc -fn "$f,xft:unifont" -rv +sb -g 80x24+329+87
+exec rxvtc -fn "$f,xft:symbola" -rv +sb -g 80x24+329+87

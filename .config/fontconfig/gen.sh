@@ -53,11 +53,10 @@ cat <<EOF
     <edit name="autohint"><bool>false</bool></edit>
   </match>
   <match>
-    <edit name="family" mode="append_last" binding="strong">
-      <string>mono</string>
+    <edit name="family" mode="append" binding="strong">
+      <string>symbola</string>
     </edit>
   </match>
-
 EOF
 
 S "monospace"       "iosevka"
@@ -88,7 +87,7 @@ S "ui"              "pt sans"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 
-for f in "segoe"                                \
+for f in "segoe"                                \ # images bing com
          "optima"                               \
          "candara"                              \
          "cambria"                              \

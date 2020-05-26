@@ -87,7 +87,8 @@ S "ui"              "pt sans"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 
-for f in "segoe"                                \ # images bing com
+# segoe : images bing com
+for f in "segoe"                                \
          "optima"                               \
          "candara"                              \
          "cambria"                              \

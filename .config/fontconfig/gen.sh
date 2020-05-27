@@ -62,7 +62,7 @@ EOF
 S "monospace"       "iosevka"
 S "mono"            "iosevka"
 S "consolas"        "iosevka"
-S "iosevka"         "iosevka test extended"
+S "iosevka"         "iosevka clam"
 S "serif"           "pt astra serif"
 
 for f in "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto";

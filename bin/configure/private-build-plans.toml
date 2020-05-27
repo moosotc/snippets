@@ -1,5 +1,5 @@
-[buildPlans.iosevka-test]       # <iosevka-test> is your plan name
-family = "Iosevka test"         # Font menu family name
+[buildPlans.iosevka-clam]       # <iosevka-clam> is your plan name
+family = "Iosevka Clam"         # Font menu family name
 design = [
        'sp-fixed',
        'v-three-flattop',
@@ -19,117 +19,29 @@ design = [
        'v-y-cursive',
        'v-u-with-bar',
        'v-v-curly',
-       'v-w-curly'              # w straight (-1)
-]
+       'v-w-curly' # w straight (-1)
+       ]
 
-# Override default building weights
-# When buildPlans.<plan name>.weights is absent
-# All weights would built and mapped to default shape/CSS
-[buildPlans.iosevka-test.weights.regular]
-shape = 400                            # Weight for glyph shapes
-menu  = 400                            # Weight for menu name
-css   = 400                            # Weight for webfont CSS
+[buildPlans.iosevka-clam.weights.regular]
+shape = 400  # Weight for glyph shapes.
+menu  = 400  # Weight for the font's names.
+css   = 400  # Weight for webfont CSS.
 
-[buildPlans.iosevka-test.weights.bold]
+[buildPlans.iosevka-clam.weights.bold]
 shape = 700
 menu  = 700
 css   = 700
-# end weight section
+# End weight section
 
 # Override default building slant sets
 # Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
 # When this section is absent, all slants would be built.
-[buildPlans.iosevka-test.slants]
+[buildPlans.iosevka-clam.slants]
 upright = "normal"
-italic = "italic"
+#italic = "italic"
+# End slant section
 
-################################################################################
-[buildPlans.iosevka-fur]       # <iosevka-fur> is your plan name
-family = "Iosevka fur"         # Font menu family name
-design = [
-       'sp-fixed',
-       'v-three-flattop',
-       'v-dollar-through',      # "opencap" line is too short (S like)
-       'v-l-tailed',
-       'v-i-zshaped',
-       'v-asterisk-hexhigh',
-       'v-numbersign-upright',
-       'v-zero-dotted',
-       'v-one-base',
-       'v-seven-noserif',
-       'v-nine-turned-six',
-       'v-at-fourfold',
-       'v-v-straight',
-       'v-capital-g-toothless',
-       'v-k-straight',
-       'v-capital-q-taily',
-       'v-capital-r-straight',
-       'v-v-straight',
-       'v-w-curly',
-       'v-x-straight',
-       'v-y-straight',
-       'v-caret-high',
-       'v-underscore-low',
-       'v-a-singlestorey',
-       'v-f-straight',
-       'v-g-opendoublestorey',
-       'v-i-zshaped',
-       'v-j-serifed',
-       'v-k-cursive',
-       'v-l-tailed',
-       'v-m-normal',
-       'v-r-straight',
-       'v-t-standard',
-       'v-u-without-bar',
-       'v-v-straight',
-       'v-w-straight',
-       'v-x-straight',
-       'v-y-cursive',
-       'v-brace-straight',
-       'v-tilde-low'
-]
-
-# Override default building weights
-# When buildPlans.<plan name>.weights is absent
-# All weights would built and mapped to default shape/CSS
-[buildPlans.iosevka-fur.weights.regular]
-shape = 400                            # Weight for glyph shapes
-menu  = 400                            # Weight for menu name
-css   = 400                            # Weight for webfont CSS
-
-# Override default building slant sets
-# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
-# When this section is absent, all slants would be built.
-[buildPlans.iosevka-fur.slants]
-upright = "normal"
-
-[buildPlans.iosevka-fur.metric-override]
- leading = 1250
- winMetricAscenderPad = 0
- winMetricDescenderPad = 0
- powerlineScaleY = 1
- powerlineScaleX = 1
- powerlineShiftY = 0
- powerlineShiftX = 0
-
-# ==============================================================================
-[buildPlans.iosevka-elia.weights.regular]
-shape = 400                            # Weight for glyph shapes
-menu  = 400                            # Weight for menu name
-css   = 400                            # Weight for webfont CSS
-
-[buildPlans.iosevka-elia.weights.bold]
-shape = 700                            # Weight for glyph shapes
-menu  = 700                            # Weight for menu name
-css   = 700                            # Weight for webfont CSS
-
-[buildPlans.iosevka-elia]
-family  = "Iosevka elia"
-design  = ["type", "v-at-fourfold", "v-j-narrow", 'v-capital-i-serifed',
-        'v-capital-j-serifed', 'v-g-singlestorey',
-        'v-r-narrow', "no-cv-ss", "no-ligation", 'v-k-cursive',
-        'v-i-italic', 'v-l-italic', 'v-y-cursive', 'v-three-flattop' ]
-
-[buildPlans.iosevka-elia.slants]
-upright = "normal"
-italic = "italic"
+[buildPlans.iosevka-clam.widths.normal]
+shape = 8          # Width of glyph shapes.
+menu  = 8          # Width for the font's names.
+css   = "normal"   # "font-stretch' property of webfont CSS.

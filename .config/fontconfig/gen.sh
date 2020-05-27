@@ -38,18 +38,6 @@ B() {
   </match>
 EOF
 }
-IB() {
-    cat <<EOF
-  <match target="pattern">
-    <test name="family" qual="all"><string>$1</string></test>
-    <test name="weight" compare="more_eq"><const>bold</const></test>
-    <test qual="any" name="slant"><const>italic</const></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>$2</string>
-    </edit>
-  </match>
-EOF
-}
 
 cat <<EOF
 <?xml version='1.0'?>
@@ -85,10 +73,6 @@ S "calibri"         "xo caliburn"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "verdana"         "xo verbena"
-
-I "xo tahion"       "montserrat alternates"
-IB "xo trebizond"   "fontin sans cr"
-IB "xo verbena"     "montserrat alternates"
 
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9

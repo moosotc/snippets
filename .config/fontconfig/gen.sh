@@ -38,8 +38,18 @@ B() {
   </match>
 EOF
 }
-
-IB() { I "$1" "$2"; B "$1" "$2"; }
+IB() {
+    cat <<EOF
+  <match target="pattern">
+    <test name="family" qual="all"><string>$1</string></test>
+    <test name="weight" compare="more_eq"><const>bold</const></test>
+    <test qual="any" name="slant"><const>italic</const></test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>$2</string>
+    </edit>
+  </match>
+EOF
+}
 
 cat <<EOF
 <?xml version='1.0'?>

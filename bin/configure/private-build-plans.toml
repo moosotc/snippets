@@ -1,25 +1,50 @@
 [buildPlans.iosevka-clam]       # <iosevka-clam> is your plan name
 family = "Iosevka Clam"         # Font menu family name
-design = [
-       'sp-fixed',
-       'v-three-flattop',
-       'v-i-italic',
-       'v-l-italic',
-       'v-m-shortleg',
-       'v-nine-closed-contour', # v-nine-turned-six negatively affects S9 59
-       'v-tilde-high',
-       'v-asterisk-hexhigh',
-       'v-percent-dots',
-       'v-numbersign-slanted',
-       'v-at-short',
-       'v-brace-straight',
-       'v-g-opendoublestorey',
-       'v-k-curly',
-       'v-dollar-open',         # "opencap" line is too short (S like)
-       'v-y-cursive',
-       'v-u-with-bar',
-       'v-v-curly',
-       'v-w-curly' # w straight (-1)
+design = ['sp-fixed',
+          'v-turn-v-straight',            # =
+          'v-capital-g-toothless',        # =
+          'v-capital-q-straight',         # =
+          'v-capital-r-curly',            # =
+          'v-capital-y-curly',            # =
+          'v-a-doublestorey',             # = v-a-singlestorey
+          'v-f-straight',                 # = v-f-tailed v-f-serifed
+          'v-g-opendoublestorey',         # = v-g-doublestorey v-g-singlestorey
+          'v-i-italic',                   # v-i-serifed
+          'v-j-serifed',                  # v-j-line v-j-narrow
+          'v-l-italic',                   # = v-l-hooky v-l-zshaped
+          'v-k-curly',                    # ?
+          'v-m-shortleg',                 # =, v-m-normal
+          'v-r-top-serifed',              # ?, v-r-straight
+          'v-t-standard',                 # =, v-t-cross
+          'v-u-with-bar',                 # =,v-u-without-bar
+          'v-v-straight',                 # ?
+          'v-w-curly',                    # =, v-w-straight
+          'v-x-curly',                    # ?
+          'v-y-cursive',                  # =, v-y-straight v-y-curly
+          'v-eszet-sulzbacher',           # ?
+          'v-lambda-straight',            # ?
+          'v-zero-slashed',               # =
+          'v-one-nobase',                 # = v-one-base
+          'v-three-flattop',              # = v-three-twoarcs
+          'v-seven-serifed',              # !
+          'v-nine-turned-six',            # !
+          'v-tilde-high',                 # = v-tilde-low
+          'v-asterisk-hexhigh',           # = v-asterisk-hexlow
+          'v-underscore-high',            # = v-underscore-low
+          'v-paragraph-high',             # ?
+          'v-caret-high',                 # = v-caret-low
+          'v-brace-straight',             # v-brace-curly
+          'v-numbersign-slanted',         # ! v-numbersign-upright
+          'v-at-short',                   # ! v-at-threefold
+          'v-dollar-open',                # = v-dollar-opencap
+          'v-percent-dots',               # = v-percent-rings
+          'v-lig-ltgteq-flat',            # ?
+          'v-capital-i-serifed',          # v-capital-i-straight
+          'v-capital-j-serifed',          # v-capital-j-straight
+#       v-f-narrow
+#       v-t-narrow
+#       v-j-narrow
+#       v-r-narrow
        ]
 
 [buildPlans.iosevka-clam.weights.regular]
@@ -38,7 +63,7 @@ css   = 700
 # When this section is absent, all slants would be built.
 [buildPlans.iosevka-clam.slants]
 upright = "normal"
-#italic = "italic"
+italic = "italic"
 # End slant section
 
 [buildPlans.iosevka-clam.widths.normal]

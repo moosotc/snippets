@@ -48,3 +48,4 @@
 * google fonts
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date
+* monofur http://www.identifont.com/list?1+13-.-2BT-26RB-53L-1KT-1LB-1A-6X5-1U7-1KK-1R0-1T-9Z+5.7+29TU+2+3602+2+2T0I+3+2T0D+3+2T0F+3+7OX+4+5IO+6

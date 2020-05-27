@@ -74,6 +74,12 @@ S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 S "verdana"         "xo verbena"
 
+I "xo tahion"       "pt astra sans"
+I "xo verbena"      "montserrat alternates"
+B "xo verbena"      "montserrat alternates"
+I "xo trebizond"    "fontin sans cr"
+B "xo trebizond"    "fontin sans cr"
+
 S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9
 

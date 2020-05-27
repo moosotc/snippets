@@ -52,6 +52,7 @@ cat <<EOF
   </match>
   <match>
     <edit name="family" mode="append" binding="strong">
+      <string>beograd</string>
       <string>symbola</string>
     </edit>
   </match>
@@ -110,13 +111,15 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
-    S "$f" "montserrat alternates"
+    S "$f" "xo verbena"
 done
 
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "pt serif"
+    I "$f" "merriweather"
+    B "$f" "merriweather"
+    S "$f" "symbola"
 done
 
 # used....

@@ -15,11 +15,11 @@
   ofl/alice                   - 3ze o0, (styles)
   ofl/andika                  - 3ze, S9, O0, ~-
   ofl/anonymouspro            - 3ze, life li fe
-  ofl/balsamiqsans            - 3ze, too bold, O0, l|
+  ofl/balsamiqsans            - 3ze, O0, l|, (too bold)
   ofl/bellota                 - 3ze, O0, -~
   ofl/bellotatext             - 3ze, O0, Il, -~
   ofl/comfortaa               - 3ze, O0, ~-
-  ofl/cormorantsc             - 3ze, (small' styles), ~-
+  ofl/cormorantsc             - 3ze, ~-, (small styles)
   ofl/cormorantinfant         - 3ze (old-style figures in other cormorants), -~
   ofl/cuprum                  - 3ze, S9, il, O0
   ofl/didactgothic            - 3ze, S9, O0
@@ -82,8 +82,8 @@
   ofl/alegreyasc              - ~-, (small caps)
   ofl/arsenal                 - S9, il, O0
   ofl/caveat                  - (cursive, small)
-  ofl/cormorant               - (small), ~-, l is like very tall 1 (charter like)
-  ofl/cormorantunicase        - (small, styles), ~-
+  ofl/cormorant               - ~-, l is like very tall 1 (charter like), (small)
+  ofl/cormorantunicase        - ~-, (small, styles)
   ofl/elmessiri               - O0, l1, il, (styles) (philosopher with arabic)
   ofl/ledger                  - O0, (styles)
   ofl/manrope                 - O0, Il|, ~-, (styles)
@@ -96,7 +96,7 @@
   ofl/marckscript             - cursive, (hard to read)
   ofl/philosopher             - O0, l1, il
   ofl/pressstart2p            - l1, O0, bitmap and typewriter like, (variants)
-  ofl/oranienbaum             - ~-, O0, (styles) - 3ze differs only in serifs
+  ofl/oranienbaum             - ~-, O0, 3ze differs only in serifs, (styles)
   ofl/rubik                   - O0, il
   ofl/rubikmonoone            - ~-, O0, (styles)
   ofl/ruslandisplay           - O0o (indistinguishable), (unicase)
@@ -114,7 +114,7 @@
    otherwise the font looks like regular cormorant and shares the same issues
 * cursive
 ** ofl/lobster                 - bold
-   ofl/pattaya                 - variant with thai)
+   ofl/pattaya                 - variant with thai
 ** ofl/badscript
 * get and evaluate
   https://github.com/larsenwork/monoid

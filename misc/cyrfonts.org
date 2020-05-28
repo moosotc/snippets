@@ -5,12 +5,12 @@
   ofl/ptserif                 - O0
   ofl/raleway                 - ~-
 * 3ze
-  apache/arimo                - 3ze il
-  apache/cousine              - 3ze
-  apache/opensans             - 3ze il S9
-  apache/robotomono           - 3ze
-  apache/robotoslab           - 3ze
-  apache/tinos                - 3ze
+  apache/arimo                - 3ze, il, rn
+  apache/cousine              - 3ze, 1l
+  apache/opensans             - 3ze, il, S9
+  apache/robotomono           - 3ze, 1l
+  apache/robotoslab           - 3ze, O0, 1l, (styles)
+  apache/tinos                - 3ze, IL, rn, O0
   apache/opensanscondensed    - 3ze, il, S9, (no regular)
   ofl/alice                   - 3ze o0, (styles)
   ofl/andika                  - 3ze, S9, O0, ~-
@@ -23,8 +23,6 @@
   ofl/cormorantinfant         - 3ze (old-style figures in other cormorants), -~
   ofl/cuprum                  - 3ze, S9, il, O0
   ofl/didactgothic            - 3ze, S9, O0
-**  ofl/ebgaramond              - 3ze, (small)
-   worth a try
   ofl/exo2                    - 3ze, S9, O0
   ofl/firacode                - 3ze, S9
   ofl/firamono                - 3ze, S9
@@ -32,21 +30,21 @@
   ofl/firasanscondensed       - 3ze, S9, O0
   ofl/firasansextracondensed  - 3ze, S9, O0
   ofl/forum                   - 3ze, O0, Il
-  ofl/gabriela                - 3ze, O0
+  ofl/gabriela                - 3ze, O0,(styles)
   ofl/gothica1                - 3ze, S9, O0, Il
   ofl/ibmplexmono             - 3ze, S9, -~
   ofl/ibmplexsans             - 3ze, S9, -~
   ofl/ibmplexserif            - 3ze, O0, -~
-  ofl/inter                   - 3ze, O0
+  ofl/inter                   - 3ze, O0, Il
   ofl/istokweb                - 3ze, S9, Il
   ofl/jost                    - 3ze, S9, O0, Il|
-  ofl/jura                    - 3ze, -~
+  ofl/jura                    - 3ze, -~, (styles)
   ofl/kellyslab               - 3ze, 1l, O0, (styles)
   ofl/kurale                  - 3ze, O0, (styles)
   ofl/lato                    - 3ze, S9, Il
   ofl/literata                - 3ze, O0
   ofl/lora                    - 3ze, O0
-  ofl/marmelad                - 3ze
+  ofl/marmelad                - 3ze, l|, rn, (styles)
   ofl/neucha                  - 3ze, S9, O0
   ofl/notosans                - 3ze, S9, O0
   ofl/notoserif               - 3ze, S9, O0
@@ -67,8 +65,7 @@
   ofl/seymourone              - 3ze, l1, O0, (styles)
   ofl/sourcecodepro           - 3ze, S9, ~-
   ofl/sourcesanspro           - 3ze, S9, O0
-  ofl/sourceserifpro          - 3ze
-  ofl/spectral                - 3ze
+  ofl/sourceserifpro          - 3ze, rn
   ofl/stalinistone            - 3ze, (styles)
   ofl/stalinone               - 3ze, (styles)
   ofl/tenorsans               - 3ze, il, (styles)
@@ -107,7 +104,6 @@
   ofl/spectralsc              - 1i (very similar)
   ofl/strong                  - O0 (virtually identical), (styles), (small)
   ofl/underdog                - S9, il, O0, (styles)
-  ofl/playfairdisplay         - l, 0o, ~-
   ofl/playfairdisplaysc       - 0o
   ofl/vollkorn                - ~-, 1==scI, l=1, o0
   ofl/vollkornsc              - ~-
@@ -122,3 +118,9 @@
 ** ofl/badscript
 * get and evaluate
   https://github.com/larsenwork/monoid
+* second chance (3ze)
+  while not immediately clear 3 and ze are "different enough"
+  rejected google core ones outright
+** ofl/ebgaramond              - 3ze, (small)
+** ofl/spectral                - 3ze
+** ofl/playfairdisplay         - 0o

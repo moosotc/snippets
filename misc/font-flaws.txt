@@ -27,6 +27,7 @@ ibm plex mono       - S5 3З
 ibm plex sans       - S5 3З
 ibm plex serif      - 3З
 istok web           - S5 3З
+jetbrains mono      - ~-
 jura                - 3З
 jost                - 3З Il
 lato                - S5 3З

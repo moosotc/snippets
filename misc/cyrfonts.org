@@ -119,8 +119,7 @@
 * get and evaluate
   https://github.com/larsenwork/monoid
 * second chance (3ze)
-  while not immediately clear 3 and ze are "different enough"
-  rejected google core ones outright
+  3 and ze are "different enough"
 ** ofl/ebgaramond              - 3ze, (small)
 ** ofl/spectral                - 3ze
 ** ofl/playfairdisplay         - 0o

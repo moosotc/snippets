@@ -53,3 +53,7 @@
 * candara https://screenfont.ca/fonts/today/Tiresias/
 * monoid https://larsenwork.com/monoid/
 * https://beautifulwebtype.com/
+* ==============================================================================
+* opensans vs noto
+  g - double vs single storey
+  I - plain vs serifed

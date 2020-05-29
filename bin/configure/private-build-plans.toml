@@ -16,7 +16,7 @@ design = ['sp-fixed',
           'v-m-shortleg',                 # =, v-m-normal
           'v-r-top-serifed',              # ?, v-r-straight
           'v-t-standard',                 # =, v-t-cross
-          'v-u-with-bar',                 # =,v-u-without-bar
+          'v-u-with-bar',                 # =, v-u-without-bar
           'v-v-straight',                 # ?
           'v-w-curly',                    # =, v-w-straight
           'v-x-curly',                    # ?

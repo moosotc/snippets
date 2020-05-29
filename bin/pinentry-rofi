@@ -1,4 +1,5 @@
 #!/bin/bash
+export FONTCONFIG_FILE=/home/malc/xsrc/snippets/.config/fontconfig/fonts.conf
 set -o pipefail
 test "$1" = "--display" && export DISPLAY=$2 || exec pinentry-curses
 echo OK

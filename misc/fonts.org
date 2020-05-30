@@ -57,3 +57,6 @@
 * opensans vs noto
   g - double vs single storey
   I - plain vs serifed
+* verdana
+  https://www.opennet.ru
+  https://www.linuxquestions.org

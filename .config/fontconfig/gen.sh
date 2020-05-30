@@ -76,8 +76,8 @@ S "tahoma"          "xo tahion"
 S "verdana"         "xo verbena"
 
 I "xo tahion"       "pt astra sans"
-I "xo verbena"      "montserrat alternates"
-B "xo verbena"      "montserrat alternates"
+I "xo verbena"      "noto sans"
+B "xo verbena"      "noto sans"
 I "xo trebizond"    "fontin sans cr"
 B "xo trebizond"    "fontin sans cr"
 
@@ -85,6 +85,7 @@ S "georgia"         "merriweather"
 S "segoe ui"        "raleway-v4020" # github, channel9
 
 S "ui"              "pt sans"
+S "system-ui"       "beograd"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 
@@ -111,7 +112,7 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
-    S "$f" "xo verbena"
+    S "$f" "noto sans"
 done
 
 # large x-height serif

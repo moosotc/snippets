@@ -123,8 +123,6 @@ do
     S "$f" "symbola"
 done
 
-B "gentium plus" "pt astra serif"
-
 # used....
 S "cantarell"     "beograd"
 S "comic sans ms" "Dudu Cyryllic"

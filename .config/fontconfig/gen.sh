@@ -62,14 +62,17 @@ S "monospace"       "iosevka"
 S "mono"            "iosevka"
 S "consolas"        "iosevka"
 S "iosevka"         "iosevka clam"
-S "serif"           "pt astra serif"
+
+for f in "serif" "times" "times new roman";
+do
+    S "$f" "pt astra serif"
+done
 
 for f in "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto";
 do
     S "$f" "xo oriel"
 done
 
-S "times new roman" "pt astra serif"
 S "calibri"         "xo caliburn"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
@@ -81,7 +84,7 @@ B "xo verbena"      "noto sans"
 I "xo trebizond"    "fontin sans cr"
 B "xo trebizond"    "fontin sans cr"
 
-S "georgia"         "merriweather"
+S "georgia"         "beograd"
 S "segoe ui"        "raleway-v4020" # github, channel9
 
 S "ui"              "pt sans"
@@ -89,24 +92,11 @@ S "system-ui"       "beograd"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 
-# segoe : images bing com
-for f in "segoe"                                \
-         "optima"                               \
-         "candara"                              \
-         "cambria"                              \
-         "constantia"                           \
-         "corbel"
-do
-    # learn yourself some cyrillic
-    S "$f" "beograd"
-done
-
 # large x-height sans
 for f in "bitstream vera sans"                  \
          "open sans"                            \
          "opensans"                             \
          "droid sans"                           \
-         "noto sans"                            \
          "bitstream vera sans"                  \
          "lucida"                               \
          "lucida grande"                        \
@@ -118,9 +108,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    I "$f" "merriweather"
-    B "$f" "merriweather"
-    S "$f" "symbola"
+    S "$f" "dudu cyrillic"
 done
 
 # used....

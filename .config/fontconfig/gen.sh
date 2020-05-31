@@ -105,7 +105,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif";
 do
-    S "$f" "dudu cyrillic"
+    S "$f" "cormorant infant"
 done
 
 # used....

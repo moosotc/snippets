@@ -13,11 +13,7 @@
 *** Oriel      - Arial
 *** Trebizond  - Trebuchet MS
 *** Tahion     - Tahoma
-*** Verbena    - Verdana
 *** Caliburn   - Calibri
-* Merriweather         https://ebensorkin.wordpress.com/
-  Georgia substitute
-  "larger" that pt serif
 * Iosevka              https://github.com/be5invis/Iosevka
   One monospaced font to rule them all
   https://github.com/moosotc/snippets/blob/master/bin/doiosevka
@@ -29,7 +25,7 @@
   Dingbats, symbols, emoji, language coverage
 * Montserrat           https://github.com/JulietaUla/Montserrat/
 * Monofur              http://eurofurence.net/monofur.html
-  i3bar, rofi
+  i3bar, rofi (dead link)
 * Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html
 * Raleway https://github.com/impallari/Raleway
   tilde has moved down a bit in v4 thus making the -~ ~- pair harder to read
@@ -41,6 +37,7 @@
 * locations
 ** segoe ui - github.com, channel9.msdn.com
 ** cantarell - gnome.org
+** verdana - opennet.ru, news.ycombinator.com
 ** opensans (sic) - arstechnica.com
 ** monaco - stackoverflow.com
 ** GNU Unifont          http://unifoundry.com/unifont.html
@@ -52,6 +49,9 @@
 * monofur http://www.identifont.com/list?1+13-.-2BT-26RB-53L-1KT-1LB-1A-6X5-1U7-1KK-1R0-1T-9Z+5.7+29TU+2+3602+2+2T0I+3+2T0D+3+2T0F+3+7OX+4+5IO+6
 * candara https://screenfont.ca/fonts/today/Tiresias/
 * monoid https://larsenwork.com/monoid/
+* code200x
+  https://en.wikipedia.org/wiki/Code2000
+  https://www.fontspace.com/code2003-font-f24444
 * https://beautifulwebtype.com/
 * ==============================================================================
 * opensans vs noto

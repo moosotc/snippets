@@ -102,7 +102,7 @@
   ofl/ruslandisplay           - O0o (indistinguishable), (unicase)
   ofl/scada                   - S9, il, O0, ~-
   ofl/spectralsc              - 1i (very similar)
-  ofl/strong                  - O0 (virtually identical), (styles), (small)
+  ofl/strong                  - O0, (virtually identical O0, styles, small)
   ofl/underdog                - S9, il, O0, (styles)
   ofl/playfairdisplaysc       - 0o
   ofl/vollkorn                - ~-, 1==scI, l=1, o0

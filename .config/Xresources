@@ -2,13 +2,13 @@
 Xcursor.theme: Vanilla-DMZ
 Xcursor.size: 24
 
-emacs.geometry: 80x40+867+279
+emacs.geometry: 80x40+1387+519
 emacs*menubar*font: ui-8
 emacs.background: grey80
 emacs.toolBar: 0
 emacs.fontBackend: xft
-emacs.font: iosevka malc:pixelsize=17
+emacs.font: iosevka clam:pixelsize=22
 emacs.scrollBarWidth: 7
 emacs.menuBar: 0
 
-rofi.font: monofur 18
+rofi.font: monofur 26

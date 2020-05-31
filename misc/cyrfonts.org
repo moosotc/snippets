@@ -18,7 +18,7 @@
   ofl/balsamiqsans            - 3ze, O0, l|, (too bold)
   ofl/bellota                 - 3ze, O0, -~, (no ezh)
   ofl/bellotatext             - 3ze, O0, Il, -~, (no ezh)
-  ofl/comfortaa               - 3ze, O0, ~-
+  ofl/comfortaa               - 3ze, ~-, (no ezh)
   ofl/cormorantsc             - 3ze, ~-, (small, styles)
   ofl/cormorantinfant         - 3ze, -~
   ofl/cuprum                  - 3ze, S9, il, O0

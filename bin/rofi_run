@@ -1,3 +1,4 @@
 #!/bin/sh
 
-rofi -show run -bg '#494b4b' -fg white -font 'monofur 24' "$@"
+#rofi -show run -bg '#494b4b' -fg white -font 'monofur 24' "$@"
+rofi -show run -bg '#494b4b' -fg white "$@"

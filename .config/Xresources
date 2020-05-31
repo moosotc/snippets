@@ -11,4 +11,4 @@ emacs.font: iosevka clam:pixelsize=22
 emacs.scrollBarWidth: 7
 emacs.menuBar: 0
 
-rofi.font: monofur 26
+rofi.font: monofur 24

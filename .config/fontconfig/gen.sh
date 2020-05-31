@@ -85,7 +85,6 @@ S "georgia"         "beograd"
 S "segoe ui"        "raleway-v4020" # github, channel9
 
 S "ui"              "pt sans"
-S "system-ui"       "beograd"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 

@@ -78,8 +78,6 @@ S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 
 I "xo tahion"       "pt astra sans"
-I "xo verbena"      "noto sans"
-B "xo verbena"      "noto sans"
 I "xo trebizond"    "fontin sans cr"
 B "xo trebizond"    "fontin sans cr"
 

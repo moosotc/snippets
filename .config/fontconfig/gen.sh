@@ -7,14 +7,14 @@
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
-    cat <<EOF
-  <match target="pattern">
-    <test qual="any" name="family"><string>$1</string></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>$2</string>
-    </edit>
-  </match>
-EOF
+  echo '  <match target="pattern">'
+  echo '    <test qual="any" name="family"><string>'$1'</string></test>'
+  shift
+  for f in "$@"; do
+      printf '    <edit name="family" mode="assign" binding="strong">'
+      printf '<string>%s</string></edit>\n' "$f"
+  done
+  echo '  </match>'
 }
 I() {
     cat <<EOF
@@ -76,7 +76,6 @@ done
 S "calibri"         "xo caliburn"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
-S "verdana"         "xo verbena"
 
 I "xo tahion"       "pt astra sans"
 I "xo verbena"      "noto sans"
@@ -94,6 +93,7 @@ S "linux libertine" "xo symbol"
 
 # large x-height sans
 for f in "bitstream vera sans"                  \
+         "verdana"                              \
          "open sans"                            \
          "opensans"                             \
          "droid sans"                           \
@@ -102,7 +102,7 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
-    S "$f" "noto sans"
+    S "$f" "noto sans" "montserrat alternates"
 done
 
 # large x-height serif

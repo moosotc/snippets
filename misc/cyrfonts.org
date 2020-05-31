@@ -120,6 +120,6 @@
   https://github.com/larsenwork/monoid
 * second chance (3ze)
   3 and ze are "different enough"
-** ofl/ebgaramond              - 3ze, (small)
+** ofl/ebgaramond              - 3ze, l1, (small)
 ** ofl/spectral                - 3ze
 ** ofl/playfairdisplay         - 0o

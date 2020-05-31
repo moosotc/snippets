@@ -10,13 +10,13 @@ xrdb -load $HOME/.config/Xresources
 setcapskey
 setdpi
 setpointer
-setmenusuper
+#setmenusuper
 xsetroot -solid '#63718c'
 tmux new-session -s yt -d || true
 test -p /tmp/i3.fifo || mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {
     rxvtd -q -o -f
-    i3monwins >/tmp/i3.fifo &
+#    i3monwins >/tmp/i3.fifo &
     exec i3
 } || {
     exec rxvt -fn xft:mono-10 -rv

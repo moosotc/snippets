@@ -1,0 +1,75 @@
+[buildPlans.iosevka-fur]       # <iosevka-fur> is your plan name
+family = "Iosevka Fur"         # Font menu family name
+design = ['sp-fixed',
+          'v-turn-v-straight',     # =
+          'v-capital-g-toothless', # =
+          'v-capital-q-straight',  # =
+          'v-capital-r-straight',  # =
+          'v-capital-y-straight',  # =
+          'v-a-doublestorey',      # = v-a-singlestorey
+          'v-f-straight',          # = v-f-tailed v-f-serifed
+          'v-g-opendoublestorey',  # = v-g-doublestorey v-g-singlestorey
+          'v-i-zshaped',           # v-i-serifed
+          'v-l-italic',            # = v-l-hooky v-l-zshaped
+          'v-k-straight',          # ?
+          'v-m-normal',            # =, v-m-normal
+          'v-r-straight',          # ?, v-r-straight
+          'v-t-standard',          # =, v-t-cross
+          'v-u-without-bar',       # =, v-u-without-bar
+          'v-v-straight',          # ?
+          'v-w-straight',          # =, v-w-straight
+          'v-x-straight',          # ?
+          'v-y-cursive',           # =, v-y-straight v-y-curly
+          'v-eszet-sulzbacher',    # ?
+          'v-lambda-straight',     # ?
+          'v-zero-dotted',         # =
+          'v-one-base',            # = v-one-base
+          'v-three-flattop',       # = v-three-twoarcs
+          'v-seven-noserif',       # !
+          'v-nine-turned-six',     # !
+          'v-tilde-high',          # = v-tilde-low
+          'v-asterisk-hexhigh',    # = v-asterisk-hexlow
+          'v-underscore-high',     # = v-underscore-low
+          'v-paragraph-high',      # ?
+          'v-caret-high',          # = v-caret-low
+          'v-brace-straight',      # v-brace-curly
+          'v-numbersign-upright',  # ! v-numbersign-upright
+          'v-at-fourfold',         # ! v-at-threefold
+          'v-dollar-through',      # = v-dollar-opencap
+          'v-percent-rings',       # = v-percent-rings
+          'v-lig-ltgteq-flat',     # ?
+          'v-capital-i-serifed',   # v-capital-i-straight
+          'v-capital-j-serifed',   # v-capital-j-straight
+#       v-f-narrow
+#       v-t-narrow
+#       v-j-narrow
+#       v-r-narrow
+       ]
+
+[buildPlans.iosevka-fur.weights.regular]
+shape = 350  # Weight for glyph shapes.
+menu  = 350  # Weight for the font's names.
+css   = 350  # Weight for webfont CSS.
+
+# End weight section
+
+# Override default building slant sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slants would be built.
+[buildPlans.iosevka-fur.slants]
+upright = "normal"
+italic = "italic"
+# End slant section
+
+[buildPlans.iosevka-fur.widths.normal]
+shape = 5          # Width of glyph shapes.
+menu  = 5          # Width for the font's names.
+css   = "normal"   # "font-stretch' property of webfont CSS.
+
+[buildPlans.iosevka-fur.metric-override]
+leading = 1250
+winMetricAscenderPad = 0
+winMetricDescenderPad = 0
+descenderPad = 0   # Additional line height, added to descender.
+cap = 735          # Cap height (as well as ascender).
+xheight = 200      # X-height.

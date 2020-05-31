@@ -1,7 +1,7 @@
 [buildPlans.iosevka-clam]       # <iosevka-clam> is your plan name
 family = "Iosevka Clam"         # Font menu family name
 design = [
-#  'sp-fixed',
+  'sp-fixed',
   'v-a-doublestorey',             # singlestorey doublestorey
   'v-asterisk-hexhigh',           # low high hexlow hexhigh
   'v-at-short',                   # short threefold fourfold

@@ -6,7 +6,8 @@ if len (sys.argv) < 3:
 
 a = fontforge.open(sys.argv[1])
 a.selection.select (
-    ord ('\N{LATIN SMALL LETTER EZH}')
+#    ord ('\N{LATIN SMALL LETTER EZH}')
+    ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')
 #    ord ('\N{LATIN CAPITAL LETTER YOGH}')
 #    ord ('\N{LATIN SMALL LETTER YOGH}') # descends beyond baseline
 )

@@ -1,0 +1,3 @@
+#!/bin/sh
+eval $(command -v curl &>/dev/null && echo curl -I -L || echo wget --spider) \
+     ${1-$(xclip -o)}

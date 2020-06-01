@@ -30,8 +30,8 @@ EOF
 B() {
     cat <<EOF
   <match target="pattern">
-    <test name="family"><string>$1</string></test>
-    <test name="weight" compare="more_eq"><const>bold</const></test>
+    <test qual="any" name="family"><string>$1</string></test>
+    <test qual="any" name="weight" compare="more_eq"><const>bold</const></test>
     <edit name="family" mode="assign" binding="strong">
       <string>$2</string>
     </edit>
@@ -63,7 +63,9 @@ S "mono"            "iosevka"
 S "consolas"        "iosevka"
 S "iosevka"         "iosevka clam"
 
-for f in "serif" "times" "times new roman";
+S "serif"           "alegreya"
+
+for f in "times" "times new roman";
 do
     S "$f" "pt astra serif"
 done
@@ -77,11 +79,10 @@ S "calibri"         "xo caliburn"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 
-I "xo tahion"       "pt astra sans"
+I "xo tahion"       "pt sans"
 I "xo trebizond"    "fontin sans cr"
 B "xo trebizond"    "fontin sans cr"
 
-S "georgia"         "beograd"
 S "segoe ui"        "raleway-v4020" # github, channel9
 
 S "ui"              "pt sans"
@@ -99,11 +100,11 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
-    S "$f" "noto sans" "montserrat alternates"
+    S "$f" "montserrat alternates" "noto sans"
 done
 
 # large x-height serif
-for f in "droid serif" "noto serif" "dejavu serif";
+for f in "droid serif" "georgia" "noto serif" "dejavu serif";
 do
     S "$f" "cormorant infant"
 done

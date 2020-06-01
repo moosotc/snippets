@@ -11,7 +11,9 @@ setcapskey
 setdpi
 setpointer || true
 #setmenusuper
-xsetroot -solid 'grey31'
+#xsetroot -solid '#63718c'
+xsetroot -solid '#43616c'
+#xsetroot -solid 'grey21'
 tmux new-session -s yt -d || true
 test -p /tmp/i3.fifo || mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {

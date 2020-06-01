@@ -8,10 +8,10 @@ register_user_stylesheet(
                 "span.__conkeror_hint {\n"+
                 "color: black !important;\n"+
                 "background-color: wheat !important;\n"+
-                "font-family: pt serif !important;\n"+
+                "font-family: pt astra serif !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
-                "font-size: 16px !important;\n"+
+                "font-size: 18px !important;\n"+
                 "line-height: 20px !important;\n"+
                 "}\n"
         ));

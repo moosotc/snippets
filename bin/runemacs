@@ -2,4 +2,4 @@
 set -e
 
 (xdotool search --sync --class emacs sleep 0.1 windowactivate &)
-pgrep -a -f '^emacs$' || exec emacs
+pgrep -a -f '^emacs$' || exec emacs "$@"

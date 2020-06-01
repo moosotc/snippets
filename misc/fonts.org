@@ -1,66 +1,26 @@
-* PT                   https://en.wikipedia.org/wiki/PT_Fonts
-** Sans
-  S5 - decent
-  3З - 3 with flat top
-*** usage: UI
-* PT Astra
-  https://www.paratype.ru/fonts/pt/pt-astra-serif
-  https://www.paratype.ru/fonts/pt/pt-astra-sans
-** Serif
-*** usage: llpphtml, prince - body text
-* XO                   https://fonts.myoffice.ru
-** 3З versions of
-*** Oriel      - Arial
-*** Trebizond  - Trebuchet MS
-*** Tahion     - Tahoma
-*** Caliburn   - Calibri
-* Iosevka              https://github.com/be5invis/Iosevka
-  One monospaced font to rule them all
-  https://github.com/moosotc/snippets/blob/master/bin/doiosevka
-  ** sometime in the near viscinity of Sat 16 May 2020
-  iosevka stopped building
-  (is it because i do not have otfcc authint ect on this machine?
-  hard to say not sure how to interrogate verda about real reason for failure)
-* Symbola              http://users.teilar.gr/~g1951d/
-  Dingbats, symbols, emoji, language coverage
-* Montserrat           https://github.com/JulietaUla/Montserrat/
-* Monofur              http://eurofurence.net/monofur.html
-  i3bar, rofi (dead link)
-* Fontin Sans Cyrillic http://www.exljbris.com/fontinsans.html
-* Raleway https://github.com/impallari/Raleway
-  tilde has moved down a bit in v4 thus making the -~ ~- pair harder to read
-  (hmm?) https://github.com/theleagueof/raleway
-* Beograd              https://www.fontspace.com/beograd-font-f28002
-* Dudu Cyryllic        https://www.fontspace.com/vladmas
-* ==============================================================================
-* impalari font testing page https://github.com/impallari/Font-Testing-Page
-* locations
-** segoe ui - github.com, channel9.msdn.com
+* X-was-spotted-at
+** segoe ui  - github.com, channel9.msdn.com
 ** cantarell - gnome.org
-** verdana - opennet.ru, news.ycombinator.com, www.identifont.com
-** opensans (sic) - arstechnica.com
-** monaco - stackoverflow.com
-** GNU Unifont          http://unifoundry.com/unifont.html
-  misc-fixed FTW
-** usage: universal unicode fallback
+** verdana   - opennet.ru, news.ycombinator.com, www.identifont.com
+** opensans  - arstechnica.com
+** candara   - https://screenfont.ca/fonts/today/Tiresias/
+** monaco    - stackoverflow.com
+** verdana
+  https://www.opennet.ru
+  https://www.linuxquestions.org
+  http://behdad.org/
+** georgia
+  https://www.huffpost.com/entry/donald-trump-hair-evolution_n_576025e9e4b0e4fe5143c597
+  https://www.exljbris.com/fontinsans.html
 * google fonts
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date
-* monofur http://www.identifont.com/list?1+13-.-2BT-26RB-53L-1KT-1LB-1A-6X5-1U7-1KK-1R0-1T-9Z+5.7+29TU+2+3602+2+2T0I+3+2T0D+3+2T0F+3+7OX+4+5IO+6
-* candara https://screenfont.ca/fonts/today/Tiresias/
-* monoid https://larsenwork.com/monoid/
-* code200x
-  https://en.wikipedia.org/wiki/Code2000
-  https://www.fontspace.com/code2003-font-f24444
-* https://beautifulwebtype.com/
+* links
+** monofur http://www.identifont.com/list?1+13-.-2BT-26RB-53L-1KT-1LB-1A-6X5-1U7-1KK-1R0-1T-9Z+5.7+29TU+2+3602+2+2T0I+3+2T0D+3+2T0F+3+7OX+4+5IO+6
+** https://beautifulwebtype.com/
+** impalari font testing page https://github.com/impallari/Font-Testing-Page
+
 * ==============================================================================
 * opensans vs noto
   g - double vs single storey
   I - plain vs serifed
-* verdana
-  https://www.opennet.ru
-  https://www.linuxquestions.org
-  http://behdad.org/
-* georgia
-  https://www.huffpost.com/entry/donald-trump-hair-evolution_n_576025e9e4b0e4fe5143c597
-  https://www.exljbris.com/fontinsans.html

@@ -16,7 +16,7 @@ design = [
   'v-capital-j-serifed',          # straight serifed
   'v-capital-q-straight',         # straight taily
   'v-capital-r-straight',         # straight curly
-# straight is out of place in `-y-` for instance
+# straight feels out of place
   'v-capital-y-curly',            # straight curly
   'v-caret-high',                 # low high
   'v-dollar-open',                # open opencap through

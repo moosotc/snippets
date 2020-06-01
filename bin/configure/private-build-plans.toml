@@ -30,7 +30,7 @@ design = [
   'v-m-shortleg',                 # shortleg normal
   'v-nine-open-contour',          # open-contour closed-contour
   'v-numbersign-slanted',         # upright slanted
-  'v-one-nobase',                 # nobase base
+  'v-one-base',                   # nobase base
   'v-paragraph-high',             # low high
   'v-percent-dots',               # rings dots
   'v-r-narrow',                   # narrow serifed straight top-serifed
@@ -47,7 +47,8 @@ design = [
   'v-w-curly',                    # straight curly
   'v-x-curly',                    # straight curly
   'v-y-cursive',                  # straight curly cursive
-  'v-zero-slashed',               # slashed dotted unslashed long-dotted
+  'v-zero-slashed',               # slashed dotted unslashed
+                                  # long-dotted reverse-slashed
 ]
 
 [buildPlans.iosevka-clam.weights.regular]

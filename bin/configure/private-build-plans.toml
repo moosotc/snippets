@@ -58,7 +58,8 @@ design = [
   'v-x-straight',                 # straight curly
 # straight feels out of place
   'v-y-cursive',                  # straight curly cursive
-  'v-zero-dotted',                # slashed dotted unslashed
+# dotted in gnus feels out of place
+  'v-zero-slashed',               # slashed dotted unslashed
                                   # long-dotted reverse-slashed
 ]
 

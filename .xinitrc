@@ -9,7 +9,7 @@ xset +dpms
 xrdb -load $HOME/.config/Xresources
 setcapskey
 setdpi
-setpointer
+setpointer || true
 #setmenusuper
 xsetroot -solid '#63718c'
 tmux new-session -s yt -d || true

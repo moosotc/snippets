@@ -23,7 +23,8 @@ design = [
   'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
   'v-f-straight',                 # narrow tailed serifed straight straight-tail
   'v-g-singlestorey',             # opendoublestorey doublestorey singlestorey
-  'v-i-serifed',                  # serifed hooky zshaped italic
+# serifed is too 'linear'
+  'v-i-italic',                   # serifed hooky zshaped italic
   'v-j-serifed',                  # serifed narrow
   'v-k-straight',                 # straight curly cursive
 # straight l  - too much like 1

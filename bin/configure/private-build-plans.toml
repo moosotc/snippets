@@ -3,9 +3,10 @@ family = "Iosevka Clam"         # Font menu family name
 design = [
   'sp-fixed',
   'v-a-doublestorey',             # singlestorey doublestorey
+  'v-ampersand-closed',           # open closed
   'v-asterisk-hexhigh',           # low high hexlow hexhigh
   'v-at-short',                   # short threefold fourfold
-  'v-brace-straight',             # curly straight
+  'v-brace-curly',                # curly straight
   'v-capital-g-toothless',        # tooth toothless
   'v-capital-i-serifed',          # straight serifed
   'v-capital-j-serifed',          # straight serifed
@@ -14,9 +15,9 @@ design = [
   'v-capital-y-curly',            # straight curly
   'v-caret-high',                 # low high
   'v-dollar-open',                # open opencap through
-  'v-eszet-sulzbacher',           # sulzbacher longs-s-lig
+  'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
   'v-f-narrow',                   # narrow straight tailed serifed
-  'v-f-straight',                 # tailed serifed straight
+  'v-f-straight',                 # tailed serifed straight straight-tailed
   'v-g-opendoublestorey',         # opendoublestorey doublestorey singlestorey
   'v-i-italic',                   # serifed hooky zshaped italic
   'v-j-narrow',                   # narrow serifed
@@ -25,15 +26,16 @@ design = [
   'v-l-italic',                   # hooky zshaped serifed italic line
                                   # tailed hookybottom
   'v-lambda-straight',            # straight curly
-  'v-lig-ltgteq-flat',            # flat (?)
+  'v-lig-ltgteq-flat',            # flat slanted
   'v-m-shortleg',                 # shortleg normal
-  'v-nine-turned-six',            # turned-six closed-contour
+  'v-nine-open-contour',          # open-contour closed-contour
   'v-numbersign-slanted',         # upright slanted
   'v-one-nobase',                 # nobase base
   'v-paragraph-high',             # low high
   'v-percent-dots',               # rings dots
   'v-r-narrow',                   # narrow serifed straight top-serifed
   'v-seven-serifed',              # noserif serifed
+  'v-six-open-contour',           # open-contour closed-contour
   'v-t-narrow',                   # narrow cross standard
   'v-t-standard',                 # cross standard
   'v-three-flattop',              # flattop twoarcs
@@ -45,7 +47,7 @@ design = [
   'v-w-curly',                    # straight curly
   'v-x-curly',                    # straight curly
   'v-y-cursive',                  # straight curly cursive
-  'v-zero-slashed',               # slashed dotted unslashed
+  'v-zero-slashed',               # slashed dotted unslashed long-dotted
 ]
 
 [buildPlans.iosevka-clam.weights.regular]

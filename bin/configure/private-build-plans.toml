@@ -16,11 +16,9 @@ design = [
   'v-caret-high',                 # low high
   'v-dollar-open',                # open opencap through
   'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
-  'v-f-narrow',                   # narrow straight tailed serifed
-  'v-f-straight',                 # tailed serifed straight straight-tailed
+  'v-f-straight',                 # narrow tailed serifed straight straight-tail
   'v-g-opendoublestorey',         # opendoublestorey doublestorey singlestorey
   'v-i-italic',                   # serifed hooky zshaped italic
-  'v-j-narrow',                   # narrow serifed
   'v-j-serifed',                  # serifed narrow
   'v-k-curly',                    # straight curly cursive
   'v-l-italic',                   # hooky zshaped serifed italic line
@@ -36,8 +34,7 @@ design = [
   'v-r-narrow',                   # narrow serifed straight top-serifed
   'v-seven-serifed',              # noserif serifed
   'v-six-open-contour',           # open-contour closed-contour
-  'v-t-narrow',                   # narrow cross standard
-  'v-t-standard',                 # cross standard
+  'v-t-standard',                 # narrow cross standard
   'v-three-flattop',              # flattop twoarcs
   'v-tilde-high',                 # low high
   'v-turn-v-straight',            # straight curly

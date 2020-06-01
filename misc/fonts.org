@@ -37,7 +37,7 @@
 * locations
 ** segoe ui - github.com, channel9.msdn.com
 ** cantarell - gnome.org
-** verdana - opennet.ru, news.ycombinator.com
+** verdana - opennet.ru, news.ycombinator.com, www.identifont.com
 ** opensans (sic) - arstechnica.com
 ** monaco - stackoverflow.com
 ** GNU Unifont          http://unifoundry.com/unifont.html
@@ -61,3 +61,5 @@
   https://www.opennet.ru
   https://www.linuxquestions.org
   http://behdad.org/
+* georgia
+  https://www.huffpost.com/entry/donald-trump-hair-evolution_n_576025e9e4b0e4fe5143c597

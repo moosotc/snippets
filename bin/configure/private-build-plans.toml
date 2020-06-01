@@ -52,7 +52,7 @@ design = [
   'v-tilde-high',                 # low high
   'v-turn-v-straight',            # straight curly
   'v-u-without-bar',              # with-bar without-bar
-# low descends way too far
+# low is way too low and looks out of place
   'v-underscore-high',            # low high
   'v-v-straight',                 # straight curly
 # v-w- covers both upper and lower case versions and straight captial is hmmm..

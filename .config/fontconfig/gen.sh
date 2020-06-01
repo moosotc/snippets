@@ -5,6 +5,24 @@
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
+# beograd        https://www.fontspace.com/beograd-font-f28002
+# symbola        http://users.teilar.gr/~g1951d/
+# iosevka        https://github.com/be5invis/Iosevka
+#    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
+# alegreya       https://www.huertatipografica.com/en
+# pt(astra)      https://www.paratype.ru/collections/pt/44157
+# xo             https://fonts.myoffice.ru
+# fontin sans cr https://www.exljbris.com/fontinsans.html
+# raleway        https://github.com/impallari/Raleway
+#   (original)   https://github.com/theleagueof/raleway
+# dudu cyryllic  https://www.fontspace.com/vladmas
+# code 2003      https://en.wikipedia.org/wiki/Code2000
+#                https://www.fontspace.com/code2003-font-f24444
+# montserrat     https://github.com/JulietaUla/Montserrat/
+# cormorant      https://github.com/CatharsisFonts/Cormorant
+# noto           https://www.google.com/get/noto/
+# merriweather   https://github.com/EbenSorkin/Merriweather
+
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
   echo '  <match target="pattern">'
@@ -104,13 +122,14 @@ do
 done
 
 # large x-height serif
-for f in "droid serif" "georgia" "noto serif" "dejavu serif";
+for f in "droid serif" "noto serif" "dejavu serif";
 do
     S "$f" "cormorant infant"
 done
 
 # used....
 S "cantarell"     "beograd"
+S "georgia"       "merriweather"
 S "comic sans ms" "Dudu Cyryllic"
 
 echo "</fontconfig>"

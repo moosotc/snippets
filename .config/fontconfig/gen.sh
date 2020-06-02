@@ -19,7 +19,6 @@
 # code 2003      https://en.wikipedia.org/wiki/Code2000
 #                https://www.fontspace.com/code2003-font-f24444
 # montserrat     https://github.com/JulietaUla/Montserrat/
-# cormorant      https://github.com/CatharsisFonts/Cormorant
 # noto           https://www.google.com/get/noto/
 # merriweather   https://github.com/EbenSorkin/Merriweather
 
@@ -122,14 +121,13 @@ do
 done
 
 # large x-height serif
-for f in "droid serif" "noto serif" "dejavu serif";
+for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
-    S "$f" "cormorant infant"
+    S "$f" "merriweather"
 done
 
 # used....
 S "cantarell"     "beograd"
-S "georgia"       "merriweather"
 S "comic sans ms" "Dudu Cyryllic"
 
 echo "</fontconfig>"

@@ -26,7 +26,8 @@ design = [
 # serifed is too 'linear'
   'v-i-italic',                   # serifed hooky zshaped italic
   'v-j-serifed',                  # serifed narrow
-  'v-k-straight',                 # straight curly cursive
+# straight feels narrow
+  'v-k-curly',                    # straight curly cursive
 # straight l  - too much like 1
 # hooky       - too
 # zshaped     - Il combo

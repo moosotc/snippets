@@ -20,6 +20,7 @@
 ** https://beautifulwebtype.com/
 ** impalari font testing page https://github.com/impallari/Font-Testing-Page
 
+** https://web.archive.org/web/20151208081444/https://bohoomil.com/doc/05-fonts/
 * ==============================================================================
 * opensans vs noto
   g - double vs single storey

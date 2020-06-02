@@ -53,7 +53,8 @@ design = [
   'v-three-flattop',              # flattop twoarcs
   'v-tilde-high',                 # low high
   'v-turn-v-straight',            # straight curly
-  'v-u-without-bar',              # with-bar without-bar
+# (after 2 days) it is evident that i prefer u with a bar
+  'v-u-with-bar',                 # with-bar without-bar
 # low is way too low and looks out of place
   'v-underscore-high',            # low high
   'v-v-straight',                 # straight curly

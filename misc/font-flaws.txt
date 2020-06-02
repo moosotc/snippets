@@ -8,12 +8,13 @@ bellota             - 3З ~- (*)
 bellota text        - 3З Il ~- (*)
 balsamiqsans        - 3З (too bold, decent substitute for Comic Sans?)
 caveat              - cursive only, no greek, x height too small
-comic neue          - O0 rn->m
+comic neue          - O0 rn
 comfortaa           - 3З (no italic)
 cormorant           - no greek
 cormorant garamond  - no greek
 cuprum              - S5 3З
-dejavu sans (mono)  - S5 3З
+dejavu sans         - S5 3З Il rn
+dejavu sans mono    - S5 3З
 dejavu serif        - 3З
 droid sans          - S5 3З
 ebgaramond          - 3З

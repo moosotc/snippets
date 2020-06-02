@@ -22,7 +22,7 @@ design = [
   'v-dollar-open',                # open opencap through
   'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
   'v-f-straight',                 # narrow tailed serifed straight straight-tail
-# at least opendoublestorey helps identifying it easier (not entirely rational)
+# at least opendoublestorey makes identifying it easier (not entirely rational)
   'v-g-opendoublestorey',         # opendoublestorey doublestorey singlestorey
 # serifed is too 'linear'
   'v-i-italic',                   # serifed hooky zshaped italic

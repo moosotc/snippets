@@ -21,6 +21,7 @@ ebgaramond          - 3З
 exo2                - 3З
 fira mono           - S5 3З
 firasans            - S5 3З
+fontin sans         - Il S9 o0 ~
 go                  - 3З
 go mono             - 3З
 gothic a1           - S5 3З

@@ -12,7 +12,6 @@
 # alegreya       https://www.huertatipografica.com/en
 # pt(astra)      https://www.paratype.ru/collections/pt/44157
 # xo             https://fonts.myoffice.ru
-# fontin sans cr https://www.exljbris.com/fontinsans.html
 # raleway        https://github.com/impallari/Raleway
 #   (original)   https://github.com/theleagueof/raleway
 # dudu cyryllic  https://www.fontspace.com/vladmas
@@ -96,8 +95,8 @@ S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 
 I "xo tahion"       "pt astra sans"
-I "xo trebizond"    "fontin sans cr"
-B "xo trebizond"    "fontin sans cr"
+I "xo trebizond"    "beograd"
+B "xo trebizond"    "beograd"
 
 S "segoe ui"        "raleway-v4020" # github, channel9
 

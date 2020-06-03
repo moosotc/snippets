@@ -110,7 +110,6 @@ for f in "bitstream vera sans"                  \
          "open sans"                            \
          "opensans"                             \
          "droid sans"                           \
-         "bitstream vera sans"                  \
          "lucida"                               \
          "lucida grande"                        \
          "dejavu sans"

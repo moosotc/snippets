@@ -4,3 +4,29 @@ gtk-button-images=0
 gtk-menu-images=0
 gtk-enable-event-sounds=0
 gtk-enable-input-feedback-sounds=0
+
+style "default" {
+  xthickness = 0
+  ythickness = 0
+
+  GtkScrollbar::trough-border = 0
+  GtkRange::trough-border     = 0
+  GtkRange::slider-width      = 12
+  GtkRange::stepper-size      = 0
+  GtkRange::activate-slider   = 0
+
+  GtkScrollbar::activate-slider              = 0
+  GtkScrollbar::stepper-size                 = 0
+  GtkScrollbar::has-backward-stepper         = 0
+  GtkScrollbar::has-forward-stepper          = 0
+  GtkScrollbar::min-slider-length            = 12
+
+  GtkButton::default-border         = {0, 0, 0, 0}
+  GtkButton::default-outside-border = {0, 0, 0, 0}
+  GtkButton::inner-border           = {2, 2, 2, 0}
+  bg[NORMAL] = "#606060"
+  bg[PRELIGHT] = "#808080"
+  bg[ACTIVE] = "#ACACAC"
+}
+
+widget_class "*Scrollbar" style "default"

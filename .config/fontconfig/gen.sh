@@ -18,7 +18,8 @@
 # code 2003      https://en.wikipedia.org/wiki/Code2000
 #                https://www.fontspace.com/code2003-font-f24444
 # montserrat     https://github.com/JulietaUla/Montserrat/
-# noto           https://www.google.com/get/noto/
+# noto           https://github.com/googlefonts/noto-fonts/tree/master/hinted
+#                https://www.google.com/get/noto/
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {

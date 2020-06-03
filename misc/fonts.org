@@ -25,3 +25,23 @@
 * opensans vs noto
   g - double vs single storey
   I - plain vs serifed
+* roles
+** alegreya               - serif, hints in conkeror, wiki2.css
+** beograd                - fallback
+** code2003               - pan unicode
+** dudu cyryllic          - cursive, fallback
+** iosevka clam           - pan monospace
+** montserrat alternates  - large sans
+** noto sans (3ze-ed)     - large sanses
+** pt astra sans          - italic tahoma
+** pt astra serif         - times
+** pt sans                - ui
+** pt serif               - large serifs
+** raleway                - segoe ui
+** symbola                - symbols, dingbats, emoji
+** xo caliburn            - calibri
+** xo oriel               - arial, helvetica, cnn... sans in general
+** xo symbol              - fallback
+** xo tahion              - tahoma
+** xo trebizond           - trebuchet ms
+** monofur                - wiki2.css mono

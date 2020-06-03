@@ -20,7 +20,6 @@
 #                https://www.fontspace.com/code2003-font-f24444
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://www.google.com/get/noto/
-# merriweather   https://github.com/EbenSorkin/Merriweather
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -96,7 +95,7 @@ S "calibri"         "xo caliburn"
 S "trebuchet ms"    "xo trebizond"
 S "tahoma"          "xo tahion"
 
-I "xo tahion"       "pt sans"
+I "xo tahion"       "pt astra sans"
 I "xo trebizond"    "fontin sans cr"
 B "xo trebizond"    "fontin sans cr"
 
@@ -123,7 +122,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
-    S "$f" "merriweather"
+    S "$f" "pt serif"
 done
 
 # used....

@@ -36,6 +36,7 @@ lora                - 3З (ameliorated by serifs somewhat)
 lucida bright       - 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
+merriweather        - 0o rn
 montserrat          - S5 Il
 mplus1p             - S5
 nobile              - й - regular, Й - italic
@@ -67,7 +68,7 @@ sensation           - S5 3З
 sgixgeneral         - S5 3З
 source sans pro     - S5 3З Il
 source serif pro    - 3З
-spectral            - 3З (ameliorated by serifs somewhat)
+spectral            - 3З (without fallback glyphs for 3)
 strong              - styles/weights
 tuffy               - З3Ӡ
 ubuntu              - S5 3З

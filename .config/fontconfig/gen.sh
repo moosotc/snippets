@@ -14,6 +14,7 @@
 # xo             https://fonts.myoffice.ru
 # raleway        https://github.com/impallari/Raleway
 #   (original)   https://github.com/theleagueof/raleway
+#     (google)   https://github.com/googlefonts/Raleway
 # dudu cyryllic  https://www.fontspace.com/vladmas
 # code 2003      https://en.wikipedia.org/wiki/Code2000
 #                https://www.fontspace.com/code2003-font-f24444

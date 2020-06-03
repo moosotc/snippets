@@ -43,4 +43,4 @@
 ** xo symbol              - fallback
 ** xo tahion              - tahoma
 ** xo trebizond           - trebuchet ms
-** monofur                - wiki2.css mono
+** monofur                - wiki2.css mono, i3 font

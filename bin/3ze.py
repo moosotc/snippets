@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 import sys,fontforge
 
-if len (sys.argv) < 3:
+try:
+    if sys.argv[1] == '-0':
+        o0 = True
+        sys.argv = sys.argv[1:]
+    else:
+        o0 = False
+except:
     sys.exit (1)
 
 a = fontforge.open(sys.argv[1])
@@ -17,14 +23,10 @@ b.fontname = a.fontname + "-3ze"
 b.selection.select("3")
 b.paste ()
 
-a.selection.select (ord ('\N{LATIN CAPITAL LETTER O WITH STROKE}'))
-a.copy ()
-b.selection.select("0")
-b.paste ()
+if o0:
+    a.selection.select (ord ('\N{LATIN CAPITAL LETTER O WITH STROKE}'))
+    a.copy ()
+    b.selection.select("0")
+    b.paste ()
 
 b.generate(sys.argv[2])
-
-# Local Variables:
-# compile-command: "sh 3ze.sh ~/x/fnt/git-fonts/google-fonts/ofl/balsamiqsans/*ttf"
-# End:
-# "~/x/fnt/git-fonts/google-fonts/ofl/bellota/*ttf""

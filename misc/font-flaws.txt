@@ -22,7 +22,6 @@ pt root ui          - З3 no italic
 pt sans             - S5
 pt sans caption     - S5
 pt astra serif      - italic accent diacritics seem to be shifted to the right
-raleway             - no italic (in Cyrillic subset), ~-
 roboto              - 3З Il
 rubik               - Il 0O
 sensation           - S5 3З

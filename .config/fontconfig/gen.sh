@@ -20,6 +20,7 @@
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts
 #                https://www.google.com/get/noto/
+# fira           http://mozilla.github.io/Fira
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -69,7 +70,7 @@ cat <<EOF
   <match>
     <edit name="family" mode="append" binding="strong">
       <string>beograd</string>
-      <string>symbola</string>
+      <string>code2003</string>
     </edit>
   </match>
 EOF
@@ -78,6 +79,7 @@ S "monospace"       "iosevka"
 S "mono"            "iosevka"
 S "consolas"        "iosevka"
 S "iosevka"         "iosevka clam"
+S "comic sans ms"   "Dudu Cyryllic"
 
 S "serif"           "alegreya"
 
@@ -92,12 +94,8 @@ do
 done
 
 S "calibri"         "xo caliburn"
-S "trebuchet ms"    "xo trebizond"
-S "tahoma"          "xo tahion"
-
-I "xo tahion"       "pt astra sans"
-I "xo trebizond"    "beograd"
-B "xo trebizond"    "beograd"
+S "trebuchet ms"    "fira sans"
+S "tahoma"          "noto sans semcond"
 
 S "segoe ui"        "raleway-v4020" # github, channel9
 
@@ -123,10 +121,6 @@ for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
     S "$f" "pt serif"
 done
-
-# used....
-S "cantarell"     "beograd"
-S "comic sans ms" "Dudu Cyryllic"
 
 echo "</fontconfig>"
 

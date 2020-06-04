@@ -32,7 +32,7 @@
 ** iosevka clam           - pan monospace
 ** montserrat alternates  - large sans
 ** noto sans (3ze-ed)     - large sanses
-** pt astra sans          - italic tahoma
+**  semicond (3ze-ed)     - tahoma
 ** pt astra serif         - times
 ** pt sans                - ui
 ** pt serif               - large serifs
@@ -41,6 +41,5 @@
 ** xo caliburn            - calibri
 ** xo oriel               - arial, helvetica, cnn... sans in general
 ** xo symbol              - fallback
-** xo tahion              - tahoma
-** xo trebizond           - trebuchet ms
+** fira sans (3ze-ed)     - trebuchet ms
 ** monofur                - wiki2.css mono, i3 font

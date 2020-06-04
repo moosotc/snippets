@@ -1,58 +1,21 @@
 йDINA*              - S5 3З
 RoundedMplus1c      - 3З
-alice               - styles/weights
-arsenal             - S5 Il O0 (*)
-bad script          - cursive only, no greek
 badley hand         - 3З
-bellota             - 3З ~- (*)
-bellota text        - 3З Il ~- (*)
-balsamiqsans        - 3З (too bold, decent substitute for Comic Sans?)
-caveat              - cursive only, no greek, x height too small
-comic neue          - O0 rn
-comfortaa           - 3З (no italic)
-cormorant           - no greek
-cormorant garamond  - no greek
-cuprum              - S5 3З
 dejavu sans         - S5 3З Il rn
 dejavu sans mono    - S5 3З
 dejavu serif        - 3З
-droid sans          - S5 3З
-ebgaramond          - 3З
-exo2                - 3З
-fira mono           - S5 3З
-firasans            - S5 3З
 fontin sans         - Il S9 o0 ~
 go                  - 3З
 go mono             - 3З
-gothic a1           - S5 3З
-ibm plex mono       - S5 3З
-ibm plex sans       - S5 3З
-ibm plex serif      - 3З
-istok web           - S5 3З
 jetbrains mono      - ~-
-jura                - 3З
-jost                - 3З Il
-lato                - S5 3З
-lora                - 3З (ameliorated by serifs somewhat)
 lucida bright       - 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
-merriweather        - 0o rn
-montserrat          - S5 Il
 mplus1p             - S5
 nobile              - й - regular, Й - italic
-noto sans/serif     - 3З
-nunito              - 3З
-open sans           - 3З
-oswald              - 3З Il
 oldstanardtt        - no bold-italic, 3З
-pacifico            - cursive only, no greek
 pattaya             - cursive only, no greek
-philosopher         - Diacritics (umlaut trema (e.g. ö/ü)) 0O
 phone keycaps       - 3З
-play                - S5 3З
-podkova             - S5 3З
-pressstart2p        - not ugly enough to be beautiful
 pt astra sans       - S5
 pt mono             - Il
 pt root ui          - З3 no italic
@@ -61,24 +24,13 @@ pt sans caption     - S5
 pt astra serif      - italic accent diacritics seem to be shifted to the right
 raleway             - no italic (in Cyrillic subset), ~-
 roboto              - 3З Il
-roboto mono         - 3З
-roboto slab         - 3З
 rubik               - Il 0O
-scada               - S5 Il 0O
 sensation           - S5 3З
 sgixgeneral         - S5 3З
-source sans pro     - S5 3З Il
-source serif pro    - 3З
-spectral            - 3З (without fallback glyphs for 3)
-strong              - styles/weights
 tuffy               - З3Ӡ
-ubuntu              - S5 3З
-ubuntu mono         - S5 3З
-underdog            - styles/weights
 urwgothic           - S5 3З Il
 xo tahion           - S5
 xo thames           - rn
-yanone kaffeesatz   - too condensed
 z003                - styles/weights
 
 prata               -

@@ -18,7 +18,7 @@
   ofl/balsamiqsans            - 3ze, O0, l|, (too bold)
   ofl/bellota                 - 3ze, O0, -~, (no ezh)
   ofl/bellotatext             - 3ze, O0, Il, -~, (no ezh)
-  ofl/comfortaa               - 3ze, ~-, (no ezh)
+  ofl/comfortaa               - 3ze, ~-, (no ezh), (styles)
   ofl/cormorantsc             - 3ze, ~-, (small, styles)
   ofl/cormorantinfant         - 3ze, -~
   ofl/cuprum                  - 3ze, S9, il, O0
@@ -64,7 +64,7 @@
   ofl/sansation               - 3ze, S9, O0, il
   ofl/seymourone              - 3ze, l1, O0, (styles)
   ofl/sourcecodepro           - 3ze, S9, ~-
-  ofl/sourcesanspro           - 3ze, S9, O0
+  ofl/sourcesanspro           - 3ze, S9, O0, rn
   ofl/sourceserifpro          - 3ze, rn
   ofl/stalinistone            - 3ze, (styles)
   ofl/stalinone               - 3ze, (styles)
@@ -81,7 +81,6 @@
   ofl/alegreyasanssc          - ~-, S9, o0
   ofl/alegreyasc              - ~-, (small caps)
   ofl/arsenal                 - S9, il, O0
-  ofl/caveat                  - (cursive, small)
   ofl/cormorant               - ~-, l is like very tall 1 (charter like), (small)
   ofl/cormorantunicase        - ~-, (small, styles)
   ofl/elmessiri               - O0, l1, il, (styles) (philosopher with arabic)
@@ -91,10 +90,9 @@
   ofl/ptsanscaption           - O0
   ofl/ptsansnarrow            - S9, O0
   ofl/ptserifcaption          - O0
-  ofl/pacifico                - cursive, (hard to read)
   ofl/montserrat              - S9, IL, O0
   ofl/marckscript             - cursive, (hard to read)
-  ofl/philosopher             - O0, l1, il
+  ofl/philosopher             - O0, l1, il, diacritics
   ofl/pressstart2p            - l1, O0, bitmap and typewriter like, (variants)
   ofl/oranienbaum             - ~-, O0, 3ze differs only in serifs, (styles)
   ofl/rubik                   - O0, il
@@ -109,17 +107,19 @@
   ofl/vollkornsc              - ~-
 ** ofl/yanonekaffeesatz       - il, o0, ~-, (condensed)
   too thin
-** ofl/cormorantgaramond       - (small), ~-
+** ofl/cormorantgaramond      - (small), ~-
    lambda-like cyrillic el
    otherwise the font looks like regular cormorant and shares the same issues
 * cursive
-** ofl/lobster                 - bold
+** ofl/lobster                - bold
    ofl/pattaya                 - variant with thai
-** ofl/badscript
+** ofl/badscript              -
+** ofl/caveat                 - small
+** ofl/pacifico               - hard to read
 * get and evaluate
   https://github.com/larsenwork/monoid
 * second chance (3ze)
   3 and ze are "different enough"
-** ofl/ebgaramond              - 3ze, l1, (small)
-** ofl/spectral                - 3ze
-** ofl/playfairdisplay         - 0o
+** ofl/ebgaramond             - 3ze, l1, (small)
+** ofl/spectral               - 3ze, (no ezh)
+** ofl/playfairdisplay        - 0o

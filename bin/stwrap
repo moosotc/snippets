@@ -2,17 +2,9 @@
 exec 1>&2 1>/dev/null
 pgrep rxvtd || rxvtd -q -o -f
 
-n=${1-random}
+n=${1-iosevka}
 case "$n" in
-    random)
-        t=$(date +%s)
-        case $((t%1)) in
-            *) f="xft:iosevka clam-10";;
-            # *) f="xft:mono-10";;
-        esac;;
-    fur) f="xft:monofur-12";;
-    ios) f="xft:iosevka-10";;
-    uni) f="xft:unifont-10";;
-    *)   f="xft:$1"
+    iosevka) f="iosevka-10";;
+    *)   f="$1"
 esac
-exec rxvtc -fn "$f,xft:symbola" -rv +sb -g 80x24+329+87
+exec rxvtc -fn "xft:$f,xft:code2003" -rv +sb -g 80x24+329+87

@@ -1,7 +1,8 @@
 #!/bin/sh
 set -e
 . asroot
-modprobe -r kvm-intel kvm pcspkr applesmc || true
+modprobe -r kvm-intel kvm pcspkr applesmc iwlmvm iwlwifi \
+         mac80211 cfg80211 btusb btbcm btintel btrtl bluetooth || true
 
 echo '1' >/sys/module/snd_hda_intel/parameters/power_save
 echo 'min_power' | tee >/dev/null /sys/class/scsi_host/host*/link_power_management_policy

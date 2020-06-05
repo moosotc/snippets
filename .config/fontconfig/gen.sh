@@ -80,6 +80,7 @@ S "mono"            "iosevka"
 S "consolas"        "iosevka"
 S "iosevka"         "iosevka clam"
 S "comic sans ms"   "Dudu Cyryllic"
+S "monofur"         "ubuntu mono"
 
 S "serif"           "alegreya"
 

@@ -22,7 +22,6 @@
 #                https://www.google.com/get/noto/
 # fira           https://mozilla.github.io/Fira
 # ubuntu mono    https://design.ubuntu.com/font/
-# linguisticspro https://ctan.org/pkg/linguisticspro
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -123,7 +122,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
-    S "$f" "linguisticspro"
+    S "$f" "dudu cyrillic"
 done
 
 echo "</fontconfig>"

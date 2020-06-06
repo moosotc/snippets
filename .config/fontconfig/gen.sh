@@ -122,7 +122,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
-    S "$f" "dudu cyrillic"
+    S "$f" "dudu cyryllic"
 done
 
 echo "</fontconfig>"

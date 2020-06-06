@@ -5,7 +5,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-#client.focused #4c7899 #105577 #ffffff #2e9ef4 #  #285577
+client.focused #4c7899 #105577 #dddddd #2e9ef4
 
 # i3 config file (v4)
 #

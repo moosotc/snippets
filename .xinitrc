@@ -10,10 +10,7 @@ xrdb -load $HOME/.config/Xresources
 setcapskey
 setdpi
 setpointer || true
-#setmenusuper
-#xsetroot -solid '#63718c'
-xsetroot -solid '#43616c'
-#xsetroot -solid 'grey21'
+xsetroot -solid grey21
 tmux new-session -s yt -d || true
 test -p /tmp/i3.fifo || mkfifo /tmp/i3.fifo
 test ! -e /tmp/noi3 && {

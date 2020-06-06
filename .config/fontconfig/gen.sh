@@ -119,10 +119,10 @@ do
     S "$f" "montserrat alternates" "noto sans"
 done
 
-# large x-height serif
+# https://www.quora.com/Are-there-any-Google-web-fonts-similar-to-Georgia?share=1
 for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
-    S "$f" "dudu cyryllic"
+    S "$f" "pt serif"
 done
 
 echo "</fontconfig>"

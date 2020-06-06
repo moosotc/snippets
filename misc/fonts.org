@@ -42,4 +42,4 @@
 ** xo oriel               - arial, helvetica, cnn... sans in general
 ** xo symbol              - fallback
 ** fira sans (3ze-ed)     - trebuchet ms
-** monofur                - wiki2.css mono, i3 font
+** ubuntu mono            - wiki2.css i3 font

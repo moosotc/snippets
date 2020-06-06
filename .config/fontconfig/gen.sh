@@ -20,7 +20,8 @@
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts
 #                https://www.google.com/get/noto/
-# fira           http://mozilla.github.io/Fira
+# fira           https://mozilla.github.io/Fira
+# ubuntu mono    https://design.ubuntu.com/font/
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {

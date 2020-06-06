@@ -1,9 +1,10 @@
 * in use
   ofl/ptsans                  - O0
-  ofl/merriweather            - o0
-  ofl/montserratalternates    - S9, O0
+  ofl/montserratalternates    - S9 O0
   ofl/ptserif                 - O0
   ofl/raleway                 - ~-
+  ofl/firasans                - O0 S9 3ze
+  ufl/ubuntu mono             - 3ze S9 ~-
 * 3ze
   apache/arimo                - 3ze, il, rn
   apache/cousine              - 3ze, 1l
@@ -123,3 +124,4 @@
 ** ofl/ebgaramond             - 3ze, l1, (small)
 ** ofl/spectral               - 3ze, (no ezh)
 ** ofl/playfairdisplay        - 0o
+* ofl/merriweather            - o0

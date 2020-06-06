@@ -106,7 +106,7 @@ S "ui"              "pt sans"
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 
-# large x-height sans
+# "large" sans-es
 for f in "bitstream vera sans"                  \
          "verdana"                              \
          "open sans"                            \
@@ -116,6 +116,8 @@ for f in "bitstream vera sans"                  \
          "lucida grande"                        \
          "dejavu sans"
 do
+    # a) order is important (reverse)
+    # b) montserrat alternates is bigger/larger than noto sans
     S "$f" "montserrat alternates" "noto sans"
 done
 

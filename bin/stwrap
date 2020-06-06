@@ -4,7 +4,7 @@ pgrep rxvtd || rxvtd -q -o -f
 
 n=${1-iosevka}
 case "$n" in
-    iosevka) f="xft:iosevka clam-10";;
-    *) f="$1"
+    iosevka) f="xft:iosevka clam-9";;
+    *) f="$n"
 esac
 exec rxvtc -fn "$f,xft:symbola,xft:code2003" -rv +sb -g 80x24+329+87

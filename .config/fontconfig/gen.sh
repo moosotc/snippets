@@ -22,7 +22,7 @@
 #                https://www.google.com/get/noto/
 # fira           https://mozilla.github.io/Fira
 # ubuntu mono    https://design.ubuntu.com/font/
-# heuristica     https://ctan.org/tex-archive/fonts/heuristica/
+# linguisticspro https://ctan.org/pkg/linguisticspro
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -123,7 +123,7 @@ done
 # large x-height serif
 for f in "droid serif" "noto serif" "dejavu serif" "georgia";
 do
-    S "$f" "heuristica"
+    S "$f" "linguisticspro"
 done
 
 echo "</fontconfig>"

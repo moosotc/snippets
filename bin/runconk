@@ -1,16 +1,17 @@
 #!/bin/sh
 set -e
 
+palemoon=$HOME/x/app/palemoon/palemoon
 exec 1>/dev/null 2>&1
 i3 workspace 1
 if ! pgrep palemoon; then
     (
         ulimit -s 1024
-        exec palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+        exec $palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
     ) &
 fi
 test -z "${1-}" || {
-    palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
+    $palemoon --app $HOME/x/rcs/git/conkeror2/application.ini "$@"
 }
 s="windowsize 1667 1113"
 s="windowsize 2000 1500"

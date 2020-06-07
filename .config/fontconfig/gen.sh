@@ -96,7 +96,7 @@ do
 done
 
 S "calibri"         "xo caliburn"
-S "tahoma"          "pt astra sans" # this is a lie
+S "tahoma"          "xo tahion"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 

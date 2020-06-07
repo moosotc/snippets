@@ -97,12 +97,11 @@ do
 done
 
 S "calibri"         "xo caliburn"
-S "trebuchet ms"    "fira sans"
-S "tahoma"          "noto sans semcond"
-
+S "trebuchet ms"    "pt astra sans"
+S "tahoma"          "dudu cyryllic"
 S "segoe ui"        "raleway-v4020" # github, channel9
-
 S "ui"              "pt sans"
+
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 

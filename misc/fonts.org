@@ -26,20 +26,7 @@
   I - plain vs serifed
 * roles
 ** alegreya               - serif, hints in conkeror, wiki2.css
-** beograd                - fallback
 ** code2003               - pan unicode
-** dudu cyryllic          - cursive, fallback
-** iosevka clam           - pan monospace
-** montserrat alternates  - large sans
-** noto sans (3ze-ed)     - large sanses
-**  semicond (3ze-ed)     - tahoma
-** pt astra serif         - times
-** pt sans                - ui
-** pt serif               - large serifs
-** raleway                - segoe ui
 ** symbola                - symbols, dingbats, emoji
-** xo caliburn            - calibri
 ** xo oriel               - arial, helvetica, cnn... sans in general
-** xo symbol              - fallback
-** fira sans (3ze-ed)     - trebuchet ms
 ** ubuntu mono            - wiki2.css i3 font

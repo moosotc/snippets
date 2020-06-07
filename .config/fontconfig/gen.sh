@@ -20,7 +20,6 @@
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts
 #                https://www.google.com/get/noto/
-# fira           https://mozilla.github.io/Fira
 # ubuntu mono    https://design.ubuntu.com/font/
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -97,8 +96,7 @@ do
 done
 
 S "calibri"         "xo caliburn"
-S "trebuchet ms"    "pt astra sans"
-S "tahoma"          "dudu cyryllic"
+S "tahoma"          "pt astra sans" # this is a lie
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 

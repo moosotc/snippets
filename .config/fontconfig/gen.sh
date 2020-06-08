@@ -100,9 +100,9 @@ Smany "montserrat alternates"                   \
       "bitstream vera sans"
 
 Smany "noto sans"                               \
-      "verdana"                              \
-      "open sans"                            \
-      "opensans"                             \
+      "verdana"                                 \
+      "open sans"                               \
+      "opensans"                                \
       "droid sans"
 
 # https://www.quora.com/Are-there-any-Google-web-fonts-similar-to-Georgia?share=1

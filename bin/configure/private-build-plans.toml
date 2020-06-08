@@ -1,10 +1,12 @@
+# 06cff03b7f98147f0cdc22bd567146baa4da84d2
 [buildPlans.iosevka-clam]       # <iosevka-clam> is your plan name
 family = "Iosevka Clam"         # Font menu family name
 design = [
   'sp-fixed',
 # single storey a is too much like o
   'v-a-doublestorey',             # singlestorey doublestorey
-  'v-ampersand-open',             # open closed
+  'v-ampersand-upper-open',       # closed upper-open lower-open
+                                  # et-toothed flat-top et closed
   'v-asterisk-high',              # low high hexlow hexhigh
   'v-at-short',                   # short threefold fourfold
 # srtaight { is too much like (
@@ -84,7 +86,7 @@ css   = 700
 # When this section is absent, all slants would be built.
 [buildPlans.iosevka-clam.slants]
 upright = "normal"
-italic = "italic"
+#italic = "italic"
 # End slant section
 
 [buildPlans.iosevka-clam.widths.normal]

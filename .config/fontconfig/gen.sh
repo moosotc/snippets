@@ -33,6 +33,7 @@ S() {
   done
   echo '  </match>'
 }
+Smany () { s="$1"; shift; for f; do S "$f" "$s"; done; }
 I() {
     cat <<EOF
   <match target="pattern">
@@ -76,53 +77,36 @@ cat <<EOF
   </match>
 EOF
 
-S "monospace"       "iosevka"
-S "mono"            "iosevka"
-S "consolas"        "iosevka"
-S "iosevka"         "iosevka clam"
 S "comic sans ms"   "Dudu Cyryllic"
-S "monofur"         "ubuntu mono"
-
 S "serif"           "alegreya"
 
-for f in "times" "times new roman";
-do
-    S "$f" "pt astra serif"
-done
-
-for f in "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto";
-do
-    S "$f" "xo oriel"
-done
+Smany "iosevka clam"   "iosevka" "mono" "monospace"
+Smany "pt astra serif" "times" "times new roman"
+Smany "xo oriel"       "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto"
 
 S "calibri"         "xo caliburn"
-S "tahoma"          "xo tahion"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
+S "uimono"          "ubuntu mono"
 
 # learn yourself some greek
 S "linux libertine" "xo symbol"
 
-# "large" sans-es
-for f in "bitstream vera sans"                  \
-         "verdana"                              \
-         "open sans"                            \
-         "opensans"                             \
-         "droid sans"                           \
-         "lucida"                               \
-         "lucida grande"                        \
-         "dejavu sans"
-do
-    # a) order is important (reverse)
-    # b) montserrat alternates is bigger/larger than noto sans
-    S "$f" "montserrat alternates" "noto sans"
-done
+Smany "montserrat alternates"                   \
+      "lucida"                                  \
+      "lucida grande"                           \
+      "dejavu sans"                             \
+      "bitstream vera sans"                     \
+      "bitstream vera sans"
+
+Smany "noto sans"                               \
+      "verdana"                              \
+      "open sans"                            \
+      "opensans"                             \
+      "droid sans"
 
 # https://www.quora.com/Are-there-any-Google-web-fonts-similar-to-Georgia?share=1
-for f in "droid serif" "noto serif" "dejavu serif" "georgia";
-do
-    S "$f" "pt serif"
-done
+Smany "pt serif" "droid serif" "noto serif" "dejavu serif" "georgia"
 
 echo "</fontconfig>"
 

@@ -77,7 +77,7 @@ static void setup_opengl (void)
     glViewport (0, 0, WIDTH, HEIGHT);
 }
 
-static void main_loop (long nswaps)
+static void main_loop (long div)
 {
     SDL_Event event;
     static int f;
@@ -97,18 +97,15 @@ static void main_loop (long nswaps)
                         state.win, (f=!f) * SDL_WINDOW_FULLSCREEN_DESKTOP);
                     break;
 
-                case SDLK_0:
-                    nswaps = 10;
-                    goto lbl;
-                case SDLK_1...SDLK_9:
-                    nswaps = event.key.keysym.sym - SDLK_1 + 1;
-                lbl:
+                case SDLK_UP:
+                    div += 2;
+                case SDLK_DOWN:
+                    div--;
+                    if (div <= 0) div = 1;
                     free (state.title);
                     state.title = NULL;
-                    asprintf (&state.title, "swaps=%lu", nswaps);
+                    asprintf (&state.title, "div=%ld %f", div, 1e9 / div);
                     SDL_SetWindowTitle (state.win, state.title);
-                    break;
-
                 default:
                     break;
                 }
@@ -126,7 +123,7 @@ static void main_loop (long nswaps)
             }
         }
 
-        repaint (nswaps);
+        repaint (1000000000 / div);
     }
 }
 
@@ -156,7 +153,7 @@ int main (int argc, char* argv[])
     asprintf (&state.title, "div=%ld %f", div, 1e9 / div);
     setup_sdl ();
     setup_opengl ();
-    main_loop (1000000000 / div);
+    main_loop (div);
     return 0;
 }
 /*

@@ -1,14 +1,16 @@
 /* based on the SDL tutorial code from the web, sadly I don't remember
    where from exactly */
 #define _GNU_SOURCE
+#include <err.h>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_opengl.h>
 
+#include <time.h>
 #include <stdio.h>
+#include <errno.h>
 #include <limits.h>
 #include <stdlib.h>
 #include <string.h>
-#include <errno.h>
 
 #if 1
 #define WIDTH  640
@@ -22,19 +24,35 @@ static struct {
     SDL_Window *win;
     SDL_GLContext ctx;
     char *title;
+    struct timespec ts;
 } state;
 
-static void repaint (long nswaps)
+static void repaint (long inc)
 {
     static int f;
     GLclampf c;
-    f ^= 1;
-    c = f ? 0.8 : 0.4;
-    glClearColor (c, c, c, 0);
-    for (int i = 0; i < nswaps; ++i) {
-        glClear (GL_COLOR_BUFFER_BIT);
-        SDL_GL_SwapWindow (state.win);
+
+    if (inc) {
+        if (state.ts.tv_sec == 0) {
+            if (clock_gettime (CLOCK_MONOTONIC, &state.ts))
+                err (1, "clock_gettime");
+        }
+        else {
+            if (clock_nanosleep (CLOCK_MONOTONIC, TIMER_ABSTIME,
+                                 &state.ts, NULL))
+                err (1, "clock_nanosleep");
+            state.ts.tv_nsec += inc;
+            while (state.ts.tv_nsec > 1000000000) {
+                state.ts.tv_nsec -= 1000000000;
+                state.ts.tv_sec += 1;
+            }
+        }
     }
+    f ^= 1;
+    c = f ? 0.8 : 0.6;
+    glClearColor (c, c, c, 0);
+    glClear (GL_COLOR_BUFFER_BIT);
+    SDL_GL_SwapWindow (state.win);
 }
 
 static void setup_sdl (void)
@@ -114,17 +132,17 @@ static void main_loop (long nswaps)
 
 int main (int argc, char* argv[])
 {
-    long nswaps = 1;
+    long div = 1;
 
     if (argc > 1) {
         /* following is a slightly modified example code from man strtol */
         char *endptr;
         errno = 0;     /* To distinguish success/failure after call */
-        nswaps = strtol (argv[1], &endptr, 10);
+        div = strtol (argv[1], &endptr, 10);
 
         /* Check for various possible errors */
-        if ((errno == ERANGE && (nswaps == LONG_MAX || nswaps == LONG_MIN))
-            || (errno != 0 && nswaps == 1)) {
+        if ((errno == ERANGE && (div == LONG_MAX || div == LONG_MIN))
+            || (errno != 0 && div == 1)) {
             perror ("strtol");
             exit (EXIT_FAILURE);
         }
@@ -135,10 +153,10 @@ int main (int argc, char* argv[])
         }
     }
 
-    asprintf (&state.title, "nswaps=%ld", nswaps);
+    asprintf (&state.title, "div=%ld %f", div, 1e9 / div);
     setup_sdl ();
     setup_opengl ();
-    main_loop (nswaps > 0 ? nswaps : 1);
+    main_loop (1000000000 / div);
     return 0;
 }
 /*

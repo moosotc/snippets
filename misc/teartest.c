@@ -12,19 +12,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-#if 1
 #define WIDTH  640
 #define HEIGHT 480
-#else
-#define WIDTH  2560
-#define HEIGHT 1440
-#endif
 
 static struct {
     SDL_Window *win;
     SDL_GLContext ctx;
     char *title;
     struct timespec ts;
+    int w, h;
+    int pos;
 } state;
 
 static void repaint (long inc)
@@ -49,10 +46,32 @@ static void repaint (long inc)
         }
     }
     f ^= 1;
-    c = f ? 0.8 : 0.6;
+    c = f ? 0.7 : 0.69;
     glClearColor (c, c, c, 0);
     glClear (GL_COLOR_BUFFER_BIT);
+
+    static int per = -1;
+    if (per<-state.h) per = state.h;
+    float y = ((double) (per-=40)/state.h);
+    float x = ((double) per/state.w);
+    glRectf (1, y, -1, y-.1);
+    glRectf (x, -1, x-.05,1);
     SDL_GL_SwapWindow (state.win);
+}
+
+static void setup_opengl (int w, int h)
+{
+    state.w = w;
+    state.h = h;
+#if 0
+    printf ("setup %dx%d\n", state.w, state.h);
+#endif
+    glColor3i (0, 0, 0);
+    glMatrixMode (GL_MODELVIEW);
+    glLoadIdentity ();
+    glMatrixMode (GL_PROJECTION);
+    glLoadIdentity ();
+    glViewport (0, 0, w, h);
 }
 
 static void setup_sdl (void)
@@ -70,11 +89,7 @@ static void setup_sdl (void)
     /* Quit SDL properly on exit */
     atexit (SDL_Quit);
     state.ctx = SDL_GL_CreateContext (state.win);
-}
-
-static void setup_opengl (void)
-{
-    glViewport (0, 0, WIDTH, HEIGHT);
+    setup_opengl (WIDTH, HEIGHT);
 }
 
 static void main_loop (long div)
@@ -86,6 +101,15 @@ static void main_loop (long div)
         /* process pending events */
         while (SDL_PollEvent (&event)) {
             switch (event.type) {
+            case SDL_WINDOWEVENT:
+                /* https://github.com/emscripten-core/emscripten/issues/1731 */
+                switch (event.window.event) {
+                    case SDL_WINDOWEVENT_RESIZED:
+                        setup_opengl (event.window.data1, event.window.data2);
+                        break;
+                }
+                break;
+
             case SDL_KEYUP:
                 switch (event.key.keysym.sym) {
                 case SDLK_q:
@@ -109,12 +133,6 @@ static void main_loop (long div)
                 default:
                     break;
                 }
-                break;
-
-            case SDL_WINDOWEVENT_RESIZED:
-                glViewport (0, 0,
-                            event.window.data1,
-                            event.window.data2);
                 break;
 
             case SDL_QUIT:
@@ -152,7 +170,6 @@ int main (int argc, char* argv[])
 
     asprintf (&state.title, "div=%ld %f", div, 1e9 / div);
     setup_sdl ();
-    setup_opengl ();
     main_loop (div);
     return 0;
 }

@@ -1,4 +1,5 @@
 #!/bin/sh
+# d5de79d10f895aaa8f65340adf949d28bc09b2d7
 export CC='ccache gcc'
 ./waf configure                                 \
       --disable-android                         \
@@ -14,9 +15,9 @@ export CC='ccache gcc'
       --disable-vdpau                           \
       --disable-rpi                             \
       --disable-videotoolbox-gl                 \
-      --disable-cuda-hwaccel                    \
-#      --disable-pulse
+      --disable-cuda-hwaccel
 
+#      --disable-pulse
 #      --disable-vulkan                          \
 #      --disable-vaapi-wayland                   \
 #      --disable-gl-wayland                      \

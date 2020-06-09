@@ -20,7 +20,8 @@
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts
 #                https://www.google.com/get/noto/
-# ubuntu mono    https://design.ubuntu.com/font/
+# ubuntu         https://design.ubuntu.com/font/
+# fantasque sans https://github.com/belluzj/fantasque-sans
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -87,7 +88,7 @@ Smany "xo oriel"       "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto"
 S "calibri"         "xo caliburn"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
-S "uimono"          "ubuntu mono"
+S "uimono"          "fantasque sans mono"
 
 # learn yourself some greek
 S "linux libertine" "xo symbol"

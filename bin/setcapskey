@@ -9,7 +9,3 @@ setxkbmap                                       \
 xmodmap - <<EOF
 clear Lock
 EOF
-setmenusuper
-no-left-ctrl.sh
-#keycode 22 = 10
-#    -option grp_led:scroll                      \

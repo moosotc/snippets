@@ -7,9 +7,8 @@ case "$n" in
     iosevka) f="xft:iosevka clam-9";;
     *) f="$n"
 esac
-true &&
-exec rxvtc -fn "$f,xft:symbola,xft:code2003" -rv +sb -g 80x24+329+87 ||
 
+exec rxvtc -fn "$f,xft:symbola,xft:code2003" -rv +sb -g 80x24+329+87 ||
 # https://gist.github.com/travisfw/6b022c1ca6aaa1197e12d1dfe011ba84
-exec /home/malc/x/rcs/git/alacritty/target/release/alacritty \
+exec $HOME/x/rcs/git/alacritty/target/release/alacritty \
      --config-file ~/.config/alacritty.yml -d 80 24 --position 239 87

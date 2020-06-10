@@ -1,4 +1,4 @@
-# 06cff03b7f98147f0cdc22bd567146baa4da84d2
+# cfae5d5c09f788a8099daa5a5f7d420f6cd065bf
 [buildPlans.iosevka-clam]       # <iosevka-clam> is your plan name
 family = "Iosevka Clam"         # Font menu family name
 design = [
@@ -10,7 +10,8 @@ design = [
   'v-asterisk-high',              # low high hexlow hexhigh
   'v-at-short',                   # short threefold fourfold
 # srtaight { is too much like (
-  'v-brace-curly',                # curly straight
+  'v-brace-straight',             # curly straight
+  'v-capital-b-more-asymmetric',  # standard more-asymmetric
   'v-capital-g-toothless',        # tooth toothless
 # straight I so too much like |
   'v-capital-i-serifed',          # straight serifed
@@ -48,6 +49,7 @@ design = [
   'v-one-base',                   # nobase base
   'v-paragraph-high',             # low high
   'v-percent-dots',               # rings dots
+  'v-paren-large-contour',        # normal large-contour
   'v-r-narrow',                   # narrow serifed straight top-serifed
   'v-seven-noserif',              # noserif serifed
   'v-six-open-contour',           # open-contour closed-contour

@@ -76,6 +76,8 @@
   ufl/ubuntu                  - 3ze, S9
   ufl/ubuntucondensed         - 3ze, S9, (styles)
   ufl/ubuntumono              - 3ze, S9
+* B8
+  ubuntu [mono]
 * multiple issues
   ofl/alegreya                - ~-, o0
   ofl/alegreyasans            - ~-, Il, o0

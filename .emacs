@@ -200,8 +200,13 @@
   (c-set-offset 'statement-case-open 4)
   (c-set-offset 'case-label 0))
 
+(defun my-shell-mode-hook ()
+  (define-key shell-script-mode-map [(alt \[)] 'c-insert-curly-braces)
+  (define-key shell-script-mode-map [(alt \])] 'c-insert-curly-braces2))
+
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
+(add-hook 'shell-script-mode-hook 'my-shell-mode-hook)
 
 (setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 ;;; **********************************************************************

@@ -6,7 +6,7 @@
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 # beograd        https://www.fontspace.com/beograd-font-f28002
-# symbola        http://users.teilar.gr/~g1951d/
+# symbola        https://dn-works.com/ufas/
 # iosevka        https://github.com/be5invis/Iosevka
 #    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
 # alegreya       https://www.huertatipografica.com/en
@@ -83,6 +83,7 @@ Smany "noto sans"                               \
       "opensans"                                \
       "droid sans"
 
+S "georgia" "ruslan display"
 # https://www.quora.com/Are-there-any-Google-web-fonts-similar-to-Georgia?share=1
 Smany "pt serif" "droid serif" "noto serif" "dejavu serif" "georgia"
 

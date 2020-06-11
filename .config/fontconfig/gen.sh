@@ -63,7 +63,7 @@ Smany "iosevka clam"   "iosevka" "mono" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 Smany "xo oriel"       "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto"
 
-S "calibri"         "xo caliburn"
+S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 S "uimono"          "fantasque sans mono"
@@ -83,9 +83,8 @@ Smany "noto sans"                               \
       "opensans"                                \
       "droid sans"
 
-S "georgia" "ruslan display"
-# https://www.quora.com/Are-there-any-Google-web-fonts-similar-to-Georgia?share=1
-Smany "pt serif" "droid serif" "noto serif" "dejavu serif" "georgia"
+Smany "ruslan display" "droid serif" "noto serif" "dejavu serif" "georgia"
+Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
 echo "</fontconfig>"
 

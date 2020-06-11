@@ -11,4 +11,5 @@ esac
 exec rxvtc -fn "$f,xft:symbola,xft:code2003" -rv +sb -g 80x24+329+87
 # https://gist.github.com/travisfw/6b022c1ca6aaa1197e12d1dfe011ba84
 exec $HOME/x/rcs/git/alacritty/target/release/alacritty \
-     --config-file $HOME/.config/alacritty.yml -d 80 24 --position 239 87
+     -d 80 24 --position 329 87
+     --config-file $HOME/.config/alacritty.yml

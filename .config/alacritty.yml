@@ -1,0 +1,39 @@
+font:
+  normal:
+    family: iosevka clam
+  size: 9
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+  - { mouse: Middle, action: PasteSelection }
+
+key_bindings:
+  - { key: Home, chars: "\x1b[7~", mode: ~AppCursor  }
+  - { key: End,  chars: "\x1b[8~", mode: ~AppCursor  }
+
+colors:
+  primary:
+    background: '#000000'
+    foreground: '#ffffff'
+  normal:
+    black:   '#000000'
+    red:     '#ff0000'
+    green:   '#00ff00'
+    yellow:  '#f0c674'
+    blue:    '#0000ff'
+    magenta: '#b294bb'
+    cyan:    '#8abeb7'
+    white:   '#ffffff'
+
+mouse:
+  url:
+    launcher:
+      program: alasel
+
+#window:
+#  dimensions:
+#    columns: 80
+#    lines: 24
+#  position:
+#    x: 238
+#    y: 87

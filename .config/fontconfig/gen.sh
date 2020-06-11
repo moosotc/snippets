@@ -35,28 +35,6 @@ S() {
   echo '  </match>'
 }
 Smany () { s="$1"; shift; for f; do S "$f" "$s"; done; }
-I() {
-    cat <<EOF
-  <match target="pattern">
-    <test qual="any" name="family"><string>$1</string></test>
-    <test qual="any" name="slant"><const>italic</const></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>$2</string>
-    </edit>
-  </match>
-EOF
-}
-B() {
-    cat <<EOF
-  <match target="pattern">
-    <test qual="any" name="family"><string>$1</string></test>
-    <test qual="any" name="weight" compare="more_eq"><const>bold</const></test>
-    <edit name="family" mode="assign" binding="strong">
-      <string>$2</string>
-    </edit>
-  </match>
-EOF
-}
 
 cat <<EOF
 <?xml version='1.0'?>

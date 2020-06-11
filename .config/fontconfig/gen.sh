@@ -15,7 +15,7 @@
 # raleway        https://github.com/impallari/Raleway
 #   (original)   https://github.com/theleagueof/raleway
 # dudu cyryllic  https://www.fontspace.com/vladmas
-# code 2003      https://en.wikipedia.org/wiki/Code2000
+# code2003       https://en.wikipedia.org/wiki/Code2000
 #                https://www.fontspace.com/code2003-font-f24444
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts

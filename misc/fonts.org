@@ -12,7 +12,9 @@
 ** georgia
   https://www.huffpost.com/entry/donald-trump-hair-evolution_n_576025e9e4b0e4fe5143c597
   https://www.exljbris.com/fontinsans.html
-** helvetica neue - https://glosbe.com/en/en/enforceable%20promise
+** helvetica neue
+   https://glosbe.com/en/en/enforceable%20promise
+   https://10fastfingers.com/advanced-typing-test/english
 * google fonts
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date

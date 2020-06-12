@@ -18,8 +18,8 @@
 * google fonts
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date
-* linhtt
-ps://beautifulwebtype.com/
+* links
+** https://beautifulwebtype.com/
 ** impalari font testing page https://github.com/impallari/Font-Testing-Page
 ** https://web.archive.org/web/20151208081444/https://bohoomil.com/doc/05-fonts/
 * ==============================================================================

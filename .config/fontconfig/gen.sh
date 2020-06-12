@@ -75,6 +75,7 @@ Smany "montserrat alternates"                   \
       "lucida"                                  \
       "lucida grande"                           \
       "dejavu sans"                             \
+      "helvetica neue"                          \
       "bitstream vera sans"
 
 Smany "noto sans"                               \

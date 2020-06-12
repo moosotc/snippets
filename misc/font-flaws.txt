@@ -12,7 +12,7 @@ lucida bright       - 3З
 lucida sans         - S5 3З
 lucida typewriter   - S5 3З
 mplus1p             - S5
-nobile              - й - regular, Й - italic
+nobile              - й regular - breve is way down, Й italic breve is sunken
 oldstanardtt        - no bold-italic, 3З
 pattaya             - cursive only, no greek
 phone keycaps       - 3З

@@ -90,13 +90,11 @@ Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 cat<<EOF
   <match target="pattern">
     <test name="family" compare="contains"><string>narrow</string></test>
-    <edit name="family"><string>ruslan display</string></edit>
+    <edit name="family" mode="assign_replace"><string>ruslan display</string></edit>
   </match>
   <match target="pattern">
-    <test qual="any" name="family" compare="contains">
-      <string>condensed</string>
-    </test>
-    <edit name="family"><string>dudu cyryllic</string></edit>
+    <test name="family" compare="contains"><string>condensed</string></test>
+    <edit name="family" mode="assign_replace"><string>dudu cyryllic</string></edit>
   </match>
 </fontconfig>
 EOF

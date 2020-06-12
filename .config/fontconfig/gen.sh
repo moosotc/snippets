@@ -87,7 +87,19 @@ Smany "noto sans"                               \
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif" "georgia"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
-echo "</fontconfig>"
+cat<<EOF
+  <match target="pattern">
+    <test name="family" compare="contains"><string>narrow</string></test>
+    <edit name="family"><string>ruslan display</string></edit>
+  </match>
+  <match target="pattern">
+    <test qual="any" name="family" compare="contains">
+      <string>condensed</string>
+    </test>
+    <edit name="family"><string>dudu cyryllic</string></edit>
+  </match>
+</fontconfig>
+EOF
 
 # Local Variables:
 # compile-command: "./gen.sh"

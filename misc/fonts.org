@@ -31,4 +31,4 @@
 ** code2003               - pan unicode
 ** symbola                - symbols, dingbats, emoji
 ** xo oriel               - arial, helvetica, cnn... sans in general
-** ubuntu mono            - wiki2.css i3 font
+** fantasque sans mono    - wiki2.css i3 font

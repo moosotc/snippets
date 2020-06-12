@@ -172,6 +172,7 @@ bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
 bindsym mod1+F10 $execnoid xtogglewinmax
 bindsym mod1+F11 $execnoid xtogglefs
 bindsym $mod+t $execnoid stwrap
+bindsym $mod+Shift+t $execnoid alwrap
 bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid xclip -o | xclip -i -selection clipboard
 bindsym Ctrl+Shift+grave $execnoid xclip -selection clipboard -o | xclip -i

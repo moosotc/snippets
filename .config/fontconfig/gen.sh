@@ -6,7 +6,6 @@
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 # beograd        https://www.fontspace.com/beograd-font-f28002
-# symbola        https://dn-works.com/ufas/
 # iosevka        https://github.com/be5invis/Iosevka
 #    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
 # alegreya       https://www.huertatipografica.com/en
@@ -20,8 +19,8 @@
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts
 #                https://www.google.com/get/noto/
-# ubuntu         https://design.ubuntu.com/font/
 # fantasque sans https://github.com/belluzj/fantasque-sans
+# ruslan display https://fonts.google.com/specimen/Ruslan+Display
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -56,8 +55,9 @@ cat <<EOF
   </match>
 EOF
 
-S "comic sans ms"   "Dudu Cyryllic"
+S "comic sans ms"   "dudu cyryllic"
 S "serif"           "alegreya"
+S "ubuntu"          "fantasque sans mono"
 
 Smany "iosevka clam"   "iosevka" "mono" "monospace"
 Smany "pt astra serif" "times" "times new roman"

@@ -4,7 +4,7 @@
 
 (set-fontset-font "fontset-default"
                   ;; Supplemental Symbols and Pictographs
-                  '(#x1f900 . #x1f9ff) "symbola" nil)
+                  '(#x1f900 . #x1f9ff) "code2003" nil)
 (eval '(setq inhibit-startup-echo-area-message "malc"))
 (setq compile-command "make")
 (server-start)

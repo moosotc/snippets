@@ -1,0 +1,4 @@
+#!/bin/sh
+export LD_LIBRARY_PATH=$HOME/tmp/sway/lib
+export PATH=$HOME/tmp/sway/bin/:$PATH
+exec sway ${1--c $HOME/tmp/sway/minswayconfig}

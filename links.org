@@ -12,3 +12,7 @@
 ** ddcci-tool      http://jaffar.cs.msu.su/oleg/ddcci/
 * Shell
 ** https://unix.stackexchange.com/questions/118433/quoting-within-command-substitution-in-bash
+* misc
+  PDF subsetting https://stackoverflow.com/questions/1418110/how-to-make-ghostscript-ps2pdf-stop-subsetting-fonts
+  attempted humor 'https://www.youtube.com/watch?v=kktczp-NuL0&t=100'
+  https://www.fileformat.info/info/unicode/char/20b9/browsertest.htm

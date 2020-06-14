@@ -1,7 +1,7 @@
 #!/bin/sh
 # d5de79d10f895aaa8f65340adf949d28bc09b2d7
 export CC='ccache gcc'
-./waf configure                                 \
+exec ./waf configure                            \
       --disable-android                         \
       --disable-jack                            \
       --disable-opensles                        \

@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-./configure --prefix=/net                       \
+exec ./configure --prefix=/net                  \
             --enable-256-color                  \
             --enable-combining                  \
             --enable-xft                        \

@@ -21,6 +21,7 @@
 #                https://www.google.com/get/noto/
 # fantasque sans https://github.com/belluzj/fantasque-sans
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
+# nobile         https://github.com/vernnobile/NobileFont/
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -78,7 +79,7 @@ Smany "montserrat alternates"                   \
       "helvetica neue"                          \
       "bitstream vera sans"
 
-Smany "noto sans"                               \
+Smany "nobile"                               \
       "verdana"                                 \
       "open sans"                               \
       "opensans"                                \

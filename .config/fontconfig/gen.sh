@@ -63,6 +63,7 @@ S "ubuntu"          "fantasque sans mono"
 Smany "iosevka clam"   "iosevka" "mono" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 Smany "xo oriel"       "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto"
+Smany "pt serif"       "domine"
 
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9

@@ -70,24 +70,17 @@ S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 S "uimono"          "fantasque sans mono"
 
-# learn yourself some greek
-S "linux libertine" "xo symbol"
-
 Smany "montserrat alternates"                   \
-      "lucida"                                  \
-      "lucida grande"                           \
-      "dejavu sans"                             \
-      "helvetica neue"                          \
-      "bitstream vera sans"
-
-Smany "nobile"                               \
-      "verdana"                                 \
-      "open sans"                               \
-      "opensans"                                \
-      "droid sans"
-
-Smany "ruslan display" "droid serif" "noto serif" "dejavu serif" "georgia"
+      "lucida" "lucida grande" "dejavu sans"    \
+      "helvetica neue" "bitstream vera sans"
+Smany "nobile" "verdana" "open sans" "opensans""droid sans"
+Smany "ruslan display" "droid serif" "noto serif"       \
+      "dejavu serif" "linux libertine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
+Smany "dudu cyryllic" "georgia"
+# learn yourself some greek
+Smany "xo symbol" "segoe" "arial narrow" "courier new" "arial unicode" \
+      "trebuchet" "trebuchet ms"
 
 cat<<EOF
   <match target="pattern">

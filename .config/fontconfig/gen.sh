@@ -22,6 +22,7 @@
 # fantasque sans https://github.com/belluzj/fantasque-sans
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
 # nobile         https://github.com/vernnobile/NobileFont/
+# lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -57,12 +58,13 @@ EOF
 
 S "comic sans ms"   "dudu cyryllic"
 S "serif"           "alegreya"
-S "ubuntu"          "fantasque sans mono"
 
-Smany "iosevka clam"   "iosevka" "mono" "monospace"
+Smany "fantasque sans mono" "ubuntu" "consolas"
+Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
 Smany "pt astra serif" "times" "times new roman"
 Smany "xo oriel"       "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto"
 Smany "pt serif"       "domine"
+Smany "lora"           "georgia"
 
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
@@ -72,14 +74,16 @@ S "uimono"          "fantasque sans mono"
 Smany "montserrat alternates"                   \
       "lucida" "lucida grande" "dejavu sans"    \
       "helvetica neue" "bitstream vera sans"
+
+Smany "ruslan display"                                                  \
+      "droid serif" "noto serif" "dejavu serif"
+
 Smany "nobile" "verdana" "open sans" "opensans" "droid sans"
-Smany "ruslan display" "droid serif" "noto serif"       \
-      "dejavu serif" "linux libertine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
-Smany "dudu cyryllic" "georgia"
+
 # learn yourself some greek
-Smany "xo symbol" "segoe" "arial narrow" "courier new" "arial unicode" \
-      "trebuchet" "trebuchet ms"
+Smany "xo symbol" "segoe" "arial narrow" "courier new" "arial unicode"  \
+      "trebuchet" "trebuchet ms" "linux libertine"
 
 cat<<EOF
   <match target="pattern">

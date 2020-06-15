@@ -72,7 +72,7 @@ S "uimono"          "fantasque sans mono"
 Smany "montserrat alternates"                   \
       "lucida" "lucida grande" "dejavu sans"    \
       "helvetica neue" "bitstream vera sans"
-Smany "nobile" "verdana" "open sans" "opensans""droid sans"
+Smany "nobile" "verdana" "open sans" "opensans" "droid sans"
 Smany "ruslan display" "droid serif" "noto serif"       \
       "dejavu serif" "linux libertine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"

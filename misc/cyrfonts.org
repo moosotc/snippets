@@ -44,7 +44,7 @@
   ofl/kurale                  - 3ze, O0, (styles)
   ofl/lato                    - 3ze, S9, Il
   ofl/literata                - 3ze, O0
-  ofl/lora                    - 3ze, O0
+  ofl/lora                    - 3ze, O0, '", ze has serifs, 3 has slabs
   ofl/marmelad                - 3ze, l|, rn, (styles)
   ofl/neucha                  - 3ze, S9, O0
   ofl/notosans                - 3ze, S9, O0

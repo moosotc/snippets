@@ -51,7 +51,6 @@ cat <<EOF
     <edit name="family" mode="append" binding="strong">
       <string>beograd</string>
       <string>code2003</string>
-      <string>symbola</string>
     </edit>
   </match>
 EOF

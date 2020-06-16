@@ -60,8 +60,8 @@ S "comic sans ms"   "dudu cyryllic"
 Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
 Smany "pt astra serif" "times" "times new roman" "serif"
-Smany "noto sans"      "sans" "sans-serif"
-Smany "xo oriel"       "helvetica" "arial" "cnn" "roboto"
+Smany "nobile"         "sans" "sans-serif"
+Smany "xo symbol"      "helvetica" "arial" "cnn" "roboto"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 
@@ -74,7 +74,7 @@ Smany "montserrat alternates"                   \
       "helvetica neue" "bitstream vera sans"
 
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
-Smany "nobile" "verdana" "open sans" "opensans" "droid sans"
+Smany "noto sans" "verdana" "open sans" "opensans" "droid sans"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek

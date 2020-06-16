@@ -57,17 +57,17 @@ EOF
 
 S "comic sans ms"   "dudu cyryllic"
 
-Smany "fantasque sans mono" "ubuntu" "consolas"
+Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
 Smany "pt astra serif" "times" "times new roman" "serif"
-Smany "xo oriel"       "sans" "sans-serif" "arial" "helvetica" "cnn" "roboto"
+Smany "noto sans"      "sans" "sans-serif"
+Smany "xo oriel"       "helvetica" "arial" "cnn" "roboto"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
-S "uimono"          "fantasque sans mono"
 
 Smany "montserrat alternates"                   \
       "lucida" "lucida grande" "dejavu sans"    \

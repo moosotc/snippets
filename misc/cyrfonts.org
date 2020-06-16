@@ -1,10 +1,12 @@
+* '"
+  is near universal :(
 * in use
   ofl/ptsans                  - O0
   ofl/montserratalternates    - S9 O0
   ofl/ptserif                 - O0
   ofl/raleway                 - ~-
-  ofl/firasans                - O0 S9 3ze
-  ufl/ubuntu mono             - 3ze S9 ~-
+  ofl/lora                    - 3ze (ze has serifs, 3 has slabs), O0, '"
+  ofl/notosans                - 3ze, S9 (*)
 * 3ze
   apache/arimo                - 3ze, il, rn
   apache/cousine              - 3ze, 1l
@@ -44,10 +46,8 @@
   ofl/kurale                  - 3ze, O0, (styles)
   ofl/lato                    - 3ze, S9, Il
   ofl/literata                - 3ze, O0
-  ofl/lora                    - 3ze, O0, '", ze has serifs, 3 has slabs
   ofl/marmelad                - 3ze, l|, rn, (styles)
   ofl/neucha                  - 3ze, S9, O0
-  ofl/notosans                - 3ze, S9, O0
   ofl/notoserif               - 3ze, S9, O0
   ofl/nunito                  - 3ze, S9, O0, Il
   ofl/oldstandardtt           - 3ze, O0
@@ -78,6 +78,9 @@
   ufl/ubuntumono              - 3ze, S9
 * B8
   ubuntu [mono]
+* S9
+  ofl/firasans                - O0 S9 3ze
+  ufl/ubuntu mono             - 3ze S9 ~-
 * multiple issues
   ofl/alegreya                - ~-, o0
   ofl/alegreyasans            - ~-, Il, o0

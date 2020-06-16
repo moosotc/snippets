@@ -3,6 +3,8 @@
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
 # prior to starting X to get reproducible distribution independent behavior
 
+# consistent diacritics (trema/umalut/(double) accute) are a lost cause it seems
+
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 # beograd        https://www.fontspace.com/beograd-font-f28002
@@ -23,7 +25,7 @@
 # nobile         https://github.com/vernnobile/NobileFont/
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 
-test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
+test -z $1 && exec >(${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
   echo '  <match target="pattern">'
   echo '    <test qual="any" name="family"><string>'$1'</string></test>'
@@ -60,9 +62,8 @@ S "comic sans ms"   "dudu cyryllic"
 Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
 Smany "pt astra serif" "times" "times new roman" "serif"
-Smany "nobile"         "sans" "sans-serif"
-Smany "xo symbol"      "helvetica" "arial" "cnn" "roboto"
-Smany "pt serif"       "domine"
+Smany "xo oriel"       "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif"
+Smany "pt serif"       "domine")
 Smany "lora"           "georgia"
 
 S "calibri"         "pt astra sans"

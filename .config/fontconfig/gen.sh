@@ -8,7 +8,6 @@
 # beograd        https://www.fontspace.com/beograd-font-f28002
 # iosevka        https://github.com/be5invis/Iosevka
 #    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
-# alegreya       https://www.huertatipografica.com/en
 # pt(astra)      https://www.paratype.ru/collections/pt/44157
 # xo             https://fonts.myoffice.ru
 # raleway        https://github.com/impallari/Raleway
@@ -57,7 +56,7 @@ cat <<EOF
 EOF
 
 S "comic sans ms"   "dudu cyryllic"
-S "serif"           "alegreya"
+S "serif"           "pt astra serif"
 
 Smany "fantasque sans mono" "ubuntu" "consolas"
 Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"

@@ -7,6 +7,7 @@
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
+# alegreya       https://www.huertatipografica.com/en/fonts/alegreya-ht-pro
 # beograd        https://www.fontspace.com/beograd-font-f28002
 # iosevka        https://github.com/be5invis/Iosevka
 #    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
@@ -25,7 +26,7 @@
 # nobile         https://github.com/vernnobile/NobileFont/
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 
-test -z $1 && exec >(${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
+test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
   echo '  <match target="pattern">'
   echo '    <test qual="any" name="family"><string>'$1'</string></test>'
@@ -57,14 +58,14 @@ cat <<EOF
   </match>
 EOF
 
-S "comic sans ms"   "dudu cyryllic"
-
 Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
+Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
-Smany "pt astra serif" "times" "times new roman" "serif"
+Smany "pt astra serif" "times" "times new roman"
 Smany "xo oriel"       "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif"
-Smany "pt serif"       "domine")
+Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
+Smany "alegreya"       "serif"
 
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9

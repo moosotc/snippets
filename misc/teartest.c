@@ -55,7 +55,7 @@ static void repaint (long inc)
     float y = ((double) (per-=40)/state.h);
     float x = ((double) per/state.w);
     glRectf (1, y, -1, y-.1);
-    glRectf (x, -1, x-.05,1);
+    glRectf (x, -1, x-.1,1);
     SDL_GL_SwapWindow (state.win);
 }
 

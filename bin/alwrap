@@ -3,5 +3,6 @@ exec 1>&2 1>/dev/null
 
 # https://gist.github.com/travisfw/6b022c1ca6aaa1197e12d1dfe011ba84
 exec $HOME/x/rcs/git/alacritty/target/release/alacritty \
-     -d 80 24 --position 329 87
+--position 329 87 \
      --config-file $HOME/.config/alacritty.yml
+#     -d 80 24

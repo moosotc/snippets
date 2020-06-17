@@ -12,7 +12,6 @@
 # iosevka        https://github.com/be5invis/Iosevka
 #    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
 # pt(astra)      https://www.paratype.ru/collections/pt/44157
-# xo             https://fonts.myoffice.ru
 # raleway        https://github.com/impallari/Raleway
 #   (original)   https://github.com/theleagueof/raleway
 # dudu cyryllic  https://www.fontspace.com/vladmas
@@ -62,7 +61,7 @@ Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
 Smany "pt astra serif" "times" "times new roman"
-Smany "xo oriel"       "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif"
+Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
@@ -80,7 +79,7 @@ Smany "noto sans" "verdana" "open sans" "opensans" "droid sans"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek
-Smany "xo symbol" "segoe" "arial narrow" "courier new" "arial unicode"  \
+Smany "symbol" "segoe" "arial narrow" "courier new" "arial unicode"  \
       "trebuchet" "trebuchet ms" "linux libertine"
 
 cat<<EOF

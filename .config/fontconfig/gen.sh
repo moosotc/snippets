@@ -67,6 +67,7 @@ Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
 
+S "mpvsub"          "dudu cyryllic" "noto sans"
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"

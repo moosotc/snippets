@@ -24,6 +24,7 @@
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
 # nobile         https://github.com/vernnobile/NobileFont/
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
+# symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {

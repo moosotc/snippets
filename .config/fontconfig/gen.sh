@@ -68,6 +68,7 @@ Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
 
 S "mpvsub"          "dudu cyryllic" "noto sans"
+S "mpvosd"          "pt astra sans bold"
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
@@ -87,11 +88,11 @@ Smany "symbol" "segoe" "arial narrow" "courier new" "arial unicode"  \
 cat<<EOF
   <match target="pattern">
     <test name="family" compare="contains"><string>narrow</string></test>
-    <edit name="family" mode="assign_replace"><string>ruslan display</string></edit>
+    <edit name="family" mode="assign"><string>ruslan display</string></edit>
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
-    <edit name="family" mode="assign_replace"><string>dudu cyryllic</string></edit>
+    <edit name="family" mode="assign"><string>dudu cyryllic</string></edit>
   </match>
 </fontconfig>
 EOF

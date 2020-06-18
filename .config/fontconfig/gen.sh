@@ -44,17 +44,23 @@ cat <<EOF
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
 <fontconfig>
   <dir>~/.fonts</dir>
-  <match>
+  <match target="pattern">
     <edit name="rgba"><const>none</const></edit>
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
-  </match>
-  <match>
     <edit name="family" mode="append" binding="strong">
       <string>beograd</string>
       <string>code2003</string>
     </edit>
+  </match>
+  <match target="pattern">
+    <test name="family" compare="contains"><string>narrow</string></test>
+    <edit name="family" mode="assign"><string>ruslan display</string></edit>
+  </match>
+  <match target="pattern">
+    <test name="family" compare="contains"><string>condensed</string></test>
+    <edit name="family" mode="assign"><string>dudu cyryllic</string></edit>
   </match>
 EOF
 
@@ -85,17 +91,7 @@ Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 Smany "symbol" "segoe" "arial narrow" "courier new" "arial unicode"  \
       "trebuchet" "trebuchet ms" "linux libertine"
 
-cat<<EOF
-  <match target="pattern">
-    <test name="family" compare="contains"><string>narrow</string></test>
-    <edit name="family" mode="assign"><string>ruslan display</string></edit>
-  </match>
-  <match target="pattern">
-    <test name="family" compare="contains"><string>condensed</string></test>
-    <edit name="family" mode="assign"><string>dudu cyryllic</string></edit>
-  </match>
-</fontconfig>
-EOF
+echo "</fontconfig>"
 
 # Local Variables:
 # compile-command: "./gen.sh"

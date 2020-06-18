@@ -6,9 +6,9 @@ register_user_stylesheet(
         escape(
             "@namespace url(\"http://www.w3.org/1999/xhtml\");\n" +
                 "span.__conkeror_hint {\n"+
-                "color: black !important;\n"+
-                "background-color: wheat !important;\n"+
-                "font-family: alegreya !important;\n"+
+                "color: #ffffff !important;\n"+
+                "background-color: #393b3f !important;\n"+
+                "font-family: fantasque sans mono !important;\n"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
                 "font-size: 18px !important;\n"+

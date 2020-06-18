@@ -1,8 +1,5 @@
 #!/bin/sh
+# 87e5b1aa25ea61937fa5f79668d2a46e88707c5e
 exec 1>&2 1>/dev/null
-
-# https://gist.github.com/travisfw/6b022c1ca6aaa1197e12d1dfe011ba84
 exec $HOME/x/rcs/git/alacritty/target/release/alacritty \
---position 329 87 \
      --config-file $HOME/.config/alacritty.yml
-#     -d 80 24

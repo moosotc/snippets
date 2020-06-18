@@ -29,10 +29,10 @@ mouse:
     launcher:
       program: alasel
 
-#window:
-#  dimensions:
-#    columns: 80
-#    lines: 24
+window:
+  dimensions:
+    columns: 80
+    lines: 24
 #  position:
 #    x: 238
 #    y: 87

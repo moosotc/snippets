@@ -1,11 +1,5 @@
 #!/bin/sh
-setxkbmap                                       \
-    -option ""                                  \
-    -layout us,ru                               \
-    -option grp:alt_space_toggle                \
-    -option grp_led
-#    -option caps:ctrl_modifier                  \
-
+setxkbmap -option "" -layout us,ru -option grp:caps_toggle
 xmodmap - <<EOF
 clear Lock
 EOF

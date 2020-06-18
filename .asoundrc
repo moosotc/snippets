@@ -13,6 +13,7 @@ pcm.dmixer-aux  {
 }
 
 pcm.dmixer-hdmi  {
+# for output via hdmi to work spdif1 ought to be enabled in alsamixer
   type dmix
   ipc_key 1024
   slave {

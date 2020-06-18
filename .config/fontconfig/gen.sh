@@ -49,7 +49,7 @@ cat <<EOF
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
-    <edit name="family" mode="append" binding="strong">
+    <edit name="family" mode="append" binding="weak">
       <string>beograd</string>
       <string>code2003</string>
     </edit>

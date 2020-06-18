@@ -4,8 +4,8 @@ alang=eng
 slang=eng
 sub=no
 hwdec=vaapi
-osd-font="noto sans"
-sub-font="mpvsub" #pt astra sans | montserat alternates
+osd-font="mpvosd"
+sub-font="mpvsub"
 gpu-context=x11vk
 hidpi-window-scale=no
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best

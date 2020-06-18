@@ -1,5 +1,6 @@
 quiet
 vo=gpu
+ao=alsa
 alang=eng
 slang=eng
 sub=no

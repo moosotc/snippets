@@ -156,6 +156,10 @@ bindsym XF86AudioLowerVolume $execnoid chvol -
 bindsym XF86AudioNext $execnoid chvol +
 bindsym XF86AudioPrev $execnoid chvol -
 bindsym XF86AudioMute $execnoid acycle
+
+bindsym Ctrl+$mod+Up $execnoid chvol +
+bindsym Ctrl+$mod+Down $execnoid chvol -
+
 bindsym $mod+bracketright $execnoid selwin
 bindsym $mod+bracketleft $execnoid ytwin
 bindsym $mod+grave $execnoid yt

@@ -6,13 +6,14 @@ register_user_stylesheet(
         escape(
             "@namespace url(\"http://www.w3.org/1999/xhtml\");\n" +
                 "span.__conkeror_hint {\n"+
-                "color: #ffffff !important;\n"+
-                "background-color: #393b3f !important;\n"+
-                "font-family: fantasque sans mono !important;\n"+
+                "color: black !important;\n"+
+                "background-color: wheat !important;\n"+
+                "font-family: uimono !important;\n"+
+                "font-weight: 600 !important;"+
                 "border-style: dotted !important;"+
                 "border-width: 1px !important;"+
-                "font-size: 18px !important;\n"+
-                "line-height: 20px !important;\n"+
+                "font-size: 20px !important;\n"+
+                "line-height: 22px !important;\n"+
                 "}\n"
         ));
 

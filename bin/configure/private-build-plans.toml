@@ -1,6 +1,6 @@
-# cfae5d5c09f788a8099daa5a5f7d420f6cd065bf
-[buildPlans.iosevka-clam]       # <iosevka-clam> is your plan name
-family = "Iosevka Clam"         # Font menu family name
+# 9543e23a95dc076385c0227d81fb6ec7ef38ab87
+[buildPlans.iosevka-clam]         # <iosevka-clam> is your plan name
+family = "Iosevka Clam"           # Font menu family name
 design = [
   'sp-fixed',
 # single storey a is too much like o
@@ -14,22 +14,26 @@ design = [
   'v-capital-b-more-asymmetric',  # standard more-asymmetric
   'v-capital-g-toothless',        # tooth toothless
 # straight I so too much like |
-  'v-capital-i-serifed',          # straight serifed
+  'v-capital-i-serifed',          # straight serifed narrow
 # straight version of capital J looks too "bland"
-  'v-capital-j-serifed',          # straight serifed
+  'v-capital-j-serifed',          # straight serifed narrow
   'v-capital-q-straight',         # straight taily
-  'v-capital-r-straight',         # straight curly
+  'v-capital-r-straight',         # straight curly narrow
 # straight feels out of place
   'v-capital-y-curly',            # straight curly
   'v-caret-high',                 # low high
   'v-dollar-open',                # open opencap through
   'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
   'v-f-straight',                 # narrow tailed serifed straight straight-tail
+  'v-four-closed',                # closed open semi-open
+                                  # semi-open-non-crossing
+                                  # open-non-crossing closed-non-crossing
 # at least opendoublestorey makes identifying it easier (not entirely rational)
   'v-g-opendoublestorey',         # opendoublestorey doublestorey singlestorey
 # serifed is too 'linear'
-  'v-i-italic',                   # serifed hooky zshaped italic
-  'v-j-serifed',                  # serifed narrow
+  'v-i-italic',                   # serifed hooky zshaped italic line
+                                  # hookybottom
+  'v-j-serifed',                  # serifed straight narrow
 # straight feels narrow
   'v-k-curly',                    # straight curly cursive
 # straight l  - too much like 1
@@ -38,21 +42,23 @@ design = [
 # serifed     - too easy to take for 1 with base
 # tailed      - `callable`
 # hookybottom - too much like italic i
-  'v-l-italic',                   # hooky zshaped serifed italic line
-                                  # tailed hookybottom
+# line        - source of confusion
+# italic
+  'v-l-italic',
   'v-lambda-straight',            # straight curly
   'v-lig-ltgteq-flat',            # flat slanted
   'v-m-shortleg',                 # shortleg normal
-  'v-nine-open-contour',          # open-contour closed-contour
+  'v-nine-open-contour',          # open-contour closed-contour straight-bar
   'v-numbersign-upright',         # upright slanted
 # nobase in isolation can be mistaken for l
-  'v-one-base',                   # nobase base
+  'v-one-base',                   # nobase base line
   'v-paragraph-high',             # low high
   'v-percent-dots',               # rings dots
   'v-paren-large-contour',        # normal large-contour
-  'v-r-narrow',                   # narrow serifed straight top-serifed
-  'v-seven-noserif',              # noserif serifed
-  'v-six-open-contour',           # open-contour closed-contour
+  'v-q-tailed',                   # straight tailed
+  'v-r-narrow',                   # narrow serifed standard cross top-serifed
+  'v-seven-noserif',              # noserif serifed crossbar crossbar-serifed
+  'v-six-open-contour',           # open-contour closed-contour straight-bar
   'v-t-narrow',                   # narrow cross standard
   'v-three-flattop',              # flattop twoarcs
   'v-tilde-high',                 # low high
@@ -60,13 +66,14 @@ design = [
 # (after 2 days) it is evident that i prefer u with a bar
   'v-u-with-bar',                 # with-bar without-bar
 # low is way too low and looks out of place
-  'v-underscore-high',            # low high
+  'v-underscore-high',            # low high above-baseline
   'v-v-straight',                 # straight curly
 # v-w- covers both upper and lower case versions and straight captial is hmmm..
   'v-w-curly',                    # straight curly
   'v-x-straight',                 # straight curly
 # straight feels out of place
   'v-y-cursive',                  # straight curly cursive
+  'v-z-standard',                 # standard with-crossbar
 # dotted in gnus feels out of place
   'v-zero-slashed',               # slashed dotted unslashed
                                   # long-dotted reverse-slashed
@@ -88,7 +95,7 @@ css   = 700
 # When this section is absent, all slants would be built.
 [buildPlans.iosevka-clam.slants]
 upright = "normal"
-#italic = "italic"
+italic = "italic"
 # End slant section
 
 [buildPlans.iosevka-clam.widths.normal]

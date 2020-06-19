@@ -59,6 +59,16 @@ cat <<EOF
     <edit name="family" mode="assign"><string>ruslan display</string></edit>
   </match>
   <match target="pattern">
+    <test name="family"><string>dudu cyryllic</string></test>
+    <test name="slant"><const>italic</const></test>
+    <edit name="family" mode="assign_replace"><string>noto sans</string></edit>
+  </match>
+  <match target="pattern">
+    <test name="family"><string>dudu cyryllic</string></test>
+    <test name="weight" compare="more_eq"><const>bold</const></test>
+    <edit name="family" mode="assign_replace"><string>iosevka clam</string></edit>
+  </match>
+  <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
     <edit name="family" mode="assign"><string>dudu cyryllic</string></edit>
   </match>

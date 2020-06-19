@@ -25,7 +25,7 @@ design = [
   'v-dollar-open',                # open opencap through
   'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
   'v-f-straight',                 # narrow tailed serifed straight straight-tail
-  'v-four-closed',                # closed open semi-open
+  'v-four-semi-open',             # closed open semi-open
                                   # semi-open-non-crossing
                                   # open-non-crossing closed-non-crossing
 # at least opendoublestorey makes identifying it easier (not entirely rational)

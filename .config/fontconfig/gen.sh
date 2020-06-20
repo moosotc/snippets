@@ -32,8 +32,11 @@ S() {
   echo '  <match target="pattern">'
   echo '    <test qual="any" name="family"><string>'$1'</string></test>'
   shift
+  printf '    <edit name="family" mode="assign_replace">'
+  printf '<string>%s</string></edit>\n' "$1"
+  shift
   for f in "$@"; do
-      printf '    <edit name="family" mode="assign" binding="strong">'
+      printf '    <edit name="family" mode="append">'
       printf '<string>%s</string></edit>\n' "$f"
   done
   echo '  </match>'

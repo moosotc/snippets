@@ -63,14 +63,18 @@ cat <<EOF
     <edit name="family" mode="assign"><string>ruslan display</string></edit>
   </match>
   <match target="pattern">
-    <test name="family"><string>dudu cyryllic</string></test>
+    <test name="family"><string>mpvsub</string></test>
     <test name="slant"><const>italic</const></test>
     <edit name="family" mode="assign"><string>noto sans</string></edit>
   </match>
   <match target="pattern">
-    <test name="family"><string>dudu cyryllic</string></test>
+    <test name="family"><string>mpvsub</string></test>
     <test name="weight" compare="more_eq"><const>bold</const></test>
     <edit name="family" mode="assign"><string>iosevka clam</string></edit>
+  </match>
+  <match target="pattern">
+    <test name="family"><string>mpvsub</string></test>
+    <edit name="family" mode="assign_replace"><string>dudu cyrillic</string></edit>
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
@@ -87,7 +91,6 @@ Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
 
-S "mpvsub"          "dudu cyryllic"
 S "mpvosd"          "pt root ui medium" "pt astra sans bold"
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9

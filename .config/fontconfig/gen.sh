@@ -23,6 +23,7 @@
 # fantasque sans https://github.com/belluzj/fantasque-sans
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
 # nobile         https://github.com/vernnobile/NobileFont/
+#                https://github.com/vernnobile/NobileFont/issues/3#issuecomment-643729656
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 # symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 

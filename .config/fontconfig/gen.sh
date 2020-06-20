@@ -90,14 +90,11 @@ S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 
-Smany "montserrat alternates"                   \
-      "lucida" "lucida grande" "dejavu sans"    \
-      "helvetica neue" "bitstream vera sans"
-
+Smany "montserrat alternates" "lucida" "lucida grande" "trebechet ms"
+Smany "nobile" "dejavu sans" "helvetica neue" "bitstream vera sans"
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
 Smany "noto sans" "verdana" "open sans" "opensans" "droid sans"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
-Smany "nobile" "trebuchet ms"
 
 # learn yourself some greek
 Smany "symbol" "segoe" "courier new" "linux libertine"

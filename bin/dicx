@@ -14,7 +14,7 @@ pag() {                                                 \
     | eval $rofi -l 20 -p 'Done'
 }
 
-phrase="$($src | eval $rofi -markup -p 'Lookup: ')"
+phrase="$($src | eval $rofi -markup -p 'Lookup')"
 {
     sdcv -n --utf8-input --utf8-output "$phrase"
     printf "Urban\n"

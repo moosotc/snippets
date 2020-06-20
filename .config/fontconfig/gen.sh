@@ -88,7 +88,7 @@ Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
 
 S "mpvsub"          "dudu cyryllic"
-S "mpvosd"          "pt astra sans bold"
+S "mpvosd"          "pt root ui medium" "pt astra sans bold"
 S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"

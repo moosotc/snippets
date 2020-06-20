@@ -3,8 +3,6 @@
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
 # prior to starting X to get reproducible distribution independent behavior
 
-# consistent diacritics (trema/umalut/(double) accute) are a lost cause it seems
-
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 # alegreya       https://www.huertatipografica.com/en/fonts/alegreya-ht-pro

@@ -84,7 +84,7 @@ EOF
 
 Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "dudu cyryllic"  "comic sans ms"
-Smany "iosevka clam"   "iosevka" "mono" "monospace" "sfmono-regular"
+Smany "iosevka clam"   "iosevka" "mono" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif"
 Smany "pt serif"       "domine"

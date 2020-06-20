@@ -96,10 +96,10 @@ Smany "montserrat alternates"                   \
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
 Smany "noto sans" "verdana" "open sans" "opensans" "droid sans"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
+Smany "nobile" "trebuchet ms"
 
 # learn yourself some greek
-Smany "symbol" "segoe" "arial narrow" "courier new" "arial unicode"  \
-      "trebuchet" "trebuchet ms" "linux libertine"
+Smany "symbol" "segoe" "courier new" "linux libertine"
 
 echo "</fontconfig>"
 

@@ -1,5 +1,5 @@
 #!/bin/sh
-# d5de79d10f895aaa8f65340adf949d28bc09b2d7
+# dc24a437fb9ba2485bc8c5866542bd36254410d4
 export CC='ccache gcc'
 
 conf() {

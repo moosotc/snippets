@@ -1,5 +1,5 @@
 #!/bin/sh
-# 7ab375f57488112fcdc8c286cdf74276d50887c2
+# 842bc312ade8fab82465423b22c4fbe3bee63383
 set -e
 export CC='ccache gcc'
 export CXX='ccache g++'

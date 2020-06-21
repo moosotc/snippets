@@ -28,15 +28,9 @@
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
   echo '  <match target="pattern">'
-  echo '    <test qual="any" name="family"><string>'$1'</string></test>'
-  shift
-  printf '    <edit name="family" mode="assign_replace">'
-  printf '<string>%s</string></edit>\n' "$1"
-  shift
-  for f in "$@"; do
-      printf '    <edit name="family" mode="append">'
-      printf '<string>%s</string></edit>\n' "$f"
-  done
+  echo '    <test name="family"><string>'$1'</string></test>'
+  printf '    <edit name="family" mode="assign_replace" binding="strong">'
+  echo "<string>$2</string></edit>"
   echo '  </match>'
 }
 Smany () { s="$1"; shift; for f; do S "$f" "$s"; done; }
@@ -94,7 +88,7 @@ S "calibri"         "pt astra sans"
 S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 
-Smany "montserrat alternates" "lucida" "lucida grande" "trebechet ms"
+Smany "montserrat alternates" "lucida" "lucida grande" "trebuchet ms"
 Smany "nobile" "dejavu sans" "helvetica neue" "bitstream vera sans"
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
 Smany "noto sans" "verdana" "open sans" "opensans" "droid sans"

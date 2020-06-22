@@ -1,0 +1,2 @@
+#!/bin/sh
+mpv --audio-device=alsa/hdmi:CARD=PCH,DEV=0 "$@"

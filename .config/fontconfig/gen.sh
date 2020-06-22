@@ -20,8 +20,6 @@
 #                https://www.google.com/get/noto/
 # fantasque sans https://github.com/belluzj/fantasque-sans
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
-# nobile         https://github.com/vernnobile/NobileFont/
-#                https://github.com/vernnobile/NobileFont/issues/3#issuecomment-643729656
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 # symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 
@@ -78,7 +76,7 @@ Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "mono" "monospace"
 Smany "pt astra serif" "times" "times new roman"
-Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif"
+Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif" "verdana" "open sans" "opensans" "droid sans"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
@@ -89,9 +87,8 @@ S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "trebuchet ms"
-Smany "nobile" "dejavu sans" "helvetica neue" "bitstream vera sans"
+Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
-Smany "noto sans" "verdana" "open sans" "opensans" "droid sans"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek

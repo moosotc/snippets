@@ -29,7 +29,7 @@ test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
   echo '  <match target="pattern">'
   echo '    <test name="family"><string>'$1'</string></test>'
-  printf '    <edit name="family" mode="assign_replace" binding="strong">'
+  printf '    <edit name="family" mode="assign" binding="strong">'
   echo "<string>$2</string></edit>"
   echo '  </match>'
 }

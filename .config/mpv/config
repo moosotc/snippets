@@ -10,3 +10,4 @@ sub-font="mpvsub"
 gpu-context=x11vk
 hidpi-window-scale=no
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best
+#audio-device=alsa/hdmi:CARD=PCH,DEV=0

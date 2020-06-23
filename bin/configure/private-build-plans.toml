@@ -12,6 +12,7 @@ design = [
 # srtaight { is too much like (
   'v-brace-curly',                # curly straight
   'v-capital-b-more-asymmetric',  # standard more-asymmetric
+  'v-capital-d-more-rounded',     # standard more-rounded
   'v-capital-g-toothless',        # tooth toothless
 # straight I so too much like |
   'v-capital-i-serifed',          # straight serifed narrow

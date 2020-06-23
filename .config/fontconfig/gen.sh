@@ -79,7 +79,7 @@ Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
-Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "segoe ui" "sans-serif"
+Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
 Smany "raleway-v4020"  "segoe ui" # github, channel9
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"

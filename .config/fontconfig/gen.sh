@@ -72,22 +72,25 @@ cat <<EOF
   </match>
 EOF
 
+S "sans"            "sans-serif"
+S "mono"            "monospace"
+
 Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
 Smany "dudu cyryllic"  "comic sans ms"
-Smany "iosevka clam"   "iosevka" "mono" "monospace"
+Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
-Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans" "sans-serif" "verdana" "open sans" "opensans" "droid sans"
+Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "segoe ui" "sans-serif"
+Smany "raleway-v4020"  "segoe ui" # github, channel9
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
 
 S "mpvosd"          "noto sans bold"
 S "calibri"         "pt astra sans"
-S "segoe ui"        "raleway-v4020" # github, channel9
 S "ui"              "pt sans"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "trebuchet ms"
-Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
+Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans" "sans-serfi"
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 

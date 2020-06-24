@@ -81,7 +81,7 @@ Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "opensans" "sans-serif"
-Smany "raleway-v4020"  "segoe ui" # github, channel9
+Smany "raleway-v4020"  "segoe ui"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"

@@ -75,7 +75,7 @@ EOF
 S "sans"            "sans-serif"
 S "mono"            "monospace"
 
-Smany "fantasque sans mono" "ubuntu" "consolas" "uimono"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
@@ -84,15 +84,14 @@ Smany "raleway-v4020"  "segoe ui" # github, channel9
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
+Smany "pt sans"        "ui"
+Smany "noto sans bold" "mpvosd"
+Smany "pt astra sans"  "calibri"
 
-S "mpvosd"          "noto sans bold"
-S "calibri"         "pt astra sans"
-S "ui"              "pt sans"
-
-Smany "montserrat alternates" "lucida" "lucida grande" "trebuchet ms"
+Smany "montserrat alternates" "lucida" "lucida grande"
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans" "sans-serfi"
 Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
-Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
+Smany "beograd" "constantia" "cambria" "corbel" "tahoma" "trebuchet ms"
 
 # learn yourself some greek
 Smany "symbol" "segoe" "courier new" "linux libertine"

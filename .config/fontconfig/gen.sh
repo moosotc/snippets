@@ -18,7 +18,8 @@
 # montserrat     https://github.com/JulietaUla/Montserrat/
 # noto           https://github.com/googlefonts/noto-fonts
 #                https://www.google.com/get/noto/
-# fantasque sans https://github.com/belluzj/fantasque-sans
+# fantasque sans
+#      mono      https://github.com/belluzj/fantasque-sans
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 # symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf

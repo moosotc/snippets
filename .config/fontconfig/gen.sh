@@ -76,7 +76,8 @@ EOF
 S "sans"            "sans-serif"
 S "mono"            "monospace"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas" \
+      "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
@@ -95,7 +96,7 @@ Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma" "trebuchet ms"
 
 # learn yourself some greek
-Smany "symbol" "segoe" "courier new" "linux libertine"
+Smany "symbol" "segoe" "linux libertine"
 
 echo "</fontconfig>"
 

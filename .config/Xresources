@@ -12,3 +12,4 @@ emacs.scrollBarWidth: 7
 emacs.menuBar: 0
 
 rofi.font: uimono 24
+rofi.x-terminal-emulator: stwrap

@@ -1,2 +1,2 @@
 #!/bin/sh
-rofi -show run -bg '#494b4b' -fg white "$@"
+rofi -terminal stwrap -show run -bg '#494b4b' -fg white "$@"

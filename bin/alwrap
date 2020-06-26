@@ -1,5 +1,5 @@
 #!/bin/sh
 # 87e5b1aa25ea61937fa5f79668d2a46e88707c5e
 exec 1>&2 1>/dev/null
-exec $HOME/x/rcs/git/alacritty/target/release/alacritty \
+exec $HOME/x/rcs/git/alacritty/target/debug/alacritty \
      --config-file $HOME/.config/alacritty.yml

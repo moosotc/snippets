@@ -24,7 +24,7 @@
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 # symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 # linguistics    https://www.fontsquirrel.com/fonts/linguistics-pro
-#     pro
+#     pro        https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {

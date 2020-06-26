@@ -94,7 +94,7 @@ Smany "pt astra sans"  "calibri"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "opensans"
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
-Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif"
+Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" "utopia"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma" "trebuchet ms"
 
 # learn yourself some greek

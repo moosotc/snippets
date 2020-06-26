@@ -23,6 +23,8 @@
 # ruslan display https://fonts.google.com/specimen/Ruslan+Display
 # lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
 # symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
+# linguistics    https://www.fontsquirrel.com/fonts/linguistics-pro
+#     pro
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() {
@@ -92,7 +94,7 @@ Smany "pt astra sans"  "calibri"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "opensans"
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
-Smany "ruslan display" "droid serif" "noto serif" "dejavu serif"
+Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma" "trebuchet ms"
 
 # learn yourself some greek

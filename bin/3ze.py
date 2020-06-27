@@ -12,14 +12,14 @@ except:
 
 a = fontforge.open(sys.argv[1])
 a.selection.select (
-#    ord ('\N{LATIN SMALL LETTER EZH}')
+#    ord ('\N{LATIN SMALL LETTER EZH}'
     ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')
 #    ord ('\N{LATIN CAPITAL LETTER YOGH}')
-#    ord ('\N{LATIN SMALL LETTER YOGH}') # descends beyond baseline
+#    ord ('\N{LATIN SMALL LETTER YOGH}') # descends beyond baselin
 )
+
 b = a
 a.copy ()
-b.fontname = a.fontname + "-3ze"
 b.selection.select("3")
 b.paste ()
 
@@ -29,4 +29,4 @@ if o0:
     b.selection.select("0")
     b.paste ()
 
-b.generate(sys.argv[2])
+b.generate(sys.argv[2], flags=("opentype"))

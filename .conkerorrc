@@ -119,6 +119,7 @@ define_key(content_buffer_normal_keymap, ",", "follow");
 define_key(content_buffer_normal_keymap, ".", "copy");
 define_key(content_buffer_normal_keymap, "f", "");
 
+define_key(content_buffer_normal_keymap, "S-insert", "paste-url-new-buffer");
 define_key(content_buffer_normal_keymap, "C-l", "find-url");
 
 // selection searches

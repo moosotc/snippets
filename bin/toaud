@@ -1,0 +1,14 @@
+#!/bin/sh
+# usage:
+# sh toaud destination-directory files to audify
+set -eu
+
+d="$1"
+shift
+for p in "$@"; do
+    test -f "$p" || continue
+    f=$(basename "$p")
+    echo "$f"
+    ffmpeg -y -hide_banner -loglevel panic -i "$p" -strict -2 \
+      -vn -c:a copy "$d/${f%%.*}.mkv"
+done

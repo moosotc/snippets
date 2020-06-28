@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
 # prior to starting X to get reproducible distribution independent behavior
 

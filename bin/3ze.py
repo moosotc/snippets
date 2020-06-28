@@ -29,4 +29,4 @@ if o0:
     b.selection.select("0")
     b.paste ()
 
-b.generate(sys.argv[2], flags=("opentype"))
+b.generate(sys.argv[2], flags=("opentype", "no-hints"))

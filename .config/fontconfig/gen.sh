@@ -29,7 +29,9 @@ set -e
 #     pro        https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
 # Mongolian
 #  Writing       http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-
+# Tibetan Machine
+#   Unicode      http://www.pktc.org/pktc/download.htm#FreeTypeface
+#                http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
 <match target="pattern">

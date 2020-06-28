@@ -84,9 +84,12 @@ Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 
-h="pragmatica"
-h="noto sans"
-Smany "$h"             "helvetica" "arial" "cnn" "roboto" "sans-serif"
+id &>/dev/null malc || true && (
+  Smany "helvetica lt com" "arial" "helvetica"
+  Smany "pragmatica" "arial" "helvetica"
+)
+
+Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
 Smany "raleway-v4020"  "segoe ui"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"

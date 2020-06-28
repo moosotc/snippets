@@ -27,14 +27,16 @@ set -e
 # symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 # linguistics    https://www.fontsquirrel.com/fonts/linguistics-pro
 #     pro        https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
+# Mongolian      http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
+#  Writing
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
-S() {
-  echo '  <match target="pattern">'
-  echo '    <test name="family"><string>'$1'</string></test>'
-  printf '    <edit name="family" mode="assign" binding="strong">'
-  echo "<string>$2</string></edit>"
-  echo '  </match>'
+S() { cat<<EOF
+<match target="pattern">
+  <test name="family"><string>$1</string></test>
+  <edit name="family" mode="assign" binding="strong"><string>$2</string></edit>
+</match>
+EOF
 }
 Smany () { s="$1"; shift; for f; do S "$f" "$s"; done; }
 
@@ -79,6 +81,8 @@ EOF
 
 S "sans"            "sans-serif"
 S "mono"            "monospace"
+S "cursive"         "Mongolian Writing"
+S "fantasy"         "beograd"
 
 Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas" "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"

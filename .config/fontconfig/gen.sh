@@ -83,7 +83,9 @@ Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas" \
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
-Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
+
+fc-match pragmatica || h="noto sans" && h="pragmatica"
+Smany "$h"             "helvetica" "arial" "cnn" "roboto" "sans-serif"
 Smany "raleway-v4020"  "segoe ui"
 Smany "pt serif"       "domine"
 Smany "lora"           "georgia"

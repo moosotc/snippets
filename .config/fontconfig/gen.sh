@@ -83,7 +83,7 @@ Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 
-! id &>/dev/null malc || (
+! test $(whoami) = malc || (
   Smany "helvetica lt com" "arial" "helvetica"
   Smany "pragmatica" "arial" "helvetica"
 )

@@ -78,13 +78,12 @@ EOF
 S "sans"            "sans-serif"
 S "mono"            "monospace"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas" \
-      "courier" "courier new"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas" "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 Smany "pt astra serif" "times" "times new roman"
 
-id &>/dev/null malc || true && (
+! id &>/dev/null malc || (
   Smany "helvetica lt com" "arial" "helvetica"
   Smany "pragmatica" "arial" "helvetica"
 )

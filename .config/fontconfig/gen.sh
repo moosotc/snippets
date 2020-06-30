@@ -81,6 +81,7 @@ cat <<EOF
 EOF
 
 S "sans"            "sans-serif"
+S "serif"           "alegreya"
 S "mono"            "monospace"
 S "cursive"         "Mongolian Writing"
 S "fantasy"         "beograd"
@@ -92,7 +93,6 @@ Smany "iosevka clam"   "iosevka" "monospace"
 Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
 Smany "raleway-v4020"  "segoe ui"
 Smany "lora"           "georgia"
-Smany "alegreya"       "serif"
 
 Smany "pt serif"       "domine"
 Smany "pt astra serif" "times" "times new roman"

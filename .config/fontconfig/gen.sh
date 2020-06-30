@@ -86,7 +86,8 @@ S "mono"            "monospace"
 S "cursive"         "Mongolian Writing"
 S "fantasy"         "beograd"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "courier" "courier new"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "ubuntu" \
+      "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 

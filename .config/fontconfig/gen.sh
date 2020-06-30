@@ -74,10 +74,6 @@ cat <<EOF
     <test name="weight" compare="more_eq"><const>bold</const></test>
     <edit name="family" mode="assign_replace" binding="strong"><string>noto sans</string></edit>
   </match>
-  <match target="pattern">
-    <test name="family"><string>mpvsub</string></test>
-    <edit name="family" mode="assign_replace"><string>dudu cyrillic</string></edit>
-  </match>
 EOF
 
 S "sans"            "sans-serif"
@@ -99,6 +95,7 @@ Smany "pt sans"        "ui"
 Smany "pt astra sans"  "calibri"
 
 Smany "noto sans bold" "mpvosd"
+Smany "dudu cyryllic"  "mpvsub"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "opensans"
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"

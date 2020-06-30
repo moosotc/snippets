@@ -1,5 +1,4 @@
 #!/bin/sh
-
 set -e
 
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
@@ -86,24 +85,21 @@ S "mono"            "monospace"
 S "cursive"         "Mongolian Writing"
 S "fantasy"         "beograd"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "ubuntu" "consolas" "courier" "courier new"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
-Smany "pt astra serif" "times" "times new roman"
-
-! false || (
-    Smany "helvetica lt com" "arial" "helvetica"
-    Smany "pragmatica" "arial" "helvetica"
-)
 
 Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
 Smany "raleway-v4020"  "segoe ui"
-Smany "pt serif"       "domine"
 Smany "lora"           "georgia"
 Smany "alegreya"       "serif"
+
+Smany "pt serif"       "domine"
+Smany "pt astra serif" "times" "times new roman"
 Smany "pt sans"        "ui"
-Smany "noto sans bold" "mpvosd"
 Smany "pt astra sans"  "calibri"
+
+Smany "noto sans bold" "mpvosd"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "opensans"
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"

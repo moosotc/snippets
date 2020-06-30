@@ -86,8 +86,7 @@ S "mono"            "monospace"
 S "cursive"         "Mongolian Writing"
 S "fantasy"         "beograd"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "ubuntu" \
-      "courier" "courier new"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "ubuntu" "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 
@@ -95,7 +94,6 @@ Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
 Smany "raleway-v4020"  "segoe ui"
 Smany "lora"           "georgia"
 
-Smany "pt serif"       "domine"
 Smany "pt astra serif" "times" "times new roman"
 Smany "pt sans"        "ui"
 Smany "pt astra sans"  "calibri"
@@ -104,7 +102,8 @@ Smany "noto sans bold" "mpvosd"
 
 Smany "montserrat alternates" "lucida" "lucida grande" "opensans"
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
-Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" "utopia"
+Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" \
+      "utopia" "domine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma" "trebuchet ms"
 
 # learn yourself some greek

@@ -1,0 +1,3 @@
+#!/bin/sh
+
+fcfiles | sed -n 's;^/.*\(\.fonts/.*\);\1;p' | tar cf ${1-f.tar.zst} --zstd -T -

@@ -76,25 +76,23 @@ cat <<EOF
 EOF
 
 S "serif"           "alegreya"
-S "mono"            "monospace"
-S "cursive"         "Mongolian Writing"
+S "cursive"         "mongolian writing"
 S "fantasy"         "beograd"
 
 Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "ubuntu" "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
-Smany "iosevka clam"   "iosevka" "monospace"
+Smany "iosevka clam"   "iosevka" "monospace" "mono" "fira mono"
 
-Smany "noto sans"      "helvetica" "arial" "roboto" "cnn" "sans-serif"
-Smany "raleway-v4020"  "segoe ui"
+Smany "raleway-v4020"  "segoe ui" "helvetica" "arial" "roboto" "sans-serif"
 Smany "lora"           "georgia"
 
 Smany "pt astra serif" "times" "times new roman"
 Smany "pt sans"        "ui"
-Smany "pt astra sans"  "calibri" "sans"
+Smany "pt astra sans"  "calibri"
 
-Smany "dudu cyryllic"  "mpvsub"
+Smany "dudu cyryllic" "mpvsub"
 
-Smany "montserrat alternates" "lucida" "lucida grande" "opensans" "trebuchet ms"
+Smany "montserrat alternates" "sans" "lucida" "lucida grande" "opensans" "trebuchet ms"
 
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
 Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" \

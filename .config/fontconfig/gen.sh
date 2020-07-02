@@ -95,6 +95,7 @@ Smany "dudu cyryllic" "mpvsub"
 Smany "montserrat alternates" "sans" "lucida" "lucida grande" "opensans" "trebuchet ms"
 
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
+Smany "noto sans bold" "mpvosd"
 Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" \
       "utopia" "domine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"

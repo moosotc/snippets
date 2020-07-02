@@ -6,31 +6,30 @@ set -e
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
-# alegreya       https://www.huertatipografica.com/en/fonts/alegreya-ht-pro
-# beograd        https://www.fontspace.com/beograd-font-f28002
-# iosevka        https://github.com/be5invis/Iosevka
-#    clam        https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
-# pt(astra)      https://www.paratype.ru/collections/pt/44157
-# raleway        https://github.com/impallari/Raleway
-#   (original)   https://github.com/theleagueof/raleway
-# dudu cyryllic  https://www.fontspace.com/vladmas
-# code2003       https://en.wikipedia.org/wiki/Code2000
-#                https://www.fontspace.com/code2003-font-f24444
-# montserrat     https://github.com/JulietaUla/Montserrat/
-# noto           https://github.com/googlefonts/noto-fonts
-#                https://www.google.com/get/noto/
+# alegreya        https://www.huertatipografica.com/en/fonts/alegreya-ht-pro
+# beograd         https://www.fontspace.com/beograd-font-f28002
+# iosevka         https://github.com/be5invis/Iosevka
+#    clam         https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
+# pt(astra)       https://www.paratype.ru/collections/pt/44157
+# raleway         https://github.com/impallari/Raleway
+#   (original)    https://github.com/theleagueof/raleway
+# dudu cyryllic   https://www.fontspace.com/vladmas
+# code2003        https://en.wikipedia.org/wiki/Code2000
+#                 https://www.fontspace.com/code2003-font-f24444
+# montserrat      https://github.com/JulietaUla/Montserrat/
+# noto            https://github.com/googlefonts/noto-fonts
+#                 https://www.google.com/get/noto/
 # fantasque sans
-#      mono      https://github.com/belluzj/fantasque-sans
-# ruslan display https://fonts.google.com/specimen/Ruslan+Display
-# lora cyrillic  https://github.com/cyrealtype/Lora-Cyrillic
-# symbol         https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
-# linguistics    https://www.fontsquirrel.com/fonts/linguistics-pro
-#     pro        https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
+#      mono       https://github.com/belluzj/fantasque-sans
+# ruslan display  https://fonts.google.com/specimen/Ruslan+Display
+# lora cyrillic   https://github.com/cyrealtype/Lora-Cyrillic
+# symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
+# linguistics     https://www.fontsquirrel.com/fonts/linguistics-pro
+#     pro         https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
 # Mongolian
-#  Writing       http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-# Tibetan Machine
-#   Unicode      http://www.pktc.org/pktc/download.htm#FreeTypeface
-#                http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
+#  Writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
+# Tibetan Machine http://www.pktc.org/pktc/download.htm#FreeTypeface
+#   Unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
 <match target="pattern">
@@ -76,7 +75,6 @@ cat <<EOF
   </match>
 EOF
 
-S "sans"            "sans-serif"
 S "serif"           "alegreya"
 S "mono"            "monospace"
 S "cursive"         "Mongolian Writing"
@@ -86,22 +84,22 @@ Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "ubuntu" "courier"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace"
 
-Smany "noto sans"      "helvetica" "arial" "cnn" "roboto" "sans-serif"
+Smany "noto sans"      "helvetica" "arial" "roboto" "cnn" "sans-serif"
 Smany "raleway-v4020"  "segoe ui"
 Smany "lora"           "georgia"
 
 Smany "pt astra serif" "times" "times new roman"
 Smany "pt sans"        "ui"
-Smany "pt astra sans"  "calibri"
+Smany "pt astra sans"  "calibri" "sans"
 
-Smany "noto sans bold" "mpvosd"
 Smany "dudu cyryllic"  "mpvsub"
 
-Smany "montserrat alternates" "lucida" "lucida grande" "opensans"
+Smany "montserrat alternates" "lucida" "lucida grande" "opensans" "trebuchet ms"
+
 Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
 Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" \
       "utopia" "domine"
-Smany "beograd" "constantia" "cambria" "corbel" "tahoma" "trebuchet ms"
+Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek
 Smany "symbol" "segoe" "linux libertine"

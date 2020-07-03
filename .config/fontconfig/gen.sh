@@ -91,8 +91,7 @@ Smany "pt astra sans"  "calibri"
 
 Smany "dudu cyryllic" "sub"
 
-Smany "montserrat alternates" "sans" "lucida" "lucida grande" \
-      "opensans" "trebuchet ms" "noto sans" "open sans" "droid sans" "verdana"
+Smany "montserrat alternates" "sans" "opensans" "trebuchet ms" "noto sans" "droid sans" "verdana"
 Smany "pt sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
 Smany "pt sans bold" "osd"
 Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" "utopia" "domine"

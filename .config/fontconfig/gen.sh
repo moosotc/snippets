@@ -48,7 +48,7 @@ cat <<EOF
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="hintstyle"><const>hintnone</const></edit>
     <edit name="autohint"><bool>false</bool></edit>
-    <edit name="family" mode="append" binding="weak">
+    <edit name="family" mode="append" binding="strong">
       <string>beograd</string>
       <string>code2003</string>
     </edit>
@@ -75,7 +75,6 @@ EOF
 
 S "serif"           "alegreya"
 S "cursive"         "mongolian writing"
-S "fantasy"         "beograd"
 
 Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" \
       "ubuntu" "courier" "courier new"
@@ -92,13 +91,15 @@ Smany "pt astra sans"  "calibri"
 Smany "dudu cyryllic" "sub"
 
 Smany "montserrat alternates" "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
-Smany "pt sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
+Smany "pt sans" "dejavu sans" "helvetica neue"
 Smany "pt sans bold" "osd"
 Smany "linguistics pro" "utopia" "domine"
-Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
+
+# given that i often disagree storngly with font stack choices...
+Smany "beograd" "segoe" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek
-Smany "symbol" "segoe" "linux libertine"
+Smany "symbol" "linux libertine"
 
 echo "</fontconfig>"
 

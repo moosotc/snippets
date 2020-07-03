@@ -36,7 +36,7 @@ S() { cat<<EOF
 </match>
 EOF
 }
-Smany () { s="$1"; shift; for f; do S "$f" "$s"; done; }
+M () { s="$1"; shift; for f; do S "$f" "$s"; done; }
 
 cat <<EOF
 <?xml version='1.0'?>
@@ -46,8 +46,6 @@ cat <<EOF
   <match target="pattern">
     <edit name="rgba"><const>none</const></edit>
     <edit name="hinting"><bool>false</bool></edit>
-    <edit name="hintstyle"><const>hintnone</const></edit>
-    <edit name="autohint"><bool>false</bool></edit>
     <edit name="family" mode="append" binding="strong">
       <string>beograd</string>
       <string>code2003</string>
@@ -73,33 +71,30 @@ cat <<EOF
   </match>
 EOF
 
-S "serif"           "alegreya"
-S "cursive"         "mongolian writing"
+S "serif"           "alegreya"S "cursive"         "mongolian writing"
+S "sub"             "dudu cyryllic"
+S "osd"             "pt sans bold"
+S "ui"              "pt sans"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" \
-      "ubuntu" "courier" "courier new"
-Smany "dudu cyryllic"  "comic sans ms"
-Smany "iosevka clam"   "iosevka" "monospace" "mono" "fira mono"
+smallmono="fantasque sans mono"
+M "$smallmono"     "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
+M "dudu cyryllic"  "comic sans ms"
+M "iosevka clam"   "iosevka" "monospace"
 
-Smany "raleway-v4020"  "segoe ui" "helvetica" "arial" "roboto" "sans-serif"
-Smany "lora"           "georgia"
+M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
+M "lora"           "georgia"
 
-Smany "pt astra serif" "times" "times new roman"
-Smany "pt sans"        "ui"
-Smany "pt astra sans"  "calibri"
+M "pt astra serif" "times" "times new roman"
+M "pt astra sans"  "calibri"
 
-Smany "dudu cyryllic" "sub"
-
-Smany "montserrat alternates" "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
-Smany "pt sans" "dejavu sans" "helvetica neue"
-Smany "pt sans bold" "osd"
-Smany "linguistics pro" "utopia" "domine"
+M "montserrat alternates" "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
+M "linguistics pro" "utopia" "domine"
 
 # given that i often disagree storngly with font stack choices...
-Smany "beograd" "segoe" "constantia" "cambria" "corbel" "tahoma"
+M "beograd" "segoe" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek
-Smany "symbol" "linux libertine"
+M "symbol" "linux libertine"
 
 echo "</fontconfig>"
 

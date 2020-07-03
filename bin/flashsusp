@@ -1,5 +1,5 @@
 #/bin/sh
 . asroot
 echo 0 >/sys/class/rtc/rtc0/wakealarm
-date -u --date '+2 sec' +%s >/sys/class/rtc/rtc0/wakealarm
-echo 'mem' >/sys/power/state
+date -u --date "+${1-2 sec}" +%s >/sys/class/rtc/rtc0/wakealarm
+echo mem >/sys/power/state

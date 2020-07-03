@@ -62,12 +62,12 @@ cat <<EOF
     <edit name="family" mode="assign"><string>dudu cyryllic</string></edit>
   </match>
   <match target="pattern">
-    <test name="family"><string>mpvsub</string></test>
+    <test name="family"><string>sub</string></test>
     <test name="slant"><const>italic</const></test>
     <edit name="family" mode="assign_replace" binding="strong"><string>pt sans</string></edit>
   </match>
   <match target="pattern">
-    <test name="family"><string>mpvsub</string></test>
+    <test name="family"><string>sub</string></test>
     <test name="weight" compare="more_eq"><const>bold</const></test>
     <edit name="family" mode="assign_replace" binding="strong"><string>pt sans</string></edit>
   </match>
@@ -89,12 +89,12 @@ Smany "pt astra serif" "times" "times new roman"
 Smany "pt sans"        "ui"
 Smany "pt astra sans"  "calibri"
 
-Smany "dudu cyryllic" "mpvsub"
+Smany "dudu cyryllic" "sub"
 
 Smany "montserrat alternates" "sans" "lucida" "lucida grande" \
       "opensans" "trebuchet ms" "noto sans" "open sans" "droid sans" "verdana"
 Smany "pt sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
-Smany "pt sans bold" "mpvosd"
+Smany "pt sans bold" "osd"
 Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" "utopia" "domine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 

@@ -17,8 +17,6 @@ set -e
 # code2003        https://en.wikipedia.org/wiki/Code2000
 #                 https://www.fontspace.com/code2003-font-f24444
 # montserrat      https://github.com/JulietaUla/Montserrat/
-# noto            https://github.com/googlefonts/noto-fonts
-#                 https://www.google.com/get/noto/
 # fantasque sans
 #      mono       https://github.com/belluzj/fantasque-sans
 # ruslan display  https://fonts.google.com/specimen/Ruslan+Display
@@ -66,12 +64,12 @@ cat <<EOF
   <match target="pattern">
     <test name="family"><string>mpvsub</string></test>
     <test name="slant"><const>italic</const></test>
-    <edit name="family" mode="assign_replace" binding="strong"><string>noto sans</string></edit>
+    <edit name="family" mode="assign_replace" binding="strong"><string>pt sans</string></edit>
   </match>
   <match target="pattern">
     <test name="family"><string>mpvsub</string></test>
     <test name="weight" compare="more_eq"><const>bold</const></test>
-    <edit name="family" mode="assign_replace" binding="strong"><string>noto sans</string></edit>
+    <edit name="family" mode="assign_replace" binding="strong"><string>pt sans</string></edit>
   </match>
 EOF
 
@@ -79,7 +77,8 @@ S "serif"           "alegreya"
 S "cursive"         "mongolian writing"
 S "fantasy"         "beograd"
 
-Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" "ubuntu" "courier" "courier new"
+Smany "fantasque sans mono" "uimono" "ubuntu mono" "consolas" \
+      "ubuntu" "courier" "courier new"
 Smany "dudu cyryllic"  "comic sans ms"
 Smany "iosevka clam"   "iosevka" "monospace" "mono" "fira mono"
 
@@ -92,12 +91,11 @@ Smany "pt astra sans"  "calibri"
 
 Smany "dudu cyryllic" "mpvsub"
 
-Smany "montserrat alternates" "sans" "lucida" "lucida grande" "opensans" "trebuchet ms"
-
-Smany "noto sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
-Smany "noto sans bold" "mpvosd"
-Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" \
-      "utopia" "domine"
+Smany "montserrat alternates" "sans" "lucida" "lucida grande" \
+      "opensans" "trebuchet ms" "noto sans" "open sans" "droid sans" "verdana"
+Smany "pt sans" "dejavu sans" "helvetica neue" "bitstream vera sans"
+Smany "pt sans bold" "mpvosd"
+Smany "linguistics pro" "droid serif" "noto serif" "dejavu serif" "utopia" "domine"
 Smany "beograd" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek

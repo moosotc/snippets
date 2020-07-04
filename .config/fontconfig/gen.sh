@@ -24,19 +24,19 @@ set -e
 # symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 # linguistics     https://www.fontsquirrel.com/fonts/linguistics-pro
 #     pro         https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
-# Mongolian
-#  Writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-# Tibetan Machine http://www.pktc.org/pktc/download.htm#FreeTypeface
-#   Unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
+# mongolian
+#  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
+# tibetan machine http://www.pktc.org/pktc/download.htm#FreeTypeface
+#   unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
 <match target="pattern">
-  <test name="family"><string>$1</string></test>
-  <edit name="family" mode="assign" binding="strong"><string>$2</string></edit>
+  <test name="family"><string>$2</string></test>
+  <edit name="family" mode="assign" binding="strong"><string>$1</string></edit>
 </match>
 EOF
 }
-M () { s="$1"; shift; for f; do S "$f" "$s"; done; }
+M () { s="$1"; shift; for f; do S "$s" "$f"; done; }
 
 cat <<EOF
 <?xml version='1.0'?>
@@ -75,30 +75,30 @@ mono2="fantasque sans mono"
 ans5="montserrat alternates"
 erif5="linguistics pro"
 
-S "serif"          "alegreya"
-S "cursive"        "mongolian writing"
-S "sub"            "dudu cyryllic"
-S "osd"            "pt sans bold"
-S "ui"             "pt sans"
+S "alegreya"          "serif"
+S "mongolian writing" "cursive"
+S "dudu cyryllic"     "sub"
+S "pt sans bold"      "osd"
+S "pt sans"           "ui"
 
-M "$mono2"         "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
-M "dudu cyryllic"  "comic sans ms"
-M "iosevka clam"   "iosevka" "monospace"
+M "$mono2"        "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
+M "dudu cyryllic" "comic sans ms"
+M "iosevka clam"  "iosevka" "monospace"
 
-M "raleway-v4020"   "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
-M "lora"            "georgia"
+M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
+M "lora"           "georgia"
 
-M "pt astra serif"  "times" "times new roman"
-M "pt astra sans"   "calibri"
+M "pt astra serif" "times" "times new roman"
+M "pt astra sans"  "calibri"
 
-M "$ans5"           "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
-M "$erif5"          "utopia" "domine"
+M "$ans5"          "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
+M "$erif5"         "utopia" "domine"
 
-# given that i often disagree storngly with font stack choices...
-M "beograd"         "segoe" "constantia" "cambria" "corbel" "tahoma"
+# given that i often disagree strongly with font stack choices...
+M "beograd"        "segoe" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek
-M "symbol"          "linux libertine"
+M "symbol"         "linux libertine"
 
 echo "</fontconfig>"
 

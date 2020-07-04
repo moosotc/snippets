@@ -71,30 +71,34 @@ cat <<EOF
   </match>
 EOF
 
-S "serif"           "alegreya"S "cursive"         "mongolian writing"
-S "sub"             "dudu cyryllic"
-S "osd"             "pt sans bold"
-S "ui"              "pt sans"
+mono2="fantasque sans mono"
+ans5="montserrat alternates"
+erif5="linguistics pro"
 
-smallmono="fantasque sans mono"
-M "$smallmono"     "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
+S "serif"          "alegreya"
+S "cursive"        "mongolian writing"
+S "sub"            "dudu cyryllic"
+S "osd"            "pt sans bold"
+S "ui"             "pt sans"
+
+M "$mono2"         "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"  "comic sans ms"
 M "iosevka clam"   "iosevka" "monospace"
 
-M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
-M "lora"           "georgia"
+M "raleway-v4020"   "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
+M "lora"            "georgia"
 
-M "pt astra serif" "times" "times new roman"
-M "pt astra sans"  "calibri"
+M "pt astra serif"  "times" "times new roman"
+M "pt astra sans"   "calibri"
 
-M "montserrat alternates" "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
-M "linguistics pro" "utopia" "domine"
+M "$ans5"           "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
+M "$erif5"          "utopia" "domine"
 
 # given that i often disagree storngly with font stack choices...
-M "beograd" "segoe" "constantia" "cambria" "corbel" "tahoma"
+M "beograd"         "segoe" "constantia" "cambria" "corbel" "tahoma"
 
 # learn yourself some greek
-M "symbol" "linux libertine"
+M "symbol"          "linux libertine"
 
 echo "</fontconfig>"
 

@@ -30,10 +30,12 @@ set -e
 #   unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
-<match target="pattern">
-  <test name="family"><string>$2</string></test>
-  <edit name="family" mode="assign" binding="strong"><string>$1</string></edit>
-</match>
+  <match target="pattern">
+    <test name="family"><string>$2</string></test>
+    <edit name="family" mode="assign" binding="strong">
+      <string>$1</string>
+    </edit>
+  </match>
 EOF
 }
 M () { s="$1"; shift; for f; do S "$s" "$f"; done; }
@@ -52,8 +54,12 @@ cat <<EOF
     </edit>
   </match>
   <match target="pattern">
-    <test name="family" compare="contains"><string>narrow</string></test>
-    <edit name="family" mode="assign"><string>ruslan display</string></edit>
+    <test name="family" compare="contains">
+      <string>narrow</string>
+    </test>
+    <edit name="family" mode="assign">
+      <string>ruslan display</string>
+    </edit>
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
@@ -62,12 +68,16 @@ cat <<EOF
   <match target="pattern">
     <test name="family"><string>sub</string></test>
     <test name="slant"><const>italic</const></test>
-    <edit name="family" mode="assign_replace" binding="strong"><string>pt sans</string></edit>
+    <edit name="family" mode="assign_replace" binding="strong">
+      <string>pt sans</string>
+    </edit>
   </match>
   <match target="pattern">
     <test name="family"><string>sub</string></test>
     <test name="weight" compare="more_eq"><const>bold</const></test>
-    <edit name="family" mode="assign_replace" binding="strong"><string>pt sans</string></edit>
+    <edit name="family" mode="assign_replace" binding="strong">
+      <string>pt sans</string>
+    </edit>
   </match>
 EOF
 
@@ -77,13 +87,12 @@ erif5="linguistics pro"
 
 S "alegreya"          "serif"
 S "mongolian writing" "cursive"
-S "dudu cyryllic"     "sub"
 S "pt sans bold"      "osd"
 S "pt sans"           "ui"
 
-M "$mono2"        "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
-M "dudu cyryllic" "comic sans ms"
-M "iosevka clam"  "iosevka" "monospace"
+M "$mono2"         "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
+M "dudu cyryllic"  "comic sans ms" "sub"
+M "iosevka clam"   "iosevka" "monospace"
 
 M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
 M "lora"           "georgia"

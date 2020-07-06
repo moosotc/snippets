@@ -1,0 +1,4 @@
+#!/bin/sh
+. asroot
+modprobe i2c-dev
+ddcci-tool /dev/i2c-5 -r 0x62 -w ${1-1}

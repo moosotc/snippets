@@ -639,5 +639,8 @@
     (lisp-interaction-mode)))
 (global-set-key [(meta alt ?l)] 'lispy)
 
+;; https://stackoverflow.com/questions/24904208/emacs-windows-org-mode-encoding
+(modify-coding-system-alist 'file "" 'utf-8-unix)
+
 ;;; local Variables:
 ;;; End:

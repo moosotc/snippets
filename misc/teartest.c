@@ -45,17 +45,10 @@ static void repaint (long inc)
             }
         }
     }
-    f ^= 1;
-    c = f ? 0.7 : 0.69;
+
+    c = (++f%4) ? 0.4 : 0.7-(1e-5*(f&1));
     glClearColor (c, c, c, 0);
     glClear (GL_COLOR_BUFFER_BIT);
-
-    static int per = -1;
-    if (per<-state.h) per = state.h;
-    float y = ((double) (per-=40)/state.h);
-    float x = ((double) per/state.w);
-    glRectf (1, y, -1, y-.1);
-    glRectf (x, -1, x-.1,1);
     SDL_GL_SwapWindow (state.win);
 }
 

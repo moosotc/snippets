@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sqlite3 ~/x/org/conk.places/places.sqlite 'select url from moz_places where title like "%$1%" order by last_visit_date;'

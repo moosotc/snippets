@@ -1,4 +1,4 @@
-# 20cd9953cbffff633f2549add1d4a3620c57d8d5
+# 3389ad5d66851f22e0d16d84d3207495c630dec0
 [buildPlans.iosevka-clam]         # <iosevka-clam> is your plan name
 family = "Iosevka Clam"           # Font menu family name
 design = [
@@ -9,6 +9,7 @@ design = [
                                   # et-toothed flat-top et closed
   'v-asterisk-high',              # low high hexlow hexhigh
   'v-at-short',                   # short threefold fourfold
+  'v-b-toothed',                  # toothless toothless-rounded
 # srtaight { is too much like (
   'v-brace-curly',                # curly straight
   'v-capital-b-more-asymmetric',  # standard more-asymmetric
@@ -24,6 +25,8 @@ design = [
   'v-capital-y-curly',            # straight curly
   'v-caret-high',                 # low high
   'v-dollar-open',                # open opencap through
+  'v-d-tailed',                   # toothed toothless toothless-corner
+                                  # toothless-rounded
   'v-eszet-sulzbacher',           # traditional sulzbacher longs-s-lig
   'v-f-straight',                 # narrow tailed serifed straight straight-tail
   'v-four-semi-open',             # closed open semi-open
@@ -50,7 +53,7 @@ design = [
   'v-lig-ltgteq-flat',            # flat slanted
   'v-m-shortleg',                 # shortleg normal
   'v-nine-open-contour',          # open-contour closed-contour straight-bar
-  'v-numbersign-upright',         # upright slanted
+  'v-numbersign-upright',         # upright slanted upright-open slanted-open
 # nobase in isolation can be mistaken for l
   'v-one-base',                   # nobase base line
   'v-paragraph-high',             # low high

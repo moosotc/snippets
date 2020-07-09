@@ -12,8 +12,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define WIDTH  640
-#define HEIGHT 480
+#define WIDTH  1280
+#define HEIGHT 1024
 
 static struct {
     SDL_Window *win;
@@ -103,7 +103,7 @@ static void main_loop (long div)
                 }
                 break;
 
-            case SDL_KEYUP:
+            case SDL_KEYDOWN:
                 switch (event.key.keysym.sym) {
                 case SDLK_q:
                     exit (EXIT_SUCCESS);

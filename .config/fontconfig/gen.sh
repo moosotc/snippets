@@ -94,7 +94,7 @@ M "$mono2"         "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "ui
 M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 
-M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif"
+M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif" "sans serif"
 M "lora"           "georgia"
 
 M "pt astra serif" "times" "times new roman"

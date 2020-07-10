@@ -2,7 +2,7 @@
 set -e
 
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
-# prior to starting X to get reproducible distribution independent behavior
+# prior to starting X to get reproducible distribution-independent behavior
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 

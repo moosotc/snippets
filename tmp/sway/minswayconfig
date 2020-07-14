@@ -28,5 +28,5 @@ for_window [tiling] floating enable
 bindsym $mod+t $execnoid alwrap
 bindsym $mod+Shift+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid sway bar hidden_state toggle
-output DP-1 scale 2
+#output DP-1 scale 2
 #xwayland disable

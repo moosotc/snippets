@@ -104,7 +104,8 @@ M "$ans5"          "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
 M "$erif5"         "utopia" "domine"
 
 # given that i often disagree strongly with font stack choices...
-M "beograd"        "segoe" "constantia" "cambria" "corbel" "tahoma"
+M "beograd"        "segoe" "tahoma"
+M "ruslan display" "constantia" "cambria" "corbel" "candara" "cantarell"
 
 # learn yourself some greek
 M "symbol"         "linux libertine"

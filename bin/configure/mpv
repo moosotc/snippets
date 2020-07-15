@@ -19,7 +19,6 @@ export CC='ccache gcc'
     --disable-wayland-scanner                   \
     --disable-xv                                \
     --disable-vdpau                             \
-    --disable-vaapi-x-egl                       \
     --disable-caca                              \
     --disable-jpeg                              \
     --enable-zimg                               \

@@ -90,18 +90,18 @@ S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"
 S "pt sans"           "ui"
 
-M "$mono2"         "ubuntu mono" "ubuntu" "consolas" "courier" "courier new" "uimono"
+M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 
 M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif" "sans serif"
-M "lora"           "georgia"
+M "lora"           "georgia" "reithserif"
 
 M "pt astra serif" "times" "times new roman"
 M "pt astra sans"  "calibri"
 
-M "$ans5"          "sans" "opensans" "trebuchet ms" "noto sans" "verdana"
-M "$erif5"         "utopia" "domine"
+M "$ans5"  "sans" "opensans" "trebuchet ms" "noto sans" "verdana" "ubuntu"
+M "$erif5" "utopia" "domine"
 
 # given that i often disagree strongly with font stack choices...
 M "beograd"        "segoe" "tahoma"

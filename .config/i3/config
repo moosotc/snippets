@@ -170,7 +170,9 @@ bindsym mod1+F11 $execnoid xtogglefs
 bindsym $mod+t $execnoid stwrap
 bindsym $mod+Shift+t $execnoid alwrap
 bindsym $mod+Shift+d $execnoid i3bartoggle
-bindsym Ctrl+grave $execnoid clipswap
+bindsym Ctrl+grave $execnoid clipswap 1
+bindsym Ctrl+Shift+grave $execnoid clipswap
+bindsym Ctrl+Shift+$mod+grave $execnoid clipclr
 bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $mod+Print $execnoid sshot.sh

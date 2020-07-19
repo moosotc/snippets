@@ -27,8 +27,4 @@
   g - double vs single storey
   I - plain vs serifed
 * roles
-** alegreya               - serif, hints in conkeror, wiki2.css
-** code2003               - pan unicode
-** symbola                - symbols, dingbats, emoji
-** xo oriel               - arial, helvetica, cnn... sans in general
-** fantasque sans mono    - wiki2.css i3 font
+  see gen.sh

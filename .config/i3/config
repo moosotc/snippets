@@ -141,9 +141,7 @@ bar {
         }
 }
 
-assign [class="Conkeror"] 1
 assign [class="Firefox"] 1
-assign [class="Chromium"] 1
 assign [class="Emacs"] 4
 assign [class="Tor Browser"] torbrowser
 
@@ -209,6 +207,7 @@ bindcode mod4+Ctrl+54 $execnoid xwnpm 3
 
 bindsym ISO_Next_Group $execnoid scrollledtoggle
 bindsym $mod+F1 $execnoid setcapskey
+bindsym $mod+F2 $execnoid "xrandr -x; xrandr -x"
 bindsym $mod+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
 bindsym $mod+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"
 bindsym $mod+F10 $execnoid dotor

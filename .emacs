@@ -536,8 +536,6 @@
 (add-hook 'package-menu-mode-hook 'selector-moo0)
 
 (global-set-key "\C-xf" 'helm-find-files)
-(global-set-key [(meta insert)] 'x-clipboard-yank)
-
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
@@ -568,8 +566,8 @@
   (interactive)
   (erc-track-switch-buffer -1))
 
-(global-set-key [(alt insert)] 'my-insert-primary-selection)
-(global-set-key [(alt meta insert)] 'x-clipboard-yank)
+(global-set-key [(meta insert)] 'my-insert-primary-selection)
+(global-set-key [(alt insert)] 'x-clipboard-yank)
 (global-set-key [(alt up)] 'erc-track-switch-buffer)
 (global-set-key [(alt down)] 'my-track-switch-buffer)
 

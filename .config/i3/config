@@ -171,7 +171,7 @@ bindsym $mod+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid clipswap 1
 bindsym Ctrl+Shift+grave $execnoid clipswap
 bindsym Ctrl+Shift+$mod+grave $execnoid clipclr
-bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -o)"
+bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -selection clipboard -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $mod+Print $execnoid sshot.sh
 bindsym Pause $execnoid moncycle

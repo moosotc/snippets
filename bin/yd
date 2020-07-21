@@ -5,7 +5,7 @@
 
 yt="$HOME/x/rcs/git/youtube-dl/youtube-dl"
 test -z "$1" && arg=$(xclip -selection clipboard -o) || { arg="$1"; shift; }
-echo "1=$1 arg=$arg"
+: echo "1=$1 arg=$arg"
 test -z "$arg" && {
     echo "nothing to show"
     exit 1

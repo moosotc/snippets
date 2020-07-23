@@ -11,95 +11,97 @@ client.background       #ffffff
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
-set $mod Mod4
+set $alt Mod1
+set $win Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:uimono 10
 
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
+# Use Mouse+$win to drag floating windows to their wanted position
+floating_modifier $win
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $win+Shift+q kill
 
-bindsym $mod+r exec rofi_run
+bindsym $win+r exec rofi_run
 set $execnoid exec --no-startup-id
 
 # alternatively, you can use the cursor keys:
-#bindsym $mod+Up focus left
-#bindsym $mod+Down focus right
-bindsym $mod+Up focus right
-bindsym $mod+Down focus left
-bindsym $mod+Left workspace prev
-bindsym $mod+Right workspace next
+#bindsym $win+Up focus left
+#bindsym $win+Down focus right
+bindsym $win+Up focus right
+bindsym $win+Down focus left
+bindsym $win+Left workspace prev
+bindsym $win+Right workspace next
 
 # move focused window
-#bindsym $mod+Shift+j move left
-#bindsym $mod+Shift+k move down
-#bindsym $mod+Shift+l move up
-#bindsym $mod+Shift+colon move right
+#bindsym $win+Shift+j move left
+#bindsym $win+Shift+k move down
+#bindsym $win+Shift+l move up
+#bindsym $win+Shift+colon move right
 
 # alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+bindsym $win+Shift+Left move left
+bindsym $win+Shift+Down move down
+bindsym $win+Shift+Up move up
+bindsym $win+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $win+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $win+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+Shift+f fullscreen toggle
+bindsym $win+Shift+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+Shift+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-bindsym $mod+Shift+b border toggle
+bindsym $win+Shift+s layout stacking
+bindsym $win+w layout tabbed
+bindsym $win+e layout toggle split
+bindsym $win+Shift+b border toggle
 
-bindsym $mod+Shift+w $execnoid runwfox
-bindsym $mod+Shift+z $execnoid runemacs
+bindsym $win+Shift+w $execnoid runwfox
+bindsym $win+Shift+z $execnoid runemacs
+bindsym $alt+Shift+w $execnoid runwfox2
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $win+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $win+space focus mode_toggle
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $win+1 workspace 1
+bindsym $win+2 workspace 2
+bindsym $win+3 workspace 3
+bindsym $win+4 workspace 4
+bindsym $win+5 workspace 5
+bindsym $win+6 workspace 6
+bindsym $win+7 workspace 7
+bindsym $win+8 workspace 8
+bindsym $win+9 workspace 9
+bindsym $win+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $win+Shift+1 move container to workspace 1
+bindsym $win+Shift+2 move container to workspace 2
+bindsym $win+Shift+3 move container to workspace 3
+bindsym $win+Shift+4 move container to workspace 4
+bindsym $win+Shift+5 move container to workspace 5
+bindsym $win+Shift+6 move container to workspace 6
+bindsym $win+Shift+7 move container to workspace 7
+bindsym $win+Shift+8 move container to workspace 8
+bindsym $win+Shift+9 move container to workspace 9
+bindsym $win+Shift+0 move container to workspace 10
 
 # reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $win+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
+bindsym $win+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $win+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -154,30 +156,30 @@ bindsym XF86AudioNext $execnoid chvol +
 bindsym XF86AudioPrev $execnoid chvol -
 bindsym XF86AudioMute $execnoid acycle
 
-bindsym Ctrl+$mod+Up $execnoid chvol +
-bindsym Ctrl+$mod+Down $execnoid chvol -
+bindsym Ctrl+$win+Up $execnoid chvol +
+bindsym Ctrl+$win+Down $execnoid chvol -
 
-bindsym $mod+bracketright $execnoid selwin
-bindsym $mod+bracketleft $execnoid ytwin
-bindsym $mod+grave $execnoid yt
-bindsym $mod+Ctrl+grave $execnoid mpvsel
+bindsym $win+bracketright $execnoid selwin
+bindsym $win+bracketleft $execnoid ytwin
+bindsym $win+grave $execnoid yt
+bindsym $win+Ctrl+grave $execnoid mpvsel
 bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
 bindsym mod1+F10 $execnoid xtogglewinmax
 bindsym mod1+F11 $execnoid xtogglefs
-bindsym $mod+t $execnoid stwrap
-bindsym $mod+Shift+t $execnoid alwrap
-bindsym $mod+Shift+d $execnoid i3bartoggle
+bindsym $win+t $execnoid stwrap
+bindsym $win+Shift+t $execnoid alwrap
+bindsym $win+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+grave $execnoid clipswap 1
 bindsym Ctrl+Shift+grave $execnoid clipswap
-bindsym Ctrl+Shift+$mod+grave $execnoid clipclr
-bindsym $mod+Shift+grave $execnoid llpphtml "$(xclip -selection clipboard -o)"
+bindsym Ctrl+Shift+$win+grave $execnoid clipclr
+bindsym $win+Shift+grave $execnoid llpphtml "$(xclip -selection clipboard -o)"
 bindsym Print $execnoid sshot.sh -
-bindsym $mod+Print $execnoid sshot.sh
+bindsym $win+Print $execnoid sshot.sh
 bindsym Pause $execnoid moncycle
 
-bindsym $mod+Shift+minus move scratchpad
-bindsym $mod+minus scratchpad show
+bindsym $win+Shift+minus move scratchpad
+bindsym $win+minus scratchpad show
 
 bindsym mod4+KP_Left $execnoid xwnpm 4
 bindsym mod4+KP_Begin $execnoid xwnpm 5
@@ -206,8 +208,8 @@ bindcode mod4+Ctrl+53 $execnoid xwnpm 2
 bindcode mod4+Ctrl+54 $execnoid xwnpm 3
 
 bindsym ISO_Next_Group $execnoid scrollledtoggle
-bindsym $mod+F1 $execnoid setcapskey
-bindsym $mod+F2 $execnoid "xrandr -x; xrandr -x"
-bindsym $mod+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
-bindsym $mod+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"
-bindsym $mod+F10 $execnoid dotor
+bindsym $win+F1 $execnoid setcapskey
+bindsym $win+F2 $execnoid "xrandr -x; xrandr -x"
+bindsym $win+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
+bindsym $win+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"
+bindsym $win+F10 $execnoid dotor

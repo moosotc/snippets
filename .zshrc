@@ -100,4 +100,3 @@ tp () curl -L -F 'tpaste=<-' tpaste.us
 #sp () curl -F 'sprunge=<-' sprunge.us
 #cb () curl -F 'clbin=<-' https://clbin.com
 alias gdb="gdb -q"
-alias llpp="vblank_mode=0 llpp"

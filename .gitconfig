@@ -3,11 +3,11 @@
 	name = malc
 [alias]
 	log1 = log --reverse --stat HEAD@{1}..HEAD
-	log1sel = !git log --reverse --stat $(xclip -o)
+	log1sel = !git log --reverse --stat $(xclip -selection clipboard -o)
 	pull1 = !"git pull; git log1"
 	remup = remote update
 	url = config --get remote.origin.url
-	closel = !git clone $(xclip -o)
+	closel = !git clone $(xclip -o -selection clipboard)
 [push]
 	default = tracking
 [pull]

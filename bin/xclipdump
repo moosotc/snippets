@@ -3,6 +3,6 @@ set -e
 
 # secondary
 for s in primary clipboard; do
-    printf "$s=$(xclip 2>&1 -selection $s -o || true)\n"
+    printf "$s='$(xclip 2>&1 -selection $s -o || true)'\n"
     test -z "$@" || { : | xclip -selection $s; }
 done

@@ -99,4 +99,11 @@ tp () curl -L -F 'tpaste=<-' tpaste.us
 #ix () curl -F 'f:1=<-' ix.io
 #sp () curl -F 'sprunge=<-' sprunge.us
 #cb () curl -F 'clbin=<-' https://clbin.com
+pu () curl --silent --data-binary "@${1:-/dev/stdin}" bsd.ac:42069
+
 alias gdb="gdb -q"
+
+#meow() {
+#    key="$(openssl rand -hex 32)"
+#    openssl enc -aes-256-cbc -K ${key} -iv 00000000000000000000000000000000 -e -base64 -A < ${1:-/dev/stdin} | pu
+#}

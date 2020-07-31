@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 cd $HOME/tmp/wikicss
-wpget "${1-$(xclip -o)}"
+wpget "${1-$(xclip -selection clipboard -o)}"

@@ -161,8 +161,8 @@ bindsym Ctrl+$win+Down $execnoid chvol -
 
 bindsym $win+bracketright $execnoid selwin
 bindsym $win+bracketleft $execnoid ytwin
-bindsym $win+grave $execnoid yt
-bindsym $win+Ctrl+grave $execnoid mpvsel
+bindsym $win+Escape $execnoid yt
+bindsym $win+Ctrl+Escape $execnoid mpvsel
 bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
 bindsym mod1+F10 $execnoid xtogglewinmax
@@ -170,26 +170,14 @@ bindsym mod1+F11 $execnoid xtogglefs
 bindsym $win+t $execnoid stwrap
 bindsym $win+Shift+t $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
-bindsym Ctrl+grave $execnoid clipswap
-bindsym $win+Shift+grave $execnoid llpphtml "$(xclip -selection clipboard -o)"
+bindsym Ctrl+Escape $execnoid clipswap
+bindsym $win+Shift+Escape $execnoid llpphtml "$(xclip -selection clipboard -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $win+Print $execnoid sshot.sh
 bindsym Pause $execnoid moncycle
 
 bindsym $win+Shift+minus move scratchpad
 bindsym $win+minus scratchpad show
-
-bindsym mod4+KP_Left $execnoid xwnpm 4
-bindsym mod4+KP_Begin $execnoid xwnpm 5
-bindsym mod4+KP_Right $execnoid xwnpm 6
-
-bindsym mod4+KP_End $execnoid xwnpm 1
-bindsym mod4+KP_Down $execnoid xwnpm 2
-bindsym mod4+KP_Next $execnoid xwnpm 3
-
-bindsym mod4+KP_Home $execnoid xwnpm 7
-bindsym mod4+KP_Up $execnoid xwnpm 8
-bindsym mod4+KP_Prior $execnoid xwnpm 9
 
 # Use bindcode instead of bindsym to be layout agnostic
 # (thanks to cehteh from #i3)

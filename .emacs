@@ -501,7 +501,7 @@
         ("gnu" . "http://elpa.gnu.org/packages/")
         ;; ("sunr" ."http://joseito.republika.pl/sunrise-commander/")
         ;; ("marmalade" . "http://marmalade-repo.org/packages/")
-        ("melpa" . "http://melpa.milkbox.net/packages/")
+        ;; ("melpa" . "http://melpa.milkbox.net/packages/")
         )
       )
 

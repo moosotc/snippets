@@ -1,7 +1,7 @@
 pcm.!default {
   type plug
   slave.pcm "dmixer-aux"
-  slave.pcm "dmixer-hdmi"
+#  slave.pcm "dmixer-hdmi"
 }
 
 pcm.dmixer-aux  {

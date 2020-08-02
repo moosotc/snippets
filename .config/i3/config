@@ -62,9 +62,9 @@ bindsym $win+w layout tabbed
 bindsym $win+e layout toggle split
 bindsym $win+Shift+b border toggle
 
-bindsym $win+Shift+w $execnoid runwfox
+bindsym $win+Shift+w $execnoid runffox
+bindsym $alt+Shift+w $execnoid runpfox
 bindsym $win+Shift+z $execnoid runemacs
-bindsym $alt+Shift+w $execnoid runwfox2
 
 # toggle tiling / floating
 bindsym $win+Shift+space floating toggle

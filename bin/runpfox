@@ -1,0 +1,7 @@
+#!/bin/sh
+set -e
+exec 1>/dev/null 2>&1
+i3 workspace 9
+firefox -P $(printf "default\ngithub\npotre\n" | rofi -dmenu)
+#s="windowsize 2000 1500"
+#xdotool search --sync --onlyvisible --name 'Firefox' $s windowactivate

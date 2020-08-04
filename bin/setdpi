@@ -1,7 +1,11 @@
 #!/bin/sh
 set -e
-output=$(xrandr | awk 'FNR==2{print $1}')
-xrandr --dpi $output
-echo "Xft.dpi: 190" | xrdb -merge
-#xrandr --output DP1 --scale 1.000001
-#xdpyinfo | awk '/dots/ {print "Xft.dpi: " $2}' | xrdb -merge
+
+if true; then
+    output=$(xrandr | awk 'FNR==2{print $1}')
+    xrandr --dpi $output
+    echo "Xft.dpi: 190" | xrdb -merge
+else
+    xrandr --dpi 161
+    echo "Xft.dpi: 161" | xrdb -merge
+fi

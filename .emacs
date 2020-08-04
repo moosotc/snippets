@@ -78,7 +78,7 @@
 
       ;; dont use w3
       browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "runwfox"
+      browse-url-generic-program "runffox"
       )
 
 ;; Misc

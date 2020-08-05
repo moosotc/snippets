@@ -6,6 +6,9 @@ if true; then
     xrandr --dpi $output
     echo "Xft.dpi: 190" | xrdb -merge
 else
-    xrandr --dpi 161
-    echo "Xft.dpi: 161" | xrdb -merge
+    xrandr --dpi 163
+    echo "Xft.dpi: 163" | xrdb -merge
 fi
+
+#eval $(xrandr | awk 'function mm(n){return substr(n,0,length(n)-2)}/ connected /{ print "d=" $3 " w=" mm($12) " h=" mm($14); }')
+#echo $d $w $h

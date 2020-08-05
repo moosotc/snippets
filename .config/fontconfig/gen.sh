@@ -28,6 +28,7 @@ set -e
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 # tibetan machine http://www.pktc.org/pktc/download.htm#FreeTypeface
 #   unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
+# kurinto         https://kurinto.com/
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
   <match target="pattern">
@@ -95,18 +96,20 @@ M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 
 M "raleway-v4020"  "segoe ui" "helvetica" "helvetica neue" "arial" "roboto" "sans-serif" "sans serif"
-M "lora"           "georgia" "reithserif"
-
+M "lora"           "reithserif"
+M "kurinto Grga"   "georgia"
 M "pt astra serif" "times" "times new roman"
-M "pt astra sans"  "calibri"
+#M "pt astra sans"  "calibri"
+M "kurinto olde core narrow "  "calibri"
 
 M "$ans5"  "sans" "opensans" "trebuchet ms" "noto sans" "verdana" "ubuntu"
 M "$erif5" "utopia" "domine"
 
 # given that i often disagree strongly with font stack choices...
-M "beograd"        "segoe" "tahoma"
-M "ruslan display" "constantia" "cambria" "corbel" "candara" "cantarell"
-
+M "beograd"        "segoe"
+M "ruslan display" "tahoma" "cantarell"
+M "kurinto olde"   "constantia" "corbel" "candara"
+M "kurinto bria"   "cambria"
 # learn yourself some greek
 M "symbol"         "linux libertine"
 

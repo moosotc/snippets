@@ -110,8 +110,7 @@ M "beograd"         "segoe"
 
 M "kurinto olde core narrow" "calibri"
 M "kurinto olde core"        "constantia" "corbel" "candara"
-
-M "kurinto bria"   "cambria"
+M "kurinto bria"             "cambria"
 
 # learn yourself some greek
 M "symbol"         "linux libertine"

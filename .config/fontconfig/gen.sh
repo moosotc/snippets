@@ -96,7 +96,7 @@ M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 
 M "raleway-v4020"  "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
-M "kurinto arte"   "helvetica" "helvetica neue"
+M "raleway-v4020"  "helvetica" "helvetica neue"
 M "lora"           "reithserif"
 M "kurinto Grga"   "georgia"
 M "pt astra serif" "times" "times new roman"

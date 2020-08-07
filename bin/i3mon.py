@@ -107,7 +107,8 @@ class N:
             dv = (c - p) * 1e-6
             if dv > 0.5:
                 color = "#cdba96"
-            s += " %5.2f" % (dv/dt)
+            s += " %5.2f%s" % (dv/dt,
+                               "⯅" if i == 0 else "⯆" if dv > 0.5 else "")
         self.prevV = curV
         return (color, s) if color is not None else None
 

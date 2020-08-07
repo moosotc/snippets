@@ -167,7 +167,7 @@ bindsym mod1+Shift+d $execnoid dicx
 bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
 bindsym mod1+F10 $execnoid xtogglewinmax
 bindsym mod1+Shift+0 $execnoid xtogglewinmax 1
-bindsym mod1+0 $execnoid xtogglewinmax
+bindsym mod1+Ctrl+0 $execnoid xtogglewinmax
 bindsym mod1+F11 $execnoid xtogglefs
 bindsym $win+t $execnoid stwrap
 bindsym $win+Shift+t $execnoid alwrap

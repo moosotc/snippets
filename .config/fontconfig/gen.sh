@@ -92,7 +92,7 @@ S "pt sans bold"      "osd"
 S "pt sans"           "ui"
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "dudu cyryllic"  "comic sans ms" "tahoma" "sub"
+M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 
 M "raleway-v4020"  "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
@@ -101,12 +101,9 @@ M "lora"           "reithserif"
 M "kurinto Grga"   "georgia"
 M "pt astra serif" "times" "times new roman"
 
-M "$ans5"  "sans"   "opensans" "trebuchet ms" "noto sans" "verdana" "ubuntu"
+M "$ans5" "sans" "opensans" "trebuchet ms" "noto sans" "verdana" "ubuntu"
 M "$erif5" "utopia" "domine"
-M "ruslan display"  "cantarell"
-
-# given that i often disagree strongly with font stack choices...
-M "beograd"         "segoe"
+M "ruslan display" "cantarell"
 
 M "kurinto olde core narrow" "calibri"
 M "kurinto olde core"        "constantia" "corbel" "candara"

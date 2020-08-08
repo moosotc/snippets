@@ -35,6 +35,12 @@ bindsym $win+Down focus left
 bindsym $win+Left workspace prev
 bindsym $win+Right workspace next
 
+set $mmod Mod4
+bindcode $mmod+45 focus right
+bindcode $mmod+46 focus left
+bindcode $mmod+44 workspace prev
+bindcode $mmod+47 workspace next
+
 # move focused window
 #bindsym $win+Shift+j move left
 #bindsym $win+Shift+k move down
@@ -169,8 +175,8 @@ bindsym mod1+F10 $execnoid xtogglewinmax
 bindsym mod1+Shift+0 $execnoid xtogglewinmax 1
 bindsym mod1+Ctrl+0 $execnoid xtogglewinmax
 bindsym mod1+F11 $execnoid xtogglefs
-bindsym $win+t $execnoid stwrap
-bindsym $win+Shift+t $execnoid alwrap
+bindcode $win+58 $execnoid stwrap
+bindcode $win+Shift+45 $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+Escape $execnoid clipswap
 bindsym $win+Shift+Escape $execnoid llpphtml "$(xclip -selection clipboard -o)"

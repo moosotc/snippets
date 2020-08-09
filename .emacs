@@ -568,8 +568,10 @@
 
 (global-set-key [(meta insert)] 'my-insert-primary-selection)
 (global-set-key [(alt insert)] 'x-clipboard-yank)
-(global-set-key [(alt up)] 'erc-track-switch-buffer)
+;;(global-set-key [(alt up)] 'erc-track-switch-buffer)
 (global-set-key [(alt down)] 'my-track-switch-buffer)
+;;(global-set-key [(alt ?h)] 'erc-track-switch-buffer)
+(global-set-key [(alt ?h)] 'erc-track-switch-buffer)
 
 (setq erc-log-channels-directory "~/x/log/erc")
 (setq erc-save-buffer-on-part t)

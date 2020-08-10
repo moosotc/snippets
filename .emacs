@@ -295,18 +295,18 @@
 
 ;;======================================================================
 ;; redefine global and mode specific key sequences
-(global-set-key [?%] 'match-paren)
+(global-set-key [(alt shift 9)] 'match-paren)
 (global-set-key [(control ?x) (control ?b)] 'ibuffer-list-buffers)
 (global-set-key [(control ?x) (?b)] 'helm-for-files)
-(global-set-key [(f5)] 'compile)
-(global-set-key [(f6)] 'my-recompile)
+(global-set-key [(alt ?5)] 'compile)
+(global-set-key [(alt ?6)] 'my-recompile)
 (global-set-key [(alt ?9)] 'insert-parentheses)
 (global-set-key [(alt ?0)] 'my-insert-parentheses)
 (global-set-key [(alt ?')] 'insert-quotes)
 (global-set-key [(alt q)] 'my-kill-this-buffer-and-window)
 (global-set-key [(alt w)] 'my-delete-window)
-(global-set-key [(f11)] 'describe-function-at-point)
-(global-set-key [(f12)] 'describe-variable-at-point)
+(global-set-key [(alt control ?[)] 'describe-function-at-point)
+(global-set-key [(alt control ?])] 'describe-variable-at-point)
 
 (global-set-key [(alt right)] 'bs-cycle-next)
 (global-set-key [(alt left)] 'bs-cycle-previous)
@@ -570,8 +570,10 @@
 (global-set-key [(alt insert)] 'x-clipboard-yank)
 ;;(global-set-key [(alt up)] 'erc-track-switch-buffer)
 (global-set-key [(alt down)] 'my-track-switch-buffer)
-;;(global-set-key [(alt ?h)] 'erc-track-switch-buffer)
-(global-set-key [(alt ?h)] 'erc-track-switch-buffer)
+(global-set-key [(alt ?t)] (lambda ()
+                             (interactive)
+                             (erc-track-switch-buffer -1)))
+(global-set-key [(alt ?n)] 'erc-track-switch-buffer)
 
 (setq erc-log-channels-directory "~/x/log/erc")
 (setq erc-save-buffer-on-part t)

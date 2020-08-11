@@ -495,7 +495,7 @@
             ;; Info-default-directory-list)
             ))
 (autoload 'helm-imenu "helm-imenu")
-(global-set-key [(f7)] 'helm-imenu)
+(global-set-key [(alt ?7)] 'helm-imenu)
 (setq package-archives
       '(
         ("gnu" . "http://elpa.gnu.org/packages/")

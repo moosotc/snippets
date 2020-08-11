@@ -17,7 +17,7 @@ pcm.dmixer-hdmi  {
   type dmix
   ipc_key 1024
   slave {
-    pcm "hw:PCH,3"
+    pcm "hw:PCH,1"
   }
 }
 

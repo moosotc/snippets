@@ -5,10 +5,10 @@ i3 workspace 1
 if ! xdotool search --name "Mozilla" &>/dev/null ; then
     (
         ulimit -s 1024
-        exec firefox "$@"
+        exec firefox -P default "$@"
     ) &
 fi
-test -z "${1-}" || firefox "$@"
-s="windowsize 1667 1113"
+test -z "${1-}" || firefox -P default "$@"
+#s="windowsize 1667 1113"
 s="windowsize 2000 1500"
 xdotool search --sync --onlyvisible --name 'Firefox' $s windowactivate

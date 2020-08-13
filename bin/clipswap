@@ -1,5 +1,5 @@
 #!/bin/sh
 
-xclip -selection clipboard -o | xclip -i -selection secondary
-xclip -selection primary -o | xclip -i -selection clipboard
-xclip -selection secondary -o | xclip -i -selection primary
+xclip -sel c -o | xclip -i -sel s
+xclip -sel p -o | xclip -i -sel c
+xclip -sel s -o | xclip -i -sel p

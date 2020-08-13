@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-test -z "$1" && arg="$(xclip -selection clipboard -o)" || arg="$1"
+test -z "$1" && arg="$(xclip -sel c -o)" || arg="$1"
 ! command -v wget || exec wget -c "$arg"
 
 # find a way to unescape output file name

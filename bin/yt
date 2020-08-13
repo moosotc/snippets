@@ -17,7 +17,7 @@ test "$1" = "-b" && {
 yt="youtube-dl --proxy socks5://localhost:9050"
 yt="youtube-dl"
 
-test -z "$1" && arg=$(xclip -o -selection clipboard) || { arg="$1"; shift; }
+test -z "$1" && arg=$(xclip -o -sel c) || { arg="$1"; shift; }
 test -n "$arg" && expr "$arg" : ".*chessgames" && exec Anal
 test -z "$arg" && {
     echo "nothing to show"

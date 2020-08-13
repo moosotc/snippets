@@ -3,6 +3,6 @@ exec 1>&2 2>/dev/null
 url=$(xclip -o)
 expr $url : ".*/chessgame" &>/dev/null &&
     url=$(echo $url | sed 's|chessgame?|nph-chesspgn?text=1\&|')
-expr $url : "http://.*" && curl -s "$url" | xclip -i -selection clipboard
+expr $url : "http://.*" && curl -s "$url" | xclip -i -sel c
 exec ~/x/rcs/git/xboard/xboard -fcp stockfish -fUCI -scp fairymax \
      -firstPlaysBlack true -st 0:1 -boardSize huge

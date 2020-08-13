@@ -1,4 +1,4 @@
 #!/bin/sh
 exec 0</dev/null
-xclip -selection clipboard -i
-xclip -selection primary -i
+xclip -sel c -i
+xclip -sel p -i

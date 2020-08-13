@@ -1,2 +1,2 @@
 #!/bin/sh
-xclip -o | xclip -i -selection clipboard
+xclip -o | xclip -i -sel c

@@ -20,9 +20,11 @@ name2id() {
         *) echo $default;;
     esac
 }
-exit
+#exit
+
 default=$(name2id "dp")
-ddcutil --bus 6 setvcp 60 $default
+set -- $(ddcutil getvcp 60 --bus=6)
+test "$7" = "DisplayPort-1" || ddcutil --bus 6 setvcp 60 $default
 name=$(printf "hdmi\ndp\ndvi\n" | rofi -dmenu -p "Video Input")
 id=$(name2id $name)
-ddcutil --bus 6 setvcp 60 $id
+test "$id" = "$default" || ddcutil --bus 6 setvcp 60 $id

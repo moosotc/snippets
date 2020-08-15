@@ -64,7 +64,7 @@ cat <<EOF
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
-    <edit name="family" mode="assign"><string>dudu cyryllic</string></edit>
+    <edit name="family" mode="assign"><string>pt sans narrow</string></edit>
   </match>
   <match target="pattern">
     <test name="family"><string>sub</string></test>

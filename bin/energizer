@@ -18,7 +18,7 @@ done
 
 # Following
 
-ethtool -s eno1 wol d
+#ethtool -s eno1 wol d
 #echo 0 >/sys/class/rtc/rtc0/wakealarm
 #date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
 #echo 'mem' >/sys/power/state

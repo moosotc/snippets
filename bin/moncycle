@@ -1,8 +1,7 @@
 #!/bin/sh
 set -eu
 exec>/dev/null 1>&2
-dev=i2c-8
-dev=i2c-5
+dev=i2c-6
 
 lsmod | grep -q i2c_dev || (
     . asroot
@@ -15,18 +14,15 @@ lsmod | grep -q i2c_dev || (
 
 name2id() {
     case "$1" in
-        dp*) echo 2;;
+        dp*) echo 15;;
         dvi*) echo 3;;
-        hdmi*) echo 1;;
+        hdmi*) echo 17;;
         *) echo $default;;
     esac
 }
-default=$(name2id "hdmi")
-
-expr >/dev/null "$(ddcci-tool /dev/$dev -r 0x60)" : ".*/$default" || {
-    ddcci-tool /dev/$dev -r 0x60 -w $default
-} && echo default
-
+exit
+default=$(name2id "dp")
+ddcutil --bus 6 setvcp 60 $default
 name=$(printf "hdmi\ndp\ndvi\n" | rofi -dmenu -p "Video Input")
 id=$(name2id $name)
-test $id = $default || ddcci-tool /dev/$dev -r 0x60 -w $id
+ddcutil --bus 6 setvcp 60 $id

@@ -295,7 +295,7 @@
 
 ;;======================================================================
 ;; redefine global and mode specific key sequences
-(global-set-key [(alt shift 9)] 'match-paren)
+(global-set-key [(alt ?/)] 'match-paren)
 (global-set-key [(control ?x) (control ?b)] 'ibuffer-list-buffers)
 (global-set-key [(control ?x) (?b)] 'helm-for-files)
 (global-set-key [(alt ?5)] 'compile)
@@ -595,8 +595,11 @@
 (defun remove-boring-erc-buffers (l)
   (cl-remove-if
    (lambda (e)
-     (and (string-prefix-p "#" (buffer-name (car e)))
-          (not (member (cddr e) '(erc-keyword-face erc-current-nick-face)))))
+     (let ((name (buffer-name (car e))))
+       (princ name)
+       (and (not (string-equal "#malc" name))
+            (string-prefix-p "#" name)
+            (not (member (cddr e) '(erc-keyword-face erc-current-nick-face))))))
    l))
 
 (defun list-changed-hook ()

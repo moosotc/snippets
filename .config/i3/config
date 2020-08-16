@@ -178,7 +178,10 @@ bindsym Ctrl+Escape $execnoid clipswap
 bindsym $win+Shift+Escape $execnoid llpphtml "$(xclip -sel c -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $win+Print $execnoid sshot.sh
-bindsym Pause $execnoid moncycle
+
+bindsym Pause $execnoid ddcutil --bus 6 setvcp 60 15        # DP
+bindsym $win+Pause $execnoid ddcutil --bus 6 setvcp 60 17   # HDMI
+bindsym $alt+Pause $execnoid ddcutil --bus 6 setvcp 60 3    # DVI
 
 bindsym $win+Shift+minus move scratchpad
 bindsym $win+minus scratchpad show

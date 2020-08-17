@@ -647,5 +647,7 @@
 ;; https://stackoverflow.com/questions/24904208/emacs-windows-org-mode-encoding
 (modify-coding-system-alist 'file "" 'utf-8-unix)
 
+(add-hook 'help-mode-hook 'scroll-lock-mode)
+(add-hook 'gnus-article-mode-hook 'scroll-lock-mode)
 ;;; local Variables:
 ;;; End:

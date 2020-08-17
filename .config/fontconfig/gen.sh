@@ -89,7 +89,7 @@ erif5="linguistics pro"
 S "alegreya"          "serif"
 S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"
-S "pt sans"           "ui"
+M "pt sans"           "ui" "trebuchet ms"
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"  "comic sans ms" "sub"
@@ -101,7 +101,7 @@ M "lora"           "reithserif"
 M "kurinto Grga"   "georgia"
 M "pt astra serif" "times" "times new roman"
 
-M "$ans5" "sans" "opensans" "trebuchet ms" "noto sans" "verdana" "ubuntu"
+M "$ans5" "sans" "opensans" "noto sans" "verdana" "ubuntu"
 M "$erif5" "utopia" "domine"
 M "ruslan display" "cantarell"
 

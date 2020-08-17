@@ -101,7 +101,7 @@ M "lora"           "reithserif"
 M "kurinto Grga"   "georgia"
 M "pt astra serif" "times" "times new roman"
 
-M "$ans5" "sans" "opensans" "noto sans" "verdana" "ubuntu"
+M "$ans5" "sans" "opensans" "noto sans" "verdana" "ubuntu" "tahoma"
 M "$erif5" "utopia" "domine"
 M "ruslan display" "cantarell"
 

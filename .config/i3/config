@@ -33,7 +33,7 @@ set $execnoid exec --no-startup-id
 #bindsym $win+Left workspace prev
 #bindsym $win+Right workspace next
 
-set $mmod Mod4
+set $mmod $win
 bindcode $mmod+45 focus left
 bindcode $mmod+46 focus right
 bindcode $mmod+44 workspace prev
@@ -123,7 +123,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym mod1+F7 mode "resize"
+bindsym $alt+F7 mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information
 # provided by i3mon.py)
@@ -158,13 +158,13 @@ bindsym Ctrl+$win+Down $execnoid chvol -
 bindsym $win+bracketleft $execnoid selwin
 bindsym $win+bracketright $execnoid ytwin
 bindsym $win+Escape $execnoid yt
-bindsym $win+Ctrl+Escape $execnoid mpvsel
-bindsym mod1+Shift+d $execnoid dicx
-bindsym mod1+Shift+F10 $execnoid xtogglewinmax 1
-bindsym mod1+F10 $execnoid xtogglewinmax
-bindsym mod1+Shift+0 $execnoid xtogglewinmax 1
-bindsym mod1+Ctrl+0 $execnoid xtogglewinmax
-bindsym mod1+F11 $execnoid xtogglefs
+bindsym $win+Control+Escape $execnoid mpvsel
+bindsym $alt+Shift+d $execnoid dicx
+bindsym $alt+Shift+F10 $execnoid xtogglewinmax 1
+bindsym $alt+F10 $execnoid xtogglewinmax
+bindsym $alt+Shift+0 $execnoid xtogglewinmax 1
+bindsym $alt+Ctrl+0 $execnoid xtogglewinmax
+bindsym $alt+F11 $execnoid xtogglefs
 bindcode $win+38 $execnoid stwrap
 bindsym $win+Ctrl+Shift+t $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
@@ -182,17 +182,17 @@ bindsym $win+minus scratchpad show
 
 # Use bindcode instead of bindsym to be layout agnostic
 # (thanks to cehteh from #i3)
-bindcode mod4+Ctrl+24 $execnoid xwnpm 7
-bindcode mod4+Ctrl+25 $execnoid xwnpm 8
-bindcode mod4+Ctrl+26 $execnoid xwnpm 9
+bindcode $win+Ctrl+24 $execnoid xwnpm 7
+bindcode $win+Ctrl+25 $execnoid xwnpm 8
+bindcode $win+Ctrl+26 $execnoid xwnpm 9
 
-bindcode mod4+Ctrl+38 $execnoid xwnpm 4
-bindcode mod4+Ctrl+39 $execnoid xwnpm 5
-bindcode mod4+Ctrl+40 $execnoid xwnpm 6
+bindcode $win+Ctrl+38 $execnoid xwnpm 4
+bindcode $win+Ctrl+39 $execnoid xwnpm 5
+bindcode $win+Ctrl+40 $execnoid xwnpm 6
 
-bindcode mod4+Ctrl+52 $execnoid xwnpm 1
-bindcode mod4+Ctrl+53 $execnoid xwnpm 2
-bindcode mod4+Ctrl+54 $execnoid xwnpm 3
+bindcode $win+Ctrl+52 $execnoid xwnpm 1
+bindcode $win+Ctrl+53 $execnoid xwnpm 2
+bindcode $win+Ctrl+54 $execnoid xwnpm 3
 
 bindsym ISO_Next_Group $execnoid scrollledtoggle
 bindsym $win+F1 $execnoid setcapskey

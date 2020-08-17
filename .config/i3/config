@@ -155,8 +155,8 @@ bindsym XF86AudioMute $execnoid acycle
 bindsym Ctrl+$win+Up $execnoid chvol +
 bindsym Ctrl+$win+Down $execnoid chvol -
 
-bindsym $win+bracketright $execnoid selwin
-bindsym $win+bracketleft $execnoid ytwin
+bindsym $win+bracketleft $execnoid selwin
+bindsym $win+bracketright $execnoid ytwin
 bindsym $win+Escape $execnoid yt
 bindsym $win+Ctrl+Escape $execnoid mpvsel
 bindsym mod1+Shift+d $execnoid dicx

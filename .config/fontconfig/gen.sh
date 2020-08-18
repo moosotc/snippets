@@ -91,19 +91,21 @@ S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"
 M "pt sans"           "ui" "trebuchet ms"
 
+M "pt sans narrow"    "BentonSansCond"
+M "lora"              "reithserif"
+M "$erif5"            "utopia" "domine"
+
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 
 M "raleway-v4020"  "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
 M "raleway-v4020"  "helvetica" "helvetica neue"
-M "lora"           "reithserif"
 M "kurinto Grga"   "georgia"
 M "pt astra serif" "times" "times new roman"
 
-M "$ans5" "sans" "opensans" "noto sans" "verdana" "ubuntu" "tahoma"
-M "$erif5" "utopia" "domine"
-M "ruslan display" "cantarell"
+M "$ans5"          "sans" "opensans" "noto sans" "verdana" "ubuntu"
+M "ruslan display" "cantarell" "tahoma"
 
 M "kurinto olde core narrow" "calibri"
 M "kurinto olde core"        "constantia" "corbel" "candara"

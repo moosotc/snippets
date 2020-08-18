@@ -597,7 +597,7 @@
   (cl-remove-if
    (lambda (e)
      (let ((name (buffer-name (car e))))
-       (and (not (string-equal "#malc" name))
+       (and (string-equal "#malc" name)
             (string-prefix-p "#" name)
             (not (member (cddr e) '(erc-keyword-face erc-current-nick-face))))))
    l))

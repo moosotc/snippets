@@ -92,7 +92,7 @@ S "pt sans bold"      "osd"
 M "pt sans"           "ui" "trebuchet ms"
 
 M "pt sans narrow"    "BentonSansCond"
-M "lora"              "reithserif" "times, serif"
+M "lora"              "reithserif" "times, serif" "noto serif"
 M "$erif5"            "utopia" "domine"
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"

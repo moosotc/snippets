@@ -146,7 +146,34 @@
   (interactive)
   (describe-variable (variable-at-point)))
 
-; **********************************************************************
+(setq delete-key-deletes-forward t
+      mouse-yank-at-point t
+      ;; modify frame title to show what exactly we are editing
+      frame-title-format '("emacs: " (buffer-file-name "%f" "%b")))
+
+(defun my-delete-window ()
+  (interactive)
+  (if (> (count-windows) 1) (delete-window)))
+
+(defun good-buffer-p (&optional buffer)
+  (let ((buffer-name (buffer-name buffer)))
+    (or (member buffer-name '("*scratch*" "*cvs*"))
+        (not (string-match "^ ?\\*.*\\*$" buffer-name)))))
+
+(defun my-kill-this-buffer-and-window ()
+  (interactive)
+  (kill-this-buffer)
+  (if (= (count-windows) 2) (delete-window))
+  (or (good-buffer-p)
+      (switch-to-buffer
+       (or (cl-find-if 'good-buffer-p (buffer-list)) "*scratch*"))))
+
+(defun my-recompile ()
+  (interactive)
+  (let ((compilation-ask-about-save nil))
+    (recompile)))
+
+;; **********************************************************************
 ;; hooks
 ;; **********************************************************************
 (defun my-lisp-mode-hook ()

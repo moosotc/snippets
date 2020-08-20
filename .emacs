@@ -146,34 +146,7 @@
   (interactive)
   (describe-variable (variable-at-point)))
 
-(setq delete-key-deletes-forward t
-      mouse-yank-at-point t
-      ;; modify frame title to show what exactly we are editing
-      frame-title-format '("emacs: " (buffer-file-name "%f" "%b")))
-
-(defun my-delete-window ()
-  (interactive)
-  (if (> (count-windows) 1) (delete-window)))
-
-(defun good-buffer-p (&optional buffer)
-  (let ((buffer-name (buffer-name buffer)))
-    (or (member buffer-name '("*scratch*" "*cvs*"))
-        (not (string-match "^ ?\\*.*\\*$" buffer-name)))))
-
-(defun my-kill-this-buffer-and-window ()
-  (interactive)
-  (kill-this-buffer)
-  (if (= (count-windows) 2) (delete-window))
-  (or (good-buffer-p)
-      (switch-to-buffer
-       (or (cl-find-if 'good-buffer-p (buffer-list)) "*scratch*"))))
-
-(defun my-recompile ()
-  (interactive)
-  (let ((compilation-ask-about-save nil))
-    (recompile)))
-
-;; **********************************************************************
+; **********************************************************************
 ;; hooks
 ;; **********************************************************************
 (defun my-lisp-mode-hook ()
@@ -295,8 +268,7 @@
 
 ;;======================================================================
 ;; redefine global and mode specific key sequences
-(global-set-key [(alt ?/)] 'match-paren)
-(global-set-key [(alt ?=)] 'match-paren)
+(global-set-key [(alt ?4)] 'match-paren)
 (global-set-key [(control ?x) (control ?b)] 'ibuffer-list-buffers)
 (global-set-key [(control ?x) (?b)] 'helm-for-files)
 (global-set-key [(alt ?5)] 'compile)
@@ -306,8 +278,8 @@
 (global-set-key [(alt ?')] 'insert-quotes)
 (global-set-key [(alt q)] 'my-kill-this-buffer-and-window)
 (global-set-key [(alt w)] 'my-delete-window)
-(global-set-key [(alt control ?[)] 'describe-function-at-point)
-(global-set-key [(alt control ?])] 'describe-variable-at-point)
+(global-set-key [(alt ?[)] 'describe-function-at-point)
+(global-set-key [(alt ?\])] 'describe-variable-at-point)
 
 (global-set-key [(alt right)] 'bs-cycle-next)
 (global-set-key [(alt left)] 'bs-cycle-previous)
@@ -559,21 +531,12 @@
 (set-selection-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 
-(defun my-insert-primary-selection ()
-  (interactive)
-  (insert (gui-get-selection 'PRIMARY 'UTF8_STRING)))
-
-(defun my-track-switch-buffer ()
-  (interactive)
-  (erc-track-switch-buffer -1))
-
-(global-set-key [(meta insert)] 'my-insert-primary-selection)
 (global-set-key [(alt insert)] 'x-clipboard-yank)
-;;(global-set-key [(alt up)] 'erc-track-switch-buffer)
-(global-set-key [(alt down)] 'my-track-switch-buffer)
-(global-set-key [(alt ?t)] (lambda ()
-                             (interactive)
-                             (erc-track-switch-buffer -1)))
+(global-set-key
+ [(meta insert)]
+ (lambda () (interactive) (insert (gui-get-selection 'PRIMARY 'UTF8_STRING))))
+(global-set-key
+ [(alt ?t)] (lambda () (interactive) (erc-track-switch-buffer -1)))
 (global-set-key [(alt ?n)] 'erc-track-switch-buffer)
 
 (setq erc-log-channels-directory "~/x/log/erc")
@@ -648,5 +611,9 @@
 
 (add-hook 'help-mode-hook 'scroll-lock-mode)
 (add-hook 'gnus-article-mode-hook 'scroll-lock-mode)
+
+(global-set-key [(alt ?h)] (lambda () (interactive) (scroll-up 1)))
+(global-set-key [(alt ?s)] (lambda () (interactive) (scroll-down 1)))
+
 ;;; local Variables:
 ;;; End:

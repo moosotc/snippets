@@ -8,7 +8,7 @@
 * 千と千尋の神隠し                      - 宮崎 駿
 * Tesis                                 - Alejandro Amenábar
 * The Hunter                            - Daniel Nettheim
-
+* ==============================================================================
 * Night on Earth                        - Jim Jarmush
 * Ghost Dog: The Way of the Samurai     - Jim Jarmush
 * Coffee and cigaretes                  - Jim Jarmush
@@ -26,7 +26,7 @@
 * Sideways                              - Alexander Payne
 * Broadcast News                        - James L. Brooks
 * Do the right thing                    - Spike Lee
-
+* ==============================================================================
 * Glengarry Glen Ross                   - David Mamet
 * The Princess Bride                    - Rob Reiner
 * The Guard                             - John Michael McDonagh
@@ -43,7 +43,7 @@
 * Зеркало для Героя                     - Владимир Хотиненко
 * 花樣年華                              - 王家衛
 * バトル・ロワイアル                    - 深作 欣二
-
+* ==============================================================================
 * 羅生門                                - 黒澤明
 * Служили два товарища                  - Евгений Карелов
 * Сталкер                               - Андрей Тарковский
@@ -51,7 +51,7 @@
 * Starman                               - John Carpenter
 * Летят журавли                         - Михаил Калатозов
 * Я шагаю по Москве                     - Георгий Данелия
-
+* ==============================================================================
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
 * Knives Out                            - Rian Johnson
 * El Laberinto del Fauno                - Guillermo del Toro Gómez
@@ -65,3 +65,4 @@
 * The Endless                           - Justin Benson, Aaron Moorhead
 * Mulholland Drive                      - David Lynch
 * The Straight Story                    - David Lynch
+* ==============================================================================

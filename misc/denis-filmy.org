@@ -5,7 +5,7 @@ Der Himmel über Berlin                - Wim Wenders
 Страсти по Андрею                     - Андрей Тарковский
 Perfume: The Story of a Murderer      - Tom Tykwer
 Садовник                              - Виктор Бутурлин
-千と千尋の神隠し                         - 宮崎 駿
+千と千尋の神隠し                      - 宮崎 駿
 Tesis                                 - Alejandro Amenábar
 The Hunter                            - Daniel Nettheim
 
@@ -41,10 +41,10 @@ Birdman                               - Alejandro González Iñárritu
 Механического Пианино                 - Никита Михалков
 Родня                                 - Никита Михалков
 Зеркало для Героя                     - Владимир Хотиненко
-花樣年華                                - 王家衛
-バトル・ロワイアル                        - 深作 欣二
+花樣年華                              - 王家衛
+バトル・ロワイアル                    - 深作 欣二
 
-羅生門                                  - 黒澤明
+羅生門                                - 黒澤明
 Служили два товарища                  - Евгений Карелов
 Сталкер                               - Андрей Тарковский
 Холодное лето пятдесят третьего       - Александр Прошкин
@@ -56,7 +56,7 @@ Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
 Knives Out                            - Rian Johnson
 El Laberinto del Fauno                - Guillermo del Toro Gómez
 On the Waterfront                     - Ηλίας Καζαντζόγλου
-올드보이                                - 박찬욱
+올드보이                              - 박찬욱
 Memento                               - Christopher Edward Nolan
 The Prestige                          - Christopher Edward Nolan
 The Dark Knight                       - Christopher Edward Nolan

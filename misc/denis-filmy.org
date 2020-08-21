@@ -33,7 +33,7 @@
 * Calvary                               - John Michael McDonagh
 * 3 Billboards Outside Ebbing, Missouri -    Martin    McDonagh
 * Fischer King                          - Terry Gilliam
-* Good Will Hunting                     - Gus Van Sent
+* Good Will Hunting                     - Gus Van Sant
 * Planes Trains and Automobiles         - John Hughes
 * Breaking The Waves                    - Lars von Trier
 * Birdman                               - Alejandro González Iñárritu
@@ -63,3 +63,5 @@
 * Inception                             - Christopher Edward Nolan
 * In Bruges                             - Martin McDonagh
 * The Endless                           - Justin Benson, Aaron Moorhead
+* Mulholland Drive                      - David Lynch
+* The Straight Story                    - David Lynch

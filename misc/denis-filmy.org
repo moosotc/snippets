@@ -1,6 +1,7 @@
 * Tesis                                 - Alejandro Amenábar
 * 21 Grams                              - Alejandro González Iñárritu
 * Birdman                               - Alejandro González Iñárritu
+* Dark City                             - Arek Proyas
 * Sideways                              - Alexander Payne
 * Un, deux, trois, soleil               - Bertrand Blier
 * Memento                               - Christopher Edward Nolan
@@ -31,6 +32,8 @@
 * Calvary                               - John Michael McDonagh
 * The Endless                           - Justin Benson, Aaron Moorhead
 * Dances with wolves                    - Kevin Costner
+* Chasing Amy                           - Kevin Smith
+* Clerks                                - Kevin Smith
 * Breaking The Waves                    - Lars von Trier
 * In Bruges                             - Martin McDonagh
 * 3 Billboards Outside Ebbing, Missouri - Martin McDonagh

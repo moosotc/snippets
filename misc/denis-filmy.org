@@ -34,6 +34,7 @@
 * Breaking The Waves                    - Lars von Trier
 * In Bruges                             - Martin McDonagh
 * 3 Billboards Outside Ebbing, Missouri - Martin McDonagh
+* Green Book                            - Peter Farrelly
 * Knives Out                            - Rian Johnson
 * The Princess Bride                    - Rob Reiner
 * Once Upon a Time in the West          - Sergio Leone

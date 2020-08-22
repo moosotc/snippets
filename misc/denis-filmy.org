@@ -22,6 +22,7 @@
 * American Graffiti                     - George Lucas
 * El Laberinto del Fauno                - Guillermo del Toro Gómez
 * Good Will Hunting                     - Gus Van Sant
+* American Psycho                       - Mary Harron
 * Broadcast News                        - James L. Brooks
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
 * Night on Earth                        - Jim Jarmush

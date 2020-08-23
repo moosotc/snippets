@@ -55,6 +55,9 @@ cat <<EOF
     </edit>
   </match>
   <match target="pattern">
+    <test name="family" compare="not_eq">
+      <string>pt sans narrow</string>
+    </test>
     <test name="family" compare="contains">
       <string>narrow</string>
     </test>

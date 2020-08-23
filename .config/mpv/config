@@ -7,7 +7,7 @@ sub=no
 hwdec=vaapi
 osd-font="osd"
 sub-font="sub"
-gpu-context=x11vk
+gpu-context=x11
 hidpi-window-scale=no
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best
 #audio-device=alsa/hdmi:CARD=PCH,DEV=0

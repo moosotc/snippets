@@ -128,8 +128,8 @@ bindsym $alt+F7 mode "resize"
 # Start i3bar to display a workspace bar (plus the system information
 # provided by i3mon.py)
 bar {
-        mode hide
-        hidden_state show
+        mode dock
+        hidden_state hide
         modifier none
         position top
         status_command exec i3mon.py 3 /tmp/i3.fifo

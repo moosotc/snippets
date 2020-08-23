@@ -1,5 +1,10 @@
 #!/bin/sh
 set -e
 
-xdotool search --onlyvisible --class i3bar && hs=hide || hs=show
-i3-msg bar hidden_state $hs
+xdotool search --onlyvisible --class i3bar && {
+    i3-msg bar mode dock
+    i3-msg bar hidden_state hide
+} || {
+    i3-msg bar mode hide
+    i3-msg bar hidden_state show
+}

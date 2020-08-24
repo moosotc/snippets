@@ -44,6 +44,7 @@
 * Knives Out                            - Rian Johnson
 * Donnie Darko                          - Richard Kelly
 * The Princess Bride                    - Rob Reiner
+* American Beauty                       - Sam Mendes
 * Once Upon a Time in the West          - Sergio Leone
 * Do the Right Thing                    - Spike Lee
 * Wind River                            - Taylor Sheridan

@@ -1,7 +1,4 @@
 #!/bin/sh
 setxkbmap -option "" -layout us,ru \
-          -option grp:shifts_toggle,caps:ctrl_modifier \
+          -option grp:ctrls_toggle,caps:ctrl_modifier \
           -v dvorak,
-#xmodmap - <<EOF
-#clear Lock
-#EOF

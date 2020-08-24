@@ -195,8 +195,8 @@ bindcode $win+Ctrl+53 $execnoid xwnpm 2
 bindcode $win+Ctrl+54 $execnoid xwnpm 3
 
 bindsym ISO_Next_Group $execnoid scrollledtoggle
-bindsym $win+F1 $execnoid setcapskey
+bindsym $win+F1 $execnoid "setxkbmap -layout us,ru"
 bindsym $win+F2 $execnoid "xrandr -x; xrandr -x"
 bindsym $win+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
-bindsym $win+F12 $execnoid "setxkbmap -layout us,ru -v dvorak,"
+bindsym $win+F12 $execnoid setcapskey
 bindsym $win+F10 $execnoid dotor

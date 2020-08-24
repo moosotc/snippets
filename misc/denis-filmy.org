@@ -17,23 +17,23 @@
 * Blade Runner 2049                     - Denis Villeneuve
 * Blood Simple                          - Ethan/Joel Coen
 * The Ballad of Buster Scruggs          - Joel/Ethan Coen
-* The Hudsucker Proxy                   - Ethan/Joel Coen
-* No country for old men                - Joel/Ethan Coen
-* American Graffiti                     - George Lucas
-* El Laberinto del Fauno                - Guillermo del Toro Gómez
+* / The Hudsucker Proxy                   - Ethan/Joel Coen
+* No Country for Old Ben                - Joel/Ethan Coen
+* / American Graffiti                     - George Lucas
+* / El Laberinto del Fauno                - Guillermo del Toro Gómez
 * Good Will Hunting                     - Gus Van Sant
 * American Psycho                       - Mary Harron
 * Broadcast News                        - James L. Brooks
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
-* Night on Earth                        - Jim Jarmush
+* / Night on Earth                        - Jim Jarmush
 * Ghost Dog: The Way of the Samurai     - Jim Jarmush
-* Coffee and cigaretes                  - Jim Jarmush
+* Coffee and Cigaretes                  - Jim Jarmush
 * Starman                               - John Carpenter
 * Planes Trains and Automobiles         - John Hughes
 * The Guard                             - John Michael McDonagh
 * Calvary                               - John Michael McDonagh
 * The Endless                           - Justin Benson, Aaron Moorhead
-* Dances with wolves                    - Kevin Costner
+* /Dances with Wolves                    - Kevin Costner
 * Chasing Amy                           - Kevin Smith
 * Clerks                                - Kevin Smith
 * Breaking The Waves                    - Lars von Trier
@@ -44,32 +44,32 @@
 * Donnie Darko                          - Richard Kelly
 * The Princess Bride                    - Rob Reiner
 * Once Upon a Time in the West          - Sergio Leone
-* Do the right thing                    - Spike Lee
+* Do the Right Thing                    - Spike Lee
 * Wind River                            - Taylor Sheridan
 * The Fisher King                       - Terry Gilliam
 * Knockin' on Heaven's Door             - Thomas Jahn
-* Barfuss                               - Til Schweiger
+* /Barfuss                               - Til Schweiger
 * Perfume: The Story of a Murderer      - Tom Tykwer
 * Lola Rennt                            - Tom Tykwer
 * Der Himmel über Berlin                - Wim Wenders
 * Watchmen                              - Zack Snyder
 * On the Waterfront                     - Ηλίας Καζαντζόγλου
-* Холодное лето пятдесят третьего       - Александр Прошкин
+* Холодное лето пятьдесят третьего…      - Александр Прошкин
 * Сибириада                             - Андрей Кончаловский
 * Страсти по Андрею                     - Андрей Тарковский
 * Сталкер                               - Андрей Тарковский
 * Садовник                              - Виктор Бутурлин
 * Любовь и голуби                       - Владимир Меньшов
 * Москва слезам не верит                - Владимир Меньшов
-* Зеркало для Героя                     - Владимир Хотиненко
+* Зеркало для героя                     - Владимир Хотиненко
 * Я шагаю по Москве                     - Георгий Данелия
 * Служили два товарища                  - Евгений Карелов
-* Формула Любви                         - Марк Захаров
+* Формула любви                         - Марк Захаров
 * Летят журавли                         - Михаил Калатозов
 * Покро́вские воро́та                     - Михаил Козаков
 * Родня                                 - Никита Михалков
-* Неоконченная Пьеса для                - Никита Михалков
-  Механического Пианино
+* Неоконченная пьеса для                - Никита Михалков
+  механического пианино
 * Курьер                                - Карен Шахназаров
 * 千と千尋の神隠し                      - 宮崎 駿
 * バトル・ロワイアル                    - 深作 欣二

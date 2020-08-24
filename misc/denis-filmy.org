@@ -13,6 +13,7 @@
 * The Hunter                            - Daniel Nettheim
 * Mulholland Drive                      - David Lynch
 * The Straight Story                    - David Lynch
+* Hell or High Water                    - David Mackenzie
 * Glengarry Glen Ross                   - David Mamet
 * Blade Runner 2049                     - Denis Villeneuve
 * Blood Simple                          - Ethan/Joel Coen
@@ -54,7 +55,7 @@
 * Der Himmel über Berlin                - Wim Wenders
 * Watchmen                              - Zack Snyder
 * On the Waterfront                     - Ηλίας Καζαντζόγλου
-* Холодное лето пятьдесят третьего…      - Александр Прошкин
+* Холодное лето пятьдесят третьего…     - Александр Прошкин
 * Сибириада                             - Андрей Кончаловский
 * Страсти по Андрею                     - Андрей Тарковский
 * Сталкер                               - Андрей Тарковский

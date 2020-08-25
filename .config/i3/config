@@ -166,16 +166,17 @@ bindsym $alt+Shift+0 $execnoid xtogglewinmax 1
 bindsym $alt+Ctrl+0 $execnoid xtogglewinmax
 bindsym $alt+F11 $execnoid xtogglefs
 bindcode $win+38 $execnoid stwrap
-bindsym $win+Ctrl+Shift+t $execnoid alwrap
+bindcode $win+Shift+45 $execnoid stwrap
+bindcode $win+Ctrl+45 $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+Escape $execnoid clipswap
 bindsym $win+Shift+Escape $execnoid llpphtml "$(xclip -sel c -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $win+Print $execnoid sshot.sh
 
-bindsym Pause $execnoid ddcutil --bus 6 setvcp 60 15        # DP
-bindsym $win+Pause $execnoid ddcutil --bus 6 setvcp 60 17   # HDMI
-bindsym $alt+Pause $execnoid ddcutil --bus 6 setvcp 60 3    # DVI
+bindsym      Pause $execnoid ddcutil --bus 6 setvcp 60 15 # DP
+bindsym $win+Pause $execnoid ddcutil --bus 6 setvcp 60 17 # HDMI
+bindsym $alt+Pause $execnoid ddcutil --bus 6 setvcp 60 3  # DVI
 
 bindsym $win+Shift+minus move scratchpad
 bindsym $win+minus scratchpad show
@@ -195,8 +196,5 @@ bindcode $win+Ctrl+53 $execnoid xwnpm 2
 bindcode $win+Ctrl+54 $execnoid xwnpm 3
 
 bindsym ISO_Next_Group $execnoid scrollledtoggle
-bindsym $win+F1 $execnoid "setxkbmap -layout us,ru"
-bindsym $win+F2 $execnoid "xrandr -x; xrandr -x"
-bindsym $win+F11 $execnoid "setxkbmap -layout us,ru -v workman,"
 bindsym $win+F12 $execnoid setcapskey
 bindsym $win+F10 $execnoid dotor

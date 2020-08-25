@@ -247,8 +247,8 @@ def main ():
             winfo = msg[1:]
             msg = None
 
-        if msg == '\x01':
-            msg = None
+        while msg and msg[0] == '\x01':
+            msg = msg[1:]
 
         if deadline and t > deadline:
             msg = None

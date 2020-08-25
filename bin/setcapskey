@@ -1,4 +1,4 @@
 #!/bin/sh
 setxkbmap -option "" -layout us,ru \
-          -option grp:ctrls_toggle,caps:ctrl_modifier \
+          -option grp:win_space_toggle,caps:ctrl_modifier \
           -v dvorak,

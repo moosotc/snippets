@@ -586,8 +586,13 @@
 (defun remove-boring-erc-buffers (l)
   (cl-remove-if-not
    (lambda (e)
-     (or (string-equal "#malc" (buffer-name (car e)))
-         (member (cddr e) '(erc-keyword-face erc-current-nick-face))))
+     (let ((name (buffer-name (car e))))
+       (or ;; anything on #malc
+        (string-equal "#malc" name)
+        ;; ... non channel bufufers
+        (not (string-prefix-p "#" name))
+        ;; any buffer where current nick or any keyword was seen
+        (member (cddr e) '(erc-keyword-face erc-current-nick-face)))))
    l))
 
 (defun list-changed-hook ()

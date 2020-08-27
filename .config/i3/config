@@ -197,4 +197,3 @@ bindcode $win+Ctrl+54 $execnoid xwnpm 3
 
 bindsym ISO_Next_Group $execnoid scrollledtoggle
 bindsym $win+F12 $execnoid setcapskey
-bindsym $win+F10 $execnoid dotor

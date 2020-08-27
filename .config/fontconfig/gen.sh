@@ -96,7 +96,7 @@ M "pt sans"           "ui" "trebuchet ms"
 
 M "pt sans narrow"    "BentonSansCond"
 M "lora"              "reithserif" "times, serif" "noto serif"
-M "$erif5"            "utopia" "domine"
+M "$erif5"            "utopia" "domine" "pt serif"
 
 M "$mono2"            "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"     "comic sans ms" "sub"

@@ -645,6 +645,10 @@
 
 (global-set-key [(alt ?h)] (lambda () (interactive) (scroll-up 1)))
 (global-set-key [(alt ?s)] (lambda () (interactive) (scroll-down 1)))
+;; with grp:win_space_toggle setxkbmap option emacs stell sees all the
+;; keys and default mapping (just-one-space) inserts a space... which is
+;; unexpected
+(global-set-key [(meta ?  )] 'ignore)
 
 ;;; local Variables:
 ;;; End:

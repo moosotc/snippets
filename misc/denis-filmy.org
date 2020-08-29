@@ -1,7 +1,7 @@
 * Tesis                                 - Alejandro Amenábar
 * 21 Grams                              - Alejandro González Iñárritu
 * Birdman                               - Alejandro González Iñárritu
-* Dark City                             - Arek Proyas
+* Dark City                             - Alex Proyas
 * Sideways                              - Alexander Payne
 * Un, deux, trois, soleil               - Bertrand Blier
 * Memento                               - Christopher Edward Nolan

@@ -2,11 +2,8 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 bindkey -e
-bindkey "^[[5~" history-beginning-search-backward
-bindkey "^[[6~" history-beginning-search-forward
-bindkey "^[[3~" history-beginning-search-forward
-bindkey "^[[2~" history-beginning-search-backward # insert
-bindkey "^[[2^" history-beginning-search-forward  # control insert
+bindkey "^[[5~" history-beginning-search-backward # pgup
+bindkey "^[[6~" history-beginning-search-forward  # pgdn
 bindkey "^[]" _history-complete-older
 bindkey "^[/" list-choices
 bindkey "^[?" list-choices

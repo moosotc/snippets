@@ -104,7 +104,7 @@ M "iosevka clam"      "iosevka" "monospace"
 
 M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
 M "raleway-v4020"     "helvetica" "helvetica neue"
-M "beoclah"           "georgia"
+M "beograd"           "georgia"
 M "pt astra serif"    "times" "times new roman"
 
 M "$ans5"             "sans" "opensans" "noto sans" "verdana" "ubuntu"

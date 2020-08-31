@@ -103,13 +103,13 @@ M "dudu cyryllic"     "comic sans ms" "sub"
 M "iosevka clam"      "iosevka" "monospace"
 
 M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
-M "raleway-v4020"     "helvetica" "helvetica neue"
+M "raleway-v4020"     "helvetica" "helvetica neue" "cantarell" "sans"
 M "beograd"           "georgia"
 M "pt astra serif"    "times" "times new roman"
 
-M "$ans5"             "sans" "opensans" "noto sans" "verdana" "ubuntu"
+M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
 
-M "ruslan display"    "cantarell" "tahoma"
+M "ruslan display"    "tahoma"
 
 M "kurinto olde core" "constantia" "corbel" "candara"
 M "kurinto bria"      "cambria"

@@ -5,9 +5,7 @@ setxkbmap -option "" -layout us,ru                              \
           -v dvorak,
 
 xmodmap - <<EOF
-keycode 113 = Left Left Prior
-keycode 114 = Right Right Next
-keycode 118 = Prior Insert Insert
-keycode 119 = Next Delete Delete
+keycode 118 = Prior Insert Prior  Insert
+keycode 119 = Next  Delete Next   Delete
 keycode 108 = Mode_switch Mode_switch Mode_switch Mode_switch
 EOF

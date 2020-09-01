@@ -51,7 +51,6 @@
 * The Princess Bride                    - Rob Reiner
 * American Beauty                       - Sam Mendes
 * Once Upon a Time in the West          - Sergio Leone
-* Do the Right Thing                    - Spike Lee
 * Wind River                            - Taylor Sheridan
 * The Fisher King                       - Terry Gilliam
 * Knockin' on Heaven's Door             - Thomas Jahn
@@ -87,9 +86,7 @@
 * 英雄                                  - 张艺谋
 * 功夫                                  - 周星馳
 * ========================================================================
-* Есть настолько хороший эпизод, что он вытягивает на себе весь фильи
-* AKA One scene exoneration
-*
 * Barton Fink                           - Joel/Ethan Coen
 * Burn After Reading                    - Ethan/Joel Coen
 * First Snow                            - Mark Fergus
+* Do the Right Thing                    - Spike Lee

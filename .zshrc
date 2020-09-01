@@ -4,8 +4,6 @@ SAVEHIST=1000
 bindkey -e
 bindkey "^[[5~" history-beginning-search-backward # pgup
 bindkey "^[[6~" history-beginning-search-forward  # pgdn
-bindkey "^[[a" history-beginning-search-backward  # S-up
-bindkey "^[[b" history-beginning-search-forward   # S-dn
 bindkey "^[]" _history-complete-older
 bindkey "^[/" list-choices
 bindkey "^[?" list-choices

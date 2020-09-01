@@ -1,10 +1,11 @@
 #!/bin/sh
-setxkbmap -option "" -layout us,ru \
-          -option grp:win_space_toggle,caps:ctrl_modifier \
+
+setxkbmap -option "" -layout us,ru                              \
+          -option grp:win_space_toggle,caps:ctrl_modifier       \
           -v dvorak,
 
 xmodmap -e 'keycode 113 = Left Left Prior'                                 \
         -e 'keycode 114 = Right Right Next'                                \
         -e 'keycode 118 = Insert Insert Prior'                             \
-        -e 'keycode 119 = Delete Delete Next Next'                         \
+        -e 'keycode 119 = Delete Delete Next'                              \
         -e 'keycode 108 = Mode_switch Mode_switch Mode_switch Mode_switch'

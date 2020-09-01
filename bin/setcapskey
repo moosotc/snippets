@@ -4,8 +4,8 @@ setxkbmap -option "" -layout us,ru                              \
           -option grp:win_space_toggle,caps:ctrl_modifier       \
           -v dvorak,
 
-xmodmap - <<EOF
+: xmodmap - <<EOF
 keycode 118 = Prior Insert Prior  Insert
 keycode 119 = Next  Delete Next   Delete
-keycode 108 = Mode_switch Mode_switch Mode_switch Mode_switch
+keycode 108 = Mode_switch
 EOF

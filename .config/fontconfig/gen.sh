@@ -110,10 +110,8 @@ M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
 
 M "ruslan display"    "tahoma"
 
-M "kurinto olde core" "constantia" "corbel" "candara"
 M "kurinto bria"      "cambria" "georgia"
-
-M "kurinto olde core narrow" "calibri"
+M "beograd"           "constantia" "corbel" "candara" "calibri"
 
 # learn yourself some greek
 M "symbol" "linux libertine"

@@ -104,7 +104,6 @@ M "iosevka clam"      "iosevka" "monospace"
 
 M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
 M "raleway-v4020"     "helvetica" "helvetica neue" "cantarell" "sans"
-M "beograd"           "georgia"
 M "pt astra serif"    "times" "times new roman"
 
 M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
@@ -112,7 +111,7 @@ M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
 M "ruslan display"    "tahoma"
 
 M "kurinto olde core" "constantia" "corbel" "candara"
-M "kurinto bria"      "cambria"
+M "kurinto bria"      "cambria" "georgia"
 
 M "kurinto olde core narrow" "calibri"
 

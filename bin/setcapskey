@@ -5,6 +5,8 @@ setxkbmap -option "" -layout us,ru                              \
           -v dvorak,
 
 xmodmap - <<EOF
+keycode 51  = BackSpace BackSpace
+keycode 22  = backslash bar
 keycode 113 = Left Left Prior
 keycode 114 = Right Right Next
 keycode 118 = Prior Insert Insert

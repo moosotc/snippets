@@ -7,7 +7,7 @@ setxkbmap -option "" -layout us,ru                              \
 xmodmap - <<EOF
 keycode 113 = Left Left Prior
 keycode 114 = Right Right Next
-keycode 118 = Insert Insert Prior
-keycode 119 = Delete Delete Next
+keycode 118 = Prior Insert Insert
+keycode 119 = Next Delete Delete
 keycode 108 = Mode_switch Mode_switch Mode_switch Mode_switch
 EOF

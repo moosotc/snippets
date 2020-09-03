@@ -12,4 +12,5 @@ EOF
 
 xmodmap - <<EOF
 keycode 9 = Escape Menu Escape Menu
+keycode 108 = Mode_switch
 EOF

@@ -34,6 +34,12 @@ set $execnoid exec --no-startup-id
 #bindsym $win+Right workspace next
 
 set $mmod Mod4
+
+bindsym Group2+$mod+Left workspace prev
+bindsym Group2+$mod+Right workspace next
+bindsym Group2+$mod+Up focus left
+bindsym Group2+$mod+Down focus right
+
 bindcode $mmod+45 focus left
 bindcode $mmod+46 focus right
 bindcode $mmod+44 workspace prev

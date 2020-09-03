@@ -9,3 +9,7 @@ keycode 118 = Prior Insert Prior  Insert
 keycode 119 = Next  Delete Next   Delete
 keycode 108 = Mode_switch
 EOF
+
+xmodmap - <<EOF
+keycode 9 = Escape Menu Escape Menu
+EOF

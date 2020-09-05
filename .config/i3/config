@@ -33,17 +33,15 @@ set $execnoid exec --no-startup-id
 #bindsym $win+Left workspace prev
 #bindsym $win+Right workspace next
 
-set $mmod Mod4
+bindsym $win+Left workspace prev
+bindsym $win+Right  workspace next
+bindsym $win+Up focus left
+bindsym $win+Down focus right
 
-bindsym Group2+$mod+Left workspace prev
-bindsym Group2+$mod+Right workspace next
-bindsym Group2+$mod+Up focus left
-bindsym Group2+$mod+Down focus right
-
-bindcode $mmod+45 focus left
-bindcode $mmod+46 focus right
-bindcode $mmod+44 workspace prev
-bindcode $mmod+47 workspace next
+bindcode $win+45 focus left
+bindcode $win+46 focus right
+bindcode $win+44 workspace prev
+bindcode $win+47 workspace next
 
 # move focused window
 #bindcode $win+Shift+44 move left

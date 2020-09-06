@@ -55,6 +55,12 @@ cat <<EOF
     </edit>
   </match>
   <match target="pattern">
+    <test name="family"><string>arial narrow</string></test>
+    <edit name="family" mode="assign_replace" binding="strong">
+      <string>pt sans narrow</string>
+    </edit>
+  </match>
+  <match target="pattern">
     <test name="family" compare="not_eq">
       <string>pt sans narrow</string>
     </test>

@@ -70,8 +70,7 @@ alias ll='ls -la'
 alias xpwd='printf $PWD | xclip -i'
 alias te=emacsclient
 alias locaml='rlwrap ocaml'
-alias mpvin='(read a; exec mpv "$a";)'
-alias mpvlin='mpv --playlist=-'
+alias mpvin='mpv --playlist=-'
 alias csel='xclip -i -sel c'
 alias h='history'
 alias psax="ps ax | grep -v ]$"

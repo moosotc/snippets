@@ -15,7 +15,6 @@
 * Mulholland Drive                      - David Lynch
 * The Straight Story                    - David Lynch
 * Hell or High Water                    - David Mackenzie
-* Hot Shots!                            - Jim Abrahams
 * Glengarry Glen Ross                   - David Mamet
 * Blade Runner 2049                     - Denis Villeneuve
 * Blood Simple                          - Ethan/Joel Coen
@@ -30,6 +29,7 @@
 * The Piano                             - Jane Campion
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
 * / Night on Earth                       - Jim Jarmush
+* Hot Shots!                            - Jim Abrahams
 * Ghost Dog: The Way of the Samurai     - Jim Jarmush
 * Coffee and Cigaretes                  - Jim Jarmush
 * Starman                               - John Carpenter

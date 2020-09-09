@@ -72,6 +72,7 @@ alias te=emacsclient
 alias locaml='rlwrap ocaml'
 alias mpvin='(read a; exec mpv "$a";)'
 alias mpvlin='mpv --playlist=-'
+alias csel='xclip -i -sel c'
 alias h='history'
 alias psax="ps ax | grep -v ]$"
 alias which-command &>/dev/null && unalias which-command

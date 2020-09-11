@@ -198,5 +198,5 @@ bindcode $win+Ctrl+52 $execnoid xwnpm 1
 bindcode $win+Ctrl+53 $execnoid xwnpm 2
 bindcode $win+Ctrl+54 $execnoid xwnpm 3
 
-bindsym ISO_Next_Group $execnoid keylayind
+bindsym $win+ISO_Next_Group $execnoid keylayind
 bindsym $win+F12 $execnoid setcapskey

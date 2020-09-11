@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+led () {
+    local k=led
+    xset q | grep -q "Scroll Lock: on" && k=-led
+    xset $k named "Scroll Lock"
+}
+
+bg () {
+    if test -e /tmp/ru; then
+        xsetroot -solid grey21
+        rm /tmp/ru
+    else
+        xsetroot -solid grey41
+        :>/tmp/ru
+    fi
+}
+bg

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-k=led
-xset q | grep -q "Scroll Lock: on" && k=-led
-xset $k named "Scroll Lock"

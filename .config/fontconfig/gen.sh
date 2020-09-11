@@ -95,6 +95,7 @@ mono2="fantasque sans mono"
 ans5="montserrat alternates"
 erif5="linguistics pro"
 
+S "$sans5"       "hints"
 S "alegreya"          "serif"
 S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"

@@ -652,3 +652,4 @@
 
 ;;; local Variables:
 ;;; End:
+(put 'erc-remove-text-properties-region 'disabled nil)

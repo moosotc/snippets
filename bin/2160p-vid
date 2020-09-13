@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+test -z "${2-}" || export vblank_mode=0
+exec mpv --gpu-context=${1-auto}                \
+     --demuxer-rawvideo-w=3840                  \
+     --demuxer-rawvideo-h=2160                  \
+     --demuxer=rawvideo                         \
+     --no-correct-pts --fs --fps=60 /dev/zero

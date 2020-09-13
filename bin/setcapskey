@@ -2,7 +2,7 @@
 
 setxkbmap -option "" -layout us,ru                              \
           -option grp:win_space_toggle,caps:ctrl_modifier       \
-          -v dvorak,
+          -variant dvorak, -v 6
 
 : xmodmap - <<EOF
 keycode 118 = Prior Insert Prior  Insert

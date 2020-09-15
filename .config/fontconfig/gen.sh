@@ -28,7 +28,6 @@ set -e
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 # tibetan machine http://www.pktc.org/pktc/download.htm#FreeTypeface
 #   unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
-# kurinto         https://kurinto.com/
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
   <match target="pattern">

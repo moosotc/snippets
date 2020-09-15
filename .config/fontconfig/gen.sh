@@ -103,7 +103,7 @@ M "pt sans"           "ui" "trebuchet ms"
 
 M "pt sans narrow"    "BentonSansCond"
 M "lora"              "reithserif" "times, serif" "noto serif"
-M "$erif5"            "utopia" "domine" "pt serif"
+M "$erif5"            "utopia" "domine" "pt serif" "georgia"
 
 M "$mono2"            "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"     "comic sans ms" "sub"
@@ -117,8 +117,7 @@ M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
 
 M "ruslan display"    "tahoma"
 
-M "kurinto bria"      "cambria" "georgia"
-M "beograd"           "constantia" "corbel" "candara" "calibri"
+M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria"
 
 # learn yourself some greek
 M "symbol" "linux libertine"

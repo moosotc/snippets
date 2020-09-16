@@ -94,7 +94,7 @@ mono2="fantasque sans mono"
 ans5="montserrat alternates"
 erif5="linguistics pro"
 
-S "$sans5"       "hints"
+S "$sans5"            "hints"
 S "alegreya"          "serif"
 S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"
@@ -119,7 +119,7 @@ M "ruslan display"    "tahoma"
 M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria"
 
 # learn yourself some greek
-M "symbol" "linux libertine"
+M "symbol"            "linux libertine"
 
 echo "</fontconfig>"
 

@@ -94,10 +94,11 @@ mono2="fantasque sans mono"
 ans5="montserrat alternates"
 erif5="linguistics pro"
 
-S "$ans5"             "hint"
 S "alegreya"          "serif"
 S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"
+
+M "$ans5"             "hint"
 M "pt sans"           "ui" "trebuchet ms"
 
 M "pt sans narrow"    "BentonSansCond"
@@ -108,15 +109,15 @@ M "$mono2"            "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "dudu cyryllic"     "comic sans ms" "sub"
 M "iosevka clam"      "iosevka" "monospace"
 
-M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif" "sans serif"
-M "raleway-v4020"     "helvetica" "helvetica neue" "cantarell" "sans"
+M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif"
+M "raleway-v4020"     "helvetica" "helvetica neue" "cantarell"
 M "pt astra serif"    "times" "times new roman"
 
 M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
 
-M "ruslan display"    "tahoma"
+M "ruslan display"    "tahoma" "sans serif"
 
-M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria"
+M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria" "sans"
 
 # learn yourself some greek
 M "symbol"            "linux libertine"

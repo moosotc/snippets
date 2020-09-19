@@ -98,7 +98,7 @@ S "alegreya"          "serif"
 S "mongolian writing" "cursive"
 S "pt sans bold"      "osd"
 
-M "$ans5"             "hint"
+M "$ans5"             "hint" "helvetica"
 M "pt sans"           "ui" "trebuchet ms"
 
 M "pt sans narrow"    "BentonSansCond"
@@ -110,7 +110,7 @@ M "dudu cyryllic"     "comic sans ms" "sub"
 M "iosevka clam"      "iosevka" "monospace"
 
 M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif"
-M "raleway-v4020"     "helvetica" "helvetica neue" "cantarell"
+M "raleway-v4020"     "helvetica neue" "cantarell"
 M "pt astra serif"    "times" "times new roman"
 
 M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"

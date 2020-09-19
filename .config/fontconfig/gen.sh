@@ -110,7 +110,7 @@ M "dudu cyryllic"     "comic sans ms" "sub"
 M "iosevka clam"      "iosevka" "monospace"
 
 M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif"
-M "raleway-v4020"     "helvetica neue" "cantarell"
+M "raleway-v4020"     "helvetica neue" "cantarell" "freesans"
 M "pt astra serif"    "times" "times new roman"
 
 M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"

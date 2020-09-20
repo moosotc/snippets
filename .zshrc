@@ -71,9 +71,10 @@ alias xpwd='printf $PWD | xclip -i'
 alias te=emacsclient
 alias locaml='rlwrap ocaml'
 alias mpvin='mpv --playlist=-'
-alias csel='xclip -i -sel c'
+alias xco='xclip -se c -o'
+alias xci='xclip -se c -i'
 alias h='history'
-alias ps='echo bad habits die hard - $*'
+alias ps='echo bad habits die hard (use \\ps and think) - $*'
 alias which-command &>/dev/null && unalias which-command
 sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color

@@ -105,19 +105,20 @@ M "pt sans narrow"    "BentonSansCond"
 M "lora"              "reithserif" "times, serif" "noto serif"
 M "$erif5"            "utopia" "domine" "pt serif" "georgia"
 
-M "$mono2"            "ubuntu mono" "consolas" "courier" "courier new" "uimono"
+M "$mono2"            "ubuntu mono" "consolas" "courier" "sans" \
+  "courier new" "uimono"
 M "dudu cyryllic"     "comic sans ms" "sub"
 M "iosevka clam"      "iosevka" "monospace"
 
-M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif"
-M "raleway-v4020"     "helvetica neue" "cantarell" "freesans" "reithsans"
+M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif"  \
+  "nyt-franklin" "helvetica neue" "cantarell" "freesans" "reithsans"
 M "pt astra serif"    "times" "times new roman"
 
 M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
 
 M "ruslan display"    "tahoma" "sans serif"
 
-M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria" "sans"
+M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria"
 
 # learn yourself some greek
 M "symbol"            "linux libertine"

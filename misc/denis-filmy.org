@@ -28,8 +28,8 @@
 * Broadcast News                        - James L. Brooks
 * The Piano                             - Jane Campion
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
-* / Night on Earth                       - Jim Jarmush
 * Hot Shots!                            - Jim Abrahams
+* / Night on Earth                       - Jim Jarmush
 * Ghost Dog: The Way of the Samurai     - Jim Jarmush
 * Coffee and Cigaretes                  - Jim Jarmush
 * Starman                               - John Carpenter

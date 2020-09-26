@@ -11,5 +11,6 @@ export CXX='ccache g++'
             --enable-libx264                    \
             --enable-libx265                    \
             --enable-vaapi                      \
+            --enable-libdav1d                   \
             --cc="$CC"                          \
             --cxx="$CXX"

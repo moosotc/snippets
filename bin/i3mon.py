@@ -173,7 +173,7 @@ translate = {"package-0" : "p",
              "uncore"    : "g",
              "dram"      : "m"}
 
-translatetemp = {"pch_cannonlake" : "p",
+translatetemp = {"pch_cannonlake" : "🌡",
                  "x86_pkg_temp"   : "x",
                  "iwlwifi"        : "w"}
 

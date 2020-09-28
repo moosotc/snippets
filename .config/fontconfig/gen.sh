@@ -93,35 +93,30 @@ EOF
 mono2="fantasque sans mono"
 ans5="montserrat alternates"
 erif5="linguistics pro"
+curs="mongolian writing"
+kur1="kurinto olde core"
+rale="raleway-v4020"
+appl="mongolian writing"
 
-S "alegreya"          "serif"
-S "mongolian writing" "cursive"
-S "pt sans bold"      "osd"
-
-M "$ans5"             "hint" "helvetica"
-M "pt sans"           "ui" "trebuchet ms"
-
-M "pt sans narrow"    "BentonSansCond"
-M "lora"              "reithserif" "times, serif" "noto serif"
-M "$erif5"            "utopia" "domine" "pt serif" "georgia"
-
-M "$mono2"            "ubuntu mono" "consolas" "courier" "sans" \
-  "courier new" "uimono"
-M "dudu cyryllic"     "comic sans ms" "sub"
-M "iosevka clam"      "iosevka" "monospace"
-
-M "raleway-v4020"     "segoe ui" "arial" "roboto" "sans-serif"  \
-  "nyt-franklin" "helvetica neue" "cantarell" "freesans" "reithsans"
-M "pt astra serif"    "times" "times new roman"
-
-M "$ans5"             "opensans" "open sans" "noto sans" "verdana" "ubuntu"
-
-M "ruslan display"    "tahoma" "sans serif"
-
-M "beograd"           "constantia" "corbel" "candara" "calibri" "cambria"
-
-# learn yourself some greek
-M "symbol"            "linux libertine"
+M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
+M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "helvetica"
+M "alegreya"       "serif"
+M "pt sans bold"   "osd"
+M "pt sans"        "ui" "trebuchet ms"
+M "pt sans narrow" "BentonSansCond"
+M "lora"           "reithserif" "times, serif" "noto serif"
+M "dudu cyryllic"  "comic sans ms" "sub"
+M "iosevka clam"   "iosevka" "monospace"
+M "pt astra serif" "times" "times new roman"
+M "ruslan display" "sans serif"
+M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria"
+M "symbol"         "linux libertine" # learn yourself some greek
+M "$curs"          "cursive"
+M "$ans5"          "opensans" "open sans" "noto sans" "verdana" "ubuntu" "hint"
+M "$erif5"         "utopia" "domine" "pt serif" "georgia"
+M "$kur1"          "tahoma" "sans"
+M "$curs"          "nyt-franklin" "cantarell" "freesans" "reithsans"
+M "$appl"          "helvetica neue" "sf pro text" "sf pro display"
 
 echo "</fontconfig>"
 

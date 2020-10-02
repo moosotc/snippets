@@ -6,7 +6,6 @@ set -e
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
-# alegreya        https://www.huertatipografica.com/en/fonts/alegreya-ht-pro
 # beograd         https://www.fontspace.com/beograd-font-f28002
 # iosevka         https://github.com/be5invis/Iosevka
 #    clam         https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
@@ -102,14 +101,13 @@ rale="raleway-v4020"
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "helvetica neue"
-M "alegreya"       "serif"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui" "trebuchet ms"
 M "pt sans narrow" "bentonsanscond"
 M "lora"           "reithserif" "times, serif" "noto serif"
 M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
-M "pt astra serif" "times" "times new roman"
+M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria"
 M "symbol"         "linux libertine" # learn yourself some greek

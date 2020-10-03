@@ -60,7 +60,6 @@
 * Roman Holiday                         - William Wyler
 * Der Himmel über Berlin                - Wim Wenders
 * Watchmen                              - Zack Snyder
-* On the Waterfront                     - Ηλίας Καζαντζόγλου
 * Холодное лето пятьдесят третьего…     - Александр Прошкин
 * Сибириада                             - Андрей Кончаловский
 * Страсти по Андрею                     - Андрей Тарковский
@@ -92,3 +91,4 @@
 * Burn After Reading                    - Ethan/Joel Coen
 * First Snow                            - Mark Fergus
 * Do the Right Thing                    - Spike Lee
+* On the Waterfront                     - Ηλίας Καζαντζόγλου

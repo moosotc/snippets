@@ -54,15 +54,6 @@ cat <<EOF
     </edit>
   </match>
   <match target="pattern">
-    <test name="family"><string>arial narrow</string></test>
-    <edit name="family" mode="assign_replace" binding="strong">
-      <string>pt sans narrow</string>
-    </edit>
-  </match>
-  <match target="pattern">
-    <test name="family" compare="not_eq">
-      <string>pt sans narrow</string>
-    </test>
     <test name="family" compare="contains">
       <string>narrow</string>
     </test>
@@ -72,7 +63,7 @@ cat <<EOF
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
-    <edit name="family" mode="assign"><string>pt sans narrow</string></edit>
+    <edit name="family" mode="assign"><string>mongolian writing</string></edit>
   </match>
   <match target="pattern">
     <test name="family"><string>sub</string></test>
@@ -102,8 +93,7 @@ rale="raleway-v4020"
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "helvetica neue"
 M "pt sans bold"   "osd"
-M "pt sans"        "ui" "trebuchet ms"
-M "pt sans narrow" "bentonsanscond"
+M "pt sans"        "ui"
 M "lora"           "reithserif" "times, serif" "noto serif"
 M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
@@ -113,9 +103,9 @@ M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria"
 M "symbol"         "linux libertine" # learn yourself some greek
 M "$ans5"          "opensans" "noto sans" "verdana" "helvetica" "lucida grande" "open sans"
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
-M "$kurw"          "tahoma" "sans" "ubutu"
-M "$kurn"          "cantarell"
-M "$kur1"          "nyt-franklin"
+M "$kurw"          "tahoma" "sans" "ubutu" "trebuchet ms"
+M "$kur1"          "cantarell"
+M "$kurn"          "nyt-franklin"
 M "$curs"          "cursive"
 
 echo "</fontconfig>"

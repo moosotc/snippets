@@ -4,57 +4,38 @@
 * Dark City                             - Alex Proyas
 * Sideways                              - Alexander Payne
 * WALL·E                                - Andrew Stanton
-* / Un, deux, trois, soleil               - Bertrand Blier
-* / Memento                               - Christopher Edward Nolan
 * The Prestige                          - Christopher Edward Nolan
 * The Dark Knight                       - Christopher Edward Nolan
-* / Inception                             - Christopher Edward Nolan
 * Mystic River                          - Clint Eastwood
-* / Unforgiven                            - Clint Eastwood
 * The Hunter                            - Daniel Nettheim
 * Mulholland Drive                      - David Lynch
 * The Straight Story                    - David Lynch
-* / Hell or High Water                    - David Mackenzie
-* / Glengarry Glen Ross                   - David Mamet
 * Blade Runner 2049                     - Denis Villeneuve
 * Blood Simple                          - Ethan/Joel Coen
 * The Ballad of Buster Scruggs          - Joel/Ethan Coen
-* / The Hudsucker Proxy                  - Ethan/Joel Coen
 * No Country for Old Men                - Joel/Ethan Coen
-* / American Graffiti                    - George Lucas
-* / El Laberinto del Fauno               - Guillermo del Toro Gómez
 * Good Will Hunting                     - Gus Van Sant
 * American Psycho                       - Mary Harron
 * Broadcast News                        - James L. Brooks
-* / The Piano                             - Jane Campion
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
 * Hot Shots!                            - Jim Abrahams
-* / Night on Earth                       - Jim Jarmush
 * Ghost Dog: The Way of the Samurai     - Jim Jarmush
 * Coffee and Cigaretes                  - Jim Jarmush
 * Starman                               - John Carpenter
-* / Planes Trains and Automobiles         - John Hughes
 * The Guard                             - John Michael McDonagh
-* / Calvary                               - John Michael McDonagh
 * The Endless                           - Justin Benson, Aaron Moorhead
-* / Dances with Wolves                   - Kevin Costner
-* / Chasing Amy                           - Kevin Smith
 * Clerks                                - Kevin Smith
-* / Breaking The Waves                    - Lars von Trier
 * In Bruges                             - Martin McDonagh
 * 3 Billboards Outside Ebbing, Missouri - Martin McDonagh
 * Green Book                            - Peter Farrelly
 * Death Proof                           - Quentin Tarantino
 * Knives Out                            - Rian Johnson
-* / Kramer vs Kramer                     - Robert Benton
 * Donnie Darko                          - Richard Kelly
 * The Princess Bride                    - Rob Reiner
 * American Beauty                       - Sam Mendes
 * Once Upon a Time in the West          - Sergio Leone
-* / Wind River                            - Taylor Sheridan
 * The Fisher King                       - Terry Gilliam
 * Knockin' on Heaven's Door             - Thomas Jahn
-* / Barfuss                              - Til Schweiger
 * Perfume: The Story of a Murderer      - Tom Tykwer
 * Lola Rennt                            - Tom Tykwer
 * Roman Holiday                         - William Wyler
@@ -86,6 +67,26 @@
 * 올드보이                              - 박찬욱
 * 英雄                                  - 张艺谋
 * 功夫                                  - 周星馳
+* ////////////////////////////////////////////////////////////////////////
+* Un, deux, trois, soleil               - Bertrand Blier
+* Memento                               - Christopher Edward Nolan
+* Inception                             - Christopher Edward Nolan
+* Unforgiven                            - Clint Eastwood
+* Hell or High Water                    - David Mackenzie
+* Glengarry Glen Ross                   - David Mamet
+* The Hudsucker Proxy                   - Ethan/Joel Coen
+* American Graffiti                     - George Lucas
+* El Laberinto del Fauno                - Guillermo del Toro Gómez
+* The Piano                             - Jane Campion
+* Night on Earth                        - Jim Jarmush
+* Planes Trains and Automobiles         - John Hughes
+* Calvary                               - John Michael McDonagh
+* Dances with Wolves                    - Kevin Costner
+* Chasing Amy                           - Kevin Smith
+* Breaking The Waves                    - Lars von Trier
+* Kramer vs Kramer                      - Robert Benton
+* Wind River                            - Taylor Sheridan
+* Barfuss                               - Til Schweiger
 * ========================================================================
 * Barton Fink                           - Joel/Ethan Coen
 * Burn After Reading                    - Ethan/Joel Coen

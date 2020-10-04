@@ -101,12 +101,12 @@ M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria"
 M "symbol"         "linux libertine" # learn yourself some greek
-M "$ans5"          "noto sans" "verdana" "helvetica" "lucida grande" "open sans"
+M "$ans5"          "noto sans" "verdana" "helvetica" "lucida grande" "opensans"
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
 M "$kurw"          "tahoma" "sans" "ubutu"
 M "$kur1"          "cantarell"
 M "$kurn"          "nyt-franklin"
-M "$curs"          "cursive" "opensans"
+M "$curs"          "cursive" "open sans"
 
 echo "</fontconfig>"
 

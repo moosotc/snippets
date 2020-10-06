@@ -97,19 +97,22 @@ M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "helvetica neue"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui" "trebuchet ms"
-M "lora"           "reithserif" "times, serif" "noto serif"
+M "lora"           "reithserif" "noto serif"
 M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria"
-M "symbol"         "linux libertine" # learn yourself some greek
 M "$ans5"          "noto sans" "verdana" "helvetica" "lucida grande" "opensans"
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
 M "$kurw"          "tahoma" "ubuntu"
 M "$kur1"          "cantarell"
-M "$kurn"          "nyt-franklin"
 M "$curs"          "cursive" "open sans"
+
+# learn yourself some cyrl
+M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"
+# ...                 grek
+M "symbol"         "linux libertine"
+
 
 echo "</fontconfig>"
 

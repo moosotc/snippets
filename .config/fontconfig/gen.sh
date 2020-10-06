@@ -25,9 +25,18 @@ set -e
 #     pro         https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
 # mongolian
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-# tibetan machine http://www.pktc.org/pktc/download.htm#FreeTypeface
-#   unicode       http://www.pktc.org/pktc/download/sft/tibmachinetypeface.zip
+# noto            https://www.google.com/get/noto/ (only tibetan is used)
 # kurinto         https://kurinto.com/
+
+mono2="fantasque sans mono"
+ans5="montserrat alternates"
+erif5="linguistics pro"
+curs="mongolian writing"
+kur1="kurinto olde core"
+kurn="kurinto olde core narrow"
+kurw="kurinto olde core wide"
+rale="raleway-v4020"
+
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
   <match target="pattern">
@@ -57,13 +66,16 @@ cat <<EOF
     <test name="family" compare="contains">
       <string>narrow</string>
     </test>
+    <test name="family" compare="not_eq" qual="all">
+      <string>$kurn</string>
+    </test>
     <edit name="family" mode="assign">
       <string>ruslan display</string>
     </edit>
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>
-    <edit name="family" mode="assign"><string>mongolian writing</string></edit>
+    <edit name="family" mode="assign"><string>$kurn</string></edit>
   </match>
   <match target="pattern">
     <test name="family"><string>sub</string></test>
@@ -81,21 +93,12 @@ cat <<EOF
   </match>
 EOF
 
-mono2="fantasque sans mono"
-ans5="montserrat alternates"
-erif5="linguistics pro"
-curs="mongolian writing"
-kur1="kurinto olde core"
-kurn="kurinto olde core narrow"
-kurw="kurinto olde core wide"
-rale="raleway-v4020"
-
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "helvetica neue"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui" "trebuchet ms"
 M "lora"           "reithserif" "times, serif" "noto serif"
-M "dudu cyryllic"  "comic sans ms" "sub"
+M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
@@ -103,7 +106,7 @@ M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria"
 M "symbol"         "linux libertine" # learn yourself some greek
 M "$ans5"          "noto sans" "verdana" "helvetica" "lucida grande" "opensans"
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
-M "$kurw"          "tahoma" "sans" "ubutu"
+M "$kurw"          "tahoma" "ubuntu"
 M "$kur1"          "cantarell"
 M "$kurn"          "nyt-franklin"
 M "$curs"          "cursive" "open sans"

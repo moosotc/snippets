@@ -3,7 +3,8 @@
 ** cantarell      - gnome.org
 ** verdana        - opennet.ru, news.ycombinator.com, www.identifont.com
 ** opensans       - arstechnica.com
-** candara        - https://screenfont.ca/fonts/today/Tiresias/
+** open sans      - regnum.ru
+** candara        - screenfont.ca/fonts/today/Tiresias
 ** monaco         - stackoverflow.com
 ** verdana
   https://www.opennet.ru

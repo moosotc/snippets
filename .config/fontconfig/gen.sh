@@ -34,7 +34,6 @@ erif5="linguistics pro"
 curs="mongolian writing"
 kur1="kurinto olde core"
 kurn="kurinto olde core narrow"
-kurw="kurinto olde core wide"
 rale="raleway-v4020"
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -104,8 +103,7 @@ M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
 M "$ans5"          "noto sans" "verdana" "helvetica" "lucida grande" "opensans"
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
-M "$kurw"          "tahoma" "ubuntu"
-M "$kur1"          "cantarell"
+M "$kur1"          "cantarell" "tahoma" "ubuntu"
 M "$curs"          "cursive" "open sans"
 
 # learn yourself some cyrl

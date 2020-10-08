@@ -111,7 +111,6 @@ M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"
 # ...                 grek
 M "symbol"         "linux libertine"
 
-
 echo "</fontconfig>"
 
 # Local Variables:

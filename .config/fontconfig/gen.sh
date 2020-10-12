@@ -35,6 +35,7 @@ curs="mongolian writing"
 kur1="kurinto olde core"
 kurn="kurinto olde core narrow"
 rale="raleway-v4020"
+dsans="opensans 'open sans' 'nato sans' 'droid sans'"
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
@@ -101,10 +102,10 @@ M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-M "$ans5"          "noto sans" "verdana" "lucida grande" "opensans" "open sans"
+eval M "$ans5"     "verdana" "lucida grande" "helvetica neue" $dsans
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
 M "$kur1"          "cantarell" "tahoma" "ubuntu"
-M "$curs"          "cursive" "helvetica neue"
+M "$curs"          "cursive"
 
 # learn yourself some cyrl
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"

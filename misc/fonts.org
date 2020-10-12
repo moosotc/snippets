@@ -15,6 +15,8 @@
 ** helvetica neue
    https://glosbe.com/en/en/enforceable%20promise
    https://10fastfingers.com/advanced-typing-test/english
+   https://www.apple.com/
+   vimium
 ** calibri
    https://timesofindia.indiatimes.com/life-style
    https://www.amd.com/en/products/cpu/amd-ryzen-threadripper-3990x

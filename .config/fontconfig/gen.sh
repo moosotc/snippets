@@ -102,7 +102,7 @@ M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-eval M "$ans5"     "verdana" "lucida grande" "helvetica" $dsans
+eval M "'$ans5'"   "verdana" "'lucida grande'" "helvetica" $dsans
 M "$erif5"         "utopia" "domine" "pt serif" "georgia"
 M "$kur1"          "cantarell" "tahoma" "ubuntu"
 M "$curs"          "cursive"

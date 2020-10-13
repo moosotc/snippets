@@ -30,9 +30,9 @@ set -e
 
 mono2="fantasque sans mono"
 ans5="montserrat alternates"
-erif5="linguistics pro"
-curs="mongolian writing"
-kur1="kurinto olde core"
+erif="linguistics pro"
+curi="mongolian writing"
+kuri="kurinto olde core"
 kurn="kurinto olde core narrow"
 rale="raleway-v4020"
 dsans="opensans 'open sans' 'nato sans' 'droid sans'"
@@ -102,10 +102,10 @@ M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-eval M "'$ans5'"   "verdana" "'lucida grande'" "helvetica" $dsans
-M "$erif5"         "utopia" "domine" "pt serif" "georgia"
-M "$kur1"          "cantarell" "tahoma" "ubuntu"
-M "$curs"          "cursive"
+eval M "'$ans'"    "verdana" "'lucida grande'" "helvetica" $dsans
+M "$erif"          "utopia" "domine" "pt serif" "georgia"
+M "$kuri"          "cantarell" "tahoma" "ubuntu"
+M "$curs"          "cursive"m
 
 # learn yourself some cyrl
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"

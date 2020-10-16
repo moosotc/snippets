@@ -105,7 +105,7 @@ M "ruslan display" "sans serif"
 eval M "'$ans'"    "verdana" "'lucida grande'" "helvetica" $dsans
 M "$erif"          "utopia" "domine" "pt serif" "georgia"
 M "$kuri"          "cantarell" "tahoma" "ubuntu"
-M "$curs"          "cursive"m
+M "$curs"          "cursive"
 
 # learn yourself some cyrl
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"

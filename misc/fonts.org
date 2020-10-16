@@ -1,15 +1,16 @@
 * X-was-spotted-at
 ** segoe ui       - github.com, channel9.msdn.com
 ** cantarell      - gnome.org
-** verdana        - opennet.ru, news.ycombinator.com, www.identifont.com
 ** opensans       - arstechnica.com
 ** open sans      - regnum.ru http://thestockyfox.com
 ** candara        - screenfont.ca/fonts/today/Tiresias
 ** monaco         - stackoverflow.com
 ** verdana
-  https://www.opennet.ru
-  https://www.linuxquestions.org
-  http://behdad.org/
+   https://news.ycombinator.com
+   https://www.identifont.com
+   https://www.opennet.ru
+   https://www.linuxquestions.org
+   http://behdad.org/
 ** georgia
   https://www.exljbris.com/fontinsans.html
 ** helvetica neue
@@ -33,7 +34,7 @@
      "intel-clear", "tahoma", Helvetica, "helvetica", Arial, sans-serif
 *** https://модные-слова.рф
 **** stack
-     tahma, trebuchet ms, helvetica, sans-serif
+     tahoma, trebuchet ms, helvetica, sans-serif
 * google fonts
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date

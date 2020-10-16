@@ -29,7 +29,7 @@ set -e
 # kurinto         https://kurinto.com/
 
 mono2="fantasque sans mono"
-ans5="montserrat alternates"
+ans="montserrat alternates"
 erif="linguistics pro"
 curi="mongolian writing"
 kuri="kurinto olde core"
@@ -102,7 +102,7 @@ M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-eval M "'$ans5'"   "verdana" "'lucida grande'" "helvetica" $dsans
+eval M "'$an5'"    "verdana" "'lucida grande'" "helvetica" $dsans
 M "$erif"          "utopia" "domine" "pt serif" "georgia"
 M "$kuri"          "cantarell" "tahoma" "ubuntu"
 M "$curs"          "cursive"

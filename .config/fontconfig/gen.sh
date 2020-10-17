@@ -31,7 +31,7 @@ set -e
 mono2="fantasque sans mono"
 ans="montserrat alternates"
 erif="linguistics pro"
-curi="mongolian writing"
+curs="mongolian writing"
 kuri="kurinto olde core"
 kurn="kurinto olde core narrow"
 rale="raleway-v4020"
@@ -96,16 +96,16 @@ EOF
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif"
 M "pt sans bold"   "osd"
-M "pt sans"        "ui" "trebuchet ms"
+M "pt sans"        "ui"
 M "lora"           "reithserif" "noto serif"
 M "dudu cyryllic"  "comic sans ms" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-eval M "'$an5'"    "verdana" "'lucida grande'" "helvetica" $dsans
+eval M "'$ans'"    "verdana" "'lucida grande'" "helvetica" $dsans
 M "$erif"          "utopia" "domine" "pt serif" "georgia"
 M "$kuri"          "cantarell" "tahoma" "ubuntu"
-M "$curs"          "cursive"
+M "$curs"          "cursive" "trebuchet ms"
 
 # learn yourself some cyrl
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"

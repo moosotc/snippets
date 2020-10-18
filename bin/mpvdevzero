@@ -1,0 +1,1 @@
+mpv --fps=140 --demuxer=rawvideo --demuxer-rawvideo-w=3840 --demuxer-rawvideo-h=2160 /dev/zero

@@ -603,6 +603,7 @@
           (notify-moo (format "%s" heads)))
       (notify-moo (string #x1)))))
 (add-hook 'erc-track-list-changed-hook 'list-changed-hook)
+(remove-text-properties begin end '(read-only t))
 
 (add-hook 'tuareg-mode-hook
           (function
@@ -652,4 +653,3 @@
 
 ;;; local Variables:
 ;;; End:
-(put 'erc-remove-text-properties-region 'disabled nil)

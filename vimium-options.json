@@ -2,15 +2,15 @@
   "settingsVersion": "1.66",
   "exclusionRules": [
     {
-      "pattern": "https?://mail.google.com/*",
+      "pattern": "https://www.typelit.io/*",
       "passKeys": ""
     }
   ],
   "filterLinkHints": false,
   "waitForEnterForFilteredHints": true,
   "hideHud": true,
-  "keyMappings": "# Insert your preferred key mappings here.\nmap , LinkHints.activateMode\nmap . LinkHints.activateModeToCopyLinkUrl\nmap l goBack\nmap F goForward\nmap q removeTab\nmap d LinkHints.activateModeToOpenInNewTab \nmap b Vomnibar.activateTabSelection\nmap <c-x><c-c> quit\nmap  y0 copyCurrentUrl\nmap  .0 copyCurrentUrl\n# https://gist.github.com/mvanzorn/95094227ec149b761419925382f2379f\nmap <c-x><c-f> LinkHints.activateMode\nmap <c-x><c-F> LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-x><a-f> LinkHints.activateModeWithQueue\nmap <c-x><a-F> LinkHints.activateModeToOpenInNewTab\nmap <c-s> enterFindMode\nmap <c-S> performFind\nmap <c-r> performBackwardsFind\nmap <c-R> performBackwardsFind\nmap <c-x>4 duplicateTab\nmap n scrollUp\nmap t scrollDown\nmap h scrollLeft\nmap s scrollRight\nmap <c-> enterFindMode\nmap <a-h> previousTab\nmap <a-s> nextTab\nmap <a-Up> scrollFullPageUp\nmap <a-Down> scrollFullPageDown\n// map <Insert> scrollFullPageUp\n// map <Delete> scrollFullPageDown\nmap <a-t> scrollFullPageDown\nmap <a-n> scrollFullPageUp",
-  "linkHintCharacters": "aoeuidhtsmwvcrl",
+  "keyMappings": "# Insert your preferred key mappings here.\nmap , LinkHints.activateMode\nmap . LinkHints.activateModeToCopyLinkUrl\nmap l goBack\nmap F goForward\nmap q removeTab\nmap d LinkHints.activateModeToOpenInNewTab \nmap b Vomnibar.activateTabSelection\nmap <c-x><c-c> quit\nmap  y0 copyCurrentUrl\n# https://gist.github.com/mvanzorn/95094227ec149b761419925382f2379f\nmap <c-x><c-f> LinkHints.activateMode\nmap <c-x><c-F> LinkHints.activateModeToOpenInNewForegroundTab\nmap <c-x><a-f> LinkHints.activateModeWithQueue\nmap <c-x><a-F> LinkHints.activateModeToOpenInNewTab\n//map <c-s> enterFindMode\nmap <c-s> performFind\nmap <c-r> performBackwardsFind\n//map <c-R> performBackwardsFind\nmap <c-x>4 duplicateTab\nmap n scrollUp\nmap t scrollDown\nmap h scrollLeft\nmap s scrollRight\nmap <c-> enterFindMode\nmap <a-h> previousTab\nmap <a-s> nextTab\nmap <a-Up> scrollFullPageUp\nmap <a-Down> scrollFullPageDown\n// map <Insert> scrollFullPageUp\n// map <Delete> scrollFullPageDown\nmap <a-t> scrollFullPageDown\nmap <a-n> scrollFullPageUp",
+  "linkHintCharacters": "aoeuldhts",
   "linkHintNumbers": "0123456789",
   "newTabUrl": "about:newtab",
   "nextPatterns": "next,newer,>,›,→,»,≫,>>",

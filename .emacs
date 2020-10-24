@@ -603,7 +603,6 @@
           (notify-moo (format "%s" heads)))
       (notify-moo (string #x1)))))
 (add-hook 'erc-track-list-changed-hook 'list-changed-hook)
-(remove-text-properties begin end '(read-only t))
 
 (add-hook 'tuareg-mode-hook
           (function

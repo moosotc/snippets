@@ -296,7 +296,8 @@
 ;;======================================================================
 ;; redefine global and mode specific key sequences
 (global-set-key [(alt ?4)] 'match-paren)
-(global-set-key [(control ?x) (control ?b)] 'ibuffer-list-buffers)
+(global-set-key [(alt ?x) (control ?b)] 'ibuffer-lis-buffers)
+(global-set-key [(control ?x) (control ?b)] 'helm-buffers-list)
 (global-set-key [(control ?x) (?b)] 'helm-for-files)
 (global-set-key [(alt ?5)] 'compile)
 (global-set-key [(alt ?6)] 'my-recompile)

@@ -73,7 +73,6 @@
 * Inception                             - Christopher Edward Nolan
 * Unforgiven                            - Clint Eastwood
 * Hell or High Water                    - David Mackenzie
-* Glengarry Glen Ross                   - David Mamet
 * The Hudsucker Proxy                   - Ethan/Joel Coen
 * American Graffiti                     - George Lucas
 * El Laberinto del Fauno                - Guillermo del Toro Gómez
@@ -94,3 +93,4 @@
 * Do the Right Thing                    - Spike Lee
 * 25th hour                             - Spike Lee
 * On the Waterfront                     - Ηλίας Καζαντζόγλου
+* Glengarry Glen Ross                   - David Mamet

@@ -1,5 +1,20 @@
 ;; -*- Mode: Emacs-Lisp -*-
 
+;; https://emacspeak.blogspot.com/2020/09/searching-gmail-from-gnus.html
+(defun gm-nnir-group-make-gmail-group (query)
+  "Use GMail search syntax.
+See https://support.google.com/mail/answer/7190?hl=en for syntax. "
+  (interactive "sGMail Query: ")
+  (let ((nnir-imap-default-search-key "imap")
+        (q (format "X-GM-RAW \"%s\"" query)))
+    (cond
+     ((gnus-group-group-name)           ; Search current group
+      (gnus-group-make-nnir-group
+       nil                              ; no extra params needed
+       `(nnir-specs (nnir-query-spec (query ,q)))))
+     (t (error "Not on a group.")))))
+(define-key gnus-group-mode-map "/" 'gm-nnir-group-make-gmail-group)
+
 (setq mm-discouraged-alternatives
       '("text/html" "text/richtext")
       mm-automatic-display

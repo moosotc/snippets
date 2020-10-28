@@ -1,4 +1,5 @@
 ;; -*- Mode: Emacs-Lisp -*-
+(setq browse-url-mosaic-program "")
 (setq initial-scratch-message "")
 (setq use-dialog-box nil)
 

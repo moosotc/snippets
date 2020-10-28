@@ -1,5 +1,5 @@
 #!/bin/sh
-# git://git.savannah.gnu.org/emacs.git 4503dcf635aae4d40024267d373332bab588009f
+# git://git.savannah.gnu.org/emacs.git bb3d13ac3586d3577605d3d8809d31c62a267c99
 
 export CC='ccache gcc'
 exec ./configure                                \

@@ -162,7 +162,7 @@ bindsym Ctrl+$win+Down $execnoid chvol -
 bindsym $win+bracketright $execnoid selwin
 bindsym $win+bracketleft $execnoid ytwin
 bindsym $win+Escape $execnoid yt
-bindsym $win+Alt+Escape $execnoid mpvsel
+bindsym $win+$alt+Escape $execnoid mpvsel
 bindsym $alt+Shift+d $execnoid dicx
 bindsym $alt+Shift+F10 $execnoid xtogglewinmax 1
 bindsym $alt+F10 $execnoid xtogglewinmax
@@ -173,7 +173,7 @@ bindcode $win+38 $execnoid stwrap
 bindcode $win+Ctrl+45 $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+Escape $execnoid clipswap
-bindsym Alt+Control+Escape $execnoid llpphtml "$(xclip -sel c -o)"
+bindsym Ctrl+$alt+Escape $execnoid llpphtml "$(xclip -sel c -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $win+Print $execnoid sshot.sh
 

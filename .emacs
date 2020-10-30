@@ -2,6 +2,7 @@
 (setq browse-url-mosaic-program "")
 (setq initial-scratch-message "")
 (setq use-dialog-box nil)
+(setq calendar-week-start-day 1)
 
 (set-fontset-font "fontset-default"
                   ;; Supplemental Symbols and Pictographs
@@ -298,8 +299,8 @@
 ;; redefine global and mode specific key sequences
 (global-set-key [(alt ?4)] 'match-paren)
 (global-set-key [(alt ?x) (control ?b)] 'ibuffer-lis-buffers)
-(global-set-key [(control ?x) (control ?b)] 'helm-buffers-list)
-(global-set-key [(control ?x) (?b)] 'helm-for-files)
+(global-unset-key [(control ?x) (control ?b)]) ;; 'helm-buffers-list)
+(global-set-key [(control ?x) ?b] 'helm-for-files)
 (global-set-key [(alt ?5)] 'compile)
 (global-set-key [(alt ?6)] 'my-recompile)
 (global-set-key [(alt ?9)] 'insert-parentheses)

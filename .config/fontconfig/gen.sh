@@ -94,7 +94,7 @@ cat <<EOF
 EOF
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$rale"          "segoe ui" "arial" "roboto" "sans-serif"
+M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "tahoma"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui"
 M "lora"           "reithserif" "noto serif"
@@ -104,7 +104,7 @@ M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
 eval M "'$ans'"    "verdana" "'lucida grande'" "helvetica" $dsans
 M "$erif"          "utopia" "domine" "pt serif" "georgia"
-M "$kuri"          "cantarell" "tahoma" "ubuntu"
+M "$kuri"          "cantarell" "ubuntu"
 M "$curs"          "cursive" "trebuchet ms"
 
 # learn yourself some cyrl

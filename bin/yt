@@ -30,10 +30,8 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
     } && true
 }
 
-expr "$arg" : ".*\(reddit\|gfycat\).*" && {
-    fmt=
-#} || fmt="--ytdl-format=[width<=1280] --ytdl-raw-options-append=proxy=socks5://localhost:9050"
-} || fmt="--ytdl-format=[width<=1280]"
+expr "$arg" : ".*\(reddit\|gfycat\).*" && fmt= \
+        || fmt="--ytdl-format=[height<=720]"
 
 title="$arg"
 printf "🅥 $title" >$ctl

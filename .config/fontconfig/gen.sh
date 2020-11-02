@@ -19,18 +19,15 @@ set -e
 # fantasque sans
 #      mono       https://github.com/belluzj/fantasque-sans
 # ruslan display  https://fonts.google.com/specimen/Ruslan+Display
-# lora cyrillic   https://github.com/cyrealtype/Lora-Cyrillic
 # symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
-# linguistics     https://www.fontsquirrel.com/fonts/linguistics-pro
-#     pro         https://en.wikipedia.org/wiki/Utopia_(typeface)#Derived_typefaces
 # mongolian
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-# noto            https://www.google.com/get/noto/ (only tibetan is used)
+# noto            https://www.google.com/get/noto/
 # kurinto         https://kurinto.com/
 
 mono2="fantasque sans mono"
 ans="montserrat alternates"
-erif="linguistics pro"
+erif="noto serif"
 curs="mongolian writing"
 kuri="kurinto olde core"
 kurn="kurinto olde core narrow"
@@ -97,13 +94,12 @@ M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "tahoma"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui"
-M "lora"           "reithserif" "noto serif"
 M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
-eval M "'$ans'"    "verdana" "'lucida grande'" "helvetica" $dsans
-M "$erif"          "utopia" "domine" "pt serif" "georgia"
+eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" "helvetica" $dsans
+M "$erif"          "utopia" "domine" "pt serif" "georgia" "lora"
 M "$kuri"          "cantarell" "ubuntu"
 M "$curs"          "cursive" "trebuchet ms"
 

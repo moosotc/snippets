@@ -29,7 +29,6 @@ mono2="fantasque sans mono"
 ans="montserrat alternates"
 erif="noto serif"
 curs="mongolian writing"
-kuri="kurinto olde core"
 kurn="kurinto olde core narrow"
 rale="raleway-v4020"
 dsans="opensans 'open sans' 'nato sans' 'droid sans'"
@@ -100,7 +99,7 @@ M "pt astra serif" "serif" "times" "times new roman"
 M "ruslan display" "sans serif"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" "helvetica" $dsans
 M "$erif"          "utopia" "domine" "pt serif" "georgia" "lora"
-M "$kuri"          "cantarell" "ubuntu"
+M "$kurn"          "cantarell" "ubuntu"
 M "$curs"          "cursive" "trebuchet ms"
 
 # learn yourself some cyrl

@@ -5,7 +5,6 @@
   ofl/montserratalternates    - S9 O0
   ofl/ptserif                 - O0
   ofl/raleway                 - ~-
-  ofl/lora                    - 3ze (ze has serifs, 3 has slabs), O0, '"
   ofl/notosans                - 3ze, S9 (*)
 * 3ze
   apache/arimo                - 3ze, il, rn
@@ -82,6 +81,7 @@
   ofl/firasans                - O0 S9 3ze
   ufl/ubuntu mono             - 3ze S9 ~-
 * multiple issues
+  ofl/lora                    - 3ze (ze has serifs, 3 has slabs), O0, '" https://github.com/cyrealtype/Lora-Cyrillic/issues/37
   ofl/alegreya                - ~-, o0, '"
   ofl/alegreyasans            - ~-, Il, o0
   ofl/alegreyasanssc          - ~-, S9, o0

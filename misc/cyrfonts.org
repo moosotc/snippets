@@ -82,7 +82,7 @@
   ofl/firasans                - O0 S9 3ze
   ufl/ubuntu mono             - 3ze S9 ~-
 * multiple issues
-  ofl/alegreya                - ~-, o0
+  ofl/alegreya                - ~-, o0, '"
   ofl/alegreyasans            - ~-, Il, o0
   ofl/alegreyasanssc          - ~-, S9, o0
   ofl/alegreyasc              - ~-, (small caps)

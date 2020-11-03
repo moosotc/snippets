@@ -6,6 +6,7 @@
   ofl/ptserif                 - O0
   ofl/raleway                 - ~-
   ofl/notosans                - 3ze, S9 (*)
+  ofl/notoserif               - 3ze
 * 3ze
   apache/arimo                - 3ze, il, rn
   apache/cousine              - 3ze, 1l
@@ -116,6 +117,7 @@
 ** ofl/cormorantgaramond      - (small), ~-
    lambda-like cyrillic el
    otherwise the font looks like regular cormorant and shares the same issues
+cd
 * cursive
 ** ofl/lobster                - bold
    ofl/pattaya                 - variant with thai
@@ -130,3 +132,4 @@
 ** ofl/spectral               - 3ze, (no ezh)
 ** ofl/playfairdisplay        - 0o
 * ofl/merriweather            - o0
+* TODO linguistics pro        - recall the removal justification

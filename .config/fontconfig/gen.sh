@@ -22,13 +22,12 @@ set -e
 # symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 # mongolian
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-# noto            https://www.google.com/get/noto/
 # kurinto         https://kurinto.com/
 # nunito          https://github.com/googlefonts/nunito
 
 mono2="fantasque sans mono"
 ans="montserrat alternates"
-erif="noto serif"
+erif="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
 nuni="nunito"
@@ -99,11 +98,9 @@ M "pt sans bold"   "osd"
 M "pt sans"        "ui"
 M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
-M "$erif"   "serif" "times" "times new roman"
+M "$erif"          "serif" "times" "times new roman" "domine" "georgia" "lora"
 M "ruslan display" "cantarell"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
-M "$erif"          "domine" "pt serif" "georgia" "lora"
-M "$kurn"          "ubuntu"
 M "$curs"          "cursive"
 
 # learn yourself some cyrl

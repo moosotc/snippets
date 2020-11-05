@@ -9,7 +9,7 @@ set -e
 # beograd         https://www.fontspace.com/beograd-font-f28002
 # iosevka         https://github.com/be5invis/Iosevka
 #    clam         https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
-# pt(astra)       https://www.paratype.ru/collections/pt/44157
+# pt              https://www.paratype.ru/collections/pt/44157
 # raleway         https://github.com/impallari/Raleway
 #   (original)    https://github.com/theleagueof/raleway
 # dudu cyryllic   https://www.fontspace.com/vladmas
@@ -33,6 +33,7 @@ curs="mongolian writing"
 kurn="kurinto olde core narrow"
 nuni="nunito"
 rale="raleway-v4020"
+rale="nunito"
 dsans="opensans 'open sans' 'nato sans' 'droid sans'"
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -98,10 +99,10 @@ M "pt sans bold"   "osd"
 M "pt sans"        "ui"
 M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
-M "pt astra serif" "serif" "times" "times new roman"
+M "$erif"   "serif" "times" "times new roman"
 M "ruslan display" "cantarell"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
-M "$erif"          "utopia" "domine" "pt serif" "georgia" "lora"
+M "$erif"          "domine" "pt serif" "georgia" "lora"
 M "$kurn"          "ubuntu"
 M "$curs"          "cursive"
 

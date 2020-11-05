@@ -24,12 +24,14 @@ set -e
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 # noto            https://www.google.com/get/noto/
 # kurinto         https://kurinto.com/
+# nunito          https://github.com/googlefonts/nunito
 
 mono2="fantasque sans mono"
 ans="montserrat alternates"
 erif="noto serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
+nuni="nunito"
 rale="raleway-v4020"
 dsans="opensans 'open sans' 'nato sans' 'droid sans'"
 
@@ -90,17 +92,18 @@ cat <<EOF
 EOF
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "tahoma"
+M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "tahoma" "raleway"
+M "$nani"          "trebuchet ms" "helvetica" "helvetica neue" "reith sans"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui"
 M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "pt astra serif" "serif" "times" "times new roman"
-M "ruslan display" "sans serif"
-eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" "helvetica" $dsans
+M "ruslan display" "cantarell"
+eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
 M "$erif"          "utopia" "domine" "pt serif" "georgia" "lora"
-M "$kurn"          "cantarell" "ubuntu"
-M "$curs"          "cursive" "trebuchet ms"
+M "$kurn"          "ubuntu"
+M "$curs"          "cursive"
 
 # learn yourself some cyrl
 M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"

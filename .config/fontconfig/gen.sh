@@ -27,12 +27,12 @@ set -e
 
 mono2="fantasque sans mono"
 ans="montserrat alternates"
-erif="pt serif"
+erif1="kurinto news core"
+erif5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
-nuni="nunito"
 rale="raleway-v4020"
-rale="nunito"
+helv="nunito"
 dsans="opensans 'open sans' 'nato sans' 'droid sans'"
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -93,18 +93,17 @@ EOF
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
 M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "tahoma" "raleway"
-M "$nani"          "trebuchet ms" "helvetica" "helvetica neue" "reith sans"
+M "$helv"          "trebuchet ms" "helvetica" "helvetica neue" "reith sans"
 M "pt sans bold"   "osd"
 M "pt sans"        "ui"
 M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
-M "$erif"          "serif" "times" "times new roman" "domine" "georgia" "lora"
+M "$erif1"         "serif" "times" "times new roman"
+M "$erif5"         "georgia" "lora" "noto serif"
 M "ruslan display" "cantarell"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
 M "$curs"          "cursive"
 
-# learn yourself some cyrl
-M "beograd"        "constantia" "corbel" "candara" "calibri" "cambria" "segoe"
 # ...                 grek
 M "symbol"         "linux libertine"
 

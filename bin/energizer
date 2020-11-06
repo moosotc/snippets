@@ -17,7 +17,7 @@ for f in $(find /sys/devices -name product -type f \
                 -exec grep -l '\(Keyboard\|Mouse\)' {} \;); do
     echo 0 >$(dirname $f)/power/autosuspend || echo "Hum $f"
 done
-echo '0' > '/proc/sys/kernel/nmi_watchdog';
+echo '0' > '/proc/sys/kernel/nmi_watchdog'
 
 #ethtool -s eno1 wol d
 #echo 0 >/sys/class/rtc/rtc0/wakealarm

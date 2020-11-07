@@ -33,6 +33,7 @@ curs="mongolian writing"
 kurn="kurinto olde core narrow"
 rale="raleway-v4020"
 helv="nunito"
+ptsn="pt sans narrow"
 dsans="opensans 'open sans' 'nato sans' 'droid sans'"
 
 test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -61,15 +62,8 @@ cat <<EOF
     </edit>
   </match>
   <match target="pattern">
-    <test name="family" compare="contains">
-      <string>narrow</string>
-    </test>
-    <test name="family" compare="not_eq" qual="all">
-      <string>$kurn</string>
-    </test>
-    <edit name="family" mode="assign">
-      <string>ruslan display</string>
-    </edit>
+    <test name="family" compare="contains"><string>narrow</string></test>
+    <edit name="family" mode="assign_replace"><string>$ptsn</string></edit>
   </match>
   <match target="pattern">
     <test name="family" compare="contains"><string>condensed</string></test>

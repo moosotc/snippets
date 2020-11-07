@@ -18,7 +18,6 @@ set -e
 # montserrat      https://github.com/JulietaUla/Montserrat/
 # fantasque sans
 #      mono       https://github.com/belluzj/fantasque-sans
-# ruslan display  https://fonts.google.com/specimen/Ruslan+Display
 # symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 # mongolian
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
@@ -31,6 +30,7 @@ erif1="kurinto news core"
 erif5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
+kuoc="kurinto olde core"
 rale="raleway-v4020"
 helv="nunito"
 ptsn="pt sans narrow"
@@ -94,7 +94,7 @@ M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "$erif1"         "serif" "times" "times new roman"
 M "$erif5"         "georgia" "lora" "noto serif"
-M "ruslan display" "cantarell"
+M "$kuoc"          "cantarell"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
 M "$curs"          "cursive"
 

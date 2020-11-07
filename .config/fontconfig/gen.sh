@@ -98,7 +98,7 @@ M "$kuoc"          "cantarell"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
 M "$curs"          "cursive"
 
-# ...                 grek
+# learn yourself some grek (beograd to learn cyrl instead)
 M "symbol"         "linux libertine"
 
 echo "</fontconfig>"

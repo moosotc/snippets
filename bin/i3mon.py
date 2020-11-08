@@ -2,17 +2,10 @@
 # -*- coding: utf-8 -*-
 
 import time, os, sys, select, signal, subprocess
-import socket, ssl, re, json, traceback
+import socket, ssl, re, json, traceback, imaplib
 
-HOST = "imap.gmail.com"
-PORT = 993
-try:
-    AI = socket.getaddrinfo (HOST, PORT)
-    HOST = AI[0][4][0]
-    FAMI = AI[0][0]
-except:
-    FAMI = None
-email = b"moosotc@gmail.com"
+imap_host = "imap-mail.outlook.com"
+email = b"clamky@hotmail.com"
 
 prevunseen = 0
 prevt = 0
@@ -21,12 +14,8 @@ wireless = False
 # http://stackoverflow.com/questions/20794414/how-to-check-the-status-of-a-shell-script-using-subprocess-module-in-python
 # http://zx2c4.com/projects/password-store/
 # is used for password management
-password = subprocess.Popen (["pass", email], stdout=subprocess.PIPE) \
-                     .communicate ()[0][:-1]
-imapreq = b"""a login %s %s\r
-a status INBOX (UNSEEN)\r
-a logout\r
-""" % (email, password)
+imap_pass = subprocess.Popen (["pass", email], stdout=subprocess.PIPE) \
+                    .communicate ()[0][:-1].decode ("utf-8")
 
 def usr1handler (a1, a2):
     global prevt
@@ -37,33 +26,16 @@ mailcheckinterval = 20*60 #4*60*60
 # SSL code taken almost verbatim from:
 # https://wiki.python.org/moin/SSL
 
-unspat = re.compile (r".*\(UNSEEN ([1-9][0-9]*).*")
 def checkmail (t):
-    global prevt, prevunseen, mailcheckinterval, imapreq
+    global prevt, prevunseen, mailcheckinterval, imap_host, imap_pass
     n = prevunseen
     if t - prevt > mailcheckinterval:
-        try:
-            sock = socket.socket (FAMI)
-            sock.connect ((HOST, PORT))
-
-            # wrap socket to add SSL support
-            sock1 = ssl.wrap_socket (sock)
-            sock1.read ()
-            sock1.write (imapreq)
-            sock1.read ()
-            s = sock1.read ()
-            try:
-                m = unspat.match (s.decode ())
-            except:
-                m = "error: " + s
-            n = 0
-            if m:
-                n = int (m.group (1))
-            sock1.close ()
-            sock.close ()
-        except Exception:
-            traceback.print_exc ()
-            n = 0
+        imap = imaplib.IMAP4_SSL (imap_host)
+        imap.login (email, imap_pass)
+        imap.select ('Inbox')
+        ok, data = imap.search (None, "(UNSEEN)")
+        n = len (data[0].split ())
+        imap.close()
 
         prevt = t
         prevunseen = n

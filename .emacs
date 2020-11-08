@@ -429,15 +429,15 @@
            (c-set-offset 'inline-open '0)))))
 
 (setq message-send-mail-function 'smtpmail-send-it
-      smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
-      smtpmail-auth-credentials '(("smtp.gmail.com" 587
-                                   "moosotc@gmail.com" nil))
-      smtpmail-default-smtp-server "smtp.gmail.com"
-      smtpmail-smtp-server "smtp.gmail.com"
+      smtpmail-starttls-credentials '(("smtplive.com" 587 nil nil))
+      smtpmail-auth-credentials '(("smtp.live.com" 587
+                                   "clamky@hotmail.com" nil))
+      smtpmail-default-smtp-server "smtp.live.com"
+      smtpmail-smtp-server "smtp.live.com"
       smtpmail-smtp-service 587)
 
 (setq mail-user-agent 'gnus-user-agent)
-(setq user-mail-address "moosotc@gmail.com")
+(setq user-mail-address "clamky@hotmail.com")
 
 (defun transpose-assignment ()
   (interactive)

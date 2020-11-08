@@ -43,21 +43,11 @@ See https://support.google.com/mail/answer/7190?hl=en for syntax. "
          "Cc:.*linux-arm-kernel@lists\\.infradead\\.org")
         ("mail.other" "")))
 
-(if nil
-    (setq message-send-mail-function 'smtpmail-send-it
-          smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
-          smtpmail-auth-credentials '(("smtp.gmail.com" 587
-                                       "moosotc@gmail.com" nil))
-          smtpmail-default-smtp-server "smtp.gmail.com"
-          smtpmail-smtp-server "smtp.gmail.com"
-          smtpmail-smtp-service 587)
-  )
-
 (setq gnus-ignored-newsgroups "^to\\.\\|^[0-9. ]+\\( \\|$\\)\\|^[\"]\"[#'()]")
 
 
-(setq user-mail-address "moosotc@gmail.com"
-      nntp-authinfo-file "~/.authinfo.gpg")
+(setq user-mail-address "clamky@hotmail.com"
+      nntp-authinfo-file "~/.authinfo")
 
 (require 'bbdb)
 (bbdb-initialize)

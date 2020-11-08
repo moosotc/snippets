@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -eu
 
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf
 # prior to starting X to get reproducible distribution-independent behavior
@@ -24,19 +24,20 @@ set -e
 # kurinto         https://kurinto.com/
 # nunito          https://github.com/googlefonts/nunito
 
-mono2="fantasque sans mono"
-ans="montserrat alternates"
-erif1="kurinto news core"
-erif5="pt serif"
+mon0="fantasque sans mono"
+ans5="montserrat alternates"
+eri1="kurinto news core"
+eri5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
 kuoc="kurinto olde core"
 rale="raleway-v4020"
-helv="nunito"
+helv="$rale"                    # "nunito"
 ptsn="pt sans narrow"
-dsans="opensans 'open sans' 'nato sans' 'droid sans'"
 
-test -z $1 && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
+droidsans="opensans 'open sans' 'nato sans' 'droid sans'"
+
+test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
   <match target="pattern">
     <test name="family"><string>$2</string></test>
@@ -85,17 +86,17 @@ cat <<EOF
   </match>
 EOF
 
-M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$rale"          "segoe ui" "roboto" "tahoma" "raleway"
-M "$helv"          "sans-serif" "arial" "helvetica" "helvetica neue"
-M "pt sans bold"   "osd"
-M "pt sans"        "gtk" "trebuchet ms"
-M "dudu cyryllic"  "comic sans ms" "sub"
-M "iosevka clam"   "iosevka" "monospace"
-M "$erif1"         "serif" "times" "times new roman"
-M "$erif5"         "georgia" "lora" "noto serif"
-eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
-M "$curs"          "cursive"
+M "$mon0"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
+M "$rale"         "segoe ui" "roboto" "tahoma" "raleway"
+M "$helv"         "sans-serif" "arial" "helvetica" "helvetica neue"
+M "pt sans bold"  "osd"
+M "pt sans"       "gtk" "trebuchet ms"
+M "dudu cyryllic" "comic sans ms" "sub"
+M "iosevka clam"  "iosevka" "monospace"
+M "$eri1"         "serif" "times" "times new roman"
+M "$eri5"         "georgia" "lora" "noto serif"
+eval M "'$ans5'"  "verdana" "'lucida grande'" "montserrat" $droidsans
+M "$curs"         "cursive"
 
 # learn yourself some grek (beograd to learn cyrl instead)
 M "symbol"         "linux libertine"

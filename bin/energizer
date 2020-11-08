@@ -20,11 +20,7 @@ echo 0 | tee /proc/sys/kernel/nmi_watchdog
 echo min_power | tee /sys/class/scsi_host/**/link_power_management_policy
 echo 1500 | tee /proc/sys/vm/dirty_expire_centisecs
 
-echo 0 | tee $(for f in $(find /sys/devices -name interface -type f \
-                               -exec egrep -l '(Keyboard|Mouse)' {} \;); do
-    readlink -f $(dirname $f)/../power/autosuspend
-done)
-
+# XXX turn off autosuspend of keybards, mice and IR receivers
 exit
 
 # hmm?

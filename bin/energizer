@@ -4,22 +4,24 @@ set -e
 modprobe -r kvm-intel kvm pcspkr applesmc iwlmvm iwlwifi \
          mac80211 cfg80211 btusb btbcm btintel btrtl bluetooth || true
 
-echo '1' >/sys/module/snd_hda_intel/parameters/power_save
-echo '1' | tee >/dev/null /sys/bus/usb/devices/*/power/autosuspend
-echo 'auto' | tee >/dev/null /sys/devices/**/power/control
-echo 'auto' | tee >/dev/null /sys/bus/pci/devices/**/power/control
+tee() {
+    el=".."; test -n "$2" || el="  "
+    printf "%60s%s = " "$1" "$el"
+    command tee $*
+}
+
+echo 1 | tee /sys/module/snd_hda_intel/parameters/power_save
+echo 1 | tee /sys/bus/usb/devices/*/power/autosuspend
+echo auto | tee /sys/bus/pci/devices/*/ata*/power/control
+echo auto | tee /sys/bus/pci/devices/**/power/control
+echo auto | tee /sys/bus/usb/devices/**/power/control
+echo auto | tee /sys/devices/**/power/control
+echo 0 | tee /proc/sys/kernel/nmi_watchdog
+echo min_power | tee /sys/class/scsi_host/**/link_power_management_policy
+echo 1500 | tee /proc/sys/vm/dirty_expire_centisecs
+exit
+
+# hmm?
 echo 'med_power_with_dipm' | \
-    tee >/dev/null /sys/class/scsi_host/**/link_power_management_policy
-
-#echo 5000 > /proc/sys/vm/dirty_expire_centisecs
-
-for f in $(find /sys/devices -name product -type f \
-                -exec grep -l '\(Keyboard\|Mouse\)' {} \;); do
-    echo 0 >$(dirname $f)/power/autosuspend || echo "Hum $f"
-done
-echo '0' > '/proc/sys/kernel/nmi_watchdog'
-
-#ethtool -s eno1 wol d
-#echo 0 >/sys/class/rtc/rtc0/wakealarm
-#date -u --date '+3 sec' +%s >/sys/class/rtc/rtc0/wakealarm
-#echo 'mem' >/sys/power/state
+    tee /sys/class/scsi_host/**/link_power_management_policy
+ethtool -s eno1 wol d

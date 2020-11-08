@@ -86,15 +86,14 @@ cat <<EOF
 EOF
 
 M "$mono2"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$rale"          "segoe ui" "arial" "roboto" "sans-serif" "tahoma" "raleway"
-M "$helv"          "trebuchet ms" "helvetica" "helvetica neue" "reith sans"
+M "$rale"          "segoe ui" "roboto" "tahoma" "raleway"
+M "$helv"          "sans-serif" "arial" "helvetica" "helvetica neue"
 M "pt sans bold"   "osd"
-M "pt sans"        "gtk"
-M "dudu cyryllic"  "comic sans ms" "fantasy" "sans" "sub"
+M "pt sans"        "gtk" "trebuchet ms"
+M "dudu cyryllic"  "comic sans ms" "sub"
 M "iosevka clam"   "iosevka" "monospace"
 M "$erif1"         "serif" "times" "times new roman"
 M "$erif5"         "georgia" "lora" "noto serif"
-M "$kuoc"          "cantarell"
 eval M "'$ans'"    "verdana" "'lucida grande'" "montserrat" $dsans
 M "$curs"          "cursive"
 

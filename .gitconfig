@@ -1,5 +1,5 @@
 [user]
-	email = clamky@homail.com
+	email = clamky@hotmail.com
 	name = malc
 [alias]
 	log1 = log --reverse --stat HEAD@{1}..HEAD

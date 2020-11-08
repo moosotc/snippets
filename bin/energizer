@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 . asroot
+
 modprobe -r kvm-intel kvm pcspkr applesmc iwlmvm iwlwifi \
          mac80211 cfg80211 btusb btbcm btintel btrtl bluetooth || true
 
@@ -21,7 +22,8 @@ echo min_power | tee /sys/class/scsi_host/**/link_power_management_policy
 echo 1500 | tee /proc/sys/vm/dirty_expire_centisecs
 
 # XXX turn off autosuspend of keybards, mice and IR receivers
-exit
+echo on | tee /sys/bus/usb/devices/1-3.3.1/power/control \
+              /sys/bus/usb/devices/1-3.4/power/control
 
 # hmm?
 echo 'med_power_with_dipm' | \

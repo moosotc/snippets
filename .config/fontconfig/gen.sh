@@ -22,7 +22,6 @@ set -eu
 # mongolian
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 # kurinto         https://kurinto.com/
-# nunito          https://github.com/googlefonts/nunito
 
 mon0="fantasque sans mono"
 ans5="montserrat alternates"
@@ -32,7 +31,7 @@ curs="mongolian writing"
 kurn="kurinto olde core narrow"
 kuoc="kurinto olde core"
 rale="raleway-v4020"
-helv="$rale"                    # "nunito"
+helv="$rale"
 ptsn="pt sans narrow"
 
 droidsans="opensans 'open sans' 'nato sans' 'droid sans'"

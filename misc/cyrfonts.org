@@ -132,4 +132,4 @@ cd
 ** ofl/spectral               - 3ze, (no ezh)
 ** ofl/playfairdisplay        - 0o
 * ofl/merriweather            - o0
-* TODO linguistics pro        - recall the removal justification
+* linguistics pro             - ~- l1 3З (small)

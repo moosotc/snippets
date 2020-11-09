@@ -2,11 +2,9 @@
   is near universal :(
 * in use
   ofl/ptsans                  - O0
-  ofl/montserratalternates    - S9 O0
   ofl/ptserif                 - O0
+  ofl/montserratalternates    - S9 O0 YУ
   ofl/raleway                 - ~-
-  ofl/notosans                - 3ze, S9 (*)
-  ofl/notoserif               - 3ze
 * 3ze
   apache/arimo                - 3ze, il, rn
   apache/cousine              - 3ze, 1l
@@ -76,6 +74,8 @@
   ufl/ubuntu                  - 3ze, S9
   ufl/ubuntucondensed         - 3ze, S9, (styles)
   ufl/ubuntumono              - 3ze, S9
+  ofl/notosans                - 3ze S9 (*)
+  ofl/notoserif               - 3ze
 * B8
   ubuntu [mono]
 * S9

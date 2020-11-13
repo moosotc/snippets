@@ -2,3 +2,5 @@ teartest
 maxmem
 minihog
 dpi
+free
+.gdb_history

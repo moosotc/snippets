@@ -308,7 +308,7 @@
 (global-set-key [(alt ?')] 'insert-quotes)
 (global-set-key [(alt q)] 'my-kill-this-buffer-and-window)
 (global-set-key [(alt w)] 'my-delete-window)
-(global-set-key [(alt ?[)] 'describe-function-at-point)
+(global-set-key [(alt ?\[)] 'describe-function-at-point)
 (global-set-key [(alt ?\])] 'describe-variable-at-point)
 
 (global-set-key [(alt right)] 'bs-cycle-next)
@@ -405,17 +405,6 @@
    [default default default italic underline success warning error])
  '(canlock-password "320a46eeec84e8e4e041534d821600d69eb36d15")
  '(dired-listing-switches "-aBhl --dired --group-directories-first --sort=extension")
- '(erc-keyword-highlight-type 'all)
- '(erc-keywords '("moolc" "malc" "clam" "moosotc" "llpp"))
- '(erc-kill-buffer-on-part t)
- '(erc-kill-queries-on-quit t)
- '(erc-kill-server-buffer-on-quit t)
- '(erc-log-file-coding-system 'utf-8)
- '(erc-modules
-   '(autojoin button completion fill irccontrols list log match menu move-to-prompt netsplit networks noncommands readonly ring stamp spelling track))
- '(erc-nick "malc_")
- '(erc-notice-highlight-type 'all)
- '(erc-track-position-in-mode-line t)
  '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
  '(org-agenda-files '("~/x/org/agenda"))
@@ -426,7 +415,50 @@
    '((eval overwrite-mode t)
      (eval progn
            (c-set-offset 'innamespace '0)
-           (c-set-offset 'inline-open '0)))))
+           (c-set-offset 'inline-open '0))))
+ '(erc-keyword-highlight-type 'all)
+ '(erc-keywords '("moolc" "malc" "clam" "moosotc" "llpp"))
+ '(erc-kill-buffer-on-part t)
+ '(erc-kill-queries-on-quit t)
+ '(erc-kill-server-buffer-on-quit t)
+ '(erc-log-file-coding-system 'utf-8)
+ '(erc-modules
+   '(autojoin button completion fill
+     irccontrols list log match menu
+     move-to-prompt netsplit networks replace
+     noncommands readonly ring stamp spelling track))
+ '(erc-nick "malc_")
+ '(erc-notice-highlight-type 'all)
+ '(erc-track-position-in-mode-line t)
+ '(erc-log-channels-directory "~/x/log/erc")
+ '(erc-save-buffer-on-part t)
+ '(erc-auto-query 'bury)                ;; thanks to fledermaus#erc
+)
+
+;; Takk till Stig Erik Sandø
+(defun remove-boring-erc-buffers (l)
+  (cl-remove-if-not
+   (lambda (e)
+     (let ((name (buffer-name (car e))))
+       (or ;; anything on #malc
+        (string-equal "#malc" name)
+        ;; ... non channel bufufers
+        (not (string-prefix-p "#" name))
+        ;; any buffer where current nick or any keyword was seen
+        (member (cddr e) '(erc-keyword-face erc-current-nick-face)))))
+   l))
+
+(defun list-changed-hook ()
+  (let ((filtered-list
+         (remove-boring-erc-buffers erc-modified-channels-alist)))
+    (if filtered-list
+        (let ((heads (mapcar 'car filtered-list)))
+          (notify-moo (format "%s" heads)))
+      (notify-moo (string #x1)))))
+(add-hook 'erc-track-list-changed-hook 'list-changed-hook)
+
+(require 'erc-replace)
+(setq erc-replace-alist '(("<artifexirc-bot> " . "@")))
 
 (setq message-send-mail-function 'smtpmail-send-it
       smtpmail-starttls-credentials '(("smtplive.com" 587 nil nil))
@@ -569,10 +601,6 @@
  [(alt ?t)] (lambda () (interactive) (erc-track-switch-buffer -1)))
 (global-set-key [(alt ?n)] 'erc-track-switch-buffer)
 
-(setq erc-log-channels-directory "~/x/log/erc")
-(setq erc-save-buffer-on-part t)
-(setq erc-auto-query 'bury) ;; thanks to fledermaus#erc
-
 (put 'dired-find-alternate-file 'disabled nil)
 
 (defun notify-moo (s)
@@ -584,28 +612,6 @@
       (write-region (point-min)
                     (point-max)
                     "/tmp/i3.fifo"))))
-
-;; Takk till Stig Erik Sandø
-(defun remove-boring-erc-buffers (l)
-  (cl-remove-if-not
-   (lambda (e)
-     (let ((name (buffer-name (car e))))
-       (or ;; anything on #malc
-        (string-equal "#malc" name)
-        ;; ... non channel bufufers
-        (not (string-prefix-p "#" name))
-        ;; any buffer where current nick or any keyword was seen
-        (member (cddr e) '(erc-keyword-face erc-current-nick-face)))))
-   l))
-
-(defun list-changed-hook ()
-  (let ((filtered-list
-         (remove-boring-erc-buffers erc-modified-channels-alist)))
-    (if filtered-list
-        (let ((heads (mapcar 'car filtered-list)))
-          (notify-moo (format "%s" heads)))
-      (notify-moo (string #x1)))))
-(add-hook 'erc-track-list-changed-hook 'list-changed-hook)
 
 (add-hook 'tuareg-mode-hook
           (function

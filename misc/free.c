@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <errno.h>
+#include <stdarg.h>
 #include <malloc.h>
 #include <string.h>
 #include <stdlib.h>

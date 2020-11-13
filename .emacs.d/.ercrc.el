@@ -1,4 +1,3 @@
-(warn ".ercrc.el")
 (custom-set-variables
  '(erc-keyword-highlight-type 'all)
  '(erc-keywords '("moolc" "malc" "clam" "moosotc" "llpp"))

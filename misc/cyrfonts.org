@@ -133,3 +133,4 @@ cd
 ** ofl/playfairdisplay        - 0o
 * ofl/merriweather            - o0
 * linguistics pro             - ~- l1 3З (small)
+* charter/charis              - 3З l1 '" (diacritics)

@@ -48,3 +48,9 @@
   I - plain vs serifed
 * roles
   see gen.sh
+* Il
+  Problem with non hooky-bottom l is that when it is in isolation it's
+  hard to tell what it is one is looking at - | ar maybe I? The
+  situation is similar to 3З, but, perhaps, even worse
+** Offenders
+*** Noto Sans

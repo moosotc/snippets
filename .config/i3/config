@@ -163,7 +163,7 @@ bindsym $win+bracketright $execnoid selwin
 bindsym $win+bracketleft $execnoid ytwin
 bindsym $win+Shift+bracketleft $execnoid stwrap -e sstorm
 bindsym $win+Escape $execnoid yt
-bindsym $win+Ctrl+Escape $execnoid mpvsel
+bindsym $win+Shift+asciitilde $execnoid mpvsel
 bindsym $alt+Shift+d $execnoid dicx
 bindsym $alt+Shift+F10 $execnoid xtogglewinmax 1
 bindsym $alt+F10 $execnoid xtogglewinmax

@@ -8,10 +8,12 @@ modprobe -r kvm-intel kvm pcspkr applesmc iwlmvm iwlwifi ee1004 \
 
 tee() {
     el=".."; test -n "$2" || el="  "
-    printf "%60s%s = " "$1" "$el"
+    for f; do
+        printf "%60s%s\n" "$f" "$el"
+    done
+    printf "%60s  "
     command tee $*
 }
-
 echo 1 | tee /sys/module/snd_hda_intel/parameters/power_save
 echo 1 | tee /sys/bus/usb/devices/*/power/autosuspend
 echo auto | tee /sys/bus/pci/devices/*/ata*/power/control
@@ -19,7 +21,7 @@ echo auto | tee /sys/bus/pci/devices/**/power/control
 echo auto | tee /sys/bus/usb/devices/**/power/control
 echo auto | tee /sys/devices/**/power/control
 echo 0 | tee /proc/sys/kernel/nmi_watchdog
-echo min_power | tee /sys/class/scsi_host/**/link_power_management_policy
+echo min_power | tee /sys/class/scsi_host/*/link_power_management_policy
 echo 1500 | tee /proc/sys/vm/dirty_expire_centisecs
 
 # XXX turn off autosuspend of keybards, mice and IR receivers

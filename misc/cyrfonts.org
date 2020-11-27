@@ -47,7 +47,7 @@
   ofl/marmelad                - 3ze, l|, rn, (styles)
   ofl/neucha                  - 3ze, S9, O0
   ofl/notoserif               - 3ze, S9, O0
-  ofl/nunito                  - 3ze, S9, O0, Il
+  ofl/nunito                  - 3ze, S9, O0, Il, '"
   ofl/oldstandardtt           - 3ze, O0
   ofl/prostoone               - 3ze, l1, O0, (variants)
   ofl/oswald                  - 3ze, O0, Il

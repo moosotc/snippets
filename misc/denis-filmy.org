@@ -7,12 +7,10 @@
 * The Prestige                          - Christopher Edward Nolan
 * The Dark Knight                       - Christopher Edward Nolan
 * Mystic River                          - Clint Eastwood
-* The Hunter                            - Daniel Nettheim
 * Mulholland Drive                      - David Lynch
 * The Straight Story                    - David Lynch
 * Blade Runner 2049                     - Denis Villeneuve
 * Blood Simple                          - Ethan/Joel Coen
-* The Ballad of Buster Scruggs          - Joel/Ethan Coen
 * No Country for Old Men                - Joel/Ethan Coen
 * Good Will Hunting                     - Gus Van Sant
 * American Psycho                       - Mary Harron
@@ -95,5 +93,7 @@
 * 25th hour                             - Spike Lee
 * On the Waterfront                     - Ηλίας Καζαντζόγλου
 * Glengarry Glen Ross                   - David Mamet
+* The Hunter                            - Daniel Nettheim
+* The Ballad of Buster Scruggs          - Joel/Ethan Coen
 * ------------------------------------------------------------------------
 * Out of Africa                         - Sydney Pollack

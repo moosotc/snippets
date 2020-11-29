@@ -1,0 +1,2 @@
+#!/bin/sh
+test -z "$1" || exec sh $HOME/x/con/$1 && ls $HOME/x/con

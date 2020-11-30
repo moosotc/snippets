@@ -1,4 +1,3 @@
-* Tesis                                 - Alejandro Amenábar
 * 21 Grams                              - Alejandro González Iñárritu
 * Birdman                               - Alejandro González Iñárritu
 * Dark City                             - Alex Proyas
@@ -15,7 +14,6 @@
 * Good Will Hunting                     - Gus Van Sant
 * American Psycho                       - Mary Harron
 * Broadcast News                        - James L. Brooks
-* Juno                                  - Jason Reitman
 * Le Fabuleux Destin d'Amélie Poulain   - Jean-Pierre Jeunet
 * Hot Shots!                            - Jim Abrahams
 * Ghost Dog: The Way of the Samurai     - Jim Jarmush
@@ -28,13 +26,9 @@
 * 3 Billboards Outside Ebbing, Missouri - Martin McDonagh
 * Green Book                            - Peter Farrelly
 * Death Proof                           - Quentin Tarantino
-* Knives Out                            - Rian Johnson
 * Donnie Darko                          - Richard Kelly
 * The Princess Bride                    - Rob Reiner
-* American Beauty                       - Sam Mendes
-* Once Upon a Time in the West          - Sergio Leone
 * The Fisher King                       - Terry Gilliam
-* Knockin' on Heaven's Door             - Thomas Jahn
 * Perfume: The Story of a Murderer      - Tom Tykwer
 * Lola Rennt                            - Tom Tykwer
 * Roman Holiday                         - William Wyler
@@ -85,6 +79,12 @@
 * Kramer vs Kramer                      - Robert Benton
 * Wind River                            - Taylor Sheridan
 * Barfuss                               - Til Schweiger
+* Knives Out                            - Rian Johnson
+* Tesis                                 - Alejandro Amenábar
+* Juno                                  - Jason Reitman
+* American Beauty                       - Sam Mendes
+* Once Upon a Time in the West          - Sergio Leone
+* Knockin' on Heaven's Door             - Thomas Jahn
 * ========================================================================
 * Barton Fink                           - Joel/Ethan Coen
 * Burn After Reading                    - Ethan/Joel Coen

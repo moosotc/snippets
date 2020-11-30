@@ -122,7 +122,8 @@
             (goto-char pw)
             (if (> pd 0)
                 (insert-char 32 pd)
-              (delete-backward-char pd))))))))
+              (delete-char pd))))))))017
+
 
 (defun right-align-= (beg end)
   (interactive "r")
@@ -202,9 +203,9 @@
   (c-set-offset 'statement-case-open 4)
   (c-set-offset 'case-label 0))
 
-(defun my-shell-mode-hook ()
-  (define-key shell-script-mode-map [(alt \[)] 'c-insert-curly-braces)
-  (define-key shell-script-mode-map [(alt \])] 'c-insert-curly-braces2))
+;; (defun my-shell-mode-hook ()
+;;   (define-key shell-script-mode-map [(alt \[)] 'c-insert-curly-braces)
+;;   (define-key shell-script-mode-map [(alt \])] 'c-insert-curly-braces2))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
@@ -466,7 +467,7 @@
   (c-context-line-break)
   (insert "}")
   (c-indent-command)
-  (previous-line 1)
+  (forward-line -1)
   (c-indent-command))
 
 (defun c-insert-curly-braces2 ()
@@ -481,7 +482,7 @@
   (insert "}")
   (c-indent-command)
   (open-line 1)
-  (previous-line 1)
+  (forward-line -1)
   (c-indent-command))
 
 (add-hook 'Info-mode-hook             ; After Info-mode has started
@@ -615,10 +616,11 @@
 
 (global-set-key [(alt ?h)] (lambda () (interactive) (scroll-up 1)))
 (global-set-key [(alt ?s)] (lambda () (interactive) (scroll-down 1)))
-;; with grp:win_space_toggle setxkbmap option emacs stell sees all the
+;; with grp:win_space_toggle setxkbmap option emacs still sees all the
 ;; keys and default mapping (just-one-space) inserts a space... which is
 ;; unexpected
 (global-set-key [(meta ?  )] 'ignore)
+(global-set-key [(alt ?c)] 'my-recompile)
 
-;;; local Variables:
+;;; Local Variables:
 ;;; End:

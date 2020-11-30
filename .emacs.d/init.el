@@ -302,8 +302,6 @@
 (global-set-key [(alt ?x) (control ?b)] 'ibuffer-lis-buffers)
 (global-unset-key [(control ?x) (control ?b)]) ;; 'helm-buffers-list)
 (global-set-key [(control ?x) ?b] 'helm-for-files)
-(global-set-key [(alt ?5)] 'compile)
-(global-set-key [(alt ?6)] 'my-recompile)
 (global-set-key [(alt ?9)] 'insert-parentheses)
 (global-set-key [(alt ?0)] 'my-insert-parentheses)
 (global-set-key [(alt ?')] 'insert-quotes)

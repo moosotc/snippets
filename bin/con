@@ -1,2 +1,4 @@
 #!/bin/sh
-test -z "$1" || exec sh $HOME/x/con/$1 && ls $HOME/x/con
+test -n "$1" || { ls $HOME/x/con; exit; }
+t="$HOME/x/con/$1"
+command -v "$t" || { shift; exec mpv "$t" $*; } && exec "$t"

@@ -19,6 +19,7 @@
 (global-set-key [(meta alt ? )] 'mark-end-of-sentence)
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
+(electric-quote-mode)
 (setq x-super-keysym 'meta)
 (setq x-alt-keysym 'alt)
 (setq x-meta-keysym 'alt)
@@ -619,6 +620,7 @@
 ;; unexpected
 (global-set-key [(meta ?  )] 'ignore)
 (global-set-key [(alt ?c)] 'my-recompile)
+(global-set-key [(meta alt ?c)] 'compile)
 
 ;;; Local Variables:
 ;;; End:

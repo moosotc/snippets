@@ -5,5 +5,5 @@ if test "$1" = "add"; then
     ln -s "$PWD/$2" $HOME/x/con/${3-}
 else
     t="$HOME/x/con/$1"
-    eval exec $(command -v "$t" || { shift; echo "'$t' $*"; } && echo "$t")
+    command -v "$t" || { shift; exec mpv "$t" $*; } && exec mpv "$t"
 fi

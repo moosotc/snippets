@@ -1,9 +1,7 @@
 #!/bin/sh
 set -eu
 test -n "${1-}" || { ls $HOME/x/con; exit; }
-if test "$1" = "add"; then
-    ln -s "$PWD/$2" $HOME/x/con/${3-}
-else
-    t="$HOME/x/con/$1"
-    command -v "$t" || { shift; exec mpv "$t" $*; } && exec mpv "$t"
-fi
+! test "$1" = "add" || exec ln -s "$PWD/$2" $HOME/x/con/${3-}
+t="$HOME/x/con/$1"
+command -v "$t" || { shift; set -- $*; } && set --
+exec mpv $t $*

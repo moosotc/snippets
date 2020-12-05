@@ -1,4 +1,9 @@
 #!/bin/sh
+set -eu
 test -n "$1" || { ls $HOME/x/con; exit; }
-t="$HOME/x/con/$1"
-command -v "$t" || { shift; exec mpv "$t" $*; } && exec "$t"
+test "$1" = "add" || {
+    t="$HOME/x/con/$1"
+    command -v "$t" || { shift; exec mpv "$t" $*; } && exec "$t"
+} && {
+    ln -s "$PWD/$2" $HOME/x/con/${3-}
+}

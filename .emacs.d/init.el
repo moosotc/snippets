@@ -410,15 +410,14 @@
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   '(pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
- '(erc-nick "malc_")
+   '(ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
  '(erc-log-channels-directory "~/x/log/erc")
+ '(erc-nick "malc_")
  '(safe-local-variable-values
    '((eval overwrite-mode t)
      (eval progn
            (c-set-offset 'innamespace '0)
-           (c-set-offset 'inline-open '0))))
-)
+           (c-set-offset 'inline-open '0)))))
 
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it
@@ -593,8 +592,7 @@
     (global-set-key [(f10)] 'tmm-menubar)
   (load "~/.emacs.d/lacarte.elc")
   (load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")
-  ;; https://github.com/Fanael/highlight-numbers
-  (load "~/.emacs.d/highlight-numbers.elc")
+  (require 'highlight-numbers)
   (add-hook 'prog-mode-hook 'highlight-numbers-mode)
   (set-face-foreground 'highlight-numbers-number "DodgerBlue4")
   (global-set-key [(f10)] 'helm-browse-menubar))

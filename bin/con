@@ -3,5 +3,9 @@ set -eu
 test -n "${1-}" || { ls $HOME/x/con; exit; }
 ! test "$1" = "add" || exec ln -s "$PWD/$2" $HOME/x/con/${3-}
 t="$HOME/x/con/$1"
-command -v "$t" || { shift; set -- $*; } && set --
-exec mpv $t $*
+if command -v "$t"; then
+    exec "$t"
+else
+    shift
+    exec mpv $t $*
+fi

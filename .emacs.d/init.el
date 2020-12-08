@@ -422,7 +422,6 @@
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it
       smtpmail-starttls-credentials '(("smtplive.com" 587 nil nil))
-      smtpmail-auth-credentials '("smtp.live.com" 587)
       smtpmail-default-smtp-server "smtp.live.com"
       smtpmail-smtp-server "smtp.live.com"
       smtpmail-smtp-service 587)

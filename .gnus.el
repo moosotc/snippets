@@ -45,8 +45,7 @@ See https://support.google.com/mail/answer/7190?hl=en for syntax. "
 
 (setq gnus-ignored-newsgroups "^to\\.\\|^[0-9. ]+\\( \\|$\\)\\|^[\"]\"[#'()]")
 
-(setq user-mail-address "clamky@hotmail.com"
-      nntp-authinfo-file "~/.authinfo")
+(setq nntp-authinfo-file "~/.authinfo")
 
 (require 'bbdb)
 (bbdb-initialize)

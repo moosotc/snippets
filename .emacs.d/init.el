@@ -412,12 +412,7 @@
  '(package-selected-packages
    '(ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
  '(erc-log-channels-directory "~/x/log/erc")
- '(erc-nick "malc_")
- '(safe-local-variable-values
-   '((eval overwrite-mode t)
-     (eval progn
-           (c-set-offset 'innamespace '0)
-           (c-set-offset 'inline-open '0)))))
+ '(erc-nick "malc_"))
 
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it

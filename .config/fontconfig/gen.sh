@@ -7,8 +7,6 @@ set -eu
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 # beograd         https://www.fontspace.com/beograd-font-f28002
-# iosevka         https://github.com/be5invis/Iosevka
-#    clam         https://github.com/moosotc/snippets/blob/master/bin/configure/private-build-plans.toml
 # pt              https://www.paratype.ru/collections/pt/44157
 # raleway         https://github.com/impallari/Raleway
 #   (original)    https://github.com/theleagueof/raleway

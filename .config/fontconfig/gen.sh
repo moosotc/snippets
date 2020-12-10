@@ -29,7 +29,6 @@ eri1="kurinto news core"
 eri5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
-kuoc="kurinto olde core"
 rale="raleway-v4020"
 helv="$rale"
 ptsn="pt sans narrow"
@@ -91,10 +90,11 @@ M "$helv"         "sans-serif" "arial" "helvetica" "helvetica neue"
 M "pt sans bold"  "osd"
 M "pt sans"       "gtk" "trebuchet ms"
 M "dudu cyryllic" "comic sans ms" "sub"
+M "jetbrainsmono" "iosevka clam" "iosevka" "monospace"
 M "iosevka clam"  "iosevka" "monospace"
 M "$eri1"         "serif" "times" "times new roman"
 M "$eri5"         "georgia" "lora" "noto serif"
-eval M "'$ans5'"  "verdana" "'lucida grande'" "montserrat" $droidsans
+eval M "'$ans5'"  "verdana" "'lucida  grande'" "montserrat" $droidsans
 M "$curs"         "cursive"
 
 # learn yourself some grek (beograd to learn cyrl instead)

@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+test -n "$1"
+scp "$1" "boblycat.org:public_html/scratch/а/$2"

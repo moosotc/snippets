@@ -5,6 +5,7 @@
   ofl/ptserif                 - O0
   ofl/montserratalternates    - S9 O0 YУ
   ofl/raleway                 - ~- g9 0 rn
+  jetbrainsmono               - yу
 * 3ze
   apache/arimo                - 3ze, il, rn
   apache/cousine              - 3ze, 1l

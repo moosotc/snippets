@@ -1,0 +1,4 @@
+#compdef con
+cd /home/malc/x/con/ &>/dev/null
+_arguments -s '*::document:_files -g "*"'
+cd - &>/dev/null

@@ -1,16 +1,8 @@
 ;; -*- Mode: Emacs-Lisp -*-
-(setq browse-url-mosaic-program "")
-(setq initial-scratch-message "")
-(setq use-dialog-box nil)
-(setq calendar-week-start-day 1)
-
 (set-fontset-font "fontset-default"
                   ;; Supplemental Symbols and Pictographs
                   '(#x1f900 . #x1f9ff) "code2003" nil)
-(eval '(setq inhibit-startup-echo-area-message "malc"))
-(setq compile-command "make")
 (server-start)
-(setq chess-images-default-size 80)
 (defun switch-to-other-buffer ()
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
@@ -20,69 +12,116 @@
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
 (electric-quote-mode)
-(setq x-super-keysym 'meta)
-(setq x-alt-keysym 'alt)
-(setq x-meta-keysym 'alt)
 (if (string-match "iosevka" (face-font 'default))
     (setq-default line-spacing 2))
 
-(setq auto-save-directory (expand-file-name "~/.emacs.d/autosave")
-      auto-save-directory-fallback auto-save-directory
-      auto-save-hash-p nil
-      efs-auto-save t
-      efs-auto-save-remotely nil
-      )
+(setq-default
+ indent-tabs-mode nil
+ font-lock-maximum-decoration '((c-mode . 2) (t . t)))
 
-(setq pending-delete-modeline-string "")
-(setq filladapt-mode-line-string "")
+(setq
+ auto-save-directory (expand-file-name "~/.emacs.d/autosave")
+ auto-save-directory-fallback auto-save-directory
+ auto-save-hash-p nil
+ inhibit-startup-echo-area-message "malc"
+ compile-command ""
+ chess-images-default-size 80
+ backup-directory-alist `(("." . "~/.emacs.d/backups"))
 
-(setq-default filladapt-mode t)
-(when (fboundp 'turn-off-filladapt-mode)
-  (add-hook 'c-mode-hook 'turn-off-filladapt-mode)
-  (add-hook 'outline-mode-hook 'turn-off-filladapt-mode))
+ desktop-path '("~/.emacs.d")
+ desktop-restore-frames nil
+ desktop-buffers-not-to-save
+ (concat "\\("
+         "^nn\\.a[0-9]+\\|\\.log\\|(ftp)\\|^tags\\|^TAGS"
+         "\\|\\.emacs.*\\|\\.diary\\|\\.newsrc-dribble\\|\\.bbdb"
+         "\\)$")
+ mail-user-agent 'gnus-user-agent
+ user-mail-address "clamky@hotmail.com"
+ package-archives
+ '(
+   ("gnu" . "http://elpa.gnu.org/packages/")
+   ;; ("sunr" ."http://joseito.republika.pl/sunrise-commander/")
+   ;; ("marmalade" . "http://marmalade-repo.org/packages/")
+   ("melpa" . "http://melpa.org/packages/")
+   )
 
-(setq completion-auto-help t   ;; I want as much help as I can get
-      completion-auto-exit nil ;; Don't want to always hit return
+ undo-limit 120000
+ whitespace-global-modes '(not erc-mode)
+ whitespace-style
+ '(face
+   trailing
+   indentation::tabs
+   lines-tail
+   empty
+   tabs
+   tab-mark)
 
-      ;; Tell cc-mode not to check for old-style (K&R) function declarations.
-      ;; This speeds up indenting a lot.
-      c-recognize-knr-p nil
+ org-log-done t
 
-      track-eol nil
-      print-escape-newlines t
-      inhibit-startup-message t
-      default-major-mode 'text-mode
-      garbage-collection-messages nil
+ ad-redefinition-action 'accept
 
-      ;; show position
-      line-number-mode t
-      column-number-mode t
+ browse-url-mosaic-program ""
+ initial-scratch-message ""
+ use-dialog-box nil
+ calendar-week-start-day 1
 
-      next-line-add-newlines nil
-      require-final-newline t
-      signal-error-on-buffer-boundary nil
+ delete-key-deletes-forward t
+ save-abbrevs 'silently
+ compilation-scroll-output t
+ mouse-yank-at-point t
+ frame-title-format '("emacs: " (buffer-file-name "%f" "%b"))
 
-      ;; autosave
+ efs-auto-save t
+ efs-auto-save-remotely nil
 
-      ;; now that we have auto-save-timeout, let's crank this up
-      ;; for better interactive response.
-      auto-save-interval 0
-      auto-save-timeout 0
+ completion-auto-help t   ;; I want as much help as I can get
+ completion-auto-exit nil ;; Don't want to always hit return
 
-      ;; little compilation window
-      compilation-window-height 15
+ ;; Tell cc-mode not to check for old-style (K&R) function declarations.
+ ;; This speeds up indenting a lot.
+ c-recognize-knr-p nil
 
-      ;; remove anoying bell
-      bell-volume 0
+ x-super-keysym 'meta
+ x-alt-keysym 'alt
+ x-meta-keysym 'alt
 
-      ;; said to improve remote speed
-      interprogram-cut-function nil
-      interprogram-paste-function nil
+ pending-delete-modeline-string "-+"
 
-      ;; dont use w3
-      browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "runffox"
-      )
+ track-eol nil
+ print-escape-newlines t
+ inhibit-startup-message t
+ default-major-mode 'text-mode
+ garbage-collection-messages nil
+
+ ;; show position
+ line-number-mode t
+ column-number-mode t
+
+ next-line-add-newlines nil
+ require-final-newline t
+ signal-error-on-buffer-boundary nil
+
+ ;; autosave
+
+ ;; now that we have auto-save-timeout, let's crank this up
+ ;; for better interactive response.
+ auto-save-interval 0
+ auto-save-timeout 0
+
+ ;; little compilation window
+ compilation-window-height 15
+
+ ;; remove anoying bell
+ bell-volume 0
+
+ ;; said to improve remote speed
+ interprogram-cut-function nil
+ interprogram-paste-function nil
+
+ ;; dont use w3
+ browse-url-browser-function 'browse-url-generic
+ browse-url-generic-program "runffox"
+ )
 
 ;; Misc
 (defun re-kill-buffers (re)
@@ -134,10 +173,6 @@
   (interactive "r")
   (right-align-region-str "->" beg end))
 
-(setq save-abbrevs 'silently)
-(setq-default font-lock-maximum-decoration
-              '((c-mode . 2) (t . t)))
-(setq compilation-scroll-output t)
 (global-set-key [C-delete] 'kill-word)
 (blink-cursor-mode 0)
 
@@ -149,11 +184,6 @@
 (defun describe-variable-at-point ()
   (interactive)
   (describe-variable (variable-at-point)))
-
-(setq delete-key-deletes-forward t
-      mouse-yank-at-point t
-      ;; modify frame title to show what exactly we are editing
-      frame-title-format '("emacs: " (buffer-file-name "%f" "%b")))
 
 (defun my-delete-window ()
   (interactive)
@@ -212,7 +242,6 @@
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
 (add-hook 'shell-script-mode-hook 'my-shell-mode-hook)
 
-(setq backup-directory-alist `(("." . "~/.emacs.d/backups")))
 ;;; **********************************************************************
 ;;; OCaml
 ;;; **********************************************************************
@@ -238,8 +267,6 @@
 
 ;;; ********
 ;;; Few advices for FSF to behave more like Lucid
-(setq ad-redefinition-action 'accept)
-
 (defadvice describe-key (after dcxba activate)
   (switch-to-buffer-other-window "*Help*"))
 
@@ -325,16 +352,8 @@
 ;;;======================================================================
 ;;; Desktop + Session
 ;;;======================================================================
-(setq desktop-path '("~/.emacs.d"))
-(setq desktop-restore-frames nil)
 (savehist-mode)
 (desktop-save-mode)
-
-(setq desktop-buffers-not-to-save
-      (concat "\\("
-              "^nn\\.a[0-9]+\\|\\.log\\|(ftp)\\|^tags\\|^TAGS"
-              "\\|\\.emacs.*\\|\\.diary\\|\\.newsrc-dribble\\|\\.bbdb"
-              "\\)$"))
 (add-to-list 'desktop-modes-not-to-save 'vc-dir-mode)
 (add-to-list 'desktop-modes-not-to-save 'dired-mode)
 (add-to-list 'desktop-modes-not-to-save 'Info-mode)
@@ -421,9 +440,6 @@
       smtpmail-smtp-server "smtp.live.com"
       smtpmail-smtp-service 587)
 
-(setq mail-user-agent 'gnus-user-agent)
-(setq user-mail-address "clamky@hotmail.com")
-
 (defun transpose-assignment ()
   (interactive)
   (replace-regexp
@@ -435,8 +451,6 @@
   (replace-regexp
    "\\(\\W+\\)\\(.*\\) -> \\(.*\\)"
    "\\1\\3 -> \\2"))
-
-(setq-default indent-tabs-mode nil)
 
 (global-set-key "\C-x." 'helm-ag)
 (global-set-key [(meta ?.)] 'helm-git-grep-at-point)
@@ -484,32 +498,14 @@
             ))
 (autoload 'helm-imenu "helm-imenu")
 (global-set-key [(alt ?7)] 'helm-imenu)
-(setq package-archives
-      '(
-        ("gnu" . "http://elpa.gnu.org/packages/")
-        ;; ("sunr" ."http://joseito.republika.pl/sunrise-commander/")
-        ;; ("marmalade" . "http://marmalade-repo.org/packages/")
-        ("melpa" . "http://melpa.org/packages/")
-        )
-      )
 
 ;; (global-set-key [(f1) (return)] 'woman)
 (global-set-key [(f1) (return)] 'man)
 
 (autoload 'gnus "gnus" "gnus" t)
-(setq undo-limit 120000)
 
 (autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
-(setq whitespace-global-modes '(not erc-mode))
 (global-whitespace-mode)
-(setq whitespace-style
-      '(face
-        trailing
-        indentation::tabs
-        lines-tail
-        empty
-        tabs
-        tab-mark))
 
 (defun selector-moo ()
   (hl-line-mode 1)
@@ -538,7 +534,6 @@
 ;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
 (define-key global-map "\C-cl" 'org-store-link)
 (define-key global-map "\C-ca" 'org-agenda)
-(setq org-log-done t)
 
 (global-set-key (kbd "M-x")     'helm-M-x)
 (global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
@@ -547,9 +542,9 @@
 (set-clipboard-coding-system 'utf-8)
 
 (global-set-key [(alt insert)] 'x-clipboard-yank)
-(global-set-key
- [(meta insert)]
- (lambda () (interactive) (insert (gui-get-selection 'PRIMARY 'UTF8_STRING))))
+;;(global-set-key
+;; [(meta insert)]
+;; (lambda () (interactive) (insert (gui-get-selection 'PRIMARY 'UTF8_STRING))))
 (global-set-key
  [(alt ?t)] (lambda () (interactive) (erc-track-switch-buffer -1)))
 (global-set-key [(alt ?n)] 'erc-track-switch-buffer)
@@ -615,7 +610,7 @@
 
 (defun my-date ()
   (interactive)
-  (princ (format-time-string "%a %d %b %Y")))
+  (princ (format-time-string "%A %d %B %Y")))
 
 ;;; Local Variables:
 ;;; End:

@@ -613,5 +613,9 @@
 (global-set-key [(alt ?c)] 'my-recompile)
 (global-set-key [(meta alt ?c)] 'compile)
 
+(defun my-date ()
+  (interactive)
+  (princ (format-time-string "%a %d %b %Y")))
+
 ;;; Local Variables:
 ;;; End:

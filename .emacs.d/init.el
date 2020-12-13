@@ -610,7 +610,7 @@
 
 (defun my-date ()
   (interactive)
-  (princ (format-time-string "%A %d %B %Y")))
+  (princ (format-time-string "%a %d.%m.%Y")))
 
 ;;; Local Variables:
 ;;; End:

@@ -1,5 +1,6 @@
 #!/bin/sh
 
-xclip -sel c -o | xclip -i -sel s
-xclip -sel p -o | xclip -i -sel c
-xclip -sel s -o | xclip -i -sel p
+xclip -sel cli -o | xclip -i -sel sec
+xclip -sel pri -o | xclip -i -sel cli
+xclip -sel sec -o | xclip -i -sel pri
+: clpr

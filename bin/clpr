@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Primary: $(xclip -o -sel pri)"
+echo "Clipboa: $(xclip -o -sel cli)"

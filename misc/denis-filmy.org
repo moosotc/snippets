@@ -85,9 +85,11 @@
 * American Beauty                       - Sam Mendes
 * Once Upon a Time in the West          - Sergio Leone
 * Knockin' on Heaven's Door             - Thomas Jahn
-* ========================================================================
+* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 * Barton Fink                           - Joel/Ethan Coen
 * Burn After Reading                    - Ethan/Joel Coen
+* Monster Ball                          - Marc Forster
+* ========================================================================
 * First Snow                            - Mark Fergus
 * Do the Right Thing                    - Spike Lee
 * 25th hour                             - Spike Lee

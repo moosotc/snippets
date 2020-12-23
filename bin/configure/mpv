@@ -1,5 +1,5 @@
 #!/bin/sh
-# 8ddd4547fc2d3b813c88b586cf8a579bff4afa4f
+# 40ea28c6f9f2f62270c1d07e4d79109d0a2d6b7d
 export CC='ccache gcc'
 
 ./waf configure                                 \
@@ -21,5 +21,7 @@ export CC='ccache gcc'
     --disable-vdpau                             \
     --disable-caca                              \
     --disable-jpeg                              \
+    --disable-sdl2                              \
+    --disable-sdl2-audio                        \
     --enable-zimg                               \
     --disable-libmpv-shared

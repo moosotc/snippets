@@ -607,5 +607,25 @@
   (interactive)
   (princ (format-time-string "%a %d.%m.%Y")))
 
+(defun my-iso-transl-define-keys (_f alist)
+  (while alist
+    (let ((translated-vec (cdr (car alist))))
+      (define-key iso-transl-ctl-x-8-map (car (car alist)) translated-vec)
+      (let ((inchar (aref (car (car alist)) 0))
+            (vec (vconcat (car (car alist))))
+            (tail iso-transl-dead-key-alist))
+        (define-key key-translation-map vec translated-vec)
+        (define-key isearch-mode-map (vector (aref vec 0)) nil)
+        (while tail
+          (if (eq (car (car tail)) inchar)
+              (let ((deadvec (copy-sequence vec))
+                    (deadkey (cdr (car tail))))
+                (aset deadvec 0 deadkey)
+                (define-key isearch-mode-map (vector deadkey) nil)
+                (define-key key-translation-map deadvec translated-vec)))
+          (setq tail (cdr tail)))))
+    (setq alist (cdr alist))))
+(advice-add 'iso-transl-define-keys :around 'my-iso-transl-define-keys)
+
 ;;; Local Variables:
 ;;; End:

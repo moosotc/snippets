@@ -24,11 +24,11 @@ echo 0 | tee /proc/sys/kernel/nmi_watchdog
 echo min_power | tee /sys/class/scsi_host/*/link_power_management_policy
 echo 1500 | tee /proc/sys/vm/dirty_expire_centisecs
 
-# XXX turn off autosuspend of keybards, mice and IR receivers
+exit
+# XXX turn off autosuspend of keyboards, mice and IR receivers
 echo on | tee /sys/bus/usb/devices/1-3.3.1/power/control \
               /sys/bus/usb/devices/1-3.4/power/control
 
-exit
 # hmm?
 echo med_power_with_dipm | \
     tee /sys/class/scsi_host/**/link_power_management_policy

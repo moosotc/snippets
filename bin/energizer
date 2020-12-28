@@ -1,5 +1,5 @@
 #!/bin/sh
-set -e
+set -eu
 . asroot
 
 modprobe -r kvm-intel kvm pcspkr applesmc iwlmvm iwlwifi ee1004 \
@@ -7,7 +7,7 @@ modprobe -r kvm-intel kvm pcspkr applesmc iwlmvm iwlwifi ee1004 \
          btintel btrtl bluetooth || true
 
 tee() {
-    el=".."; test -n "$2" || el="  "
+    el=".."; test -n "${2-}" || el="  "
     for f; do
         printf "%60s%s\n" "$f" "$el"
     done

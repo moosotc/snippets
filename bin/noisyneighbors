@@ -1,3 +1,6 @@
 #!/bin/sh
 mpv av://lavfi:anoisesrc=color=brown
 play -r 48000 -c 2 -t sl - synth pinknoise band -n 2200 200 tremolo 20 .1 </dev/zero
+# wave on the beach
+# https://askubuntu.com/questions/789465/generate-white-noise-to-calm-a-baby
+play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10

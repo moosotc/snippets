@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <errno.h>
-#include <stdarg.h>
 #include <malloc.h>
 #include <string.h>
 #include <stdlib.h>
@@ -32,10 +31,6 @@ int main (int argc, char **argv)
             die (EXIT_FAILURE, "huh? %d\n", n);
         }
     }
-    if (mallopt (M_MMAP_THRESHOLD, size) - 1) {
-        die (EXIT_FAILURE, "mallopt (M_MMAP_THRESHOLD, %zu)", size);
-    }
-
     for (n = 0; n < 100000; n++) {
         void *p = malloc (size);
         if (!p) {

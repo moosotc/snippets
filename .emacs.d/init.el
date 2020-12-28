@@ -603,7 +603,6 @@
 (global-set-key [(alt ?s)] (lambda () (interactive) (scroll-down 1)))
 (global-set-key [(alt ?c)] 'my-recompile)
 (global-set-key [(meta alt ?c)] 'compile)
-(global-set-key (kbd "¢") 'my-recompile)
 (defun my-date ()
   (interactive)
   (princ (format-time-string "%a %d.%m.%Y")))

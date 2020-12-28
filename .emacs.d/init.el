@@ -607,6 +607,8 @@
   (interactive)
   (princ (format-time-string "%a %d.%m.%Y")))
 
+
+;; (C) 2020 tali713 (irc.freenode.net/#emacs)
 (defun my-iso-transl-define-keys (_f alist)
   (while alist
     (let ((translated-vec (cdr (car alist))))

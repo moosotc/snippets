@@ -1,3 +1,5 @@
+/* https://marc.info/?l=glibc-alpha&m=160882304200845&w=2
+   https://github.com/coreutils/gnulib/blob/master/lib/idx.h */
 #include <stdio.h>
 
 int main (void)

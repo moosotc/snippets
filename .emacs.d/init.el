@@ -8,7 +8,7 @@
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 (global-set-key "\C-ha" 'apropos)
 (global-set-key (kbd "C-'") 'pop-to-mark-command)
-(global-set-key [(meta alt ? )] 'mark-end-of-sentence)
+(global-set-key [(meta hyper ? )] 'mark-end-of-sentence)
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
 (electric-quote-mode)
@@ -82,8 +82,8 @@
  c-recognize-knr-p nil
 
  x-super-keysym 'meta
- x-alt-keysym 'alt
- x-meta-keysym 'alt
+ x-alt-keysym 'meta
+ x-meta-keysym 'hyper
 
  pending-delete-modeline-string "-+"
 
@@ -205,7 +205,9 @@
 (defun my-recompile ()
   (interactive)
   (let ((compilation-ask-about-save nil))
-    (recompile)))
+    (if (fboundp 'recompile)
+        (recompile)
+      (message "compile first"))))
 
 ;; **********************************************************************
 ;; hooks
@@ -224,10 +226,10 @@
 (add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
 
 (defun my-c-mode-hook ()
-  (define-key c-mode-map [(alt \[)] 'c-insert-curly-braces)
-  (define-key c-mode-map [(alt \])] 'c-insert-curly-braces2)
-  (define-key c++-mode-map [(alt \[)] 'c-insert-curly-braces)
-  (define-key c++-mode-map [(alt \])] 'c-insert-curly-braces2)
+  (define-key c-mode-map [(hyper \[)] 'c-insert-curly-braces)
+  (define-key c-mode-map [(hyper \])] 'c-insert-curly-braces2)
+  (define-key c++-mode-map [(hyper \[)] 'c-insert-curly-braces)
+  (define-key c++-mode-map [(hyper \])] 'c-insert-curly-braces2)
   (local-set-key [(return)] 'newline-and-indent)
   (c-set-style "bsd")
   (setq c-basic-offset 4)
@@ -235,8 +237,8 @@
   (c-set-offset 'case-label 0))
 
 ;; (defun my-shell-mode-hook ()
-;;   (define-key shell-script-mode-map [(alt \[)] 'c-insert-curly-braces)
-;;   (define-key shell-script-mode-map [(alt \])] 'c-insert-curly-braces2))
+;;   (define-key shell-script-mode-map [(hyper \[)] 'c-insert-curly-braces)
+;;   (define-key shell-script-mode-map [(hyper \])] 'c-insert-curly-braces2))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
@@ -326,22 +328,22 @@
 
 ;;======================================================================
 ;; redefine global and mode specific key sequences
-(global-set-key [(alt ?4)] 'match-paren)
-(global-set-key [(alt ?x) (control ?b)] 'ibuffer-lis-buffers)
+(global-set-key [(hyper ?4)] 'match-paren)
+(global-set-key [(hyper ?x) (control ?b)] 'ibuffer-lis-buffers)
 (global-unset-key [(control ?x) (control ?b)]) ;; 'helm-buffers-list)
 (global-set-key [(control ?x) ?b] 'helm-for-files)
-(global-set-key [(alt ?9)] 'insert-parentheses)
-(global-set-key [(alt ?0)] 'my-insert-parentheses)
-(global-set-key [(alt ?')] 'insert-quotes)
-(global-set-key [(alt q)] 'my-kill-this-buffer-and-window)
-(global-set-key [(alt w)] 'my-delete-window)
-(global-set-key [(alt ?\[)] 'describe-function-at-point)
-(global-set-key [(alt ?\])] 'describe-variable-at-point)
+(global-set-key [(hyper ?9)] 'insert-parentheses)
+(global-set-key [(hyper ?0)] 'my-insert-parentheses)
+(global-set-key [(hyper ?')] 'insert-quotes)
+(global-set-key [(hyper q)] 'my-kill-this-buffer-and-window)
+(global-set-key [(hyper w)] 'my-delete-window)
+(global-set-key [(hyper ?\[)] 'describe-function-at-point)
+(global-set-key [(hyper ?\])] 'describe-variable-at-point)
 
-(global-set-key [(alt right)] 'bs-cycle-next)
-(global-set-key [(alt left)] 'bs-cycle-previous)
+(global-set-key [(hyper right)] 'bs-cycle-next)
+(global-set-key [(hyper left)] 'bs-cycle-previous)
 
-(global-set-key [(alt ?\;)] 'caml-comment-till-end-of-line)
+(global-set-key [(hyper ?\;)] 'caml-comment-till-end-of-line)
 (global-set-key [(control ?x) (control ?`)] 'previous-error)
 
 (defvar caml-mode-map (make-sparse-keymap))
@@ -362,7 +364,7 @@
 
 (defun bsd-parens ()
   (interactive)
-  (local-set-key [(alt ?9)] 'my-insert-parentheses-c))
+  (local-set-key [(hyper ?9)] 'my-insert-parentheses-c))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -454,12 +456,12 @@
 
 (global-set-key "\C-x." 'helm-ag)
 (global-set-key [(meta ?.)] 'helm-git-grep-at-point)
-(global-set-key [(alt ?.)] 'helm-ag-this-file)
-(global-set-key [(ctrl alt ?.)] 'helm-resume)
+(global-set-key [(hyper ?.)] 'helm-ag-this-file)
+(global-set-key [(ctrl hyper ?.)] 'helm-resume)
 
 (fset 'yes-or-no-p 'y-or-n-p)
 
-(global-set-key [(alt ?l)] 'switch-to-other-buffer)
+(global-set-key [(hyper ?l)] 'switch-to-other-buffer)
 
 (defun c-insert-curly-braces ()
   "Insert a pair of curly braces in a C buffer."
@@ -497,7 +499,7 @@
             ;; Info-default-directory-list)
             ))
 (autoload 'helm-imenu "helm-imenu")
-(global-set-key [(alt ?7)] 'helm-imenu)
+(global-set-key [(hyper ?7)] 'helm-imenu)
 
 ;; (global-set-key [(f1) (return)] 'woman)
 (global-set-key [(f1) (return)] 'man)
@@ -541,13 +543,20 @@
 (set-selection-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 
-(global-set-key [(alt insert)] 'x-clipboard-yank)
-;;(global-set-key
-;; [(meta insert)]
-;; (lambda () (interactive) (insert (gui-get-selection 'PRIMARY 'UTF8_STRING))))
-(global-set-key
- [(alt ?t)] (lambda () (interactive) (erc-track-switch-buffer -1)))
-(global-set-key [(alt ?n)] 'erc-track-switch-buffer)
+(defun my-yank ()
+  ;; https://www.emacswiki.org/emacs/second-sel.el
+  (interactive)
+  (let ((sel (gui-get-selection 'PRIMARY)))
+    (funcall (if (fboundp 'insert-for-yank) 'insert-for-yank 'insert) sel)))
+
+(global-set-key (kbd "H-\\") 'yank)
+(global-set-key [(hyper ?|)] 'my-yank)
+(global-set-key (kbd "C-\\") 'kill-ring-save)
+(global-set-key (kbd "C-|") 'toggle-input-method)
+(global-set-key [(hyper ?t)] (lambda ()
+                               (interactive)
+                               (erc-track-switch-buffer -1)))
+(global-set-key [(hyper ?n)] 'erc-track-switch-buffer)
 
 (put 'dired-find-alternate-file 'disabled nil)
 
@@ -591,7 +600,7 @@
       (switch-to-other-buffer)
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
-(global-set-key [(meta alt ?l)] 'lispy)
+(global-set-key [(meta hyper ?l)] 'lispy)
 
 ;; https://stackoverflow.com/questions/24904208/emacs-windows-org-mode-encoding
 (modify-coding-system-alist 'file "" 'utf-8-unix)
@@ -599,17 +608,17 @@
 (add-hook 'help-mode-hook 'scroll-lock-mode)
 (add-hook 'gnus-article-mode-hook 'scroll-lock-mode)
 
-(global-set-key [(alt ?h)] (lambda () (interactive) (scroll-up 1)))
-(global-set-key [(alt ?s)] (lambda () (interactive) (scroll-down 1)))
-(global-set-key [(alt ?c)] 'my-recompile)
-(global-set-key [(meta alt ?c)] 'compile)
+(global-set-key [(hyper ?h)] (lambda () (interactive) (scroll-up 1)))
+(global-set-key [(hyper ?s)] (lambda () (interactive) (scroll-down 1)))
+(global-set-key [(hyper ?c)] 'my-recompile)
+(global-set-key [(meta hyper ?c)] 'compile)
 (defun my-date ()
   (interactive)
   (princ (format-time-string "%a %d.%m.%Y")))
 
-;; based on the code (C) 2020 tali713 (irc.freenode.net/#emacs)
-(defun my-iso-transl-define-keys (_ _) nil)
-(advice-add 'iso-transl-define-keys :around 'my-iso-transl-define-keys)
+;; (setq
+;;  diredc-display-listing-switches-list
+;; '(("my" . "-aXFhs --si --group-directories-first"))
 
 ;;; Local Variables:
 ;;; End:

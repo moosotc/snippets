@@ -13,3 +13,18 @@ xmodmap - <<EOF
 keycode 9 = Escape Menu Escape Menu
 keycode 108 = Mode_switch
 EOF
+
+exit
+: altwin:alt_win        - wins are alts
+: altwin:swap_lalt_lwin - swaps left alt with left win
+: altwin:swap_alt_win   - swaps alts with corresponding wins
+
+setxkbmap -option "" -layout us,ru                              \
+          -option grp:win_space_toggle,caps:ctrl_modifier       \
+          -variant dvorak, -v 5
+
+xmodmap - <<EOF
+keycode 9 = Escape Menu Escape Menu
+keycode 108 = Alt_R
+keycode 64 = Alt_L
+EOF

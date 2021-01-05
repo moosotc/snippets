@@ -1,0 +1,57 @@
+* Settings
+  "linkHintCharacters": "aoeuhtns",
+  "linkHintNumbers": "0123456789",
+  "newTabUrl": "about:newtab",
+  "nextPatterns": "next,newer,>,›,→,»,≫,>>",
+  "previousPatterns": "prev,previous,back,older,<,‹,←,«,≪,<<",
+  "regexFindMode": false,
+  "ignoreKeyboardLayout": false,
+  "scrollStepSize": 30,
+  "smoothScroll": false,
+  "grabBackFocus": true,
+  "searchUrl": "https://www.bing.com/search?q=",
+* Keybinds
+map , LinkHints.activateMode
+map . LinkHints.activateModeToCopyLinkUrl
+map l goBack
+map F goForward
+map q removeTab
+map d LinkHints.activateModeToOpenInNewTab
+map b Vomnibar.activateTabSelection
+map <c-x><c-c> quit
+map  y0 copyCurrentUrl
+# https://gist.github.com/mvanzorn/95094227ec149b761419925382f2379f
+map <c-x><c-f> LinkHints.activateMode
+map <c-x><c-F> LinkHints.activateModeToOpenInNewForegroundTab
+map <c-x><a-f> LinkHints.activateModeWithQueue
+map <c-x><a-F> LinkHints.activateModeToOpenInNewTab
+//map <c-s> enterFindMode
+map <c-s> performFind
+map <c-r> performBackwardsFind
+//map <c-R> performBackwardsFind
+map <c-x>4 duplicateTab
+map n scrollUp
+map t scrollDown
+map h scrollLeft
+map s scrollRight
+map <c-> enterFindMode
+map <a-h> previousTab
+map <a-s> nextTab
+map <a-Up> scrollFullPageUp
+map <a-Down> scrollFullPageDown
+// map <Insert> scrollFullPageUp
+// map <Delete> scrollFullPageDown
+map <a-t> scrollFullPageDown
+map <a-n> scrollFullPageUp
+* Keywords
+w: https://www.wikipedia.org/w/index.php?title=Special:Search&search=%s Wikipedia
+wru: https://ru.wikipedia.org/w/index.php?search=%s WikipediaRu
+u: https://www.youtube.com/results?search_query=%s Youtube
+b: https://www.bing.comhttps://0x0.st/i5H5.c/search?q=%s Bing
+d: https://duckduckgo.com/?q=%s DuckDuckGo
+# az: https://www.amazon.com/s/?field-keywords=%s Amazon
+# qw: https://www.qwant.com/?q=%s Qwant
+asmr: https://www.youtube.com/results?search_query=asmr+-gibi+-darling+-fox+-tingting+-karuna+-%22goodnight+moon%22+-gracev+-%22cherry++crush%22+-lilibu+-hunnibee+-valeriya+-abetweene+-glow+-chipie+-ginger+-murmurs+-catplant+-moona+-celaine+%s
+imdb: https://www.imdb.com/find?q=%s
+dicen: https://en.wiktionary.org/wiki/%s
+dicru: https://ru.wiktionary.org/wiki/%s

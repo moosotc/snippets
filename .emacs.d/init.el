@@ -543,14 +543,17 @@
 (set-selection-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 
-(defun my-yank ()
+(defun my-yank-any (selt)
   ;; https://www.emacswiki.org/emacs/second-sel.el
-  (interactive)
-  (let ((sel (gui-get-selection 'PRIMARY)))
+  (let ((sel (gui-get-selection selt)))
     (funcall (if (fboundp 'insert-for-yank) 'insert-for-yank 'insert) sel)))
 
+(defun my-yank-primary () (interactive) (my-yank-any 'PRIMARY))
+(defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
+
 (global-set-key (kbd "H-\\") 'yank)
-(global-set-key [(hyper ?|)] 'my-yank)
+(global-set-key [(hyper ?|)] 'my-yank-primary)
+(global-set-key [(meta ?|)] 'my-yank-clip)
 (global-set-key (kbd "C-\\") 'kill-ring-save)
 (global-set-key (kbd "C-|") 'toggle-input-method)
 (global-set-key [(hyper ?t)] (lambda ()

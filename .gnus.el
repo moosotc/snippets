@@ -51,6 +51,9 @@
        '(nntp "news.gmane.io" 119)
        )
       )
+(setq nnir-method-default-engines
+      '((nnml . notmuch)
+        (nnimap . imap)))
 
 ;; http://www.emacswiki.org/emacs/GnusAndPine
 ;; (setq gnus-visual nil)

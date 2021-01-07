@@ -73,6 +73,7 @@ bindsym $win+Shift+b border toggle
 bindsym $win+Shift+w $execnoid runffox
 bindsym $alt+Shift+w $execnoid runpfox
 bindsym $win+Shift+z $execnoid runemacs
+bindsym $win+Ctrl+z $execnoid runemacs-git
 
 # toggle tiling / floating
 bindsym $win+Shift+space floating toggle

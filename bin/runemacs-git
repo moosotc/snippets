@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+
+(xdotool search --sync --class emacs sleep 0.1 windowactivate &)
+pgrep -a -f '^emacs$' || (exec /home/malc/x/rcs/git/emacs-head/src/emacs "$@")

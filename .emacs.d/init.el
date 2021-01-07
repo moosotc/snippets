@@ -426,14 +426,14 @@
    [default default default italic underline success warning error])
  '(canlock-password "320a46eeec84e8e4e041534d821600d69eb36d15")
  '(dired-listing-switches "-aBhl --dired --group-directories-first --sort=extension")
+ '(erc-log-channels-directory "~/x/log/erc")
+ '(erc-nick "malc_")
  '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   '(ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag))
- '(erc-log-channels-directory "~/x/log/erc")
- '(erc-nick "malc_"))
+   '(ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
 
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it

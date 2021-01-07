@@ -331,7 +331,8 @@
 (global-set-key [(hyper ?4)] 'match-paren)
 (global-set-key [(hyper ?x) (control ?b)] 'ibuffer-lis-buffers)
 (global-unset-key [(control ?x) (control ?b)]) ;; 'helm-buffers-list)
-(global-set-key [(control ?x) ?b] 'helm-for-files)
+(global-unset-key [(control ?x) ?b]);; 'helm-for-files)
+(global-set-key [(hyper ?b)] 'helm-for-files)
 (global-set-key [(hyper ?9)] 'insert-parentheses)
 (global-set-key [(hyper ?0)] 'my-insert-parentheses)
 (global-set-key [(hyper ?')] 'insert-quotes)
@@ -344,7 +345,6 @@
 (global-set-key [(hyper left)] 'bs-cycle-previous)
 
 (global-set-key [(hyper ?\;)] 'caml-comment-till-end-of-line)
-(global-set-key [(control ?x) (control ?`)] 'previous-error)
 
 (defvar caml-mode-map (make-sparse-keymap))
 (define-key caml-mode-map [(return)] 'newline-and-indent)

@@ -554,6 +554,7 @@
 (global-set-key (kbd "C-\\") 'kill-ring-save)
 (global-set-key (kbd "H-\\") 'my-yank-primary)
 (global-set-key (kbd "H-|") 'my-yank-clip)
+
 (global-set-key [(control insert)] 'kill-ring-save)
 (global-set-key [(hyper insert)] 'my-yank-primary)
 (global-set-key [(hyper shift insert)] 'my-yank-clip)

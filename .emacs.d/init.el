@@ -551,7 +551,9 @@
 (defun my-yank-primary () (interactive) (my-yank-any 'PRIMARY))
 (defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
 
+(global-set-key [(hyper ?`)] 'kill-region)
 (global-set-key (kbd "C-\\") 'kill-ring-save)
+(global-set-key (kbd "H-\\‘") 'kill-region)
 (global-set-key (kbd "H-\\") 'my-yank-primary)
 (global-set-key (kbd "H-|") 'my-yank-clip)
 

@@ -553,7 +553,6 @@
 
 (global-set-key [(hyper ?`)] 'kill-region)
 (global-set-key (kbd "C-\\") 'kill-ring-save)
-(global-set-key (kbd "H-\\‘") 'kill-region)
 (global-set-key (kbd "H-\\") 'my-yank-primary)
 (global-set-key (kbd "H-|") 'my-yank-clip)
 (global-set-key [(hyper ?/)] 'helm-occur)

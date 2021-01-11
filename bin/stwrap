@@ -1,5 +1,4 @@
 #!/bin/sh
 exec 1>&2 1>/dev/null
 pgrep rxvtd || rxvtd -q -o -f
-exec rxvtc -fn "xft:iosevka clam-9,xft:code2003" -rv +sb -g 80x24+329+87 "$@"
-#exec rxvtc -fn "xft:jetbrainsmono-9,xft:code2003" -rv +sb -g 80x24+329+87 "$@"
+exec rxvtc -fn "xft:jetbrainsmono-9,xft:code2003" -rv +sb -g 80x24+329+87 "$@"

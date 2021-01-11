@@ -556,6 +556,7 @@
 (global-set-key (kbd "H-\\‘") 'kill-region)
 (global-set-key (kbd "H-\\") 'my-yank-primary)
 (global-set-key (kbd "H-|") 'my-yank-clip)
+(global-set-key [(hyper ?/)] 'helm-occur)
 
 (global-set-key [(control insert)] 'kill-ring-save)
 (global-set-key [(hyper insert)] 'my-yank-primary)

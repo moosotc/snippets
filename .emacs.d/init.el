@@ -620,13 +620,9 @@
 (global-set-key [(hyper ?s)] (lambda () (interactive) (scroll-down 1)))
 (global-set-key [(hyper ?c)] 'my-recompile)
 (global-set-key [(meta hyper ?c)] 'compile)
-(defun my-date ()
-  (interactive)
-  (princ (format-time-string "%a %d.%m.%Y")))
-
-;; (setq
-;;  diredc-display-listing-switches-list
-;; '(("my" . "-aXFhs --si --group-directories-first"))
+(defun my-date () (format-time-string "%a %d.%m.%Y"))
+(defun my-date-pri () (interactive) (princ (my-date)))
+(defun my-date-ins () (interactive) (insert (my-date)))
 
 ;;; Local Variables:
 ;;; End:

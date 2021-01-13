@@ -171,7 +171,7 @@ bindsym $alt+F10 $execnoid xtogglewinmax
 bindsym $alt+Shift+0 $execnoid xtogglewinmax 1
 bindsym $alt+Ctrl+0 $execnoid xtogglewinmax
 bindsym $alt+F11 $execnoid xtogglefs
-bindcode $win+38 $execnoid stwrap
+bindcode $win+38 $execnoid stwrap # win+a
 bindcode $win+Ctrl+45 $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
 bindsym Ctrl+Escape $execnoid clipswap

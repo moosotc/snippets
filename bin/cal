@@ -1,5 +1,5 @@
 #!/bin/sh
 ! test -t 0 || exec emacsclient -nw -e '(calendar)' && {
-        emacsclient -e '(calendar)'
-        exec xdotool search emacs windowactivate
+        xdotool search emacs windowactivate
+        exec emacsclient -e '(calendar)'
     }

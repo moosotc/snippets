@@ -552,12 +552,13 @@
 (defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
 
 (global-set-key [(hyper ?`)] 'kill-region)
-(global-set-key (kbd "C-\\") 'kill-ring-save)
-(global-set-key (kbd "H-\\") 'my-yank-primary)
-(global-set-key (kbd "H-|") 'my-yank-clip)
 (global-set-key [(hyper ?/)] 'helm-occur)
 
-(global-set-key [(control insert)] 'kill-ring-save)
+(global-set-key [(control ?\\)] 'kill-ring-save)
+(global-set-key [(hyper ?\\)] 'my-yank-primary)
+(global-set-key [(hyper ?|)] 'my-yank-clip)
+
+(global-set-key [(control insert)] 'kill-ring-save) ;; fc660c
 (global-set-key [(hyper insert)] 'my-yank-primary)
 (global-set-key [(hyper shift insert)] 'my-yank-clip)
 

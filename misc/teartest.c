@@ -1,9 +1,5 @@
-/* based on the SDL tutorial code from the web, sadly I don't remember
-   where from exactly */
 #define _GNU_SOURCE
 #include <err.h>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_opengl.h>
 
 #include <time.h>
 #include <stdio.h>
@@ -16,8 +12,6 @@
 #define HEIGHT 1024
 
 static struct {
-    SDL_Window *win;
-    SDL_GLContext ctx;
     char *title;
     struct timespec ts;
     int w, h;
@@ -49,7 +43,8 @@ static void repaint (long inc)
     c = (++f%4) ? 0.4 : 0.7-(1e-5*(f&1));
     glClearColor (c, c, c, 0);
     glClear (GL_COLOR_BUFFER_BIT);
-    SDL_GL_SwapWindow (state.win);
+
+    $SwapBuffers
 }
 
 static void setup_opengl (int w, int h)
@@ -67,72 +62,36 @@ static void setup_opengl (int w, int h)
     glViewport (0, 0, w, h);
 }
 
-static void setup_sdl (void)
+static void setup_wsi (void)
 {
-    if (SDL_Init (SDL_INIT_VIDEO) < 0) {
-        fprintf (stderr, "Couldn't initialize SDL: %s\n", SDL_GetError());
-        exit (1);
-    }
-
-    state.win = SDL_CreateWindow (state.title,
-                                  SDL_WINDOWPOS_UNDEFINED,
-                                  SDL_WINDOWPOS_UNDEFINED,
-                                  WIDTH, HEIGHT,
-                                  SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
-    /* Quit SDL properly on exit */
-    atexit (SDL_Quit);
-    state.ctx = SDL_GL_CreateContext (state.win);
+    $CreateWinodwsEtc
     setup_opengl (WIDTH, HEIGHT);
 }
 
 static void main_loop (long div)
 {
-    SDL_Event event;
     static int f;
 
-    while (1) {
-        /* process pending events */
-        while (SDL_PollEvent (&event)) {
-            switch (event.type) {
-            case SDL_WINDOWEVENT:
-                /* https://github.com/emscripten-core/emscripten/issues/1731 */
-                switch (event.window.event) {
-                    case SDL_WINDOWEVENT_RESIZED:
+
+$resize:
                         setup_opengl (event.window.data1, event.window.data2);
                         break;
                 }
                 break;
 
-            case SDL_KEYDOWN:
-                switch (event.key.keysym.sym) {
-                case SDLK_q:
-                    exit (EXIT_SUCCESS);
-                    break;
-
-                case SDLK_p:
-                    SDL_SetWindowFullscreen (
-                        state.win, (f=!f) * SDL_WINDOW_FULLSCREEN_DESKTOP);
-                    break;
-
-                case SDLK_UP:
-                    div += 2;
-                case SDLK_DOWN:
+$keydown:
+'q': exit (EXIT_SUCCESS);
+'p': $toggle-fullscrieen
+up: div += 2;
+down:
                     div--;
                     if (div <= 0) div = 1;
                     free (state.title);
                     state.title = NULL;
                     asprintf (&state.title, "div=%ld %f", div, 1e9 / div);
                     SDL_SetWindowTitle (state.win, state.title);
-                default:
+default:
                     break;
-                }
-                break;
-
-            case SDL_QUIT:
-                exit (0);
-                break;
-            }
-        }
 
         repaint (1000000000 / div);
     }
@@ -162,12 +121,12 @@ int main (int argc, char* argv[])
     }
 
     asprintf (&state.title, "div=%ld %f", div, 1e9 / div);
-    setup_sdl ();
+    setup_wsi ();
     main_loop (div);
     return 0;
 }
 /*
   Local Variables:
-  compile-command: "gcc -o teartest teartest.c -lSDL2 -lGL -g -Wall -Werror"
+  compile-command: "gcc -o teartest teartest.c -l$WSI -lGL -g -Wall -Werror"
   End:
 */

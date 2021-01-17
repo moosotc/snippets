@@ -9,6 +9,8 @@
 (global-set-key "\C-ha" 'apropos)
 (global-set-key (kbd "C-'") 'pop-to-mark-command)
 (global-set-key [(meta hyper ? )] 'mark-end-of-sentence)
+(global-set-key [(hyper ?a)] 'beginning-of-buffer)
+(global-set-key [(hyper ?e)] 'end-of-buffer)
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
 (electric-quote-mode)

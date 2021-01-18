@@ -18,7 +18,6 @@ exec ./configure                                \
      --without-gif                              \
      --without-pop                              \
      --without-xim                              \
-     --without-gpm                              \
      --disable-acl                              \
      --without-libsystemd                       \
      --with-mailutils                           \

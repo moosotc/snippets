@@ -6,7 +6,7 @@
   ofl/montserratalternates    - S9 O0 YУ
   ofl/raleway                 - ~- g9 0 rn
   jetbrainsmono               - yу
-  fantasque sans mono
+  fantasque sans mono         - молодо́й 3Ze
   kurinto news core
   kurinto olde core
   pt sans narrow

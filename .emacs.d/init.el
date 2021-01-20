@@ -13,7 +13,7 @@
 (global-set-key [(hyper ?e)] 'end-of-buffer)
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
-(electric-quote-mode)
+;; (electric-quote-mode)
 (if (string-match "iosevka" (face-font 'default))
     (setq-default line-spacing 2))
 
@@ -626,6 +626,9 @@
 (defun my-date () (format-time-string "%a %d.%m.%Y"))
 (defun my-date-pri () (interactive) (princ (my-date)))
 (defun my-date-ins () (interactive) (insert (my-date)))
+
+(defun my-org-date () (format-time-string "%d.%m"))
+(defun my-org-time () (format-time-string "%H:%M"))
 
 ;;; Local Variables:
 ;;; End:

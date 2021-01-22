@@ -435,7 +435,7 @@
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   '(ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
+   '(monkeytype speed-type typing typit ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
 
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it
@@ -554,6 +554,7 @@
 (defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
 
 (global-set-key [(hyper ?`)] 'kill-region)
+(global-set-key [(control ?`)] 'kill-region)
 (global-set-key [(hyper ?/)] 'helm-occur)
 
 (global-set-key [(control ?\\)] 'kill-ring-save)

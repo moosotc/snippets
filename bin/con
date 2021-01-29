@@ -1,7 +1,18 @@
 #!/bin/sh
 set -eu
-test -n "${1-}" || { ls $HOME/x/con; exit; }
-! test "$1" = "add" || exec ln -s "$PWD/$2" $HOME/x/con/${3-}
+test -n "${1-}" || {
+    find $HOME/x/con -printf "%P "
+    exit
+}
+! test "$1" = "add" || {
+    if expr "$2" : '/.*' &>/dev/null;
+    then
+        p=
+    else
+        p="$PWD/"
+    fi
+    exec ln -s $2 $HOME/x/con/${3-}
+}
 t="$HOME/x/con/$1"
 if command -v "$t"; then
     exec "$t"

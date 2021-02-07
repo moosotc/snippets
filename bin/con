@@ -11,7 +11,7 @@ test -n "${1-}" || {
     else
         p="$PWD/"
     fi
-    exec ln -s $2 $HOME/x/con/${3-}
+    exec ln -s "$p/$2" $HOME/x/con/${3-}
 }
 t="$HOME/x/con/$1"
 if command -v "$t"; then

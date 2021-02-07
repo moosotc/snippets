@@ -174,7 +174,7 @@ bindsym $alt+F11 $execnoid xtogglefs
 bindcode $win+38 $execnoid stwrap # win+a
 bindcode $win+Ctrl+45 $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
-bindsym Ctrl+Escape $execnoid clipswap
+bindsym $win+Shift+Return $execnoid clipswap
 bindsym $alt+Shift+Escape $execnoid llpphtml "$(xclip -sel c -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $win+Print $execnoid sshot.sh
@@ -203,4 +203,5 @@ bindcode $win+Ctrl+54 $execnoid xwnpm 3
 bindsym $win+ISO_Next_Group $execnoid keylayind
 bindsym $win+F12 $execnoid setcapskey
 # $win+Ctrl+51 == control win backslash
-bindcode $win+Ctrl+51 $execnoid torb "$(xclip -o)"
+bindcode $win+Ctrl+51 $execnoid torb "$(xclip -o -sel c)"
+bindcode $win+$alt+32 $execnoid radio

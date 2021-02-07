@@ -3,9 +3,9 @@ set -e
 
 test "$1" = "-" && {
     id=$(xdotool getactivewindow) || echo fsck
-    out=${2-/tmp/shot.png}
+    out=${2-/tmp/win-shot.png}
 } || {
-    out=${1-/tmp/shot.png}
+    out=${1-/tmp/root-shot.png}
     set -- $(xwininfo -root | grep "Window id:")
     id=$4
 }

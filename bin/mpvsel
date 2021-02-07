@@ -1,2 +1,2 @@
 #!/bin/sh
-exec mpv "$(xclip -selection clipboard -o)" $*
+exec tmux new-window mpv "$(xclip -selection clipboard -o)" $*

@@ -375,7 +375,8 @@
  ;; If there is more than one, they won't work right.
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
- '(cursor ((t (:background "orchid"))))
+ '(cursor ((t (:background "tomato4"))))
+ '(speed-type-correct ((t (:foreground "darkgreen"))))
  '(erc-current-nick-face ((t (:foreground "green4" :weight bold))))
  '(erc-keyword-face ((t (:foreground "blue1" :weight bold))))
  '(erc-timestamp-face ((t (:foreground "dark green" :weight bold))))

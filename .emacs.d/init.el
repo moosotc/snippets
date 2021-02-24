@@ -418,6 +418,7 @@
  '(secondary-selection ((t (:background "#EDD400"))))
  '(sh-heredoc ((t (:foreground "dim gray"))))
  '(shadow ((t (:foreground "#555753"))))
+ '(c-electric-flag nil)
  '(variable-pitch ((t (:inherit (default))))))
 
 (custom-set-variables
@@ -561,6 +562,8 @@
 (global-set-key [(control ?\\)] 'kill-ring-save)
 (global-set-key [(hyper ?\\)] 'my-yank-primary)
 (global-set-key [(hyper ?|)] 'my-yank-clip)
+
+(global-set-key [(hyper control ?\\)] 'clipboard-yank)
 
 (global-set-key [(control insert)] 'kill-ring-save) ;; fc660c
 (global-set-key [(hyper insert)] 'my-yank-primary)

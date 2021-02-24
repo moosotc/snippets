@@ -2,6 +2,7 @@
 set -eu
 test -n "${1-}" || {
     find $HOME/x/con -printf "%P "
+    echo
     exit
 }
 ! test "$1" = "add" || {
@@ -14,9 +15,15 @@ test -n "${1-}" || {
     exec ln -s "$p/$2" $HOME/x/con/${3-}
 }
 t="$HOME/x/con/$1"
+a="$t.args"
+stargs() {
+    ! test -r $a || cat $a
+}
+shift
+args=${*-$(stargs)}
+! test -n "$args" || echo "$args" >$a
 if command -v "$t"; then
-    exec "$t"
+    exec "$t $args"
 else
-    shift
-    exec mpv $t $*
+    exec mpv $t $args
 fi

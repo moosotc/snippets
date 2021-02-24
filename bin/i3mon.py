@@ -4,6 +4,7 @@
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json, traceback, imaplib
 
+imap_host = "40.100.54.194"
 imap_host = "imap-mail.outlook.com"
 email = b"clamky@hotmail.com"
 

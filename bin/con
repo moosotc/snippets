@@ -25,5 +25,5 @@ args=${*-$(stargs)}
 if command -v "$t"; then
     exec "$t $args"
 else
-    exec mpv $t $args
+    exec mpv $t "$args"
 fi

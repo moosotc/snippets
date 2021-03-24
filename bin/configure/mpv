@@ -1,5 +1,5 @@
 #!/bin/sh
-# 51852aad52080ea8bd6f4b72e63e581dd5234d33
+# 6265724f3331e3dee8d9ec2b6639def5004a5fa2
 export CC='ccache gcc'
 
 ./waf configure                                 \

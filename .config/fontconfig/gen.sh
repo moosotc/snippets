@@ -50,6 +50,7 @@ cat <<EOF
 <!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
 <fontconfig>
   <dir>~/.fonts</dir>
+  <cachedir>~/.cache/fontconfig</cachedir>
   <match target="pattern">
     <edit name="rgba"><const>none</const></edit>
     <edit name="hinting"><bool>false</bool></edit>

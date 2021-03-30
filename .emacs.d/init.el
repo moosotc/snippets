@@ -499,7 +499,9 @@
 (add-hook 'Info-mode-hook             ; After Info-mode has started
           (lambda ()
             (setq Info-additional-directory-list
-                  '("/home/malc/x/rcs/git/emacs/info" "/net/share/info"))
+                  '("/usr/share/info"
+                    "/home/malc/x/rcs/git/emacs/info"
+                    "/net/share/info"))
             ;; Info-default-directory-list)
             ))
 (autoload 'helm-imenu "helm-imenu")

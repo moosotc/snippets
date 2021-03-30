@@ -1,4 +1,5 @@
 #!/bin/sh
+# works with fontconfig version 2.13.93
 set -eu
 
 # export FONTCONFIG_FILE=$HOME/.config/fontconfig/fonts.conf

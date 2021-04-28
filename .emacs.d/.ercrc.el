@@ -38,4 +38,6 @@
 (add-hook 'erc-track-list-changed-hook 'list-changed-hook)
 
 (require 'erc-replace)
-(setq erc-replace-alist '(("<artifexirc-bot> " . "@")))
+(setq erc-replace-alist '(("<artifexirc-bot> " . "@")
+                          ("<artifexi-> " . "@")
+                          ("<d-bot> " . "@")))

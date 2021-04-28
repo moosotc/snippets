@@ -32,7 +32,7 @@ rale="raleway-v4020"
 helv="$rale"
 ptsn="pt sans narrow"
 
-droidsans="opensans 'open sans' 'nato sans' 'droid sans'"
+droidsans="opensans 'open sans' 'noto sans' 'droid sans'"
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF

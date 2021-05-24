@@ -175,7 +175,7 @@ bindcode $win+38 $execnoid stwrap # win+a
 bindcode $win+Ctrl+45 $execnoid alwrap
 bindsym $win+Shift+d $execnoid i3bartoggle
 bindsym $win+Shift+Return $execnoid clipswap
-bindsym $alt+Shift+Escape $execnoid llpphtml "$(xclip -sel c -o)"
+bindsym $alt+Shift+asciitilde $execnoid llpphtml "$(xclip -sel c -o)"
 bindsym Print $execnoid sshot.sh -
 bindsym $win+Print $execnoid sshot.sh
 

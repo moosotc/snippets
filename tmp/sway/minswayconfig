@@ -4,7 +4,8 @@ input * {
   xkb_options grp:shifts_toggle
 }
 exec_always {
-  alwrap
+alwrap
+stwrap
 }
 font pango:fantasque sans mono 10
 bindsym $mod+Shift+q kill
@@ -29,4 +30,5 @@ bindsym $mod+t $execnoid alwrap
 bindsym $mod+Shift+t $execnoid stwrap
 bindsym $mod+Shift+d $execnoid sway bar hidden_state toggle
 #output DP-1 scale 2
+output XWAYLAND0 scale 2
 #xwayland disable

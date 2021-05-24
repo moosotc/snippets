@@ -1,6 +1,6 @@
 font:
   normal:
-    family: iosevka clam
+    family: monospace
   size: 9
 
 mouse_bindings:
@@ -25,7 +25,7 @@ colors:
     white:   '#ffffff'
 
 mouse:
-  url:
+  nints:
     launcher:
       program: alasel
 

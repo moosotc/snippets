@@ -431,7 +431,7 @@
  '(canlock-password "320a46eeec84e8e4e041534d821600d69eb36d15")
  '(dired-listing-switches "-aBhl --dired --group-directories-first --sort=extension")
  '(erc-log-channels-directory "~/x/log/erc")
- '(erc-nick "malc_")
+ '(erc-nick "malc")
  '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
  '(org-agenda-files '("~/x/org/agenda"))
@@ -637,5 +637,6 @@
 (defun my-org-date () (format-time-string "%d.%m"))
 (defun my-org-time () (format-time-string "%H:%M"))
 
+(setq erc-server "irc.libera.chat")
 ;;; Local Variables:
 ;;; End:

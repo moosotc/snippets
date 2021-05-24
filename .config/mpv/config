@@ -1,4 +1,5 @@
 quiet
+vo=vaapi
 vo=gpu
 ao=alsa
 alang=eng
@@ -7,8 +8,14 @@ sub=no
 hwdec=vaapi
 osd-font="osd"
 sub-font="sub"
-#gpu-context=x11vk
+
+# COSTA RICA IN 4K 60fps HDR (ULTRA HD)-LXb3EKWsInQ.webm
+# with vo/gpu/vaapi-egl] unsupported VA image format p010
+# static blue sreen
+# gpu-context=x11vk
+
 gpu-context=x11egl
+
 hidpi-window-scale=no
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best
 screenshot-directory=/tmp

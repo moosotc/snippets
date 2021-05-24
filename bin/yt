@@ -30,6 +30,6 @@ expr "$arg" : ".*\.\(pdf\|html\|jpg\?\)$" && {
 }
 
 expr "$arg" : ".*\(reddit\|gfycat\).*" && fmt= \
-        || fmt="--ytdl-format=[height<=720]"
+        || fmt="--ytdl-format=[height<=640]"
 (printf "$arg\000 5"; printf "\001%s\000 8" "$($yt -e "$arg")";) 1>$ctl &
 tmux new-window mpv $fmt "$arg"

@@ -27,7 +27,7 @@ mailcheckinterval = 20*60 #4*60*60
 # SSL code taken almost verbatim from:
 # https://wiki.python.org/moin/SSL
 
-def checkmail (t):
+def checkmail1 (t):
     global prevt, prevunseen, mailcheckinterval, imap_host, imap_pass
     n = prevunseen
     if t - prevt > mailcheckinterval:
@@ -41,6 +41,13 @@ def checkmail (t):
         prevt = t
         prevunseen = n
     return n
+
+def checkmail (t):
+    try:
+        return checkmail1 (t)
+    except Exception as e:
+        print ("exception: (%s)" % e, file = sys.stderr)
+        return -1
 
 def gets (path):
     try:
@@ -275,8 +282,9 @@ def main ():
             nmail = checkmail (t)
             if nmail > 0:
                 j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
+            if nmail < 0:
+                j += [{"color": "#ff0000", "full_text": "ERROR"}]
         # j = [{"color": "#00a000", "full_text": "NUC"}] + j
-
         print ("%s," % json.dumps (j), flush=True)
 
 print ('{ "version": 1 } [', flush=True)

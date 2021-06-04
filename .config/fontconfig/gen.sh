@@ -28,8 +28,9 @@ eri1="kurinto news core"
 eri5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
-rale="raleway-v4020"
-helv="$rale"
+sans="raleway-v4020"
+
+helv="$sans"
 ptsn="pt sans narrow"
 
 droidsans="opensans 'open sans' 'noto sans' 'droid sans'"
@@ -85,7 +86,7 @@ cat <<EOF
 EOF
 
 M "$mon0"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$rale"         "segoe ui" "roboto" "tahoma" "raleway"
+M "$sans"         "segoe ui" "roboto" "tahoma" "raleway"
 M "$helv"         "sans-serif" "arial" "helvetica" "helvetica neue"
 M "pt sans bold"  "osd"
 M "pt sans"       "gtk" "trebuchet ms"

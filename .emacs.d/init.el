@@ -552,8 +552,11 @@
 (setq select-enable-clipboard nil)
 (setq select-enable-primary nil)
 
-(global-set-key [(hyper ?\\)] 'x-clipboard-yank)
-(global-set-key [(hyper insert)] 'x-clipboard-yank)
+(defun my-only-yank-x-clipboard ()
+  (interactive)
+  (insert (gui-get-selection 'CLIPBOARD)))
+
+(global-set-key [(hyper ?\\)] 'my-only-yank-x-clipboard)
 (global-set-key [(hyper ?/)] 'helm-occur)
 
 (if t

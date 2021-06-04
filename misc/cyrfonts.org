@@ -73,7 +73,7 @@
   ofl/sansation               - 3ze, S9, O0, il
   ofl/seymourone              - 3ze, l1, O0, (styles)
   ofl/sourcecodepro           - 3ze, S9, ~-
-  ofl/sourcesanspro           - 3ze, S9, O0, rn
+  ofl/sourcesanspro           - 3ze, S9, O0, rn, I [1]
   ofl/sourceserifpro          - 3ze, rn
   ofl/stalinistone            - 3ze, (styles)
   ofl/stalinone               - 3ze, (styles)
@@ -144,3 +144,5 @@ cd
 * ofl/merriweather            - o0
 * linguistics pro             - ~- l1 3З (small)
 * charter/charis              - 3З l1 '" (diacritics)
+[1] Source Sans Pro lacks Cyrillic italics
+    Source Sans 3    has  ................ https://github.com/adobe-fonts/source-sans

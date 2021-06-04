@@ -549,27 +549,36 @@
 (set-selection-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 
-(defun my-yank-any (selt)
-  ;; https://www.emacswiki.org/emacs/second-sel.el
-  (let ((sel (gui-get-selection selt)))
-    (funcall (if (fboundp 'insert-for-yank) 'insert-for-yank 'insert) sel)))
+(setq select-enable-clipboard nil)
+(setq select-enable-primary nil)
 
-(defun my-yank-primary () (interactive) (my-yank-any 'PRIMARY))
-(defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
-
-(global-set-key [(hyper ?`)] 'kill-region)
-(global-set-key [(control ?`)] 'kill-region)
+(global-set-key [(hyper ?\\)] 'x-clipboard-yank)
+(global-set-key [(hyper insert)] 'x-clipboard-yank)
 (global-set-key [(hyper ?/)] 'helm-occur)
 
-(global-set-key [(control ?\\)] 'kill-ring-save)
-(global-set-key [(hyper ?\\)] 'my-yank-primary)
-(global-set-key [(hyper ?|)] 'my-yank-clip)
+(if t
+    nil
+  (defun my-yank-any (selt)
+    ;; https://www.emacswiki.org/emacs/second-sel.el
+    (let ((sel (gui-get-selection selt)))
+      (funcall
+       (if (fboundp 'insert-for-yank) 'insert-for-yank 'insert) sel)))
 
-(global-set-key [(hyper control ?\\)] 'clipboard-yank)
+  (defun my-yank-primary () (interactive) (my-yank-any 'PRIMARY))
+  (defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
 
-(global-set-key [(control insert)] 'kill-ring-save) ;; fc660c
-(global-set-key [(hyper insert)] 'my-yank-primary)
-(global-set-key [(hyper shift insert)] 'my-yank-clip)
+  (global-set-key [(hyper ?`)] 'kill-region)
+  (global-set-key [(control ?`)] 'kill-region)
+
+  (global-set-key [(control ?\\)] 'kill-ring-save)
+  (global-set-key [(hyper ?\\)] 'my-yank-primary)
+  (global-set-key [(hyper ?|)] 'my-yank-clip)
+
+  (global-set-key [(hyper control ?\\)] 'clipboard-yank)
+
+  (global-set-key [(control insert)] 'kill-ring-save) ;; fc660c
+  (global-set-key [(hyper insert)] 'my-yank-primary)
+  (global-set-key [(hyper shift insert)] 'my-yank-clip))
 
 (global-set-key [(hyper ?t)] (lambda ()
                                (interactive)

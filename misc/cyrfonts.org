@@ -4,7 +4,7 @@
   ofl/ptsans                  - O0
   ofl/ptserif                 - O0
   ofl/montserratalternates    - S9 O0 YУ
-  ofl/raleway                 - ~- g9 0 rn
+  raleway 4.101               - [] ~- g9 0 rn o0 I|
   jetbrainsmono               - yу
   fantasque sans mono         - молодо́й 3Ze
   kurinto news core

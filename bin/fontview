@@ -40,6 +40,12 @@ S$sep
 I$sep
 |$sep
 l$sep
+-$sep
+~$sep
+-~$sep
+~-$sep
+--$sep
+~~$sep
 "
 
 ohz="
@@ -69,6 +75,8 @@ B8$sep
 8B$sep
 o0$sep
 0o$sep
+Ѳ0$sep
+0Ѳ$sep
 "
 
 g9q="
@@ -85,6 +93,11 @@ S595$sep
 5S95$sep
 5S59$sep
 "
+
+perm()  {
+    printf "$1 "
+    echo "$2" | shuf | tr -d '[[:space:]]'
+}
 
 text() {
     cat <<EOF
@@ -107,9 +120,9 @@ Waltz, bad nymph, for quick jigs vex
 ',.ფyfგcრლაოეუიდჰთნსყჯქxბმwვზ
 Σομε πσθδο γρεεκ
 བསྐུར་ཡིག་མགོ་
-SH-3ze $(printf "$tze" | shuf | tr -d '[[:space:]]' ||:)
-SH-ohz $(printf "$ohz" | shuf | tr -d '[[:space:]]' ||:)
-SH-g9q $(printf "$g9q" | shuf | tr -d '[[:space:]]' ||:)
+$(perm 3ze "$tze")
+$(perm ohz "$ohz")
+$(perm g9q "$g9q")
 \`1234567890-=\\
 ~!@#\$$%&permil;^&amp;*()_+|
 ₹₽£$€

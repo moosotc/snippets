@@ -1,7 +1,7 @@
 {
 	"name": "Vimium C",
-	"@time": "05/06/2021, 17:56:35",
-	"time": 1622904995191,
+	"@time": "05/06/2021, 18:42:38",
+	"time": 1622907758175,
 	"environment": {
 		"extension": "1.90.2",
 		"platform": "linux",
@@ -58,6 +58,6 @@
 		"dicru: https://ru.wiktionary.org/wiki/%s",
 		""
 	],
-	"searchUrl": "https://www.bing.com/search&q=",
+	"searchUrl": "https://www.bing.com/search?q=",
 	"smoothScroll": false
 }

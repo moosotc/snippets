@@ -96,7 +96,7 @@ M "iosevka clam"  "iosevka" "monospace"
 M "$eri1"         "serif" "times" "times new roman"
 M "$eri5"         "georgia" "lora" "noto serif"
 M "$ptsn"         "knockout 31 4r"
-eval M "'$ans5'"  "verdana" "'lucida  grande'" "montserrat" $droidsans
+eval M "'$ans5'"  "verdana" "'lucida grande'" "montserrat" $droidsans
 M "$curs"         "cursive"
 
 # learn yourself some grek (beograd to learn cyrl instead)

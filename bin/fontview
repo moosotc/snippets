@@ -8,12 +8,41 @@ html=$HOME/.cache/llpp/fonts/text.html
 
 # https://unix.stackexchange.com/questions/32569/removing-all-spaces-tabs-newlines-etc-from-a-variable
 command -v shuf &>/dev/null || shuf() { cat; }
-shufstr='1\nI\n0\n3\nl\nO\n|\nЗ'
-shufstr="$shufstr \nЗ\n5\n3\nӠ\nʒ\nO\nI\nl\n1\n|\nrn\nS\n0"
-shufstr="$shufstr \n5\nS\n3\nЗ\nI\n|\nl"
 
 sep='&nbsp;'
-oh="
+sep=
+tze="
+1$sep
+I$sep
+0$sep
+3$sep
+l$sep
+O$sep
+|$sep
+З$sep
+З$sep
+5$sep
+3$sep
+Ӡ$sep
+ʒ$sep
+O$sep
+I$sep
+l$sep
+1$sep
+|$sep
+rn$sep
+S$sep
+0$sep
+5$sep
+S$sep
+3$sep
+З$sep
+I$sep
+|$sep
+l$sep
+"
+
+ohz="
 o0$sep
 0o$sep
 0ϴ$sep
@@ -34,18 +63,27 @@ I|$sep
 |I$sep
 l|$sep
 |l$sep
-S5 S9$sep
-S5 95$sep
-5S 95$sep
-5S 59$sep
 2Z$sep
 Z2$sep
 B8$sep
 8B$sep
 o0$sep
 0o$sep
+"
+
+g9q="
 rnm$sep
 mrn$sep
+g9q$sep
+gq9$sep
+9gq$sep
+9qg$sep
+q9g$sep
+qg9$sep
+S5S9$sep
+S595$sep
+5S95$sep
+5S59$sep
 "
 
 text() {
@@ -69,15 +107,17 @@ Waltz, bad nymph, for quick jigs vex
 ',.ფyfგcრლაოეუიდჰთნსყჯქxბმwვზ
 Σομε πσθδο γρεεκ
 བསྐུར་ཡིག་མགོ་
-SH-3ze $(printf "$shufstr" | shuf | tr -d '[[:space:]]' ||:)
-SH-0oh $(printf "$oh" | shuf | tr -d '[[:space:]]' ||:)
+SH-3ze $(printf "$tze" | shuf | tr -d '[[:space:]]' ||:)
+SH-ohz $(printf "$ohz" | shuf | tr -d '[[:space:]]' ||:)
+SH-g9q $(printf "$g9q" | shuf | tr -d '[[:space:]]' ||:)
 \`1234567890-=\\
 ~!@#\$$%&permil;^&amp;*()_+|
 ₹₽£$€
-3ze $(printf "$shufstr" | tr -d '[[:space:]]' ||:)
-0oh $(printf "$oh" | tr -d '[[:space:]]' ||:)
+3ze $(printf "$tze" | tr -d '[[:space:]]' ||:)
+ohz $(printf "$ohz" | tr -d '[[:space:]]' ||:)
+g9q $(printf "$g9q" | shuf | tr -d '[[:space:]]' ||:)
 [];',.//|/\ &gt;- -&gt; ~~&lt; &lt;-- --&gt; == === ==&gt; &lt;==
-{}:"&lt;&gt;?" Januardo90 repo2obj
+|| {}:"&lt;&gt;?" Januardo90 repo2obj
 S in S9 59 S9 is like 5 also
 final fjord flair ft fff
 3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1 lLLl

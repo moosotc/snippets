@@ -99,8 +99,8 @@ M "$ptsn"         "knockout 31 4r"
 eval M "'$ans5'"  "verdana" "'lucida grande'" "montserrat" $droidsans
 M "$curs"         "cursive"
 
-# learn yourself some grek (beograd to learn cyrl instead)
-M "symbol"         "linux libertine"
+# learn yourself some cyrl
+M "beograd" "linux libertine"
 
 echo "</fontconfig>"
 

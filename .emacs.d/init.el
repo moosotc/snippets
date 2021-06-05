@@ -650,5 +650,6 @@
 (defun my-org-time () (format-time-string "%H:%M"))
 
 (setq erc-server "irc.libera.chat")
+(setq org-todo-keywords '((sequence "TODO(t)" "|" "DONE(d!)" "CANCELED(c@)")))
 ;;; Local Variables:
 ;;; End:

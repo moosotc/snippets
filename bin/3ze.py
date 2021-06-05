@@ -14,8 +14,8 @@ except:
 a = fontforge.open(sys.argv[1])
 #ch = ord ('\N{LATIN CAPITAL LETTER YOGH}')
 #ch = ord ('\N{LATIN SMALL LETTER YOGH}') # descends beyond baselin
-ch = ord ('\N{LATIN SMALL LETTER EZH}')
-#ch = ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')
+#ch = ord ('\N{LATIN SMALL LETTER EZH}')
+ch = ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')
 a.selection.select (ch)
 
 b = a
@@ -24,9 +24,11 @@ b.selection.select("3")
 b.paste ()
 
 # 3ze.sh can't pass arguments down here so...
-# o0 = True
+o0 = True
 if o0:
-    a.selection.select (ord ('\N{LATIN CAPITAL LETTER O WITH STROKE}'))
+    ch = ord ('\N{LATIN CAPITAL LETTER O WITH STROKE}')
+    # ch = ord ('\N{CYRILLIC CAPITAL LETTER FITA}')
+    a.selection.select (ch)
     a.copy ()
     b.selection.select("0")
     b.paste ()

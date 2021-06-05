@@ -238,13 +238,12 @@
   (c-set-offset 'statement-case-open 4)
   (c-set-offset 'case-label 0))
 
-;; (defun my-shell-mode-hook ()
-;;   (define-key shell-script-mode-map [(hyper \[)] 'c-insert-curly-braces)
-;;   (define-key shell-script-mode-map [(hyper \])] 'c-insert-curly-braces2))
+(defun my-sh-mode-hook ()
+  (define-key sh-mode-map [(hyper \[)] 'sh-insert-curly-braces))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
-(add-hook 'shell-script-mode-hook 'my-shell-mode-hook)
+(add-hook 'sh-mode-hook 'my-sh-mode-hook)
 
 ;;; **********************************************************************
 ;;; OCaml
@@ -495,6 +494,20 @@
   (open-line 1)
   (forward-line -1)
   (c-indent-command))
+
+(defun sh-insert-curly-braces ()
+  "Insert a pair of curly braces in a Shell Script buffer."
+  (interactive)
+  (if (looking-at " ")
+      (insert "{")
+    (insert " {"))
+  (indent-for-tab-command)
+  (newline)
+  (newline)
+  (insert "}")
+  (indent-for-tab-command)
+  (forward-line -1)
+  (indent-for-tab-command))
 
 (add-hook 'Info-mode-hook             ; After Info-mode has started
           (lambda ()

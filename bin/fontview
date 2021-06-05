@@ -35,7 +35,9 @@ I|$sep
 l|$sep
 |l$sep
 S5 S9$sep
+S5 95$sep
 5S 95$sep
+5S 59$sep
 2Z$sep
 Z2$sep
 B8$sep
@@ -261,22 +263,20 @@ EOF
 
 maketext() {
     # https://github.com/react-boilerplate/react-boilerplate/issues/1340
-    filename="$1"
-    basename="$(basename "$1")"
     cat >"$html" <<EOF
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>$filename</title>
+    <title>$1</title>
     <style type="text/css">
       @font-face { font-family: moo; src: url('$1'); }
       pre { font-family: moo; }
     </style>
   </head>
-  $filename
-  <body>
+  $1
+<body>
 EOF
     for size in 6 8 10 12 4 2; do
         text $size >>"$html"
@@ -289,5 +289,5 @@ EOF
 EOF
 }
 
-maketext $1 ${2-}
+maketext "$1"
 exec llpp -origin $1 $html

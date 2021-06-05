@@ -100,7 +100,7 @@ eval M "'$ans5'"  "verdana" "'lucida grande'" "montserrat" $droidsans
 M "$curs"         "cursive"
 
 # learn yourself some cyrl/grek
-test "$(whoami)" = "malc" || ll="beograd1111" && ll="Greek Sigismundus"
+test "$(whoami)" = "malc" || ll="beograd" && ll="Greek Sigismundus"
 M "$ll" "linux libertine"
 
 echo "</fontconfig>"

@@ -27,7 +27,9 @@
     Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
     "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans",
     Verdana, sans-serif
-** lucida grande  - http://lh3lh3.users.sourceforge.net/reb.shtml
+** lucida grande
+   http://lh3lh3.users.sourceforge.net/reb.shtml
+   https://forums.linuxmint.com/
 ** tahoma
 *** https://intel.com
 **** stack
@@ -50,7 +52,205 @@
   see gen.sh
 * Il
   Problem with non hooky-bottom l is that when it is in isolation it's
-  hard to tell what it is one is looking at - | ar maybe I? The
+  hard to tell what it if one is looking at - | ar maybe I? The
   situation is similar to 3З, but, perhaps, even worse
 ** Offenders
 *** Noto Sans
+* non provoking font ought to ...|
+** ...to have
+  1. hooky bottom lower case l (el)
+  2. serifed uper case I (ai)
+  3. flat top 3 (three)
+  4. З (cyrillic capital/lowercase ze) with curved top
+  5. 1 (one) with a base
+  6. lower case g (gee) with the right curve protruding
+  7. lower case g with lower than baseline leg
+  8. smooth 9 (nine)
+  9. q with a straight leg
+  10. g with a hooky leg
+  11. dotted zero
+  12. tilde above middle point
+  13. S (upper case es) that is distinct from 5
+      that is capital es that can not be mistaken for 5
+      seen many 5 implementations that i would have never taken for es
+  14. rn (eren) that isn't m (em)
+  15. cyrl
+  16. zhe (either case) that isn't bold
+  17. square brakets with non negligible hooks
+      making [l (leftbraket el) combination non jarring
+  18. coma and period that are _obviously_ distinct at small sizes
+  19. regular, bold, italic and bold italic variants
+  20. tilde that is immediately recognizable as tilde in isolation
+      ~~ -- is a decent way to check that
+** template
+  1. [ ] hooky bottom lower case l (el)
+  2. [ ] serifed uper case I (ai)
+  3. [ ] flat top 3 (three)
+  4. [ ] З (cyrillic capital/lowercase ze) with curved top
+  5. [ ] 1 (one) with a base
+  6. [ ] lower case g (gee) with the right curve protruding
+  7. [ ] lower case g with lower than baseline leg
+  8. [ ] smooth 9 (nine)
+  9. [ ] q with a straight leg
+  10. [ ] g with a hooky leg
+  11. [ ] dotted zero
+  12. [ ] tilde above middle point
+  13. [ ] S (upper case es) that is distinct from 5
+  14. [ ] rn (eren) that isn't m (em)
+  15. [ ] cyrl
+  16. [ ] zhe (either case) that isn't bold
+  17. [ ] square brakets with non negligible hooks
+  18. [ ] coma and period that are _obviously_ distinct at small sizes
+  19. [ ] regular, bold, italic and bold italic variants
+  20. [ ] tilde that is immediately recognizable as tilde in isolation
+** raleway v4101 [14/3.]
+  1. [X] hooky bottom lower case l (el)
+  2. [ ] serifed uper case I (ai)
+  3. [.] flat top 3 (three)
+    no but has CYRILLIC CAPITAL LETTER ABKHASIAN DZE - Ӡ
+    which can be mapped to 3
+  4. [X] З (cyrillic capital/lowercase ze) with curved top
+  5. [X] 1 (one) with a base
+  6. [X] lower case g (gee) with the right curve protruding
+  7. [X] lower case g with lower than baseline leg
+  8. [X] smooth 9 (nine)
+  9. [X] q with a straight leg
+  10. [X] g with a hooky leg
+  11. [ ] dotted zero
+  12. [ ] tilde above middle point
+  13. [.] S (upper case es) that is distinct from 5
+  14. [.] rn (eren) that isn't m (em)
+  15. [X] cyrl
+  16. [X] zhe (either case) that isn't bold
+  17. [ ] square brakets with non negligible hooks
+  18. [ ] coma and period that are _obviously_ distinct at small sizes
+  19. [X] regular, bold, italic and bold italic variants
+  20. [ ] tilde that is immediately recognizable as tilde in isolation
+** pt root ui [15]
+   1. [X] hooky bottom lower case l (el)
+   2. [ ] serifed uper case I (ai)
+   3. [ ] flat top 3 (three)
+   4. [X] З (cyrillic capital/lowercase ze) with curved top
+   5. [ ] 1 (one) with a base
+   6. [X] lower case g (gee) with the right curve protruding
+   7. [X] lower case g with lower than baseline leg
+   8. [X] smooth 9 (nine)
+   9. [X] q with a straight leg
+   10. [X] g with a hooky leg
+   11. [ ] dotted zero
+   12. [X] tilde above middle point
+   13. [X] S (upper case es) that is distinct from 5
+   14. [X] rn (eren) that isn't m (em)
+   15. [X] cyrl
+   16. [X] zhe (either case) that isn't bold
+   17. [X] square brakets with non negligible hooks
+   18. [X] coma and period that are _obviously_ distinct at small sizes
+   19. [ ] regular, bold, italic and bold italic variants
+       no itallics
+   20. [X] tilde that is immediately recognizable as tilde in isolation
+** pt sans [17/1.]
+   1. [X] hooky bottom lower case l (el)
+   2. [ ] serifed uper case I (ai)
+   3. [X] flat top 3 (three)
+   4. [X] З (cyrillic capital/lowercase ze) with curved top
+   5. [X] 1 (one) with a base
+   6. [X] lower case g (gee) with the right curve protruding or non circular eye
+   7. [X] lower case g with lower than baseline leg
+   8. [X] smooth 9 (nine)
+   9. [X] q with a straight leg
+   10. [X] g with a hooky leg
+   11. [ ] dotted zero
+   12. [X] tilde above middle point
+   13. [ ] S (upper case es) that is _very_ distinct from 5
+   14. [X] rn (eren) that is very distinct from m (em)
+   15. [X] cyrl
+   16. [X] zhe (either case) that isn't jarringly bolder than other letters
+   17. [X] square brakets with non negligible hooks
+   18. [X] coma and period that are _obviously_ distinct at small sizes
+   19. [X] regular, bold, italic and bold italic variants
+   20. [.] tilde that is immediately recognizable as tilde in isolation
+       not sure about isolation
+** pt astra sans [17/1+]
+  1. [X] hooky bottom lower case l (el)
+  2. [ ] serifed uper case I (ai)
+  3. [X] flat top 3 (three)
+  4. [X] З (cyrillic capital/lowercase ze) with curved top
+  5. [X] 1 (one) with a base
+  6. [+] lower case g (gee) with the right curve protruding
+  7. [X] lower case g with lower than baseline leg
+  8. [X] smooth 9 (nine)
+  9. [X] q with a straight leg
+  10. [X] g with a hooky leg
+  11. [ ] dotted zero
+  12. [X] tilde above middle point
+  13. [ ] S (upper case es) that is distinct from 5
+  14. [X] rn (eren) that isn't m (em)
+  15. [X] cyrl
+  16. [X] zhe (either case) that isn't bold
+  17. [X] square brakets with non negligible hooks
+  18. [X] coma and period that are _obviously_ distinct at small sizes
+  19. [X] regular, bold, italic and bold italic variants
+  20. [X] tilde that is immediately recognizable as tilde in isolation
+** jet brains mono [20/1~]
+  1. [X] hooky bottom lower case l (el)
+  2. [X] serifed uper case I (ai)
+  3. [X] flat top 3 (three)
+  4. [X] З (cyrillic capital/lowercase ze) with curved top
+  5. [X] 1 (one) with a base
+  6. [X] lower case g (gee) with the right curve protruding
+  7. [X] lower case g with lower than baseline leg
+  8. [X] smooth 9 (nine)
+  9. [X] q with a straight leg
+  10. [X] g with a hooky leg
+  11. [X] dotted zero
+  12. [X] tilde above middle point
+  13. [~] S (upper case es) that is distinct from 5
+  14. [X] rn (eren) that isn't m (em)
+  15. [X] cyrl
+  16. [X] zhe (either case) that isn't bold
+  17. [X] square brakets with non negligible hooks
+  18. [X] coma and period that are _obviously_ distinct at small sizes
+  19. [X] regular, bold, italic and bold italic variants
+  20. [X] tilde that is immediately recognizable as tilde in isolation
+** montserrat alternates [17]
+  1. [X] hooky bottom lower case l (el)
+  2. [X] serifed uper case I (ai)
+  3. [X] flat top 3 (three)
+  4. [X] З (cyrillic capital/lowercase ze) with curved top
+  5. [ ] 1 (one) with a base
+  6. [X] lower case g (gee) with the right curve protruding
+  7. [X] lower case g with lower than baseline leg
+  8. [X] smooth 9 (nine)
+  9. [X] q with a straight leg
+  10. [X] g with a hooky leg
+  11. [ ] dotted zero
+  12. [X] tilde above middle point
+  13. [ ] S (upper case es) that is distinct from 5
+  14. [X] rn (eren) that isn't m (em)
+  15. [X] cyrl
+  16. [X] zhe (either case) that isn't bold
+  17. [X] square brakets with non negligible hooks
+  18. [X] coma and period that are _obviously_ distinct at small sizes
+  19. [X] regular, bold, italic and bold italic variants
+  20. [X] tilde that is immediately recognizable as tilde in isolation
+** fantasque sans mono [17/1Ӡ/1~]
+  1. [X] hooky bottom lower case l (el)
+  2. [X] serifed uper case I (ai)
+  3. [Ӡ] flat top 3 (three)
+  4. [X] З (cyrillic capital/lowercase ze) with curved top
+  5. [ ] 1 (one) with a base
+  6. [double storey] lower case g (gee) with the right curve protruding
+  7. [X] lower case g with lower than baseline leg
+  8. [X] smooth 9 (nine)
+  9. [X] q with a straight leg
+  10. [double storey] g with a hooky leg
+  11. [slashed] dotted zero
+  12. [~] tilde above middle point
+  13. [X] S (upper case es) that is distinct from 5
+  14. [X] rn (eren) that isn't m (em)
+  15. [X] cyrl
+  16. [X] zhe (either case) that isn't bold
+  17. [X] square brakets with non negligible hooks
+  18. [X] coma and period that are _obviously_ distinct at small sizes
+  19. [X] regular, bold, italic and bold italic variants
+  20. [X] tilde that is immediately recognizable as tilde in isolation

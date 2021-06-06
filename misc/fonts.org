@@ -107,7 +107,7 @@
   1. [X] hooky bottom lower case l (el)
   2. [ ] serifed uper case I (ai)
   3. [.] flat top 3 (three)
-    no but has CYRILLIC CAPITAL LETTER ABKHASIAN DZE - Ӡ
+    no, but has CYRILLIC CAPITAL LETTER ABKHASIAN DZE - Ӡ
     which can be mapped to 3
   4. [X] З (cyrillic capital/lowercase ze) with curved top
   5. [X] 1 (one) with a base

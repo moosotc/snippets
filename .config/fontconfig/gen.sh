@@ -28,7 +28,7 @@ eri1="kurinto news core"
 eri5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
-sans="jet brains mono"
+sans="fantasque sans mono"
 
 helv="$sans"
 ptsn="pt sans narrow"

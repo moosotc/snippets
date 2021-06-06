@@ -52,227 +52,500 @@
   see gen.sh
 * Il
   Problem with non hooky-bottom l is that when it is in isolation it's
-  hard to tell what it if one is looking at - | ar maybe I? The
+  hard to tell what it is if one is looking at - | ar maybe I? The
   situation is similar to 3З, but, perhaps, even worse
 ** Offenders
 *** Noto Sans
-* non provoking font ought to ...|
-** ...to have
-  1. hooky bottom lower case l (el)
+* sans serif with ...|
+** |...features
+   cyrl, italic, bold, bold-italic
+
+  1. hooky-bottom lower case l (el)
+     roboto
   2. serifed uper case I (ai)
+     roboto
   3. flat top 3 (three)
+     roboto
   4. З (cyrillic capital/lowercase ze) with curved top
-  5. 1 (one) with a base
-  6. lower case g (gee) with the right curve protruding
-  7. lower case g with lower than baseline leg
-  8. smooth 9 (nine)
-  9. q with a straight leg
-  10. g with a hooky leg
-  11. dotted zero
-  12. tilde above middle point
-  13. S (upper case es) that is distinct from 5
-      that is capital es that can not be mistaken for 5
-      seen many 5 implementations that i would have never taken for es
-  14. rn (aren) that isn't m (em)
-  15. cyrl
-  16. zhe (either case) that isn't bold
-  17. square brakets with non negligible hooks
-      making [l (leftbraket el) combination non jarring
-  18. coma and period that are _obviously_ distinct at small sizes
-  19. regular, bold, italic and bold italic variants
-  20. tilde that is immediately recognizable as tilde in isolation
-      ~~ -- is a decent way to check that
-** template
-  1. [ ] hooky bottom lower case l (el)
-  2. [ ] serifed uper case I (ai)
-  3. [ ] flat top 3 (three)
-  4. [ ] З (cyrillic capital/lowercase ze) with curved top
-  5. [ ] 1 (one) with a base
-  6. [ ] lower case g (gee) with the right curve protruding
-  7. [ ] lower case g with lower than baseline leg
-  8. [ ] smooth 9 (nine)
-  9. [ ] q with a straight leg
-  10. [ ] g with a hooky leg
-  11. [ ] dotted zero
-  12. [ ] tilde above middle point
-  13. [ ] S (upper case es) that is distinct from 5
-  14. [ ] rn (aren) that isn't m (em)
-  15. [ ] cyrl
-  16. [ ] zhe (either case) that isn't bold
-  17. [ ] square brakets with non negligible hooks
-  18. [ ] coma and period that are _obviously_ distinct at small sizes
-  19. [ ] regular, bold, italic and bold italic variants
-  20. [ ] tilde that is immediately recognizable as tilde in isolation
-** raleway v4101 [14/3.]
-  1. [X] hooky bottom lower case l (el)
-  2. [ ] serifed uper case I (ai)
-  3. [.] flat top 3 (three)
-    no, but has CYRILLIC CAPITAL LETTER ABKHASIAN DZE - Ӡ
-    which can be mapped to 3
-  4. [X] З (cyrillic capital/lowercase ze) with curved top
-  5. [X] 1 (one) with a base
-  6. [X] lower case g (gee) with the right curve protruding
-  7. [X] lower case g with lower than baseline leg
-  8. [X] smooth 9 (nine)
-  9. [X] q with a straight leg
-  10. [X] g with a hooky leg
-  11. [ ] dotted zero
-  12. [ ] tilde above middle point
-  13. [.] S (upper case es) that is distinct from 5
-  14. [.] rn (aren) that isn't m (em)
-  15. [X] cyrl
-  16. [X] zhe (either case) that isn't bold
-  17. [ ] square brakets with non negligible hooks
-  18. [ ] coma and period that are _obviously_ distinct at small sizes
-  19. [X] regular, bold, italic and bold italic variants
-  20. [ ] tilde that is immediately recognizable as tilde in isolation
-** raleway v4020 [14/1old style figures]
-  1. [X] hooky bottom lower case l (el)
-  2. [ ] serifed uper case I (ai)
-  3. [old style figures] flat top 3 (three)
-     but has old style figures
-  4. [X] З (cyrillic capital/lowercase ze) with curved top
-  5. [X] 1 (one) with a base
-  6. [X] lower case g (gee) with the right curve protruding
-  7. [X] lower case g with lower than baseline leg
-  8. [X] smooth 9 (nine)
-  9. [X] q with a straight leg
-  10. [X] g with a hooky leg
-  11. [ ] dotted zero
-  12. [ ] tilde above middle point
-  13. [ ] S (upper case es) that is distinct from 5
-  14. [X] rn (aren) that isn't m (em)
-  15. [X] cyrl
-  16. [X] zhe (either case) that isn't bold
-  17. [ ] square brakets with non negligible hooks
-  18. [X] coma and period that are _obviously_ distinct at small sizes
-  19. [X] regular, bold, italic and bold italic variants
-  20. [ ] tilde that is immediately recognizable as tilde in isolation
-** pt root ui [15]
-   1. [X] hooky bottom lower case l (el)
-   2. [ ] serifed uper case I (ai)
-   3. [ ] flat top 3 (three)
-   4. [X] З (cyrillic capital/lowercase ze) with curved top
-   5. [ ] 1 (one) with a base
-   6. [X] lower case g (gee) with the right curve protruding
-   7. [X] lower case g with lower than baseline leg
-   8. [X] smooth 9 (nine)
-   9. [X] q with a straight leg
-   10. [X] g with a hooky leg
-   11. [ ] dotted zero
-   12. [X] tilde above middle point
-   13. [X] S (upper case es) that is distinct from 5
-   14. [X] rn (aren) that isn't m (em)
-   15. [X] cyrl
-   16. [X] zhe (either case) that isn't bold
-   17. [X] square brakets with non negligible hooks
-   18. [X] coma and period that are _obviously_ distinct at small sizes
-   19. [ ] regular, bold, italic and bold italic variants
-       no itallics
-   20. [X] tilde that is immediately recognizable as tilde in isolation
-** pt sans [17/1.]
-   1. [X] hooky bottom lower case l (el)
-   2. [ ] serifed uper case I (ai)
-   3. [X] flat top 3 (three)
-   4. [X] З (cyrillic capital/lowercase ze) with curved top
-   5. [X] 1 (one) with a base
-   6. [X] lower case g (gee) with the right curve protruding or non circular eye
-   7. [X] lower case g with lower than baseline leg
-   8. [X] smooth 9 (nine)
-   9. [X] q with a straight leg
-   10. [X] g with a hooky leg
-   11. [ ] dotted zero
-   12. [X] tilde above middle point
-   13. [ ] S (upper case es) that is _very_ distinct from 5
-   14. [X] rn (aren) that is very distinct from m (em)
-   15. [X] cyrl
-   16. [X] zhe (either case) that isn't jarringly bolder than other letters
-   17. [X] square brakets with non negligible hooks
-   18. [X] coma and period that are _obviously_ distinct at small sizes
-   19. [X] regular, bold, italic and bold italic variants
-   20. [.] tilde that is immediately recognizable as tilde in isolation
-       not sure about isolation
-** pt astra sans [17/1+]
-  1. [X] hooky bottom lower case l (el)
-  2. [ ] serifed uper case I (ai)
-  3. [X] flat top 3 (three)
-  4. [X] З (cyrillic capital/lowercase ze) with curved top
-  5. [X] 1 (one) with a base
-  6. [+] lower case g (gee) with the right curve protruding
-  7. [X] lower case g with lower than baseline leg
-  8. [X] smooth 9 (nine)
-  9. [X] q with a straight leg
-  10. [X] g with a hooky leg
-  11. [ ] dotted zero
-  12. [X] tilde above middle point
-  13. [ ] S (upper case es) that is distinct from 5
-  14. [X] rn (aren) that isn't m (em)
-  15. [X] cyrl
-  16. [X] zhe (either case) that isn't bold
-  17. [X] square brakets with non negligible hooks
-  18. [X] coma and period that are _obviously_ distinct at small sizes
-  19. [X] regular, bold, italic and bold italic variants
-  20. [X] tilde that is immediately recognizable as tilde in isolation
-** jet brains mono [20/1~]
-  1. [X] hooky bottom lower case l (el)
-  2. [X] serifed uper case I (ai)
-  3. [X] flat top 3 (three)
-  4. [X] З (cyrillic capital/lowercase ze) with curved top
-  5. [X] 1 (one) with a base
-  6. [X] lower case g (gee) with the right curve protruding
-  7. [X] lower case g with lower than baseline leg
-  8. [X] smooth 9 (nine)
-  9. [X] q with a straight leg
-  10. [X] g with a hooky leg
-  11. [X] dotted zero
-  12. [X] tilde above middle point
-  13. [~] S (upper case es) that is distinct from 5
-  14. [X] rn (aren) that isn't m (em)
-  15. [X] cyrl
-  16. [X] zhe (either case) that isn't bold
-  17. [X] square brakets with non negligible hooks
-  18. [X] coma and period that are _obviously_ distinct at small sizes
-  19. [X] regular, bold, italic and bold italic variants
-  20. [X] tilde that is immediately recognizable as tilde in isolation
-** montserrat alternates [17]
-  1. [X] hooky bottom lower case l (el)
-  2. [X] serifed uper case I (ai)
-  3. [X] flat top 3 (three)
-  4. [X] З (cyrillic capital/lowercase ze) with curved top
-  5. [ ] 1 (one) with a base
-  6. [X] lower case g (gee) with the right curve protruding
-  7. [X] lower case g with lower than baseline leg
-  8. [X] smooth 9 (nine)
-  9. [X] q with a straight leg
-  10. [X] g with a hooky leg
-  11. [ ] dotted zero
-  12. [X] tilde above middle point
-  13. [ ] S (upper case es) that is distinct from 5
-  14. [X] rn (aren) that isn't m (em)
-  15. [X] cyrl
-  16. [X] zhe (either case) that isn't bold
-  17. [X] square brakets with non negligible hooks
-  18. [X] coma and period that are _obviously_ distinct at small sizes
-  19. [X] regular, bold, italic and bold italic variants
-  20. [X] tilde that is immediately recognizable as tilde in isolation
-** fantasque sans mono [17/1Ӡ/1~]
-  1. [X] hooky bottom lower case l (el)
-  2. [X] serifed uper case I (ai)
-  3. [Ӡ] flat top 3 (three)
-  4. [X] З (cyrillic capital/lowercase ze) with curved top
-  5. [ ] 1 (one) with a base
-  6. [double storey] lower case g (gee) with the right curve protruding
-  7. [X] lower case g with lower than baseline leg
-  8. [X] smooth 9 (nine)
-  9. [X] q with a straight leg
-  10. [double storey] g with a hooky leg
-  11. [slashed] dotted zero
-  12. [~] tilde above middle point
-  13. [X] S (upper case es) that is distinct from 5
-  14. [X] rn (aren) that isn't m (em)
-  15. [X] cyrl
-  16. [X] zhe (either case) that isn't bold
-  17. [X] square brakets with non negligible hooks
-  18. [X] coma and period that are _obviously_ distinct at small sizes
-  19. [X] regular, bold, italic and bold italic variants
-  20. [X] tilde that is immediately recognizable as tilde in isolation
+     ?
+  5. 1 (one) that is unmistakable in isolation
+     ?
+  6. 9 g q
+     pragmatica from paratype
+  7. oh-zero
+     almost all
+  8. tilde
+     ?
+  9. S (upper case es) that is distinct from 5
+     opensans
+  10. rn (ar-en) that isn't m (em)
+      ?
+  11. cyrillic zhe (either case) that does not stand out
+      ?
+  12. square brakets that are distinct from |l
+      ?
+  13. coma/period that are _obviously_ distinct from each other at small sizes
+      raleway
+  14. apqote: it is immediatelly apparent that '' is  not "
+      too many
+contemporary counter examples are listed bellow each item
+
+only regular versions were used while creating the following chart
+* oh zero
+| name                  | o       | 0                     | O                 |
+|-----------------------+---------+-----------------------+-------------------|
+| opensans              | circle  | taller oval           | wider circle      |
+| raleway               | circle  | a bit taller circle   | bigger circle     |
+| nunito                | circle  | taller oval           | bigger circle     |
+| source sans 3         | circle  | taller oval           | bigger circle     |
+| balsamiq sans         | circle  | taller oval           | bigger circle     |
+| bellota               | circle  | taller circle         | bigger circle     |
+| roboto                | circle  | taller oval           | bigger circle     |
+| bellota text          | circle  | bigger circle         | bigger circle yet |
+| helvetica lt com      | circle  | taller oval           | bigger circle     |
+| pragmatica            | circle  | taller oval           | bigger circle     |
+| fira sans             | circle  | taller oval           | bigger circle     |
+| ibm plex mono         | circle  | taller dotted-oval    | 0 undotted        |
+| ibm plex sans         | circle  | taller oval           | biggger circle    |
+| lato                  | circle  | taller oval           | bigger circle     |
+| montserrat            | circle  | taller oval           | bigger circle     |
+| nobile                | circle  | circle                | taller oval       |
+| noto sans             | circle  | taller oval           | bigger circle     |
+| source sans pro       | circle  | taller oval           | bigger circle     |
+| jet brains mono       | lozenge | taller dotted lozenge | 0 undotted        |
+| fantasque sans mono   | circle  | slashed taller oval   | 0 unslashed       |
+| pt sans               | circle  | taller oval           | bigger circle(?)  |
+| montserrat alternates | circle  | taller oval           | bigger circle     |
+|-----------------------+---------+-----------------------+-------------------|
+** ___________________________________________________
+* Rejected
+** opensans                | 6
+  |  1 | [-] | l     |                                                    |
+  |  2 | [-] | I     |                                                    |
+  |  3 | [+] | 3     | has abkhasian dze                                  |
+  |  4 | [ ] | З     |                                                    |
+  |  5 | [ ] | 1     |                                                    |
+  |  6 | [ ] | 9 g q | double storey g                                    |
+  |  7 | [-] | 0     |                                                    |
+  |  8 | [ ] | ~     | is above midpoint but looks like a NW pointing bar |
+  |  9 | [-] | S     |                                                    |
+  | 10 | [-] | rn    |                                                    |
+  | 11 | [ ] | zhe   |                                                    |
+  | 12 | [ ] | [     |                                                    |
+  | 13 | [ ] | .,    |                                                    |
+  | 14 | [-] | '"    |                                                    |
+  google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
+
+main-rejection-reason: il
+** raleway v4020           | 6
+  |  1 | [ ] | l     |                                          |
+  |  2 | [-] | I     |                                          |
+  |  3 | [-] | 3     | old style figures, has abkhasian dze - Ӡ |
+  |  4 | [ ] | З     |                                          |
+  |  5 | [ ] | 1     |                                          |
+  |  6 | [ ] | 9 g q | eye of g is does not blend with an arch  |
+  |  7 | [-] | 0     |                                          |
+  |  8 | [-] | ~     |                                          |
+  |  9 | [-] | S     |                                          |
+  | 10 | [ ] | rn    |                                          |
+  | 11 | [ ] | zhe   |                                          |
+  | 12 | [ ] | [     |                                          |
+  | 13 | [-] | .,    |                                          |
+  | 14 | [ ] | '"    |                                          |
+  v4101 appears to not have changed wrt "issues"
+  NOTE: Used modifief version [...] for a long while but then
+        decided to not go into the trouble of modifying newer (v4101)
+        version
+
+  [1] 'r' modified to make 'rn' look less like m
+  [2] dot added to the zero
+  [3] '.' and ',' made bigger
+  [4] perhaps something else
+
+  the fifth item would have been serifs on the I (capital eye)
+
+main-rejection-reason: ,.
+** nunito                  | 3
+  |  1 | [ ] | l     |                                             |
+  |  2 | [-] | I     |                                             |
+  |  3 | [+] | 3     | has abkhasian dze that can be remapped to 3 |
+  |  4 | [ ] | З     |                                             |
+  |  5 | [ ] | 1     |                                             |
+  |  6 | [ ] | 9 g q |                                             |
+  |  7 | [ ] | 0     | has ØѲ                                      |
+  |  8 | [ ] | ~     |                                             |
+  |  9 | [-] | S     |                                             |
+  | 10 | [ ] | rn    |                                             |
+  | 11 | [ ] | zhe   |                                             |
+  | 12 | [ ] | [     |                                             |
+  | 13 | [ ] | .,    |                                             |
+  | 14 | [-] | '"    |                                             |
+  looks light (like raleway does) [good thing]
+  5S issue is not easily fixable, authors passing, makes it harder still
+  same applies to '"
+  oh-zero is also an obstacle
+
+main-rejection-reason: IS"
+** source sans 3           | 3 -, 2 +, 2 ?
+  |  1 | [ ] | l     | bottom hook is very subtle, but it is there             |
+  |  2 | [-] | I     |                                                         |
+  |  3 | [+] | 3     | has abkhasian dze                                       |
+  |  4 | [ ] | З     |                                                         |
+  |  5 | [?] | 1     | nose is very subtle, but it is there, as is the base    |
+  |  6 | [ ] | 9 g q | double storey g                                         |
+  |  7 | [+] | 0     | has several zero-like slashed-barred-striked Oh letters |
+  |  8 | [ ] | ~     |                                                         |
+  |  9 | [-] | S     |                                                         |
+  | 10 | [?] | rn    | not sure - WN pointing roof                             |
+  | 11 | [ ] | zhe   |                                                         |
+  | 12 | [ ] | [     |                                                         |
+  | 13 | [ ] | .,    |                                                         |
+  | 14 | [-] | '"    |                                                         |
+
+main-rejection-reason: I
+** balsamiq sans           | 3 -, 2 +, 1 ?
+  |  1 | [-] | l     |                          |
+  |  2 | [ ] | I     |                          |
+  |  3 | [+] | 3     | flat-top-3-letters   |
+  |  4 | [ ] | З     |                          |
+  |  5 | [ ] | 1     | no base, pronounced nose |
+  |  6 | [ ] | 9 g q |                          |
+  |  7 | [+] | 0     | has scarred-Ohs          |
+  |  8 | [ ] | ~     | - is very short          |
+  |  9 | [-] | S     |                          |
+  | 10 | [?] | rn    | not sure                 |
+  | 11 | [ ] | zhe   |                          |
+  | 12 | [ ] | [     |                          |
+  | 13 | [ ] | .,    |                          |
+  | 14 | [-] | '"    |                          |
+
+main-rejection-reason: l
+** bellota                 | 4 -, 2 ?
+  |  1 | [ ] | l     |                                                    |
+  |  2 | [ ] | I     |                                                    |
+  |  3 | [-] | 3     | and ze are different, but problematic in isolation |
+  |  4 | [ ] | З     |                                                    |
+  |  5 | [ ] | 1     | has no base, but pronounced enough nose            |
+  |  6 | [ ] | 9 g q | g has a closed loop bottom storey                  |
+  |  7 | [-] | 0     | has scarred-Ohs                                    |
+  |  8 | [-] | ~     |                                                    |
+  |  9 | [ ] | S     |                                                    |
+  | 10 | [?] | rn    |                                                    |
+  | 11 | [ ] | zhe   |                                                    |
+  | 12 | [ ] | [     |                                                    |
+  | 13 | [-] | .,    | it appears that lighter faces suffert this 1)      |
+  | 14 | [?] | '"    |                                                    |
+1. a) raleway also has this
+   b) zoom in and . and , are clearly distinct
+light, flourishing, appealing
+
+main-rejection-reason: 3
+** roboto                  | 5, 1 ?
+  |  1 | [-] | l     |                                                         |
+  |  2 | [-] | I     |                                                         |
+  |  3 | [+] | 3     | has abkhasian dze                                       |
+  |  4 | [ ] | З     |                                                         |
+  |  5 | [?] | 1     | no base, short nose                                     |
+  |  6 | [ ] | 9 g q |                                                         |
+  |  7 | [+] | 0     | has several zero-like slashed-barred-striked Oh letters |
+  |  8 | [ ] | ~     | ~ at midpoint but hooks are pronounced                  |
+  |  9 | [-] | S     |                                                         |
+  | 10 | [-] | rn    |                                                         |
+  | 11 | [ ] | zhe   |                                                         |
+  | 12 | [ ] | [     |                                                         |
+  | 13 | [ ] | .,    |                                                         |
+  | 14 | [-] | '"    |                                                         |
+  google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
+
+main-rejection-reason: l
+** bellota text            | 6 -
+  |  1 | [-] | l     |                  |
+  |  2 | [-] | I     |                  |
+  |  3 | [-] | 3     |                  |
+  |  4 | [ ] | З     |                  |
+  |  5 | [ ] | 1     | no-base-but-nose |
+  |  6 | [ ] | 9 g q |                  |
+  |  7 | [-] | 0     | scarred-Oh   |
+  |  8 | [-] | ~     |                  |
+  |  9 | [ ] | S     |                  |
+  | 10 | [ ] | rn    |                  |
+  | 11 | [ ] | zhe   |                  |
+  | 12 | [ ] | [     |                  |
+  | 13 | [ ] | .,    |                  |
+  | 14 | [-] | '"    |                  |
+  light, appealing
+
+main-rejection-reason: ~
+** helvetica lt com roman  | 6 -
+  |  1 | [-] | l     |                                   |
+  |  2 | [-] | I     |                                   |
+  |  3 | [-] | 3     |                                   |
+  |  4 | [ ] | З     |                                   |
+  |  5 | [ ] | 1     |                                   |
+  |  6 | [ ] | 9 g q |                                   |
+  |  7 | [-] | 0     | Oh is rounder, scarred-Oh         |
+  |  8 | [ ] | ~     | ~ _appears to be_ bellow midpoint |
+  |  9 | [ ] | S     |                                   |
+  | 10 | [-] | rn    | hmmm                              |
+  | 11 | []  | zhe   |                                   |
+  | 12 | [ ] | [     |                                   |
+  | 13 | [ ] | .,    |                                   |
+  | 14 | [-] | '"    |                                   |
+
+main-rejection-reason: l
+** pragmatica              | 5 -, 1 +, 1 ?
+  |  1 | [-] | l     |                                               |
+  |  2 | [-] | I     |                                               |
+  |  3 | [+] | 3     | flat-top-3-letters                        |
+  |  4 | [ ] | З     |                                               |
+  |  5 | [ ] | 1     | no-base-but-nose                              |
+  |  6 | [-] | 9 g q | gq can be mistaken for each other at a glance |
+  |  7 | [-] | 0     | scarred-Oh                                |
+  |  8 | [ ] | ~     |                                               |
+  |  9 | [ ] | S     |                                               |
+  | 10 | [?] | rn    | not sure                                      |
+  | 11 | [ ] | zhe   |                                               |
+  | 12 | [ ] | [     |                                               |
+  | 13 | [ ] | .,    |                                               |
+  | 14 | [-] | '"    |                                               |
+
+main-rejection-reason: l
+** fira sans               | 4 -, 2 +
+  |  1 | [ ] | l     |                        |
+  |  2 | [-] | I     |                        |
+  |  3 | [+] | 3     | flat-top-3-letters |
+  |  4 | [ ] | З     |                        |
+  |  5 | [ ] | 1     |                        |
+  |  6 | [ ] | 9 g q |                        |
+  |  7 | [+] | 0     | scarred-Oh         |
+  |  8 | [-] | ~     |                        |
+  |  9 | [-] | S     |                        |
+  | 10 | [ ] | rn    |                        |
+  | 11 | [ ] | zhe   |                        |
+  | 12 | [ ] | [     |                        |
+  | 13 | [ ] | .,    |                        |
+  | 14 | [-] | '"    |                        |
+
+main-rejection-reason: S
+** ibm plex mono           | 4 -
+  |  1 | [-] | l     |                                 |
+  |  2 | [ ] | I     |                                 |
+  |  3 | [-] | 3     |                                 |
+  |  4 | [ ] | З     |                                 |
+  |  5 | [-] | 1     | because l can be mistaken for 1 |
+  |  6 | [ ] | 9 g q |                                 |
+  |  7 | [ ] | 0     |                                 |
+  |  8 | [-] | ~     | too close                       |
+  |  9 | [ ] | S     |                                 |
+  | 10 | [ ] | rn    |                                 |
+  | 11 | [ ] | zhe   |                                 |
+  | 12 | [ ] | [     |                                 |
+  | 13 | [ ] | .,    |                                 |
+  | 14 | [ ] | '"    |                                 |
+
+main-rejection-reason: l
+** ibm plex sans           | 5 -, 1 +
+  |  1 | [ ] | l     | bottom hook is small |
+  |  2 | [ ] | I     |                      |
+  |  3 | [-] | 3     |                      |
+  |  4 | [ ] | З     |                      |
+  |  5 | [ ] | 1     |                      |
+  |  6 | [ ] | 9 g q |                      |
+  |  7 | [+] | 0     | scarred-Oh       |
+  |  8 | [-] | ~     |                      |
+  |  9 | [-] | S     |                      |
+  | 10 | [ ] | rn    |                      |
+  | 11 | [ ] | zhe   |                      |
+  | 12 | [-] | [     | small small hooks    |
+  | 13 | [ ] | .,    |                      |
+  | 14 | [-] | '"    |                      |
+
+main-rejection-reason: torn between ze-3 _and_ es-5
+** lato                    | 3 -, 2 +
+  |  1 | [ ] | l     |                        |
+  |  2 | [ ] | I     |                        |
+  |  3 | [+] | 3     | flat-top-3-letters |
+  |  4 | [ ] | З     |                        |
+  |  5 | [ ] | 1     |                        |
+  |  6 | [ ] | 9 g q |                        |
+  |  7 | [+] | 0     | scarred-Oh         |
+  |  8 | [-] | ~     | - is too narrow        |
+  |  9 | [-] | S     |                        |
+  | 10 | [ ] | rn    |                        |
+  | 11 | [ ] | zhe   |                        |
+  | 12 | [ ] | [     |                        |
+  | 13 | [ ] | .,    |                        |
+  | 14 | [-] | '"    |                        |
+
+main-rejection-reason: l
+** montserrat              | 5 -, 1 +
+  |  1 | [-] | l     |                                                    |
+  |  2 | [-] | I     |                                                    |
+  |  3 | [ ] | 3     |                                                    |
+  |  4 | [ ] | З     |                                                    |
+  |  5 | [-] | 1     |                                                    |
+  |  6 | [ ] | 9 g q |                                                    |
+  |  7 | [+] | 0     | scarred-Oh                                     |
+  |  8 | [ ] | ~     |                                                    |
+  |  9 | [-] | S     |                                                    |
+  | 10 | [ ] | rn    |                                                    |
+  | 11 | [ ] | zhe   |                                                    |
+  | 12 | [ ] | [     | on the vere of not passing by hook being too small |
+  | 13 | [ ] | .,    |                                                    |
+  | 14 | [-] | '"    |                                                    |
+
+main-rejection-reason: l
+** nobile                  | 5 -, 1 +, 1 ?
+  |  1 | [-] | l     |                         |
+  |  2 | [ ] | I     |                         |
+  |  3 | [-] | 3     | old style figures       |
+  |  4 | [ ] | З     |                         |
+  |  5 | [-] | 1     | no-base-nose-too-narrow |
+  |  6 | [ ] | 9 g q |                         |
+  |  7 | [+] | 0     | scarred-Oh          |
+  |  8 | [-] | ~     |                         |
+  |  9 | [?] | S     |                         |
+  | 10 | [ ] | rn    |                         |
+  | 11 | [ ] | zhe   |                         |
+  | 12 | [ ] | [     |                         |
+  | 13 | [ ] | .,    |                         |
+  | 14 | [-] | '"    |                         |
+
+main-rejection-reason: 3
+** noto nans               | 3 -, 2 +, 2 ?
+  |  1 | [-] | l     |                                            |
+  |  2 | [ ] | I     |                                            |
+  |  3 | [+] | 3     | flat-top-3-letters                     |
+  |  4 | [ ] | З     |                                            |
+  |  5 | [ ] | 1     | nose is smallish, but distinguished enough |
+  |  6 | [?] | 9 g q |                                            |
+  |  7 | [+] | 0     | scarred-Oh                             |
+  |  8 | [-] | ~     |                                            |
+  |  9 | [-] | S     |                                            |
+  | 10 | [?] | rn    |                                            |
+  | 11 | [ ] | zhe   |                                            |
+  | 12 | [ ] | [     | smallish hooks                             |
+  | 13 | [ ] | .,    |                                            |
+  | 14 | [ ] | '"    |                                            |
+
+main-rejection-reason: l
+** nunito sans             | 2 -, 2 +
+  |  1 | [ ] | l     |                        |
+  |  2 | [-] | I     |                        |
+  |  3 | [+] | 3     | flat-top-3-letters |
+  |  4 | [ ] | З     |                        |
+  |  5 | [ ] | 1     | base-small-nose        |
+  |  6 | [ ] | 9 g q |                        |
+  |  7 | [+] | 0     | scarred-Ohs            |
+  |  8 | [ ] | ~     |                        |
+  |  9 | [-] | S     |                        |
+  | 10 | [ ] | rn    |                        |
+  | 11 | [ ] | zhe   |                        |
+  | 12 | [ ] | [     | smallish hooks         |
+  | 13 | [ ] | .,    |                        |
+  | 14 | [ ] | '"    |                        |
+
+main-rejection-reason: I
+** source sans pro         | 5 -, 2 +
+  |  1 | [-] | l     | bottom-hook-too-small                          |
+  |  2 | [-] | I     |                                                |
+  |  3 | [+] | 3     | flat-top-3-letters                             |
+  |  4 | [ ] | З     |                                                |
+  |  5 | [-] | 1     | base-small-nose-resembles-l-in-other-typefaces |
+  |  6 | [ ] | 9 g q |                                                |
+  |  7 | [+] | 0     | scarred-Ohs                                    |
+  |  8 | [ ] | ~     |                                                |
+  |  9 | [-] | S     |                                                |
+  | 10 | [ ] | rn    |                                                |
+  | 11 | [ ] | zhe   |                                                |
+  | 12 | [ ] | [     |                                                |
+  | 13 | [ ] | .,    |                                                |
+  | 14 | [-] | '"    |                                                |
+
+main-rejection-reason: 0
+** ___________________________________________________
+** IN USE
+** jet brains mono         | 0
+  |  1 | [ ] | l     |
+  |  2 | [ ] | I     |
+  |  3 | [ ] | 3     |
+  |  4 | [ ] | З     |
+  |  5 | [ ] | 1     |
+  |  6 | [ ] | 9 g q |
+  |  7 | [ ] | 0     |
+  |  8 | [ ] | ~     |
+  |  9 | [ ] | S     |
+  | 10 | [ ] | rn    |
+  | 11 | [ ] | zhe   |
+  | 12 | [ ] | [     |
+  | 13 | [ ] | .,    |
+  | 14 | [ ] | '"    |
+** fantasque sans mono     | 0
+  |  1 | [ ] | l     |                                                      |
+  |  2 | [ ] | I     |                                                      |
+  |  3 | [+] | 3     | has abkhasian dze that can be remapped to 3          |
+  |  4 | [ ] | З     | 3 and ze are distinct but not to the isolated degree |
+  |  5 | [ ] | 1     | distinguishing characteristic - pronounced nose      |
+  |  6 | [ ] | 9 g q | g is double storey                                   |
+  |  7 | [ ] | 0     | slashed zero                                         |
+  |  8 | [ ] | ~     |                                                      |
+  |  9 | [ ] | S     |                                                      |
+  | 10 | [ ] | rn    | rn appears to not be a problem in monospaced fonts   |
+  | 11 | [ ] | zhe   |                                                      |
+  | 12 | [ ] | [     |                                                      |
+  | 13 | [ ] | .,    |                                                      |
+  | 14 | [ ] | '"    |                                                      |
+** pt sans                 | 3
+  |  1 | [ ] | l     |                        |
+  |  2 | [-] | I     |                        |
+  |  3 | [ ] | 3     |                        |
+  |  4 | [ ] | З     |                        |
+  |  5 | [ ] | 1     |                        |
+  |  6 | [ ] | 9 g q |                        |
+  |  7 | [-] | 0     | oh is fat(ter), has ØØ |
+  |  8 | [ ] | ~     |                        |
+  |  9 | [-] | S     |                        |
+  | 10 | [ ] | rn    |                        |
+  | 11 | [ ] | zhe   |                        |
+  | 12 | [ ] | [     |                        |
+  | 13 | [ ] | .,    |                        |
+  | 14 | [ ] | '"    |                        |
+  pt root ui is pt sans with an additional 3ze issue and no italics
+  pt astra sans is based on pt sans
+  { if memory serves "pt astra sans" was created as a substitute for
+    "times new roman" so that document typeset in TNR continued to
+    be usable with "pt astra serif" (and "pt astra sans"!) instead
+  }
+** montserrat alternates   | 5
+  |  1 | [ ] | l     |                                        |
+  |  2 | [ ] | I     |                                        |
+  |  3 | [ ] | 3     |                                        |
+  |  4 | [ ] | З     |                                        |
+  |  5 | [-] | 1     | also: l1 combination is an urobors [1] |
+  |  6 | [-] | 9 g q |                                        |
+  |  7 | [-] | 0     | oh - fat, zero - oval                  |
+  |  8 | [ ] | ~     |                                        |
+  |  9 | [-] | S     |                                        |
+  | 10 | [ ] | rn    | roof of r looks north-east             |
+  | 11 | [ ] | zhe   |                                        |
+  | 12 | [ ] | [     |                                        |
+  | 13 | [ ] | .,    |                                        |
+  | 14 | [?] | '"    | probably an issue                      |
+[1] https://en.wikipedia.org/wiki/Ouroboros
+** ___________________________________________________
+** TEMPLATE
+** | № -
+  |  1 | [] | l     |
+  |  2 | [] | I     |
+  |  3 | [] | 3     |
+  |  4 | [] | З     |
+  |  5 | [] | 1     |
+  |  6 | [] | 9 g q |
+  |  7 | [] | 0     |
+  |  8 | [] | ~     |
+  |  9 | [] | S     |
+  | 10 | [] | rn    |
+  | 11 | [] | zhe   |
+  | 12 | [] | [     |
+  | 13 | [] | .,    |
+  | 14 | [] | '"    |

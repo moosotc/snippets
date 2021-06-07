@@ -102,7 +102,7 @@ perm()  {
 text() {
     cat <<EOF
 <pre style="font-size: ${1}pt;">
-$1 <hr>
+$1 ilOo013З <hr>
 ozO o0O
 oOz oO0
 0oO 0oO

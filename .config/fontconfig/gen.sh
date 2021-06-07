@@ -20,16 +20,15 @@ set -eu
 # symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
 # mongolian
 #  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
-# kurinto         https://kurinto.com/
 
 mon0="fantasque sans mono"
 ans5="montserrat alternates"
-eri1="kurinto news core"
+eri1="pt astra serif"
 eri5="pt serif"
 curs="mongolian writing"
+dudu="dudu cyryllic"
+mono="jetbrainsmono"
 kurn="kurinto olde core narrow"
-sans="fantasque sans mono"
-sans="jetbrains mono"
 sans="pt serif"
 
 helv="$sans"
@@ -88,13 +87,11 @@ cat <<EOF
 EOF
 
 M "$mon0"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$sans"         "segoe ui" "roboto" "tahoma" "raleway"
+M "$sans"         "segoe ui" "roboto" "tahoma"
 M "$helv"         "sans-serif" "arial" "helvetica" "helvetica neue"
-M "pt sans bold"  "osd"
-M "pt sans"       "gtk" "trebuchet ms"
-M "dudu cyryllic" "comic sans ms" "sub"
-M "jetbrainsmono" "iosevka clam" "iosevka" "monospace"
-M "iosevka clam"  "iosevka" "monospace"
+M "$mon0"         "osd" "gtk"
+M "$dudu"         "comic sans ms" "sub" "trebuchet ms" "raleway"
+M "$mono"         "monospace"
 M "$eri1"         "serif" "times" "times new roman"
 M "$eri5"         "georgia" "lora" "noto serif"
 M "$ptsn"         "knockout 31 4r"

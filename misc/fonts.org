@@ -37,7 +37,9 @@
 *** https://модные-слова.рф
 **** stack
      tahoma, trebuchet ms, helvetica, sans-serif
-* google fonts
+* web
+  lIiOo01З3S9g[],.~-~    Ӡ
+  https://www.1001fonts.com/sans-serif-fonts.html
   grid - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic
   list - https://fonts.google.com/?preview.text_type=custom&preview.text=%D0%973+1lI|+0Oo0+S9+~-+-~&subset=cyrillic&preview.size=31&preview.layout=row&sort=date
 * links
@@ -479,6 +481,68 @@ main-rejection-reason: 0
   | 12 | [ ] | [     |
   | 13 | [ ] | .,    |
   | 14 | [?] | '"    |
+** ascari sans light       | 4 -, 2 +, ?
+  |  1 | [ ] | l     | bottom hook is small (a-la source sans) |
+  |  2 | [-] | I     |                                         |
+  |  3 | [-] | 3     |                                         |
+  |  4 | [-] | З     |                                         |
+  |  5 | [ ] | 1     | no-base-but-nose                        |
+  |  6 | [ ] | 9 g q |                                         |
+  |  7 | [-] | 0     |                                         |
+  |  8 | [ ] | ~     | is-lower-than-minus                     |
+  |  9 | [?] | S     |                                         |
+  | 10 | [?] | rn    |                                         |
+  | 11 | [ ] | zhe   |                                         |
+  | 12 | [ ] | [     | hooks-are-small                         |
+  | 13 | [ ] | .,    |                                         |
+  | 14 | [ ] | '"    |                                         |
+** hack                    | 5 -, 1 +, 1 ?
+  |  1 | [ ] | l     |                               |
+  |  2 | [ ] | I     |                               |
+  |  3 | [+] | 3     |                               |
+  |  4 | [ ] | З     |                               |
+  |  5 | [ ] | 1     | small-nose-but-base           |
+  |  6 | [-] | 9 g q | q-can-be-g                    |
+  |  7 | [ ] | 0     | 0-stabbed                     |
+  |  8 | [-] | ~     |                               |
+  |  9 | [-] | S     |                               |
+  | 10 | [ ] | rn    |                               |
+  | 11 | [-] | zhe   |                               |
+  | 12 | [?] | [     |                               |
+  | 13 | [ ] | .,    |                               |
+  | 14 | [ ] | '"    |                               |
+  | 15 | [-] | мм    | new entry! "телегаммааппарат" |
+  no light
+** Neris Light             | 3 -, 2 +, 5 ?
+  |  1 | [ ] | l     | bottom-hook-is-tiny  |
+  |  2 | [-] | I     |                      |
+  |  3 | [+] | 3     |                      |
+  |  4 | [ ] | З     |                      |
+  |  5 | [?] | 1     | no-base-small-nose   |
+  |  6 | [?] | 9 g q | g-like-low-hanging-9 |
+  |  7 | [+] | 0     |                      |
+  |  8 | [ ] | ~     |                      |
+  |  9 | [-] | S     |                      |
+  | 10 | [?] | rn    |                      |
+  | 11 | [ ] | zhe   |                      |
+  | 12 | [?] | [     |                      |
+  | 13 | [?] | .,    |                      |
+  | 14 | [-] | '"    |                      |
+** philosopher             | 4 -, 2 ?
+  |  1 | [-] | l     | top-left-pointing hook    |
+  |  2 | [-] | I     | bottom-rigt-pointing-hook |
+  |  3 | [ ] | 3     |                           |
+  |  4 | [ ] | З     |                           |
+  |  5 | [ ] | 1     |                           |
+  |  6 | [ ] | 9 g q |                           |
+  |  7 | [-] | 0     |                           |
+  |  8 | [ ] | ~     |                           |
+  |  9 | [ ] | S     |                           |
+  | 10 | [ ] | rn    |                           |
+  | 11 | [?] | zhe   |                           |
+  | 12 | [?] | [     |                           |
+  | 13 | [ ] | .,    |                           |
+  | 14 | [-] | '"    |                           |
 * Rejection template
 ** | № -
   |  1 | [] | l     |

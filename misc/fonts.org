@@ -94,6 +94,17 @@
 contemporary counter examples are listed bellow each item
 
 only regular versions were used while creating the following chart
+** quote
+https://en.wikipedia.org/wiki/Sans-serif
+
+In 1922, master printer Daniel Berkeley Updike described sans-serif
+fonts as having "no place in any artistically respectable
+composing-room."
+
+[81] Updike, Daniel Berkeley (1922). Printing types : their
+     history, forms, and use; a study in survivals vol 2 (1st
+     ed.). Cambridge, MA: Harvard University
+     Press. p. 243. Retrieved 17 August 2015.
 * oh zero
 | name                  | o       | 0                     | O                 |
 |-----------------------+---------+-----------------------+-------------------|

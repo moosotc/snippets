@@ -1,2 +1,0 @@
-#!/bin/sh
-FC_DEBUG=1 pango-view -q "$@" 2>&1 | grep family

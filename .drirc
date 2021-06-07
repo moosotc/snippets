@@ -1,7 +1,7 @@
 <driconf>
   <device screen="0" driver="dri2">
-    <application name="llpp">
-      <option name="vblank_mode" value="0" />
+    <application>
+      <option name="vblank_mode" value="1" />
     </application>
   </device>
 </driconf>

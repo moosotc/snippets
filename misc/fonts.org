@@ -1,4 +1,4 @@
-* X-was-spotted-at
+* font-was-spotted-at
 ** segoe ui       - github.com, channel9.msdn.com
 ** cantarell      - gnome.org
 ** opensans       - arstechnica.com
@@ -463,8 +463,24 @@ main-rejection-reason: I
   | 14 | [-] | '"    |                                                |
 
 main-rejection-reason: 0
-** ___________________________________________________
-** IN USE
+*
+* Rejection template
+** | № -
+  |  1 | [] | l     |
+  |  2 | [] | I     |
+  |  3 | [] | 3     |
+  |  4 | [] | З     |
+  |  5 | [] | 1     |
+  |  6 | [] | 9 g q |
+  |  7 | [] | 0     |
+  |  8 | [] | ~     |
+  |  9 | [] | S     |
+  | 10 | [] | rn    |
+  | 11 | [] | zhe   |
+  | 12 | [] | [     |
+  | 13 | [] | .,    |
+  | 14 | [] | '"    |
+* In use
 ** jet brains mono         | 0
   |  1 | [ ] | l     |
   |  2 | [ ] | I     |
@@ -532,20 +548,4 @@ main-rejection-reason: 0
   | 13 | [ ] | .,    |                                        |
   | 14 | [?] | '"    | probably an issue                      |
 [1] https://en.wikipedia.org/wiki/Ouroboros
-** ___________________________________________________
-** TEMPLATE
-** | № -
-  |  1 | [] | l     |
-  |  2 | [] | I     |
-  |  3 | [] | 3     |
-  |  4 | [] | З     |
-  |  5 | [] | 1     |
-  |  6 | [] | 9 g q |
-  |  7 | [] | 0     |
-  |  8 | [] | ~     |
-  |  9 | [] | S     |
-  | 10 | [] | rn    |
-  | 11 | [] | zhe   |
-  | 12 | [] | [     |
-  | 13 | [] | .,    |
-  | 14 | [] | '"    |
+*

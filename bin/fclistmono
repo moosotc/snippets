@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+#fc-list : family spacing | grep spacing=100
+{ fc-list :spacing=mono; fc-list :spacing=charcell; } |
+    awk -F':' '{print $2}' | sort | uniq

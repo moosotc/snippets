@@ -102,14 +102,8 @@ perm()  {
 text() {
     cat <<EOF
 <pre style="font-size: ${1}pt;">
-$1 ilOo013З <hr>
-ozO o0O
-oOz oO0
-0oO 0oO
-0Oo 0Oo
-Oo0 Oo0
-O0o O0o
-
+$1<hr>
+ilOo01 S9 3ЗӠg .,-~-,.ozO o0O
 lI3З19gq0~-~-~-S9rnmmrnmnrrmnAaЖжЗз[lI|1].,.,,.''"""'"'
 S9 З3Ӡʒ I|l1 O0 0O o0 0o ØO OD DO Oo Do m rn m -~ ~-  8B B8 BB 88B8 88B8 ://r
 sentence that ends. with a surprise,
@@ -184,6 +178,14 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ ,;:-_
 a@ B8 dbqp E3 i! 96 G6& g9qCGQ
 coO08BbODQ |!iIlL17 $$5SZ2zsz
 TtijJlFPRK vvw VVW \/V
+
+Oh-zero
+ozO o0O
+oOz oO0
+0oO 0oO
+0Oo 0Oo
+Oo0 Oo0
+O0o O0o
 
 kerning
     echo \${@:5}
@@ -337,7 +339,8 @@ maketext() {
       pre { font-family: moo; }
     </style>
   </head>
-  $1
+  &quot;$(fc-scan -f '%{fullname}' "$1" || file "$1")&quot;
+  $(basename $1)
 <body>
 EOF
     for size in 6 8 10 12 4 2; do
@@ -346,6 +349,7 @@ EOF
     cat >>"$html" <<EOF
     <br/>
     $(fc-scan -f '%{fullname} %{style} %{slant} %{file} %{fontversion} %{capability} %{lang}' "$1" || file "$1")
+    <br>$1
   </body>
 </html>
 EOF

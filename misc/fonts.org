@@ -112,7 +112,7 @@ only regular versions were used while creating the following chart
 | nobile                | circle  | circle                | taller oval       |
 | noto sans             | circle  | taller oval           | bigger circle     |
 | source sans pro       | circle  | taller oval           | bigger circle     |
-| jet brains mono       | lozenge | taller dotted lozenge | 0 undotted        |
+| jet brains mono       | studium | taller dotted stadium | 0 undotted        |
 | fantasque sans mono   | circle  | slashed taller oval   | 0 unslashed       |
 | pt sans               | circle  | taller oval           | bigger circle(?)  |
 | montserrat alternates | circle  | taller oval           | bigger circle     |

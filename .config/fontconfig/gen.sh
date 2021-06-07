@@ -29,6 +29,8 @@ eri5="pt serif"
 curs="mongolian writing"
 kurn="kurinto olde core narrow"
 sans="fantasque sans mono"
+sans="jetbrains mono"
+sans="pt serif"
 
 helv="$sans"
 ptsn="pt sans narrow"

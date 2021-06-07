@@ -55,7 +55,8 @@
 * Il
   Problem with non hooky-bottom l is that when it is in isolation it's
   hard to tell what it is if one is looking at - | ar maybe I? The
-  situation is similar to 3З, but, perhaps, even worse
+  situation is similar to 3З, but, perhaps, even worse. Also 1 like
+  l... well... it introduces 1-l confusion
 ** Offenders
 *** Noto Sans
 * sans serif with ...|
@@ -83,7 +84,7 @@
   10. rn (ar-en) that isn't m (em)
       ?
   11. cyrillic zhe (either case) that does not stand out
-      ?
+      Hack
   12. square brakets that are distinct from |l
       ?
   13. coma/period that are _obviously_ distinct from each other at small sizes
@@ -627,3 +628,4 @@ main-rejection-reason: 0
   | 13 | [ ] | .,    |                                        |
   | 14 | [?] | '"    | probably an issue                      |
 [1] https://en.wikipedia.org/wiki/Ouroboros
+https://www.1001fonts.com/mint-spirit-font.html

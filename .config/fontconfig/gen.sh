@@ -21,9 +21,6 @@ cursive=mongolianwriting
 dudu=duducyryllic
 jetmono=jetbrainsmono
 
-serif=$fantasque
-helvetica=$dudu
-
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
   <match target="pattern">

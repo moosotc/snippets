@@ -15,11 +15,12 @@ set -eu
 # fantasque sans mono https://github.com/belluzj/fantasque-sans
 # mongolian writing   http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
-fantasque=fantasquesansmono
-montalt=montserratalternates
-cursive=mongolianwriting
-dudu=duducyryllic
-jetmono=jetbrainsmono
+fantasque="fantasque sans mono"
+montalt="montserrat alternates"
+cursive="mongolian writing"
+dudu="dudu cyryllic"
+jetmono="jetbrains mono"
+grek="greek sigismundus"
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
@@ -53,6 +54,7 @@ M "$fantasque" "sans-serif" "serif" "uimono"
 M "$jetmono"   "monospace"
 M "$cursive"   "cursive"
 M "$dudu"      "arial" "courier new" "times new roman"
+M "$grek"      "linux libertine"
 for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \
                   "dejavu sans" "vera"; do
     M "$montalt" "$f"

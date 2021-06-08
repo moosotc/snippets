@@ -94,31 +94,60 @@ S595$sep
 5S59$sep
 "
 
+all="
+1oop
+ho1e
+l
+I
+3ДС
+ЗДС
+0
+O
+S9
+.
+'
+!
+g
+q
+gq
+qg
+-~
+~-
+--
+~~
+'
+''
+\"
+'\"
+\"'
+l
+I
+lI
+Il
+1l
+l1
+"
+
 perm()  {
     printf "$1 "
     echo "$2" | shuf | tr -d '[[:space:]]'
 }
 
+#OilOo01 oS9 03ЗӠg .,-~-,.ozO o0O ϴØ l234 1oophole
+#lI3З19gq0~-~-~-S9rnmmrnmnrrmnAaЖжЗз[lI|1].,.,,.''"""'"'
+#S9 З3Ӡʒ I|l1 O0 0O o0 0o ØO OD DO Oo Do m rn m -~ ~-  8B B8 BB 88B8 88B8 ://r
+#sentence that ends. with a surprise, 5-14 of 330 000 results
+#Narrow letter shapes such as f, j, l and i
+#Narrow letter shapes such as f, j, 1 and l
+#10 O1 l1 ol 1o 0l 1I lI O0o
+
 text() {
     cat <<EOF
 <pre style="font-size: ${1}pt;">
 $1<hr>
-OilOo01 oS9 03ЗӠg .,-~-,.ozO o0O ϴØ l234 1oophole
-lI3З19gq0~-~-~-S9rnmmrnmnrrmnAaЖжЗз[lI|1].,.,,.''"""'"'
-S9 З3Ӡʒ I|l1 O0 0O o0 0o ØO OD DO Oo Do m rn m -~ ~-  8B B8 BB 88B8 88B8 ://r
-sentence that ends. with a surprise, 5-14 of 330 000 results
-Narrow letter shapes such as f, j, l and i
-Narrow letter shapes such as f, j, 1 and l
+lI З3 O0o
+$(perm \~ "$all")
 
-abcdefghijklmnopqrstuvwxyz
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-абвгдеёжзийклмнопрстуфхцчшщэюя
-АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯ
-инпипнишпнипшнипнпншпнпинпипнпипщнпипипин
-иннициатива шиорокошарикоподшипниковый взбзднуть гидроаэроионизация
-телегаммааппарат фельдъегерь четырёхсотпятидесятисемимиллиметровое
-превысокомногорассмотрительствующий вскользь забулдыжничество
-цецецница
 https://ru.wikipedia.org/wiki/Панграмма https://en.wikipedia.org/wiki/Pangram
 Экс-граф? Плюш изъят. Бьём чуждый цен хвощ!
 Waltz, bad nymph, for quick jigs vex
@@ -136,8 +165,7 @@ ohz $(printf "$ohz" | tr -d '[[:space:]]' ||:)
 g9q $(printf "$g9q" | shuf | tr -d '[[:space:]]' ||:)
 [];',.//|/\ &gt;- -&gt; ~~&lt; &lt;-- --&gt; == === ==&gt; &lt;==
 || {}:"&lt;&gt;?" Januardo90 repo2obj
-S in S9 59 S9 is like 5 also
-final fjord flair ft fff
+fligatures final fjord flair ft fff
 3ЗЭэзээз3ЗqgO0o ijklI1| bgqpykvwlliliiijil1 lLLl
 01234567890 3ДС ЗДС ӠДС ʒДС NYX - ПУХ
 rnrmnnmrrrnmmr <i>Nürnberg</i> (rn -> m)
@@ -174,6 +202,13 @@ b6&B80 bee-six-et-Bee-eight-zero
 sS5$$S  ess-Ess-five-dollar-Ess
 abcdefghijklmnopqrstuvwxyz .?!\'\"
 ABCDEFGHIJKLMNOPQRSTUVWXYZ ,;:-_
+абвгдеёжзийклмнопрстуфхцчшщэюя №%*()_+
+АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЭЮЯ
+инпипнишпнипшнипнпншпнпинпипнпипщнпипипин
+иннициатива шиорокошарикоподшипниковый взбзднуть гидроаэроионизация
+телегаммааппарат фельдъегерь четырёхсотпятидесятисемимиллиметровое
+превысокомногорассмотрительствующий вскользь забулдыжничество
+цецецница
 1234567890 ,._-+=>< --__ ~-+=><
 !@#$%^&*() <> \'\"\`~_-=+*\/|!?,.:;
 {}[]()<>$*-+=/#_%^@\&|~?'" !,.;: lI[[]|[1

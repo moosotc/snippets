@@ -602,7 +602,7 @@ has in in-house re-mapper, but, alas, no 3ze variants
   | 12 | [ ] | [     |
   | 13 | [?] | .,    |
   | 14 | [-] | '"    |
-** jura                     | no italic
+https://www.1001fonts.com/mint-spirit-font.html
 ** source code pro          | 2 -, 1 ?
   |  1 | [ ] | l     |
   |  2 | [ ] | I     |
@@ -619,7 +619,9 @@ has in in-house re-mapper, but, alas, no 3ze variants
   | 13 | [ ] | .,    |
   | 14 | [ ] | '"    |
 ** ---------------------------------------------------- SERIF
+** jura         | no italic
 ** merriweather | quick 01'
+** go           | quick 3,'
 * Rejection template
 ** | № -
   |  1 | [] | l     |
@@ -704,5 +706,4 @@ has in in-house re-mapper, but, alas, no 3ze variants
   | 13 | [ ] | .,    |                                        |
   | 14 | [?] | '"    | probably an issue                      |
 [1] https://en.wikipedia.org/wiki/Ouroboros
-https://www.1001fonts.com/mint-spirit-font.html
 * Currently testing

@@ -1,4 +1,4 @@
 #!/bin/sh
 set -e
 cd $HOME/tmp/wikicss
-wpget "${1-$(xclip -sel c -o)}"
+$(dirname $(readlink $0))/wpget "${1-$(xclip -sel c -o)}"

@@ -1,0 +1,13 @@
+body { margin-left: 10%; margin-right: 10%; }
+@font-face {
+    font-family: monospace;
+    src: local("monospace");
+}
+@font-face {
+    font-family: serif;
+    src: local("serif");
+}
+@font-face {
+    font-family: sans-serif;
+    src: local("sans-serif");
+}

@@ -23,16 +23,15 @@ set -eu
 
 mon0="fantasque sans mono"
 ans5="montserrat alternates"
-eri1="pt astra serif"
-eri5="pt serif"
 curs="mongolian writing"
+eri1="$curs"
+eri5="$curs"
 dudu="dudu cyryllic"
 mono="jetbrainsmono"
 kurn="kurinto olde core narrow"
-sans="pt serif"
-
+sans="$dudu"
 helv="$sans"
-ptsn="pt sans narrow"
+ptsn="beograd"
 
 droidsans="opensans 'open sans' 'noto sans' 'droid sans'"
 

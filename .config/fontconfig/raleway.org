@@ -1,3 +1,0 @@
-* Local changes to Raleway (poorly) made by hand in fontforge
-* ., made taller/beefier
-* 0 more egg and less o like

@@ -7,32 +7,22 @@ set -eu
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
-# beograd         https://www.fontspace.com/beograd-font-f28002
-# pt              https://www.paratype.ru/collections/pt/44157
-# raleway         https://github.com/impallari/Raleway
-#   (original)    https://github.com/theleagueof/raleway
-# dudu cyryllic   https://www.fontspace.com/vladmas
-# code2003        https://en.wikipedia.org/wiki/Code2000
-#                 https://www.fontspace.com/code2003-font-f24444
-# montserrat      https://github.com/JulietaUla/Montserrat/
-# fantasque sans
-#      mono       https://github.com/belluzj/fantasque-sans
-# symbol          https://source.winehq.org/git/wine.git/blob/HEAD:/fonts/symbol.ttf
-# mongolian
-#  writing        http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
+# beograd             https://www.fontspace.com/beograd-font-f28002
+# dudu cyryllic       https://www.fontspace.com/vladmas
+# code2003            https://en.wikipedia.org/wiki/Code2000
+#                     https://www.fontspace.com/code2003-font-f24444
+# montserrat          https://github.com/JulietaUla/Montserrat/
+# fantasque sans mono https://github.com/belluzj/fantasque-sans
+# mongolian writing   http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
-mon0="fantasque sans mono"
-ans5="montserrat alternates"
-curs="mongolian writing"
-eri1="$curs"
-eri5="$curs"
+fantasque="fantasque sans mono"
+bigsans="montserrat alternates"
+cursive="mongolian writing"
 dudu="dudu cyryllic"
-mono="jetbrainsmono"
-kurn="kurinto olde core narrow"
-sans="$dudu"
-helv="$sans"
-ptsn="beograd"
-
+serif="$fantasque"
+bigserif="beograd"
+helvetica="dudu cyryllic"
+jetmono="jetbrains mono"
 droidsans="opensans 'open sans' 'noto sans' 'droid sans'"
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -61,45 +51,13 @@ cat <<EOF
       <string>code2003</string>
     </edit>
   </match>
-  <match target="pattern">
-    <test name="family" compare="contains"><string>narrow</string></test>
-    <edit name="family" mode="assign_replace"><string>$ptsn</string></edit>
-  </match>
-  <match target="pattern">
-    <test name="family" compare="contains"><string>condensed</string></test>
-    <edit name="family" mode="assign"><string>$kurn</string></edit>
-  </match>
-  <match target="pattern">
-    <test name="family"><string>sub</string></test>
-    <test name="slant"><const>italic</const></test>
-    <edit name="family" mode="assign_replace" binding="strong">
-      <string>pt sans</string>
-    </edit>
-  </match>
-  <match target="pattern">
-    <test name="family"><string>sub</string></test>
-    <test name="weight" compare="more_eq"><const>bold</const></test>
-    <edit name="family" mode="assign_replace" binding="strong">
-      <string>pt sans</string>
-    </edit>
-  </match>
 EOF
 
-M "$mon0"         "ubuntu mono" "consolas" "courier" "courier new" "uimono"
-M "$sans"         "segoe ui" "roboto" "tahoma"
-M "$helv"         "sans-serif" "arial" "helvetica" "helvetica neue"
-M "$mon0"         "osd" "gtk"
-M "$dudu"         "comic sans ms" "sub" "trebuchet ms" "raleway"
-M "$mono"         "monospace"
-M "$eri1"         "serif" "times" "times new roman"
-M "$eri5"         "georgia" "lora" "noto serif" "droid serif"
-M "$ptsn"         "knockout 31 4r"
-eval M "'$ans5'"  "verdana" "'lucida grande'" "montserrat" $droidsans
-M "$curs"         "cursive"
+M "$fantasque" "sans-serif" "serif" "osd" "uimono" "prince-sans"
+M "$dudu"      "sub"
+M "$jetmono"   "monospace" "prince-mono"
 
-# learn yourself some cyrl/grek
-test "$(whoami)" = "malc" || ll="beograd" && ll="Greek Sigismundus"
-M "$ll" "linux libertine"
+M "$cursive"   "cursive"
 
 echo "</fontconfig>"
 

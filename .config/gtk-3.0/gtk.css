@@ -2,3 +2,7 @@ scrollbar slider {
     min-width: 12;
     background-color: #383838;
 }
+* {
+    /* https://forum.xfce.org/viewtopic.php?id=13166 */
+    font-family: monospace;
+}

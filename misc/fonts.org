@@ -572,6 +572,21 @@ main-rejection-reason: 0
   | 14 | [ ] | '"    |
 
 has in in-house re-mapper, but, alas, no 3ze variants
+** monoid                   | 1 -, 2 ?
+  |  1 | [ ] | l     |                    |
+  |  2 | [ ] | I     |                    |
+  |  3 | [ ] | 3     |                    |
+  |  4 | [ ] | З     |                    |
+  |  5 | [ ] | 1     | no-base-but-nose   |
+  |  6 | [?] | 9 g q | g-is-almost-q      |
+  |  7 | [ ] | 0     | 0-slashed          |
+  |  8 | [ ] | ~     |                    |
+  |  9 | [-] | S     |                    |
+  | 10 | [?] | rn    | mm is a ligature?? |
+  | 11 | [ ] | zhe   |                    |
+  | 12 | [ ] | [     |                    |
+  | 13 | [ ] | .,    |                    |
+  | 14 | [ ] | '"    |                    |
 * Rejection template
 ** | № -
   |  1 | [] | l     |

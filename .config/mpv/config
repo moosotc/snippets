@@ -6,8 +6,8 @@ alang=eng
 slang=eng
 sub=no
 hwdec=vaapi
-osd-font="osd"
-sub-font="sub"
+osd-font="fantasque sans mono"
+sub-font="dudu cyryllic"
 
 # COSTA RICA IN 4K 60fps HDR (ULTRA HD)-LXb3EKWsInQ.webm
 # with vo/gpu/vaapi-egl] unsupported VA image format p010

@@ -15,15 +15,14 @@ set -eu
 # fantasque sans mono https://github.com/belluzj/fantasque-sans
 # mongolian writing   http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
-fantasque="fantasque sans mono"
-bigsans="montserrat alternates"
-cursive="mongolian writing"
-dudu="dudu cyryllic"
-serif="$fantasque"
-bigserif="beograd"
-helvetica="dudu cyryllic"
-jetmono="jetbrains mono"
-droidsans="opensans 'open sans' 'noto sans' 'droid sans'"
+fantasque=fantasquesansmono
+montalt=montserratalternates
+cursive=mongolianwriting
+dudu=duducyryllic
+jetmono=jetbrainsmono
+
+serif=$fantasque
+helvetica=$dudu
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
@@ -53,12 +52,14 @@ cat <<EOF
   </match>
 EOF
 
-M "$fantasque" "sans-serif" "serif" "osd" "uimono" "prince-sans"
-M "$dudu"      "sub"
-M "$jetmono"   "monospace" "prince-mono"
-
+M "$fantasque" "sans-serif" "serif" "uimono"
+M "$jetmono"   "monospace"
 M "$cursive"   "cursive"
-
+M "$dudu"      "arial" "courier new" "times new roman"
+for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \
+                  "dejavu sans" "vera"; do
+    M "$montalt" "$f"
+done
 echo "</fontconfig>"
 
 # Local Variables:

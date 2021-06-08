@@ -1,14 +1,10 @@
 * '"
   is near universal :(
 * in use
-  ofl/ptsans                  - O0
   ofl/ptserif                 - O0
   ofl/montserratalternates    - S9 O0 YУ
-  raleway 4.101               - [] ~- g9 0 rn o0 I|
   jetbrainsmono               - yу
   fantasque sans mono         - молодо́й 3Ze
-  kurinto news core
-  kurinto olde core
   pt sans narrow
   beograd
   code2003
@@ -135,7 +131,6 @@ cd
 ** ofl/caveat                 - small
 ** ofl/pacifico               - hard to read
 * get and evaluate
-  https://github.com/larsenwork/monoid
 * second chance (3ze)
   3 and ze are "different enough"
 ** ofl/ebgaramond             - 3ze, l1, (small)

@@ -133,7 +133,7 @@ composing-room."
 |-----------------------+---------+-----------------------+-------------------|
 ** ___________________________________________________
 * Rejected
-** opensans                | 6
+** opensans                 | 6
   |  1 | [-] | l     |                                                    |
   |  2 | [-] | I     |                                                    |
   |  3 | [+] | 3     | has abkhasian dze                                  |
@@ -151,7 +151,7 @@ composing-room."
   google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
 
 main-rejection-reason: il
-** raleway v4020           | 6
+** raleway v4020            | 6
   |  1 | [ ] | l     |                                          |
   |  2 | [-] | I     |                                          |
   |  3 | [-] | 3     | old style figures, has abkhasian dze - Ӡ |
@@ -179,7 +179,7 @@ main-rejection-reason: il
   the fifth item would have been serifs on the I (capital eye)
 
 main-rejection-reason: ,.
-** nunito                  | 3
+** nunito                   | 3
   |  1 | [ ] | l     |                                             |
   |  2 | [-] | I     |                                             |
   |  3 | [+] | 3     | has abkhasian dze that can be remapped to 3 |
@@ -200,7 +200,7 @@ main-rejection-reason: ,.
   oh-zero is also an obstacle
 
 main-rejection-reason: IS"
-** source sans 3           | 3 -, 2 +, 2 ?
+** source sans 3            | 3 -, 2 +, 2 ?
   |  1 | [ ] | l     | bottom hook is very subtle, but it is there             |
   |  2 | [-] | I     |                                                         |
   |  3 | [+] | 3     | has abkhasian dze                                       |
@@ -217,7 +217,7 @@ main-rejection-reason: IS"
   | 14 | [-] | '"    |                                                         |
 
 main-rejection-reason: I
-** balsamiq sans           | 3 -, 2 +, 1 ?
+** balsamiq sans            | 3 -, 2 +, 1 ?
   |  1 | [-] | l     |                          |
   |  2 | [ ] | I     |                          |
   |  3 | [+] | 3     | flat-top-3-letters   |
@@ -234,7 +234,7 @@ main-rejection-reason: I
   | 14 | [-] | '"    |                          |
 
 main-rejection-reason: l
-** bellota                 | 4 -, 2 ?
+** bellota                  | 4 -, 2 ?
   |  1 | [ ] | l     |                                                    |
   |  2 | [ ] | I     |                                                    |
   |  3 | [-] | 3     | and ze are different, but problematic in isolation |
@@ -254,7 +254,7 @@ main-rejection-reason: l
 light, flourishing, appealing
 
 main-rejection-reason: 3
-** roboto                  | 5, 1 ?
+** roboto                   | 5, 1 ?
   |  1 | [-] | l     |                                                         |
   |  2 | [-] | I     |                                                         |
   |  3 | [+] | 3     | has abkhasian dze                                       |
@@ -272,7 +272,7 @@ main-rejection-reason: 3
   google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
 
 main-rejection-reason: l
-** bellota text            | 6 -
+** bellota text             | 6 -
   |  1 | [-] | l     |                  |
   |  2 | [-] | I     |                  |
   |  3 | [-] | 3     |                  |
@@ -290,7 +290,7 @@ main-rejection-reason: l
   light, appealing
 
 main-rejection-reason: ~
-** helvetica lt com roman  | 6 -
+** helvetica lt com roman   | 6 -
   |  1 | [-] | l     |                                   |
   |  2 | [-] | I     |                                   |
   |  3 | [-] | 3     |                                   |
@@ -307,7 +307,7 @@ main-rejection-reason: ~
   | 14 | [-] | '"    |                                   |
 
 main-rejection-reason: l
-** pragmatica              | 5 -, 1 +, 1 ?
+** pragmatica               | 5 -, 1 +, 1 ?
   |  1 | [-] | l     |                                               |
   |  2 | [-] | I     |                                               |
   |  3 | [+] | 3     | flat-top-3-letters                        |
@@ -324,7 +324,7 @@ main-rejection-reason: l
   | 14 | [-] | '"    |                                               |
 
 main-rejection-reason: l
-** fira sans               | 4 -, 2 +
+** fira sans                | 4 -, 2 +
   |  1 | [ ] | l     |                        |
   |  2 | [-] | I     |                        |
   |  3 | [+] | 3     | flat-top-3-letters |
@@ -341,7 +341,7 @@ main-rejection-reason: l
   | 14 | [-] | '"    |                        |
 
 main-rejection-reason: S
-** ibm plex mono           | 4 -
+** ibm plex mono            | 4 -
   |  1 | [-] | l     |                                 |
   |  2 | [ ] | I     |                                 |
   |  3 | [-] | 3     |                                 |
@@ -358,7 +358,7 @@ main-rejection-reason: S
   | 14 | [ ] | '"    |                                 |
 
 main-rejection-reason: l
-** ibm plex sans           | 5 -, 1 +
+** ibm plex sans            | 5 -, 1 +
   |  1 | [ ] | l     | bottom hook is small |
   |  2 | [ ] | I     |                      |
   |  3 | [-] | 3     |                      |
@@ -375,7 +375,7 @@ main-rejection-reason: l
   | 14 | [-] | '"    |                      |
 
 main-rejection-reason: torn between ze-3 _and_ es-5
-** lato                    | 3 -, 2 +
+** lato                     | 3 -, 2 +
   |  1 | [ ] | l     |                        |
   |  2 | [ ] | I     |                        |
   |  3 | [+] | 3     | flat-top-3-letters |
@@ -392,7 +392,7 @@ main-rejection-reason: torn between ze-3 _and_ es-5
   | 14 | [-] | '"    |                        |
 
 main-rejection-reason: l
-** montserrat              | 5 -, 1 +
+** montserrat               | 5 -, 1 +
   |  1 | [-] | l     |                                                    |
   |  2 | [-] | I     |                                                    |
   |  3 | [ ] | 3     |                                                    |
@@ -409,7 +409,7 @@ main-rejection-reason: l
   | 14 | [-] | '"    |                                                    |
 
 main-rejection-reason: l
-** nobile                  | 5 -, 1 +, 1 ?
+** nobile                   | 5 -, 1 +, 1 ?
   |  1 | [-] | l     |                         |
   |  2 | [ ] | I     |                         |
   |  3 | [-] | 3     | old style figures       |
@@ -426,7 +426,7 @@ main-rejection-reason: l
   | 14 | [-] | '"    |                         |
 
 main-rejection-reason: 3
-** noto nans               | 3 -, 2 +, 2 ?
+** noto nans                | 3 -, 2 +, 2 ?
   |  1 | [-] | l     |                                            |
   |  2 | [ ] | I     |                                            |
   |  3 | [+] | 3     | flat-top-3-letters                     |
@@ -443,7 +443,7 @@ main-rejection-reason: 3
   | 14 | [ ] | '"    |                                            |
 
 main-rejection-reason: l
-** nunito sans             | 2 -, 2 +
+** nunito sans              | 2 -, 2 +
   |  1 | [ ] | l     |                        |
   |  2 | [-] | I     |                        |
   |  3 | [+] | 3     | flat-top-3-letters |
@@ -460,7 +460,7 @@ main-rejection-reason: l
   | 14 | [ ] | '"    |                        |
 
 main-rejection-reason: I
-** source sans pro         | 5 -, 2 +
+** source sans pro          | 5 -, 2 +
   |  1 | [-] | l     | bottom-hook-too-small                          |
   |  2 | [-] | I     |                                                |
   |  3 | [+] | 3     | flat-top-3-letters                             |
@@ -478,7 +478,7 @@ main-rejection-reason: I
 
 main-rejection-reason: 0
 *
-** ubuntu                  | 3 -, 2 +, 1 - ?
+** ubuntu                   | 3 -, 2 +, 1 - ?
   |  1 | [ ] | l     |
   |  2 | [X] | I     |
   |  3 | [+] | 3     |
@@ -493,7 +493,7 @@ main-rejection-reason: 0
   | 12 | [ ] | [     |
   | 13 | [ ] | .,    |
   | 14 | [?] | '"    |
-** ascari sans light       | 4 -, 2 +, ?
+** ascari sans light        | 4 -, 2 +, ?
   |  1 | [ ] | l     | bottom hook is small (a-la source sans) |
   |  2 | [-] | I     |                                         |
   |  3 | [-] | 3     |                                         |
@@ -508,7 +508,7 @@ main-rejection-reason: 0
   | 12 | [ ] | [     | hooks-are-small                         |
   | 13 | [ ] | .,    |                                         |
   | 14 | [ ] | '"    |                                         |
-** hack                    | 5 -, 1 +, 1 ?
+** hack                     | 5 -, 1 +, 1 ?
   |  1 | [ ] | l     |                               |
   |  2 | [ ] | I     |                               |
   |  3 | [+] | 3     |                               |
@@ -525,7 +525,7 @@ main-rejection-reason: 0
   | 14 | [ ] | '"    |                               |
   | 15 | [-] | мм    | new entry! "телегаммааппарат" |
   no light
-** Neris Light             | 3 -, 2 +, 5 ?
+** Neris Light              | 3 -, 2 +, 5 ?
   |  1 | [ ] | l     | bottom-hook-is-tiny  |
   |  2 | [-] | I     |                      |
   |  3 | [+] | 3     |                      |
@@ -540,7 +540,7 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                      |
   | 13 | [?] | .,    |                      |
   | 14 | [-] | '"    |                      |
-** philosopher             | 4 -, 2 ?
+** philosopher              | 4 -, 2 ?
   |  1 | [-] | l     | top-left-pointing hook    |
   |  2 | [-] | I     | bottom-rigt-pointing-hook |
   |  3 | [ ] | 3     |                           |
@@ -555,6 +555,23 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                           |
   | 13 | [ ] | .,    |                           |
   | 14 | [-] | '"    |                           |
+** input sans (unfixable 3) | 1 -, 1 ?
+  |  1 | [ ] | l     |
+  |  2 | [ ] | I     |
+  |  3 | [+] | 3     |
+  |  4 | [ ] | З     |
+  |  5 | [ ] | 1     |
+  |  6 | [ ] | 9 g q |
+  |  7 | [ ] | 0     |
+  |  8 | [ ] | ~     |
+  |  9 | [?] | S     |
+  | 10 | [ ] | rn    |
+  | 11 | [ ] | zhe   |
+  | 12 | [ ] | [     |
+  | 13 | [ ] | .,    |
+  | 14 | [ ] | '"    |
+
+has in in-house re-mapper, but, alas, no 3ze variants
 * Rejection template
 ** | № -
   |  1 | [] | l     |
@@ -640,3 +657,4 @@ main-rejection-reason: 0
   | 14 | [?] | '"    | probably an issue                      |
 [1] https://en.wikipedia.org/wiki/Ouroboros
 https://www.1001fonts.com/mint-spirit-font.html
+* Currently testing

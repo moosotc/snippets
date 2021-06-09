@@ -94,7 +94,7 @@ EOF
         text $size >>"$html"
     done
     cat >>"$html" <<EOF
-    <pre>ʒȜӠᴣʒʓ oO0ѲØ∅</pre>
+    <pre>ʒȜӠᴣʒʓ oO0ѲØ 1o1O101Ѳ1Ø1∅øØ</pre>
     <br/>
     $(fc-scan -f '%{fullname} %{style} %{slant} %{file} %{fontversion} %{capability}' "$1" || file "$1")
     <br>$1

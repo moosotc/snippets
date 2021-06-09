@@ -11,12 +11,12 @@ set -eu
 # dudu cyryllic       https://www.fontspace.com/vladmas
 # code2003            https://en.wikipedia.org/wiki/Code2000
 #                     https://www.fontspace.com/code2003-font-f24444
-# montserrat          https://github.com/JulietaUla/Montserrat/
+# nunito              https://github.com/googlefonts/Nunito
 # fantasque sans mono https://github.com/belluzj/fantasque-sans
 # mongolian writing   http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
 fantasque="fantasque sans mono"
-montalt="montserrat alternates"
+bigsans="nunito"
 cursive="mongolian writing"
 dudu="dudu cyryllic"
 jetmono="jetbrains mono"
@@ -50,14 +50,13 @@ cat <<EOF
   </match>
 EOF
 
-M "$fantasque" "sans-serif" "serif" "uimono"
-M "$jetmono"   "monospace"
+M "$fantasque" "sans-serif" "serif" "uimono" "courier new"
+M "$jetmono"   "monospace" "helvetica"
 M "$cursive"   "cursive"
-M "$dudu"      "arial" "courier new" "times new roman"
 M "$grek"      "linux libertine"
 for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \
-                  "dejavu sans" "vera"; do
-    M "$montalt" "$f"
+                  "dejavu sans" "verdana" "vera"; do
+    M "$bigsans" "$f"
 done
 echo "</fontconfig>"
 

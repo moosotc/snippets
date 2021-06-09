@@ -1,6 +1,7 @@
 #!/bin/sh
 set -eu
 
+test -n "${2-}" || exec fleg "$*"
 font=$HOME/x/fnt/LastResort.ttf
 ! test -r $font || export LLPP_FALLBACK_FONT=$font
 
@@ -126,6 +127,7 @@ lI
 Il
 1l
 l1
+3S1O5lЗ0$
 "
 
 perm()  {

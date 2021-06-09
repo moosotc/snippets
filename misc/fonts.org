@@ -37,6 +37,7 @@
 *** https://модные-слова.рф
 **** stack
      tahoma, trebuchet ms, helvetica, sans-serif
+* periphery S9 is god awful in ubuntu mono and jetbrains mono
 * web
   lIiOo01З3S9g[],.~-~    Ӡ
   https://www.1001fonts.com/sans-serif-fonts.html
@@ -57,6 +58,9 @@
   hard to tell what it is if one is looking at - | ar maybe I? The
   situation is similar to 3З, but, perhaps, even worse. Also 1 like
   l... well... it introduces 1-l confusion
+
+  | lower case el with a left pointing top hook and no base is unacceptable |
+
 ** Offenders
 *** Noto Sans
 * sans serif with ...|
@@ -77,8 +81,8 @@
      pragmatica from paratype
   7. oh-zero
      almost all
-  8. tilde
-     ?
+  8. ~ tilde
+     alegreya sans, bellota text, fira sans (at pt6)
   9. S (upper case es) that is distinct from 5
      opensans
   10. rn (ar-en) that isn't m (em)

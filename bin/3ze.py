@@ -1,36 +1,35 @@
 # -*- coding: utf-8 -*-
-import sys, fontforge
+import sys, fontforge, getopt
 
-try:
-    if sys.argv[1] == '-0':
-        o0 = True
-        sys.argv = sys.argv[1:]
-        sys.argv.remove (1)
-    else:
-        o0 = False
-except:
-    sys.exit (1)
+opts, args = getopt.getopt (sys.argv[1:], "03")
+oh0 = False
+ze3 = False
+for opt in opts:
+    if opt[0] == "-0":
+        oh0 = True
+    if opt[0] == "-3":
+        ze3 = True
 
-a = fontforge.open(sys.argv[1])
-#ch = ord ('\N{LATIN CAPITAL LETTER YOGH}')
-#ch = ord ('\N{LATIN SMALL LETTER YOGH}') # descends beyond baselin
-#ch = ord ('\N{LATIN SMALL LETTER EZH}')
-ch = ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')
-a.selection.select (ch)
-
+a = fontforge.open (args[0])
 b = a
-a.copy ()
-b.selection.select("3")
-b.paste ()
 
-# 3ze.sh can't pass arguments down here so...
-o0 = True
-if o0:
-    ch = ord ('\N{LATIN CAPITAL LETTER O WITH STROKE}')
-    # ch = ord ('\N{CYRILLIC CAPITAL LETTER FITA}')
+if ze3:
+    #ch = ord ('\N{LATIN CAPITAL LETTER YOGH}')
+    #ch = ord ('\N{LATIN SMALL LETTER YOGH}') # descends beyond baselin
+    #ch = ord ('\N{LATIN SMALL LETTER EZH}')
+    ch = ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')
+    a.selection.select (ch)
+    b = a
+    a.copy ()
+    b.selection.select("3")
+    b.paste ()
+
+if oh0:
+    # ch = ord ('\N{LATIN CAPITAL LETTER O WITH STROKE}')
+    ch = ord ('\N{CYRILLIC CAPITAL LETTER FITA}')
     a.selection.select (ch)
     a.copy ()
     b.selection.select("0")
     b.paste ()
 
-b.generate(sys.argv[2], flags=("opentype", "no-hints"))
+b.generate(args[1], flags=("opentype", "no-hints"))

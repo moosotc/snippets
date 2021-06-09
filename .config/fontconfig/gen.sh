@@ -21,6 +21,8 @@ cursive="mongolian writing"
 dudu="dudu cyryllic"
 jetmono="jetbrains mono"
 grek="greek sigismundus"
+sans="nunito"
+bigsans="montserrat alternates"
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
@@ -50,14 +52,12 @@ cat <<EOF
   </match>
 EOF
 
-fantasque="nunito"
-M "$fantasque" "sans-serif" "serif" "uimono" "courier new"
+M "$sans"      "sans-serif" "segoe ui" "serif" "uimono" "courier new"
 M "$jetmono"   "monospace" "helvetica"
 M "$cursive"   "cursive"
 M "$grek"      "linux libertine"
-bigsans="montserrat alternates"
 for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \
-                  "dejavu sans" "verdana" "vera" "segoe ui"; do
+                  "dejavu sans" "verdana" "vera"; do
     M "$bigsans" "$f"
 done
 echo "</fontconfig>"

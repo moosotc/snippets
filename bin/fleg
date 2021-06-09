@@ -1,0 +1,108 @@
+#!/bin/sh
+set -eu
+
+font=$HOME/x/fnt/LastResort.ttf
+! test -r $font || export LLPP_FALLBACK_FONT=$font
+
+html=$HOME/.cache/llpp/fonts/leg.html
+command -v shuf &>/dev/null || shuf() { cat; }
+
+sep='&nbsp;'
+all="
+3
+З
+О
+0
+1
+ı
+l
+I
+9
+g
+q
+"
+
+all="
+1oop
+ho1e
+3ДС
+ЗДС
+S9
+.
+'
+gq
+qg
+-~
+~-
+--
+~~
+'
+''
+\"
+'\"
+\"'
+\"\"
+l
+I
+lI
+Il
+1l
+l1
+3S1OlЗ0$
+[.]
+[|]
+[l]
+[1]
+[I]
+[İ]
+"
+
+perm()  {
+    printf "$1 "
+    echo "$2" | shuf | tr -d '[[:space:]]'
+}
+
+text() {
+    cat <<EOF
+<pre style="font-size: ${1}pt;">
+кирилица $1<hr>
+lI 1l Il l1 З3 S9 O0o
+$(perm "l" "$all")
+</pre>
+EOF
+}
+
+maketext() {
+    # https://github.com/react-boilerplate/react-boilerplate/issues/1340
+    cat >"$html" <<EOF
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>$1</title>
+    <style type="text/css">
+      @font-face { font-family: moo; src: url('$1'); }
+      pre { font-family: moo; }
+    </style>
+  &quot;$({ fc-scan -f '%{family}' "$1" | head -30c; } || file "$1")&quot;
+  $(basename $1)
+  </head>
+<body>
+EOF
+    for size in 8 10 6 5 4; do
+        text $size >>"$html"
+    done
+    cat >>"$html" <<EOF
+    <pre>ʒȜӠᴣʒʓ oO0ѲØ∅</pre>
+    <br/>
+    $(fc-scan -f '%{fullname} %{style} %{slant} %{file} %{fontversion} %{capability}' "$1" || file "$1")
+    <br>$1
+  </body>
+</html>
+EOF
+}
+
+test -r "$1"
+maketext "$1"
+exec llpp -origin $1 $html

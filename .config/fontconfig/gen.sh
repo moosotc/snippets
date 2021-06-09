@@ -17,7 +17,6 @@ set -eu
 # mongolian writing     http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
 fantasque="fantasque sans mono"
-bigsans="montserrat alternates"
 cursive="mongolian writing"
 dudu="dudu cyryllic"
 jetmono="jetbrains mono"

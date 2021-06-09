@@ -57,9 +57,6 @@
   l... well... it introduces 1-l confusion
 
   | lower case el with a left pointing top hook and no base is unacceptable |
-
-** Offenders
-*** Noto Sans
 * sans serif with ...|
 ** |...features
    cyrl, italic, bold, bold-italic

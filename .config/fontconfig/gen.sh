@@ -7,13 +7,14 @@ set -eu
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
-# beograd             https://www.fontspace.com/beograd-font-f28002
-# dudu cyryllic       https://www.fontspace.com/vladmas
-# code2003            https://en.wikipedia.org/wiki/Code2000
-#                     https://www.fontspace.com/code2003-font-f24444
-# $bigsans            https://www. /
-# fantasque sans mono https://github.com/belluzj/fantasque-sans
-# mongolian writing   http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
+# beograd               https://www.fontspace.com/beograd-font-f28002
+# dudu cyryllic         https://www.fontspace.com/vladmas
+# code2003              https://en.wikipedia.org/wiki/Code2000
+#                       https://www.fontspace.com/code2003-font-f24444
+# montserrat alternates https://github.com/JulietaUla/Montserrat
+# nunito                https://github.com/googlefonts/Nunito
+# fantasque sans mono   https://github.com/belluzj/fantasque-sans
+# mongolian writing     http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
 fantasque="fantasque sans mono"
 bigsans="montserrat alternates"

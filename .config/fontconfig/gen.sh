@@ -52,8 +52,9 @@ cat <<EOF
   </match>
 EOF
 
-M "$sans"      "sans-serif" "segoe ui" "serif" "uimono" "courier new"
-M "$jetmono"   "monospace" "helvetica"
+M "$sans"      "sans-serif" "segoe ui" "serif" "uimono" "helvetica"
+M "$fantasque" "courier new" "monospace"
+M "$jetmono"   "mono"
 M "$cursive"   "cursive"
 M "$grek"      "linux libertine"
 for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \

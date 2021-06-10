@@ -89,6 +89,8 @@
       raleway
   14. apqote: it is immediatelly apparent that '' is  not "
       too many
+  15. dollar that is an S with an added element
+      nunito
 contemporary counter examples are listed bellow each item
 
 only regular versions were used while creating the following chart
@@ -129,6 +131,16 @@ composing-room."
 | pt sans               | circle  | taller oval           | bigger circle(?)  |
 | montserrat alternates | circle  | taller oval           | bigger circle     |
 |-----------------------+---------+-----------------------+-------------------|
+
+Experiment with nunito where an attemp was made to remap dotless zero to
+an slashed O and fita has shown that if
+O is circle and 0 is an oval:
+  numbers that include 0 feel rather out of place
+
+so auto-remapping 0 to the letter that have used Oh's shape as a base
+wouldn't do
+
+apparently 0 as a dotted/slashed variant of Oh really uses Oh as a base
 ** ___________________________________________________
 * Rejected
 ** opensans                 | 6
@@ -146,6 +158,7 @@ composing-room."
   | 12 | [ ] | [     |                                                    |
   | 13 | [ ] | .,    |                                                    |
   | 14 | [-] | '"    |                                                    |
+  | 15 | [ ] |       |                                                    |
   google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
 
 main-rejection-reason: il
@@ -164,6 +177,7 @@ main-rejection-reason: il
   | 12 | [ ] | [     |                                          |
   | 13 | [-] | .,    |                                          |
   | 14 | [ ] | '"    |                                          |
+  | 15 | [ ] |       |                                          |
   v4101 appears to not have changed wrt "issues"
   NOTE: Used modifief version [...] for a long while but then
         decided to not go into the trouble of modifying newer (v4101)
@@ -177,27 +191,6 @@ main-rejection-reason: il
   the fifth item would have been serifs on the I (capital eye)
 
 main-rejection-reason: ,.
-** nunito                   | 3
-  |  1 | [ ] | l     |                                             |
-  |  2 | [-] | I     |                                             |
-  |  3 | [+] | 3     | has abkhasian dze that can be remapped to 3 |
-  |  4 | [ ] | З     |                                             |
-  |  5 | [ ] | 1     |                                             |
-  |  6 | [ ] | 9 g q |                                             |
-  |  7 | [ ] | 0     | has ØѲ                                      |
-  |  8 | [ ] | ~     |                                             |
-  |  9 | [-] | S     |                                             |
-  | 10 | [ ] | rn    |                                             |
-  | 11 | [ ] | zhe   |                                             |
-  | 12 | [ ] | [     |                                             |
-  | 13 | [ ] | .,    |                                             |
-  | 14 | [-] | '"    |                                             |
-  looks light (like raleway does) [good thing]
-  5S issue is not easily fixable, authors passing, makes it harder still
-  same applies to '"
-  oh-zero is also an obstacle
-
-main-rejection-reason: IS"
 ** source sans 3            | 3 -, 2 +, 2 ?
   |  1 | [ ] | l     | bottom hook is very subtle, but it is there             |
   |  2 | [-] | I     |                                                         |
@@ -213,12 +206,13 @@ main-rejection-reason: IS"
   | 12 | [ ] | [     |                                                         |
   | 13 | [ ] | .,    |                                                         |
   | 14 | [-] | '"    |                                                         |
+  | 15 | [ ] |       |                                                         |
 
 main-rejection-reason: I
 ** balsamiq sans            | 3 -, 2 +, 1 ?
   |  1 | [-] | l     |                          |
   |  2 | [ ] | I     |                          |
-  |  3 | [+] | 3     | flat-top-3-letters   |
+  |  3 | [+] | 3     | flat-top-3-letters       |
   |  4 | [ ] | З     |                          |
   |  5 | [ ] | 1     | no base, pronounced nose |
   |  6 | [ ] | 9 g q |                          |
@@ -230,6 +224,7 @@ main-rejection-reason: I
   | 12 | [ ] | [     |                          |
   | 13 | [ ] | .,    |                          |
   | 14 | [-] | '"    |                          |
+  | 15 | [ ] |       |                          |
 
 main-rejection-reason: l
 ** bellota                  | 4 -, 2 ?
@@ -247,6 +242,7 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                                                    |
   | 13 | [-] | .,    | it appears that lighter faces suffert this 1)      |
   | 14 | [?] | '"    |                                                    |
+  | 15 | [ ] |       |                                                    |
 1. a) raleway also has this
    b) zoom in and . and , are clearly distinct
 light, flourishing, appealing
@@ -267,6 +263,7 @@ main-rejection-reason: 3
   | 12 | [ ] | [     |                                                         |
   | 13 | [ ] | .,    |                                                         |
   | 14 | [-] | '"    |                                                         |
+  | 15 | [ ] |       |                                                         |
   google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
 
 main-rejection-reason: l
@@ -277,7 +274,7 @@ main-rejection-reason: l
   |  4 | [ ] | З     |                  |
   |  5 | [ ] | 1     | no-base-but-nose |
   |  6 | [ ] | 9 g q |                  |
-  |  7 | [-] | 0     | scarred-Oh   |
+  |  7 | [-] | 0     | scarred-Oh       |
   |  8 | [-] | ~     |                  |
   |  9 | [ ] | S     |                  |
   | 10 | [ ] | rn    |                  |
@@ -285,6 +282,7 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                  |
   | 13 | [ ] | .,    |                  |
   | 14 | [-] | '"    |                  |
+  | 15 | [ ] |       |                  |
   light, appealing
 
 main-rejection-reason: ~
@@ -303,16 +301,17 @@ main-rejection-reason: ~
   | 12 | [ ] | [     |                                   |
   | 13 | [ ] | .,    |                                   |
   | 14 | [-] | '"    |                                   |
+  | 15 | [ ] |       |                                   |
 
 main-rejection-reason: l
 ** pragmatica               | 5 -, 1 +, 1 ?
   |  1 | [-] | l     |                                               |
   |  2 | [-] | I     |                                               |
-  |  3 | [+] | 3     | flat-top-3-letters                        |
+  |  3 | [+] | 3     | flat-top-3-letters                            |
   |  4 | [ ] | З     |                                               |
   |  5 | [ ] | 1     | no-base-but-nose                              |
   |  6 | [-] | 9 g q | gq can be mistaken for each other at a glance |
-  |  7 | [-] | 0     | scarred-Oh                                |
+  |  7 | [-] | 0     | scarred-Oh                                    |
   |  8 | [ ] | ~     |                                               |
   |  9 | [ ] | S     |                                               |
   | 10 | [?] | rn    | not sure                                      |
@@ -320,23 +319,25 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                                               |
   | 13 | [ ] | .,    |                                               |
   | 14 | [-] | '"    |                                               |
+  | 15 | [ ] |       |                                               |
 
 main-rejection-reason: l
 ** fira sans                | 4 -, 2 +
-  |  1 | [ ] | l     |                        |
-  |  2 | [-] | I     |                        |
+  |  1 | [ ] | l     |                    |
+  |  2 | [-] | I     |                    |
   |  3 | [+] | 3     | flat-top-3-letters |
-  |  4 | [ ] | З     |                        |
-  |  5 | [ ] | 1     |                        |
-  |  6 | [ ] | 9 g q |                        |
+  |  4 | [ ] | З     |                    |
+  |  5 | [ ] | 1     |                    |
+  |  6 | [ ] | 9 g q |                    |
   |  7 | [+] | 0     | scarred-Oh         |
-  |  8 | [-] | ~     |                        |
-  |  9 | [-] | S     |                        |
-  | 10 | [ ] | rn    |                        |
-  | 11 | [ ] | zhe   |                        |
-  | 12 | [ ] | [     |                        |
-  | 13 | [ ] | .,    |                        |
-  | 14 | [-] | '"    |                        |
+  |  8 | [-] | ~     |                    |
+  |  9 | [-] | S     |                    |
+  | 10 | [ ] | rn    |                    |
+  | 11 | [ ] | zhe   |                    |
+  | 12 | [ ] | [     |                    |
+  | 13 | [ ] | .,    |                    |
+  | 14 | [-] | '"    |                    |
+  | 15 | [ ] |       |                    |
 
 main-rejection-reason: S
 ** ibm plex mono            | 4 -
@@ -354,6 +355,7 @@ main-rejection-reason: S
   | 12 | [ ] | [     |                                 |
   | 13 | [ ] | .,    |                                 |
   | 14 | [ ] | '"    |                                 |
+  | 15 | [ ] |       |                                 |
 
 main-rejection-reason: l
 ** ibm plex sans            | 5 -, 1 +
@@ -363,7 +365,7 @@ main-rejection-reason: l
   |  4 | [ ] | З     |                      |
   |  5 | [ ] | 1     |                      |
   |  6 | [ ] | 9 g q |                      |
-  |  7 | [+] | 0     | scarred-Oh       |
+  |  7 | [+] | 0     | scarred-Oh           |
   |  8 | [-] | ~     |                      |
   |  9 | [-] | S     |                      |
   | 10 | [ ] | rn    |                      |
@@ -371,23 +373,25 @@ main-rejection-reason: l
   | 12 | [-] | [     | small small hooks    |
   | 13 | [ ] | .,    |                      |
   | 14 | [-] | '"    |                      |
+  | 15 | [ ] |       |                      |
 
 main-rejection-reason: torn between ze-3 _and_ es-5
 ** lato                     | 3 -, 2 +
-  |  1 | [ ] | l     |                        |
-  |  2 | [ ] | I     |                        |
+  |  1 | [ ] | l     |                    |
+  |  2 | [ ] | I     |                    |
   |  3 | [+] | 3     | flat-top-3-letters |
-  |  4 | [ ] | З     |                        |
-  |  5 | [ ] | 1     |                        |
-  |  6 | [ ] | 9 g q |                        |
+  |  4 | [ ] | З     |                    |
+  |  5 | [ ] | 1     |                    |
+  |  6 | [ ] | 9 g q |                    |
   |  7 | [+] | 0     | scarred-Oh         |
-  |  8 | [-] | ~     | - is too narrow        |
-  |  9 | [-] | S     |                        |
-  | 10 | [ ] | rn    |                        |
-  | 11 | [ ] | zhe   |                        |
-  | 12 | [ ] | [     |                        |
-  | 13 | [ ] | .,    |                        |
-  | 14 | [-] | '"    |                        |
+  |  8 | [-] | ~     | - is too narrow    |
+  |  9 | [-] | S     |                    |
+  | 10 | [ ] | rn    |                    |
+  | 11 | [ ] | zhe   |                    |
+  | 12 | [ ] | [     |                    |
+  | 13 | [ ] | .,    |                    |
+  | 14 | [-] | '"    |                    |
+  | 15 | [ ] |       |                    |
 
 main-rejection-reason: l
 ** montserrat               | 5 -, 1 +
@@ -397,7 +401,7 @@ main-rejection-reason: l
   |  4 | [ ] | З     |                                                    |
   |  5 | [-] | 1     |                                                    |
   |  6 | [ ] | 9 g q |                                                    |
-  |  7 | [+] | 0     | scarred-Oh                                     |
+  |  7 | [+] | 0     | scarred-Oh                                         |
   |  8 | [ ] | ~     |                                                    |
   |  9 | [-] | S     |                                                    |
   | 10 | [ ] | rn    |                                                    |
@@ -405,6 +409,7 @@ main-rejection-reason: l
   | 12 | [ ] | [     | on the vere of not passing by hook being too small |
   | 13 | [ ] | .,    |                                                    |
   | 14 | [-] | '"    |                                                    |
+  | 15 | [ ] |       |                                                    |
 
 main-rejection-reason: l
 ** nobile                   | 5 -, 1 +, 1 ?
@@ -414,7 +419,7 @@ main-rejection-reason: l
   |  4 | [ ] | З     |                         |
   |  5 | [-] | 1     | no-base-nose-too-narrow |
   |  6 | [ ] | 9 g q |                         |
-  |  7 | [+] | 0     | scarred-Oh          |
+  |  7 | [+] | 0     | scarred-Oh              |
   |  8 | [-] | ~     |                         |
   |  9 | [?] | S     |                         |
   | 10 | [ ] | rn    |                         |
@@ -422,16 +427,17 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                         |
   | 13 | [ ] | .,    |                         |
   | 14 | [-] | '"    |                         |
+  | 15 | [ ] |       |                         |
 
 main-rejection-reason: 3
 ** noto nans                | 3 -, 2 +, 2 ?
   |  1 | [-] | l     |                                            |
   |  2 | [ ] | I     |                                            |
-  |  3 | [+] | 3     | flat-top-3-letters                     |
+  |  3 | [+] | 3     | flat-top-3-letters                         |
   |  4 | [ ] | З     |                                            |
   |  5 | [ ] | 1     | nose is smallish, but distinguished enough |
   |  6 | [?] | 9 g q |                                            |
-  |  7 | [+] | 0     | scarred-Oh                             |
+  |  7 | [+] | 0     | scarred-Oh                                 |
   |  8 | [-] | ~     |                                            |
   |  9 | [-] | S     |                                            |
   | 10 | [?] | rn    |                                            |
@@ -439,23 +445,25 @@ main-rejection-reason: 3
   | 12 | [ ] | [     | smallish hooks                             |
   | 13 | [ ] | .,    |                                            |
   | 14 | [ ] | '"    |                                            |
+  | 15 | [ ] |       |                                            |
 
 main-rejection-reason: l
 ** nunito sans              | 2 -, 2 +
-  |  1 | [ ] | l     |                        |
-  |  2 | [-] | I     |                        |
+  |  1 | [ ] | l     |                    |
+  |  2 | [-] | I     |                    |
   |  3 | [+] | 3     | flat-top-3-letters |
-  |  4 | [ ] | З     |                        |
-  |  5 | [ ] | 1     | base-small-nose        |
-  |  6 | [ ] | 9 g q |                        |
-  |  7 | [+] | 0     | scarred-Ohs            |
-  |  8 | [ ] | ~     |                        |
-  |  9 | [-] | S     |                        |
-  | 10 | [ ] | rn    |                        |
-  | 11 | [ ] | zhe   |                        |
-  | 12 | [ ] | [     | smallish hooks         |
-  | 13 | [ ] | .,    |                        |
-  | 14 | [ ] | '"    |                        |
+  |  4 | [ ] | З     |                    |
+  |  5 | [ ] | 1     | base-small-nose    |
+  |  6 | [ ] | 9 g q |                    |
+  |  7 | [+] | 0     | scarred-Ohs        |
+  |  8 | [ ] | ~     |                    |
+  |  9 | [-] | S     |                    |
+  | 10 | [ ] | rn    |                    |
+  | 11 | [ ] | zhe   |                    |
+  | 12 | [ ] | [     | smallish hooks     |
+  | 13 | [ ] | .,    |                    |
+  | 14 | [ ] | '"    |                    |
+  | 15 | [-] |       |                    |
 
 main-rejection-reason: I
 ** source sans pro          | 5 -, 2 +
@@ -473,24 +481,27 @@ main-rejection-reason: I
   | 12 | [ ] | [     |                                                |
   | 13 | [ ] | .,    |                                                |
   | 14 | [-] | '"    |                                                |
+  | 15 | [ ] |       |                                   |
 
 main-rejection-reason: 0
 *
 ** ubuntu                   | 3 -, 2 +, 1 - ?
-  |  1 | [ ] | l     |
-  |  2 | [X] | I     |
-  |  3 | [+] | 3     |
-  |  4 | [X] | З     |
-  |  5 | [ ] | 1     |
-  |  6 | [ ] | 9 g q |
-  |  7 | [+] | 0     |
-  |  8 | [ ] | ~     |
-  |  9 | [X] | S     |
-  | 10 | [ ] | rn    |
-  | 11 | [ ] | zhe   |
-  | 12 | [ ] | [     |
-  | 13 | [ ] | .,    |
-  | 14 | [?] | '"    |
+  |  1 | [ ] | l     |   |
+  |  2 | [X] | I     |   |
+  |  3 | [+] | 3     |   |
+  |  4 | [X] | З     |   |
+  |  5 | [ ] | 1     |   |
+  |  6 | [ ] | 9 g q |   |
+  |  7 | [+] | 0     |   |
+  |  8 | [ ] | ~     |   |
+  |  9 | [X] | S     |   |
+  | 10 | [ ] | rn    |   |
+  | 11 | [ ] | zhe   |   |
+  | 12 | [ ] | [     |   |
+  | 13 | [ ] | .,    |   |
+  | 14 | [?] | '"    |   |
+  | 15 | [ ] |       |   |
+
 ** ascari sans light        | 4 -, 2 +, ?
   |  1 | [ ] | l     | bottom hook is small (a-la source sans) |
   |  2 | [-] | I     |                                         |
@@ -506,6 +517,7 @@ main-rejection-reason: 0
   | 12 | [ ] | [     | hooks-are-small                         |
   | 13 | [ ] | .,    |                                         |
   | 14 | [ ] | '"    |                                         |
+  | 15 | [ ] |       |                                   |
 ** hack                     | 5 -, 1 +, 1 ?
   |  1 | [ ] | l     |                               |
   |  2 | [ ] | I     |                               |
@@ -521,7 +533,8 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                               |
   | 13 | [ ] | .,    |                               |
   | 14 | [ ] | '"    |                               |
-  | 15 | [-] | мм    | new entry! "телегаммааппарат" |
+  | 15 | [ ] |       |                               |
+  | 16 | [-] | мм    | new entry! "телегаммааппарат" |
   no light
 ** Neris Light              | 3 -, 2 +, 5 ?
   |  1 | [ ] | l     | bottom-hook-is-tiny  |
@@ -538,6 +551,7 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                      |
   | 13 | [?] | .,    |                      |
   | 14 | [-] | '"    |                      |
+  | 15 | [ ] |       |                      |
 ** philosopher              | 4 -, 2 ?
   |  1 | [-] | l     | top-left-pointing hook    |
   |  2 | [-] | I     | bottom-rigt-pointing-hook |
@@ -553,21 +567,23 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                           |
   | 13 | [ ] | .,    |                           |
   | 14 | [-] | '"    |                           |
+  | 15 | [ ] |       |                           |
 ** input sans (unfixable 3) | 1 -, 1 ?
-  |  1 | [ ] | l     |
-  |  2 | [ ] | I     |
-  |  3 | [+] | 3     |
-  |  4 | [ ] | З     |
-  |  5 | [ ] | 1     |
-  |  6 | [ ] | 9 g q |
-  |  7 | [ ] | 0     |
-  |  8 | [ ] | ~     |
-  |  9 | [?] | S     |
-  | 10 | [ ] | rn    |
-  | 11 | [ ] | zhe   |
-  | 12 | [ ] | [     |
-  | 13 | [ ] | .,    |
-  | 14 | [ ] | '"    |
+  |  1 | [ ] | l     |   |
+  |  2 | [ ] | I     |   |
+  |  3 | [+] | 3     |   |
+  |  4 | [ ] | З     |   |
+  |  5 | [ ] | 1     |   |
+  |  6 | [ ] | 9 g q |   |
+  |  7 | [ ] | 0     |   |
+  |  8 | [ ] | ~     |   |
+  |  9 | [?] | S     |   |
+  | 10 | [ ] | rn    |   |
+  | 11 | [ ] | zhe   |   |
+  | 12 | [ ] | [     |   |
+  | 13 | [ ] | .,    |   |
+  | 14 | [ ] | '"    |   |
+  | 15 | [ ] |       |   |
 
 has in in-house re-mapper, but, alas, no 3ze variants
 ** monoid                   | 1 -, 2 ?
@@ -585,37 +601,64 @@ has in in-house re-mapper, but, alas, no 3ze variants
   | 12 | [ ] | [     |                    |
   | 13 | [ ] | .,    |                    |
   | 14 | [ ] | '"    |                    |
+  | 15 | [ ] |       |                    |
 ** mint spirit              | 6 -, 4 ?
-  |  1 | [ ] | l     |
-  |  2 | [-] | I     |
-  |  3 | [-] | 3     |
-  |  4 | [ ] | З     |
-  |  5 | [?] | 1     |
-  |  6 | [?] | 9 g q |
-  |  7 | [-] | 0     |
-  |  8 | [?] | ~     |
-  |  9 | [-] | S     |
-  | 10 | [-] | rn    |
-  | 11 | [ ] | zhe   |
-  | 12 | [ ] | [     |
-  | 13 | [?] | .,    |
-  | 14 | [-] | '"    |
+  |  1 | [ ] | l     |   |
+  |  2 | [-] | I     |   |
+  |  3 | [-] | 3     |   |
+  |  4 | [ ] | З     |   |
+  |  5 | [?] | 1     |   |
+  |  6 | [?] | 9 g q |   |
+  |  7 | [-] | 0     |   |
+  |  8 | [?] | ~     |   |
+  |  9 | [-] | S     |   |
+  | 10 | [-] | rn    |   |
+  | 11 | [ ] | zhe   |   |
+  | 12 | [ ] | [     |   |
+  | 13 | [?] | .,    |   |
+  | 14 | [-] | '"    |   |
+  | 15 | [ ] |       |   |
+
 https://www.1001fonts.com/mint-spirit-font.html
 ** source code pro          | 2 -, 1 ?
-  |  1 | [ ] | l     |
-  |  2 | [ ] | I     |
-  |  3 | [-] | 3     |
-  |  4 | [ ] | З     |
-  |  5 | [ ] | 1     |
-  |  6 | [ ] | 9 g q |
-  |  7 | [ ] | 0     |
-  |  8 | [?] | ~     |
-  |  9 | [-] | S     |
-  | 10 | [ ] | rn    |
-  | 11 | [ ] | zhe   |
-  | 12 | [ ] | [     |
-  | 13 | [ ] | .,    |
-  | 14 | [ ] | '"    |
+  |  1 | [ ] | l     |   |
+  |  2 | [ ] | I     |   |
+  |  3 | [-] | 3     |   |
+  |  4 | [ ] | З     |   |
+  |  5 | [ ] | 1     |   |
+  |  6 | [ ] | 9 g q |   |
+  |  7 | [ ] | 0     |   |
+  |  8 | [?] | ~     |   |
+  |  9 | [-] | S     |   |
+  | 10 | [ ] | rn    |   |
+  | 11 | [ ] | zhe   |   |
+  | 12 | [ ] | [     |   |
+  | 13 | [ ] | .,    |   |
+  | 14 | [ ] | '"    |   |
+  | 15 | [ ] |       |   |
+
+** pt sans                  | 3
+  |  1 | [ ] | l     |                        |
+  |  2 | [-] | I     |                        |
+  |  3 | [ ] | 3     |                        |
+  |  4 | [ ] | З     |                        |
+  |  5 | [ ] | 1     |                        |
+  |  6 | [ ] | 9 g q |                        |
+  |  7 | [-] | 0     | oh is fat(ter), has ØØ |
+  |  8 | [ ] | ~     |                        |
+  |  9 | [-] | S     |                        |
+  | 10 | [ ] | rn    |                        |
+  | 11 | [ ] | zhe   |                        |
+  | 12 | [ ] | [     |                        |
+  | 13 | [ ] | .,    |                        |
+  | 14 | [ ] | '"    |                        |
+  | 15 | [ ] |       |                        |
+  pt root ui is pt sans with an additional 3ze issue and no italics
+  pt astra sans is based on pt sans
+  { if memory serves "pt astra sans" was created as a substitute for
+    "times new roman" so that document typeset in TNR continued to
+    be usable with "pt astra serif" (and "pt astra sans"!) instead
+  }
 ** ---------------------------------------------------- SERIF
 ** jura         | no italic
 ** merriweather | quick 01'
@@ -637,6 +680,8 @@ https://www.1001fonts.com/mint-spirit-font.html
   | 13 | [] | .,    |
   | 14 | [] | '"    |
 * In use
+Main reason for chosing nunito over pt sans:
+  nunito has a light version
 ** jet brains mono         | 0
   |  1 | [ ] | l     |
   |  2 | [ ] | I     |
@@ -667,27 +712,6 @@ https://www.1001fonts.com/mint-spirit-font.html
   | 12 | [ ] | [     |                                                      |
   | 13 | [ ] | .,    |                                                      |
   | 14 | [ ] | '"    |                                                      |
-** pt sans                 | 3
-  |  1 | [ ] | l     |                        |
-  |  2 | [-] | I     |                        |
-  |  3 | [ ] | 3     |                        |
-  |  4 | [ ] | З     |                        |
-  |  5 | [ ] | 1     |                        |
-  |  6 | [ ] | 9 g q |                        |
-  |  7 | [-] | 0     | oh is fat(ter), has ØØ |
-  |  8 | [ ] | ~     |                        |
-  |  9 | [-] | S     |                        |
-  | 10 | [ ] | rn    |                        |
-  | 11 | [ ] | zhe   |                        |
-  | 12 | [ ] | [     |                        |
-  | 13 | [ ] | .,    |                        |
-  | 14 | [ ] | '"    |                        |
-  pt root ui is pt sans with an additional 3ze issue and no italics
-  pt astra sans is based on pt sans
-  { if memory serves "pt astra sans" was created as a substitute for
-    "times new roman" so that document typeset in TNR continued to
-    be usable with "pt astra serif" (and "pt astra sans"!) instead
-  }
 ** montserrat alternates   | 5
   |  1 | [ ] | l     |                                        |
   |  2 | [ ] | I     |                                        |
@@ -704,4 +728,29 @@ https://www.1001fonts.com/mint-spirit-font.html
   | 13 | [ ] | .,    |                                        |
   | 14 | [?] | '"    | probably an issue                      |
 [1] https://en.wikipedia.org/wiki/Ouroboros
+** nunito                   | 3
+  |  1 | [ ] | l     |                                             |
+  |  2 | [-] | I     |                                             |
+  |  3 | [+] | 3     | has abkhasian dze that can be remapped to 3 |
+  |  4 | [ ] | З     |                                             |
+  |  5 | [ ] | 1     |                                             |
+  |  6 | [ ] | 9 g q |                                             |
+  |  7 | [-] | 0     | has ØѲ                                      |
+  |  8 | [ ] | ~     |                                             |
+  |  9 | [-] | S     |                                             |
+  | 10 | [ ] | rn    |                                             |
+  | 11 | [ ] | zhe   |                                             |
+  | 12 | [ ] | [     |                                             |
+  | 13 | [ ] | .,    |                                             |
+  | 14 | [-] | '"    |                                             |
+  looks light (like raleway does) [good thing]
+  5S issue is not easily fixable, authors passing, makes it harder still
+  same applies to '"
+  oh-zero is also an obstacle
+  $ is $ with two short lines on top and bottom
+-- main-rejection-reason: IS"
+
+ended using light version after all
+with 3ze.py remap(CYRILLIC CAPITAL LETTER ABKHASIAN DZE)
+and manually "dotting" zero in fontforge
 * Currently testing

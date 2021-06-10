@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eux
+cur=$(xdotool get_desktop)
+trap 'echo $cur >/tmp/prevdesktopnum' EXIT
+num=$(cat /tmp/prevdesktopnum) || exit 0
+xdotool set_desktop $num

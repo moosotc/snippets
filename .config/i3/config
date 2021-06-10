@@ -42,6 +42,7 @@ bindcode $win+45 focus left
 bindcode $win+46 focus right
 bindcode $win+44 workspace prev
 bindcode $win+47 workspace next
+bindcode $win+Shift+44 $execnoid desktop-cycle
 
 # move focused window
 #bindcode $win+Shift+44 move left

@@ -8,19 +8,6 @@ html=$HOME/.cache/llpp/fonts/leg.html
 command -v shuf &>/dev/null || shuf() { cat; }
 
 sep='&nbsp;'
-all="
-3
-З
-О
-0
-1
-ı
-l
-I
-9
-g
-q
-"
 
 all="
 1oop
@@ -48,7 +35,9 @@ lI
 Il
 1l
 l1
-3S1OlЗ0$
+3S1OlЗ0\$S
+Start
+\$tart
 [.]
 [|]
 [l]
@@ -64,6 +53,7 @@ perm()  {
 
 text() {
     cat <<EOF
+<br/>кирилица $1<hr>
 <pre style="font-size: ${1}pt;">
 кирилица $1<hr>
 lI 1l Il l1 З3 S9 O0o
@@ -89,6 +79,7 @@ maketext() {
   $(basename $1)
   </head>
 <body>
+b0dy
 EOF
     for size in 8 10 6 5 4; do
         text $size >>"$html"

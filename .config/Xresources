@@ -5,6 +5,6 @@ emacs.geometry: 80x40+1387+519
 emacs.background: grey80
 emacs.toolBar: 0
 emacs.fontBackend: xft
-emacs.font: jetbrainsmono:light:pixelsize=22
+emacs*font: jetbrainsmono:light:pixelsize=22
 emacs.scrollBarWidth: 7
 emacs.menuBar: 0

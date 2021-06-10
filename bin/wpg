@@ -1,4 +1,7 @@
 #!/bin/sh
 set -e
 cd $HOME/tmp/wikicss
-$(dirname $(readlink $0))/wpget "${1-$(xclip -sel c -o)}"
+src="${1-$(xclip -sel c -o)}"
+out=$($(dirname $(readlink $(command -v $0)))/wpget $src)
+! test $# -gt 0 || shift
+exec llpp -origin $src $out "$@"

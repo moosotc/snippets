@@ -14,3 +14,4 @@ prince                                                  \
     --javascript                                        \
     --media screen                                      \
     -s file://$td/../misc/wiki2.css "$url" -o "$out"
+echo "$out"

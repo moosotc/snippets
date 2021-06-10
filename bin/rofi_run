@@ -1,2 +1,2 @@
 #!/bin/sh
-rofi -terminal stwrap -show run -bg '#494b4b' -fg white "$@"
+exec rofi -font 'jetbrainsmono 24' -show run "$@"

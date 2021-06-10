@@ -40,10 +40,9 @@ bindsym $win+Down focus right
 
 bindcode $win+45 focus left
 bindcode $win+46 focus right
-#bindcode $win+44 workspace prev
-#bindcode $win+47 workspace next
-bindcode $win+44 $execnoid desktop-cycle
-bindcode $win+47 $execnoid desktop-cycle
+bindcode $win+44 workspace prev
+bindcode $win+47 workspace next
+bindcode $win+43 workspace back_and_forth
 
 # move focused window
 #bindcode $win+Shift+44 move left

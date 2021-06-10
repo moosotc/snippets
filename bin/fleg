@@ -36,14 +36,8 @@ Il
 1l
 l1
 3S1OlЗ0\$S
-Start
-\$tart
-[.]
-[|]
-[l]
-[1]
-[I]
-[İ]
+Star
+\$tar
 "
 
 perm()  {
@@ -55,7 +49,7 @@ text() {
     cat <<EOF
 <br/>кирилица $1<hr>
 <pre style="font-size: ${1}pt;">
-кирилица $1<hr>
+\$S\$s\$5hmmаммаhm<i/>mb8B0dy кирилица $1<hr>
 lI 1l Il l1 З3 S9 O0o
 $(perm "l" "$all")
 </pre>
@@ -79,7 +73,6 @@ maketext() {
   $(basename $1)
   </head>
 <body>
-b0dy
 EOF
     for size in 8 10 6 5 4; do
         text $size >>"$html"

@@ -1,2 +1,2 @@
 #!/bin/sh
-exec rofi -font 'jetbrainsmono 24' -show run "$@"
+exec rofi -show run "$@"

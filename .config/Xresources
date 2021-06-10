@@ -8,3 +8,5 @@ emacs.fontBackend: xft
 emacs*font: jetbrainsmono:light:pixelsize=22
 emacs.scrollBarWidth: 7
 emacs.menuBar: 0
+
+rofi.font: jetbrainsmono 24

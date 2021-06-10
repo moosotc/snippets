@@ -37,7 +37,8 @@
 *** https://модные-слова.рф
 **** stack
      tahoma, trebuchet ms, helvetica, sans-serif
-* periphery S9 is god awful in ubuntu mono and jetbrains mono
+* periphery S9 is 59 when typeset in ubuntu mono and jetbrains mono
+*  [with no numbers around and with periphery vision]
 * web
   lIiOo01З3S9g[],.~-~    Ӡ
   https://www.1001fonts.com/sans-serif-fonts.html

@@ -144,7 +144,7 @@ wouldn't do
 apparently 0 as a dotted/slashed variant of Oh really uses Oh as a base
 ** ___________________________________________________
 * Rejected
-** opensans                 | 6
+** opensans                 | -=6 | +=1 |
   |  1 | [-] | l     |                                                    |
   |  2 | [-] | I     |                                                    |
   |  3 | [+] | 3     | has abkhasian dze                                  |
@@ -159,11 +159,12 @@ apparently 0 as a dotted/slashed variant of Oh really uses Oh as a base
   | 12 | [ ] | [     |                                                    |
   | 13 | [ ] | .,    |                                                    |
   | 14 | [-] | '"    |                                                    |
-  | 15 | [ ] |       |                                                    |
+  | 15 | [ ] | мм  |                                                    |
+  | 16 | [ ] | $S    |                                                    |
   google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
 
 main-rejection-reason: il
-** raleway v4020            | 6
+** raleway v4020            | -=6 |
   |  1 | [ ] | l     |                                          |
   |  2 | [-] | I     |                                          |
   |  3 | [-] | 3     | old style figures, has abkhasian dze - Ӡ |
@@ -178,7 +179,8 @@ main-rejection-reason: il
   | 12 | [ ] | [     |                                          |
   | 13 | [-] | .,    |                                          |
   | 14 | [ ] | '"    |                                          |
-  | 15 | [ ] |       |                                          |
+  | 15 | [ ] | мм    |                                          |
+  | 16 | [ ] | $S    |                                          |
   v4101 appears to not have changed wrt "issues"
   NOTE: Used modifief version [...] for a long while but then
         decided to not go into the trouble of modifying newer (v4101)
@@ -192,32 +194,33 @@ main-rejection-reason: il
   the fifth item would have been serifs on the I (capital eye)
 
 main-rejection-reason: ,.
-** source sans 3            | 3 -, 2 +, 2 ?
-  |  1 | [ ] | l     | bottom hook is very subtle, but it is there             |
-  |  2 | [-] | I     |                                                         |
-  |  3 | [+] | 3     | has abkhasian dze                                       |
-  |  4 | [ ] | З     |                                                         |
-  |  5 | [?] | 1     | nose is very subtle, but it is there, as is the base    |
-  |  6 | [ ] | 9 g q | double storey g                                         |
-  |  7 | [+] | 0     | has several zero-like slashed-barred-striked Oh letters |
-  |  8 | [ ] | ~     |                                                         |
-  |  9 | [-] | S     |                                                         |
-  | 10 | [?] | rn    | not sure - WN pointing roof                             |
-  | 11 | [ ] | zhe   |                                                         |
-  | 12 | [ ] | [     |                                                         |
-  | 13 | [ ] | .,    |                                                         |
-  | 14 | [-] | '"    |                                                         |
-  | 15 | [ ] |       |                                                         |
+** source sans 3            | -=4 | +=1 | ?=3 |
+  |  1 | [ ] | l     | bottom hook is very subtle, but it is there          |
+  |  2 | [-] | I     |                                                      |
+  |  3 | [+] | 3     | has abkhasian dze                                    |
+  |  4 | [ ] | З     |                                                      |
+  |  5 | [?] | 1     | nose is very subtle, but it is there, as is the base |
+  |  6 | [ ] | 9 g q | double storey g                                      |
+  |  7 | [-] | 0     |                                                      |
+  |  8 | [ ] | ~     |                                                      |
+  |  9 | [-] | S     |                                                      |
+  | 10 | [?] | rn    | not sure - WN pointing roof                          |
+  | 11 | [ ] | zhe   |                                                      |
+  | 12 | [ ] | [     |                                                      |
+  | 13 | [ ] | .,    |                                                      |
+  | 14 | [-] | '"    |                                                      |
+  | 15 | [ ] | мм    |                                                      |
+  | 16 | [?] | $S    |                                                      |
 
 main-rejection-reason: I
-** balsamiq sans            | 3 -, 2 +, 1 ?
+** balsamiq sans            | -=4 | +=1 | ?=1 |
   |  1 | [-] | l     |                          |
   |  2 | [ ] | I     |                          |
   |  3 | [+] | 3     | flat-top-3-letters       |
   |  4 | [ ] | З     |                          |
   |  5 | [ ] | 1     | no base, pronounced nose |
   |  6 | [ ] | 9 g q |                          |
-  |  7 | [+] | 0     | has scarred-Ohs          |
+  |  7 | [-] | 0     |                          |
   |  8 | [ ] | ~     | - is very short          |
   |  9 | [-] | S     |                          |
   | 10 | [?] | rn    | not sure                 |
@@ -225,17 +228,18 @@ main-rejection-reason: I
   | 12 | [ ] | [     |                          |
   | 13 | [ ] | .,    |                          |
   | 14 | [-] | '"    |                          |
-  | 15 | [ ] |       |                          |
+  | 15 | [ ] | мм    |                          |
+  | 16 | [ ] | $S    |                          |
 
 main-rejection-reason: l
-** bellota                  | 4 -, 2 ?
+** bellota                  | -=4 | +=2 |
   |  1 | [ ] | l     |                                                    |
   |  2 | [ ] | I     |                                                    |
   |  3 | [-] | 3     | and ze are different, but problematic in isolation |
   |  4 | [ ] | З     |                                                    |
   |  5 | [ ] | 1     | has no base, but pronounced enough nose            |
   |  6 | [ ] | 9 g q | g has a closed loop bottom storey                  |
-  |  7 | [-] | 0     | has scarred-Ohs                                    |
+  |  7 | [-] | 0     |                                                    |
   |  8 | [-] | ~     |                                                    |
   |  9 | [ ] | S     |                                                    |
   | 10 | [?] | rn    |                                                    |
@@ -243,39 +247,21 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                                                    |
   | 13 | [-] | .,    | it appears that lighter faces suffert this 1)      |
   | 14 | [?] | '"    |                                                    |
-  | 15 | [ ] |       |                                                    |
+  | 15 | [ ] | мм    |                                                    |
+  | 16 | [ ] | $S    |                                                    |
 1. a) raleway also has this
    b) zoom in and . and , are clearly distinct
 light, flourishing, appealing
 
 main-rejection-reason: 3
-** roboto                   | 5, 1 ?
-  |  1 | [-] | l     |                                                         |
-  |  2 | [-] | I     |                                                         |
-  |  3 | [+] | 3     | has abkhasian dze                                       |
-  |  4 | [ ] | З     |                                                         |
-  |  5 | [?] | 1     | no base, short nose                                     |
-  |  6 | [ ] | 9 g q |                                                         |
-  |  7 | [+] | 0     | has several zero-like slashed-barred-striked Oh letters |
-  |  8 | [ ] | ~     | ~ at midpoint but hooks are pronounced                  |
-  |  9 | [-] | S     |                                                         |
-  | 10 | [-] | rn    |                                                         |
-  | 11 | [ ] | zhe   |                                                         |
-  | 12 | [ ] | [     |                                                         |
-  | 13 | [ ] | .,    |                                                         |
-  | 14 | [-] | '"    |                                                         |
-  | 15 | [ ] |       |                                                         |
-  google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
-
-main-rejection-reason: l
-** bellota text             | 6 -
+** bellota text             | -=6 |
   |  1 | [-] | l     |                  |
   |  2 | [-] | I     |                  |
   |  3 | [-] | 3     |                  |
   |  4 | [ ] | З     |                  |
   |  5 | [ ] | 1     | no-base-but-nose |
   |  6 | [ ] | 9 g q |                  |
-  |  7 | [-] | 0     | scarred-Oh       |
+  |  7 | [-] | 0     |                  |
   |  8 | [-] | ~     |                  |
   |  9 | [ ] | S     |                  |
   | 10 | [ ] | rn    |                  |
@@ -283,36 +269,58 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                  |
   | 13 | [ ] | .,    |                  |
   | 14 | [-] | '"    |                  |
-  | 15 | [ ] |       |                  |
+  | 15 | [ ] | мм    |                  |
+  | 16 | [ ] | $S    |                  |
   light, appealing
 
 main-rejection-reason: ~
-** helvetica lt com roman   | 6 -
+** roboto                   | -=5 | +=1 | ?=1 |
+  |  1 | [-] | l     |                                        |
+  |  2 | [-] | I     |                                        |
+  |  3 | [+] | 3     | has abkhasian dze                      |
+  |  4 | [ ] | З     |                                        |
+  |  5 | [?] | 1     | no base, short nose                    |
+  |  6 | [ ] | 9 g q |                                        |
+  |  7 | [O] | 0     |                                        |
+  |  8 | [ ] | ~     | ~ at midpoint but hooks are pronounced |
+  |  9 | [-] | S     |                                        |
+  | 10 | [-] | rn    |                                        |
+  | 11 | [ ] | zhe   |                                        |
+  | 12 | [ ] | [     |                                        |
+  | 13 | [ ] | .,    |                                        |
+  | 14 | [-] | '"    |                                        |
+  | 15 | [ ] | мм    |                                        |
+  | 16 | [ ] | $S    |                                        |
+  google fonts github repository at 82aba76ad337bcffda38561b3597bc22b23fb6f1
+
+main-rejection-reason: l
+** helvetica lt com roman   | -=6 |
   |  1 | [-] | l     |                                   |
   |  2 | [-] | I     |                                   |
   |  3 | [-] | 3     |                                   |
   |  4 | [ ] | З     |                                   |
   |  5 | [ ] | 1     |                                   |
   |  6 | [ ] | 9 g q |                                   |
-  |  7 | [-] | 0     | Oh is rounder, scarred-Oh         |
+  |  7 | [-] | 0     | Oh is rounder                     |
   |  8 | [ ] | ~     | ~ _appears to be_ bellow midpoint |
   |  9 | [ ] | S     |                                   |
   | 10 | [-] | rn    | hmmm                              |
-  | 11 | []  | zhe   |                                   |
+  | 11 | [ ] | zhe   |                                   |
   | 12 | [ ] | [     |                                   |
   | 13 | [ ] | .,    |                                   |
   | 14 | [-] | '"    |                                   |
-  | 15 | [ ] |       |                                   |
+  | 15 | [ ] | мм    | no cyrl - no prob                 |
+  | 16 | [ ] | $S    |                                   |
 
 main-rejection-reason: l
-** pragmatica               | 5 -, 1 +, 1 ?
+** pragmatica               | -=5 | +=1 | ?=1 |
   |  1 | [-] | l     |                                               |
   |  2 | [-] | I     |                                               |
   |  3 | [+] | 3     | flat-top-3-letters                            |
   |  4 | [ ] | З     |                                               |
   |  5 | [ ] | 1     | no-base-but-nose                              |
   |  6 | [-] | 9 g q | gq can be mistaken for each other at a glance |
-  |  7 | [-] | 0     | scarred-Oh                                    |
+  |  7 | [-] | 0     |                                               |
   |  8 | [ ] | ~     |                                               |
   |  9 | [ ] | S     |                                               |
   | 10 | [?] | rn    | not sure                                      |
@@ -320,17 +328,18 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                                               |
   | 13 | [ ] | .,    |                                               |
   | 14 | [-] | '"    |                                               |
-  | 15 | [ ] |       |                                               |
+  | 15 | [ ] | мм    |                                               |
+  | 16 | [ ] | $     |                                               |
 
 main-rejection-reason: l
-** fira sans                | 4 -, 2 +
+** fira sans                | -=4 | +=1 | ?=1 |
   |  1 | [ ] | l     |                    |
   |  2 | [-] | I     |                    |
   |  3 | [+] | 3     | flat-top-3-letters |
   |  4 | [ ] | З     |                    |
   |  5 | [ ] | 1     |                    |
   |  6 | [ ] | 9 g q |                    |
-  |  7 | [+] | 0     | scarred-Oh         |
+  |  7 | [O] | 0     |                    |
   |  8 | [-] | ~     |                    |
   |  9 | [-] | S     |                    |
   | 10 | [ ] | rn    |                    |
@@ -338,10 +347,11 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                    |
   | 13 | [ ] | .,    |                    |
   | 14 | [-] | '"    |                    |
-  | 15 | [ ] |       |                    |
+  | 15 | [ ] | мм    |                    |
+  | 16 | [?] | $     |                    |
 
 main-rejection-reason: S
-** ibm plex mono            | 4 -
+** ibm plex mono            | -=4 |
   |  1 | [-] | l     |                                 |
   |  2 | [ ] | I     |                                 |
   |  3 | [-] | 3     |                                 |
@@ -349,24 +359,25 @@ main-rejection-reason: S
   |  5 | [-] | 1     | because l can be mistaken for 1 |
   |  6 | [ ] | 9 g q |                                 |
   |  7 | [ ] | 0     |                                 |
-  |  8 | [-] | ~     | too close                       |
+  |  8 | [-] | ~     | too similar                     |
   |  9 | [ ] | S     |                                 |
   | 10 | [ ] | rn    |                                 |
   | 11 | [ ] | zhe   |                                 |
   | 12 | [ ] | [     |                                 |
   | 13 | [ ] | .,    |                                 |
   | 14 | [ ] | '"    |                                 |
-  | 15 | [ ] |       |                                 |
+  | 15 | [ ] | мм    |                                 |
+  | 16 | [ ] | $     |                                 |
 
 main-rejection-reason: l
-** ibm plex sans            | 5 -, 1 +
+** ibm plex sans            | -=6 |
   |  1 | [ ] | l     | bottom hook is small |
   |  2 | [ ] | I     |                      |
   |  3 | [-] | 3     |                      |
   |  4 | [ ] | З     |                      |
   |  5 | [ ] | 1     |                      |
   |  6 | [ ] | 9 g q |                      |
-  |  7 | [+] | 0     | scarred-Oh           |
+  |  7 | [-] | 0     |                      |
   |  8 | [-] | ~     |                      |
   |  9 | [-] | S     |                      |
   | 10 | [ ] | rn    |                      |
@@ -374,53 +385,55 @@ main-rejection-reason: l
   | 12 | [-] | [     | small small hooks    |
   | 13 | [ ] | .,    |                      |
   | 14 | [-] | '"    |                      |
-  | 15 | [ ] |       |                      |
+  | 15 | [ ] | мм    |                      |
+  | 16 | [ ] | $S    |                      |
 
 main-rejection-reason: torn between ze-3 _and_ es-5
-** lato                     | 3 -, 2 +
+** lato                     | -=5 | +=1 |
   |  1 | [ ] | l     |                    |
   |  2 | [ ] | I     |                    |
   |  3 | [+] | 3     | flat-top-3-letters |
   |  4 | [ ] | З     |                    |
   |  5 | [ ] | 1     |                    |
   |  6 | [ ] | 9 g q |                    |
-  |  7 | [+] | 0     | scarred-Oh         |
-  |  8 | [-] | ~     | - is too narrow    |
+  |  7 | [-] | 0     |                    |
+  |  8 | [-] | ~     | - is too compact   |
   |  9 | [-] | S     |                    |
   | 10 | [ ] | rn    |                    |
   | 11 | [ ] | zhe   |                    |
   | 12 | [ ] | [     |                    |
   | 13 | [ ] | .,    |                    |
   | 14 | [-] | '"    |                    |
-  | 15 | [ ] |       |                    |
+  | 15 | [ ] | мм    |                    |
+  | 16 | [ ] | $S    |                    |
 
 main-rejection-reason: l
-** montserrat               | 5 -, 1 +
-  |  1 | [-] | l     |                                                    |
-  |  2 | [-] | I     |                                                    |
-  |  3 | [ ] | 3     |                                                    |
-  |  4 | [ ] | З     |                                                    |
-  |  5 | [-] | 1     |                                                    |
-  |  6 | [ ] | 9 g q |                                                    |
-  |  7 | [+] | 0     | scarred-Oh                                         |
-  |  8 | [ ] | ~     |                                                    |
-  |  9 | [-] | S     |                                                    |
-  | 10 | [ ] | rn    |                                                    |
-  | 11 | [ ] | zhe   |                                                    |
-  | 12 | [ ] | [     | on the vere of not passing by hook being too small |
-  | 13 | [ ] | .,    |                                                    |
-  | 14 | [-] | '"    |                                                    |
-  | 15 | [ ] |       |                                                    |
-
+** montserrat               | -=6 | ?=1 |
+  |  1 | [-] | l     |                    |
+  |  2 | [-] | I     |                    |
+  |  3 | [ ] | 3     |                    |
+  |  4 | [ ] | З     |                    |
+  |  5 | [-] | 1     |                    |
+  |  6 | [ ] | 9 g q |                    |
+  |  7 | [-] | 0     |                    |
+  |  8 | [ ] | ~     |                    |
+  |  9 | [-] | S     |                    |
+  | 10 | [ ] | rn    |                    |
+  | 11 | [ ] | zhe   |                    |
+  | 12 | [?] | [     | hooks are smallish |
+  | 13 | [ ] | .,    |                    |
+  | 14 | [-] | '"    |                    |
+  | 15 | [ ] | мм    |                    |
+  | 16 | [ ] | $S    |                    |
 main-rejection-reason: l
-** nobile                   | 5 -, 1 +, 1 ?
+** nobile                   | -=6 | ?=1 |
   |  1 | [-] | l     |                         |
   |  2 | [ ] | I     |                         |
   |  3 | [-] | 3     | old style figures       |
   |  4 | [ ] | З     |                         |
   |  5 | [-] | 1     | no-base-nose-too-narrow |
   |  6 | [ ] | 9 g q |                         |
-  |  7 | [+] | 0     | scarred-Oh              |
+  |  7 | [-] | 0     |                         |
   |  8 | [-] | ~     |                         |
   |  9 | [?] | S     |                         |
   | 10 | [ ] | rn    |                         |
@@ -428,17 +441,18 @@ main-rejection-reason: l
   | 12 | [ ] | [     |                         |
   | 13 | [ ] | .,    |                         |
   | 14 | [-] | '"    |                         |
-  | 15 | [ ] |       |                         |
+  | 15 | [ ] | мм    |                         |
+  | 16 | [ ] | $S    |                         |
 
 main-rejection-reason: 3
-** noto nans                | 3 -, 2 +, 2 ?
+** noto nans                | -=4 | +=1 | ?=2 |
   |  1 | [-] | l     |                                            |
   |  2 | [ ] | I     |                                            |
   |  3 | [+] | 3     | flat-top-3-letters                         |
   |  4 | [ ] | З     |                                            |
   |  5 | [ ] | 1     | nose is smallish, but distinguished enough |
   |  6 | [?] | 9 g q |                                            |
-  |  7 | [+] | 0     | scarred-Oh                                 |
+  |  7 | [-] | 0     |                                            |
   |  8 | [-] | ~     |                                            |
   |  9 | [-] | S     |                                            |
   | 10 | [?] | rn    |                                            |
@@ -446,17 +460,18 @@ main-rejection-reason: 3
   | 12 | [ ] | [     | smallish hooks                             |
   | 13 | [ ] | .,    |                                            |
   | 14 | [ ] | '"    |                                            |
-  | 15 | [ ] |       |                                            |
+  | 15 | [ ] | мм    |                                            |
+  | 16 | [ ] | $S    |                                            |
 
 main-rejection-reason: l
-** nunito sans              | 2 -, 2 +
+** nunito sans              | -=4 | +=1 |
   |  1 | [ ] | l     |                    |
   |  2 | [-] | I     |                    |
   |  3 | [+] | 3     | flat-top-3-letters |
   |  4 | [ ] | З     |                    |
   |  5 | [ ] | 1     | base-small-nose    |
   |  6 | [ ] | 9 g q |                    |
-  |  7 | [+] | 0     | scarred-Ohs        |
+  |  7 | [-] | 0     |                    |
   |  8 | [ ] | ~     |                    |
   |  9 | [-] | S     |                    |
   | 10 | [ ] | rn    |                    |
@@ -464,17 +479,18 @@ main-rejection-reason: l
   | 12 | [ ] | [     | smallish hooks     |
   | 13 | [ ] | .,    |                    |
   | 14 | [ ] | '"    |                    |
-  | 15 | [-] |       |                    |
+  | 15 | [ ] | мм    |                    |
+  | 16 | [-] | $S    |                    |
 
 main-rejection-reason: I
-** source sans pro          | 5 -, 2 +
+** source sans pro          | -=6 | +=1 | ?=1 |
   |  1 | [-] | l     | bottom-hook-too-small                          |
   |  2 | [-] | I     |                                                |
   |  3 | [+] | 3     | flat-top-3-letters                             |
   |  4 | [ ] | З     |                                                |
   |  5 | [-] | 1     | base-small-nose-resembles-l-in-other-typefaces |
   |  6 | [ ] | 9 g q |                                                |
-  |  7 | [+] | 0     | scarred-Ohs                                    |
+  |  7 | [-] | 0     |                                                |
   |  8 | [ ] | ~     |                                                |
   |  9 | [-] | S     |                                                |
   | 10 | [ ] | rn    |                                                |
@@ -482,28 +498,29 @@ main-rejection-reason: I
   | 12 | [ ] | [     |                                                |
   | 13 | [ ] | .,    |                                                |
   | 14 | [-] | '"    |                                                |
-  | 15 | [ ] |       |                                   |
+  | 15 | [ ] | мм    |                                                |
+  | 16 | [?] |       |                                                |
 
 main-rejection-reason: 0
 *
-** ubuntu                   | 3 -, 2 +, 1 - ?
+** ubuntu                   | -=4 | ?=2 |
   |  1 | [ ] | l     |   |
-  |  2 | [X] | I     |   |
-  |  3 | [+] | 3     |   |
-  |  4 | [X] | З     |   |
+  |  2 | [-] | I     |   |
+  |  3 | [-] | 3     |   |
+  |  4 | [ ] | З     |   |
   |  5 | [ ] | 1     |   |
   |  6 | [ ] | 9 g q |   |
-  |  7 | [+] | 0     |   |
+  |  7 | [-] | 0     |   |
   |  8 | [ ] | ~     |   |
-  |  9 | [X] | S     |   |
+  |  9 | [-] | S     |   |
   | 10 | [ ] | rn    |   |
   | 11 | [ ] | zhe   |   |
   | 12 | [ ] | [     |   |
   | 13 | [ ] | .,    |   |
   | 14 | [?] | '"    |   |
-  | 15 | [ ] |       |   |
-
-** ascari sans light        | 4 -, 2 +, ?
+  | 15 | [ ] | mm    |   |
+  | 16 | [?] | $S    |   |
+** acari sans light         | -=4 | ?=3 |
   |  1 | [ ] | l     | bottom hook is small (a-la source sans) |
   |  2 | [-] | I     |                                         |
   |  3 | [-] | 3     |                                         |
@@ -518,33 +535,34 @@ main-rejection-reason: 0
   | 12 | [ ] | [     | hooks-are-small                         |
   | 13 | [ ] | .,    |                                         |
   | 14 | [ ] | '"    |                                         |
-  | 15 | [ ] |       |                                   |
-** hack                     | 5 -, 1 +, 1 ?
-  |  1 | [ ] | l     |                               |
-  |  2 | [ ] | I     |                               |
-  |  3 | [+] | 3     |                               |
-  |  4 | [ ] | З     |                               |
-  |  5 | [ ] | 1     | small-nose-but-base           |
-  |  6 | [-] | 9 g q | q-can-be-g                    |
-  |  7 | [ ] | 0     | 0-stabbed                     |
-  |  8 | [-] | ~     |                               |
-  |  9 | [-] | S     |                               |
-  | 10 | [ ] | rn    |                               |
-  | 11 | [-] | zhe   |                               |
-  | 12 | [?] | [     |                               |
-  | 13 | [ ] | .,    |                               |
-  | 14 | [ ] | '"    |                               |
-  | 15 | [ ] |       |                               |
-  | 16 | [-] | мм    | new entry! "телегаммааппарат" |
+  | 15 | [ ] | mm    |                                         |
+  | 16 | [?] | $S    |                                         |
+** hack                     | -=5 | +=1 | ?=1 |
+  |  1 | [ ] | l     |                     |
+  |  2 | [ ] | I     |                     |
+  |  3 | [+] | 3     |                     |
+  |  4 | [ ] | З     |                     |
+  |  5 | [ ] | 1     | small-nose-but-base |
+  |  6 | [-] | 9 g q | q-can-be-g          |
+  |  7 | [ ] | 0     | 0-stabbed           |
+  |  8 | [-] | ~     |                     |
+  |  9 | [-] | S     |                     |
+  | 10 | [ ] | rn    |                     |
+  | 11 | [-] | zhe   |                     |
+  | 12 | [?] | [     |                     |
+  | 13 | [ ] | .,    |                     |
+  | 14 | [ ] | '"    |                     |
+  | 15 | [-] | мм    |                     |
+  | 16 | [ ] | $S    |                     |
   no light
-** Neris Light              | 3 -, 2 +, 5 ?
+** Neris Light              | -=4 | +=1 | ?=5 |
   |  1 | [ ] | l     | bottom-hook-is-tiny  |
   |  2 | [-] | I     |                      |
   |  3 | [+] | 3     |                      |
   |  4 | [ ] | З     |                      |
   |  5 | [?] | 1     | no-base-small-nose   |
   |  6 | [?] | 9 g q | g-like-low-hanging-9 |
-  |  7 | [+] | 0     |                      |
+  |  7 | [-] | 0     |                      |
   |  8 | [ ] | ~     |                      |
   |  9 | [-] | S     |                      |
   | 10 | [?] | rn    |                      |
@@ -552,8 +570,9 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                      |
   | 13 | [?] | .,    |                      |
   | 14 | [-] | '"    |                      |
-  | 15 | [ ] |       |                      |
-** philosopher              | 4 -, 2 ?
+  | 15 | [ ] | мм    |                      |
+  | 16 | [ ] | $S    |                      |
+** philosopher              | -=4 | ?=2 |
   |  1 | [-] | l     | top-left-pointing hook    |
   |  2 | [-] | I     | bottom-rigt-pointing-hook |
   |  3 | [ ] | 3     |                           |
@@ -568,42 +587,45 @@ main-rejection-reason: 0
   | 12 | [?] | [     |                           |
   | 13 | [ ] | .,    |                           |
   | 14 | [-] | '"    |                           |
-  | 15 | [ ] |       |                           |
-** input sans (unfixable 3) | 1 -, 1 ?
-  |  1 | [ ] | l     |   |
-  |  2 | [ ] | I     |   |
-  |  3 | [+] | 3     |   |
-  |  4 | [ ] | З     |   |
-  |  5 | [ ] | 1     |   |
-  |  6 | [ ] | 9 g q |   |
-  |  7 | [ ] | 0     |   |
-  |  8 | [ ] | ~     |   |
-  |  9 | [?] | S     |   |
-  | 10 | [ ] | rn    |   |
-  | 11 | [ ] | zhe   |   |
-  | 12 | [ ] | [     |   |
-  | 13 | [ ] | .,    |   |
-  | 14 | [ ] | '"    |   |
-  | 15 | [ ] |       |   |
+  | 15 | [ ] | мм    |                           |
+  | 16 | [ ] | $S    | $ is a twice striken S    |
+** input sans (unfixable 3) | -=1 |
+  |  1 | [ ] | l     |                                |
+  |  2 | [ ] | I     |                                |
+  |  3 | [+] | 3     | no flat-top three like letters |
+  |  4 | [ ] | З     |                                |
+  |  5 | [ ] | 1     |                                |
+  |  6 | [ ] | 9 g q |                                |
+  |  7 | [ ] | 0     | dotted                         |
+  |  8 | [ ] | ~     |                                |
+  |  9 | [ ] | S     |                                |
+  | 10 | [ ] | rn    |                                |
+  | 11 | [ ] | zhe   |                                |
+  | 12 | [ ] | [     |                                |
+  | 13 | [ ] | .,    |                                |
+  | 14 | [ ] | '"    |                                |
+  | 15 | [ ] | мм    |                                |
+  | 16 | [ ] | $S    |                                |
 
 has in in-house re-mapper, but, alas, no 3ze variants
-** monoid                   | 1 -, 2 ?
-  |  1 | [ ] | l     |                    |
-  |  2 | [ ] | I     |                    |
-  |  3 | [ ] | 3     |                    |
-  |  4 | [ ] | З     |                    |
-  |  5 | [ ] | 1     | no-base-but-nose   |
-  |  6 | [?] | 9 g q | g-is-almost-q      |
-  |  7 | [ ] | 0     | 0-slashed          |
-  |  8 | [ ] | ~     |                    |
-  |  9 | [-] | S     |                    |
-  | 10 | [?] | rn    | mm is a ligature?? |
-  | 11 | [ ] | zhe   |                    |
-  | 12 | [ ] | [     |                    |
-  | 13 | [ ] | .,    |                    |
-  | 14 | [ ] | '"    |                    |
-  | 15 | [ ] |       |                    |
-** mint spirit              | 6 -, 4 ?
+** monoid                   | -=1 | ?=2 |
+  |  1 | [ ] | l     |                                            |
+  |  2 | [ ] | I     |                                            |
+  |  3 | [ ] | 3     |                                            |
+  |  4 | [ ] | З     |                                            |
+  |  5 | [ ] | 1     | no-base-but-nose                           |
+  |  6 | [ ] | 9 g q | g-is-almost-q                              |
+  |  7 | [-] | 0     |                                            |
+  |  8 | [ ] | ~     |                                            |
+  |  9 | [?] | S     |                                            |
+  | 10 | [ ] | rn    |                                            |
+  | 11 | [ ] | zhe   |                                            |
+  | 12 | [ ] | [     |                                            |
+  | 13 | [ ] | .,    |                                            |
+  | 14 | [ ] | '"    |                                            |
+  | 15 | [?] | мм    | мм isn't a problem but mm is a ligature(!) |
+  | 16 | [ ] | $S    | $ is ... unusual                           |
+** mint spirit              | -=6 | ?=4 |
   |  1 | [ ] | l     |   |
   |  2 | [-] | I     |   |
   |  3 | [-] | 3     |   |
@@ -618,10 +640,11 @@ has in in-house re-mapper, but, alas, no 3ze variants
   | 12 | [ ] | [     |   |
   | 13 | [?] | .,    |   |
   | 14 | [-] | '"    |   |
-  | 15 | [ ] |       |   |
+  | 15 | [ ] | мм    |   |
+  | 16 | [ ] | $S    |   |
 
 https://www.1001fonts.com/mint-spirit-font.html
-** source code pro          | 2 -, 1 ?
+** source code pro          | -=2 | ?=1 |
   |  1 | [ ] | l     |   |
   |  2 | [ ] | I     |   |
   |  3 | [-] | 3     |   |
@@ -636,16 +659,16 @@ https://www.1001fonts.com/mint-spirit-font.html
   | 12 | [ ] | [     |   |
   | 13 | [ ] | .,    |   |
   | 14 | [ ] | '"    |   |
-  | 15 | [ ] |       |   |
-
-** pt sans                  | 3
+  | 15 | [ ] | мм    |   |
+  | 16 | [ ] | $S    |   |
+** pt sans                  | -=3 |
   |  1 | [ ] | l     |                        |
   |  2 | [-] | I     |                        |
   |  3 | [ ] | 3     |                        |
   |  4 | [ ] | З     |                        |
   |  5 | [ ] | 1     |                        |
   |  6 | [ ] | 9 g q |                        |
-  |  7 | [-] | 0     | oh is fat(ter), has ØØ |
+  |  7 | [-] | 0     | oh is fat(ter)/rounder |
   |  8 | [ ] | ~     |                        |
   |  9 | [-] | S     |                        |
   | 10 | [ ] | rn    |                        |
@@ -653,7 +676,8 @@ https://www.1001fonts.com/mint-spirit-font.html
   | 12 | [ ] | [     |                        |
   | 13 | [ ] | .,    |                        |
   | 14 | [ ] | '"    |                        |
-  | 15 | [ ] |       |                        |
+  | 15 | [ ] | мм    |                        |
+  | 16 | [ ] | $S    |                        |
   pt root ui is pt sans with an additional 3ze issue and no italics
   pt astra sans is based on pt sans
   { if memory serves "pt astra sans" was created as a substitute for
@@ -698,6 +722,8 @@ Main reason for chosing nunito over pt sans:
   | 12 | [ ] | [     |
   | 13 | [ ] | .,    |
   | 14 | [ ] | '"    |
+  | 15 | []  | мм    |
+  | 16 | []  | $S    |
 ** fantasque sans mono     | 0
   |  1 | [ ] | l     |                                                      |
   |  2 | [ ] | I     |                                                      |
@@ -713,6 +739,8 @@ Main reason for chosing nunito over pt sans:
   | 12 | [ ] | [     |                                                      |
   | 13 | [ ] | .,    |                                                      |
   | 14 | [ ] | '"    |                                                      |
+  | 15 | [ ] | мм    |                                                      |
+  | 16 | [ ] | $S    |                                                      |
 ** montserrat alternates   | 5
   |  1 | [ ] | l     |                                        |
   |  2 | [ ] | I     |                                        |
@@ -728,8 +756,10 @@ Main reason for chosing nunito over pt sans:
   | 12 | [ ] | [     |                                        |
   | 13 | [ ] | .,    |                                        |
   | 14 | [?] | '"    | probably an issue                      |
+  | 15 | [ ] | мм    |                                        |
+  | 16 | [ ] | $S    |                                        |
 [1] https://en.wikipedia.org/wiki/Ouroboros
-** nunito                   | 3
+** nunito                  | 3
   |  1 | [ ] | l     |                                             |
   |  2 | [-] | I     |                                             |
   |  3 | [+] | 3     | has abkhasian dze that can be remapped to 3 |
@@ -744,14 +774,15 @@ Main reason for chosing nunito over pt sans:
   | 12 | [ ] | [     |                                             |
   | 13 | [ ] | .,    |                                             |
   | 14 | [-] | '"    |                                             |
+  | 15 | [ ] | мм    |                                             |
+  | 16 | [-] | $S    |                                             |
   looks light (like raleway does) [good thing]
   5S issue is not easily fixable, authors passing, makes it harder still
   same applies to '"
   oh-zero is also an obstacle
-  $ is $ with two short lines on top and bottom
 -- main-rejection-reason: IS"
 
 ended using light version after all
-with 3ze.py remap(CYRILLIC CAPITAL LETTER ABKHASIAN DZE)
-and manually "dotting" zero in fontforge
+with 3ze.py (3 remapped to CYRILLIC CAPITAL LETTER ABKHASIAN DZE)
+and manually "dotted" (in fontforge) zero
 * Currently testing

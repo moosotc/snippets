@@ -664,5 +664,6 @@
 
 (setq erc-server "irc.libera.chat")
 (setq org-todo-keywords '((sequence "TODO(t!)" "|" "DONE(d!)" "CANCELED(c@)")))
+(set-scroll-bar-mode 'left)
 ;;; Local Variables:
 ;;; End:

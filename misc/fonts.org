@@ -444,7 +444,7 @@ main-rejection-reason: l
   | 15 | [ ] | мм    |                         |
   | 16 | [ ] | $S    |                         |
 
-main-rejection-reason: 3
+broken й - CYRILLIC SMALL LETTER SHORT I
 ** noto nans                | -=4 | +=1 | ?=2 |
   |  1 | [-] | l     |                                            |
   |  2 | [ ] | I     |                                            |

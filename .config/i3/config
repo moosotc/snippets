@@ -42,11 +42,11 @@ bindcode $win+45 focus left
 bindcode $win+46 focus right
 bindcode $win+44 workspace prev
 bindcode $win+47 workspace next
-bindcode $win+31 workspace back_and_forth
+bindcode $win+48 workspace back_and_forth
 
 # move focused window
 #bindcode $win+Shift+44 move left
-#bindsym $win+Shift+k  move down
+#bindsym $win+Shift+k move down
 #bindsym $win+Shift+l move up
 #bindsym $win+Shift+colon move right
 
@@ -184,8 +184,8 @@ bindsym      Pause $execnoid ddc.sh setvcp 60 15 # DP
 bindsym $win+Pause $execnoid ddc.sh setvcp 60 17 # HDMI
 bindsym $alt+Pause $execnoid ddc.sh setvcp 60 3  # DVI
 
-bindsym $win+Shift+minus move scratchpad
-bindsym $win+minus scratchpad show
+#bindsym $win+Shift+minus move scratchpad
+#bindsym $win+minus scratchpad show
 
 # Use bindcode instead of bindsym to be layout agnostic
 # (thanks to cehteh from #i3)

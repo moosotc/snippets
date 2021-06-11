@@ -667,5 +667,6 @@
 (set-scroll-bar-mode 'left)
 (defadvice speed-type--setup (after activate)
   (local-set-key [(hyper escape)] 'speed-type--replay))
+(setq-default scroll-bar-width 7)
 ;;; Local Variables:
 ;;; End:

@@ -1,4 +1,4 @@
 #!/bin/sh
-
+set -eu
 xdotool search 'Tor Browser' || torb "$@" &
 exec i3 workspace torbrowser

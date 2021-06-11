@@ -11,7 +11,11 @@ bindkey "^[[7~" beginning-of-line
 bindkey "^[[8~" end-of-line
 bindkey "^[[1~" beginning-of-line
 bindkey "^[[4~" end-of-line
-bindkey "^[[3~" delete-char
+
+bindkey "^[[3~" delete-char     # delete
+bindkey "^[[3^" delete-word     # ctrl-delete
+bindkey "^[^[[D" backward-word  # alt left
+bindkey "^[^[[C" forward-word   # alt right
 
 fpath=(~/.config/zsh $fpath)
 

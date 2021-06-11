@@ -2,4 +2,4 @@
 set -e
 tmux new-session -s yt -d || true
 xdotool search tmux windowactivate || \
-        rxvtc -sbt 8 -rv -fn 'xft:iosevka-9' -e tmux attach-session -t yt
+        rxvtc -sbt 8 -rv -fn 'xft:jetbrains mono-8' -e tmux attach-session -t yt

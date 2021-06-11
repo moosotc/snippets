@@ -270,35 +270,35 @@
 
 ;;; ********
 ;;; Few advices for FSF to behave more like Lucid
-(defadvice describe-key (after dcxba activate)
+(defadvice describe-key (after activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-mode (after dmxba activate)
+(defadvice describe-mode (after activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-function (after dfxba activate)
+(defadvice describe-function (after activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-variable (after dvxba activate)
+(defadvice describe-variable (after activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-bindings (after dbxba activate)
+(defadvice describe-bindings (after activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice apropos-command (after acba activate)
+(defadvice apropos-command (after activate)
   (switch-to-buffer "*Apropos*")
   (delete-other-windows))
 
-(defadvice ibuffer-list-buffers (after acba activate)
+(defadvice ibuffer-list-buffers (after activate)
   (switch-to-buffer-other-window "*Ibuffer*")
   (hl-line-mode 1)
   (setq cursor-type nil))
 
-(defadvice apropos (after aba activate)
+(defadvice apropos (after activate)
   (switch-to-buffer "*Apropos*")
   (delete-other-windows))
 
-(defadvice man (after aba activate)
+(defadvice man (after activate)
   (delete-window))
 
 (defun insert-quotes ()

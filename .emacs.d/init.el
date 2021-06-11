@@ -665,5 +665,7 @@
 (setq erc-server "irc.libera.chat")
 (setq org-todo-keywords '((sequence "TODO(t!)" "|" "DONE(d!)" "CANCELED(c@)")))
 (set-scroll-bar-mode 'left)
+(defadvice speed-type--setup (after activate)
+  (local-set-key [(hyper escape)] 'speed-type--replay))
 ;;; Local Variables:
 ;;; End:

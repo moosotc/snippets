@@ -372,6 +372,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-headline-done ((t ()))) ;; (:foreground "#555753" :background "#C3C7CF"))))
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
  '(cursor ((t (:background "tomato4"))))
@@ -667,6 +668,7 @@
 (set-scroll-bar-mode 'left)
 (defadvice speed-type--setup (after activate)
   (local-set-key [(hyper escape)] 'speed-type--replay))
-(setq-default scroll-bar-width 4)
+(setq-default scroll-bar-width 8)
+(setq org-startup-folded t)
 ;;; Local Variables:
 ;;; End:

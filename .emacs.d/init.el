@@ -373,6 +373,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(org-headline-done ((t ()))) ;; (:foreground "#555753" :background "#C3C7CF"))))
+ '(helm-M-x-key ((t (:foreground "blue1"))))
+ '(helm-locate-finish ((t (:foreground "black"))))
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
  '(cursor ((t (:background "tomato4"))))

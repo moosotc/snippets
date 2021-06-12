@@ -670,7 +670,12 @@
 (set-scroll-bar-mode 'left)
 (defadvice speed-type--setup (after activate)
   (local-set-key [(hyper escape)] 'speed-type--replay))
+
 (setq-default scroll-bar-width 8)
-(setq org-startup-folded t)
+(setq
+ org-startup-folded t
+ ;; https://stackoverflow.com/questions/12737317/collapsing-the-current-outline-in-emacs-org-mode
+ org-cycle-emulate-tab 'white
+ )
 ;;; Local Variables:
 ;;; End:

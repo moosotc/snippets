@@ -4,5 +4,5 @@ scrollbar slider {
 }
 * {
     /* https://forum.xfce.org/viewtopic.php?id=13166 */
-    font-family: uimono;
+    font-family: sans-serif;
 }

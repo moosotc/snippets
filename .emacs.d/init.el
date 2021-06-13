@@ -574,31 +574,6 @@
 
 (global-set-key [(hyper ?\\)] 'my-only-yank-x-clipboard)
 (global-set-key [(hyper ?/)] 'helm-occur)
-
-(if t
-    nil
-  (defun my-yank-any (selt)
-    ;; https://www.emacswiki.org/emacs/second-sel.el
-    (let ((sel (gui-get-selection selt)))
-      (funcall
-       (if (fboundp 'insert-for-yank) 'insert-for-yank 'insert) sel)))
-
-  (defun my-yank-primary () (interactive) (my-yank-any 'PRIMARY))
-  (defun my-yank-clip () (interactive) (my-yank-any 'CLIPBOARD))
-
-  (global-set-key [(hyper ?`)] 'kill-region)
-  (global-set-key [(control ?`)] 'kill-region)
-
-  (global-set-key [(control ?\\)] 'kill-ring-save)
-  (global-set-key [(hyper ?\\)] 'my-yank-primary)
-  (global-set-key [(hyper ?|)] 'my-yank-clip)
-
-  (global-set-key [(hyper control ?\\)] 'clipboard-yank)
-
-  (global-set-key [(control insert)] 'kill-ring-save) ;; fc660c
-  (global-set-key [(hyper insert)] 'my-yank-primary)
-  (global-set-key [(hyper shift insert)] 'my-yank-clip))
-
 (global-set-key [(hyper ?t)] (lambda ()
                                (interactive)
                                (erc-track-switch-buffer -1)))
@@ -683,5 +658,8 @@
   (define-key org-mode-map [(hyper tab)] 'my-close-org-element))
 
 (add-hook 'org-mode-hook 'my-org-mode-hook)
+(global-set-key [(hyper shift insert)] 'yank-from-kill-ring)
+(global-set-key [(hyper ?|)] 'yank-from-kill-ring)
+
 ;;; Local Variables:
 ;;; End:

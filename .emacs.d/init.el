@@ -672,10 +672,16 @@
   (local-set-key [(hyper escape)] 'speed-type--replay))
 
 (setq-default scroll-bar-width 8)
-(setq
- org-startup-folded t
- ;; https://stackoverflow.com/questions/12737317/collapsing-the-current-outline-in-emacs-org-mode
- org-cycle-emulate-tab 'white
- )
+(setq org-startup-folded t)
+
+(defun my-close-org-element ()
+  (interactive)
+  (org-up-element)
+  (org-cycle))
+
+(defun my-org-mode-hook ()
+  (define-key org-mode-map [(hyper tab)] 'my-close-org-element))
+
+(add-hook 'org-mode-hook 'my-org-mode-hook)
 ;;; Local Variables:
 ;;; End:

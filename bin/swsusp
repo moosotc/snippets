@@ -1,4 +1,6 @@
 #!/bin/sh
 . asroot
 test -z "${1-}" || sleep $1
+sleep 0.1 # give keyboard a chance to settle and not wake up the machine
+          # on keyup/release event(?)
 echo 'mem' >/sys/power/state

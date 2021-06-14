@@ -668,6 +668,8 @@
 (add-hook 'org-mode-hook 'my-org-mode-hook)
 (global-set-key [(hyper shift insert)] 'yank-from-kill-ring)
 (global-set-key [(hyper ?|)] 'yank-from-kill-ring)
+(global-set-key [(hyper ?1)] 'other-window)
+(defun copy-buffer-file-name () (interactive) (kill-new (buffer-file-name)))
 
 ;;; Local Variables:
 ;;; End:

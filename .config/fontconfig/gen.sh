@@ -14,10 +14,8 @@ set -eu
 # montserrat alternates https://github.com/JulietaUla/Montserrat
 # nunito                https://github.com/googlefonts/Nunito
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
-# mongolian writing     http://mongolfont.com/jAlmas/cms/documents/mongolfont/font/mnglwritingotf.ttf
 
 fantasque="fantasque sans mono"
-cursive="mongolian writing"
 dudu="dudu cyryllic"
 jetmono="jetbrains mono"
 grek="greek sigismundus"
@@ -55,7 +53,6 @@ EOF
 M "$sans"      "sans-serif" "segoe ui" "serif" "uimono" "helvetica"
 M "$fantasque" "courier new" "monospace"
 M "$jetmono"   "mono"
-M "$cursive"   "cursive"
 M "$grek"      "linux libertine"
 for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \
                   "dejavu sans" "verdana" "vera"; do

@@ -1,0 +1,18 @@
+#!/bin/sh
+set -eu
+
+if test $# = 0; then
+    url=$(xclip -o -sel c)
+else
+    url=$1
+    shift
+fi
+dir=$HOME/tmp/wikicss
+out=${url#https://}
+
+htm="$HOME/tmp/wikicss/$(basename $out).html"
+test -r "$htm" || {
+    wget -l 1 -r "$url"
+    ln "$out" "$htm"
+}
+llppepub "$htm" -flip-stderr-redirection

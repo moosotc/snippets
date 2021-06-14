@@ -669,7 +669,8 @@
 (global-set-key [(hyper shift insert)] 'yank-from-kill-ring)
 (global-set-key [(hyper ?|)] 'yank-from-kill-ring) ;; hyper-|, hyper-shift-\
 (global-set-key [(hyper ?1)] 'other-window)
-(defun copy-buffer-file-name () (interactive) (kill-new (buffer-file-name)))
+(defun copy-buffer-file-name ()
+  (interactive) (gui-set-selection 'CLIPBOARD (buffer-file-name)))
 
 ;;; Local Variables:
 ;;; End:

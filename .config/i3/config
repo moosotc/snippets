@@ -159,6 +159,8 @@ bindsym XF86AudioMute $execnoid acycle
 bindsym Ctrl+$win+Up $execnoid chvol +
 bindsym Ctrl+$win+Down $execnoid chvol -
 
+bindsym $alt+BackSpace $execnoid sh -c "printf '\000' | tee /tmp/i3.fifo"
+
 bindsym $win+bracketright $execnoid selwin
 bindsym $win+bracketleft $execnoid ytwin
 bindsym $win+Shift+bracketleft $execnoid stwrap -e sstorm

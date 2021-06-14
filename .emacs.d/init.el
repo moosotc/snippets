@@ -621,7 +621,13 @@
       (switch-to-other-buffer)
     (switch-to-buffer "*scratch*")
     (lisp-interaction-mode)))
+
+(defun orgy ()
+  (insert "#+TODO: TODO(t) | DONE(t)")
+  (org-mode))
+
 (global-set-key [(meta hyper ?l)] 'lispy)
+(global-set-key [(meta hyper shift ?l)] 'orgy)
 
 ;; https://stackoverflow.com/questions/24904208/emacs-windows-org-mode-encoding
 (modify-coding-system-alist 'file "" 'utf-8-unix)
@@ -634,8 +640,10 @@
 (global-set-key [(hyper ?c)] 'my-recompile)
 (global-set-key [(meta hyper ?c)] 'compile)
 (defun my-date () (format-time-string "%a %d.%m.%Y"))
-(defun my-date-pri () (interactive) (princ (my-date)))
 (defun my-date-ins () (interactive) (insert (my-date)))
+
+(defun my-time () (format-time-string "%H:%M"))
+(defun my-time-ins () (interactive) (insert (my-time)))
 
 (defun my-org-date () (format-time-string "%d.%m"))
 (defun my-org-time () (format-time-string "%H:%M"))

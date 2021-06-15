@@ -11,8 +11,8 @@
 */
 
 /* malc */
-@font-face { font-family: sans-serif; src: local("fantasquesansmono"); }
-@font-face { font-family: serif; src: local("fantasquesansmono"); }
+@font-face { font-family: sans-serif; src: local("nunito"); }
+@font-face { font-family: serif; src: local("nunito"); }
 @font-face { font-family: monospace; src: local("jetbrainsmono"); }
 
 /* set headers and footers */

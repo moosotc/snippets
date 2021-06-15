@@ -35,7 +35,7 @@ lI
 Il
 1l
 l1
-3S1OlЗ0\$S
+3S1OlЗ0\$S3D3O1D1O
 Star
 \$tar
 "
@@ -73,12 +73,12 @@ maketext() {
   $(basename $1)
   </head>
 <body>
+        <pre>3З ʒȜӠᴣʒʓ oO0ѲØ 1o1O101Ѳ1Ø1∅øØo0 OCD</pre>
 EOF
     for size in 8 10 6 5 4; do
         text $size >>"$html"
     done
     cat >>"$html" <<EOF
-    <pre>ʒȜӠᴣʒʓ oO0ѲØ 1o1O101Ѳ1Ø1∅øØ</pre>
     <br/>
     $(fc-scan -f '%{fullname} %{style} %{slant} %{file} %{fontversion} %{capability}' "$1" || file "$1")
     <br>$1

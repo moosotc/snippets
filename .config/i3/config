@@ -198,6 +198,7 @@ bindcode $win+Ctrl+53 $execnoid xwnpm 2
 bindcode $win+Ctrl+54 $execnoid xwnpm 3
 
 bindsym $win+ISO_Next_Group $execnoid keylayind
+bindsym $win+Shift+ISO_Next_Group $execnoid keylayind
 bindsym $win+F12 $execnoid setcapskey
 # $win+Ctrl+51 == control win backslash
 bindcode $win+Ctrl+51 $execnoid tora "$(xclip -o -sel c)"

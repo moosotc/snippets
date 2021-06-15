@@ -7,13 +7,8 @@ test -n "${1-}" || {
 }
 
 ! test "$1" = "add" || {
-    if expr "$2" : '/.*' &>/dev/null;
-    then
-        p=
-    else
-        p="$PWD/"
-    fi
-    exec ln -s "$p/$2" $HOME/x/con/${3-}/
+    test -z "${2##/*}" && p=$2 || p=$PWD/$2
+    exec ln -s $p $HOME/x/con/${3-}
 }
 
 file=$HOME/x/con/$1

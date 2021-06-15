@@ -80,6 +80,8 @@ alias xci='xclip -se c -i'
 alias h='history'
 alias ps='echo bad habits die hard (use \\ps and think) - $*'
 alias which-command &>/dev/null && unalias which-command
+alias qdb="gdb -q"
+
 sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color
 export SUDO_ASKPASS=$HOME/bin/askpass
@@ -95,14 +97,13 @@ test "$TERM" = "dumb" && {
     PS1='$ '
 }
 tp () curl -L -F 'tpaste=<-' tpaste.us
-#ix () curl -F 'f:1=<-' ix.io
-#sp () curl -F 'sprunge=<-' sprunge.us
-#cb () curl -F 'clbin=<-' https://clbin.com
 pu () curl --silent --data-binary "@${1:-/dev/stdin}" bsd.ac:42069
 
-alias gdb="gdb -q"
-
-#meow() {
-#    key="$(openssl rand -hex 32)"
-#    openssl enc -aes-256-cbc -K ${key} -iv 00000000000000000000000000000000 -e -base64 -A < ${1:-/dev/stdin} | pu
-#}
+todo() {
+    if test $# > 0; then
+        ln -s "$1" "$HOME/1/${2-$(basename $1)}"
+    else
+        cd &>/dev/null "$HOME/1/"
+        ls
+    fi
+}

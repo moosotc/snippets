@@ -15,14 +15,14 @@ pag() {                                                 \
 }
 
 phrase="$($src | eval $rofi -markup -p 'Lookup')"
-unit=$(expr substr "$phrase" 1 1)
+prefix=$(expr substr "$phrase" 1 2)
 
-if test "$unit" = "u "; then
+if test "$prefix" != "u "; then
     { sdcv -n --utf8-input --utf8-output "$phrase" || true
       printf "Urban\n"
       links -dump "https://www.urbandictionary.com/define.php?term=$phrase" \
           | sed -n '1,/Top def/d;/Get the mug/q;p'
     } | pag
 else
-    units $(expr substr "$phrase" 2 80)| eval $rofi -p 'Done'
+    units $(expr substr "$phrase" 3 80) | eval $rofi -p 'Unit'
 fi

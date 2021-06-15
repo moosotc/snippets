@@ -1,17 +1,22 @@
 #!/bin/sh
 set -eu
+
+d=$HOME/x/con
 test -n "${1-}" || {
-    find $HOME/x/con -printf "%P "
+    find $d -printf "%P "
     echo
     exit
 }
 
 ! test "$1" = "add" || {
     test -z "${2##/*}" && p=$2 || p=$PWD/$2
-    exec ln -s $p $HOME/x/con/${3-}
+    exec ln -s $d/${3-}
 }
 
-file=$HOME/x/con/$1
+file=$d/$1
+args=$d/$(basename $1).args
 shift
 
-for arg; do printf "%s\000" "$arg"; done | xargs -0 mpv $file
+test $# -eq 0 || :>$args
+{ cat $args; for arg; do printf "%s\000" "$arg"; done; } |
+    tee $args | xargs -0 mpv $file

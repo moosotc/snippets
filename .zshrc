@@ -100,7 +100,7 @@ tp () curl -L -F 'tpaste=<-' tpaste.us
 pu () curl --silent --data-binary "@${1:-/dev/stdin}" bsd.ac:42069
 
 todo() {
-    if test $# > 0; then
+    if test $# -gt 0; then
         ln -s "$1" "$HOME/1/${2-$(basename $1)}"
     else
         cd &>/dev/null "$HOME/1/"

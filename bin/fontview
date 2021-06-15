@@ -95,6 +95,15 @@ S595$sep
 5S59$sep
 "
 
+ocd="
+DCO$sep
+OCD$sep
+OOO$sep
+DDD$sep
+DDC$sep
+OOC$sep
+"
+
 all="
 1oop
 ho1e
@@ -159,12 +168,14 @@ Waltz, bad nymph, for quick jigs vex
 $(perm 3ze "$tze")
 $(perm ohz "$ohz")
 $(perm g9q "$g9q")
+$(perm ocd "$ocd")
 \`1234567890-=\\
 ~!@#\$$%&permil;^&amp;*()_+|
 ₹₽£$€
 3ze $(printf "$tze" | tr -d '[[:space:]]' ||:)
 ohz $(printf "$ohz" | tr -d '[[:space:]]' ||:)
 g9q $(printf "$g9q" | shuf | tr -d '[[:space:]]' ||:)
+OCD $(printf "$ocd" | shuf | tr -d '[[:space:]]' ||:)
 [];',.//|/\ &gt;- -&gt; ~~&lt; &lt;-- --&gt; == === ==&gt; &lt;==
 || {}:"&lt;&gt;?" Januardo90 repo2obj
 fligatures final fjord flair ft fff

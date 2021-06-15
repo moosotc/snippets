@@ -5,6 +5,7 @@ test -n "${1-}" || {
     echo
     exit
 }
+
 ! test "$1" = "add" || {
     if expr "$2" : '/.*' &>/dev/null;
     then
@@ -12,18 +13,10 @@ test -n "${1-}" || {
     else
         p="$PWD/"
     fi
-    exec ln -s "$p/$2" $HOME/x/con/${3-}
+    exec ln -s "$p/$2" $HOME/x/con/${3-}/
 }
-t="$HOME/x/con/$1"
-a="$t.args"
-stargs() {
-    ! test -r $a || cat $a
-}
+
+file=$HOME/x/con/$1
 shift
-args=${*-$(stargs)}
-! test -n "$args" || echo "$args" >$a
-if command -v "$t"; then
-    exec "$t $args"
-else
-    exec mpv $t "$args"
-fi
+
+for arg; do printf "%s\000" "$arg"; done | xargs -0 mpv $file

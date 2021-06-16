@@ -11,9 +11,9 @@
 */
 
 /* malc */
-@font-face { font-family: sans-serif; src: local("nunito"); }
-@font-face { font-family: serif; src: local("nunito"); }
-@font-face { font-family: monospace; src: local("jetbrainsmono"); }
+@font-face { font-family: sans-serif; src: prince-lookup("nunito"); }
+@font-face { font-family: serif; src: prince-lookup("nunito"); }
+@font-face { font-family: monospace; src: prince-lookup("jetbrainsmono"); }
 
 /* set headers and footers */
 @page {

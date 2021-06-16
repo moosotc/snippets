@@ -328,11 +328,10 @@
 ;;;======================================================================
 (savehist-mode)
 (desktop-save-mode)
-(add-to-list 'desktop-modes-not-to-save 'vc-dir-mode)
-(add-to-list 'desktop-modes-not-to-save 'dired-mode)
-(add-to-list 'desktop-modes-not-to-save 'Info-mode)
-(add-to-list 'desktop-modes-not-to-save 'info-lookup-mode)
-(add-to-list 'desktop-modes-not-to-save 'fundamental-mode)
+(setq desktop-modes-not-to-save
+      (append desktop-modes-not-to-save
+              '(vc-dir-mode dired-mode Info-mode
+                            info-lookup-mode fundamental-mode)))
 
 (defun bsd-parens ()
   (interactive)
@@ -343,7 +342,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-headline-done ((t ()))) ;; (:foreground "#555753" :background "#C3C7CF"))))
+ '(helm-bookmark-info ((t (:foreground "tomato3" :weight bold))))
+ '(org-headline-done ((t ())))
  '(helm-M-x-key ((t (:foreground "blue1"))))
  '(helm-locate-finish ((t (:foreground "black"))))
  '(Info-quoted ((t nil)))

@@ -220,18 +220,16 @@
 (add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
 
 (defun my-c-mode-hook ()
-  (define-key c-mode-map [(hyper \[)] 'c-insert-curly-braces)
-  (define-key c-mode-map [(hyper \])] 'c-insert-curly-braces2)
-  (define-key c++-mode-map [(hyper \[)] 'c-insert-curly-braces)
-  (define-key c++-mode-map [(hyper \])] 'c-insert-curly-braces2)
-  (local-set-key [(return)] 'newline-and-indent)
+  (define-key c-mode-map (kbd "H-[") 'c-insert-curly-braces)
+  (define-key c-mode-map (kbd "H-]") 'c-insert-curly-braces2)
+  (local-set-key (kbd "<return>") 'newline-and-indent)
   (c-set-style "bsd")
   (setq c-basic-offset 4)
   (c-set-offset 'statement-case-open 4)
   (c-set-offset 'case-label 0))
 
 (defun my-sh-mode-hook ()
-  (define-key sh-mode-map [(hyper \[)] 'sh-insert-curly-braces))
+  (define-key sh-mode-map (kbd "H-[") 'sh-insert-curly-braces))
 
 (add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
@@ -319,9 +317,9 @@
     (insert-parentheses nil)))
 
 (defvar caml-mode-map (make-sparse-keymap))
-(define-key caml-mode-map [(return)] 'newline-and-indent)
-(define-key caml-mode-map [(delete)] 'delete-char)
-(define-key caml-mode-map "\C-c\C-q" 'caml-indent-phrase)
+(define-key caml-mode-map (kbd "<return>") 'newline-and-indent)
+(define-key caml-mode-map (kbd "<delete>") 'delete-char)
+(define-key caml-mode-map (kbd "C-c C-q") 'caml-indent-phrase)
 
 ;;;======================================================================
 ;;; Desktop + Session
@@ -600,7 +598,7 @@
   (org-cycle))
 
 (defun my-org-mode-hook ()
-  (define-key org-mode-map [(hyper tab)] 'my-close-org-element))
+  (define-key org-mode-map (kbd "H-<tab") 'my-close-org-element))
 
 (add-hook 'org-mode-hook 'my-org-mode-hook)
 (defun copy-buffer-file-name ()

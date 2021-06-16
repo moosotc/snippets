@@ -6,11 +6,7 @@
 (defun switch-to-other-buffer ()
   (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
-(global-set-key "\C-ha" 'apropos)
-(global-set-key (kbd "C-=") 'pop-to-mark-command)
-(global-set-key [(meta hyper ? )] 'mark-end-of-sentence)
-(global-set-key [(hyper ?a)] 'beginning-of-buffer)
-(global-set-key [(hyper ?e)] 'end-of-buffer)
+
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
 ;; (electric-quote-mode)
@@ -174,10 +170,7 @@
   (interactive "r")
   (right-align-region-str "->" beg end))
 
-(global-set-key [C-delete] 'kill-word)
 (blink-cursor-mode 0)
-
-(global-set-key [M-backspace] 'backward-kill-word)
 (defun describe-function-at-point ()
   (interactive)
   (describe-function (function-called-at-point)))
@@ -326,26 +319,6 @@
     (princ parens-require-spaces)
     (insert-parentheses nil)))
 
-;;======================================================================
-;; redefine global and mode specific key sequences
-(global-set-key [(hyper ?4)] 'match-paren)
-(global-set-key [(hyper ?x) (control ?b)] 'ibuffer-lis-buffers)
-(global-unset-key [(control ?x) (control ?b)]) ;; 'helm-buffers-list)
-(global-unset-key [(control ?x) ?b]);; 'helm-for-files)
-(global-set-key [(hyper ?b)] 'helm-for-files)
-(global-set-key [(hyper ?9)] 'insert-parentheses)
-(global-set-key [(hyper ?0)] 'my-insert-parentheses)
-(global-set-key [(hyper ?')] 'insert-quotes)
-(global-set-key [(hyper q)] 'my-kill-this-buffer-and-window)
-(global-set-key [(hyper w)] 'my-delete-window)
-(global-set-key [(hyper ?\[)] 'describe-function-at-point)
-(global-set-key [(hyper ?\])] 'describe-variable-at-point)
-
-(global-set-key [(hyper right)] 'bs-cycle-next)
-(global-set-key [(hyper left)] 'bs-cycle-previous)
-
-(global-set-key [(hyper ?\;)] 'caml-comment-till-end-of-line)
-
 (defvar caml-mode-map (make-sparse-keymap))
 (define-key caml-mode-map [(return)] 'newline-and-indent)
 (define-key caml-mode-map [(delete)] 'delete-char)
@@ -459,14 +432,7 @@
    "\\(\\W+\\)\\(.*\\) -> \\(.*\\)"
    "\\1\\3 -> \\2"))
 
-(global-set-key "\C-x." 'helm-ag)
-(global-set-key [(meta ?.)] 'helm-git-grep-at-point)
-(global-set-key [(hyper ?.)] 'helm-ag-this-file)
-(global-set-key [(ctrl hyper ?.)] 'helm-resume)
-
 (fset 'yes-or-no-p 'y-or-n-p)
-
-(global-set-key [(hyper ?l)] 'switch-to-other-buffer)
 
 (defun c-insert-curly-braces ()
   "Insert a pair of curly braces in a C buffer."
@@ -519,14 +485,9 @@
                     "/net/share/info"))
             ;; Info-default-directory-list)
             ))
+
 (autoload 'helm-imenu "helm-imenu")
-(global-set-key [(hyper ?7)] 'helm-imenu)
-
-;; (global-set-key [(f1) (return)] 'woman)
-(global-set-key [(f1) (return)] 'man)
-
 (autoload 'gnus "gnus" "gnus" t)
-
 (autoload 'global-whitespace-mode "whitespace" "whitespace mode" t)
 (global-whitespace-mode)
 
@@ -542,7 +503,6 @@
 (add-hook 'bs-mode-hook 'selector-moo0)
 (add-hook 'package-menu-mode-hook 'selector-moo0)
 
-(global-set-key "\C-xf" 'helm-find-files)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 
@@ -554,13 +514,6 @@
   (insert
    (format "%s" (loop for a from ?A to ?Z collect (format "%c\n" a)))))
 
-;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
-(define-key global-map "\C-cl" 'org-store-link)
-(define-key global-map "\C-ca" 'org-agenda)
-
-(global-set-key (kbd "M-x")     'helm-M-x)
-(global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
-
 (set-selection-coding-system 'utf-8)
 (set-clipboard-coding-system 'utf-8)
 
@@ -570,13 +523,6 @@
 (defun my-only-yank-x-clipboard ()
   (interactive)
   (insert (gui-get-selection 'CLIPBOARD)))
-
-(global-set-key [(hyper ?\\)] 'my-only-yank-x-clipboard)
-(global-set-key [(hyper ?/)] 'helm-occur)
-(global-set-key [(hyper ?t)] (lambda ()
-                               (interactive)
-                               (erc-track-switch-buffer -1)))
-(global-set-key [(hyper ?n)] 'erc-track-switch-buffer)
 
 (put 'dired-find-alternate-file 'disabled nil)
 
@@ -622,11 +568,9 @@
     (lisp-interaction-mode)))
 
 (defun orgy ()
+  (interactive)
   (insert "#+TODO: TODO(t) | DONE(t)")
   (org-mode))
-
-(global-set-key [(meta hyper ?l)] 'lispy)
-(global-set-key [(meta hyper shift ?l)] 'orgy)
 
 ;; https://stackoverflow.com/questions/24904208/emacs-windows-org-mode-encoding
 (modify-coding-system-alist 'file "" 'utf-8-unix)
@@ -634,10 +578,6 @@
 (add-hook 'help-mode-hook 'scroll-lock-mode)
 (add-hook 'gnus-article-mode-hook 'scroll-lock-mode)
 
-(global-set-key [(hyper ?h)] (lambda () (interactive) (scroll-up 1)))
-(global-set-key [(hyper ?s)] (lambda () (interactive) (scroll-down 1)))
-(global-set-key [(hyper ?c)] 'my-recompile)
-(global-set-key [(meta hyper ?c)] 'compile)
 (defun my-date () (format-time-string "%a %d.%m.%Y"))
 (defun my-date-ins () (interactive) (insert (my-date)))
 
@@ -665,11 +605,64 @@
   (define-key org-mode-map [(hyper tab)] 'my-close-org-element))
 
 (add-hook 'org-mode-hook 'my-org-mode-hook)
-(global-set-key [(hyper shift insert)] 'yank-from-kill-ring)
-(global-set-key [(hyper ?|)] 'yank-from-kill-ring) ;; hyper-|, hyper-shift-\
-(global-set-key [(hyper ?1)] 'other-window)
 (defun copy-buffer-file-name ()
   (interactive) (gui-set-selection 'CLIPBOARD (buffer-file-name)))
+
+(defun my-erc-track-switch-buffer ()
+  (interactive) (erc-track-switch-buffer -1))
+
+(autoload 'helm-imenu "helm-imenu")
+
+;;======================================================================
+;; redefine global and mode specific key sequences
+(global-set-key (kbd "H-7") 'helm-imenu)
+(global-set-key (kbd "C-x f") 'helm-find-files)
+;; http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html
+(global-set-key (kbd "C-c l") 'org-store-link)
+(global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
+(global-set-key (kbd "H-\\") 'my-only-yank-x-clipboard)
+(global-set-key (kbd "H-/") 'helm-occur)
+(global-set-key (kbd "H-t") 'my-erc-track-switch-buffer)
+(global-set-key (kbd "H-d") 'erc-track-switch-buffer)
+(global-set-key (kbd "M-H-l") 'lispy)
+(global-set-key (kbd "M-H-L") 'orgy)
+(global-set-key (kbd "H-h") (lambda () (interactive) (scroll-up 1)))
+(global-set-key (kbd "H-s") (lambda () (interactive) (scroll-down 1)))
+(global-set-key (kbd "H-c") 'my-recompile)
+(global-set-key (kbd "M-H-c") 'compile)
+(global-set-key (kbd "H-4") 'match-paren)
+(global-set-key (kbd "H-x H-b") 'ibuffer-list-buffers)
+(global-set-key (kbd "H-b") 'helm-for-files)
+(global-set-key (kbd "H-9") 'insert-parentheses)
+(global-set-key (kbd "H-0") 'my-insert-parentheses)
+(global-set-key (kbd "H-'") 'insert-quotes)
+(global-set-key (kbd "H-q") 'my-kill-this-buffer-and-window)
+(global-set-key (kbd "H-;") 'caml-comment-till-end-of-line)
+(global-set-key (kbd "C-=") 'pop-to-mark-command)
+(global-set-key (kbd "H-a") 'beginning-of-buffer)
+(global-set-key (kbd "H-e") 'end-of-buffer)
+(global-set-key (kbd "M-.") 'helm-git-grep-at-point)
+(global-set-key (kbd "H-.") 'helm-ag-this-file)
+(global-set-key (kbd "C-H-.") 'helm-resume)
+(global-set-key (kbd "H-l") 'switch-to-other-buffer)
+(global-set-key (kbd "H-|")  'yank-from-kill-ring)
+(global-set-key (kbd "H-1") 'other-window)
+
+(global-set-key (kbd "C-h a") 'apropos)
+(global-set-key (kbd "C-x .") 'helm-ag)
+
+
+(global-unset-key (kbd "C-x C-b")) ;; 'helm-buffers-list)
+(global-unset-key (kbd "C-x b"))   ;; 'helm-for-files)
+
+(global-set-key [(hyper meta right)] 'mark-end-of-sentence)
+(global-set-key [(hyper meta left)] 'mark-beginning-of-sentence)
+(global-set-key [(hyper shift insert)] 'yank-from-kill-ring)
+(global-set-key [(hyper right)] 'bs-cycle-next)
+(global-set-key [(hyper left)] 'bs-cycle-previous)
+(global-set-key [C-delete] 'kill-word)
+(global-set-key [M-backspace] 'backward-kill-word)
 
 ;;; Local Variables:
 ;;; End:

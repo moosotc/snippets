@@ -656,13 +656,13 @@
 (global-unset-key (kbd "C-x C-b")) ;; 'helm-buffers-list)
 (global-unset-key (kbd "C-x b"))   ;; 'helm-for-files)
 
-(global-set-key [(hyper meta right)] 'mark-end-of-sentence)
-(global-set-key [(hyper meta left)] 'mark-beginning-of-sentence)
-(global-set-key [(hyper shift insert)] 'yank-from-kill-ring)
-(global-set-key [(hyper right)] 'bs-cycle-next)
-(global-set-key [(hyper left)] 'bs-cycle-previous)
-(global-set-key [C-delete] 'kill-word)
-(global-set-key [M-backspace] 'backward-kill-word)
+(global-set-key (kbd "H-M-<right>") 'mark-end-of-sentence)
+(global-set-key (kbd "H-M-<left>") 'mark-beginning-of-sentence)
+(global-set-key (kbd "H-S-<insert>") 'yank-from-kill-ring)
+(global-set-key (kbd "H-<right>") 'bs-cycle-next)
+(global-set-key (kbd "H-<left>") 'bs-cycle-previous)
+(global-set-key (kbd "C-<delete>") 'kill-word)
+(global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
 ;;; Local Variables:
 ;;; End:

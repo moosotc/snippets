@@ -10,7 +10,7 @@ test -n "${1-}" || {
 
 ! test "$1" = "add" || {
     test -z "${2##/*}" && p=$2 || p=$PWD/$2
-    exec ln -s $d/${3-}
+    exec ln -s $p $d/${3-}
 }
 
 file=$d/$1

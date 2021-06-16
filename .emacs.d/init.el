@@ -252,12 +252,11 @@
     (comment-region (point) (progn (end-of-line) (point)) arg)))
 
 ;; ----------------------------------------------------------------------
-(defun match-paren (arg)
+(defun my-match-paren (arg)
   "Go to the matching parenthesis if on parenthesis otherwise insert %."
   (interactive "p")
   (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
-        ((looking-at "\\s\)")
-         (forward-char 1) (backward-list 1))
+        ((looking-at "\\s\)") (forward-char 1) (backward-list 1))
         (t (self-insert-command (or arg 1)))))
 
 ;;; ********
@@ -631,7 +630,7 @@
 (global-set-key (kbd "H-s") (lambda () (interactive) (scroll-down 1)))
 (global-set-key (kbd "H-c") 'my-recompile)
 (global-set-key (kbd "M-H-c") 'compile)
-(global-set-key (kbd "H-4") 'match-paren)
+(global-set-key (kbd "H-3") 'my-match-paren)
 (global-set-key (kbd "H-x H-b") 'ibuffer-list-buffers)
 (global-set-key (kbd "H-b") 'helm-for-files)
 (global-set-key (kbd "H-9") 'insert-parentheses)

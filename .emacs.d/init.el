@@ -636,7 +636,6 @@
 (global-unset-key (kbd "C-x b"))   ;; 'helm-for-files)
 
 (global-set-key (kbd "H-M-<right>") 'mark-end-of-sentence)
-(global-set-key (kbd "H-M-<left>") 'mark-beginning-of-sentence)
 (global-set-key (kbd "H-S-<insert>") 'yank-from-kill-ring)
 (global-set-key (kbd "H-<right>") 'bs-cycle-next)
 (global-set-key (kbd "H-<left>") 'bs-cycle-previous)

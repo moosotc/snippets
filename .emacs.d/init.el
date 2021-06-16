@@ -645,7 +645,7 @@
 (global-set-key (kbd "H-.") 'helm-ag-this-file)
 (global-set-key (kbd "C-H-.") 'helm-resume)
 (global-set-key (kbd "H-l") 'switch-to-other-buffer)
-(global-set-key (kbd "H-|")  'yank-from-kill-ring)
+(global-set-key (kbd "H-|") 'yank-from-kill-ring)
 (global-set-key (kbd "H-1") 'other-window)
 
 (global-set-key (kbd "C-h a") 'apropos)

@@ -583,7 +583,8 @@
   (org-cycle))
 
 (defun my-org-mode-hook ()
-  (define-key org-mode-map (kbd "H-<tab") 'my-close-org-element))
+  (princ "org mode")
+  (define-key org-mode-map (kbd "H-<tab>") 'my-close-org-element))
 
 (add-hook 'org-mode-hook 'my-org-mode-hook)
 (defun copy-buffer-file-name ()

@@ -37,19 +37,18 @@
    ("gnu" . "http://elpa.gnu.org/packages/")
    ;; ("sunr" ."http://joseito.republika.pl/sunrise-commander/")
    ;; ("marmalade" . "http://marmalade-repo.org/packages/")
-   ("melpa" . "http://melpa.org/packages/")
+   ;; ("melpa" . "http://melpa.org/packages/")
    )
 
  undo-limit 120000
  whitespace-global-modes '(not erc-mode)
- whitespace-style
- '(face
-   trailing
-   indentation::tabs
-   lines-tail
-   empty
-   tabs
-   tab-mark)
+ whitespace-style '(face
+                    trailing
+                    indentation::tabs
+                    lines-tail
+                    empty
+                    tabs
+                    tab-mark)
 
  org-log-done t
 
@@ -647,6 +646,8 @@
 
 (define-key emacs-lisp-mode-map (kbd "H-,") 'describe-variable-at-point)
 (define-key emacs-lisp-mode-map (kbd "H-.") 'describe-function-at-point)
+
+(global-set-key (kbd "C-s") 'helm-occur)
 
 ;;; Local Variables:
 ;;; End:

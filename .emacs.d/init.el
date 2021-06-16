@@ -221,7 +221,7 @@
 
 (defun my-c-mode-hook ()
   (define-key c-mode-map (kbd "H-[") 'c-insert-curly-braces)
-  (define-key c-mode-map (kbd "H-]") 'c-insert-curly-braces2)
+  (define-key c-mode-map (kbd "H-]") 'c-insert-curly-braces-open-line-after)
   (local-set-key (kbd "<return>") 'newline-and-indent)
   (c-set-style "bsd")
   (setq c-basic-offset 4)
@@ -445,7 +445,7 @@
   (forward-line -1)
   (c-indent-command))
 
-(defun c-insert-curly-braces2 ()
+(defun c-insert-curly-braces-open-line-after ()
   "Insert a pair of curly braces and open-line after } in a C buffer."
   (interactive)
   (if (looking-at " ")

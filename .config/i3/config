@@ -126,8 +126,7 @@ mode "resize" {
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
-
-bindsym F7 mode "resize"
+bindsym $win+$alt+7 mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information
 # provided by i3mon.py)

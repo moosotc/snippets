@@ -164,8 +164,7 @@
             (goto-char pw)
             (if (> pd 0)
                 (insert-char 32 pd)
-              (delete-char pd))))))))017
-
+              (delete-char pd))))))))
 
 (defun right-align-= (beg end)
   (interactive "r")

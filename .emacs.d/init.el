@@ -493,11 +493,10 @@
 (defun selector-moo ()
   (hl-line-mode 1)
   (setq cursor-type nil))
+
 (defun selector-moo0 ()
   (hl-line-mode 1))
 
-(dolist (mode '(c-mode caml-mode lisp-mode))
-  (add-hook mode 'highlight-numbers-mode))
 (add-hook 'dired-mode-hook 'selector-moo0)
 (add-hook 'bs-mode-hook 'selector-moo0)
 (add-hook 'package-menu-mode-hook 'selector-moo0)

@@ -9,9 +9,6 @@
 
 (set-variable 'next-error-highlight t)
 (delete-selection-mode 1)
-;; (electric-quote-mode)
-(if (string-match "iosevka" (face-font 'default))
-    (setq-default line-spacing 2))
 
 (setq-default
  indent-tabs-mode nil
@@ -196,6 +193,14 @@
       (switch-to-buffer
        (or (cl-find-if 'good-buffer-p (buffer-list)) "*scratch*"))))
 
+(defun my-kill-this-buffer-and-window ()
+  (interactive)
+  (let ((buffer (current-buffer)))
+    (unless (= (count-windows) 1)
+      (other-window 1)
+      (delete-other-windows))
+    (kill-buffer buffer)))
+
 (defun my-recompile ()
   (interactive)
   (let ((compilation-ask-about-save nil))
@@ -215,7 +220,7 @@
 (add-hook 'emacs-lisp-mode-hook 'my-lisp-mode-hook)
 
 (defun my-bookmark-mode-hook ()
-  (local-set-key [(return)] 'bookmark-bmenu-select))
+  (local-set-key (kbd "<return>") 'bookmark-bmenu-select))
 
 (add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
 
@@ -306,13 +311,12 @@
     (forward-sexp)
     (insert ")")))
 
-(defun my-insert-parentheses-c ()
+(defun my-insert-parentheses-no-space ()
   (interactive)
   (let ((parens-require-spaces
          (save-excursion
            (backward-word)
            (looking-at "\\(if\\)\\|\\(for\\)\\|\\(while\\)"))))
-    (princ parens-require-spaces)
     (insert-parentheses nil)))
 
 (defvar caml-mode-map (make-sparse-keymap))
@@ -333,7 +337,7 @@
 
 (defun bsd-parens ()
   (interactive)
-  (local-set-key [(hyper ?9)] 'my-insert-parentheses-c))
+  (local-set-key (kbd "H-9") 'my-insert-parentheses-no-space))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -531,14 +535,11 @@
                                 (smie-rule-parent-p "|")
                                 (smie-rule-parent)))))))
 
-(if (not (string-equal (user-login-name) "malc"))
-    (global-set-key [(f10)] 'tmm-menubar)
-  (load "~/.emacs.d/lacarte.elc")
-  (load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")
-  (require 'highlight-numbers)
-  (add-hook 'prog-mode-hook 'highlight-numbers-mode)
-  (set-face-foreground 'highlight-numbers-number "DodgerBlue4")
-  (global-set-key [(f10)] 'helm-browse-menubar))
+(load "~/.emacs.d/lacarte.elc")
+(load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")
+(require 'highlight-numbers)
+(add-hook 'prog-mode-hook 'highlight-numbers-mode)
+(set-face-foreground 'highlight-numbers-number "DodgerBlue4")
 
 (defun lispy ()
   (interactive)
@@ -571,7 +572,7 @@
 (setq org-todo-keywords '((sequence "TODO(t!)" "|" "DONE(d!)" "CANCELED(c@)")))
 (set-scroll-bar-mode 'left)
 (defadvice speed-type--setup (after activate)
-  (local-set-key [(hyper escape)] 'speed-type--replay))
+  (local-set-key (kbd "H-<escape>") 'speed-type--replay))
 
 (setq-default scroll-bar-width 8)
 (setq org-startup-folded t)
@@ -615,7 +616,7 @@
 (global-set-key (kbd "H-x H-b") 'ibuffer-list-buffers)
 (global-set-key (kbd "H-b") 'helm-for-files)
 (global-set-key (kbd "H-9") 'insert-parentheses)
-(global-set-key (kbd "H-0") 'my-insert-parentheses)
+(global-set-key (kbd "H-0") 'helm-browse-menubar)
 (global-set-key (kbd "H-'") 'insert-quotes)
 (global-set-key (kbd "H-q") 'my-kill-this-buffer-and-window)
 (global-set-key (kbd "H-;") 'caml-comment-till-end-of-line)

@@ -4,7 +4,6 @@
 [alias]
 	log1 = log --reverse --stat HEAD@{1}..HEAD
 	logsel = !git log --reverse --stat $(xclip -sel c -o)
-	logsel1 = !git log --reverse --stat $(xclip -o)
 	pull1 = !"git pull; git log1"
 	remup = remote update
 	url = config --get remote.origin.url

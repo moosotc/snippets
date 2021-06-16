@@ -643,5 +643,8 @@
 (global-set-key (kbd "C-<delete>") 'kill-word)
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
+(define-key emacs-lisp-mode-map (kbd "H-,") 'describe-variable-at-point)
+(define-key emacs-lisp-mode-map (kbd "H-.") 'describe-function-at-point)
+
 ;;; Local Variables:
 ;;; End:

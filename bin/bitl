@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-pgrep bitlbee && exit 1
-cd ~/x/rcs/git/bitlbee/
-tmux new-window './bitlbee -F -n -i 127.0.0.1 "$*"'

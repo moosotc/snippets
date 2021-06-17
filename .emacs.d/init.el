@@ -1,7 +1,9 @@
 ;; -*- Mode: Emacs-Lisp -*-
-(set-fontset-font "fontset-default"
-                  ;; Supplemental Symbols and Pictographs
-                  '(#x1f900 . #x1f9ff) "code2003" nil)
+(defun use-code2003 ()
+  (interactive)
+  (set-fontset-font "fontset-default"
+                    ;; Supplemental Symbols and Pictographs
+                    '(#x1f900 . #x1f9ff) "code2003" nil))
 (server-start)
 (defun switch-to-other-buffer ()
   (interactive)

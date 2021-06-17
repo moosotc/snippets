@@ -42,3 +42,11 @@
 (setq erc-replace-alist '(("<artifexirc-bot> " . "@")
                           ("<artifexi-> " . "@")
                           ("<d-bot> " . "@")))
+
+(defun libera-identify ()
+  (interactive)
+  (insert
+   (let ((pass
+          (let ((s (shell-command-to-string "pass malc@irc.libera.chat")))
+            (substring s 0 (- (length s) 1)))))
+     (concat "/msg NickServ IDENTIFY malc " pass))))

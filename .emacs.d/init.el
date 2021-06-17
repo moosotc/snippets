@@ -646,6 +646,8 @@
 
 (define-key emacs-lisp-mode-map (kbd "H-,") 'describe-variable-at-point)
 (define-key emacs-lisp-mode-map (kbd "H-.") 'describe-function-at-point)
+(define-key lisp-interaction-mode-map (kbd "H-,") 'describe-variable-at-point)
+(define-key lisp-interaction-mode-map (kbd "H-.") 'describe-function-at-point)
 
 (global-set-key (kbd "H-/") 'helm-occur)
 

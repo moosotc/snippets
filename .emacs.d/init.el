@@ -3,7 +3,13 @@
   (interactive)
   (set-fontset-font "fontset-default"
                     ;; Supplemental Symbols and Pictographs
-                    '(#x1f900 . #x1f9ff) "code2003" nil))
+                    '(#x1f900 . #x1f9ff) "code2003" nil)
+  (set-fontset-font "fontset-default"
+                    ;; Miscellaneous symbols
+                    ;; Dingbats
+                    '(#x2600 . #x27c0) "code2003" nil)
+  )
+
 (server-start)
 (defun switch-to-other-buffer ()
   (interactive)
@@ -646,6 +652,6 @@
 (global-set-key (kbd "H-/") 'helm-occur)
 
 (set-face-background 'mode-line-emphasis "grey70")
-
+(set-face-foreground 'speed-type-correct "grey80")
 ;;; Local Variables:
 ;;; End:

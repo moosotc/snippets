@@ -169,6 +169,7 @@
   (right-align-region-str "->" beg end))
 
 (blink-cursor-mode 0)
+
 (defun describe-function-at-point ()
   (interactive)
   (describe-function (function-called-at-point)))

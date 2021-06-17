@@ -651,5 +651,7 @@
 
 (global-set-key (kbd "H-/") 'helm-occur)
 
+(set-face-background 'mode-line-emphasis "grey70")
+
 ;;; Local Variables:
 ;;; End:

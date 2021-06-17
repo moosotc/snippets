@@ -625,7 +625,6 @@
 (global-set-key (kbd "H-a") 'beginning-of-buffer)
 (global-set-key (kbd "H-e") 'end-of-buffer)
 (global-set-key (kbd "M-.") 'helm-git-grep-at-point)
-(global-set-key (kbd "H-.") 'helm-ag-this-file)
 (global-set-key (kbd "C-H-.") 'helm-resume)
 (global-set-key (kbd "H-l") 'switch-to-other-buffer)
 (global-set-key (kbd "H-|") 'yank-from-kill-ring)
@@ -643,11 +642,6 @@
 (global-set-key (kbd "H-<left>") 'bs-cycle-previous)
 (global-set-key (kbd "C-<delete>") 'kill-word)
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
-
-(define-key emacs-lisp-mode-map (kbd "H-,") 'describe-variable-at-point)
-(define-key emacs-lisp-mode-map (kbd "H-.") 'describe-function-at-point)
-(define-key lisp-interaction-mode-map (kbd "H-,") 'describe-variable-at-point)
-(define-key lisp-interaction-mode-map (kbd "H-.") 'describe-function-at-point)
 
 (global-set-key (kbd "H-/") 'helm-occur)
 

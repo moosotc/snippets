@@ -630,8 +630,7 @@
 (global-set-key (kbd "H-|") 'yank-from-kill-ring)
 (global-set-key (kbd "H-1") 'other-window)
 
-(global-set-key (kbd "C-h a") 'apropos)
-(global-set-key (kbd "C-x .") 'helm-ag)
+(global-set-key (kbd "C-h a") 'helm-apropos)
 
 (global-unset-key (kbd "C-x C-b")) ;; 'helm-buffers-list)
 (global-unset-key (kbd "C-x b"))   ;; 'helm-for-files)

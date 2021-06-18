@@ -10,6 +10,7 @@ command -v shuf &>/dev/null || shuf() { cat; }
 sep='&nbsp;'
 
 all="
+****
 1oop
 ho1e
 3ДС
@@ -73,7 +74,7 @@ maketext() {
   $(basename $1)
   </head>
 <body>
-        <pre>3З ʒȜӠᴣʒʓ oO0ѲØ 1o1O101Ѳ1Ø1∅øØo0 OCD</pre>
+        <pre>3З ʒȜӠᴣʒʓ oO0ѲØ 1o1O101Ѳ1Ø1∅øØo0ʘ OCD</pre>
 EOF
     for size in 8 10 6 5 4; do
         text $size >>"$html"

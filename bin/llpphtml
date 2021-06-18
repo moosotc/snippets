@@ -1,0 +1,27 @@
+#!/bin/sh
+set -e
+
+die() { echo "$1" >&2; exit 1; }
+
+cachedir="$HOME/.cache/llpp"
+test -d "$cachedir" || die "cache directory '$cachedir' does not exist"
+
+command -v wget >/dev/null 2>&1 || die "no wget"
+
+while getopts s:f opt; do
+    case $opt in
+        c) css="$OPTARG";;
+        f) force=true;;
+        ?) die "usage: $0 [-c css] url";;
+    esac
+done
+shift $(($OPTIND - 1))
+url=${1-$(xclip -o -sel c)}
+test -z "$url" && die "usage $0: [url]"
+
+set -- $(echo "$url" | cksum)
+(cd $cachedir; wget -L -r -nc -np -l 1 "$url" -o $cachedir/log;) || echo fuck
+
+local=$cachedir${url#*/}
+fontpath=${fontpath-/home/malc/x/fnt/inuse/nunito/Nunito-Light.otf}
+llppepub $local

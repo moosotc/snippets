@@ -786,3 +786,4 @@ ended using light version after all
 with 3ze.py (3 remapped to CYRILLIC CAPITAL LETTER ABKHASIAN DZE)
 and manually "dotted" (in fontforge) zero
 * Currently testing
+* montserrat alternates is "bigger" than noto sans

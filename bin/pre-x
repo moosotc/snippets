@@ -1,7 +1,8 @@
 #!/bin/sh
-set -x
+set -e
 
 noauditspam
 rapl.sh
 ion
 dotor
+exec yy

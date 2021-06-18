@@ -588,6 +588,8 @@
 (global-set-key (kbd "H-<right>") 'bs-cycle-next)
 (global-set-key (kbd "H-<left>") 'bs-cycle-previous)
 (global-set-key (kbd "C-<delete>") 'kill-word)
+(global-set-key (kbd "H-<delete>") 'kill-sexp)
+(global-set-key (kbd "M-<delete>") 'kill-sentence)
 (global-set-key (kbd "H-w") 'backward-kill-word)
 (global-set-key (kbd "H-<backspace>") 'backward-kill-word)
 

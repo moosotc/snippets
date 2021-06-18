@@ -358,7 +358,7 @@
  '(helm-locate-finish ((t (:foreground "black"))))
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
- '(cursor ((t (:background "tomato4"))))
+ '(cursor ((t (:background "black"))))
  '(speed-type-correct ((t (:foreground "darkgreen"))))
  '(erc-current-nick-face ((t (:foreground "green4" :weight bold))))
  '(erc-keyword-face ((t (:foreground "blue1" :weight bold))))
@@ -645,7 +645,8 @@
 (global-set-key (kbd "H-<right>") 'bs-cycle-next)
 (global-set-key (kbd "H-<left>") 'bs-cycle-previous)
 (global-set-key (kbd "C-<delete>") 'kill-word)
-(global-set-key (kbd "M-<backspace>") 'backward-kill-word)
+(global-set-key (kbd "H-w") 'backward-kill-word)
+(global-set-key (kbd "H-<backspace>") 'backward-kill-word)
 
 (global-set-key (kbd "H-/") 'helm-occur)
 (global-set-key (kbd "H-z") 'helm-occur)

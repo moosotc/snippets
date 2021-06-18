@@ -644,7 +644,7 @@
  '(minibuffer-prompt ((t (:weight bold :foreground "#0066CC"))))
  '(mode-line ((t (:height 0.9 :box (:line-width 1 :color nil :style nil)))))
  '(mode-line-buffer-id ((t (:height 0.9 :foreground "#2E3436"))))
- '(mode-line-emphasis ((t (:weight bold :foreground "grey70"))))
+ '(mode-line-emphasis ((t (:weight bold :background "grey70"))))
  '(mode-line-highlight ((t (:height 0.9 :foreground "#2E3436" :background "#FEFFBF"))))
  '(next-error ((t (:inherit (region)))))
  '(org-headline-done ((t nil)))

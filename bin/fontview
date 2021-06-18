@@ -156,7 +156,7 @@ text() {
     cat <<EOF
 <pre style="font-size: ${1}pt;">
 $1<hr>
-lI З3 O0o
+lI З3 O0oʘ
 $(perm \~ "$all")
 
 https://ru.wikipedia.org/wiki/Панграмма https://en.wikipedia.org/wiki/Pangram

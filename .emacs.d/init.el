@@ -420,7 +420,7 @@
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages
-   '(monkeytype speed-type typing typit ag pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
+   '(monkeytype speed-type typing pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
 
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it
@@ -651,10 +651,9 @@
 (global-set-key (kbd "H-/") 'helm-occur)
 (global-set-key (kbd "H-z") 'helm-occur)
 
+(global-set-key (kbd "H-<escape>") 'monkeytype-repeat)
+
 (set-face-background 'mode-line-emphasis "grey70")
-(global-set-key (kbd "H-<escape>") 'speed-type--replay)
-(with-eval-after-load "speed-type"
-  (set-face-foreground 'speed-type-correct (face-background 'default)))
 (set-face-background 'whitespace-line "white")
 (set-face-foreground 'whitespace-line "black")
 

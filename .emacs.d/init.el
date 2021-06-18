@@ -596,9 +596,6 @@
 
 (global-set-key (kbd "H-<escape>") 'monkeytype-repeat)
 
-(set-face-background 'whitespace-line "white")
-(set-face-foreground 'whitespace-line "black")
-
 ;; ============================================================custom-set-faces
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -607,6 +604,7 @@
  ;; If there is more than one, they won't work right.
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
+ '(whitespace-line ((t (:background "white" :foreground "black"))))
  '(cursor ((t (:background "black"))))
  '(erc-current-nick-face ((t (:foreground "green4" :weight bold))))
  '(erc-keyword-face ((t (:foreground "blue1" :weight bold))))

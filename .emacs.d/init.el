@@ -1,6 +1,21 @@
 (load-file "~/xsrc/snippets/.emacs.d/dotemacs")
-
-;; ============================================================custom-set-faces
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-faces-vector
+[default default default italic underline success warning error])
+ '(canlock-password "320a46eeec84e8e4e041534d821600d69eb36d15")
+ '(dired-listing-switches "-aBhl --dired --group-directories-first --sort=extension")
+ '(erc-log-channels-directory "~/x/log/erc")
+ '(erc-nick "malc")
+ '(ibuffer-default-sorting-mode 'mode-name)
+ '(load-home-init-file t t)
+ '(org-agenda-files '("~/x/org/agenda"))
+ '(org-support-shift-select t)
+ '(package-selected-packages
+'(monkeytype pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -8,7 +23,6 @@
  ;; If there is more than one, they won't work right.
  '(Info-quoted ((t nil)))
  '(button ((t (:inherit (link)))))
- '(whitespace-line ((t (:background "white" :foreground "black"))))
  '(cursor ((t (:background "black"))))
  '(erc-current-nick-face ((t (:foreground "green4" :weight bold))))
  '(erc-keyword-face ((t (:foreground "blue1" :weight bold))))
@@ -56,6 +70,7 @@
  '(sh-heredoc ((t (:foreground "dim gray"))))
  '(shadow ((t (:foreground "#555753"))))
  '(speed-type-correct ((t (:foreground "darkgreen"))))
- '(variable-pitch ((t (:inherit (default))))))
+ '(variable-pitch ((t (:inherit (default)))))
+ '(whitespace-line ((t (:background "white" :foreground "black")))))
 ;;; Local Variables:
 ;;; End:

@@ -38,7 +38,13 @@ if oh0:
     b.paste ()
 
 if ell:
-    ch = ord ('\N{LATIN SMALL LETTER IOTA}')
+    c = '\N{LATIN SMALL LETTER L WITH RETROFLEX HOOK}'
+#+    c = '\N{LATIN SMALL LETTER L WITH BAR}'
+#+    c = '\N{LATIN SMALL LETTER L WITH CURL}'
+#    c = '\N{GREEK SMALL LETTER LAMDA}'
+#    c = '\N{HEBREW LETTER LAMED}'
+#    c = '\N{latin small letter l with middle tilde}'
+    ch = ord (c)
     a.selection.select (ch)
     a.copy ()
     b.selection.select("l")

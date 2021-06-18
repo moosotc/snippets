@@ -347,7 +347,7 @@
   (interactive)
   (local-set-key (kbd "H-9") 'my-insert-parentheses-no-space))
 
-(custom-set-faces
+(if t (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
@@ -402,7 +402,7 @@
  '(sh-heredoc ((t (:foreground "dim gray"))))
  '(shadow ((t (:foreground "#555753"))))
  '(c-electric-flag nil)
- '(variable-pitch ((t (:inherit (default))))))
+ '(variable-pitch ((t (:inherit (default)))))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -653,7 +653,7 @@
 (set-face-background 'mode-line-emphasis "grey70")
 (global-set-key (kbd "H-<escape>") 'speed-type--replay)
 (with-eval-after-load "speed-type"
-  (set-face-foreground 'speed-type-correct "grey80"))
+  (set-face-foreground 'speed-type-correct (face-background 'default)))
 
 ;;; Local Variables:
 ;;; End:

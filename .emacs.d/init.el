@@ -655,6 +655,8 @@
 (global-set-key (kbd "H-<escape>") 'speed-type--replay)
 (with-eval-after-load "speed-type"
   (set-face-foreground 'speed-type-correct (face-background 'default)))
+(set-face-background 'whitespace-line "white")
+(set-face-foreground 'whitespace-line "black")
 
 ;;; Local Variables:
 ;;; End:

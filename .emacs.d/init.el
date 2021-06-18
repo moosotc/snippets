@@ -271,35 +271,36 @@
 
 ;;; ********
 ;;; Few advices for FSF to behave more like Lucid
-(defadvice describe-key (after activate)
+
+;; TODO: DRY
+(defadvice describe-command (after _ activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-mode (after activate)
+(defadvice describe-bindings (after _ activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-function (after activate)
+(defadvice describe-key (after _ activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-variable (after activate)
+(defadvice describe-mode (after _ activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice describe-bindings (after activate)
+(defadvice describe-function (after _ activate)
   (switch-to-buffer-other-window "*Help*"))
 
-(defadvice apropos-command (after activate)
+(defadvice describe-variable (after _ activate)
+  (switch-to-buffer-other-window "*Help*"))
+
+(defadvice apropos-command (after _ activate)
   (switch-to-buffer "*Apropos*")
   (delete-other-windows))
 
-(defadvice ibuffer-list-buffers (after activate)
+(defadvice ibuffer-list-buffers (after _ activate)
   (switch-to-buffer-other-window "*Ibuffer*")
   (hl-line-mode 1)
   (setq cursor-type nil))
 
-(defadvice apropos (after activate)
-  (switch-to-buffer "*Apropos*")
-  (delete-other-windows))
-
-(defadvice man (after activate)
+(defadvice man (after _ activate)
   (delete-window))
 
 (defun insert-quotes ()
@@ -579,9 +580,6 @@
 (setq erc-server "irc.libera.chat")
 (setq org-todo-keywords '((sequence "TODO(t!)" "|" "DONE(d!)" "CANCELED(c@)")))
 (set-scroll-bar-mode 'left)
-(defadvice speed-type--setup (after activate)
-  (local-set-key (kbd "H-<escape>") 'speed-type--replay))
-
 (setq-default scroll-bar-width 8)
 (setq org-startup-folded t)
 
@@ -650,8 +648,12 @@
 (global-set-key (kbd "M-<backspace>") 'backward-kill-word)
 
 (global-set-key (kbd "H-/") 'helm-occur)
+(global-set-key (kbd "H-z") 'helm-occur)
 
 (set-face-background 'mode-line-emphasis "grey70")
-(set-face-foreground 'speed-type-correct "grey80")
+(global-set-key (kbd "H-<escape>") 'speed-type--replay)
+(with-eval-after-load "speed-type"
+  (set-face-foreground 'speed-type-correct "grey80"))
+
 ;;; Local Variables:
 ;;; End:

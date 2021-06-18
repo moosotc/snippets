@@ -1,0 +1,7 @@
+#!/bin/sh
+set -x
+
+noauditspam
+rapl.sh
+ion
+dotor

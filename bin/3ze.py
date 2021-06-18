@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 import sys, fontforge, getopt
 
-opts, args = getopt.getopt (sys.argv[1:], "03I")
+opts, args = getopt.getopt (sys.argv[1:], "03Il")
 oh0 = False
 ze3 = False
 upI = False
+ell = False
 for opt in opts:
     if opt[0] == "-0":
         oh0 = True
@@ -12,6 +13,8 @@ for opt in opts:
         ze3 = True
     if opt[0] == "-I":
         upI = True
+    if opt[0] == "-l":
+        ell = True
 
 a = fontforge.open (args[0])
 b = a
@@ -28,10 +31,17 @@ if ze3:
     b.paste ()
 
 if oh0:
-    ch = ord ('\N{LATIN CAPITAL LETTER O WITH dot below}')
+    ch = ord ('\N{LATIN LETTER BILABIAL CLICK}')
     a.selection.select (ch)
     a.copy ()
     b.selection.select("0")
+    b.paste ()
+
+if ell:
+    ch = ord ('\N{LATIN SMALL LETTER IOTA}')
+    a.selection.select (ch)
+    a.copy ()
+    b.selection.select("l")
     b.paste ()
 
 if upI:

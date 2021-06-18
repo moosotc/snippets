@@ -1,0 +1,39 @@
+@font-face {
+    font-family: sans-serif;
+    src: "/home/malc/x/fnt/inuse/nunito/Nunito-Light.otf";
+    font-style: regular;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: "/home/malc/x/fnt/inuse/nunito/Nunito-LightItalic.otf";
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: "/home/malc/x/fnt/inuse/nunito/Nunito-Bold.otf";
+    font-style: regular;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: "/home/malc/x/fnt/inuse/nunito/Nunito-BoldItalic.otf";
+    font-style: italic;
+    font-weight: bold;
+}
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: "sans-serif";
+}
+
+pre {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 9pt;
+}

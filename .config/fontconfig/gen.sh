@@ -8,7 +8,6 @@ set -eu
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
 # beograd               https://www.fontspace.com/beograd-font-f28002
-# dudu cyryllic         https://www.fontspace.com/vladmas
 # code2003              https://en.wikipedia.org/wiki/Code2000
 #                       https://www.fontspace.com/code2003-font-f24444
 # montserrat alternates https://github.com/JulietaUla/Montserrat

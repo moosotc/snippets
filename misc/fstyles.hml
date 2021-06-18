@@ -1,0 +1,8 @@
+<html>
+  <body style="font-family: beograd">
+    regular
+    <i>itallic</i>
+    <b>bold</b>
+    <b><i>itallic+bold</i></b>
+  </body>
+</html>

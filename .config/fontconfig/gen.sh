@@ -54,8 +54,10 @@ M "$sans"      "sans-serif" "segoe ui" "serif" "helvetica"
 M "$fantasque" "courier new" "monaco" "consolas"
 M "$jetmono"   "monospace"
 M "$grek"      "linux libertine"
-for f in opensans "noto sans" "open sans" "lucida grande" "droid sans" \
-                  "dejavu sans" "verdana" "vera"; do
+
+for f in "vera" "dejavu sans"                                   \
+         "noto sans" "droid sans" "open sans" "opensans"        \
+         "lucida grande" "verdana"; do
     M "$bigsans" "$f"
 done
 echo "</fontconfig>"

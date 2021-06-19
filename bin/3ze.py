@@ -38,12 +38,12 @@ if oh0:
     b.paste ()
 
 if ell:
-#    c = '\N{LATIN SMALL LETTER L WITH RETROFLEX HOOK}'
-#    c = '\N{LATIN SMALL LETTER L WITH BAR}'
-#    c = '\N{LATIN SMALL LETTER L WITH CURL}'
-#    c = '\N{GREEK SMALL LETTER LAMDA}'
-#    c = '\N{HEBREW LETTER LAMED}'
-    c = '\N{latin small letter l with middle tilde}'
+#    c = '\N{LATIN SMALL LETTER L WITH RETROFLEX HOOK}'  # ɭ
+#    c = '\N{LATIN SMALL LETTER L WITH BAR}'             # ƚ
+#    c = '\N{LATIN SMALL LETTER L WITH CURL}'            # ȴ
+#    c = '\N{GREEK SMALL LETTER LAMDA}'                  # λ
+#    c = '\N{HEBREW LETTER LAMED}'                       # ל
+    c = '\N{LATIN SMALL LETTER L WITH MIDDLE TILDE}'     # ɫ
     ch = ord (c)
     a.selection.select (ch)
     a.copy ()

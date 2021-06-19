@@ -578,7 +578,13 @@
 (global-set-key (kbd "H-/") 'helm-occur)
 (global-set-key (kbd "H-z") 'helm-occur)
 
-(global-set-key (kbd "H-<escape>") 'monkeytype-repeat)
+(defun my-monkeytype-repeat ()
+  (interactive)
+  (if (string-equal (buffer-name (current-buffer)) "*Monkeytype*")
+      (kill-this-buffer))
+  (monkeytype-repeat))
+
+(global-set-key (kbd "H-<escape>") 'my-monkeytype-repeat)
 
 (with-eval-after-load "monkeytype"
   (set-face-background 'monkeytype-results-success "grey80")

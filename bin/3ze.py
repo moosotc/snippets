@@ -53,8 +53,7 @@ if ell:
 if upI:
     # this does not appear to be working
     # perhaps I is used as a reference of some sort?
-    # ch = ord ('\N{LATIN CAPITAL LETTER I WITH OGONEK}')
-    ch = ord ('\N{LATIN CAPITAL LETTER I WITH DOT ABOVE}') # "İ"
+    ch = ord ('\N{LATIN CAPITAL LETTER I WITH OGONEK}')
     a.selection.select (ch)
     a.copy ()
     b.selection.select("I")

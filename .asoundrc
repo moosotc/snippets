@@ -25,8 +25,3 @@ ctl.!default {
   type hw
   card 0
 }
-
-defaults.bluealsa.service "org.bluealsa"
-defaults.bluealsa.device "28:F5:37:82:D1:73"
-defaults.bluealsa.profile "a2dp"
-defaults.bluealsa.delay 10000

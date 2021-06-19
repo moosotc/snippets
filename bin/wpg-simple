@@ -7,10 +7,10 @@ else
     url=$1
     shift
 fi
-dir=$HOME/tmp/wikicss
+dir=$HOME/1/wiki
 out=${url#https://}
 
-htm="$HOME/tmp/wikicss/$(basename $out).html"
+htm="$dir/$(basename $out).html"
 test -r "$htm" || {
     wget -l 1 -r "$url"
     ln "$out" "$htm"

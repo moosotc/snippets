@@ -587,6 +587,7 @@
 (global-set-key (kbd "H-<escape>") 'my-monkeytype-repeat)
 
 (with-eval-after-load "monkeytype"
-  (set-face-background 'monkeytype-results-success "grey80")
+  (set-face-foreground 'monkeytype-correct "grey80")
+  (set-face-foreground 'monkeytype-results-success "blue10")
   (set-face-foreground 'monkeytype-results-error "blue")
-  (set-face-background 'monkeytype-legend-1 "grey80"))
+  (set-face-foreground 'monkeytype-legend-1 "deepblue"))

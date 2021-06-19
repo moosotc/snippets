@@ -7,7 +7,6 @@ set -eu
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
-# beograd               https://www.fontspace.com/beograd-font-f28002
 # code2003              https://en.wikipedia.org/wiki/Code2000
 #                       https://www.fontspace.com/code2003-font-f24444
 # montserrat alternates https://github.com/JulietaUla/Montserrat
@@ -15,9 +14,7 @@ set -eu
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
 
 fantasque="fantasque sans mono"
-dudu="dudu cyryllic"
 jetmono="jetbrains mono"
-grek="greek sigismundus"
 sans="nunito"
 bigsans="montserrat alternates"
 
@@ -43,16 +40,14 @@ cat <<EOF
     <edit name="rgba"><const>none</const></edit>
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="family" mode="append" binding="strong">
-      <string>beograd</string>
       <string>code2003</string>
     </edit>
   </match>
 EOF
 
-M "$sans"      "sans-serif" "segoe ui" "serif" "helvetica"
+M "$sans"      "sans-serif" "serif" "helvetica"
 M "$fantasque" "courier new" "monaco" "consolas"
 M "$jetmono"   "monospace"
-M "$grek"      "linux libertine"
 
 for f in "vera" "dejavu sans"                                   \
          "noto sans" "droid sans" "open sans" "opensans"        \

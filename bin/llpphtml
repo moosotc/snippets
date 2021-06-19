@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+! test "x$loud" = "x" || exec &>/dev/null
 die() { echo "$1" >&2; exit 1; }
 
 cachedir="$HOME/.cache/llpp"
@@ -22,6 +23,7 @@ test -z "$url" && die "usage $0: [url]"
 set -- $(echo "$url" | cksum)
 (cd $cachedir; wget -L -r -nc -np -l 1 "$url" -o $cachedir/log;) || echo fuck
 
-local=$cachedir${url#*/}
-fontpath=${fontpath-/home/malc/x/fnt/inuse/nunito/Nunito-Light.otf}
-llppepub $local
+file=$cachedir${url#*/}
+index=${file}/index.html
+! test -e $index || file=$index
+llppepub $file

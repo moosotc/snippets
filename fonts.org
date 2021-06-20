@@ -8,11 +8,11 @@
 5. 0  | dotted, slashed, broken zero
         or LATIN LETTER BILABIAL CLICK ʘ [cf diglet] and [cf ffohz]
 
-'nal' it the table below means "not any longer"
+'NAL' it the table below means "not any longer"
 * main
 | name                  | LW  | =3= | =l= | =I= | =0= | [ ] | use |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
-| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
+| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | NAL |
 | fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes |
 | firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
 | gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |     |
@@ -24,8 +24,8 @@
 | nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
 | playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |     |
-| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | nal |
-| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
+| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | NAL |
+| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | NAL |
 | roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
 | roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |     |
 | rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
@@ -39,12 +39,12 @@
 | input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |     |
 | source code pro | [X] | [ ] | [X] | [X] | [X] | 1 |     |
 | source sans pro | [X] | [ ] | [X] | [ ] | [X] | 2 |     |
-| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | nal |
+| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | NAL |
 * helvetica
 |------------------+-----+-------+-----+-----+-----+------+-----|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
-| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
-| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
+| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | NAL |
+| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | NAL |
 *
 * notes
   [ffohz] with the help of fontforge i'm capable of adding dot to the zero

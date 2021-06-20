@@ -3,7 +3,7 @@
 
 1. LW | has light weight
 2. 3  | flat top 3,
-        or a    ^^^ like letter that isn't startling when among digits
+        or a    ^^^ like letter that isn't startling among digits
 3. l  | lower case el with a bottom hook
 4. I  | I that is not a straight bar/pipe
 5. 0  | dotted, slashed, broken zero

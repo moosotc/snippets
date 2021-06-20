@@ -5,4 +5,4 @@ noauditspam
 rapl.sh
 ion
 dotor
-exec yy
+mkfifo /tmp/i3.fifo

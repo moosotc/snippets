@@ -8,6 +8,7 @@ cachedir="$HOME/.cache/llpp"
 test -d "$cachedir" || die "cache directory '$cachedir' does not exist"
 
 command -v wget >/dev/null 2>&1 || die "no wget"
+css="$HOME/xsrc/snippets/misc/llpp.css"
 
 while getopts s:f opt; do
     case $opt in
@@ -21,9 +22,10 @@ url=${1-$(xclip -o -sel c)}
 test -z "$url" && die "usage $0: [url]"
 
 set -- $(echo "$url" | cksum)
-(cd $cachedir; wget -L -r -nc -np -l 1 "$url" -o $cachedir/log;) || echo fuck
+(cd $cachedir; \
+ wget -E -L -r -nc -np -l 1 "$url" -o $cachedir/log;) || echo fuck
 
 file=$cachedir${url#*/}
 index=${file}/index.html
 ! test -e $index || file=$index
-llppepub $file
+exec llpp -css $css $file

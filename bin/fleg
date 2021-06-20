@@ -54,8 +54,8 @@ text() {
 IĪ lI 1l Il l1 З3 S9 O0o 0︀ 0̸ ʘ 0 cf https://en.wikipedia.org/wiki/Slashed_zero
 $(perm "l" "$all")
 | I | not bar        | with crossbars Ι
-| l | not bar        | with retroflex hook (ɭ Ɩ)
-| 0 | dotted         | ʘ
+| l | not bar        | with retroflex hook (ɭ Ɩ Ꙇ ꙇ Ɩ)
+| 0 | not Oh         | ʘ 0
 | 1 | not bar        | with baseline bar
 | 3 | flat top       | ӡ
 | З | non-flat top   | ?

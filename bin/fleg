@@ -51,7 +51,8 @@ text() {
 <br/>кирилица $1<hr>
 <pre style="font-size: ${1}pt;">
 \$S\$s\$5hmmаммаhm<i/>mb8B0dy кирилица $1<hr>
-IĪ lI 1l Il l1 З3 S9 O0o 0︀ 0̸ ʘ 0 cf https://en.wikipedia.org/wiki/Slashed_zero
+IĪ lI 1l Il l1 З3 S9 O0o 0︀ composed-0̸ ʘ 0
+cf https://en.wikipedia.org/wiki/Slashed_zero
 $(perm "l" "$all")
 | I | not bar        | with crossbars Ι
 | l | not bar        | with retroflex hook (ɭ Ɩ Ꙇ ꙇ Ɩ)
@@ -70,6 +71,11 @@ $(perm "l" "$all")
 1032
 3504
 
+iɭɭiad heɭp maɭc cɭam
+iƖƖiad heƖp maƖc cƖam
+iꙆꙆiad heꙆp maꙆc cꙆam
+iꙇꙇiad heꙇp maꙇc cꙇam
+iƖƖiad heƖp maƖc cƖam
 ajs
 Í ACUTE
 Ĭ BREVE

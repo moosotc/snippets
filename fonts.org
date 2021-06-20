@@ -9,35 +9,38 @@
 5. 0  | dotted, slashed, broken zero
         or LATIN LETTER BILABIAL CLICK ʘ (if it is "digit-like")
 
-| name                  | LW  | 3   | l   | I   | 0   | issues | using it  |
-|-----------------------+-----+-----+-----+-----+-----+--------+-----------|
-| acari sans            | [X] | [ ] | [X] | [ ] | [ ] |      3 | [*]       |
-| arimo                 | [ ] | [X] | [ ] | [ ] | [ ] |      4 |           |
-| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |      2 | no longer |
-| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |      1 | yes       |
-| firasans              | [X] | [X] | [X] | [ ] | [ ] |      2 |           |
-| go                    | [ ] | [ ] | [X] | [X] | [X] |      2 |           |
-| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |      2 |           |
-| ibm plex sans         | [X] | [ ] | [X] | [X] | [ ] |      2 |           |
-| input sans            | [X] | [ ] | [X] | [X] | [X] |      1 |           |
-| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |      0 | yes       |
-| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |      1 | yes       |
-| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |      3 |           |
-| neris sans            | [X] | [X] | [X] | [ ] | [ ] |      2 | [*]       |
-| noto sans             | [X] | [X] | [ ] | [X] | [ ] |      2 |           |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |      2 | yes       |
-| open sans             | [X] | [X] | [ ] | [ ] | [ ] |      3 |           |
-| playfair display      | [ ] | [X] | [1] | [X] | [ ] |      3 |           |
-| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |      3 | no longer |
-| raleway               | [X] | [X] | [X] | [ ] | [ ] |      2 | no longer |
-| roboto                | [X] | [X] | [ ] | [ ] | [ ] |      3 |           |
-| roboto slab           | [X] | [X] | [1] | [X] | [ ] |      2 |           |
-| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |      3 |           |
-| source code pro       | [X] | [ ] | [X] | [X] | [X] |      1 |           |
-| source sans pro       | [X] | [ ] | [X] | [ ] | [X] |      2 |           |
-| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |      2 |           |
-| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |      1 |           |
-| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |      5 | no longer |
+| name                  | LW  | 3      | l   | I   | 0   | issues | using it  |
+|-----------------------+-----+--------+-----+-----+-----+--------+-----------|
+| acari sans            | [X] | [ ]    | [X] | [ ] | [ ] |      3 | [*]       |
+| exo 2                 | [X] | [X]    | [X] | [ ] | [ ] |      2 | no longer |
+| fantasque sans mono   | [ ] | [X]    | [X] | [X] | [X] |      1 | yes       |
+| firasans              | [X] | [X]    | [X] | [ ] | [ ] |      2 |           |
+| go                    | [ ] | [ ]    | [X] | [X] | [X] |      2 |           |
+| gothic a1             | [X] | [X]    | [ ] | [ ] | [X] |      2 |           |
+| ibm plex sans         | [X] | [ ]    | [X] | [X] | [ ] |      2 |           |
+| input sans            | [X] | [ ]    | [X] | [X] | [X] |      1 |           |
+| jetbrains mono        | [X] | [X]    | [X] | [X] | [X] |      0 | yes       |
+| montserrat alternates | [X] | [X]    | [X] | [X] | [ ] |      1 | yes       |
+| mplus 1p              | [X] | [X]    | [ ] | [ ] | [ ] |      3 |           |
+| neris sans            | [X] | [X]    | [X] | [ ] | [ ] |      2 | [*]       |
+| noto sans             | [X] | [X]    | [ ] | [X] | [ ] |      2 |           |
+| nunito                | [X] | [X]    | [X] | [ ] | [ ] |      2 | yes       |
+| open sans             | [X] | [X]    | [ ] | [ ] | [ ] |      3 |           |
+| playfair display      | [ ] | [X]    | [1] | [X] | [ ] |      3 |           |
+| pt sans               | [ ] | [X]    | [X] | [ ] | [ ] |      3 | no longer |
+| raleway               | [X] | [X]    | [X] | [ ] | [ ] |      2 | no longer |
+| roboto                | [X] | [X]    | [ ] | [ ] | [ ] |      3 |           |
+| roboto slab           | [X] | [X]    | [1] | [X] | [ ] |      2 |           |
+| rubik one             | [X] | [X]    | [ ] | [ ] | [ ] |      3 |           |
+| source code pro       | [X] | [ ]    | [X] | [X] | [X] |      1 |           |
+| source sans pro       | [X] | [ ]    | [X] | [ ] | [X] |      2 |           |
+| ubuntu                | [X] | [X]    | [X] | [ ] | [ ] |      2 |           |
+| ubuntu mono           | [ ] | [X]    | [X] | [X] | [X] |      1 |           |
+| verdana               | [ ] | [ ]    | [ ] | [ ] | [ ] |      5 | no longer |
+|-----------------------+-----+--------+-----+-----+-----+--------+-----------|
+| arimo                 | [ ] | [X]    | [ ] | [ ] | [ ] |      4 |           |
+| helvetica lt com      | [$] | [$-?]  | [ ] | [ ] | [ ] |    4.5 | no longer |
+| pragmatica            | [$] | [$-? ] | [ ] | [ ] | [ ] |    4.5 | no longer |
 
 with the help of fontforge i'm capable of adding dot to the zero [2]
 

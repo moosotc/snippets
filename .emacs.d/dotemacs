@@ -516,7 +516,7 @@
   (define-key org-mode-map (kbd "H-<tab>") 'my-close-org-element))
 
 (add-hook 'org-mode-hook 'my-org-mode-hook)
-(defun copy-buffer-file-name ()
+(defun my-buffer-file-name ()
   (interactive) (gui-set-selection 'CLIPBOARD (buffer-file-name)))
 
 (defun my-erc-track-switch-buffer ()

@@ -9,41 +9,43 @@
 5. 0  | dotted, slashed, broken zero
         or LATIN LETTER BILABIAL CLICK ʘ (if it is "digit-like")
 
-| name                  | LW  | =3= | =l= | =I= | +0= | [X] | using it  |
-|-----------------------+-----+-----+-----+-----+-----+-----+-----------|
-| acari sans            | [X] | [ ] | [X] | [ ] | [ ] |   3 | [*]       |
-| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | no longer |
-| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes       |
-| firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |           |
-| go                    | [ ] | [ ] | [X] | [X] | [X] |   2 |           |
-| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |           |
-| ibm plex sans         | [X] | [ ] | [X] | [X] | [ ] |   2 |           |
-| input sans            | [X] | [ ] | [X] | [X] | [X] |   1 |           |
-| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes       |
-| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes       |
-| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |           |
-| neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*]       |
-| noto sans             | [X] | [X] | [ ] | [X] | [ ] |   2 |           |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes       |
-| open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |           |
-| playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |           |
-| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | no longer |
-| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | no longer |
-| roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |           |
-| roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |           |
-| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |           |
-| source code pro       | [X] | [ ] | [X] | [X] | [X] |   1 |           |
-| source sans pro       | [X] | [ ] | [X] | [ ] | [X] |   2 |           |
-| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |           |
-| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |           |
-| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | no longer |
-|-----------------------+-----+-----+-----+-----+-----+-----+-----------|
+nam = "not any more" 
 
-| name             | LW  | =3=   | =l= | =I= | =0= | [X]  | using it  |
-|------------------+-----+-------+-----+-----+-----+------+-----------|
-| arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |           |
-| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | no longer |
-| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | no longer |
+| name                  | LW  | =3= | =l= | =I= | =0= | [X] | use |
+|-----------------------+-----+-----+-----+-----+-----+-----+-----|
+| acari sans            | [X] | [ ] | [X] | [ ] | [ ] |   3 | [*] |
+| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nam |
+| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes |
+| firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
+| go                    | [ ] | [ ] | [X] | [X] | [X] |   2 |     |
+| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |     |
+| ibm plex sans         | [X] | [ ] | [X] | [X] | [ ] |   2 |     |
+| input sans            | [X] | [ ] | [X] | [X] | [X] |   1 |     |
+| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes |
+| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes |
+| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
+| neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*] |
+| noto sans             | [X] | [X] | [ ] | [X] | [ ] |   2 |     |
+| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes |
+| open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
+| playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |     |
+| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | nam |
+| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | nam |
+| roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
+| roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |     |
+| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
+| source code pro       | [X] | [ ] | [X] | [X] | [X] |   1 |     |
+| source sans pro       | [X] | [ ] | [X] | [ ] | [X] |   2 |     |
+| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
+| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |     |
+| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | nam |
+|-----------------------+-----+-----+-----+-----+-----+-----+-----|
+
+| name             | LW  | =3=   | =l= | =I= | =0= | [X]  | use |
+|------------------+-----+-------+-----+-----+-----+------+-----|
+| arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
+| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nam |
+| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nam |
 
 with the help of fontforge i'm capable of adding dot to the zero [2]
 
@@ -67,7 +69,7 @@ with the help of fontforge i'm capable of adding dot to the zero [2]
 
 [**] https://github.com/moosotc/snippets/blob/master/bin/3ze.py
 
-
 * links
 ** https://www.bigbrandsystem.com/why-i-hate-verdana/
 ** https://www.bigbrandsystem.com/best-font-size/
+** https://www.bigbrandsystem.com/best-font-size//index.html

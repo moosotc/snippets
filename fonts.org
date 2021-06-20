@@ -2,12 +2,11 @@
 #+startup: fold
 * legends and abbrevs
 1. LW | has light weight
-2. 3  | flat top 3,
-        or a digit-three like letter that feels "at home" among digits 
+2. 3  | flat top 3 [diglet]
 3. l  | lower case el with a bottom hook
 4. I  | I that is not a straight bar/pipe
 5. 0  | dotted, slashed, broken zero
-        or LATIN LETTER BILABIAL CLICK ʘ (if it is "digit-like")
+        or LATIN LETTER BILABIAL CLICK ʘ [cf diglet] and [cf ffohz]
 
 'nal' it the table below means "not any longer"
 * main
@@ -48,27 +47,10 @@
 | pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
 *
 * notes
-  with the help of fontforge i'm capable of adding dot to the zero [2]
-* footnotes
-[1] glyph resembles digit one - 1
-
-[2] find a dot symbol, copy it, paste onto zero, center the dot moving
-    it around by hand (nunito was modified using this method)
-
-[*] was reading a epub utilizing neris. noticed an issue (very common
-    one) - digit 3 and CYRILLIC CAPITAL LETTER ZE were hard to tell
-    apart. read neris' license - it forbade modifications, started
-    looking for fonts with similar characteristics, found one in
-    acari.
-
-    finished the book, liked the experience with acari, but realized
-    that i do not have the skill to fix it, started looking for
-    alternatives, found one in nunito.
-
-    fixed 3-ze issue by "remapping" 3 to CYRILLIC CAPITAL LETTER
-    ABKHASIAN DZE (Ӡ) automatically [**] and oh-zero manually [2]
-
-[**] https://github.com/moosotc/snippets/blob/master/bin/3ze.py
+  [ffohz] with the help of fontforge i'm capable of adding dot to the zero
+  [diglet] letter for digit substitutions are sometimes possible yet
+    in some fonts alpha glyphs differ from digits in some barely
+    perceptible yet unbearable way
 * links
 ** https://www.bigbrandsystem.com/why-i-hate-verdana/
 ** https://www.bigbrandsystem.com/best-font-size/

@@ -1,6 +1,6 @@
 -*- mode: org; mode: hl-line; -*-
-#+startup: nofold
-
+#+startup: fold
+* legends and abbrevs
 1. LW | has light weight
 2. 3  | flat top 3,
         or a digit-three like letter that feels "at home" among digits 
@@ -10,7 +10,7 @@
         or LATIN LETTER BILABIAL CLICK ʘ (if it is "digit-like")
 
 'nal' it the table below means "not any longer"
-
+* main
 | name                  | LW  | =3= | =l= | =I= | =0= | [X] | use |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
 | exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
@@ -33,15 +33,14 @@
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |     |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
-
 * 3ze without remapping option
-| acari sans      | [X] | [ ] | [X] | [ ] | [ ] |   3 | [*] |
-| go              | [ ] | [ ] | [X] | [X] | [X] |   2 |     |
-| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] |   2 |     |
-| input sans      | [X] | [ ] | [X] | [X] | [X] |   1 |     |
-| source code pro | [X] | [ ] | [X] | [X] | [X] |   1 |     |
-| source sans pro | [X] | [ ] | [X] | [ ] | [X] |   2 |     |
-| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | nal |
+| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 | [*] |
+| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |     |
+| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |     |
+| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |     |
+| source code pro | [X] | [ ] | [X] | [X] | [X] | 1 |     |
+| source sans pro | [X] | [ ] | [X] | [ ] | [X] | 2 |     |
+| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | nal |
 * helvetica
 |------------------+-----+-------+-----+-----+-----+------+-----|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
@@ -50,7 +49,6 @@
 *
 * notes
   with the help of fontforge i'm capable of adding dot to the zero [2]
-
 * footnotes
 [1] glyph resembles digit one - 1
 
@@ -71,7 +69,6 @@
     ABKHASIAN DZE (Ӡ) automatically [**] and oh-zero manually [2]
 
 [**] https://github.com/moosotc/snippets/blob/master/bin/3ze.py
-
 * links
 ** https://www.bigbrandsystem.com/why-i-hate-verdana/
 ** https://www.bigbrandsystem.com/best-font-size/

@@ -1,4 +1,4 @@
--*- mode: org; mode: hl-line -*-
+-*- mode: org; mode: hl-line; -*-
 #+startup: nofold
 
 1. LW | has light weight
@@ -13,14 +13,10 @@
 
 | name                  | LW  | =3= | =l= | =I= | =0= | [X] | use |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
-| acari sans            | [X] | [ ] | [X] | [ ] | [ ] |   3 | [*] |
 | exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
 | fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes |
 | firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
-| go                    | [ ] | [ ] | [X] | [X] | [X] |   2 |     |
 | gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |     |
-| ibm plex sans         | [X] | [ ] | [X] | [X] | [ ] |   2 |     |
-| input sans            | [X] | [ ] | [X] | [X] | [X] |   1 |     |
 | jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
@@ -34,21 +30,28 @@
 | roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
 | roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |     |
 | rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
-| source code pro       | [X] | [ ] | [X] | [X] | [X] |   1 |     |
-| source sans pro       | [X] | [ ] | [X] | [ ] | [X] |   2 |     |
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |     |
-| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | nal |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
 
-| name             | LW  | =3=   | =l= | =I= | =0= | [X]  | use |
+* 3ze without remapping option
+| acari sans      | [X] | [ ] | [X] | [ ] | [ ] |   3 | [*] |
+| go              | [ ] | [ ] | [X] | [X] | [X] |   2 |     |
+| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] |   2 |     |
+| input sans      | [X] | [ ] | [X] | [X] | [X] |   1 |     |
+| source code pro | [X] | [ ] | [X] | [X] | [X] |   1 |     |
+| source sans pro | [X] | [ ] | [X] | [ ] | [X] |   2 |     |
+| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | nal |
+* helvetica
 |------------------+-----+-------+-----+-----+-----+------+-----|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
 | helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
 | pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
+*
+* notes
+  with the help of fontforge i'm capable of adding dot to the zero [2]
 
-with the help of fontforge i'm capable of adding dot to the zero [2]
-
+* footnotes
 [1] glyph resembles digit one - 1
 
 [2] find a dot symbol, copy it, paste onto zero, center the dot moving

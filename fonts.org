@@ -37,6 +37,7 @@
 | source sans pro       | [X] | [ ] | [X] | [ ] | [X] |      2 |           |
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |      2 |           |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |      1 |           |
+| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |      5 | no longer |
 
 with the help of fontforge i'm capable of adding dot to the zero [2]
 

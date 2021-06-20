@@ -40,7 +40,7 @@
 |-----------------------+-----+--------+-----+-----+-----+--------+-----------|
 | arimo                 | [ ] | [X]    | [ ] | [ ] | [ ] |      4 |           |
 | helvetica lt com      | [$] | [$-?]  | [ ] | [ ] | [ ] |    4.5 | no longer |
-| pragmatica            | [$] | [$-? ] | [ ] | [ ] | [ ] |    4.5 | no longer |
+| pragmatica            | [$] | [$-?]  | [ ] | [ ] | [ ] |    4.5 | no longer |
 
 with the help of fontforge i'm capable of adding dot to the zero [2]
 

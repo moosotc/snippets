@@ -23,7 +23,7 @@ test -z "$url" && die "usage $0: [url]"
 
 set -- $(echo "$url" | cksum)
 (cd $cachedir; \
- wget -E -L -r -nc -np -l 1 "$url" -o $cachedir/log;) || echo fuck
+ wget -E -L -r -nc -l 2 "$url" -o $cachedir/log;) || echo fuck
 
 file=$cachedir${url#*/}
 index=${file}/index.html

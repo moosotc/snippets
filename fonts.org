@@ -11,7 +11,7 @@
 
 'nal' it the table below means "not any longer"
 * main
-| name                  | LW  | =3= | =l= | =I= | =0= | [X] | use |
+| name                  | LW  | =3= | =l= | =I= | =0= | [ ] | use |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
 | exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
 | fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes |

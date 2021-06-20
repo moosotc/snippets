@@ -3,18 +3,18 @@
 
 1. LW | has light weight
 2. 3  | flat top 3,
-        or a    ^^^ like letter that isn't startling among digits
+        or a digit-three like letter that feels "at home" among digits 
 3. l  | lower case el with a bottom hook
 4. I  | I that is not a straight bar/pipe
 5. 0  | dotted, slashed, broken zero
         or LATIN LETTER BILABIAL CLICK ʘ (if it is "digit-like")
 
-nam = "not any more" 
+'nal' it the table below means "not any longer"
 
 | name                  | LW  | =3= | =l= | =I= | =0= | [X] | use |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
 | acari sans            | [X] | [ ] | [X] | [ ] | [ ] |   3 | [*] |
-| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nam |
+| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
 | fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes |
 | firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
 | go                    | [ ] | [ ] | [X] | [X] | [X] |   2 |     |
@@ -29,8 +29,8 @@ nam = "not any more"
 | nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
 | playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |     |
-| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | nam |
-| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | nam |
+| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | nal |
+| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | nal |
 | roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
 | roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |     |
 | rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
@@ -38,14 +38,14 @@ nam = "not any more"
 | source sans pro       | [X] | [ ] | [X] | [ ] | [X] |   2 |     |
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |     |
-| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | nam |
+| verdana               | [ ] | [ ] | [ ] | [ ] | [ ] |   5 | nal |
 |-----------------------+-----+-----+-----+-----+-----+-----+-----|
 
 | name             | LW  | =3=   | =l= | =I= | =0= | [X]  | use |
 |------------------+-----+-------+-----+-----+-----+------+-----|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
-| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nam |
-| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nam |
+| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
+| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | nal |
 
 with the help of fontforge i'm capable of adding dot to the zero [2]
 

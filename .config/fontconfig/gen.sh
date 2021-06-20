@@ -16,6 +16,7 @@ set -eu
 fantasque="fantasque sans mono"
 jetmono="jetbrains mono"
 sans="nunito"
+sans="lato"
 bigsans="montserrat alternates"
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}

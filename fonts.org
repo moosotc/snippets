@@ -1,56 +1,57 @@
--*- mode: org; mode: hl-line; -*-
+-*- mode: org; mode: hl-line -*-
+#+COLUMNS
 #+startup: fold
-* legends and abbrevs
+* legends
 1. LW | has light weight
 2. 3  | flat top 3 [diglet]
-3. l  | lower case el with a bottom hook
+3. l  | lower case el with a bottom hook [iota]
 4. I  | I that is not a straight bar/pipe
 5. 0  | dotted, slashed, broken zero
         or LATIN LETTER BILABIAL CLICK ʘ [cf diglet] and [cf ffohz]
-
-'NAL' it the table below means "not any longer"
 * main
-| name                  | LW  | =3= | =l= | =I= | =0= | [ ] | use |
-|-----------------------+-----+-----+-----+-----+-----+-----+-----|
-| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | NAL |
-| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes |
-| firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
-| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |     |
-| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes |
-| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes |
-| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
-| neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*] |
-| noto sans             | [X] | [X] | [ ] | [X] | [ ] |   2 |     |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes |
-| open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
-| playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |     |
-| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | NAL |
-| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | NAL |
-| roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
-| roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |     |
-| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |     |
-| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |     |
-| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |     |
-|-----------------------+-----+-----+-----+-----+-----+-----+-----|
+| name                  | LW  | =3= | =l= | =I= | =0= | [ ] | in use  | notes |
+|-----------------------+-----+-----+-----+-----+-----+-----+---------+-------|
+| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | no more |       |
+| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes     |       |
+| firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |         |       |
+| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |         |       |
+| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes     |       |
+| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 | trying  | ɭ ɩ   |
+| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes     |       |
+| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
+| neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*]     |       |
+| noto sans             | [X] | [X] | [ ] | [X] | [ ] |   2 |         |       |
+| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes     |       |
+| open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
+| playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |         |       |
+| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | no more |       |
+| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | no more |       |
+| roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
+| roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |         |       |
+| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
+| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |         |       |
+| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |         |       |
+|-----------------------+-----+-----+-----+-----+-----+-----+---------+-------|
 * 3ze without remapping option
-| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 | [*] |
-| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |     |
-| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |     |
-| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |     |
-| source code pro | [X] | [ ] | [X] | [X] | [X] | 1 |     |
-| source sans pro | [X] | [ ] | [X] | [ ] | [X] | 2 |     |
-| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | NAL |
+| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 | [*]     |
+| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |         |
+| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |         |
+| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |         |
+| source code pro | [X] | [ ] | [X] | [X] | [X] | 1 |         |
+| source sans pro | [X] | [ ] | [X] | [ ] | [X] | 2 |         |
+| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | no more |
 * helvetica
-|------------------+-----+-------+-----+-----+-----+------+-----|
-| arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
-| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | NAL |
-| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | NAL |
+|------------------+-----+-------+-----+-----+-----+------+---------|
+| arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |         |
+| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | no more |
+| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | no more |
 *
 * notes
   [ffohz] with the help of fontforge i'm capable of adding dot to the zero
   [diglet] letter for digit substitutions are sometimes possible yet
     in some fonts alpha glyphs differ from digits in some barely
     perceptible yet unbearable way
+  [l] it dependes on glyphs that are derived from "real" ell
 * links
 ** https://www.bigbrandsystem.com/why-i-hate-verdana/
 ** https://www.bigbrandsystem.com/best-font-size/

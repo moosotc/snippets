@@ -16,7 +16,7 @@
 | firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |         |       |
 | gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |         |       |
 | jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes     |       |
-| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 | trying  | ɭ ɩ   |
+| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |         | ɭ ɩ   |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes     |       |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
 | neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*]     |       |

@@ -43,7 +43,8 @@ if ell:
 #    c = '\N{LATIN SMALL LETTER L WITH CURL}'            # ȴ
 #    c = '\N{GREEK SMALL LETTER LAMDA}'                  # λ
 #    c = '\N{HEBREW LETTER LAMED}'                       # ל
-    c = '\N{LATIN SMALL LETTER L WITH MIDDLE TILDE}'     # ɫ
+#    c = '\N{LATIN SMALL LETTER L WITH MIDDLE TILDE}'     # ɫ
+    c = '\N{LATIN CAPITAL LETTER IOTA}'
     ch = ord (c)
     a.selection.select (ch)
     a.copy ()

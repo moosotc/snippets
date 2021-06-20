@@ -52,6 +52,7 @@
     in some fonts alpha glyphs differ from digits in some barely
     perceptible yet unbearable way
   [l] it dependes on glyphs that are derived from "real" ell
+         ligatures are affected too
 * links
 ** https://www.bigbrandsystem.com/why-i-hate-verdana/
 ** https://www.bigbrandsystem.com/best-font-size/

@@ -13,9 +13,10 @@ a.copy ()
 b.selection.select("0")
 b.paste ()
 
-a.selection.select (ord ('ɭƖꙆꙇ'[0]))
-a.copy ()
-b.selection.select('l')
-b.paste ()
+if False:
+    a.selection.select (ord ('ɭƖꙆꙇ'[0]))
+    a.copy ()
+    b.selection.select('l')
+    b.paste ()
 
 b.generate(sys.argv[2], flags=("opentype", "no-hints"))

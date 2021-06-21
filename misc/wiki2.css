@@ -11,8 +11,8 @@
 */
 
 /* malc */
-@font-face { font-family: sans-serif; src: prince-lookup("nunito"); }
-@font-face { font-family: serif; src: prince-lookup("nunito"); }
+@font-face { font-family: sans-serif; src: prince-lookup("noto sans"); }
+@font-face { font-family: serif; src: prince-lookup("code2003"); }
 @font-face { font-family: monospace; src: prince-lookup("jetbrainsmono"); }
 
 /* set headers and footers */
@@ -39,7 +39,7 @@
 
 /* basic style settings*/
 body {
-    font: 16pt/1.3 "serif", "code2003";
+    font: 16pt/1.3 "sans-serif";
     prince-linebreak-magic: auto;
     hyphens: auto;
     text-align: justify;

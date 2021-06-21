@@ -71,30 +71,13 @@ $(perm "l" "$all")
 1032
 3504
 
-illiad help malc clam
-iɭɭiad heɭp maɭc cɭam
-iƖƖiad heƖp maƖc cƖam
-iꙆꙆiad heꙆp maꙆc cꙆam
-iꙇꙇiad heꙇp maꙇc cꙇam
-iƖƖiad heƖp maƖc cƖam
+illiad help malc clam LATIN SMALL LETTER L
+iɭɭiad heɭp maɭc cɭam LATIN SMALL LETTER L WITH RETROFLEX HOOK
+iƖƖiad heƖp maƖc cƖam LATIN CAPITAL LETTER IOTA
+iɩɩiad heɩp maɩc cɩam LATIN SMALL LETTER IOTA
+iꙆꙆiad heꙆp maꙆc cꙆam CYRILLIC CAPITAL LETTER IOTAA
+iꙇꙇiad heꙇp maꙇc cꙇam CYRILLIC SMALL LETTER IOTA
 ajs
-Í ACUTE
-Ĭ BREVE
-Ǐ CARON
-Î CIRCUMFLEX
-Ï DIAERESIS
-Ḯ DIAERESIS AND ACUTE
-İ DOT ABOVE
-Ị DOT BELOW
-Ȉ DOUBLE GRAVE
-Ì GRAVE
-Ỉ HOOK ABOVE
-Ȋ INVERTED BREVE
-Ī MACRON
-Į OGONEK
-Ɨ STROKE
-Ĩ TILDE
-Ḭ TILDE BELOW
 </pre>
 EOF
 }

@@ -7,7 +7,7 @@ slang=eng
 sub=no
 hwdec=vaapi
 osd-font="jetbrains mono"
-sub-font="jetbrains mono"
+sub-font="code2003"
 gpu-context=x11egl
 hidpi-window-scale=no
 ytdl-format=bestvideo[height<=?1080]+bestaudio/best

@@ -2,6 +2,7 @@
 set -eu
 
 base=${1-$HOME/x/fnt/cur/notosans/NotoSans-}
+suf=${2-ttf}
 
 f() {
     fam=$1
@@ -18,10 +19,10 @@ f() {
 EOF
 }
 
-f "sans-serif" "${base}Light.ttf" "regular" "normal"
-f "sans-serif" "${base}LightItalic.ttf" "italic" "normal"
-f "sans-serif" "${base}Bold.ttf" "regular" "regular" "bold"
-f "sans-serif" "${base}BoldItalic.ttf" "italic" "bold"
+f "sans-serif" "${base}Light.$suf" "regular" "normal"
+f "sans-serif" "${base}LightItalic.$suf" "italic" "normal"
+f "sans-serif" "${base}Bold.$suf" "regular" "regular" "bold"
+f "sans-serif" "${base}BoldItalic.$suf" "italic" "bold"
 
 cat <<EOF
 body {

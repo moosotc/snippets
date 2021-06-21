@@ -13,7 +13,7 @@ a.copy ()
 b.selection.select("0")
 b.paste ()
 
-a.selection.select (ord ('ɭƖꙆꙇƖ'[4]))
+a.selection.select (ord ('ɭƖꙆꙇ'[0]))
 a.copy ()
 b.selection.select('l')
 b.paste ()

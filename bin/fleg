@@ -56,33 +56,25 @@ cf https://en.wikipedia.org/wiki/Slashed_zero
 $(perm "l" "$all")
 | I | not bar        | with crossbars Ι
 | l | not bar        | with retroflex hook (ɭ Ɩ Ꙇ ꙇ Ɩ)
+| | | is bar         | IllI are not
 | 0 | not Oh         | ʘ 0
 | 1 | not bar        | with baseline bar
 | 3 | flat top       | ӡ
 | З | non-flat top   | ?
 
-I|
-|I
-
-|l
-lI
+I| |I |l lI |lI |Il l|I lI| Il| I|l
 
 2ʒ4
 2Ȝ4
 2Ӡ4
 2ᴣ4
 2ʒ4
+
 0123
 3210
 1032
 3504
 
-illiad help malc clam LATIN SMALL LETTER L
-iɭɭiad heɭp maɭc cɭam LATIN SMALL LETTER L WITH RETROFLEX HOOK
-iƖƖiad heƖp maƖc cƖam LATIN CAPITAL LETTER IOTA
-iɩɩiad heɩp maɩc cɩam LATIN SMALL LETTER IOTA
-iꙆꙆiad heꙆp maꙆc cꙆam CYRILLIC CAPITAL LETTER IOTAA
-iꙇꙇiad heꙇp maꙇc cꙇam CYRILLIC SMALL LETTER IOTA
 ajs
 </pre>
 EOF

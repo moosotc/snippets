@@ -1,6 +1,6 @@
 -*- mode: org; mode: hl-line -*-
 #+COLUMNS
-#+startup: fold
+#+startup: nofold
 * legends
 1. LW | has light weight
 2. 3  | flat top 3 [diglet]
@@ -33,13 +33,13 @@
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |         |       |
 |-----------------------+-----+-----+-----+-----+-----+-----+---------+-------|
 * 3ze without remapping option
-| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 | [*]     |
-| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |         |
-| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |         |
-| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |         |
-| source code pro | [X] | [ ] | [X] | [X] | [X] | 1 |         |
-| source sans pro | [X] | [ ] | [X] | [ ] | [X] | 2 |         |
-| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | no more |
+| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 | [*]     |                |
+| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |         |                |
+| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |         |                |
+| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |         | remapping idea |
+| source code pro | [X] | [ ] | [X] | [X] | [X] | 1 |         |                |
+| source sans pro | [X] | [ ] | [X] | [ ] | [X] | 2 |         |                |
+| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | no more |                |
 * helvetica
 |------------------+-----+-------+-----+-----+-----+------+---------|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |         |

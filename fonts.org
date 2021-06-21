@@ -19,9 +19,9 @@
 | lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |         | ɭ ɩ   |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes     |       |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
-| neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*]     |       |
-| noto sans             | [X] | [X] | [l] | [X] | [V] |   0 | yes     | Ɩ     |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | no more |       |
+| neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 |         |       |
+| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |         | Ɩ     |
+| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes     |       |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
 | playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |         |       |
 | pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | no more |       |
@@ -33,7 +33,7 @@
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |         |       |
 |-----------------------+-----+-----+-----+-----+-----+-----+---------+-------|
 * 3ze without remapping option
-| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 | [*]     |                |
+| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 |         |                |
 | go              | [ ] | [ ] | [X] | [X] | [X] | 2 |         |                |
 | ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |         |                |
 | input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |         | remapping idea |

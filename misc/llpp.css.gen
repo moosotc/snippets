@@ -1,0 +1,37 @@
+#!/bin/sh
+set -eu
+
+base=${1-$HOME/x/fnt/cur/notosans/NotoSans-}
+
+f() {
+    fam=$1
+    src=$2
+    sty=$3
+    wei=$4
+    cat <<EOF
+@font-face {
+    font-family: $fam;
+    src: "$src";
+    font-style: $sty;
+    font-weight: $wei;
+}
+EOF
+}
+
+f "sans-serif" "${base}Light.ttf" "regular" "normal"
+f "sans-serif" "${base}LightItalic.ttf" "italic" "normal"
+f "sans-serif" "${base}Bold.ttf" "regular" "regular" "bold"
+f "sans-serif" "${base}BoldItalic.ttf" "italic" "bold"
+
+cat <<EOF
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "sans-serif";
+}
+pre {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 9pt;
+}
+EOF

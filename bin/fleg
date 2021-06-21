@@ -96,7 +96,7 @@ maketext() {
       pre { font-family: moo; }
     </style>
   &quot;$({ fc-scan -f '%{family}' "$1" | head -30c; } || file "$1")&quot;
-  $(basename $1)
+  $(basename "$1")
   </head>
 <body>
         <pre>3З ʒȜӠᴣʒʓ oO0ѲØ 1o1O101Ѳ1Ø1∅øØo0ʘ OCD</pre>

@@ -391,7 +391,7 @@ maketext() {
     </style>
   </head>
   &quot;$(fc-scan -f '%{fullname}' "$1" || file "$1")&quot;
-  $(basename $1)
+  $(basename "$1")
 <body>
 EOF
     for size in 6 8 10 12 4 2; do

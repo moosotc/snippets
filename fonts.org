@@ -57,3 +57,4 @@
 2. https://www.bigbrandsystem.com/best-font-size/
 3. https://www.bigbrandsystem.com/best-font-size//index.html
 4. https://en.wikipedia.org/wiki/Variation_Selectors
+5. https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip

@@ -13,11 +13,6 @@ set -eu
 # nunito                https://github.com/googlefonts/Nunito
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
 
-fantasque="fantasque sans mono"
-jetmono="jetbrains mono"
-sans="nunito"
-bigsans="montserrat alternates"
-
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
   <match target="pattern">
@@ -45,15 +40,16 @@ cat <<EOF
   </match>
 EOF
 
-M "$sans"      "sans-serif" "serif" "helvetica"
-M "$fantasque" "courier new" "monaco" "consolas"
-M "$jetmono"   "monospace"
+mono0="fantasque sans mono"
+mono2="jetbrains mono"
+sans1="noto sans"
+sans2="montserrat alternates"
 
-for f in "vera" "dejavu sans"                                   \
-         "noto sans" "droid sans" "open sans" "opensans"        \
-         "lucida grande" "verdana"; do
-    M "$bigsans" "$f"
-done
+M "$sans1" "sans" "sans-serif" "serif" "helvetica" "open sans" "opensans"
+M "$mono0" "courier new" "monaco" "consolas"
+M "$mono2" "monospace"
+M "$sans2" "vera" "lucida grande" "verdana"
+
 echo "</fontconfig>"
 
 # Local Variables:

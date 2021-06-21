@@ -20,8 +20,8 @@
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes     |       |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
 | neris sans            | [X] | [X] | [X] | [ ] | [ ] |   2 | [*]     |       |
-| noto sans             | [X] | [X] | [ ] | [X] | [V] |   1 | varsel0 |       |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes     |       |
+| noto sans             | [X] | [X] | [l] | [X] | [V] |   0 | yes     | Ɩ     |
+| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | no more |       |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
 | playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |         |       |
 | pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | no more |       |
@@ -51,9 +51,10 @@
   [diglet] letter for digit substitutions are sometimes possible yet
     in some fonts alpha glyphs differ from digits in some barely
     perceptible yet unbearable way
-  [l] it dependes on glyphs that are derived from "real" ell
-         ligatures are affected too
+  [l] possible remappings - ɭƖꙆꙇƖ
+    NB ligatures and letters derived from original el would stay the same
 * links
-** https://www.bigbrandsystem.com/why-i-hate-verdana/
-** https://www.bigbrandsystem.com/best-font-size/
-** https://www.bigbrandsystem.com/best-font-size//index.html
+1. https://www.bigbrandsystem.com/why-i-hate-verdana/
+2. https://www.bigbrandsystem.com/best-font-size/
+3. https://www.bigbrandsystem.com/best-font-size//index.html
+4. https://en.wikipedia.org/wiki/Variation_Selectors

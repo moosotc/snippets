@@ -2,7 +2,7 @@
 # this script uses <(cmd) hence preceding shebang
 set -eu
 
-: ${fontpath=${fontpath-$HOME/x/fnt/inuse/nunito/Nunito-Light.otf}}
+: ${fontpath=$HOME/x/fnt/cur/notosans/NotoSans-Light.ttf}
 
 fontface() { printf '@font-face { font-family: %s; src: "%s"; } ' $1 "$2"; }
 all() {

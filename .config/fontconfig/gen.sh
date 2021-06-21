@@ -45,10 +45,11 @@ mono2="jetbrains mono"
 sans1="noto sans"
 sans2="montserrat alternates"
 
-M "$sans1" "sans" "sans-serif" "serif" "helvetica" "open sans" "opensans"
+M "$sans1" "sans" "sans-serif" "helvetica" "open sans" "opensans"
 M "$mono0" "courier new" "monaco" "consolas"
 M "$mono2" "monospace"
 M "$sans2" "vera" "lucida grande" "verdana"
+M "code2003" "serif"
 
 echo "</fontconfig>"
 

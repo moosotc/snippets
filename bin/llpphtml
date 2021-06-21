@@ -1,31 +1,9 @@
 #!/bin/sh
 set -e
 
-! test "x$loud" = "x" || exec &>/dev/null
-die() { echo "$1" >&2; exit 1; }
+url=${1-$(xclip -o -se c)}
+hsh=$(basename "$url" | md5sum | cut -d' ' -f1)
+out=$HOME/.cache/llpp/$hsh.pdf
 
-cachedir="$HOME/.cache/llpp"
-test -d "$cachedir" || die "cache directory '$cachedir' does not exist"
-
-command -v wget >/dev/null 2>&1 || die "no wget"
-css="$HOME/xsrc/snippets/misc/llpp.css"
-
-while getopts s:f opt; do
-    case $opt in
-        c) css="$OPTARG";;
-        f) force=true;;
-        ?) die "usage: $0 [-c css] url";;
-    esac
-done
-shift $(($OPTIND - 1))
-url=${1-$(xclip -o -sel c)}
-test -z "$url" && die "usage $0: [url]"
-
-set -- $(echo "$url" | cksum)
-(cd $cachedir; \
- wget -E -L -r -nc -l 2 "$url" -o $cachedir/log;) || echo fuck
-
-file=$cachedir${url#*/}
-index=${file}/index.html
-! test -e $index || file=$index
-exec llpp -css $css $file
+prince -s $HOME/xsrc/snippets/misc/prince.css -o "$out" "$url"
+llpp -origin "$url" "$out"

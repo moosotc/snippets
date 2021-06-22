@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# for f in $(find ~/x/fnt/fix/nunito/manually-dotted-zera -name '*otf'); do python ~/xsrc/snippets/bin/3ze-nunito.py $f $(basename $f); done
+# for f in $(find ~/x/fnt/fix/nunito/manually-dotted-zera -name '*ttf'); do python ~/xsrc/snippets/bin/3ze-nunito.py $f $(basename $f); done
 
 import sys, fontforge
 
@@ -29,10 +29,17 @@ a = fontforge.open (sys.argv[1])
 # ᵻ - LATIN SMALL CAPITAL LETTER I WITH STROKE
 
 a = fontforge.open (sys.argv[1])
-a.selection.select (ord ('\N{LATIN CAPITAL LETTER I WITH DOT ABOVE}')) # Ӡ
+
+a.selection.select (ord ('\N{LATIN CAPITAL LETTER I WITH DOT ABOVE}'))
 b = a
 a.copy ()
 b.selection.select("I")
+b.paste ()
+
+a.selection.select (ord ('Ӡ'))
+b = a
+a.copy ()
+b.selection.select("3")
 b.paste ()
 
 b.generate(sys.argv[2], flags=("opentype", "no-hints"))

@@ -30,7 +30,7 @@ a = fontforge.open (sys.argv[1])
 
 a = fontforge.open (sys.argv[1])
 
-a.selection.select (ord ('\N{LATIN CAPITAL LETTER I WITH DOT ABOVE}'))
+a.selection.select (ord ('\N{LATIN CAPITAL LETTER I WITH DOT BELOW}'))
 b = a
 a.copy ()
 b.selection.select("I")

@@ -17,6 +17,6 @@ file="$d/$1"
 args=$d/$(basename "$1").args
 shift
 
-test $# -eq 0 || :>$args
+test $# -eq 0 || rm $args
 { cat $args; for arg; do printf "%s\000" "$arg"; done; } |
     tee $args | xargs -0 mpv $file

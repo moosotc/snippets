@@ -600,7 +600,7 @@
 
 (defun my-region-to-clipboard (beg end)
   (interactive "r")
-  (activate-mark)
+  (exchange-point-and-mark)
   (gui-set-selection 'CLIPBOARD (buffer-substring beg end)))
 
 (global-set-key (kbd "H-<insert>") 'my-activate-mark)

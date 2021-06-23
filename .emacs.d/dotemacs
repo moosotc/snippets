@@ -591,10 +591,6 @@
   (set-face-foreground 'monkeytype-results-error "blue")
   (set-face-foreground 'monkeytype-legend-1 "deepblue"))
 
-(defun my-activate-mark (beg end)
-  (interactive "r")
-  (exchange-point-and-mark))
-
 (setq select-active-regions nil)
 
 (defun my-put-current-kill-into-gui-clipboard ()
@@ -605,4 +601,3 @@
 (global-set-key (kbd "H-\\") 'my-insert-clipboard)
 (global-set-key (kbd "M-<insert>") 'my-put-current-kill-into-gui-clipboard)
 (global-set-key (kbd "H-<insert>") 'helm-show-kill-ring)
-(global-set-key (kbd "H-S-<insert>") 'my-activate-mark)

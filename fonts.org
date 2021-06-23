@@ -9,41 +9,42 @@
 5. 0  | dotted, slashed, broken zero
         or LATIN LETTER BILABIAL CLICK ʘ [cf diglet]
 * main
-| name                  | LW  | =3= | =l= | =I= | =0= | [ ] | in use  | notes |
-|-----------------------+-----+-----+-----+-----+-----+-----+---------+-------|
-| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | no more |       |
-| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | yes     |       |
-| firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |         |       |
-| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |         |       |
-| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | yes     |       |
-| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |         | ɭ ɩ   |
-| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | yes     |       |
-| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
-| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |         | ɭ Ɩ   |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | yes     |       |
-| open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
-| playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |         |       |
-| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | no more |       |
-| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | no more |       |
-| roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
-| roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |         |       |
-| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |         |       |
-| source code pro       | [X] | [X] | [X] | [X] | [X] |   ½ | ezh     |       |
-| source sans pro       | [X] | [X] | [X] | [X] | [X] |   ½ | ezh     |       |
-| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |         |       |
-| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |         |       |
-|-----------------------+-----+-----+-----+-----+-----+-----+---------+-------|
+| name                  | LW  | =3= | =l= | =I= | =0= | [ ] | in use | notes |
+|-----------------------+-----+-----+-----+-----+-----+-----+--------+-------|
+| exo 2                 | [X] | [X] | [X] | [ ] | [ ] |   2 | [ ]    |       |
+| fantasque sans mono   | [ ] | [X] | [X] | [X] | [X] |   1 | [X]    |       |
+| firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |        |       |
+| gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |        |       |
+| jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | [X]    |       |
+| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |        | ɭ ɩ   |
+| montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | [X]    |       |
+| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
+| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |        | ɭ Ɩ   |
+| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | [X]    |       |
+| open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
+| playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |        |       |
+| pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | [ ]    |       |
+| raleway               | [X] | [X] | [X] | [ ] | [ ] |   2 | [ ]    |       |
+| roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
+| roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |        |       |
+| rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
+| source code pro       | [X] | [X] | [X] | [X] | [V] |   ½ | ezh    |       |
+| source sans pro       | [X] | [X] | [X] | [X] | [V] |   ½ | ezh    |       |
+| ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |        |       |
+| ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |        |       |
+|-----------------------+-----+-----+-----+-----+-----+-----+--------+-------|
 * 3ze without remapping option
-| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 |         |                |
-| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |         |                |
-| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |         |                |
-| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |         | remapping idea |
-| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | no more |                |
+| acari sans    | [X] | [ ] | [X] | [ ] | [ ] | 3 |     |                |
+| go            | [ ] | [ ] | [X] | [X] | [X] | 2 |     |                |
+| ibm plex sans | [X] | [ ] | [X] | [X] | [ ] | 2 |     |                |
+| input sans    | [X] | [ ] | [X] | [X] | [X] | 1 |     | remapping idea |
+| verdana       | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | [ ] |                |
 * helvetica
-|------------------+-----+-------+-----+-----+-----+------+---------|
-| arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |         |
-| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | no more |
-| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | no more |
+|------------------+-----+-------+-----+-----+-----+------+-----|
+| arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
+| helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | [ ] |
+| pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | [ ] |
+|                  |     |       |     |     |     |      |     |
 *
 * notes
   [diglet] letter for digit substitutions are sometimes possible yet

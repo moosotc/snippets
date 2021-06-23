@@ -593,3 +593,17 @@
   (set-face-foreground 'monkeytype-results-success "blue10")
   (set-face-foreground 'monkeytype-results-error "blue")
   (set-face-foreground 'monkeytype-legend-1 "deepblue"))
+
+(defun my-activate-mark (beg end)
+  (interactive "r")
+  (activate-mark))
+
+(defun my-region-to-clipboard (beg end)
+  (interactive "r")
+  (activate-mark)
+  (gui-set-selection 'CLIPBOARD (buffer-substring beg end)))
+
+(global-set-key (kbd "H-<insert>") 'my-activate-mark)
+(global-set-key (kbd "M-<insert>") 'my-region-to-clipboard)
+
+(setq select-active-regions nil)

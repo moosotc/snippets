@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# for f in $(find ~/x/fnt/fix/nunito/manually-dotted-zera -name '*ttf'); do python ~/xsrc/snippets/bin/3ze-nunito.py $f $(basename $f); done
+# for f in $(find ~/x/fnt/fix/nunito/manually-dotted-zera -name '*ttf'); do python ~/xsrc/snippets/misc/mutilator/nunito.py $f $(basename $f); done
 
 import sys, fontforge
 

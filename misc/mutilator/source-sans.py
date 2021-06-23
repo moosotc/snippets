@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# for f in {Light,LightItalic,Bold,BoldItalic}; do python ~/xsrc/snippets/bin/3ze-source-sans.py ~/x/fnt/git/google-fonts/ofl/sourcesanspro/SourceSansPro-$f.ttf /tmp/$f.ttf; done
+# for f in {Light,LightItalic,Bold,BoldItalic}; do python ~/xsrc/snippets/mutilator/source-sans.py ~/x/fnt/git/google-fonts/ofl/sourcesanspro/SourceSansPro-$f.ttf /tmp/$f.ttf; done
 import sys, fontforge
 
 a = fontforge.open (sys.argv[1])

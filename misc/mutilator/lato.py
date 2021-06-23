@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# for f in $(eval echo ~x/fnt/git/google-fonts/ofl/lato/\{${a// /,}\}); do python ~/xsrc/snippets/bin/3ze-lato.py $f $(basename $f); done
+# for f in $(eval echo ~x/fnt/git/google-fonts/ofl/lato/\{${a// /,}\}); do python ~/xsrc/snippets/misc/mutilator/lato.py $f $(basename $f); done
 
 import sys, fontforge
 

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# for f in $(find ~/x/fnt/fix/noto -name '*ttf'); do python ~/xsrc/snippets/bin/3ze-noto-sans.py $f $(basename $f); done
+# for f in $(find ~/x/fnt/fix/noto -name '*ttf'); do python ~/xsrc/snippets/misc/mutilator/noto-sans.py $f $(basename $f); done
 
 import sys, fontforge
 

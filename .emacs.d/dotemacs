@@ -532,7 +532,6 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
-(global-set-key (kbd "H-\\") 'my-insert-clipboard)
 (global-set-key (kbd "H-t") 'my-erc-track-switch-buffer)
 (global-set-key (kbd "H-d") 'erc-track-switch-buffer)
 (global-set-key (kbd "M-H-l") 'lispy)
@@ -556,7 +555,6 @@
 (global-set-key (kbd "M-.") 'helm-git-grep-at-point)
 (global-set-key (kbd "C-H-.") 'helm-resume)
 (global-set-key (kbd "H-l") 'switch-to-other-buffer)
-(global-set-key (kbd "H-|") 'helm-show-kill-ring)
 (global-set-key (kbd "H-1") 'other-window)
 (global-set-key (kbd "H-2") 'delete-other-windows)
 
@@ -566,7 +564,6 @@
 (global-unset-key (kbd "C-x b"))   ;; 'helm-for-files)
 
 (global-set-key (kbd "H-M-<right>") 'mark-end-of-sentence)
-(global-set-key (kbd "H-S-<insert>") 'helm-show-kill-ring)
 (global-set-key (kbd "H-<right>") 'bs-cycle-next)
 (global-set-key (kbd "H-<left>") 'bs-cycle-previous)
 (global-set-key (kbd "H-<up>") 'bs-show)
@@ -596,12 +593,16 @@
 
 (defun my-activate-mark (beg end)
   (interactive "r")
-  (activate-mark))
+  (exchange-point-and-mark))
 
 (setq select-active-regions nil)
 
 (defun my-put-current-kill-into-gui-clipboard ()
   (interactive)
+  (princ (current-kill 0 t))
   (gui-set-selection 'CLIPBOARD (current-kill 0 t)))
 
+(global-set-key (kbd "H-\\") 'my-insert-clipboard)
 (global-set-key (kbd "M-<insert>") 'my-put-current-kill-into-gui-clipboard)
+(global-set-key (kbd "H-<insert>") 'helm-show-kill-ring)
+(global-set-key (kbd "H-S-<insert>") 'my-activate-mark)

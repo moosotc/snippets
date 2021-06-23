@@ -44,7 +44,6 @@
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
 | helvetica lt com | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | [ ] |
 | pragmatica       | [$] | [$-?] | [ ] | [ ] | [ ] | $4.5 | [ ] |
-|                  |     |       |     |     |     |      |     |
 *
 * notes
   [diglet] letter for digit substitutions are sometimes possible yet

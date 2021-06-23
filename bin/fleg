@@ -57,7 +57,7 @@ $(perm "l" "$all")
 
 | I | not bar                   | with serifs (Ι)
 | l | not bar, not one          | with retroflex hook (ɭ Ɩ Ꙇ ꙇ Ɩ)
-| | | bar                       | --IllI--
+| | | bar                       | --IllI-- |I|I|I
 | 0 | not Oh                    | (ʘ)
 | 1 | not bar, not right angled | preferably standing on a base
 | 3 | flat top                  | (ӡ)
@@ -69,12 +69,13 @@ I| |I |l lI |lI |Il l|I lI| Il| I|l
 2Ӡ4 - ABKHASIAN DZE CYRILLIC CAPITAL LETTER
 2ᴣ4 - EZH           LATIN LETTER SMALL CAPITAL
 2ʒ4 - EZH           LATIN SMALL LETTER
+2Ʒ4 - EZH           LATIN CAPITAL LETTER
 
 0123
 3210
 1032
 3504
-
+45Ʒ0
 
 ÍĬǏÎÏḮİỊȈÌȊĪĮƗĨḬ
 İsmet is not Ismet!

@@ -5,7 +5,7 @@ ldc=$HOME/.cache/llpp
 mkdir -p $ldc
 url=${1-$(xclip -o -se c)}
 hsh=$(basename "$url" | md5sum | cut -d' ' -f1)
-out=$lcd/$hsh.pdf
+out=$ldc/$hsh.pdf
 
 prince -s $HOME/xsrc/snippets/misc/prince.css -o "$out" "$url"
 llpp -origin "$url" "$out"

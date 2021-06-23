@@ -437,10 +437,6 @@
 (setq select-enable-clipboard t)
 (setq select-enable-primary nil)
 
-(defun my-insert-clipboard ()
-  (interactive)
-  (insert (gui-get-selection 'CLIPBOARD)))
-
 (put 'dired-find-alternate-file 'disabled nil)
 
 (defun notify-moo (s)
@@ -597,12 +593,16 @@
 
 (setq select-active-regions nil)
 
+(defun my-insert-gui-clipboard ()
+  (interactive)
+  (insert (gui-get-selection 'CLIPBOARD)))
+
 (defun my-put-current-kill-into-gui-clipboard ()
   (interactive)
   (princ (current-kill 0 t))
   (gui-set-selection 'CLIPBOARD (current-kill 0 t)))
 
-(global-set-key (kbd "H-\\") 'my-insert-clipboard)
+(global-set-key (kbd "H-\\") 'my-insert-gui-clipboard)
 (global-set-key (kbd "M-<insert>") 'my-put-current-kill-into-gui-clipboard)
 (global-set-key (kbd "H-<insert>") 'helm-show-kill-ring)
 (global-set-key (kbd "H-S-<insert>") 'my-show-region)

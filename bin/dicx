@@ -3,7 +3,7 @@ set -eu
 
 exec 1>&2 2>/dev/null
 
-test "${1-}" = "-" && src="cat" || src="xclip -o"
+test "${1-}" = "-" && src="cat" || src="xclip -o -sel c"
 
 rofi="rofi -dmenu -yoffset 40 -location 2"
 

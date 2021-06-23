@@ -2,7 +2,7 @@
 set -e
 
 ldc=$HOME/.cache/llpp
-mkdir -p $lcd
+mkdir -p $ldc
 url=${1-$(xclip -o -se c)}
 hsh=$(basename "$url" | md5sum | cut -d' ' -f1)
 out=$lcd/$hsh.pdf

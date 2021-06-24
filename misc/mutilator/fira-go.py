@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# https://github.com/bBoxType/FiraSans
+# https://github.com/bBoxType/FiraGo
 """
 for f in $HOME/x/fnt/firago/*.ttf; do
   python ~/xsrc/snippets/misc/mutilator/fira-go.py $f $(basename $f)

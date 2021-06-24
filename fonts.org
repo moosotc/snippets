@@ -30,7 +30,7 @@
 | rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |        |       |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |        |       |
-| source sans 3         | [X] | [X] | [X] | [½] | [V] | [½] |        |       |
+| source sans 3         | [X] | [X] | [X] | [½] | [V] |   ½ |        |       |
 |-----------------------+-----+-----+-----+-----+-----+-----+--------+-------|
 * 3ze without remapping option
 | acari sans      | [X] | [ ] | [X] | [X] | [ ] | 3 |     |                |
@@ -39,8 +39,8 @@
 | input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |     | remapping idea |
 | verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | [ ] |                |
 * Cyrillic issues
-| source code pro | [X] | [X] | [X] | [½] | [V] | [∞.½] | | [src] |
-| source sans pro | [X] | [X] | [X] | [½] | [V] | [∞.½] | | [src] |
+| source code pro | [X] | [X] | [X] | [½] | [V] | ∞.½ |   | [src] |
+| source sans pro | [X] | [X] | [X] | [½] | [V] | ∞.½ |   | [src] |
 * helvetica
 |------------------+-----+-------+-----+-----+-----+------+-----|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |

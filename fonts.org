@@ -18,7 +18,7 @@
 | jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | [X]    |       |
 | lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |        | ɭ ɩ   |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | [X]    |       |
-| mplus 1p              | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
+| mplus 1p              | [X] | [X] | [ ] | [ ] | [V] |   3 |        |       |
 | noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |        | ɭ Ɩ   |
 | nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | [X]    |       |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |

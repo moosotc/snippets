@@ -51,7 +51,7 @@ text() {
 <br/>кирилица $1<hr>
 <pre style="font-size: ${1}pt;">
 \$S\$s\$5hmmаммаhm<i/>mb8B0dy кирилица $1<hr>
-IĪ lI 1l Il l1 3З S9 O0o 0︀ composed-0̸ O̸ ʘ 0 ʘ0
+IĪ lI 1l Il l1 ıl lı 3З S9 O0o 0︀ composed-0̸ O̸ ʘ 0 ʘ0
 cf https://en.wikipedia.org/wiki/Slashed_zero
 $(perm "l" "$all")
 
@@ -77,8 +77,10 @@ I| |I |l lI |lI |Il l|I lI| Il| I|l
 3504
 45Ʒ0
 
-ÍĬǏÎÏḮİỊȈÌȊĪĮƗĨḬ
+ÍĬǏÎÏḮİỊȈÌȊĪĮƗĨḬıllılı
 İsmet is not Ismet!
+İbrahim Yıldız
+https://en.wikipedia.org/wiki/Göbekli Tepe
 </pre>
 EOF
 }

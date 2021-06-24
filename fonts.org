@@ -28,17 +28,17 @@
 | roboto                | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
 | roboto slab           | [X] | [X] | [1] | [X] | [ ] |   2 |        |       |
 | rubik one             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
-| source code pro       | [X] | [X] | [X] | [X] | [V] |   ½ | ezh    |       |
-| source sans pro       | [X] | [X] | [X] | [X] | [V] |   ½ | ezh    |       |
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |        |       |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |        |       |
 |-----------------------+-----+-----+-----+-----+-----+-----+--------+-------|
 * 3ze without remapping option
-| acari sans    | [X] | [ ] | [X] | [ ] | [ ] | 3 |     |                |
-| go            | [ ] | [ ] | [X] | [X] | [X] | 2 |     |                |
-| ibm plex sans | [X] | [ ] | [X] | [X] | [ ] | 2 |     |                |
-| input sans    | [X] | [ ] | [X] | [X] | [X] | 1 |     | remapping idea |
-| verdana       | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | [ ] |                |
+| source code pro | [X] | [X] | [X] | [X] | [V] | ½ | ezh | [src]          |
+| source sans pro | [X] | [X] | [X] | [X] | [V] | ½ | ezh | [src]          |
+| acari sans      | [X] | [ ] | [X] | [ ] | [ ] | 3 |     |                |
+| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |     |                |
+| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |     |                |
+| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |     | remapping idea |
+| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | [ ] |                |
 * helvetica
 |------------------+-----+-------+-----+-----+-----+------+-----|
 | arimo            | [ ] | [X]   | [ ] | [ ] | [ ] | 4    |     |
@@ -51,6 +51,11 @@
     perceptible yet provoking way
   [l] possible remappings - ɭƖꙆꙇƖ
     NB ligatures and letters derived from original el would stay the same
+  [src] source sans/code pro secific issues
+    1. hook on el is tiny
+    2. no cyrillic in italic variant
+    3. ezh->3 remapping makes it stand alno among "digits"
+       makes them non-lining as a unit
 * links
 1. https://www.bigbrandsystem.com/why-i-hate-verdana/
 2. https://www.bigbrandsystem.com/best-font-size/

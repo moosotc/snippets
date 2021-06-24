@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 # https://github.com/adobe-fonts/source-sans
-# for f in {Light,LightIt,Bold,BoldIt}; do python ~/xsrc/snippets/misc/mutilator/source-sans-3.py /home/malc/x/fnt/git/source-sans/TTF/SourceSans3-$f.ttf $f.ttf; done
+"""
+for f in {Light,LightIt,Bold,BoldIt}; do
+  python ~/xsrc/snippets/misc/mutilator/source-sans-3.py \
+    ~/x/fnt/git/source-sans/TTF/SourceSans3-$f.ttf $f.ttf
+done
+"""
 import sys, fontforge
 
 a = fontforge.open (sys.argv[1])

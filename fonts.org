@@ -17,7 +17,7 @@
 | firago                | [X] | [X] | [X] | [?] | [V] |   0 |        |       |
 | gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |        |       |
 | jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | [X]    |       |
-| lato                  | [X] | [X] | [l] | [ʘ] | [ ] |   1 |        |       |
+| lato                  | [X] | [X] | [l] | [ ] | [ʘ] |   1 |        |       |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | [X]    |       |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [V] |   3 |        |       |
 | noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |        |       |

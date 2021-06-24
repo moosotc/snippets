@@ -51,12 +51,15 @@
   [diglet] letter for digit substitutions are sometimes possible yet
     in some fonts alpha glyphs differ from digits in some barely
     perceptible yet provoking way
+
   [l] possible remappings - ɭƖꙆꙇƖ
     NB ligatures and letters derived from original el would stay the same
+
   [src] source sans/code pro specific
     1. hook on el is tiny
     2. no Cyrillic in italic styles
     3. ezh->3 remapping makes it stand alone among "digits"
+
   [sr3] 1. and .3 from [src]
 * links
 1. https://www.bigbrandsystem.com/why-i-hate-verdana/

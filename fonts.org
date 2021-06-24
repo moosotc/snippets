@@ -16,10 +16,10 @@
 | firasans              | [X] | [X] | [X] | [ ] | [ ] |   2 |        |       |
 | gothic a1             | [X] | [X] | [ ] | [ ] | [X] |   2 |        |       |
 | jetbrains mono        | [X] | [X] | [X] | [X] | [X] |   0 | [X]    |       |
-| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |        | ɭ ɩ   |
+| lato                  | [X] | [X] | [l] | [ ] | [ ] |   2 |        |       |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | [X]    |       |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [V] |   3 |        |       |
-| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |        | ɭ Ɩ   |
+| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |        |       |
 | nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | [X]    |       |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
 | playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |        |       |

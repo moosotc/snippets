@@ -595,7 +595,7 @@
 
 (defun my-insert-gui-clipboard ()
   (interactive)
-  (insert (gui-get-selection 'CLIPBOARD)))
+  (insert (gui-get-selection 'CLIPBOARD 'STRING)))
 
 (defun my-insert-gui-clipboard ()
   (interactive)
@@ -625,5 +625,5 @@
 (global-set-key (kbd "M-<insert>") 'my-put-region-into-gui-clipboard)
 (global-set-key (kbd "M-S-<insert>") 'my-put-region-into-gui-primary)
 
-(global-set-key (kbd "M-\\") 'my-put-current-kill-into-gui-clipboard)
 (global-set-key (kbd "M-|") 'my-put-region-into-gui-primary)
+(global-set-key (kbd "H-S-<up>") 'exchange-point-and-mark)

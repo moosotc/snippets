@@ -1,3 +1,3 @@
 #!/bin/sh
-echo "Primary: $(xclip -o -sel pri)"
-echo "Clipboa: $(xclip -o -sel cli)"
+printf "Primary: [\n%s\n]\n" "$(xclip -o -sel pri)"
+printf "Clipboard: [\n%s\n]\n" "$(xclip -o -sel cli)"

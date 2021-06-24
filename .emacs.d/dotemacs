@@ -1,4 +1,6 @@
-;; -*- Mode: Emacs-Lisp -*-
+;; -*- mode: emacs-lisp; lexical-binding: t -*-
+;; https://stackoverflow.com/questions/5020009/elisp-capturing-variable-from-inner-function
+
 (defun use-code2003 ()
   (interactive)
   (set-fontset-font "fontset-default"
@@ -593,18 +595,22 @@
 
 (setq select-active-regions nil)
 
-(defun my-insert-gui-clipboard ()
-  (interactive)
-  (insert (gui-get-selection 'CLIPBOARD)))
+(defun my-non-nil-insert (s)
+  (if s (insert s)))
 
 (defun my-insert-gui-primary ()
   (interactive)
-  (insert (gui-get-selection 'PRIMARY)))
+  (my-non-nil-insert (gui-get-selection 'PRIMARY)))
+
+(defun my-insert-gui-clipboard ()
+  (interactive)
+  (my-non-nil-insert (gui-get-selection 'CLIPBOARD)))
 
 (defun my-put-current-kill-into-gui-clipboard ()
   (interactive)
-  (princ (current-kill 0 t))
-  (gui-set-selection 'CLIPBOARD (current-kill 0 t)))
+  (let ((ck (current-kill)))
+    (princ ck)
+    (if ck (gui-set-selection 'CLIPBOARD ck))))
 
 (defun my-put-region-into-gui-primary (beg end)
   (interactive "r")
@@ -616,18 +622,16 @@
   (my-show-region)
   (gui-set-selection 'CLIPBOARD (buffer-substring beg end)))
 
-(defun my-goto-mark ()
-  (interactive)
-  (goto-char (mark)))
+(defun think (pre)
+  (lambda () (interactive) (princ (concat "THINK - " pre))))
 
 (global-set-key (kbd "H-\\") 'my-insert-gui-clipboard)
-(global-set-key (kbd "H-|") 'my-insert-gui-primary)
-
 (global-set-key (kbd "H-<insert>") 'helm-show-kill-ring)
-(global-set-key (kbd "H-S-<insert>") (lambda () (interactive) (princ "think")))
+(global-set-key (kbd "M-<insert>") 'exchange-point-and-mark)
+
+(global-set-key (kbd "H-|")          (think "H-|"))
+(global-set-key (kbd "H-S-<insert>") (think "H-S-<insert>"))
+(global-set-key (kbd "M-S-<insert>") (think "M-S-<insert>"))
 
 (global-set-key (kbd "M-<delete>") 'my-put-region-into-gui-clipboard)
 (global-set-key (kbd "H-<delete>") 'my-put-region-into-gui-primary)
-
-(global-set-key (kbd "M-<insert>") 'my-goto-mark)
-(global-set-key (kbd "M-S-<insert>") 'exchange-point-and-mark)

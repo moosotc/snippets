@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
-# for f in $(eval echo ~/x/fnt/git/google-fonts/ofl/lato/\{${a// /,}\}); do python ~/xsrc/snippets/misc/mutilator/lato.py $f $(basename $f); done
-
+# https://www.latofonts.com/
+# https://en.wikipedia.org/wiki/Lato_(typeface)
+"""
+for f in ~/x/fnt/fix/ln/lato/*ttf; do
+  python ~/xsrc/snippets/misc/mutilator/lato.py $f $(basename $f)
+done
+"""
 import sys, fontforge
 
 a = fontforge.open (sys.argv[1])

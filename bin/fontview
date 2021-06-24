@@ -2,7 +2,7 @@
 set -eu
 
 test -n "${2-}" || exec fleg "$*"
-font=$HOME/x/fnt/LastResort.ttf
+font=$HOME/x/fnt/files/LastResort.ttf
 ! test -r $font || export LLPP_FALLBACK_FONT=$font
 
 html=$HOME/.cache/llpp/fonts/text.html

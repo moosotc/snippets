@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-font=$HOME/x/fnt/LastResort.ttf
+font=$HOME/x/fnt/files/LastResort.ttf
 ! test -r $font || export LLPP_FALLBACK_FONT=$font
 
 html=$HOME/.cache/llpp/fonts/leg.html
@@ -51,7 +51,7 @@ text() {
 <br/>кирилица $1<hr>
 <pre style="font-size: ${1}pt;">
 \$S\$s\$5hmmаммаhm<i/>mb8B0dy кирилица $1<hr>
-IĪ lI 1l Il l1 3З S9 O0o 0︀ composed-0̸ O̸ ʘ 0
+IĪ lI 1l Il l1 3З S9 O0o 0︀ composed-0̸ O̸ ʘ 0 ʘ0
 cf https://en.wikipedia.org/wiki/Slashed_zero
 $(perm "l" "$all")
 

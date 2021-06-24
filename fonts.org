@@ -53,8 +53,8 @@
     NB ligatures and letters derived from original el would stay the same
   [src] source sans/code pro secific issues
     1. hook on el is tiny
-    2. no cyrillic in italic variant
-    3. ezh->3 remapping makes it stand alno among "digits"
+    2. no cyrillic in italic variants
+    3. ezh->3 remapping makes it stand alone among "digits"
        makes them non-lining as a unit
 * links
 1. https://www.bigbrandsystem.com/why-i-hate-verdana/

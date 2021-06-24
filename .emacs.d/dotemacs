@@ -595,9 +595,9 @@
 
 (defun my-insert-gui-clipboard ()
   (interactive)
-  (insert (gui-get-selection 'CLIPBOARD 'STRING)))
+  (insert (gui-get-selection 'CLIPBOARD)))
 
-(defun my-insert-gui-clipboard ()
+(defun my-insert-gui-primary ()
   (interactive)
   (insert (gui-get-selection 'PRIMARY)))
 

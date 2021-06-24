@@ -31,13 +31,13 @@
 | ubuntu                | [X] | [X] | [X] | [ ] | [ ] |   2 |        |       |
 | ubuntu mono           | [ ] | [X] | [X] | [X] | [X] |   1 |        |       |
 | source sans 3         | [X] | [½] | [X] | [½] | [V] |   1 |        | [sr3] |
-| |-----------------------+-----+-----+-----+-----+-----+-----+--------+-------|
+|-----------------------+-----+-----+-----+-----+-----+-----+--------+-------|
 * 3ze without remapping option
-| acari sans      | [X] | [ ] | [X] | [X] | [ ] | 3 |     |                |
-| go              | [ ] | [ ] | [X] | [X] | [X] | 2 |     |                |
-| ibm plex sans   | [X] | [ ] | [X] | [X] | [ ] | 2 |     |                |
-| input sans      | [X] | [ ] | [X] | [X] | [X] | 1 |     | remapping idea |
-| verdana         | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | [ ] |                |
+| acari sans    | [X] | [ ] | [X] | [X] | [ ] | 3 |     |                |
+| go            | [ ] | [ ] | [X] | [X] | [X] | 2 |     |                |
+| ibm plex sans | [X] | [ ] | [X] | [X] | [ ] | 2 |     |                |
+| input sans    | [X] | [ ] | [X] | [X] | [X] | 1 |     | remapping idea |
+| verdana       | [ ] | [ ] | [ ] | [ ] | [ ] | 5 | [ ] |                |
 * Cyrillic issues
 | source code pro | [X] | [X] | [X] | [½] | [V] | ∞.½ | [src] |
 | source sans pro | [X] | [X] | [X] | [½] | [V] | ∞.½ | [src] |

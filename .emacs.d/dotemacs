@@ -622,8 +622,5 @@
 (global-set-key (kbd "H-<insert>") 'helm-show-kill-ring)
 (global-set-key (kbd "H-S-<insert>") 'my-show-region)
 
-(global-set-key (kbd "M-<insert>") 'my-put-region-into-gui-clipboard)
-(global-set-key (kbd "M-S-<insert>") 'my-put-region-into-gui-primary)
-
-(global-set-key (kbd "M-|") 'my-put-region-into-gui-primary)
-(global-set-key (kbd "H-S-<up>") 'exchange-point-and-mark)
+(global-set-key (kbd "M-<delete>") 'my-put-region-into-gui-clipboard)
+(global-set-key (kbd "H-<delete>") 'my-put-region-into-gui-primary)

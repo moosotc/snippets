@@ -43,9 +43,13 @@ EOF
 mono0="fantasque sans mono"
 mono2="jetbrains mono"
 sans1="nunito"
+#sans1="lato"
+#sans1="firago"
+sans1="noto sans"
+#sans1="source sans 3
 sans2="montserrat alternates"
 
-M "$sans2" "opensans" "open sans" "noto sans" "droid sans"
+M "$sans2" "opensans" "open sans" "noto-sans" "droid sans"
 M "$sans1" "sans" "sans-serif" "helvetica"
 M "$mono0" "courier new" "monaco" "consolas"
 M "$mono2" "monospace"

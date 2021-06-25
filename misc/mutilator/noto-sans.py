@@ -12,18 +12,17 @@ a = fontforge.open (sys.argv[1])
 a.selection.select (ord ('\N{CYRILLIC CAPITAL LETTER ABKHASIAN DZE}')) # Ӡ
 b = a
 a.copy ()
-b.selection.select("3")
+b.selection.select ("3")
 b.paste ()
 
 a.selection.select ('zero.slash')
 a.copy ()
-b.selection.select("0")
+b.selection.select ("0")
 b.paste ()
 
-a.selection.select ('iotaLatin')
-# a.selection.select (ord ('\N{LATIN SMALL LETTER L WITH RETROFLEX HOOK}'))
+a.selection.select (ord ("\N{CYRILLIC SMALL LETTER EL WITH DESCENDER}"))
 a.copy ()
-b.selection.select('l')
+b.selection.select ('l')
 b.paste ()
 
 b.generate(sys.argv[2], flags=("opentype", "no-hints"))

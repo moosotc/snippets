@@ -22,7 +22,6 @@ b.paste ()
 
 a.selection.select ('iotaLatin')
 # a.selection.select (ord ('\N{LATIN SMALL LETTER L WITH RETROFLEX HOOK}'))
-
 a.copy ()
 b.selection.select('l')
 b.paste ()

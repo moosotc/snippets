@@ -63,25 +63,34 @@ $(perm "l" "$all")
 | 3 | flat top                  | (ӡ)
 | З | non-flat top              | (?)
 
-I| |I |l lI |lI |Il l|I lI| Il| I|l
-
+3ze section
+<hr/>
 2Ȝ4 - YOGH          LATIN CAPITAL LETTER
 2Ӡ4 - ABKHASIAN DZE CYRILLIC CAPITAL LETTER
 2ᴣ4 - EZH           LATIN LETTER SMALL CAPITAL
 2ʒ4 - EZH           LATIN SMALL LETTER
 2Ʒ4 - EZH           LATIN CAPITAL LETTER
 
+l'bar section
+<hr/>
+ӆ - CYRILLIC SMALL LETTER EL WITH TAIL
 ԯ - CYRILLIC SMALL LETTER EL WITH DESCENDER
 ԓ - CYRILLIC SMALL LETTER EL WITH HOOK
 ԡ - CYRILLIC SMALL LETTER EL WITH MIDDLE HOOK
-ӆ - CYRILLIC SMALL LETTER EL WITH TAIL
+ɩ - LATIN SMALL LETTER IOTA
 
+|ԯɩӆԡԓI
+
+301 section
+<hr/>
 0123
 3210
 1032
 3504
 45Ʒ0
 
+Turkic section
+<hr/>
 ÍĬǏÎÏḮİỊȈÌȊĪĮƗĨḬıllılı
 İsmet is not Ismet!
 İbrahim Yıldız

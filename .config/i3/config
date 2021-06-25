@@ -202,3 +202,4 @@ bindsym $win+F12 $execnoid setcapskey
 # $win+Ctrl+51 == control win backslash
 bindcode $win+Ctrl+51 $execnoid tora "$(xclip -o -sel c)"
 bindcode $win+$alt+32 $execnoid radio
+bindsym $win+$alt+backslash $execnoid clpr | rofi -dmenu

@@ -68,3 +68,29 @@
 3. https://www.bigbrandsystem.com/best-font-size//index.html
 4. https://en.wikipedia.org/wiki/Variation_Selectors
 5. https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip
+* relative sizes in firefox
+  noto sans > nunito
+  noto sans > firago
+  noto sans ~ lato
+
+  nunito  > firago
+  nunito > lato
+  nunito ~ lato
+
+  lato > firago
+
+  firago < lato < nunito < noto sans < montserrat alternates
+
+  adobe source 3 - feels compressed on https://en.wikipedia.org/wiki/Cookie
+
+* whoy not?
+** source sans 3
+   1. bottom hook on l is too tiny
+   2. 3 substitution
+      1. ʒ (LATIN SMALL LETTER EZH) is making digits non-lining
+   3. feels *too* light and condensed
+** fira go
+   1. bottom hook on l is too tiny
+
+** noto sans
+   el does not have a bottom hook and is in facta bar

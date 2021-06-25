@@ -10,8 +10,8 @@ set -eu
 # code2003              https://en.wikipedia.org/wiki/Code2000
 #                       https://www.fontspace.com/code2003-font-f24444
 # montserrat alternates https://github.com/JulietaUla/Montserrat
-# nunito                https://github.com/googlefonts/Nunito
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
+# noto sans             https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF
@@ -50,7 +50,7 @@ sans1="noto sans"
 sans2="montserrat alternates"
 
 M "$sans1" "opensans" "open sans" "noto sans" "droid sans"
-M "$sans1" "sans" "sans-serif" "helvetica"
+M "$sans1" "sans" "sans-serif" "helvetica" "helvetica neue"
 M "$mono0" "courier new" "monaco" "consolas"
 M "$mono2" "monospace"
 M "$sans2" "vera" "lucida grande" "verdana"

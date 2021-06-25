@@ -1,7 +1,8 @@
 <driconf>
   <device screen="0" driver="dri2">
     <application>
-      <option name="vblank_mode" value="1" />
+       <!-- https://www.reddit.com/r/linuxquestions/comments/4ua5tk/vblank_mode_setting/ -->
+      <option name="vblank_mode" value="1" /> -->
     </application>
   </device>
 </driconf>

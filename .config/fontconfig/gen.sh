@@ -49,7 +49,7 @@ sans1="noto sans"
 #sans1="source sans 3
 sans2="montserrat alternates"
 
-M "$sans2" "opensans" "open sans" "noto-sans" "droid sans"
+M "$sans1" "opensans" "open sans" "noto sans" "droid sans"
 M "$sans1" "sans" "sans-serif" "helvetica"
 M "$mono0" "courier new" "monaco" "consolas"
 M "$mono2" "monospace"

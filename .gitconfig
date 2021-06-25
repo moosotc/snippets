@@ -4,10 +4,8 @@
 [alias]
 	log1 = log --reverse --stat HEAD@{1}..HEAD
 	logsel = !git log --reverse --stat $(xclip -sel c -o)
-	pull1 = !"git pull; git log1"
 	remup = remote update
 	url = config --get remote.origin.url
-	closel = !git clone $(xclip -o -sel c)
 [push]
 	default = tracking
 [pull]

@@ -9,5 +9,5 @@ body { margin-left: 10%; margin-right: 10%; }
 }
 @font-face {
     font-family: sans-serif;
-    src: prince-lookup("nunito");
+    src: prince-lookup("noto sans");
 }

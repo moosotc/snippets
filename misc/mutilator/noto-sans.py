@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-for f in ~/x/fnt/files/noto/*.ttf; do
+for f in ~/x/fnt/files/noto/sans/*.ttf; do
   python ~/xsrc/snippets/misc/mutilator/noto-sans.py $f $(basename $f)
 done
 """

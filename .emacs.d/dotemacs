@@ -630,3 +630,5 @@
 
 (global-set-key (kbd "M-<delete>") 'my-put-region-into-gui-clipboard)
 (global-set-key (kbd "H-<delete>") 'my-put-region-into-gui-primary)
+
+(global-set-key (kbd "H-o") 'find-file)

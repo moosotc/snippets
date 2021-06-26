@@ -4,6 +4,10 @@
 (server-start)
 (defun switch-to-other-buffer ()
   (interactive)
+  (switch-to-buffer nil nil t))
+
+(defun switch-to-very-other-buffer ()
+  (interactive)
   (switch-to-buffer (other-buffer (current-buffer) 1)))
 
 (set-variable 'next-error-highlight t)
@@ -543,6 +547,7 @@
 (global-set-key (kbd "M-.") 'helm-git-grep-at-point)
 (global-set-key (kbd "C-H-.") 'helm-resume)
 (global-set-key (kbd "H-l") 'switch-to-other-buffer)
+(global-set-key (kbd "H-L") 'switch-to-very-other-buffer)
 (global-set-key (kbd "H-1") 'other-window)
 (global-set-key (kbd "H-2") 'delete-other-windows)
 

@@ -50,7 +50,7 @@ M "$sans1" "sans" "sans-serif"
 M "$mono0" "courier new" "monaco" "consolas"
 M "$mono2" "monospace"
 M "$sans2" "vera" "lucida grande" "verdana"
-M "noto serif" "serif"
+M "code2003" "serif"
 
 echo "</fontconfig>"
 

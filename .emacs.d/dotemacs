@@ -540,8 +540,7 @@
 (global-set-key (kbd "H-'") 'insert-quotes)
 (global-set-key (kbd "H-q") 'my-kill-this-buffer-and-window)
 (global-set-key (kbd "H-;") 'caml-comment-till-end-of-line)
-(global-set-key (kbd "C-=") 'pop-to-mark-command)
-(global-set-key (kbd "H-=") 'pop-to-mark-command)
+(global-set-key (kbd "H-[") 'pop-to-mark-command)
 (global-set-key (kbd "H-a") 'beginning-of-buffer)
 (global-set-key (kbd "H-e") 'end-of-buffer)
 (global-set-key (kbd "M-.") 'helm-git-grep-at-point)
@@ -564,7 +563,6 @@
 (global-set-key (kbd "C-<delete>") 'kill-word)
 (global-set-key (kbd "H-<delete>") 'kill-line)
 (global-set-key (kbd "M-<delete>") 'kill-sentence)
-(global-set-key (kbd "H-w") 'backward-kill-word)
 (global-set-key (kbd "H-<backspace>") 'backward-kill-word)
 
 (global-set-key (kbd "H-/") 'helm-occur)
@@ -576,7 +574,12 @@
       (kill-this-buffer))
   (monkeytype-repeat))
 
+(defun my-monkeytype-region (beg end)
+  (interactive "r")
+  (monkeytype-region beg end))
+
 (global-set-key (kbd "H-<escape>") 'my-monkeytype-repeat)
+(global-set-key (kbd "C-<escape>") 'my-monkeytype-region)
 
 (with-eval-after-load "monkeytype"
   (set-face-foreground 'monkeytype-correct "grey80")

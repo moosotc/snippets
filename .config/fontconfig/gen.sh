@@ -12,6 +12,7 @@ set -eu
 # montserrat alternates https://github.com/JulietaUla/Montserrat
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
 # noto sans             https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip
+# jetbrains mono        https://github.com/JetBrains/JetBrainsMono
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
 S() { cat<<EOF

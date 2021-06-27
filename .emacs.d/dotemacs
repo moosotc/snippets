@@ -587,7 +587,7 @@
   (set-face-foreground 'monkeytype-results-error "blue")
   (set-face-foreground 'monkeytype-legend-1 "deepblue"))
 
-(defun my-show-region ()
+(defun my-activate-mark ()
   (interactive)
   (if mark-active (setq mark-active nil) (activate-mark)))
 
@@ -612,12 +612,12 @@
 
 (defun my-put-region-into-gui-primary (beg end)
   (interactive "r")
-  (my-show-region)
+  (my-activate-mark)
   (gui-set-selection 'PRIMARY (buffer-substring beg end)))
 
 (defun my-put-region-into-gui-clipboard (beg end)
   (interactive "r")
-  (my-show-region)
+  (my-activate-mark)
   (gui-set-selection 'CLIPBOARD (buffer-substring beg end)))
 
 (defun think (pre)

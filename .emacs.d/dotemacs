@@ -28,22 +28,12 @@
 
  desktop-path '("~/.emacs.d")
  desktop-restore-frames nil
- desktop-buffers-not-to-save
- (concat "\\("
-         "^nn\\.a[0-9]+\\|\\.log\\|(ftp)\\|^tags\\|^TAGS"
-         "\\|\\.emacs.*\\|\\.diary\\|\\.newsrc-dribble\\|\\.bbdb"
-         "\\)$")
  mail-user-agent 'gnus-user-agent
  user-mail-address "clamky@hotmail.com"
- package-archives
- '(
-   ("gnu" . "http://elpa.gnu.org/packages/")
-   ;; ("sunr" ."http://joseito.republika.pl/sunrise-commander/")
-   ;; ("marmalade" . "http://marmalade-repo.org/packages/")
-   ("melpa" . "http://melpa.org/packages/")
-   )
+ package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                    ("marmalade" . "http://marmalade-repo.org/packages/")
+                    ("melpa" . "http://melpa.org/packages/"))
 
- undo-limit 120000
  whitespace-global-modes '(not erc-mode)
  whitespace-style '(face
                     trailing
@@ -55,10 +45,6 @@
 
  org-log-done t
 
- ad-redefinition-action 'accept
-
- browse-url-mosaic-program ""
- initial-scratch-message ""
  use-dialog-box nil
  calendar-week-start-day 1
 
@@ -98,14 +84,9 @@
  require-final-newline t
  signal-error-on-buffer-boundary nil
 
- ;; autosave
-
- ;; now that we have auto-save-timeout, let's crank this up
- ;; for better interactive response.
  auto-save-interval 0
  auto-save-timeout 0
 
- ;; little compilation window
  compilation-window-height 15
 
  ;; remove anoying bell
@@ -190,14 +171,6 @@
 
 (defun my-kill-this-buffer-and-window ()
   (interactive)
-  (kill-this-buffer)
-  (if (= (count-windows) 2) (delete-window))
-  (or (good-buffer-p)
-      (switch-to-buffer
-       (or (cl-find-if 'good-buffer-p (buffer-list)) "*scratch*"))))
-
-(defun my-kill-this-buffer-and-window ()
-  (interactive)
   (let ((buffer (current-buffer)))
     (unless (= (count-windows) 1)
       (other-window 1)
@@ -245,10 +218,6 @@
 ;;; **********************************************************************
 ;;; OCaml
 ;;; **********************************************************************
-(setq completion-ignored-extensions (append
-                                     '(".cmo" ".cmx" ".cma" ".cmxa" ".cmi")
-                                     completion-ignored-extensions))
-
 (defun caml-comment-till-end-of-line (&optional arg)
   (interactive "P")
   (save-excursion

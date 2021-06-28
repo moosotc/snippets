@@ -1,6 +1,4 @@
 ;; -*- mode: emacs-lisp; lexical-binding: t -*-
-(set-fontset-font t nil "code2003")
-
 (server-start)
 (defun switch-to-other-buffer ()
   (interactive)

@@ -7,8 +7,6 @@ set -eu
 
 # https://eev.ee/blog/2015/05/20/i-stared-into-the-fontconfig-and-the-fontconfig-stared-back-at-me/
 
-# code2003              https://en.wikipedia.org/wiki/Code2000
-#                       https://www.fontspace.com/code2003-font-f24444
 # montserrat alternates https://github.com/JulietaUla/Montserrat
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
 # noto sans             https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip
@@ -36,7 +34,7 @@ cat <<EOF
     <edit name="rgba"><const>none</const></edit>
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="family" mode="append" binding="strong">
-      <string>code2003</string>
+      <string>noto serif</string>
     </edit>
   </match>
 EOF

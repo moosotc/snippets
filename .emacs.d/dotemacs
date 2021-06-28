@@ -600,7 +600,7 @@
 (global-set-key (kbd "H-S-<insert>") (think "H-S-<insert>"))
 (global-set-key (kbd "M-S-<insert>") (think "M-S-<insert>"))
 
-(global-set-key (kbd "M-<delete>") 'my-put-region-into-gui-clipboard)
-(global-set-key (kbd "H-<delete>") 'my-put-region-into-gui-primary)
+(global-set-key (kbd "M-<delete>") (think "M-<delete>"))
+(global-set-key (kbd "H-<delete>") 'my-put-region-into-gui-clipboard)
 
 (global-set-key (kbd "H-o") 'find-file)

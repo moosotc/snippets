@@ -1,3 +1,4 @@
 #!/bin/sh
-printf "Primary: [\n%s\n]\n" "$(xclip -o -sel pri)"
-printf "Clipboard: [\n%s\n]\n" "$(xclip -o -sel cli)"
+printf "Primary: %s\n" "$(xclip -o -sel pri)"
+printf "========================================\n"
+printf "Clipboard: %s\n" "$(xclip -o -sel cli)"

@@ -12,7 +12,11 @@
 
 /* malc */
 @font-face { font-family: sans-serif; src: prince-lookup("noto sans"); }
-@font-face { font-family: serif; src: prince-lookup("code2003"); }
+@font-face {
+    font-family: serif;
+    src: prince-lookup("noto serif"),
+         prince-lookup("Last Resort High-Efficiency");
+}
 @font-face { font-family: monospace; src: prince-lookup("jetbrainsmono"); }
 
 /* set headers and footers */

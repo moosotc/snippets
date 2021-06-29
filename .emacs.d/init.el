@@ -5,7 +5,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
-[default default default italic underline success warning error])
+   [default default default italic underline success warning error])
  '(canlock-password "320a46eeec84e8e4e041534d821600d69eb36d15")
  '(dired-listing-switches "-aBhl --dired --group-directories-first --sort=extension")
  '(erc-log-channels-directory "~/x/log/erc")
@@ -15,7 +15,7 @@
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages
-'(monkeytype pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
+   '(ivy monkeytype pinentry highlight-numbers lacarte xkcd tuareg helm-ls-git helm-git-grep helm-bbdb helm-ag)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

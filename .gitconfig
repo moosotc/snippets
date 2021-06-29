@@ -6,6 +6,7 @@
 	logsel = !git log --reverse --stat $(xclip -sel c -o)
 	remup = remote update
 	url = config --get remote.origin.url
+	pull1 = !"git pull; git log1"
 [push]
 	default = tracking
 [pull]

@@ -394,10 +394,7 @@
   (insert
    (format "%s" (loop for a from ?A to ?Z collect (format "%c\n" a)))))
 
-(set-selection-coding-system 'utf-8)
-(set-clipboard-coding-system 'utf-8)
-
-(setq select-enable-clipboard t)
+(setq select-enable-clipboard nil)
 (setq select-enable-primary nil)
 
 (put 'dired-find-alternate-file 'disabled nil)

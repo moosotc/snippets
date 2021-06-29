@@ -12,6 +12,7 @@ EOF
 xmodmap - <<EOF
 keycode 9 = Escape Menu Escape Menu
 keycode 108 = Mode_switch
+keycode 37 = F6 F12 F6 F12
 EOF
 
 exit

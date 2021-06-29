@@ -1,13 +1,13 @@
 [user]
-	email = clamky@hotmail.com
-	name = malc
+        email = clamky@hotmail.com
+        name = malc
 [alias]
-	log1 = log --reverse --stat HEAD@{1}..HEAD
-	logsel = !git log --reverse --stat $(xclip -sel c -o)
-	remup = remote update
-	url = config --get remote.origin.url
-	pull1 = !"git pull; git log1"
+        log1 = log --reverse --stat HEAD@{1}..HEAD
+        logsel = !git log --reverse --stat $(xclip -sel c -o)
+        remup = remote update
+        url = config --get remote.origin.url
+        pull1 = !"git pull; git log1"
 [push]
-	default = tracking
+        default = tracking
 [pull]
-	ff = only
+        ff = only

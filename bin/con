@@ -21,4 +21,4 @@ if test $# -eq 0; then
     cat 2>/dev/null $argsfile
 else
     for arg in "$@"; do printf -- "$arg\0"; done | tee $argsfile
-fi | xargs -0 mpv $file
+fi | xargs -0 tmux new-window -n "con $(basename $file)" mpv $file

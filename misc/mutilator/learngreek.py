@@ -16,7 +16,8 @@ xtbl = {
     'ζ' : 'z',
     'φ' : 'f',
     'μ' : 'm',
-    'λ' : 'l'
+    'λ' : 'l',
+    'χ' : 'h',
 }
 
 a = fontforge.open (sys.argv[1])

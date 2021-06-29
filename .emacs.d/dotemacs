@@ -394,9 +394,6 @@
   (insert
    (format "%s" (loop for a from ?A to ?Z collect (format "%c\n" a)))))
 
-(setq select-enable-clipboard nil)
-(setq select-enable-primary nil)
-
 (put 'dired-find-alternate-file 'disabled nil)
 
 (defun notify-moo (s)

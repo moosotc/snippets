@@ -406,20 +406,13 @@
                     (point-max)
                     "/tmp/i3.fifo"))))
 
-(add-hook 'tuareg-mode-hook
-          (function
-           (lambda ()
-             (load "caml")
-             (setq imenu-create-index-function 'caml-create-index-function)
+(defun my-tuareg-mode-hook ()
+  (load "caml")
+  (setq imenu-create-index-function 'caml-create-index-function)
+  ;; https://github.com/ocaml/tuareg/commit/18596179aa3da630e544ecb3ad02bcfde8c3a845e
+  (setq tuareg-match-patterns-aligned t))
 
-             ;; Merci - Christophe Troestler, Stefan Monnier
-             ;; https://github.com/ocaml/tuareg/issues/105
-             (advice-add 'tuareg-smie-rules :before-until
-                         (lambda (kind token)
-                           (and (eq kind :before)
-                                (equal token "|-or")
-                                (smie-rule-parent-p "|")
-                                (smie-rule-parent)))))))
+(add-hook 'tuareg-mode-hook 'my-tuareg-mode-hook)
 
 (load "~/.emacs.d/lacarte.elc")
 (load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")

@@ -34,7 +34,7 @@ cat <<EOF
     <edit name="rgba"><const>none</const></edit>
     <edit name="hinting"><bool>false</bool></edit>
     <edit name="family" mode="append" binding="strong">
-      <string>noto serif</string>
+      <string>jetbrains mono</string>
     </edit>
   </match>
 EOF
@@ -43,13 +43,14 @@ mono0="fantasque sans mono"
 mono2="jetbrains mono"
 sans1="noto sans"
 sans2="montserrat alternates"
+serif="noto serif"
 
 M "$sans1" "opensans" "open sans" "noto sans" "droid sans"
 M "$sans1" "sans" "sans-serif"
 M "$mono0" "courier new" "monaco" "consolas"
 M "$mono2" "monospace"
 M "$sans2" "vera" "lucida grande" "verdana"
-M "code2003" "serif"
+M "$serif" "serif"
 
 echo "</fontconfig>"
 

@@ -1,8 +1,5 @@
-body {
-    margin-left: 10%;
-    margin-right: 10%;
-    font-family: sans-serif, fallback;
-}
+html { font-family: sans-serif, fallback; }
+body { margin-left: 10%; margin-right: 10%;}
 @font-face {
     font-family: monospace;
     src: prince-lookup("jetbrainsmono");
@@ -18,5 +15,6 @@ body {
 /* https://stackoverflow.com/a/26930691 */
 @font-face {
     font-family: fallback;
-    src: url("file:///home/malc/x/fnt/files/Code2003-W8nn.ttf");
+    src: url("/home/malc/x/fnt/pan/LastResort-Regular.ttf");
+    /* src: prince-lookup("Last Resort High-Efficienacy"); */
 }

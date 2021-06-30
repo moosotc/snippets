@@ -6,6 +6,6 @@ mkdir -p $ldc
 url=${1-$(xclip -o -se c)}
 hsh=$(basename "$url" | md5sum | cut -d' ' -f1)
 out=$ldc/$hsh.pdf
-
-prince -s $HOME/xsrc/snippets/misc/prince.css -o "$out" "$url"
+S=${style-"--no-author-style -s $HOME/xsrc/snippets/misc/prince.css"}
+prince $S -o "$out" "$url"
 llpp -origin "$url" "$out"

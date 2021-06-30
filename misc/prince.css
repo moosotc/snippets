@@ -1,13 +1,22 @@
-body { margin-left: 10%; margin-right: 10%; }
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: sans-serif, fallback;
+}
 @font-face {
     font-family: monospace;
-    src: prince-lookup("jetbrains mono");
+    src: prince-lookup("jetbrainsmono");
 }
 @font-face {
     font-family: serif;
-    src: prince-lookup("noto serif");
+    src: prince-lookup("notoserif");
 }
 @font-face {
     font-family: sans-serif;
-    src: prince-lookup("noto sans");
+    src: prince-lookup("notosans");
+}
+/* https://stackoverflow.com/a/26930691 */
+@font-face {
+    font-family: fallback;
+    src: url("file:///home/malc/x/fnt/files/Code2003-W8nn.ttf");
 }

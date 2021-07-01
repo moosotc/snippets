@@ -538,7 +538,7 @@
 
 (global-set-key (kbd "H-<escape>") 'my-monkeytype-repeat)
 (global-set-key (kbd "C-<escape>") 'my-monkeytype-region)
-(global-set-key (kbd "H-~") 'my-monkeytype-region-as-words)
+(global-set-key (kbd "M-~") 'my-monkeytype-region-as-words)
 
 (with-eval-after-load "monkeytype"
   (set-face-foreground 'monkeytype-correct "grey80")

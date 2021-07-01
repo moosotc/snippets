@@ -48,7 +48,8 @@
 
 (setq gnus-secondary-select-methods
       (list
-       '(nnml "")
+       '(nnml ""
+              (gnus-search-engine gnus-search-notmuch ""))
        '(nntp "news.gmane.io" 119)
        )
       )

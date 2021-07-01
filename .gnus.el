@@ -5,6 +5,8 @@
       mm-automatic-display
       (remove "text/html" mm-automatic-display))
 
+(setq mm-text-html-renderer 'links)
+
 (setq gnus-visible-headers
       (concat "^From:\\|^Subject:\\|^Summary:\\|^To:"
               "\\|^Date:\\|^Gnus-Warning:\\|^Resent-From:"))

@@ -515,8 +515,9 @@
 (global-set-key (kbd "H-<up>") 'bs-show)
 (global-set-key (kbd "H-<down>") 'bs-toggle-show-all)
 (global-set-key (kbd "C-<delete>") 'kill-word)
-(global-set-key (kbd "H-<delete>") 'kill-line)
-(global-set-key (kbd "M-<delete>") 'kill-sentence)
+(global-set-key (kbd "M-<delete>")
+                (lambda ()
+                  (execute-kbd-macro (read-kbd-macro (kbd "C-k")))))
 (global-set-key (kbd "H-<backspace>") 'backward-kill-word)
 
 (global-set-key (kbd "H-/") 'helm-occur)

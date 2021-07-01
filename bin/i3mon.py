@@ -153,7 +153,7 @@ translate = {"package-0" : "p",
              "uncore"    : "g",
              "dram"      : "m"}
 
-translatetemp = {"pch_cannonlake" : "🌡",
+translatetemp = {"pch_cannonlake" : "P",
                  "x86_pkg_temp"   : "x",
                  "iwlwifi"        : "w"}
 
@@ -281,7 +281,7 @@ def main ():
         if True:
             nmail = checkmail (t)
             if nmail > 0:
-                j += [{"color": "#ffff00", "full_text": "🅼 %d" % nmail}]
+                j += [{"color": "#ffff00", "full_text": "M %d" % nmail}]
             if nmail < 0:
                 j += [{"color": "#ff0000", "full_text": "ERROR"}]
         # j = [{"color": "#00a000", "full_text": "NUC"}] + j

@@ -78,7 +78,6 @@ alias mpvin='mpv --playlist=-'
 alias xco='xclip -se c -o'
 alias xci='xclip -se c -i'
 alias h='history'
-alias ps='echo bad habits die hard (use \\ps and think) - $*'
 alias which-command &>/dev/null && unalias which-command
 alias qdb="gdb -q"
 

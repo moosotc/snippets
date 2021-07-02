@@ -4,8 +4,8 @@ set -e
 mt=$(file -b -L --mime-type "$1")
 case "$mt" in
     video/* | audio/*) o=mpv;;
-    application/pdf) o=llpp;;
-    application/msword) o=llppac;;
+    application/pdf) o="run-in-background llpp";;
+    application/msword) o="run-in-background llppac";;
     image/*) o=llppac;;
     *)
         expr "$1" : '.*\.\(webm\|mkv\|flv\)' && o=mpv || {

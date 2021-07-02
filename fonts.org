@@ -94,4 +94,4 @@
    1. bottom hook on l is too tiny
 
 ** noto sans
-   el does not have a bottom hook and is in facta bar
+   el does not have a bottom hook and is in fact a bar

@@ -3,8 +3,13 @@ export FONTCONFIG_FILE=/home/malc/xsrc/snippets/.config/fontconfig/fonts.conf
 set -o pipefail
 test "$1" = "--display" && export DISPLAY=$2 || exec pinentry-curses
 echo OK
+pelog=/tmp/pinentry.log
+echo "$@" >$pelog
 while read cmd rest
 do
+    echo "$cmd" >>$pelog
+    echo "$rest" >>$pelog
+    echo "========================================" >> $pelog
     case $cmd in
         SETDESC)
             DESC=$rest
@@ -29,7 +34,7 @@ do
             echo OK
         ;;
         GETPIN)
-            RES=$(rofi -p 'PIN ' -password -dmenu </dev/null)
+            RES=$(rofi -p "PIN${ERROR+($ERROR)} -password -dmenu </dev/null)
             echo D $RES
             echo OK
         ;;

@@ -34,7 +34,7 @@
 (setq bbdb-north-american-phone-numbers nil)
 
 ;; ━
-(setq gnus-summary-line-format "%U%R%z%B%(%[%4L: %-23,23f%]%) %s\n"
+(setq gnus-summary-line-format "%U%R%z%B%(%[%4L: %-23,23f%]%) %s %c\n"
       gnus-sum-thread-tree-false-root ""
       gnus-sum-thread-tree-indent " "
       gnus-sum-thread-tree-leaf-with-other "├─⇨ "

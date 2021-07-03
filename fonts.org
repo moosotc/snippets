@@ -93,6 +93,7 @@
 ** fira go
    1. bottom hook on l is too tiny
 
+* why?
 ** noto sans
    el does not have a bottom hook and is in fact a bar
    but it has latin capital letter iota which is not so provoking

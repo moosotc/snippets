@@ -27,7 +27,6 @@
  'gnus-summary-mode-hook
  (lambda ()
    (local-set-key (kbd "<tab>") 'gnus-summary-next-unread-article)
-   (local-set-key "="  'toggle-article-window)
    (local-set-key (kbd "<deletechar>") 'gnus-summary-prev-page)
    (local-set-key "u"  'gnus-summary-clear-mark-forward)
    (local-set-key "r"  'gnus-summary-followup-with-original)

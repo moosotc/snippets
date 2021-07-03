@@ -72,7 +72,6 @@ alias ..='cd ..'
 alias clr="printf '\ec'"
 alias ll='ls -la'
 alias xpwd='printf $PWD | xclip -i'
-alias te=emacsclient
 alias locaml='rlwrap ocaml'
 alias mpvin='mpv --playlist=-'
 alias xco='xclip -se c -o'
@@ -80,6 +79,7 @@ alias xci='xclip -se c -i'
 alias h='history'
 alias which-command &>/dev/null && unalias which-command
 alias qdb="gdb -q"
+alias br='tmux new-window'
 
 sudo () command sudo ${DISPLAY+-A} $*
 test -n "${TMUX}" -a -n "${commands[tmux]}" && export TERM=tmux-256color

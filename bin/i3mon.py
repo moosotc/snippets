@@ -284,11 +284,8 @@ def main ():
             nmail = checkmail (t)
             if nmail > 0:
                 j += [{"full_text": "M %d" % nmail,
-                       "border": "#ffff00",
-                       "border_top": 1,
-                       "border_right": 1,
-                       "border_bottom": 1,
-                       "border_left": 1}]
+                       "color": "#ffff00",
+                       "border": "#ffff00"}]
             if nmail < 0:
                 j += [{"color": "#ff0000", "full_text": "ERROR"}]
         # j = [{"color": "#00a000", "full_text": "NUC"}] + j

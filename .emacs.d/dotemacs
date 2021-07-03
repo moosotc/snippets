@@ -22,6 +22,7 @@
  inhibit-startup-echo-area-message "malc"
  compile-command ""
  chess-images-default-size 80
+ history-delete-duplicates t
  backup-directory-alist `(("." . "~/.emacs.d/backups"))
 
  desktop-path '("~/.emacs.d")

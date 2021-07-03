@@ -95,3 +95,5 @@
 
 ** noto sans
    el does not have a bottom hook and is in fact a bar
+   but it has latin capital letter iota which is not so provoking
+   stand in for lower case el (_most of the time_)

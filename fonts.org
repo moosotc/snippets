@@ -21,8 +21,8 @@
 | lato                  | [X] | [X] | [l] | [ ] | [ʘ] |   1 |        |       |
 | montserrat alternates | [X] | [X] | [X] | [X] | [ ] |   1 | [X]    |       |
 | mplus 1p              | [X] | [X] | [ ] | [ ] | [V] |   3 |        |       |
-| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ |        |       |
-| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | [X]    |       |
+| noto sans             | [X] | [X] | [l] | [X] | [V] |   ½ | [X]    |       |
+| nunito                | [X] | [X] | [X] | [ ] | [ ] |   2 | [ ]    |       |
 | open sans             | [X] | [X] | [ ] | [ ] | [ ] |   3 |        |       |
 | playfair display      | [ ] | [X] | [1] | [X] | [ ] |   3 |        |       |
 | pt sans               | [ ] | [X] | [X] | [ ] | [ ] |   3 | [ ]    |       |

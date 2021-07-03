@@ -283,11 +283,9 @@ def main ():
         if True:
             nmail = checkmail (t)
             if nmail > 0:
-                j += [{"full_text": "M %d" % nmail,
-                       "color": "#ffff00",
-                       "border": "#ffff00"}]
+                j += [{ "color": "#ffFF00", "full_text": "■ %d" % nmail}]
             if nmail < 0:
-                j += [{"color": "#ff0000", "full_text": "ERROR"}]
+                j += [{ "color": "#ff0000", "full_text": "ERROR"}]
         # j = [{"color": "#00a000", "full_text": "NUC"}] + j
         print ("%s," % json.dumps (j), flush=True)
 

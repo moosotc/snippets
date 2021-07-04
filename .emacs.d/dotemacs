@@ -361,6 +361,7 @@
 
 (add-hook 'Info-mode-hook             ; After Info-mode has started
           (lambda ()
+            (scroll-lock-mode)
             (setq Info-additional-directory-list
                   '("/usr/share/info"
                     "/home/malc/x/rcs/git/emacs/info"

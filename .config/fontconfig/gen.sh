@@ -10,6 +10,7 @@ set -eu
 # montserrat alternates https://github.com/JulietaUla/Montserrat
 # fantasque sans mono   https://github.com/belluzj/fantasque-sans
 # noto sans             https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip
+# noto serif            https://noto-website-2.storage.googleapis.com/pkgs/NotoSerif-unhinted.zip
 # jetbrains mono        https://github.com/JetBrains/JetBrainsMono
 
 test -z ${1-} && exec >${FONTCONFIG_FILE-$HOME/.config/fontconfig/fonts.conf}
@@ -49,7 +50,7 @@ fallb="Last Resort High-Efficiency"
 M "$sans1" "opensans" "open sans" "noto sans" "droid sans"
 M "$sans1" "sans" "sans-serif"
 M "$mono0" "courier new" "monaco" "consolas"
-M "$mono2" "monospace"
+M "$mono2" "monospace" "bitstream vera sans mono"
 M "$sans2" "vera" "lucida grande" "verdana"
 M "$serif" "serif"
 M "$fallb" "fallback"

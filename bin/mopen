@@ -1,11 +1,13 @@
 #!/bin/sh
 set -e
 
+exit 123
 mt=$(file -b -L --mime-type "$1")
 case "$mt" in
     video/* | audio/*) o=mpv;;
-    application/pdf) o="run-in-background llpp";;
-    application/msword) o="run-in-background llppac";;
+    application/pdf) o=llpp;;
+    application/msword) o=llppac;;
+    font/*) o=fontview;;
     image/*) o=llppac;;
     *)
         expr "$1" : '.*\.\(webm\|mkv\|flv\)' && o=mpv || {
@@ -14,4 +16,4 @@ case "$mt" in
             }
         ;;
 esac
-exec $o "$@"
+exec br $o "$@"

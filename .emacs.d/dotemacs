@@ -159,7 +159,7 @@
   (interactive)
   (describe-variable (variable-at-point)))
 
-(defun my-delete-window ()
+(defun uh-delete-window ()
   (interactive)
   (if (> (count-windows) 1) (delete-window)))
 
@@ -168,7 +168,7 @@
     (or (member buffer-name '("*scratch*" "*cvs*"))
         (not (string-match "^ ?\\*.*\\*$" buffer-name)))))
 
-(defun my-kill-this-buffer-and-window ()
+(defun uh-kill-this-buffer-and-window ()
   (interactive)
   (let ((buffer (current-buffer)))
     (unless (= (count-windows) 1)
@@ -176,7 +176,7 @@
       (delete-other-windows))
     (kill-buffer buffer)))
 
-(defun my-recompile ()
+(defun uh-recompile ()
   (interactive)
   (let ((compilation-ask-about-save nil))
     (if (fboundp 'recompile)
@@ -186,20 +186,20 @@
 ;; **********************************************************************
 ;; hooks
 ;; **********************************************************************
-(defun my-lisp-mode-hook ()
+(defun uh-lisp-mode-hook ()
   (put 'with-slots 'lisp-indent-function 2)
   (put 'with-open-file 'lisp-indent-function 'defun)
   (put 'with-open-stream 'lisp-indent-function 'defun))
 
-(add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
-(add-hook 'emacs-lisp-mode-hook 'my-lisp-mode-hook)
+(add-hook 'lisp-mode-hook 'uh-lisp-mode-hook)
+(add-hook 'emacs-lisp-mode-hook 'uh-lisp-mode-hook)
 
-(defun my-bookmark-mode-hook ()
+(defun uh-bookmark-mode-hook ()
   (local-set-key (kbd "<return>") 'bookmark-bmenu-select))
 
-(add-hook 'bookmark-bmenu-mode-hook 'my-bookmark-mode-hook)
+(add-hook 'bookmark-bmenu-mode-hook 'uh-bookmark-mode-hook)
 
-(defun my-c-mode-hook ()
+(defun uh-c-mode-hook ()
   (define-key c-mode-map (kbd "H-[") 'c-insert-curly-braces)
   (local-set-key (kbd "<return>") 'newline-and-indent)
   (c-set-style "bsd")
@@ -207,12 +207,12 @@
   (c-set-offset 'statement-case-open 4)
   (c-set-offset 'case-label 0))
 
-(defun my-sh-mode-hook ()
+(defun uh-sh-mode-hook ()
   (define-key sh-mode-map (kbd "H-[") 'sh-insert-curly-braces))
 
-(add-hook 'c-mode-hook 'my-c-mode-hook)
-(add-hook 'c++-mode-hook 'my-c-mode-hook)
-(add-hook 'sh-mode-hook 'my-sh-mode-hook)
+(add-hook 'c-mode-hook 'uh-c-mode-hook)
+(add-hook 'c++-mode-hook 'uh-c-mode-hook)
+(add-hook 'sh-mode-hook 'uh-sh-mode-hook)
 
 ;;; **********************************************************************
 ;;; OCaml
@@ -225,7 +225,7 @@
     (comment-region (point) (progn (end-of-line) (point)) arg)))
 
 ;; ----------------------------------------------------------------------
-(defun my-match-paren (arg)
+(defun uh-match-paren (arg)
   "Go to the matching parenthesis if on parenthesis otherwise insert %."
   (interactive "p")
   (cond ((looking-at "\\s\(") (forward-list 1) (backward-char 1))
@@ -271,7 +271,7 @@
   (insert "\"\"")
   (goto-char (- (point) 1)))
 
-(defun my-insert-parentheses (beg end)
+(defun uh-insert-parentheses (beg end)
   (interactive "*r")
   (save-excursion
     (goto-char beg)
@@ -283,7 +283,7 @@
     (forward-sexp)
     (insert ")")))
 
-(defun my-insert-parentheses-no-space ()
+(defun uh-insert-parentheses-no-space ()
   (interactive)
   (let ((parens-require-spaces
          (save-excursion
@@ -308,7 +308,7 @@
 
 (defun bsd-parens ()
   (interactive)
-  (local-set-key (kbd "H-9") 'my-insert-parentheses-no-space))
+  (local-set-key (kbd "H-9") 'uh-insert-parentheses-no-space))
 
 ;; Takk till Stig Erik Sandø
 (setq message-send-mail-function 'smtpmail-send-it
@@ -408,13 +408,13 @@
                     (point-max)
                     "/tmp/i3.fifo"))))
 
-(defun my-tuareg-mode-hook ()
+(defun uh-tuareg-mode-hook ()
   (load "caml")
   (setq imenu-create-index-function 'caml-create-index-function)
   ;; https://github.com/ocaml/tuareg/commit/18596179aa3da630e544ecb3ad02bcfde8c3a845e
   (setq tuareg-match-patterns-aligned t))
 
-(add-hook 'tuareg-mode-hook 'my-tuareg-mode-hook)
+(add-hook 'tuareg-mode-hook 'uh-tuareg-mode-hook)
 
 (load "~/.emacs.d/lacarte.elc")
 (load "~/x/rcs/git/helm-lacarte/helm-lacarte.elc")
@@ -440,14 +440,14 @@
 (add-hook 'help-mode-hook 'scroll-lock-mode)
 (add-hook 'gnus-article-mode-hook 'scroll-lock-mode)
 
-(defun my-date () (format-time-string "%a %d.%m.%Y"))
-(defun my-date-ins () (interactive) (insert (my-date)))
+(defun uh-date () (format-time-string "%a %d.%m.%Y"))
+(defun uh-date-ins () (interactive) (insert (uh-date)))
 
-(defun my-time () (format-time-string "%H:%M"))
-(defun my-time-ins () (interactive) (insert (my-time)))
+(defun uh-time () (format-time-string "%H:%M"))
+(defun uh-time-ins () (interactive) (insert (uh-time)))
 
-(defun my-org-date () (format-time-string "%d.%m"))
-(defun my-org-time () (format-time-string "%H:%M"))
+(defun uh-org-date () (format-time-string "%d.%m"))
+(defun uh-org-time () (format-time-string "%H:%M"))
 
 (setq erc-server "irc.libera.chat")
 (setq org-todo-keywords '((sequence "TODO(t!)" "|" "DONE(d!)" "CANCELED(c@)")))
@@ -455,19 +455,19 @@
 (setq-default scroll-bar-width 8)
 (setq org-startup-folded t)
 
-(defun my-close-org-element ()
+(defun uh-close-org-element ()
   (interactive)
   (org-up-element)
   (org-cycle))
 
-(defun my-org-mode-hook ()
-  (define-key org-mode-map (kbd "H-<tab>") 'my-close-org-element))
+(defun uh-org-mode-hook ()
+  (define-key org-mode-map (kbd "H-<tab>") 'uh-close-org-element))
 
-(add-hook 'org-mode-hook 'my-org-mode-hook)
-(defun my-buffer-file-name ()
+(add-hook 'org-mode-hook 'uh-org-mode-hook)
+(defun uh-buffer-file-name ()
   (interactive) (gui-set-selection 'CLIPBOARD (buffer-file-name)))
 
-(defun my-erc-track-switch-buffer ()
+(defun uh-erc-track-switch-buffer ()
   (interactive) (erc-track-switch-buffer -1))
 
 (autoload 'helm-imenu "helm-imenu")
@@ -480,21 +480,21 @@
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x r b") 'helm-filtered-bookmarks)
-(global-set-key (kbd "H-t") 'my-erc-track-switch-buffer)
+(global-set-key (kbd "H-t") 'uh-erc-track-switch-buffer)
 (global-set-key (kbd "H-d") 'erc-track-switch-buffer)
 (global-set-key (kbd "M-H-l") 'lispy)
 (global-set-key (kbd "M-H-L") 'orgy)
 (global-set-key (kbd "H-h") (lambda () (interactive) (scroll-up 1)))
 (global-set-key (kbd "H-s") (lambda () (interactive) (scroll-down 1)))
-(global-set-key (kbd "H-c") 'my-recompile)
+(global-set-key (kbd "H-c") 'uh-recompile)
 (global-set-key (kbd "M-H-c") 'compile)
-(global-set-key (kbd "H-3") 'my-match-paren)
+(global-set-key (kbd "H-3") 'uh-match-paren)
 (global-set-key (kbd "H-x H-b") 'ibuffer-list-buffers)
 (global-set-key (kbd "H-b") 'helm-for-files)
 (global-set-key (kbd "H-9") 'insert-parentheses)
 (global-set-key (kbd "H-0") 'helm-browse-menubar)
 (global-set-key (kbd "H-'") 'insert-quotes)
-(global-set-key (kbd "H-q") 'my-kill-this-buffer-and-window)
+(global-set-key (kbd "H-q") 'uh-kill-this-buffer-and-window)
 (global-set-key (kbd "H-;") 'caml-comment-till-end-of-line)
 (global-set-key (kbd "H-[") 'pop-to-mark-command)
 (global-set-key (kbd "H-a") 'beginning-of-buffer)
@@ -502,7 +502,7 @@
 (global-set-key (kbd "M-.") 'helm-git-grep-at-point)
 (global-set-key (kbd "C-H-.") 'helm-resume)
 (global-set-key (kbd "H-l") 'switch-to-other-buffer)
-(global-set-key (kbd "H-L") 'switch-to-very-other-buffer)
+(global-set-key (kbd "H--") 'switch-to-very-other-buffer)
 (global-set-key (kbd "H-1") 'other-window)
 (global-set-key (kbd "H-2") 'delete-other-windows)
 
@@ -526,22 +526,22 @@
 (global-set-key (kbd "H-/") 'helm-occur)
 (global-set-key (kbd "H-z") 'helm-occur)
 
-(defun my-monkeytype-repeat ()
+(defun uh-monkeytype-repeat ()
   (interactive)
   (if (string-equal (buffer-name (current-buffer)) "*Monkeytype*")
       (kill-this-buffer))
   (monkeytype-repeat))
 
-(defun my-monkeytype-region (beg end)
+(defun uh-monkeytype-region (beg end)
   (interactive "r")
   (monkeytype-region beg end))
-(defun my-monkeytype-region-as-words (beg end)
+(defun uh-monkeytype-region-as-words (beg end)
   (interactive "r")
   (monkeytype-region-as-words beg end))
 
-(global-set-key (kbd "H-<escape>") 'my-monkeytype-repeat)
-(global-set-key (kbd "C-<escape>") 'my-monkeytype-region)
-(global-set-key (kbd "M-~") 'my-monkeytype-region-as-words)
+(global-set-key (kbd "H-<escape>") 'uh-monkeytype-repeat)
+(global-set-key (kbd "H-<escape>") 'uh-monkeytype-region)
+(global-set-key (kbd "M-<return>") 'uh-monkeytype-region-as-words)
 
 (with-eval-after-load "monkeytype"
   (set-face-foreground 'monkeytype-correct "grey80")
@@ -549,43 +549,43 @@
   (set-face-foreground 'monkeytype-results-error "blue")
   (set-face-foreground 'monkeytype-legend-1 "deepblue"))
 
-(defun my-activate-mark ()
+(defun uh-activate-mark ()
   (interactive)
   (if mark-active (setq mark-active nil) (activate-mark)))
 
 (setq select-active-regions nil)
 
-(defun my-non-nil-insert (s)
+(defun uh-non-nil-insert (s)
   (if s (insert s)))
 
-(defun my-insert-gui-primary ()
+(defun uh-insert-gui-primary ()
   (interactive)
-  (my-non-nil-insert (gui-get-selection 'PRIMARY)))
+  (uh-non-nil-insert (gui-get-selection 'PRIMARY)))
 
-(defun my-insert-gui-clipboard ()
+(defun uh-insert-gui-clipboard ()
   (interactive)
-  (my-non-nil-insert (gui-get-selection 'CLIPBOARD)))
+  (uh-non-nil-insert (gui-get-selection 'CLIPBOARD)))
 
-(defun my-put-current-kill-into-gui-clipboard ()
+(defun uh-put-current-kill-into-gui-clipboard ()
   (interactive)
   (let ((ck (current-kill)))
     (princ ck)
     (if ck (gui-set-selection 'CLIPBOARD ck))))
 
-(defun my-put-region-into-gui-primary (beg end)
+(defun uh-put-region-into-gui-primary (beg end)
   (interactive "r")
-  (my-activate-mark)
+  (uh-activate-mark)
   (gui-set-selection 'PRIMARY (buffer-substring beg end)))
 
-(defun my-put-region-into-gui-clipboard (beg end)
+(defun uh-put-region-into-gui-clipboard (beg end)
   (interactive "r")
-  (my-activate-mark)
+  (uh-activate-mark)
   (gui-set-selection 'CLIPBOARD (buffer-substring beg end)))
 
 (defun think (pre)
   (lambda () (interactive) (princ (concat "THINK - " pre))))
 
-(global-set-key (kbd "H-\\") 'my-insert-gui-clipboard)
+(global-set-key (kbd "H-\\") 'uh-insert-gui-clipboard)
 (global-set-key (kbd "H-<insert>") 'helm-show-kill-ring)
 (global-set-key (kbd "M-<insert>") 'exchange-point-and-mark)
 
@@ -593,9 +593,10 @@
 (global-set-key (kbd "H-S-<insert>") (think "H-S-<insert>"))
 (global-set-key (kbd "M-S-<insert>") (think "M-S-<insert>"))
 
-(global-set-key (kbd "H-<delete>") 'my-put-region-into-gui-clipboard)
+(global-set-key (kbd "H-<delete>") 'uh-put-region-into-gui-clipboard)
 
 (global-set-key (kbd "H-o") 'find-file)
+(global-set-key (kbd "H-m") 'uh-activate-mark)
 
 ;; WIP
 ;;(setenv "GPG_AGENT_INFO" nil)

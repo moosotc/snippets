@@ -2,21 +2,11 @@
 # -*- coding: utf-8 -*-
 
 import time, os, sys, select, signal, subprocess
-import socket, ssl, re, json, traceback, imaplib
-
-imap_host = "40.100.54.194"
-imap_host = "imap-mail.outlook.com"
-email = b"clamky@hotmail.com"
+import socket, ssl, re, json, traceback
 
 prevunseen = 0
 prevt = 0
 wireless = False
-
-# http://stackoverflow.com/questions/20794414/how-to-check-the-status-of-a-shell-script-using-subprocess-module-in-python
-# http://zx2c4.com/projects/password-store/
-# is used for password management
-imap_pass = subprocess.Popen (["pass", email], stdout=subprocess.PIPE) \
-                    .communicate ()[0][:-1].decode ("utf-8")
 
 def usr1handler (a1, a2):
     global prevt
@@ -24,20 +14,18 @@ def usr1handler (a1, a2):
 signal.signal (signal.SIGUSR1, usr1handler)
 mailcheckinterval = 20*60 #4*60*60
 
-# SSL code taken almost verbatim from:
-# https://wiki.python.org/moin/SSL
-
 def checkmail1 (t):
     global prevt, prevunseen, mailcheckinterval, imap_host, imap_pass
     n = prevunseen
     if t - prevt > mailcheckinterval:
-        imap = imaplib.IMAP4_SSL (imap_host)
-        imap.login (email, imap_pass)
-        imap.select ('Inbox')
-        ok, data = imap.search (None, "(UNSEEN)")
-        n = len (data[0].split ())
-        imap.close()
-
+        with open ("/home/malc/.nnmaildir/hotmail/.mbsyncstate") as f:
+            n = 0
+            for line in f.readlines ():
+                try:
+                    _,_,_ = line.split ()
+                except:
+                    n = n + 1
+            n -= 5
         prevt = t
         prevunseen = n
     return n

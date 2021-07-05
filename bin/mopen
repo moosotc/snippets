@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 
-exit 123
 mt=$(file -b -L --mime-type "$1")
 case "$mt" in
     video/* | audio/*) o=mpv;;
@@ -9,11 +8,6 @@ case "$mt" in
     application/msword) o=llppac;;
     font/*) o=fontview;;
     image/*) o=llppac;;
-    *)
-        expr "$1" : '.*\.\(webm\|mkv\|flv\)' && o=mpv || {
-                echo "eh? $mt"
-                exit 111
-            }
-        ;;
+    *) printf "WHA? $1" >/tmp/i3.fifo;;
 esac
-exec br $o "$@"
+tmux new-window $o "$@"

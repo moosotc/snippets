@@ -71,6 +71,7 @@
 4. https://en.wikipedia.org/wiki/Variation_Selectors
 5. https://noto-website-2.storage.googleapis.com/pkgs/NotoSans-unhinted.zip
 6. https://www.programmingfonts.org/
+7. https://news.ycombinator.com/item?id=26633148
 * relative sizes in firefox
   noto sans > nunito
   noto sans > firago

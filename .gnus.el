@@ -1,25 +1,26 @@
-;; -*- Mode: Emacs-Lisp -*-
-
 (setq
- ;; mm-discouraged-alternatives '("text/html" "text/richtext")
- ;; mm-automatic-display (remove "text/html" mm-automatic-display)
+ mm-discouraged-alternatives '("text/html" "text/richtext")
+ mm-automatic-display (remove "text/html" mm-automatic-display)
  mm-text-html-renderer nil
  gnus-visible-headers "^From:\\|^Subject:\\|^To:\\|^Date:"
  gnus-save-newsrc-file nil
  gnus-read-newsrc-file nil
  gnus-save-killed-list nil
  gnus-check-new-newsgroups nil
- gnus-select-method '(nnmaildir "maildir" (directory "~/.nnmaildir/"))
- gnus-inhibit-startup-message      t    ;; no startup message
- gnus-treat-display-smileys        nil  ;; no smileys
- message-kill-buffer-on-exit       t    ;; no hanging mail buffers
- gnus-prompt-before-saving         t    ;; better than default
- gnus-large-newsgroup              20
+ gnus-select-method
+ '(nnmaildir "maildir"
+             (directory "~/.nnmaildir/")
+             (gnus-search-engine gnus-search-notmuch
+                                 (config-file "~/.notmuch_config")))
+ gnus-inhibit-startup-message t ;; no startup message
+ gnus-treat-display-smileys nil ;; no smileys
+ message-kill-buffer-on-exit t  ;; no hanging mail buffers
+ gnus-prompt-before-saving t    ;; better than default
+ gnus-large-newsgroup 20
  bbdb-north-american-phone-numbers nil
  gnus-secondary-select-methods '((nntp "nntp.aioe.org" 119))
- ;; gnus-use-correct-string-widths nil)
- mail-sources nil
- )
+ gnus-use-correct-string-widths nil
+ mail-sources nil)
 
 (add-hook
  'gnus-summary-mode-hook

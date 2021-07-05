@@ -1,30 +1,25 @@
 ;; -*- Mode: Emacs-Lisp -*-
 
-(setq secselmet
-      '(
-       ;; (nntp "news.gmane.io" 119)
-        (nnmaildir "" (directory "~/.nnmaildir/"))
-       ;; (nnimap "imap-mail.outlook.com")
-        )
-      )
 (setq
- mm-discouraged-alternatives '("text/html" "text/richtext")
- mm-automatic-display (remove "text/html" mm-automatic-display)
- mm-text-html-renderer 'links
+ ;; mm-discouraged-alternatives '("text/html" "text/richtext")
+ ;; mm-automatic-display (remove "text/html" mm-automatic-display)
+ mm-text-html-renderer nil
  gnus-visible-headers "^From:\\|^Subject:\\|^To:\\|^Date:"
  gnus-save-newsrc-file nil
  gnus-read-newsrc-file nil
  gnus-save-killed-list nil
- gnus-check-new-newsgroups 'ask-server
- gnus-select-method '(nntp "nntp.aioe.org" 119)
+ gnus-check-new-newsgroups nil
+ gnus-select-method '(nnmaildir "maildir" (directory "~/.nnmaildir/"))
  gnus-inhibit-startup-message      t    ;; no startup message
  gnus-treat-display-smileys        nil  ;; no smileys
- message-kill-buffer-on-exit       t    ;; no hanging mail buffers
+ ;; message-kill-buffer-on-exit       t    ;; no hanging mail buffers
  gnus-prompt-before-saving         t    ;; better than default
- gnus-large-newsgroup              100
+ gnus-large-newsgroup              20
  bbdb-north-american-phone-numbers nil
- gnus-use-correct-string-widths nil
- gnus-secondary-select-methods secselmet)
+ ;; gnus-use-correct-string-widths nil)
+ mail-sources nil
+ )
+ ;; (nntp "nntp.aioe.org" 119)
 
 (add-hook
  'gnus-summary-mode-hook
@@ -53,10 +48,8 @@
 (add-hook 'gnus-summary-mode-hook 'selector-moo)
 (add-hook 'gnus-group-mode-hook 'selector-moo)
 
-(defun my-gnus-article-mode-hook ()
-  (fset 'gnus-article-next-page 'gnus-article-next-page-1))
-(add-hook 'gnus-article-mode-hook 'my-gnus-article-mode-hook)
-
-(defun kill-mailcd ()
-  (call-process-shell-command "cm" nil t))
-(add-hook 'gnus-exit-gnus-hook 'kill-mailcd)
+(add-hook 'gnus-article-mode-hook
+          (lambda ()
+            (fset 'gnus-article-next-page 'gnus-article-next-page-1)))
+(add-hook 'gnus-exit-gnus-hook
+          (lambda () (call-process-shell-command "cm" nil t)))

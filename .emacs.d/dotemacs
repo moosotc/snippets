@@ -473,6 +473,11 @@
 (defun uh-erc-track-switch-buffer ()
   (interactive) (erc-track-switch-buffer -1))
 
+(defun uh-pop-to-mark-and-activate-region ()
+  (interactive)
+  (pop-to-mark-command)
+  (activate-mark))
+
 (autoload 'helm-imenu "helm-imenu")
 
 ;;======================================================================
@@ -500,6 +505,7 @@
 (global-set-key (kbd "H-q") 'uh-kill-this-buffer-and-window)
 (global-set-key (kbd "H-;") 'caml-comment-till-end-of-line)
 (global-set-key (kbd "H-[") 'pop-to-mark-command)
+(global-set-key (kbd "H-]") 'uh-pop-to-mark-and-activate-region)
 (global-set-key (kbd "H-a") 'beginning-of-buffer)
 (global-set-key (kbd "H-e") 'end-of-buffer)
 (global-set-key (kbd "M-.") 'helm-git-grep-at-point)

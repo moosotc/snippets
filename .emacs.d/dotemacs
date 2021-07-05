@@ -235,6 +235,9 @@
 ;;; ********
 ;;; Few advices for FSF to behave more like Lucid
 
+(if t
+    (princ "not advising")
+  
 ;; TODO: DRY
 (defadvice describe-command (after _ activate)
   (switch-to-buffer-other-window "*Help*"))
@@ -261,7 +264,7 @@
 (defadvice ibuffer-list-buffers (after _ activate)
   (switch-to-buffer-other-window "*Ibuffer*")
   (hl-line-mode 1)
-  (setq cursor-type nil))
+  (setq cursor-type nil)))
 
 (defadvice man (after _ activate)
   (delete-window))

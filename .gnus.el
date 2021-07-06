@@ -7,11 +7,7 @@
  gnus-read-newsrc-file nil
  gnus-save-killed-list nil
  gnus-check-new-newsgroups nil
- gnus-select-method
- '(nnmaildir "maildir"
-             (directory "~/.nnmaildir/")
-             (gnus-search-engine gnus-search-notmuch
-                                 (config-file "~/.notmuch_config")))
+ gnus-select-method '(nnmaildir "maildir" (directory "~/.nnmaildir/"))
  gnus-inhibit-startup-message t ;; no startup message
  gnus-treat-display-smileys nil ;; no smileys
  message-kill-buffer-on-exit t  ;; no hanging mail buffers

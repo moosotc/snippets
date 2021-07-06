@@ -17,5 +17,5 @@ pgrep -a -f i3mon.py &>/dev/null && {
         i3-msg bar hidden_state show
         { sleep 3; i3-msg bar hidden_state hide; } &
     }
-    printf "%s\0002" "♬ $vol">/tmp/i3.fifo
+    printf "%s\0002" "$vol">/tmp/i3.fifo
 }

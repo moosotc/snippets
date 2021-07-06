@@ -41,9 +41,23 @@ Star
 \$tar
 "
 
+hom="A А В B E Е К K M М Н H T Т X Х С C 0 O О 3"
+hom="$hom З Ȝ ʒ Ʒ ᴣ Ӡ l ӏ Ӏ Ι I Ꙇ Ɩ ꙇ ɩ ι l | ɭ"
+
 perm()  {
     printf "$1 "
     echo "$2" | shuf | tr -d '[[:space:]]'
+}
+
+per2()  {
+    printf "$1 "
+    for c in $2; do
+        printf "%s" $c
+    done
+    printf "\n$1 "
+    for c in $2; do
+        printf "%s\0" $c
+    done | shuf -z | tr -d '[[:space:]]'
 }
 
 text() {
@@ -53,7 +67,8 @@ text() {
 \$S\$s\$5hmmаммаhm<i/>mb8B0dy кирилица $1<hr>
 IĪ lI 1l Il l1 ıl lı 3З S9 O0o 0︀ composed-0̸ O̸ ʘ 0 ʘ0
 cf https://en.wikipedia.org/wiki/Slashed_zero
-$(perm "l" "$all")
+$(perm "all" "$all")
+$(per2 "hom" "$hom")
 
 https://en.wikipedia.org/wiki/Homoglyph
 

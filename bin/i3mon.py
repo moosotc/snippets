@@ -4,13 +4,11 @@
 import time, os, sys, select, signal, subprocess
 import socket, ssl, re, json, traceback, imaplib
 
-imap_host = "40.100.54.194"
 imap_host = "imap-mail.outlook.com"
 email = b"clamky@hotmail.com"
 
 prevunseen = 0
 prevt = 0
-wireless = False
 
 # http://stackoverflow.com/questions/20794414/how-to-check-the-status-of-a-shell-script-using-subprocess-module-in-python
 # http://zx2c4.com/projects/password-store/
@@ -162,11 +160,7 @@ translatetemp = {"pch_cannonlake" : "",
 raplprefix = "/sys/devices/virtual/powercap/intel-rapl/intel-rapl:0/"
 rs = [C (raplprefix + path, getf) for path in paths]
 
-if wireless:
-    cs = rs + [N ("wlp0s20f3"), I ()]
-else:
-    cs = rs + [N ("eno1"), I ()]
-#    cs = rs + [N ("eno1np5"), I ()]
+cs = rs + [N ("eno1"), I ()]
 
 d = {'SwapTotal': 0, 'SwapFree': 0}
 def swapused ():
@@ -253,7 +247,7 @@ def main ():
                    "full_text": time.strftime ('[%H:%M]', time.localtime (t))}]
 
         if True:
-            up = 5 if wireless else 3
+            up = 3
             for i in range (0,up):
                 temp = getf ("/sys/class/thermal/thermal_zone%d/temp" % i)/1e3
                 name = gets ("/sys/class/thermal/thermal_zone%d/type" % i)
@@ -264,30 +258,24 @@ def main ():
                 except:
                     pass
 
-        if True:
-            for i in range (0,4):
-                freq = 1e-6 * getf (
-                    "/sys/bus/cpu/devices/cpu%d/cpufreq/scaling_cur_freq" % i)
-                if freq > 1.8: #
-                    try:
-                        j += [{"color": "#a9a9a9" if freq < 1000 else "#ffffff",
-                               "full_text": "%3.2f" % freq}]
-                    except:
-                        pass
+        for i in range (0,4):
+            freq = 1e-6 * getf (
+                "/sys/bus/cpu/devices/cpu%d/cpufreq/scaling_cur_freq" % i)
+            if freq > 1.8: #
+                try:
+                    j += [{"color": "#a9a9a9" if freq < 1000 else "#ffffff",
+                           "full_text": "%3.2f" % freq}]
+                except:
+                    pass
 
-        if True:
-            swap = swapused ()
-            if swap != 0:
-                j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
+        swap = swapused ()
+        if swap != 0:
+            j += [{"color": "#a9a9a9", "full_text": "swap %5.1f%%" % swap}]
 
-        if True:
-            nmail = checkmail (t)
-            if nmail > 0:
-                j += [{ "color": "#ffFF00",
-                        "full_text": "\N{FULL BLOCK} %d" % nmail}]
-            if nmail < 0:
-                j += [{ "color": "#ff0000", "full_text": "ERROR"}]
-        # j = [{"color": "#00a000", "full_text": "NUC"}] + j
+        nmail = checkmail (t)
+        if nmail > 0:
+            j += [{ "color": "#ffFF00",
+                    "full_text": "\N{FULL BLOCK} %d" % nmail}]
         print ("%s," % json.dumps (j), flush=True)
 
 print ('{ "version": 1 } [', flush=True)

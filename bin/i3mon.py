@@ -36,6 +36,8 @@ def checkmail1 (t):
         n = len (data[0].split ())
         imap.close()
 
+        if prevunseen != n:
+            subprocess.run ("mbsync hotmail")
         prevt = t
         prevunseen = n
     return n

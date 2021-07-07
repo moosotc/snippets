@@ -442,6 +442,7 @@
 
 (add-hook 'help-mode-hook 'scroll-lock-mode)
 (add-hook 'gnus-article-mode-hook 'scroll-lock-mode)
+(add-hook 'notmuch-show-mode-hook 'scroll-lock-mode)
 
 (defun uh-date () (format-time-string "%a %d.%m.%Y"))
 (defun uh-date-ins () (interactive) (insert (uh-date)))

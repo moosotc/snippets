@@ -42,7 +42,7 @@ Star
 "
 
 hom="A А В B E Е К K M М Н H T Т X Х С C 0 O О 3"
-hom="$hom З Ȝ ʒ Ʒ ᴣ Ӡ l ӏ Ӏ Ι I Ꙇ Ɩ ꙇ ɩ ι l | ɭ"
+hom="$hom З Ȝ ʒ Ʒ ᴣ Ӡ l ӏ Ӏ Ι I І Ꙇ Ɩ ꙇ ɩ ι l | ɭ"
 
 perm()  {
     printf "$1 "

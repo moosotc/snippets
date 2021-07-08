@@ -12,8 +12,8 @@ EOF
 xmodmap - <<EOF
 keycode 9 = Escape Menu Escape Menu
 keycode 108 = Mode_switch
-keycode 37 = NoSymbol F6 NoSymbol F6
 EOF
+: keycode 37 = NoSymbol F6 NoSymbol F6
 
 exit
 : altwin:alt_win        - wins are alts

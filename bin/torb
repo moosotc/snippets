@@ -2,4 +2,4 @@
 set -e
 L=$HOME/x/app/tor-browser_en-US/Browser/TorBrowser/Tor
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$L
-tmux new-window $HOME/x/app/tor-browser_en-US/Browser/firefox.real
+exec tmux new-window "$HOME/x/app/tor-browser_en-US/Browser/firefox.real $*"

@@ -7,14 +7,13 @@
  gnus-read-newsrc-file nil
  gnus-save-killed-list nil
  gnus-check-new-newsgroups nil
- gnus-select-method '(nnmaildir "maildir" (directory "~/.nnmaildir/"))
+ gnus-select-method '(nntp "nntp.aioe.org" 119)
  gnus-inhibit-startup-message t ;; no startup message
  gnus-treat-display-smileys nil ;; no smileys
  message-kill-buffer-on-exit t  ;; no hanging mail buffers
  gnus-prompt-before-saving t    ;; better than default
  gnus-large-newsgroup 20
  bbdb-north-american-phone-numbers nil
- gnus-secondary-select-methods '((nntp "nntp.aioe.org" 119))
  gnus-use-correct-string-widths nil
  mail-sources nil)
 

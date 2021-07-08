@@ -1,2 +1,2 @@
 #!/bin/sh
-mbsync hotmail && notmuch new && cm
+mbsync hotmail && { notmuch new; } &>/dev/null && cm

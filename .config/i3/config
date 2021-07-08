@@ -200,7 +200,7 @@ bindsym $win+ISO_Next_Group $execnoid keylayind
 bindsym $win+Shift+ISO_Next_Group $execnoid keylayind
 bindsym $win+F12 $execnoid setcapskey
 # $win+Ctrl+51 == control win backslash
-bindcode $win+Ctrl+51 $execnoid tora "$(xclip -o -sel c)"
+bindcode $win+Ctrl+51 $execnoid torb
 bindcode $win+$alt+32 $execnoid radio
 bindsym $win+$alt+backslash $execnoid clpr | rofi -dmenu
 # bindsym $win+Ctrl+Left $execnoid xdotool sleep 0.2 key F6

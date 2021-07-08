@@ -1,7 +1,5 @@
 #!/bin/sh
 set -e
-#exec /home/malc/x/app/tor-browser_en-US/Browser/start-tor-browser
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/malc/x/app/tor-browser_en-US/Browser/TorBrowser/Tor
-#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/malc/x/rcs/git/apulse
-#mpv "$@"
-exec /home/malc/x/app/tor-browser_en-US/Browser/firefox.real "$@"
+L=$HOME/x/app/tor-browser_en-US/Browser/TorBrowser/Tor
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$L
+tmux new-window $HOME/x/app/tor-browser_en-US/Browser/firefox.real

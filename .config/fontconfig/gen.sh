@@ -42,6 +42,7 @@ cat <<EOF
 EOF
 
 mono0="fantasque sans mono"
+mono0="ubuntu mono"
 mono2="jetbrains mono"
 sans1="noto sans"
 sans2="montserrat alternates"

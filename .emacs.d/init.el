@@ -12,6 +12,15 @@
  '(erc-nick "malc")
  '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
+ '(notmuch-saved-searches
+   '((:name "inbox" :query "tag:inbox" :key "i")
+     (:name "unread" :query "tag:unread" :key "u")
+     (:name "flagged" :query "tag:flagged" :key "f")
+     (:name "sent" :query "tag:sent" :key "t")
+     (:name "drafts" :query "tag:draft" :key "d")
+     (:name "all mail" :query "*" :key "a")
+     (:name "uread" :query "tag:unread")
+     (:name "llpp" :query "llpp")))
  '(org-agenda-files '("~/x/org/agenda"))
  '(org-support-shift-select t)
  '(package-selected-packages

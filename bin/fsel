@@ -1,3 +1,2 @@
 #!/bin/sh
-
-printf "$PWD/$1" | xclip -i
+printf "$PWD/$1" | xclip -i -sel cl

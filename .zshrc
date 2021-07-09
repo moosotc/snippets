@@ -53,9 +53,9 @@ xtitle ()
 }
 precmd ()
 {
-    eval PS1="%F{green}%Bnuc:%~%f%b$'\n'-$' '"
     test -n "$DISPLAY" && xtitle "nuc $PWD"
 }
+export PS1="- "
 
 tobld ()
 {

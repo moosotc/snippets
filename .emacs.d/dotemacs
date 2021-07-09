@@ -567,10 +567,6 @@
 (defun uh-non-nil-insert (s)
   (if s (insert s)))
 
-(defun uh-insert-gui-primary ()
-  (interactive)
-  (uh-non-nil-insert (gui-get-selection 'PRIMARY)))
-
 (defun uh-insert-gui-clipboard ()
   (interactive)
   (uh-non-nil-insert (gui-get-selection 'CLIPBOARD)))
@@ -580,11 +576,6 @@
   (let ((ck (current-kill)))
     (princ ck)
     (if ck (gui-set-selection 'CLIPBOARD ck))))
-
-(defun uh-put-region-into-gui-primary (beg end)
-  (interactive "r")
-  (uh-activate-mark)
-  (gui-set-selection 'PRIMARY (buffer-substring beg end)))
 
 (defun uh-put-region-into-gui-clipboard (beg end)
   (interactive "r")

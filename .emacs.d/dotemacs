@@ -525,7 +525,6 @@
 (global-set-key (kbd "H-<right>") 'bs-cycle-next)
 (global-set-key (kbd "H-<left>") 'bs-cycle-previous)
 (global-set-key (kbd "H-<up>") 'bs-show)
-(global-set-key (kbd "H-<down>") 'helm-for-files)
 (global-set-key (kbd "C-<delete>") 'kill-word)
 (global-set-key (kbd "M-<delete>")
                 (lambda ()

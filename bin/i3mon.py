@@ -87,10 +87,10 @@ class N:
             dv = (c - p) * 1e-6
             if dv > 0.5:
                 color = "#cdba96"
-            s += " %5.2f%s" % (dv/dt, " \N{DOWNWARDS ARROW}"
-                               if i == 0 else "\N{UPWARDS ARROW}"
-                               if i == 0 else ""
-                               if dv > 0.5 else "")
+
+            if dv > 0.5:
+                ar = "\N{UPWARDS ARROW}" if i == 0 else "\N{DOWNWARDS ARROW}"
+                s += " %5.2f %s" % (dv/dt, ar)
         self.prevV = curV
         return (color, s) if color is not None else None
 

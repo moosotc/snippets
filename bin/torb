@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 i3 workspace torbrowser &>/dev/null
-L=$HOME/x/app/tor-browser_en-US/Browser/TorBrowser/Tor
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$L
-exec tmux new-window $HOME/x/app/tor-browser_en-US/Browser/firefox.real "$@"
+# https://askubuntu.com/questions/1060170/xdotool-what-are-class-and-classname-for-a-window
+xdotool search --class "Tor Browser" || {
+    L=$HOME/x/app/tor-browser_en-US/Browser/TorBrowser/Tor
+    export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$L
+    exec tmux new-window $HOME/x/app/tor-browser_en-US/Browser/firefox.real
+}

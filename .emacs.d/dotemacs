@@ -605,9 +605,4 @@
 (global-set-key (kbd "H-<delete>") 'uh-put-region-into-gui-clipboard)
 
 (global-set-key (kbd "H-o") 'find-file)
-(global-set-key (kbd "M-<tab>") 'uh-activate-mark)
-
-;; WIP
-;;(setenv "GPG_AGENT_INFO" nil)
-;;(setq auth-sources
-;;      '((:source "~/.emacs.d/secrets/.authinfo.gpg")))
+(global-set-key (kbd "H-<tab>") 'uh-activate-mark)

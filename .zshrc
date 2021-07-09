@@ -46,16 +46,10 @@ setopt HIST_IGNORE_DUPS
 unt () { tar xf $1 && cd ${1%%.(t?z|tar)*}; }
 unz () { unzip -L $1 -d ${1%%.zip}; }
 unr () { unrar x -cl $1 ${1%%.rar}/; }
+xtitle () { printf "\033]0;$1\007"; }
 
-xtitle ()
-{
-    printf "\033]0;$1\007"
-}
-precmd ()
-{
-    test -n "$DISPLAY" && xtitle "nuc $PWD"
-}
-export PS1="- "
+test -n "$DISPLAY" && precmd () { xtitle "$PWD"; }
+PS1="- "
 
 tobld ()
 {

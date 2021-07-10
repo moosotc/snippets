@@ -3,7 +3,7 @@
         name = malc
 [alias]
         log1 = log --reverse --stat HEAD@{1}..HEAD
-        logsel = !git log --reverse --stat $(xclip -sel c -o)
+        logsel = !git log --reverse --stat $(xclip -sel prim -o)
         remup = remote update
         url = config --get remote.origin.url
         pull1 = !"git pull; git log1"

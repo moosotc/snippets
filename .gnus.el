@@ -15,6 +15,7 @@
  gnus-large-newsgroup 20
  bbdb-north-american-phone-numbers nil
  gnus-use-correct-string-widths nil
+ gnus-secondary-select-methods '((nntp "news.gmane.io" 119))
  mail-sources nil)
 
 (add-hook

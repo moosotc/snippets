@@ -29,7 +29,6 @@
  desktop-restore-frames nil
  user-mail-address "clamky@hotmail.com"
  package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                    ("marmalade" . "http://marmalade-repo.org/packages/")
                     ("melpa" . "http://melpa.org/packages/"))
 
  whitespace-global-modes '(not erc-mode)

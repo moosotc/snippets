@@ -1,2 +1,2 @@
 #!/bin/sh
-{ mbsync hotmail && notmuch new; } &>/dev/null
+mbsync hotmail && notmuch new

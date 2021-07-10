@@ -27,7 +27,6 @@
 
  desktop-path '("~/.emacs.d")
  desktop-restore-frames nil
- mail-user-agent 'gnus-user-agent
  user-mail-address "clamky@hotmail.com"
  package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                     ("marmalade" . "http://marmalade-repo.org/packages/")

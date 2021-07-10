@@ -35,9 +35,6 @@ def checkmail1 (t):
         ok, data = imap.search (None, "(UNSEEN)")
         n = len (data[0].split ())
         imap.close()
-
-        if prevunseen != n:
-            subprocess.run ("simail")
         prevt = t
         prevunseen = n
     return n

@@ -312,10 +312,7 @@
   (local-set-key (kbd "H-9") 'uh-insert-parentheses-no-space))
 
 ;; Takk till Stig Erik Sandø
-(setq message-send-mail-function 'smtpmail-send-it
-      smtpmail-starttls-credentials '(("smtplive.com" 587 nil nil))
-      smtpmail-default-smtp-server "smtp.live.com"
-      smtpmail-smtp-server "smtp.live.com"
+(setq smtpmail-default-smtp-server "smtp.live.com"
       smtpmail-smtp-service 587)
 
 (defun transpose-assignment ()

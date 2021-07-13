@@ -1,6 +1,6 @@
 (custom-set-variables
  '(erc-keyword-highlight-type 'all)
- '(erc-keywords '("moolc" "malc" "clam" "moosotc" "llpp"))
+ '(erc-keywords '("malc" "clam" "sotc" "llpp"))
  '(erc-hide-list '("JOIN" "PART" "QUIT"))
  '(erc-kill-buffer-on-part t)
  '(erc-kill-queries-on-quit t)

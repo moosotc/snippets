@@ -1,3 +1,4 @@
 #!/bin/sh
 set -eu
-simail && cm
+simail || echo simail fail
+cm

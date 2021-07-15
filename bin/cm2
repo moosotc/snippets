@@ -1,4 +1,0 @@
-#!/bin/sh
-set -eu
-simail || printf "failed to simail" >/tmp/i3.fifo
-cm

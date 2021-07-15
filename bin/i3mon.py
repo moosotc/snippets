@@ -14,7 +14,7 @@ prevt = 0
 # http://zx2c4.com/projects/password-store/
 # is used for password management
 imap_pass = subprocess.Popen (["pass", email], stdout=subprocess.PIPE) \
-                    .communicate ()[0][:-1].decode ("utf-8")
+                      .communicate ()[0][:-1].decode ("utf-8")
 
 def usr1handler (a1, a2):
     global prevt

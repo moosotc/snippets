@@ -545,6 +545,7 @@
 
 (global-set-key (kbd "H-<escape>") 'uh-monkeytype-repeat)
 (global-set-key (kbd "M-<return>") 'uh-monkeytype-region)
+(global-set-key (kbd "M-<RET>") 'uh-monkeytype-region)
 (global-set-key (kbd "H-<return>") 'uh-monkeytype-region-as-words)
 
 (with-eval-after-load "monkeytype"

@@ -1,5 +1,5 @@
 #!/bin/sh
-# git://git.savannah.gnu.org/emacs.git 1c10517f01d8c849aee6c1d203a890ee7a1c4393
+# git://git.savannah.gnu.org/emacs.git 4aac8f60e688076980d2103d275a78609c03be16
 
 export CC='ccache gcc'
 exec ./configure                                \
@@ -21,4 +21,5 @@ exec ./configure                                \
      --disable-acl                              \
      --without-libsystemd                       \
      --with-mailutils                           \
+     --with-sound=no                            \
      "$@"

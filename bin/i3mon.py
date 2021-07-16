@@ -1,20 +1,36 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import time, os, sys, select, signal, subprocess
-import socket, ssl, re, json, traceback, imaplib
+import time, os, sys, select, signal, socket, ssl, re, json, traceback, imaplib
+from subprocess import Popen, PIPE, DEVNULL, run as subprun
 
 imap_host = "imap-mail.outlook.com"
-email = b"clamky@hotmail.com"
-
-prevunseen = 0
-prevt = 0
+imap_user = b"clamky@hotmail.com"
 
 # http://stackoverflow.com/questions/20794414/how-to-check-the-status-of-a-shell-script-using-subprocess-module-in-python
 # http://zx2c4.com/projects/password-store/
 # is used for password management
-imap_pass = subprocess.Popen (["pass", email], stdout=subprocess.PIPE) \
-                      .communicate ()[0][:-1].decode ("utf-8")
+imap_pass = Popen (["pass", imap_user], stdout=PIPE).communicate ()[0][:-1]
+imappasss = imap_pass.decode ("utf-8")
+
+prevunseen = 0
+prevt = 0
+
+mbsyncconf = b"""IMAPAccount hotmail
+Host imap-mail.outlook.com
+User %b
+Pass "%b"
+SSLType IMAPS
+
+IMAPStore hotmail-remote
+Account hotmail
+
+MaildirStore hotmail-local
+
+Channel hotmail
+Far :hotmail-remote:
+Near :hotmail-local:
+""" % (imap_user, imap_pass)
 
 def usr1handler (a1, a2):
     global prevt
@@ -30,13 +46,19 @@ def checkmail1 (t):
     n = prevunseen
     if t - prevt > mailcheckinterval:
         imap = imaplib.IMAP4_SSL (imap_host)
-        imap.login (email, imap_pass)
+        imap.login (imap_user, imappasss)
         imap.select ('Inbox')
         ok, data = imap.search (None, "(UNSEEN)")
         n = len (data[0].split ())
         imap.close()
         prevt = t
-        prevunseen = n
+        if n != prevunseen:
+            # https://gist.github.com/waylan/2353749
+            with Popen (("mbsync", "-q", "-c",
+                         "/dev/stdin", "hotmail"), stdin=PIPE) as p:
+                p.communicate (mbsyncconf)
+                subprun (["notmuch", "new"], stderr=DEVNULL, stdout=DEVNULL)
+            prevunseen = n
     return n
 
 def checkmail (t):

@@ -100,3 +100,4 @@ todo() {
         ls
     fi
 }
+#export vblank_mode=1

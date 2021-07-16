@@ -1,3 +1,4 @@
 #!/bin/sh
 set -eu
+mbsync hotmail && notmuch new
 pkill -f -n -USR1 i3mon.py

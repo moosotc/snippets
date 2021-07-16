@@ -12,6 +12,7 @@
  '(erc-nick "malc")
  '(ibuffer-default-sorting-mode 'mode-name)
  '(load-home-init-file t t)
+ '(notmuch-fcc-dirs nil)
  '(notmuch-saved-searches
    '((:name "inbox" :query "tag:inbox" :key "i")
      (:name "flagged" :query "tag:flagged" :key "f")

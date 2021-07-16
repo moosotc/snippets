@@ -65,7 +65,7 @@ def checkmail (t):
     try:
         return checkmail1 (t)
     except Exception as e:
-        print ("exception: (%s)" % e, file = sys.stderr)
+        print ("i3mon.py EXN: (%s)" % e, file = sys.stderr)
         return -1
 
 def gets (path):
